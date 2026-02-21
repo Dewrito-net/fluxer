@@ -69,7 +69,7 @@ if (process.platform === 'win32') {
 }
 
 if (process.platform === 'win32') {
-	const appId = isCanary ? 'app.fluxer.canary' : 'app.fluxer';
+	const appId = isCanary ? 'org.echowire.canary' : 'org.echowire.app';
 	app.setAppUserModelId(appId);
 }
 
