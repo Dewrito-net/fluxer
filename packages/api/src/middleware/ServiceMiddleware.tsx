@@ -379,7 +379,8 @@ export const ServiceMiddleware = createMiddleware<HonoEnv>(async (ctx, next) => 
 	const kvActivityTracker = new KVActivityTracker(kvClient);
 	const mediaService = getMediaService();
 	const storageService = createStorageService({s3Service: getInjectedS3Service()});
-	const downloadService = new DownloadService(storageService);
+	const downloadStorageService = createStorageService();
+	const downloadService = new DownloadService(downloadStorageService);
 	const themeService = new ThemeService(storageService);
 	const csamEvidenceRetentionService = new CsamEvidenceRetentionService(storageService);
 	const gatewayService = getGatewayService();

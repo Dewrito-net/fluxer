@@ -19,17 +19,17 @@
 
 const isCanary = process.env.BUILD_CHANNEL === 'canary';
 
-const productName = isCanary ? 'Fluxer Canary' : 'Fluxer';
-const appId = isCanary ? 'app.fluxer.canary' : 'app.fluxer';
+const productName = isCanary ? 'Echowire Canary' : 'Echowire';
+const appId = isCanary ? 'org.echowire.canary' : 'org.echowire.app';
 const iconDir = isCanary ? 'icons-canary' : 'icons-stable';
-const packageName = isCanary ? 'fluxer_desktop_canary' : 'fluxer_desktop';
+const packageName = isCanary ? 'echowire_desktop_canary' : 'echowire_desktop';
 
 /** @type {import('electron-builder').Configuration} */
 module.exports = {
 	appId,
 	productName,
 	// biome-ignore lint/suspicious/noTemplateCurlyInString: electron-builder placeholder syntax
-	artifactName: '${productName}-${version}-${os}-${arch}.${ext}',
+	artifactName: '${productName}-${version}-${arch}.${ext}',
 
 	directories: {
 		buildResources: 'build_resources',
@@ -48,6 +48,14 @@ module.exports = {
 			from: `build_resources/${iconDir}/badges/`,
 			to: 'badges',
 			filter: ['**/*'],
+		},
+		{
+			from: `build_resources/${iconDir}/512x512.png`,
+			to: '512x512.png',
+		},
+		{
+			from: `build_resources/${iconDir}/256x256.png`,
+			to: '256x256.png',
 		},
 	],
 
@@ -125,7 +133,7 @@ module.exports = {
 	},
 
 	linux: {
-		icon: `build_resources/${iconDir}/icon.png`,
+		icon: `build_resources/${iconDir}`,
 		category: 'Network;InstantMessaging;',
 		target: [
 			{
@@ -146,10 +154,12 @@ module.exports = {
 			},
 		],
 		desktop: {
-			Name: productName,
-			Comment: 'Instant messaging and VoIP application',
-			Categories: 'Network;InstantMessaging;',
-			StartupWMClass: isCanary ? 'fluxer-canary' : 'fluxer',
+			entry: {
+				Name: productName,
+				Comment: 'Instant messaging and VoIP application',
+				Categories: 'Network;InstantMessaging;',
+				StartupWMClass: isCanary ? 'fluxer-canary' : 'fluxer',
+			},
 		},
 	},
 

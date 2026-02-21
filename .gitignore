@@ -1,4 +1,6 @@
 *.tsbuildinfo
+**/dist-electron
+/klipy
 **/*.beam
 **/*.css.d.ts
 **/*.dump

@@ -17,7 +17,6 @@
  * along with Fluxer. If not, see <https://www.gnu.org/licenses/>.
  */
 
-import {Config} from '@fluxer/api/src/Config';
 import type {UserRow} from '@fluxer/api/src/database/types/UserTypes';
 import {UserFlags} from '@fluxer/constants/src/UserConstants';
 import {ms} from 'itty-time';
@@ -30,10 +29,6 @@ interface PremiumCheckable {
 }
 
 export function checkIsPremium(user: PremiumCheckable): boolean {
-	if (Config.instance.selfHosted) {
-		return true;
-	}
-
 	if ((user.flags & UserFlags.PREMIUM_ENABLED_OVERRIDE) !== 0n) {
 		return true;
 	}

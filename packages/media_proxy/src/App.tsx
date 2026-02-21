@@ -225,8 +225,12 @@ export async function createMediaProxyApp(options: CreateMediaProxyAppOptions): 
 			modelPath: config.nsfwModelPath,
 			nodeEnv: config.nodeEnv,
 		});
-		await nsfwDetectionService.initialize();
-		logger.info('Initialized NSFW detection service');
+		try {
+			await nsfwDetectionService.initialize();
+			logger.info('Initialized NSFW detection service');
+		} catch (err) {
+			logger.warn({error: err instanceof Error ? err.message : String(err)}, 'NSFW detection service unavailable - model not found, continuing without it');
+		}
 
 		const metadataService = createMetadataService({
 			coalescer,

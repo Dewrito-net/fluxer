@@ -27,6 +27,7 @@ import {cleanupGlobalKeyHook, registerGlobalKeyHookHandlers} from '@electron/mai
 import {cleanupIpcHandlers, registerIpcHandlers} from '@electron/main/IpcHandlers';
 import {createApplicationMenu} from '@electron/main/Menu';
 import {startRpcServer, stopRpcServer} from '@electron/main/RpcServer';
+import {createTray, destroyTray} from '@electron/main/TrayManager';
 import {registerUpdater} from '@electron/main/Updater';
 import {
 	createWindow,
@@ -73,7 +74,7 @@ if (process.platform === 'win32') {
 }
 
 if (process.platform === 'linux') {
-	const linuxName = isCanary ? 'Fluxer Canary' : 'Fluxer';
+	const linuxName = isCanary ? 'Echowire Canary' : 'Echowire';
 	app.setName(linuxName);
 	app.commandLine.appendSwitch('enable-features', 'WebRTCPipeWireCapturer');
 }
@@ -132,6 +133,7 @@ if (!gotTheLock) {
 		}
 
 		createWindow();
+		createTray();
 		registerUpdater(getMainWindow);
 
 		app.on('activate', () => {
@@ -151,9 +153,7 @@ if (!gotTheLock) {
 	});
 
 	app.on('window-all-closed', () => {
-		if (process.platform !== 'darwin') {
-			app.quit();
-		}
+		// Don't quit — app stays in tray on all platforms
 	});
 
 	app.on('before-quit', () => {
@@ -161,6 +161,7 @@ if (!gotTheLock) {
 	});
 
 	app.on('will-quit', () => {
+		destroyTray();
 		cleanupIpcHandlers();
 		cleanupGlobalKeyHook();
 		globalShortcut.unregisterAll();

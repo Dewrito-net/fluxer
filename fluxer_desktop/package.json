@@ -1,7 +1,12 @@
 {
 	"name": "fluxer_desktop",
-	"version": "0.0.0",
+	"version": "1.11.0",
 	"private": true,
+	"homepage": "https://echowire.org",
+	"author": {
+		"name": "Echowire",
+		"email": "support@echowire.org"
+	},
 	"type": "module",
 	"main": "dist/main/index.js",
 	"scripts": {
