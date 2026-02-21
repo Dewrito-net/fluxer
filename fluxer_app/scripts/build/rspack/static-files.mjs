@@ -28,14 +28,14 @@ function generateManifest(staticCdnEndpointRaw) {
 	const staticCdnEndpoint = normalizeEndpoint(staticCdnEndpointRaw);
 
 	const manifest = {
-		name: 'Fluxer',
-		short_name: 'Fluxer',
+		name: 'Echowire',
+		short_name: 'Echowire',
 		description:
-			'Fluxer is a free and open source instant messaging and VoIP platform built for friends, groups, and communities.',
+			'Echowire is a free and open source instant messaging and VoIP platform built for friends, groups, and communities.',
 		start_url: '/',
 		display: 'standalone',
 		orientation: 'portrait-primary',
-		theme_color: '#4641D9',
+		theme_color: '#3B82F6',
 		background_color: '#2b2d31',
 		categories: ['social', 'communication'],
 		lang: 'en',
@@ -82,7 +82,7 @@ function generateBrowserConfig(staticCdnEndpointRaw) {
   <msapplication>
     <tile>
       <square150x150logo src="${staticCdnEndpoint}/web/mstile-150x150.png"/>
-      <TileColor>#4641D9</TileColor>
+      <TileColor>#3B82F6</TileColor>
     </tile>
   </msapplication>
 </browserconfig>`;

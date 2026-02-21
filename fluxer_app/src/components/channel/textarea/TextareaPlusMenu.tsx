@@ -47,7 +47,7 @@ export const TextareaPlusMenu = observer(
 		const showStickersButton = AccessibilityStore.showStickersButton;
 		const showEmojiButton = AccessibilityStore.showEmojiButton;
 		const showMessageSendButton = AccessibilityStore.showMessageSendButton;
-		const isSelfHosted = RuntimeConfigStore.isSelfHosted();
+		const isStripeEnabled = RuntimeConfigStore.features.stripe_enabled;
 		const hasTextContent = textareaValue && textareaValue.trim().length > 0;
 		const cannotSendMessagesHint = t`You do not have permission to send messages in this channel.`;
 		const cannotUploadFilesHint = t`You do not have permission to upload files in this channel.`;
@@ -81,7 +81,7 @@ export const TextareaPlusMenu = observer(
 						{t`Upload your message as a file`}
 					</MenuItem>
 				)}
-				{!isSelfHosted && (
+				{isStripeEnabled && (
 					<MenuItem
 						icon={<GiftIcon />}
 						onClick={() => PremiumModalActionCreators.open(true)}

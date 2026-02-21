@@ -37,8 +37,10 @@
 **/Thumbs.db
 **/yarn-debug.log*
 **/yarn-error.log*
-/fluxer_app/src/data/emojis.json
-/fluxer_app/src/locales/*/messages.js
+# /fluxer_app/src/data/emojis.json  # needed for app-build stage
+# /fluxer_app/src/locales/*/messages.js  # needed for app-build stage
+!fluxer_app/scripts/build
+!fluxer_app/scripts/build/**
 dev
 !fluxer_app/dist
 !fluxer_app/dist/**

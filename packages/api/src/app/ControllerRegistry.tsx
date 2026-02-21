@@ -74,7 +74,7 @@ export function registerControllers(routes: HonoApp, config: APIConfig): void {
 	OAuth2Controller(routes);
 	OAuth2ApplicationsController(routes);
 
-	if (!config.instance.selfHosted) {
+	if (config.stripe.enabled) {
 		DonationController(routes);
 		StripeController(routes);
 	}

@@ -791,7 +791,7 @@ export const ServiceMiddleware = createMiddleware<HonoEnv>(async (ctx, next) => 
 	const donationRepository = new DonationRepository();
 	let stripeService: StripeService | null = null;
 	let donationService: DonationService | null = null;
-	if (!Config.instance.selfHosted) {
+	if (Config.stripe.enabled) {
 		stripeService = new StripeService(
 			userRepository,
 			userCacheService,
