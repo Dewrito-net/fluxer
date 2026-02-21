@@ -32,7 +32,6 @@ const electronExternals = [
 	'electron-log',
 	'electron-squirrel-startup',
 	'electron-webauthn-mac',
-	'electron-updater',
 	'@electron-webauthn/native',
 	'uiohook-napi',
 	'node-mac-permissions',
