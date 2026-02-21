@@ -1,6 +1,6 @@
 {
 	"name": "fluxer_desktop",
-	"version": "1.12.0",
+	"version": "1.13.0",
 	"private": true,
 	"homepage": "https://echowire.org",
 	"author": {
@@ -18,9 +18,9 @@
 		"@electron-webauthn/native": "0.0.6",
 		"@simplewebauthn/browser": "13.2.2",
 		"electron-squirrel-startup": "1.0.1",
+		"electron-updater": "^6.8.3",
 		"electron-webauthn-mac": "1.0.0",
 		"node-mac-permissions": "2.5.0",
-		"update-electron-app": "3.1.2",
 		"ws": "8.19.0"
 	},
 	"devDependencies": {

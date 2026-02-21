@@ -191,5 +191,8 @@ module.exports = {
 		],
 	},
 
-	publish: null,
+	publish: {
+		provider: 'generic',
+		url: `https://echowire.org/dl/desktop/${isCanary ? 'canary' : 'stable'}`,
+	},
 };

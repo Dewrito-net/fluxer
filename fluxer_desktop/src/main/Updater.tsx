@@ -19,9 +19,9 @@
 
 import {BUILD_CHANNEL} from '@electron/common/BuildChannel';
 import {setQuitting} from '@electron/main/Window';
-import {autoUpdater, type BrowserWindow, ipcMain} from 'electron';
+import {type BrowserWindow, ipcMain} from 'electron';
 import log from 'electron-log';
-import {UpdateSourceType, updateElectronApp} from 'update-electron-app';
+import {autoUpdater} from 'electron-updater';
 
 export type UpdaterContext = 'user' | 'background' | 'focus';
 export type UpdaterEvent =
@@ -38,30 +38,29 @@ function send(win: BrowserWindow | null, event: UpdaterEvent) {
 }
 
 export function registerUpdater(getMainWindow: () => BrowserWindow | null) {
-	updateElectronApp({
-		updateSource: {
-			type: UpdateSourceType.StaticStorage,
-			baseUrl: `https://echowire.org/dl/desktop/${BUILD_CHANNEL}/${process.platform}/${process.arch}`,
-		},
-		updateInterval: '12 hours',
-		logger: log,
-		notifyUser: false,
+	autoUpdater.logger = log;
+	autoUpdater.autoDownload = true;
+	autoUpdater.autoInstallOnAppQuit = true;
+
+	autoUpdater.setFeedURL({
+		provider: 'generic',
+		url: `https://echowire.org/dl/desktop/${BUILD_CHANNEL}`,
 	});
 
 	autoUpdater.on('checking-for-update', () => {
 		send(getMainWindow(), {type: 'checking', context: lastContext});
 	});
 
-	autoUpdater.on('update-available', () => {
-		send(getMainWindow(), {type: 'available', context: lastContext, version: null});
+	autoUpdater.on('update-available', (info) => {
+		send(getMainWindow(), {type: 'available', context: lastContext, version: info.version ?? null});
 	});
 
 	autoUpdater.on('update-not-available', () => {
 		send(getMainWindow(), {type: 'not-available', context: lastContext});
 	});
 
-	autoUpdater.on('update-downloaded', (_event, _releaseNotes, releaseName) => {
-		send(getMainWindow(), {type: 'downloaded', context: lastContext, version: releaseName ?? null});
+	autoUpdater.on('update-downloaded', (info) => {
+		send(getMainWindow(), {type: 'downloaded', context: lastContext, version: info.version ?? null});
 	});
 
 	autoUpdater.on('error', (err: Error) => {
@@ -70,11 +69,18 @@ export function registerUpdater(getMainWindow: () => BrowserWindow | null) {
 
 	ipcMain.handle('updater-check', async (_e, context: UpdaterContext) => {
 		lastContext = context;
-		autoUpdater.checkForUpdates();
+		await autoUpdater.checkForUpdates();
 	});
 
 	ipcMain.handle('updater-install', async () => {
 		setQuitting(true);
 		autoUpdater.quitAndInstall();
 	});
+
+	// Check for updates on startup after a short delay
+	setTimeout(() => {
+		autoUpdater.checkForUpdates().catch((err: unknown) => {
+			log.warn('Background update check failed:', err);
+		});
+	}, 10_000);
 }
