@@ -88,6 +88,7 @@ RUN pnpm --filter @fluxer/config generate
 COPY fluxer_server/ ./fluxer_server/
 
 RUN pnpm --filter @fluxer/marketing build:css
+RUN pnpm --filter @fluxer/admin build:css
 
 COPY fluxer_media_proxy/data/model.onnx ./fluxer_media_proxy/data/model.onnx
 
