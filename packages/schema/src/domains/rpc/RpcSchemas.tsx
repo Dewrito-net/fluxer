@@ -181,6 +181,11 @@ export const RpcRequest = z.discriminatedUnion('type', [
 		type: z.literal('voice_get_active_states').describe('Request type for fetching active voice states from KeyDB'),
 		guild_id: SnowflakeType.describe('Guild ID to fetch active voice states for'),
 	}),
+	z.object({
+		type: z.literal('voice_delete_active_states').describe('Request type for deleting stale voice states from KeyDB'),
+		guild_id: SnowflakeType.describe('Guild ID the voice states belong to'),
+		connection_ids: z.array(z.string()).describe('Connection IDs to delete'),
+	}),
 ]);
 
 export type RpcRequest = z.infer<typeof RpcRequest>;
@@ -382,6 +387,14 @@ export const RpcResponse = z.discriminatedUnion('type', [
 					.describe('Active voice states for the guild'),
 			})
 			.describe('Active voice states result'),
+	}),
+	z.object({
+		type: z.literal('voice_delete_active_states').describe('Response type for deleting stale voice states'),
+		data: z
+			.object({
+				deleted: z.number().describe('Number of voice states deleted'),
+			})
+			.describe('Delete result'),
 	}),
 ]);
 

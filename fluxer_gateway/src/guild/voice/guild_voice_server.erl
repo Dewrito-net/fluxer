@@ -624,7 +624,8 @@ sanitize_for_json(_) -> null.
 %% Synchronously fetches active voice states from KeyDB via API RPC.
 %% Used during init to restore voice states for failover scenarios.
 %% Deduplicates by user_id — keeps only the last entry per user to avoid
-%% stale connections appearing as doppelgangers.
+%% stale connections appearing as doppelgangers. Deletes stale duplicates
+%% from KeyDB so they don't accumulate across failovers.
 -spec fetch_keydb_voice_states(integer()) -> voice_state_map().
 fetch_keydb_voice_states(GuildId) ->
     GuildIdBin = integer_to_binary(GuildId),
@@ -635,6 +636,8 @@ fetch_keydb_voice_states(GuildId) ->
     case rpc_client:call(Request, 3000) of
         {ok, Data} ->
             RawStates = maps:get(<<"voice_states">>, Data, []),
+            AllConnIds = [maps:get(<<"connection_id">>, VS, <<>>) || VS <- RawStates,
+                          maps:get(<<"connection_id">>, VS, <<>>) =/= <<>>],
             %% First pass: deduplicate by user_id (last entry wins)
             ByUser = lists:foldl(fun(VS, Acc) ->
                 UserId = maps:get(<<"user_id">>, VS, <<>>),
@@ -646,10 +649,28 @@ fetch_keydb_voice_states(GuildId) ->
                 end
             end, #{}, RawStates),
             %% Second pass: re-key by connection_id
-            maps:fold(fun(_UserId, VS, Acc) ->
+            KeptResult = maps:fold(fun(_UserId, VS, Acc) ->
                 ConnId = maps:get(<<"connection_id">>, VS, <<>>),
                 maps:put(ConnId, VS, Acc)
-            end, #{}, ByUser);
+            end, #{}, ByUser),
+            %% Third pass: find stale connection_ids (in KeyDB but not kept after dedup)
+            KeptConnIds = maps:keys(KeptResult),
+            StaleConnIds = [C || C <- AllConnIds, not lists:member(C, KeptConnIds)],
+            case StaleConnIds of
+                [] -> ok;
+                _ ->
+                    logger:info("Cleaning ~p stale voice states from KeyDB for guild ~s",
+                                [length(StaleConnIds), GuildIdBin]),
+                    spawn(fun() ->
+                        DeleteReq = #{
+                            <<"type">> => <<"voice_delete_active_states">>,
+                            <<"guild_id">> => GuildIdBin,
+                            <<"connection_ids">> => StaleConnIds
+                        },
+                        rpc_client:call(DeleteReq, 5000)
+                    end)
+            end,
+            KeptResult;
         {error, _Reason} ->
             #{}
     end.

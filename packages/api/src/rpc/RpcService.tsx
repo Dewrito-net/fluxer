@@ -640,6 +640,24 @@ export class RpcService {
 					data: {voice_states: voiceStates},
 				};
 			}
+			case 'voice_delete_active_states': {
+				if (!this.voiceConnectionStore) {
+					return {
+						type: 'voice_delete_active_states',
+						data: {deleted: 0},
+					};
+				}
+				const guildId = request.guild_id.toString();
+				let deleted = 0;
+				for (const connId of request.connection_ids) {
+					await this.voiceConnectionStore.deleteActiveVoiceState({guildId, connectionId: connId});
+					deleted++;
+				}
+				return {
+					type: 'voice_delete_active_states',
+					data: {deleted},
+				};
+			}
 			default: {
 				const exhaustiveCheck: never = request;
 				throw new Error(`Unknown RPC request type: ${String((exhaustiveCheck as {type?: string}).type ?? 'unknown')}`);
