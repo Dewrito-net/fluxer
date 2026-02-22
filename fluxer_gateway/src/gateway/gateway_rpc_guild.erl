@@ -685,8 +685,12 @@ with_voice_server(GuildId, Fun) ->
 -spec resolve_voice_pid(integer(), pid()) -> pid().
 resolve_voice_pid(GuildId, FallbackGuildPid) ->
     case guild_voice_server:lookup(GuildId) of
-        {ok, VoicePid} -> VoicePid;
-        {error, not_found} -> FallbackGuildPid
+        {ok, VoicePid} ->
+            logger:info("resolve_voice_pid: guild=~p ets=~p guild_pid=~p", [GuildId, VoicePid, FallbackGuildPid]),
+            VoicePid;
+        {error, not_found} ->
+            logger:info("resolve_voice_pid: guild=~p NOT FOUND, falling back to guild_pid=~p", [GuildId, FallbackGuildPid]),
+            FallbackGuildPid
     end.
 
 -spec get_guild_pid(integer()) -> {ok, pid()} | error.

@@ -1685,6 +1685,11 @@
 				"media_proxy_endpoint"
 			],
 			"properties": {
+				"enabled": {
+					"type": "boolean",
+					"description": "Whether to start the embedded gateway process. Set to false when using a dedicated gateway container.",
+					"default": true
+				},
 				"port": {
 					"type": "number",
 					"description": "Port to listen on.",

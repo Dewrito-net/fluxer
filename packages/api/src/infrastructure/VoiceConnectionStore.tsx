@@ -26,10 +26,25 @@ interface PendingConnectionData {
 	tokenNonce: string;
 }
 
+interface ActiveVoiceState {
+	guild_id: string;
+	channel_id: string;
+	user_id: string;
+	connection_id: string;
+	self_mute: boolean;
+	self_deaf: boolean;
+	mute: boolean;
+	deaf: boolean;
+	self_video: boolean;
+	self_stream: boolean;
+}
+
 const PENDING_KEY_PREFIX = 'voice:pending_conn';
 const CONFIRMED_KEY_PREFIX = 'voice:confirmed_conn';
+const ACTIVE_STATE_KEY_PREFIX = 'voice:active_state';
 const PENDING_TTL_SECONDS = 60;
 const CONFIRMED_TTL_SECONDS = 3600;
+const ACTIVE_STATE_TTL_SECONDS = 3600;
 
 export class VoiceConnectionStore {
 	constructor(private kvClient: IKVProvider) {}
@@ -81,5 +96,46 @@ export class VoiceConnectionStore {
 		const scope = params.guildId ?? 'dm';
 		const key = `${CONFIRMED_KEY_PREFIX}:${scope}:${params.channelId}:${params.connectionId}`;
 		await this.kvClient.del(key);
+	}
+
+	async writeActiveVoiceState(params: {
+		guildId: string;
+		channelId: string;
+		userId: string;
+		connectionId: string;
+	}): Promise<void> {
+		const key = `${ACTIVE_STATE_KEY_PREFIX}:${params.guildId}:${params.connectionId}`;
+		const state: ActiveVoiceState = {
+			guild_id: params.guildId,
+			channel_id: params.channelId,
+			user_id: params.userId,
+			connection_id: params.connectionId,
+			self_mute: false,
+			self_deaf: false,
+			mute: false,
+			deaf: false,
+			self_video: false,
+			self_stream: false,
+		};
+		await this.kvClient.setex(key, ACTIVE_STATE_TTL_SECONDS, JSON.stringify(state));
+	}
+
+	async deleteActiveVoiceState(params: {guildId: string; connectionId: string}): Promise<void> {
+		const key = `${ACTIVE_STATE_KEY_PREFIX}:${params.guildId}:${params.connectionId}`;
+		await this.kvClient.del(key);
+	}
+
+	async getActiveVoiceStatesForGuild(guildId: string): Promise<Array<ActiveVoiceState>> {
+		const pattern = `${ACTIVE_STATE_KEY_PREFIX}:${guildId}:*`;
+		const keys = await this.kvClient.scan(pattern, 100);
+		if (keys.length === 0) return [];
+		const states: Array<ActiveVoiceState> = [];
+		for (const key of keys) {
+			const raw = await this.kvClient.get(key);
+			if (raw) {
+				states.push(JSON.parse(raw) as ActiveVoiceState);
+			}
+		}
+		return states;
 	}
 }

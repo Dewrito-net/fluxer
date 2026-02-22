@@ -319,50 +319,49 @@ export class LiveKitWebhookService {
 				'LiveKit voice connection confirm result',
 			);
 
-			if (!result.success && result.error === 'connection_not_found' && this.voiceConnectionStore) {
-				const pending = await this.voiceConnectionStore.getPendingConnection(context.connectionId);
+			if (!result.success && result.error === 'connection_not_found') {
+				// Cross-gateway retry: NATS queue group may route confirm to the
+				// gateway that doesn't hold the pending connection. Retry so NATS
+				// eventually delivers to the correct gateway.
+				Logger.info(
+					{
+						connectionId: context.connectionId,
+						channelId: context.channelId.toString(),
+					},
+					'Voice confirm not found - retrying for cross-gateway routing',
+				);
 
-				if (pending && pending.tokenNonce === tokenNonce) {
-					Logger.info(
+				for (let attempt = 1; attempt <= 5; attempt++) {
+					await new Promise((r) => setTimeout(r, 200));
+					result = await this.gatewayService.confirmVoiceConnection({
+						guildId,
+						channelId: context.channelId,
+						connectionId: context.connectionId,
+						tokenNonce,
+					});
+					if (result.success) {
+						Logger.info(
+							{connectionId: context.connectionId, attempt},
+							'Cross-gateway voice confirm succeeded on retry',
+						);
+						break;
+					}
+				}
+
+				if (!result.success) {
+					Logger.warn(
 						{
 							connectionId: context.connectionId,
 							channelId: context.channelId.toString(),
+							guildId: guildId?.toString(),
 						},
-						'Cross-gateway voice confirm - found valid pending connection in KeyDB, retrying',
+						'Cross-gateway confirm failed after retries - keeping participant alive',
 					);
-
-					for (let attempt = 1; attempt <= 3; attempt++) {
-						await new Promise((r) => setTimeout(r, 300));
-						result = await this.gatewayService.confirmVoiceConnection({
-							guildId,
-							channelId: context.channelId,
-							connectionId: context.connectionId,
-							tokenNonce,
-						});
-						if (result.success) {
-							Logger.info(
-								{connectionId: context.connectionId, attempt},
-								'Cross-gateway voice confirm succeeded on retry',
-							);
-							break;
-						}
-					}
-
-					if (!result.success) {
-						Logger.warn(
-							{
-								connectionId: context.connectionId,
-								channelId: context.channelId.toString(),
-								guildId: guildId?.toString(),
-							},
-							'Cross-gateway confirm failed after retries - keeping participant alive',
-						);
-						getMetricsService().counter({
-							name: 'fluxer.voice.webhook.cross_gateway_retry_exhausted',
-							value: 1,
-						});
-						return;
-					}
+					getMetricsService().counter({
+						name: 'fluxer.voice.webhook.cross_gateway_retry_exhausted',
+						value: 1,
+					});
+					return;
 				}
 			}
 
@@ -410,8 +409,17 @@ export class LiveKitWebhookService {
 						userId: context.userId.toString(),
 					})
 					.then(() => this.voiceConnectionStore!.deletePendingConnection(context.connectionId))
+					.then(() => {
+						if (!guildId) return;
+						return this.voiceConnectionStore!.writeActiveVoiceState({
+							guildId: guildId.toString(),
+							channelId: context.channelId.toString(),
+							userId: context.userId.toString(),
+							connectionId: context.connectionId,
+						});
+					})
 					.catch((error) => {
-						Logger.error({error, connectionId: context.connectionId}, 'Failed to write confirmed voice connection to KeyDB');
+						Logger.error({error, connectionId: context.connectionId}, 'Failed to write voice connection data to KeyDB');
 					});
 			}
 
@@ -588,15 +596,21 @@ export class LiveKitWebhookService {
 			});
 
 			if (this.voiceConnectionStore) {
-				this.voiceConnectionStore
-					.deleteConfirmedConnection({
+				Promise.all([
+					this.voiceConnectionStore.deleteConfirmedConnection({
 						guildId: guildId?.toString(),
 						channelId: context.channelId.toString(),
 						connectionId: context.connectionId,
-					})
-					.catch((error) => {
-						Logger.error({error, connectionId: context.connectionId}, 'Failed to delete confirmed voice connection from KeyDB');
-					});
+					}),
+					guildId
+						? this.voiceConnectionStore.deleteActiveVoiceState({
+								guildId: guildId.toString(),
+								connectionId: context.connectionId,
+							})
+						: Promise.resolve(),
+				]).catch((error) => {
+					Logger.error({error, connectionId: context.connectionId}, 'Failed to delete voice connection data from KeyDB');
+				});
 			}
 
 			Logger.debug(

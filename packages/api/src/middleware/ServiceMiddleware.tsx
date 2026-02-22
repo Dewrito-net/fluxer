@@ -714,6 +714,7 @@ export const ServiceMiddleware = createMiddleware<HonoEnv>(async (ctx, next) => 
 		limitConfigService,
 		voiceService,
 		voiceAvailabilityService ?? undefined,
+		voiceConnectionStore,
 	);
 
 	const webhookService = new WebhookService(

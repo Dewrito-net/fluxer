@@ -220,6 +220,18 @@
                             <div class="dm-label">.deb</div>
                             <div class="dm-desc">Ubuntu, Debian, and derivatives</div>
                         </a>
+                        <a href="/api/dl/desktop/stable/linux/x64/latest/appimage">
+                            <div class="dm-label">.AppImage</div>
+                            <div class="dm-desc">Portable, runs on most distros</div>
+                        </a>
+                        <a href="/api/dl/desktop/stable/linux/x64/latest/rpm">
+                            <div class="dm-label">.rpm</div>
+                            <div class="dm-desc">Fedora, RHEL, openSUSE</div>
+                        </a>
+                        <a href="/api/dl/desktop/stable/linux/x64/latest/tar_gz">
+                            <div class="dm-label">.tar.gz</div>
+                            <div class="dm-desc">Generic Linux archive</div>
+                        </a>
                     </div>
                 </div>
             </div>
@@ -248,6 +260,12 @@
         document.addEventListener('click', function(e) {
             var dd = document.getElementById('linux-dropdown');
             if (!dd.contains(e.target)) dd.classList.remove('open');
+
+            var a = e.target.closest('a[href*="/api/dl/"]');
+            if (a) {
+                e.preventDefault();
+                window.location.href = a.href + (a.href.includes('?') ? '&' : '?') + 't=' + Date.now();
+            }
         });
     </script>
 </body>

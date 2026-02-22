@@ -177,6 +177,10 @@ export const RpcRequest = z.discriminatedUnion('type', [
 		user_id: SnowflakeType.describe('ID of the user'),
 		custom_status: CustomStatusPayload.nullish().describe('Custom status data to validate'),
 	}),
+	z.object({
+		type: z.literal('voice_get_active_states').describe('Request type for fetching active voice states from KeyDB'),
+		guild_id: SnowflakeType.describe('Guild ID to fetch active voice states for'),
+	}),
 ]);
 
 export type RpcRequest = z.infer<typeof RpcRequest>;
@@ -355,6 +359,29 @@ export const RpcResponse = z.discriminatedUnion('type', [
 				channel: ChannelResponse.nullish().describe('The DM channel or null if not found'),
 			})
 			.describe('DM channel result'),
+	}),
+	z.object({
+		type: z.literal('voice_get_active_states').describe('Response type for active voice states'),
+		data: z
+			.object({
+				voice_states: z
+					.array(
+						z.object({
+							guild_id: z.string(),
+							channel_id: z.string(),
+							user_id: z.string(),
+							connection_id: z.string(),
+							self_mute: z.boolean(),
+							self_deaf: z.boolean(),
+							mute: z.boolean(),
+							deaf: z.boolean(),
+							self_video: z.boolean(),
+							self_stream: z.boolean(),
+						}),
+					)
+					.describe('Active voice states for the guild'),
+			})
+			.describe('Active voice states result'),
 	}),
 ]);
 

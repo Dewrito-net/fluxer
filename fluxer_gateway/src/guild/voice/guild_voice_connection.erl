@@ -267,6 +267,9 @@ restore_pending_connection(ConnectionId, PendingConnections, PendingData, VoiceS
         undefined ->
             {error, voice_connection_not_found};
         _ ->
+            %% Mark confirmed so other processes' sweeps skip this connection
+            catch ets:insert(voice_pending_connections_ets,
+                {{confirmed, ConnectionId}, true}),
             NewPendingConnections = maps:remove(ConnectionId, PendingConnections),
             StateWithoutPending = maps:put(pending_voice_connections, NewPendingConnections, State),
             UpdatedVoiceStates = maps:put(ConnectionId, VoiceState, VoiceStates),
@@ -913,7 +916,23 @@ confirm_voice_connection_from_livekit(Request, State) ->
                 #{connection_id => ConnectionId, token_nonce => TokenNonce}
             ),
             PendingConnections = pending_voice_connections(State),
-            case maps:get(ConnectionId, PendingConnections, undefined) of
+            FoundPending = case maps:get(ConnectionId, PendingConnections, undefined) of
+                undefined ->
+                    %% Check global ETS table for cross-gateway synced pending connections
+                    case catch ets:lookup(voice_pending_connections_ets, ConnectionId) of
+                        [{_, EtsData}] ->
+                            catch ets:delete(voice_pending_connections_ets, ConnectionId),
+                            %% Mark as confirmed so other processes' sweeps know
+                            catch ets:insert(voice_pending_connections_ets,
+                                {{confirmed, ConnectionId}, true}),
+                            EtsData;
+                        _ ->
+                            undefined
+                    end;
+                LocalData ->
+                    LocalData
+            end,
+            case FoundPending of
                 undefined ->
                     logger:debug(
                         "No pending voice connection found for LiveKit confirm",
@@ -922,6 +941,9 @@ confirm_voice_connection_from_livekit(Request, State) ->
                     VoiceStates = voice_state_utils:voice_states(State),
                     case maps:get(ConnectionId, VoiceStates, undefined) of
                         VoiceState when is_map(VoiceState) ->
+                            %% Already in voice_states, mark confirmed for other processes
+                            catch ets:insert(voice_pending_connections_ets,
+                                {{confirmed, ConnectionId}, true}),
                             {reply, #{success => true}, State};
                         _ ->
                             try_restore_from_recently_disconnected(ConnectionId, State)
@@ -943,6 +965,9 @@ confirm_voice_connection_from_livekit(Request, State) ->
                             ),
                             {reply, gateway_errors:error(ErrorAtom), State};
                         ok ->
+                            %% Mark confirmed so other processes' sweeps skip this
+                            catch ets:insert(voice_pending_connections_ets,
+                                {{confirmed, ConnectionId}, true}),
                             VoiceStates = voice_state_utils:voice_states(State),
                             VoiceState = resolve_voice_state_from_pending(
                                 ConnectionId, PendingData, State, VoiceStates
@@ -1086,18 +1111,47 @@ sweep_expired_pending_joins(State) ->
         {[], #{}},
         PendingConnections
     ),
+    case Expired of
+        [] -> ok;
+        _ ->
+            logger:info(
+                "sweep_expired_pending: found ~p expired entries: ~p",
+                [length(Expired), [ConnId || {ConnId, _} <- Expired]]
+            )
+    end,
     lists:foreach(
         fun({ConnId, Metadata}) ->
-            UserId = maps:get(user_id, Metadata, undefined),
-            GuildId = maps:get(guild_id, Metadata, undefined),
-            ChannelId = maps:get(channel_id, Metadata, undefined),
-            case {GuildId, ChannelId, UserId} of
-                {GId, CId, UId} when is_integer(GId), is_integer(CId), is_integer(UId) ->
-                    spawn(fun() ->
-                        guild_voice_disconnect:force_disconnect_participant(GId, CId, UId, ConnId)
-                    end);
+            %% Check if another process already confirmed this connection
+            AlreadyConfirmed = case catch ets:lookup(voice_pending_connections_ets,
+                                                      {confirmed, ConnId}) of
+                [{_, true}] ->
+                    catch ets:delete(voice_pending_connections_ets, {confirmed, ConnId}),
+                    true;
                 _ ->
-                    ok
+                    false
+            end,
+            case AlreadyConfirmed of
+                true ->
+                    logger:info(
+                        "sweep_expired_pending: skipping conn=~s (confirmed by another process)",
+                        [ConnId]
+                    );
+                false ->
+                    UserId = maps:get(user_id, Metadata, undefined),
+                    GuildId = maps:get(guild_id, Metadata, undefined),
+                    ChannelId = maps:get(channel_id, Metadata, undefined),
+                    case {GuildId, ChannelId, UserId} of
+                        {GId, CId, UId} when is_integer(GId), is_integer(CId), is_integer(UId) ->
+                            logger:info(
+                                "sweep_expired_pending: force disconnecting conn=~s guild=~p channel=~p user=~p",
+                                [ConnId, GId, CId, UId]
+                            ),
+                            spawn(fun() ->
+                                guild_voice_disconnect:force_disconnect_participant(GId, CId, UId, ConnId)
+                            end);
+                        _ ->
+                            ok
+                    end
             end
         end,
         Expired

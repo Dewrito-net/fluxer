@@ -18,7 +18,7 @@
 -module(gateway_nats_rpc).
 -behaviour(gen_server).
 
--export([start_link/0, get_connection/0]).
+-export([start_link/0, get_connection/0, publish_voice_sync/2]).
 -export([init/1, handle_call/3, handle_cast/2, handle_info/2, terminate/2, code_change/3]).
 
 -define(DEFAULT_MAX_HANDLERS, 1024).
@@ -38,10 +38,13 @@ get_connection() ->
 -spec init([]) -> {ok, map()}.
 init([]) ->
     process_flag(trap_exit, true),
+    InstanceId = base64:encode(crypto:strong_rand_bytes(12)),
+    persistent_term:put(gateway_instance_id, InstanceId),
     self() ! connect,
     {ok, #{
         conn => undefined,
         sub => undefined,
+        voice_sync_sub => undefined,
         handler_count => 0,
         max_handlers => max_handlers(),
         monitor_ref => undefined
@@ -64,10 +67,14 @@ handle_info({Conn, ready}, #{conn := Conn} = State) ->
     {noreply, do_subscribe(State)};
 handle_info({Conn, closed}, #{conn := Conn} = State) ->
     logger:warning("Gateway NATS RPC connection closed, reconnecting"),
-    {noreply, schedule_reconnect(State#{conn => undefined, sub => undefined, monitor_ref => undefined})};
+    {noreply, schedule_reconnect(State#{conn => undefined, sub => undefined, voice_sync_sub => undefined, monitor_ref => undefined})};
 handle_info({Conn, {error, Reason}}, #{conn := Conn} = State) ->
     logger:warning("Gateway NATS RPC connection error: ~p, reconnecting", [Reason]),
-    {noreply, schedule_reconnect(State#{conn => undefined, sub => undefined, monitor_ref => undefined})};
+    {noreply, schedule_reconnect(State#{conn => undefined, sub => undefined, voice_sync_sub => undefined, monitor_ref => undefined})};
+handle_info({Conn, _Sid, {msg, <<"voice.sync.", _/binary>> = Subject, Payload, _MsgOpts}},
+            #{conn := Conn} = State) ->
+    spawn(fun() -> handle_voice_sync(Subject, Payload) end),
+    {noreply, State};
 handle_info({Conn, _Sid, {msg, Subject, Payload, MsgOpts}},
             #{conn := Conn, handler_count := HandlerCount, max_handlers := MaxHandlers} = State) ->
     case maps:get(reply_to, MsgOpts, undefined) of
@@ -100,7 +107,7 @@ handle_info({handler_done, _Pid}, State) ->
     {noreply, State};
 handle_info({'DOWN', MRef, process, Conn, Reason}, #{conn := Conn, monitor_ref := MRef} = State) ->
     logger:warning("Gateway NATS RPC connection process died: ~p, reconnecting", [Reason]),
-    {noreply, schedule_reconnect(State#{conn => undefined, sub => undefined, monitor_ref => undefined})};
+    {noreply, schedule_reconnect(State#{conn => undefined, sub => undefined, voice_sync_sub => undefined, monitor_ref => undefined})};
 handle_info(_Info, State) ->
     {noreply, State}.
 
@@ -139,7 +146,7 @@ do_connect(State) ->
 
 -spec do_subscribe(map()) -> map().
 do_subscribe(#{conn := Conn} = State) when Conn =/= undefined ->
-    case nats:sub(Conn, ?RPC_SUBJECT_WILDCARD, #{queue_group => ?QUEUE_GROUP}) of
+    State1 = case nats:sub(Conn, ?RPC_SUBJECT_WILDCARD, #{queue_group => ?QUEUE_GROUP}) of
         {ok, Sid} ->
             logger:info("Gateway NATS RPC subscribed to ~s with queue group ~s",
                         [?RPC_SUBJECT_WILDCARD, ?QUEUE_GROUP]),
@@ -147,6 +154,14 @@ do_subscribe(#{conn := Conn} = State) when Conn =/= undefined ->
         {error, Reason} ->
             logger:error("Gateway NATS RPC failed to subscribe: ~p", [Reason]),
             State
+    end,
+    case nats:sub(Conn, <<"voice.sync.>">>) of
+        {ok, VoiceSyncSid} ->
+            logger:info("Gateway NATS voice sync subscribed to voice.sync.>"),
+            State1#{voice_sync_sub => VoiceSyncSid};
+        {error, VoiceSyncReason} ->
+            logger:error("Gateway NATS voice sync failed to subscribe: ~p", [VoiceSyncReason]),
+            State1
     end;
 do_subscribe(State) ->
     State.
@@ -185,6 +200,123 @@ execute_rpc_method(Method, PayloadBin) ->
             ),
             #{<<"ok">> => false, <<"error">> => <<"internal_error">>}
     end.
+
+-spec publish_voice_sync(binary(), map()) -> ok.
+publish_voice_sync(Subject, Payload) ->
+    case get_connection() of
+        {ok, Conn} when Conn =/= undefined ->
+            PayloadBin = iolist_to_binary(json:encode(Payload)),
+            nats:pub(Conn, Subject, PayloadBin),
+            ok;
+        _ ->
+            ok
+    end.
+
+-spec handle_voice_sync(binary(), binary()) -> ok.
+handle_voice_sync(<<"voice.sync.state.", GuildIdBin/binary>>, Payload) ->
+    Data = json:decode(Payload),
+    SourceId = maps:get(<<"source">>, Data, <<>>),
+    MyId = persistent_term:get(gateway_instance_id, <<>>),
+    case SourceId =:= MyId of
+        true -> ok;
+        false ->
+            GuildId = binary_to_integer(GuildIdBin),
+            VoiceState = maps:get(<<"voice_state">>, Data),
+            OldChannelId = maps:get(<<"old_channel_id">>, Data, null),
+            case guild_voice_server:lookup(GuildId) of
+                {ok, Pid} ->
+                    gen_server:cast(Pid, {remote_voice_state_update, VoiceState, OldChannelId});
+                _ ->
+                    ok
+            end
+    end;
+handle_voice_sync(<<"voice.sync.request.", GuildIdBin/binary>>, Payload) ->
+    Data = json:decode(Payload),
+    SourceId = maps:get(<<"source">>, Data, <<>>),
+    MyId = persistent_term:get(gateway_instance_id, <<>>),
+    case SourceId =:= MyId of
+        true -> ok;
+        false ->
+            GuildId = binary_to_integer(GuildIdBin),
+            case guild_voice_server:lookup(GuildId) of
+                {ok, Pid} ->
+                    try gen_server:call(Pid, {get_voice_states_list}, 5000) of
+                        VoiceStates when is_list(VoiceStates) ->
+                            lists:foreach(fun(VS) ->
+                                Subject = <<"voice.sync.state.", GuildIdBin/binary>>,
+                                publish_voice_sync(Subject, #{
+                                    <<"source">> => MyId,
+                                    <<"voice_state">> => VS,
+                                    <<"old_channel_id">> => null
+                                })
+                            end, VoiceStates);
+                        _ -> ok
+                    catch _:_ -> ok
+                    end;
+                _ -> ok
+            end
+    end;
+handle_voice_sync(<<"voice.sync.pending.", GuildIdBin/binary>>, Payload) ->
+    Data = json:decode(Payload),
+    SourceId = maps:get(<<"source">>, Data, <<>>),
+    MyId = persistent_term:get(gateway_instance_id, <<>>),
+    case SourceId =:= MyId of
+        true -> ok;
+        false ->
+            GuildId = binary_to_integer(GuildIdBin),
+            ConnectionId = maps:get(<<"connection_id">>, Data),
+            MetadataJson = maps:get(<<"metadata">>, Data, #{}),
+            Metadata = deserialize_pending_metadata(MetadataJson),
+            %% Always store in global ETS so confirm RPCs can find it
+            %% even if no voice server exists on this gateway
+            catch ets:insert(voice_pending_connections_ets, {ConnectionId, Metadata}),
+            case guild_voice_server:lookup(GuildId) of
+                {ok, Pid} ->
+                    gen_server:cast(Pid, {remote_pending_connection, ConnectionId, Metadata});
+                _ ->
+                    ok
+            end
+    end;
+handle_voice_sync(<<"voice.sync.confirmed.", GuildIdBin/binary>>, Payload) ->
+    Data = json:decode(Payload),
+    SourceId = maps:get(<<"source">>, Data, <<>>),
+    MyId = persistent_term:get(gateway_instance_id, <<>>),
+    case SourceId =:= MyId of
+        true -> ok;  %% Ignore own confirmations
+        false ->
+            GuildId = binary_to_integer(GuildIdBin),
+            ConnectionId = maps:get(<<"connection_id">>, Data),
+            %% Mark confirmed in local ETS
+            catch ets:insert(voice_pending_connections_ets, {{confirmed, ConnectionId}, true}),
+            %% Remove from local voice_server's pending
+            case guild_voice_server:lookup(GuildId) of
+                {ok, Pid} ->
+                    gen_server:cast(Pid, {remote_pending_confirmed, ConnectionId});
+                _ ->
+                    ok
+            end
+    end;
+handle_voice_sync(_, _) -> ok.
+
+-spec deserialize_pending_metadata(map()) -> map().
+deserialize_pending_metadata(JsonMap) ->
+    maps:fold(
+        fun(K, V, Acc) ->
+            Key = binary_to_atom(K, utf8),
+            Val = case Key of
+                user_id when is_binary(V) -> binary_to_integer(V);
+                channel_id when is_binary(V) -> binary_to_integer(V);
+                guild_id when is_binary(V) -> binary_to_integer(V);
+                session_id when is_binary(V) -> V;
+                expires_at when is_integer(V) -> V;
+                token_nonce when is_binary(V) -> V;
+                _ -> V
+            end,
+            maps:put(Key, Val, Acc)
+        end,
+        #{},
+        JsonMap
+    ).
 
 -spec error_binary(term()) -> binary().
 error_binary(Value) when is_binary(Value) ->
@@ -256,5 +388,42 @@ parse_nats_url_test() ->
     ?assertEqual({ok, "localhost", 4222}, parse_nats_url(<<"nats://localhost">>)),
     ?assertEqual({ok, "127.0.0.1", 4222}, parse_nats_url("nats://127.0.0.1:4222")),
     ?assertEqual({error, invalid_nats_url}, parse_nats_url(undefined)).
+
+handle_voice_sync_ignores_own_messages_test() ->
+    %% Set up a known instance ID
+    persistent_term:put(gateway_instance_id, <<"test_instance_abc">>),
+    %% Message from ourselves should be ignored (returns ok, no side effects)
+    Payload = iolist_to_binary(json:encode(#{
+        <<"source">> => <<"test_instance_abc">>,
+        <<"voice_state">> => #{<<"user_id">> => <<"123">>},
+        <<"old_channel_id">> => null
+    })),
+    ?assertEqual(ok, handle_voice_sync(<<"voice.sync.state.999">>, Payload)).
+
+handle_voice_sync_ignores_own_requests_test() ->
+    persistent_term:put(gateway_instance_id, <<"test_instance_abc">>),
+    Payload = iolist_to_binary(json:encode(#{
+        <<"source">> => <<"test_instance_abc">>
+    })),
+    ?assertEqual(ok, handle_voice_sync(<<"voice.sync.request.999">>, Payload)).
+
+handle_voice_sync_unknown_subject_test() ->
+    ?assertEqual(ok, handle_voice_sync(<<"voice.sync.unknown.123">>, <<"{}">>)).
+
+handle_voice_sync_state_guild_not_found_test() ->
+    %% Remote message for a guild not loaded locally should be silently ignored
+    persistent_term:put(gateway_instance_id, <<"local_gw">>),
+    Payload = iolist_to_binary(json:encode(#{
+        <<"source">> => <<"remote_gw">>,
+        <<"voice_state">> => #{
+            <<"connection_id">> => <<"conn1">>,
+            <<"user_id">> => <<"456">>,
+            <<"channel_id">> => <<"789">>,
+            <<"guild_id">> => <<"99999">>
+        },
+        <<"old_channel_id">> => null
+    })),
+    %% Guild 99999 won't be in the registry, so lookup returns {error, not_found}
+    ?assertEqual(ok, handle_voice_sync(<<"voice.sync.state.99999">>, Payload)).
 
 -endif.
