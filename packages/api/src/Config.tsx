@@ -131,6 +131,7 @@ export function buildAPIConfigFromMaster(master: MasterConfig): APIConfig {
 			localDc: cassandraSource?.local_dc ?? '',
 			username: cassandraSource?.username ?? '',
 			password: cassandraSource?.password ?? '',
+			consistency: cassandraSource?.consistency ?? 'local_one',
 		},
 
 		database: {

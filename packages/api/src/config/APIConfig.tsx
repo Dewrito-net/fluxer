@@ -27,6 +27,7 @@ export interface APIConfig {
 		localDc: string;
 		username: string;
 		password: string;
+		consistency: string;
 	};
 
 	database: {

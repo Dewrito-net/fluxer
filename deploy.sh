@@ -70,6 +70,8 @@ log "=== Rolling restart: MI first ==="
 warn "MI going down — NC handling all traffic"
 ssh "$MI_HOST" "cd $COMPOSE_DIR && docker compose stop fluxer_server && docker compose rm -f fluxer_server && docker compose up -d fluxer_server"
 wait_healthy "$MI_HOST" "MI"
+log "Restarting MI gateway (Erlang RPC reconnect)..."
+ssh "$MI_HOST" "cd $COMPOSE_DIR && docker compose restart gateway"
 
 # Step 6: Load image on NC
 log "Loading image on NC..."
@@ -80,6 +82,8 @@ log "=== Rolling restart: NC ==="
 warn "NC going down — MI handling all traffic"
 ssh "$NC_HOST" "cd $COMPOSE_DIR && docker compose stop fluxer_server && docker compose rm -f fluxer_server && docker compose up -d fluxer_server"
 wait_healthy "$NC_HOST" "NC"
+log "Restarting NC gateway (Erlang RPC reconnect)..."
+ssh "$NC_HOST" "cd $COMPOSE_DIR && docker compose restart gateway"
 
 # Step 8: Verify
 log "=== Verifying ==="
