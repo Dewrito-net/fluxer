@@ -26,10 +26,12 @@ export const ComparisonRow = observer(
 		feature,
 		freeValue,
 		plutoniumValue,
+		visionaryValue,
 	}: {
 		feature: string;
 		freeValue: React.ReactNode;
 		plutoniumValue: React.ReactNode;
+		visionaryValue: React.ReactNode;
 	}) => (
 		<div className={styles.row}>
 			<div className={styles.feature}>
@@ -38,6 +40,7 @@ export const ComparisonRow = observer(
 			<div className={styles.valuesContainer}>
 				<div className={styles.freeValue}>{freeValue}</div>
 				<div className={styles.plutoniumValue}>{plutoniumValue}</div>
+				<div className={styles.visionaryValue}>{visionaryValue}</div>
 			</div>
 		</div>
 	),

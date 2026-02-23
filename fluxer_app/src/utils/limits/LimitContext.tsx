@@ -85,13 +85,15 @@ class LimitContextClass {
 	}
 
 	premium(): LimitMatchContext {
-		return this.build({traits: ['premium']});
+		return this.build({traits: ['plutonium']});
+	}
+
+	visionary(): LimitMatchContext {
+		return this.build({traits: ['visionary']});
 	}
 
 	free(): LimitMatchContext {
-		const currentUser = UserStore.getCurrentUser();
-		const traits = currentUser?.traits ? Array.from(currentUser.traits).filter((t) => t !== 'premium') : [];
-		return this.build({traits});
+		return this.build({traits: []});
 	}
 
 	forGuild(guildId: string): LimitMatchContext {

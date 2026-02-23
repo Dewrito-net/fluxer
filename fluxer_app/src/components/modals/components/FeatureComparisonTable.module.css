@@ -62,7 +62,7 @@
 }
 
 .headerFree {
-	width: 5rem;
+	width: 4.5rem;
 	text-align: center;
 	font-weight: 600;
 	font-size: 0.875rem;
@@ -72,14 +72,14 @@
 
 @media (min-width: 768px) {
 	.headerFree {
-		width: 6rem;
+		width: 5.5rem;
 		font-size: 1rem;
 		line-height: 1.5rem;
 	}
 }
 
 .headerPlutonium {
-	width: 5rem;
+	width: 4.5rem;
 	text-align: center;
 	font-weight: 600;
 	font-size: 0.875rem;
@@ -89,7 +89,24 @@
 
 @media (min-width: 768px) {
 	.headerPlutonium {
-		width: 6rem;
+		width: 5.5rem;
+		font-size: 1rem;
+		line-height: 1.5rem;
+	}
+}
+
+.headerVisionary {
+	width: 4.5rem;
+	text-align: center;
+	font-weight: 600;
+	font-size: 0.875rem;
+	line-height: 1.25rem;
+	color: var(--premium-tier-2-color, #f0b232);
+}
+
+@media (min-width: 768px) {
+	.headerVisionary {
+		width: 5.5rem;
 		font-size: 1rem;
 		line-height: 1.5rem;
 	}

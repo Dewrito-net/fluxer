@@ -123,6 +123,10 @@ class LimitsClass {
 		return LimitResolver.resolveFree(key, fallback);
 	}
 
+	getVisionaryValue(key: LimitKey, fallback: number): number {
+		return LimitResolver.resolveVisionary(key, fallback);
+	}
+
 	getMultiple(keys: Array<LimitKey>, fallbacks: Partial<Record<LimitKey, number>> = {}): Record<string, number> {
 		const result: Record<string, number> = {};
 

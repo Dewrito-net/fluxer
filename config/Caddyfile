@@ -12,6 +12,11 @@ echowire.org {
 		file_server
 	}
 
+	# Admin panel
+	handle /admin* {
+		reverse_proxy fluxer_admin:8080
+	}
+
 	# Everything else goes to the monolith
 	handle {
 		reverse_proxy fluxer_server:8080 {

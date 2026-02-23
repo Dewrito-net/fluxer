@@ -1102,10 +1102,19 @@ sweep_expired_pending_joins(State) ->
     PendingConnections = maps:get(pending_voice_connections, State, #{}),
     {Expired, Remaining} = maps:fold(
         fun(ConnId, Metadata, {ExpAcc, RemAcc}) ->
+            IsRemote = maps:get(remote, Metadata, false),
             ExpiresAt = maps:get(expires_at, Metadata, Now + 999999),
-            case Now >= ExpiresAt of
-                true -> {[{ConnId, Metadata} | ExpAcc], RemAcc};
-                false -> {ExpAcc, maps:put(ConnId, Metadata, RemAcc)}
+            case IsRemote of
+                true ->
+                    %% Remote pending connections are managed by the owning gateway;
+                    %% never sweep them locally — they'll be cleaned up via
+                    %% remote_pending_confirmed or voice state sync
+                    {ExpAcc, maps:put(ConnId, Metadata, RemAcc)};
+                false ->
+                    case Now >= ExpiresAt of
+                        true -> {[{ConnId, Metadata} | ExpAcc], RemAcc};
+                        false -> {ExpAcc, maps:put(ConnId, Metadata, RemAcc)}
+                    end
             end
         end,
         {[], #{}},

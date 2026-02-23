@@ -304,7 +304,10 @@ handle_cast({remote_pending_connection, ConnectionId, Metadata}, State) ->
         [ConnectionId, maps:get(guild_id, State, unknown), maps:keys(maps:get(pending_voice_connections, State, #{}))]
     ),
     PendingConnections = maps:get(pending_voice_connections, State, #{}),
-    NewPendingConnections = maps:put(ConnectionId, Metadata, PendingConnections),
+    %% Mark as remote so sweep_expired_pending_joins skips it —
+    %% only the owning gateway should force-disconnect expired connections
+    RemoteMetadata = maps:put(remote, true, Metadata),
+    NewPendingConnections = maps:put(ConnectionId, RemoteMetadata, PendingConnections),
     NewState = maps:put(pending_voice_connections, NewPendingConnections, State),
     {noreply, NewState};
 

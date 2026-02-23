@@ -32,6 +32,7 @@ COPY packages/cassandra/package.json ./packages/cassandra/
 COPY packages/config/package.json ./packages/config/
 COPY packages/constants/package.json ./packages/constants/
 COPY packages/date_utils/package.json ./packages/date_utils/
+COPY packages/elasticsearch_search/package.json ./packages/elasticsearch_search/
 COPY packages/email/package.json ./packages/email/
 COPY packages/errors/package.json ./packages/errors/
 COPY packages/geoip/package.json ./packages/geoip/

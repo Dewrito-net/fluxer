@@ -24,7 +24,6 @@ import {BottomCTASection} from '@app/components/modals/components/plutonium/Bott
 import {GiftInventoryBanner} from '@app/components/modals/components/plutonium/GiftInventoryBanner';
 import {GiftSection} from '@app/components/modals/components/plutonium/GiftSection';
 import {useCheckoutActions} from '@app/components/modals/components/plutonium/hooks/useCheckoutActions';
-import {useCommunityActions} from '@app/components/modals/components/plutonium/hooks/useCommunityActions';
 import {usePremiumData} from '@app/components/modals/components/plutonium/hooks/usePremiumData';
 import {useSubscriptionActions} from '@app/components/modals/components/plutonium/hooks/useSubscriptionActions';
 import {useSubscriptionStatus} from '@app/components/modals/components/plutonium/hooks/useSubscriptionStatus';
@@ -35,12 +34,10 @@ import {SectionHeader} from '@app/components/modals/components/plutonium/Section
 import {SubscriptionCard} from '@app/components/modals/components/plutonium/SubscriptionCard';
 import {ComponentDispatch} from '@app/lib/ComponentDispatch';
 import GeoIPStore from '@app/stores/GeoIPStore';
-import GuildStore from '@app/stores/GuildStore';
 import MobileLayoutStore from '@app/stores/MobileLayoutStore';
 import UserStore from '@app/stores/UserStore';
 import * as LocaleUtils from '@app/utils/LocaleUtils';
 import {getFormattedPrice, PricingTier} from '@app/utils/PricingUtils';
-import {GuildFeatures} from '@fluxer/constants/src/GuildConstants';
 import {Trans} from '@lingui/react/macro';
 import {CrownIcon} from '@phosphor-icons/react';
 import {observer} from 'mobx-react-lite';
@@ -61,15 +58,6 @@ export const PlutoniumContent = observer(({defaultGiftMode = false}: PlutoniumCo
 	const perksSectionRef = useRef<HTMLDivElement | null>(null);
 
 	const countryCode = GeoIPStore.countryCode;
-	const guilds = GuildStore.getGuilds();
-
-	const visionaryGuild = useMemo(() => {
-		return guilds.find((guild) => guild.features.has(GuildFeatures.VISIONARY));
-	}, [guilds]);
-
-	const operatorGuild = useMemo(() => {
-		return guilds.find((guild) => guild.features.has(GuildFeatures.OPERATOR));
-	}, [guilds]);
 
 	const subscriptionStatus = useSubscriptionStatus(currentUser);
 	const {priceIds} = usePremiumData(countryCode);
@@ -81,13 +69,6 @@ export const PlutoniumContent = observer(({defaultGiftMode = false}: PlutoniumCo
 		handleCancelSubscription,
 		handleReactivateSubscription,
 	} = useSubscriptionActions();
-	const {
-		loadingRejoinCommunity,
-		isCommunityMenuOpen,
-		communityButtonRef,
-		handleCommunityButtonPointerDown,
-		handleCommunityButtonClick,
-	} = useCommunityActions(visionaryGuild, operatorGuild);
 	const {loadingCheckout, handleSelectPlan} = useCheckoutActions(
 		priceIds,
 		subscriptionStatus.isGiftSubscription,
@@ -143,7 +124,7 @@ export const PlutoniumContent = observer(({defaultGiftMode = false}: PlutoniumCo
 
 				<div ref={perksSectionRef}>
 					<section className={styles.perksSection}>
-						<SectionHeader title={<Trans>Free vs Plutonium</Trans>} />
+						<SectionHeader title={<Trans>Compare Plans</Trans>} />
 						<div className={styles.comparisonTableContainer}>
 							<FeatureComparisonTable />
 						</div>
@@ -195,17 +176,12 @@ export const PlutoniumContent = observer(({defaultGiftMode = false}: PlutoniumCo
 						loadingPortal={loadingPortal}
 						loadingCancel={loadingCancel}
 						loadingReactivate={loadingReactivate}
-						loadingRejoinCommunity={loadingRejoinCommunity}
-						isCommunityMenuOpen={isCommunityMenuOpen}
-						communityButtonRef={communityButtonRef}
 						scrollToPerks={scrollToPerks}
 						handlePerksKeyDown={handlePerksKeyDown}
 						navigateToRedeemGift={navigateToRedeemGift}
 						handleOpenCustomerPortal={handleOpenCustomerPortal}
 						handleReactivateSubscription={handleReactivateSubscription}
 						handleCancelSubscription={handleCancelSubscription}
-						handleCommunityButtonPointerDown={handleCommunityButtonPointerDown}
-						handleCommunityButtonClick={handleCommunityButtonClick}
 						purchaseDisabled={purchaseDisabled}
 						purchaseDisabledTooltip={purchaseDisabledTooltip}
 					/>
@@ -240,7 +216,7 @@ export const PlutoniumContent = observer(({defaultGiftMode = false}: PlutoniumCo
 
 			<div ref={perksSectionRef}>
 				<section className={styles.perksSection}>
-					<SectionHeader title={<Trans>Free vs Plutonium</Trans>} />
+					<SectionHeader title={<Trans>Compare Plans</Trans>} />
 					<div className={styles.comparisonTableContainer}>
 						<FeatureComparisonTable />
 					</div>

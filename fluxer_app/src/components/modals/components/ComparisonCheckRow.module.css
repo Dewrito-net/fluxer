@@ -55,13 +55,13 @@
 
 .valueCell {
 	display: flex;
-	width: 5rem;
+	width: 4.5rem;
 	justify-content: center;
 }
 
 @media (min-width: 768px) {
 	.valueCell {
-		width: 6rem;
+		width: 5.5rem;
 	}
 }
 
@@ -69,6 +69,12 @@
 	height: 1.25rem;
 	width: 1.25rem;
 	color: var(--status-online);
+}
+
+.checkIconVisionary {
+	height: 1.25rem;
+	width: 1.25rem;
+	color: var(--premium-tier-2-color, #f0b232);
 }
 
 .dash {

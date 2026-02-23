@@ -66,13 +66,15 @@ export const FeatureComparisonTable = observer(() => {
 
 	const availablePerks = useMemo(() => PLUTONIUM_PERKS.filter((perk) => perk.status === 'available'), []);
 
-	const formatPerkValue = (perk: PlutoniumPerk, value: number, isPremium: boolean): string => {
+	const formatPerkValue = (perk: PlutoniumPerk, value: number, tier: 'free' | 'premium' | 'visionary'): string => {
 		if (!isNumericPerk(perk)) return String(value);
 
 		const resolvedValue = perk.limitKey
-			? isPremium
-				? Limits.getPremiumValue(perk.limitKey, value)
-				: Limits.getFreeValue(perk.limitKey, value)
+			? tier === 'visionary'
+				? Limits.getVisionaryValue(perk.limitKey, value)
+				: tier === 'premium'
+					? Limits.getPremiumValue(perk.limitKey, value)
+					: Limits.getFreeValue(perk.limitKey, value)
 			: value;
 
 		if (perk.unit === 'bytes') {
@@ -86,7 +88,13 @@ export const FeatureComparisonTable = observer(() => {
 
 		if (isBooleanPerk(perk)) {
 			return (
-				<ComparisonCheckRow key={perk.id} feature={label} freeHas={perk.freeValue} plutoniumHas={perk.plutoniumValue} />
+				<ComparisonCheckRow
+					key={perk.id}
+					feature={label}
+					freeHas={perk.freeValue}
+					plutoniumHas={perk.plutoniumValue}
+					visionaryHas={perk.visionaryValue}
+				/>
 			);
 		}
 
@@ -95,8 +103,9 @@ export const FeatureComparisonTable = observer(() => {
 				<ComparisonRow
 					key={perk.id}
 					feature={label}
-					freeValue={formatPerkValue(perk, perk.freeValue, false)}
-					plutoniumValue={formatPerkValue(perk, perk.plutoniumValue, true)}
+					freeValue={formatPerkValue(perk, perk.freeValue, 'free')}
+					plutoniumValue={formatPerkValue(perk, perk.plutoniumValue, 'premium')}
+					visionaryValue={formatPerkValue(perk, perk.visionaryValue, 'visionary')}
 				/>
 			);
 		}
@@ -105,7 +114,17 @@ export const FeatureComparisonTable = observer(() => {
 			const freeLabel = perkLabels[perk.freeValueI18nKey as keyof typeof perkLabels] || perk.freeValueI18nKey;
 			const premiumLabel =
 				perkLabels[perk.plutoniumValueI18nKey as keyof typeof perkLabels] || perk.plutoniumValueI18nKey;
-			return <ComparisonRow key={perk.id} feature={label} freeValue={freeLabel} plutoniumValue={premiumLabel} />;
+			const visionaryLabel =
+				perkLabels[perk.visionaryValueI18nKey as keyof typeof perkLabels] || perk.visionaryValueI18nKey;
+			return (
+				<ComparisonRow
+					key={perk.id}
+					feature={label}
+					freeValue={freeLabel}
+					plutoniumValue={premiumLabel}
+					visionaryValue={visionaryLabel}
+				/>
+			);
 		}
 
 		return null;
@@ -125,6 +144,9 @@ export const FeatureComparisonTable = observer(() => {
 					</div>
 					<div className={styles.headerPlutonium}>
 						<Trans>Plutonium</Trans>
+					</div>
+					<div className={styles.headerVisionary}>
+						<Trans>Visionary</Trans>
 					</div>
 				</div>
 			</div>
