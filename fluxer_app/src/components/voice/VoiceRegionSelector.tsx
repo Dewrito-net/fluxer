@@ -94,7 +94,7 @@ export function VoiceRegionSelector({channelId, currentRegion, compact = false}:
 		const automatic: RtcRegionOption = {
 			value: null,
 			label: t`Automatic`,
-			region: {id: '', name: '', emoji: ''},
+			region: {id: '', name: '', emoji: '', ping_endpoint: null},
 		};
 		const regionOptions = regions.map((region) => ({
 			value: region.id,

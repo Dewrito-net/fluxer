@@ -282,7 +282,8 @@ function createAppServerInitializer(context: ServiceInitializationContext): Serv
 	const imgSrc = ["'self'", 'data:', 'blob:', publicUrlHost, mediaUrlHost, 'https://fluxerstatic.com'];
 	const fontSrc: Array<string> = ["'self'", 'https://fluxerstatic.com'];
 	const styleSrc: Array<string> = ["'self'", "'unsafe-inline'", 'https://fluxerstatic.com'];
-	const connectSrc = ["'self'", 'wss:', 'ws:', publicUrlHost, 'https://fluxerstatic.com'];
+	const publicUrlHostname = new URL(publicUrlHost).hostname;
+	const connectSrc = ["'self'", 'wss:', 'ws:', publicUrlHost, `https://*.${publicUrlHostname}`, 'https://fluxerstatic.com'];
 	if (staticCdnHost) {
 		imgSrc.push(staticCdnHost);
 		fontSrc.push(staticCdnHost);

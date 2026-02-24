@@ -1182,6 +1182,7 @@ export class RpcService {
 			id: region.id,
 			name: region.name,
 			emoji: region.emoji,
+			ping_endpoint: region.pingEndpoint,
 		}));
 		Logger.debug(
 			{

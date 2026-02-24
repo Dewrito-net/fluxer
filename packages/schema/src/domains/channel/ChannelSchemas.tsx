@@ -37,6 +37,7 @@ export const RtcRegionResponse = z.object({
 	id: z.string().describe('The unique identifier for this RTC region'),
 	name: z.string().describe('The display name of the RTC region'),
 	emoji: z.string().describe('The emoji associated with this RTC region'),
+	ping_endpoint: z.string().nullable().describe('The URL to ping for latency measurement'),
 });
 
 export type RtcRegionResponse = z.infer<typeof RtcRegionResponse>;

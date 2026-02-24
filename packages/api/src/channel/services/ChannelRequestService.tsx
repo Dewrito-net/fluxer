@@ -59,6 +59,7 @@ export class ChannelRequestService {
 			id: region.id,
 			name: region.name,
 			emoji: region.emoji,
+			ping_endpoint: region.pingEndpoint,
 		}));
 	}
 
