@@ -37,17 +37,18 @@ export const NetworkErrorScreen = () => {
 				</h1>
 				<p className={styles.errorFallbackDescription}>
 					<Trans>
-						We're having trouble connecting to Fluxer's servers. This could be a temporary network issue or scheduled
+						We're having trouble connecting to Echowire's servers. This could be a temporary network issue or scheduled
 						maintenance.
 					</Trans>
 				</p>
 				<p className={styles.errorFallbackDescription}>
 					<Trans>
 						Check our{' '}
-						<a href="https://bsky.app/profile/fluxer.app" target="_blank" rel="noopener noreferrer">
-							Bluesky (@fluxer.app)
+						<a href="https://status.echowire.org" target="_blank" rel="noopener noreferrer">
+							status page
 						</a>{' '}
-						for status updates.
+						for updates, or email us at{' '}
+						<a href="mailto:support@echowire.org">support@echowire.org</a>.
 					</Trans>
 				</p>
 			</div>

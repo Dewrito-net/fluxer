@@ -428,6 +428,11 @@ class MediaEngineFacade {
 		// Don't auto-rejoin if already connected to voice
 		if (VoiceConnectionManager.connected || VoiceConnectionManager.connecting) return;
 
+		// Only auto-rejoin if this device was previously in voice (failover recovery).
+		// Without this check, opening a second device (e.g. mobile) while desktop is
+		// in voice would cause the new device to auto-connect.
+		if (!VoiceConnectionManager.lastConnectedChannel) return;
+
 		// Scan guilds for current user's active voice state
 		for (const guild of guilds) {
 			const voiceStates = guild.voice_states ?? [];
@@ -438,7 +443,7 @@ class MediaEngineFacade {
 				const guildId = guild.id;
 				const channelId = myVoiceStates[0].channel_id!;
 
-				// Step 1: Disconnect zombie voice states from dead node (2s delay for gateway to settle)
+				// Step 1: Disconnect zombie voice states from dead node (500ms delay for gateway to settle)
 				setTimeout(() => {
 					for (const vs of myVoiceStates) {
 						if (vs.connection_id) {
@@ -454,15 +459,15 @@ class MediaEngineFacade {
 						if (++attempt > 3) return;
 						if (VoiceConnectionManager.connected || VoiceConnectionManager.connecting) return;
 						this.connectDirectly(guildId, channelId);
-						// voice_server_timeout is 5s; retry 2s after that
+						// voice_server_timeout is 5s; retry 1s after that
 						setTimeout(() => {
 							if (!VoiceConnectionManager.connected && !VoiceConnectionManager.connecting) {
 								tryConnect();
 							}
-						}, 7000);
+						}, 6000);
 					};
-					setTimeout(tryConnect, 3000);
-				}, 2000);
+					setTimeout(tryConnect, 1000);
+				}, 500);
 				break;
 			}
 		}

@@ -101,7 +101,7 @@ export function deriveEndpointsFromDomain(config: DomainConfig): DerivedEndpoint
 
 		admin: buildUrl(public_scheme, deriveDomain('admin', config), public_port, '/admin'),
 
-		marketing: buildUrl(public_scheme, deriveDomain('marketing', config), public_port, '/marketing'),
+		marketing: buildUrl(public_scheme, deriveDomain('marketing', config), public_port),
 
 		invite: buildUrl(public_scheme, deriveDomain('invite', config), public_port, '/invite'),
 
