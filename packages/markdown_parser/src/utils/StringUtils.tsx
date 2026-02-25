@@ -24,7 +24,7 @@ const WORD_CHARS = new Set('abcdefghijklmnopqrstuvwxyzABCDEFGHIJKLMNOPQRSTUVWXYZ
 
 const ESCAPABLE_CHARS = new Set('[]()\\*_~`@!#$%^&+-={}|:;"\'<>,.?/');
 
-const URL_TERMINATION_CHARS = new Set(' \t\n\r)\'"');
+const URL_TERMINATION_CHARS = new Set(' \t\n\r)"');
 
 function isWordCharacter(char: string): boolean {
 	return char.length === 1 && WORD_CHARS.has(char);

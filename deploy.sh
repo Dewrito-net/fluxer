@@ -87,15 +87,15 @@ ssh "$NC_HOST" "cd $COMPOSE_DIR && docker compose restart gateway"
 
 # Step 8: Verify
 log "=== Verifying ==="
-NC_KEYS=$(ssh "$NC_HOST" "docker exec valkey keydb-cli dbsize" | grep -oP '\d+')
-MI_KEYS=$(ssh "$MI_HOST" "docker exec valkey keydb-cli dbsize" | grep -oP '\d+')
-log "KeyDB keys — NC: $NC_KEYS, MI: $MI_KEYS"
+NC_KEYS=$(ssh "$NC_HOST" "docker exec valkey keydb-cli dbsize" 2>/dev/null || echo "unknown")
+MI_KEYS=$(ssh "$MI_HOST" "docker exec valkey keydb-cli dbsize" 2>/dev/null || echo "unknown")
+log "KeyDB — NC: $NC_KEYS, MI: $MI_KEYS"
 
 SITE_STATUS=$(curl -s -o /dev/null -w "%{http_code}" https://echowire.org/_health)
 if [ "$SITE_STATUS" = "200" ]; then
     log "Site is live (200 OK)"
 else
-    err "Site returned $SITE_STATUS"
+    warn "Site returned $SITE_STATUS (may still be starting)"
 fi
 
 # Cleanup

@@ -25,7 +25,7 @@ import type React from 'react';
 import {createContext, createElement, useCallback, useContext, useMemo, useState} from 'react';
 
 const SPOILER_REGEX = /\|\|([\s\S]*?)\|\|/g;
-const URL_REGEX = /https?:\/\/[^\s<>"']+/gi;
+const URL_REGEX = /https?:\/\/[^\s<>"]+/gi;
 
 export function normalizeUrl(url: string): string | null {
 	try {
