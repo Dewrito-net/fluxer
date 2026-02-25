@@ -21,6 +21,7 @@ import * as GuildActionCreators from '@app/actions/GuildActionCreators';
 import * as InviteActionCreators from '@app/actions/InviteActionCreators';
 import * as ModalActionCreators from '@app/actions/ModalActionCreators';
 import {modal} from '@app/actions/ModalActionCreators';
+import {waitForGuild} from '@app/actions/InviteActionCreators';
 import * as NavigationActionCreators from '@app/actions/NavigationActionCreators';
 import * as ToastActionCreators from '@app/actions/ToastActionCreators';
 import {ExternalLink} from '@app/components/common/ExternalLink';
@@ -271,6 +272,7 @@ const GuildCreateForm = observer(() => {
 			icon: data.icon,
 			name: data.name,
 		});
+		await waitForGuild(guild.id);
 		ModalActionCreators.pop();
 		NavigationActionCreators.selectChannel(guild.id, guild.system_channel_id || undefined);
 	}, []);

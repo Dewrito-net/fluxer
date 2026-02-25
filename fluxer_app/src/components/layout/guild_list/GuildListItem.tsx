@@ -159,16 +159,15 @@ export const GuildListItem = observer(
 		const guildReadSentinel = GuildReadStateStore.getGuildChangeSentinel(guild.id);
 		const hasUnreadMessages = GuildReadStateStore.hasUnread(guild.id);
 		const mentionCount = GuildReadStateStore.getMentionCount(guild.id);
+		const guildSettings = UserGuildSettingsStore.getSettings(guild.id);
+		const isMuted = guildSettings?.muted || false;
 		const guildScrollSeverity: ScrollIndicatorSeverity | undefined = (() => {
 			if (mentionCount > 0) return 'mention';
-			if (hasUnreadMessages) return 'unread';
+			if (hasUnreadMessages && !isMuted) return 'unread';
 			return undefined;
 		})();
 		const guildScrollId = `guild-${guild.id}`;
 		const selectedChannel = SelectedChannelStore.selectedChannelIds.get(guild.id);
-
-		const guildSettings = UserGuildSettingsStore.getSettings(guild.id);
-		const isMuted = guildSettings?.muted || false;
 		const muteConfig = guildSettings?.mute_config;
 		const canManageGuild = PermissionStore.can(Permissions.MANAGE_GUILD, guild);
 		const voiceUserSortSnapshotRef = useRef(createVoiceParticipantSortSnapshot());
@@ -537,7 +536,7 @@ export const GuildListItem = observer(
 							onLongPress={handleLongPress}
 						>
 							<AnimatePresence>
-								{!isSortingList && (hasUnreadMessages || isSelected || shouldShowHoverState) && (
+								{!isSortingList && ((hasUnreadMessages && !isMuted) || mentionCount > 0 || isSelected || shouldShowHoverState) && (
 									<div className={styles.guildIndicator}>
 										<motion.span
 											className={styles.guildIndicatorBar}

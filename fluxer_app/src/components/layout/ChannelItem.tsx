@@ -245,9 +245,9 @@ export const ChannelItem = observer(
 		const scrollIndicatorSeverity: ScrollIndicatorSeverity | undefined = useMemo(() => {
 			if (channelIsCategory) return undefined;
 			if (mentionCount > 0) return 'mention';
-			if (hasUnreadMessages) return 'unread';
+			if (hasUnreadMessages && !isMuted) return 'unread';
 			return undefined;
-		}, [channelIsCategory, mentionCount, hasUnreadMessages]);
+		}, [channelIsCategory, mentionCount, hasUnreadMessages, isMuted]);
 		const scrollIndicatorId = useMemo(() => `channel-${channel.id}`, [channel.id]);
 		const isAutocompleteHighlight = AutocompleteStore.highlightChannelId === channel.id;
 		const typingUsers = usePresentableTypingUsers(channel);
