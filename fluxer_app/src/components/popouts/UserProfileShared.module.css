@@ -185,7 +185,7 @@
 .connectionsGrid {
 	display: grid;
 	gap: 8px;
-	grid-template-columns: 1fr 1fr;
+	grid-template-columns: minmax(0, 1fr) minmax(0, 1fr);
 }
 
 .connectionsListMobile {
@@ -202,6 +202,7 @@
 	color: var(--text-primary);
 	display: flex;
 	gap: 6px;
+	min-width: 0;
 	padding: 12px;
 	text-decoration: none;
 	user-select: text;
