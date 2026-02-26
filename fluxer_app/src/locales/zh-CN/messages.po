@@ -134,12 +134,12 @@ msgid "{0} of {totalAttachments}"
 msgstr "{0} / {totalAttachments}"
 
 #. placeholder {0}: passkeys.length
-#: src/components/modals/tabs/account_security_tab/SecurityTab.tsx:288
+#: src/components/modals/tabs/account_security_tab/SecurityTab.tsx:301
 msgid "{0} passkey registered (max 10)"
 msgstr "{0} 个通行密钥已注册（最多 10 个）"
 
 #. placeholder {0}: passkeys.length
-#: src/components/modals/tabs/account_security_tab/SecurityTab.tsx:289
+#: src/components/modals/tabs/account_security_tab/SecurityTab.tsx:302
 msgid "{0} passkeys registered (max 10)"
 msgstr "{0} 个通行密钥已注册（最多 10 个）"
 
@@ -449,7 +449,7 @@ msgstr "{baseDescription} 该限制由您的实例管理员配置。"
 msgid "{baseDescription} With Plutonium, your per-file upload limit increases to {0}, plus animated avatars, longer messages, and many other premium features."
 msgstr "{baseDescription} 使用铂金版，您的每个文件上传限制增加到 {0}，此外还有动态头像、更长的消息和许多其他高级功能。"
 
-#: src/components/pages/OAuthAuthorizePage.tsx:743
+#: src/components/pages/OAuthAuthorizePage.tsx:712
 msgid "{clientLabel} wants to connect"
 msgstr "{clientLabel}想要连接"
 
@@ -492,7 +492,7 @@ msgstr "{currentCount} / {0}"
 msgid "{days} days"
 msgstr "{days}天"
 
-#: src/components/layout/guild_list/GuildListDMItem.tsx:199
+#: src/components/layout/guild_list/GuildListDMItem.tsx:198
 msgid "{displayName} (selected)"
 msgstr "{displayName}（已选择）"
 
@@ -883,12 +883,12 @@ msgstr "{v} 个礼物"
 msgid "{v} gifts"
 msgstr "{v} 个礼物"
 
-#: src/components/modals/channel_tabs/ChannelOverviewTab.tsx:655
-#: src/components/modals/channel_tabs/ChannelOverviewTab.tsx:656
+#: src/components/modals/channel_tabs/ChannelOverviewTab.tsx:694
+#: src/components/modals/channel_tabs/ChannelOverviewTab.tsx:695
 msgid "{value} kbps"
 msgstr "{value} kbps"
 
-#: src/components/modals/channel_tabs/ChannelOverviewTab.tsx:688
+#: src/components/modals/channel_tabs/ChannelOverviewTab.tsx:727
 msgid "{value} participants"
 msgstr "{value} 位参与者"
 
@@ -1088,7 +1088,7 @@ msgstr "<0>取消禁听</0>了该成员。"
 msgid "<0>Unmuted</0> the member."
 msgstr "<0>取消禁言</0>了该成员。"
 
-#: src/components/modals/tabs/account_security_tab/SecurityTab.tsx:373
+#: src/components/modals/tabs/account_security_tab/SecurityTab.tsx:397
 msgid "<0>Warning:</0> This will also disable SMS two-factor authentication."
 msgstr "<0>警告：</0>这也会禁用短信双重身份验证。"
 
@@ -1103,7 +1103,7 @@ msgstr "1 天"
 
 #: src/components/channel/CallMessage.tsx:70
 #: src/components/modals/BanMemberModal.tsx:56
-#: src/components/modals/channel_tabs/ChannelOverviewTab.tsx:171
+#: src/components/modals/channel_tabs/ChannelOverviewTab.tsx:184
 #: src/components/modals/InviteModal.tsx:77
 #: src/components/modals/InviteModal.tsx:201
 #: src/components/modals/PackInviteModal.tsx:48
@@ -1122,7 +1122,7 @@ msgstr "1 个匹配"
 msgid "1 Member"
 msgstr "1 名成员"
 
-#: src/components/modals/channel_tabs/ChannelOverviewTab.tsx:165
+#: src/components/modals/channel_tabs/ChannelOverviewTab.tsx:178
 #: src/components/modals/tabs/developer_options_tab/MockingTab.tsx:74
 #: src/utils/modals/guild_tabs/GuildOverviewTabUtils.tsx:61
 msgid "1 minute"
@@ -1192,13 +1192,13 @@ msgstr "1年礼物"
 msgid "1 Year of Plutonium"
 msgstr "1年Plutonium"
 
-#: src/components/modals/channel_tabs/ChannelOverviewTab.tsx:168
+#: src/components/modals/channel_tabs/ChannelOverviewTab.tsx:181
 #: src/components/modals/tabs/developer_options_tab/MockingTab.tsx:77
 #: src/components/modals/TimeoutMemberOptions.tsx:36
 msgid "10 minutes"
 msgstr "10分钟"
 
-#: src/components/modals/channel_tabs/ChannelOverviewTab.tsx:162
+#: src/components/modals/channel_tabs/ChannelOverviewTab.tsx:175
 #: src/components/modals/tabs/developer_options_tab/MockingTab.tsx:72
 #: src/constants/TimeWindowPresets.tsx:55
 msgid "10 seconds"
@@ -1249,17 +1249,17 @@ msgstr "1440p"
 msgid "15 FPS"
 msgstr "15 帧每秒"
 
-#: src/components/modals/channel_tabs/ChannelOverviewTab.tsx:169
+#: src/components/modals/channel_tabs/ChannelOverviewTab.tsx:182
 #: src/constants/TimeWindowPresets.tsx:56
 #: src/utils/modals/guild_tabs/GuildOverviewTabUtils.tsx:63
 msgid "15 minutes"
 msgstr "15分钟"
 
-#: src/components/modals/channel_tabs/ChannelOverviewTab.tsx:163
+#: src/components/modals/channel_tabs/ChannelOverviewTab.tsx:176
 msgid "15 seconds"
 msgstr "15秒"
 
-#: src/components/modals/channel_tabs/ChannelOverviewTab.tsx:172
+#: src/components/modals/channel_tabs/ChannelOverviewTab.tsx:185
 msgid "2 hours"
 msgstr "2小时"
 
@@ -1271,7 +1271,7 @@ msgstr "2个成员（在线）"
 msgid "2 members (typing)"
 msgstr "2位成员（正在输入）"
 
-#: src/components/modals/channel_tabs/ChannelOverviewTab.tsx:166
+#: src/components/modals/channel_tabs/ChannelOverviewTab.tsx:179
 #: src/components/modals/tabs/developer_options_tab/MockingTab.tsx:75
 msgid "2 minutes"
 msgstr "2分钟"
@@ -1344,7 +1344,7 @@ msgstr "3个月"
 msgid "30 FPS"
 msgstr "30 帧每秒"
 
-#: src/components/modals/channel_tabs/ChannelOverviewTab.tsx:170
+#: src/components/modals/channel_tabs/ChannelOverviewTab.tsx:183
 #: src/components/modals/InviteModal.tsx:76
 #: src/components/modals/InviteModal.tsx:199
 #: src/components/modals/PackInviteModal.tsx:47
@@ -1353,7 +1353,7 @@ msgstr "30 帧每秒"
 msgid "30 minutes"
 msgstr "30分钟"
 
-#: src/components/modals/channel_tabs/ChannelOverviewTab.tsx:164
+#: src/components/modals/channel_tabs/ChannelOverviewTab.tsx:177
 #: src/components/modals/tabs/developer_options_tab/MockingTab.tsx:73
 msgid "30 seconds"
 msgstr "30秒"
@@ -1394,14 +1394,14 @@ msgstr "4K（2160p）"
 msgid "5 days"
 msgstr "5天"
 
-#: src/components/modals/channel_tabs/ChannelOverviewTab.tsx:167
+#: src/components/modals/channel_tabs/ChannelOverviewTab.tsx:180
 #: src/components/modals/tabs/developer_options_tab/MockingTab.tsx:76
 #: src/components/modals/TimeoutMemberOptions.tsx:35
 #: src/utils/modals/guild_tabs/GuildOverviewTabUtils.tsx:62
 msgid "5 minutes"
 msgstr "5分钟"
 
-#: src/components/modals/channel_tabs/ChannelOverviewTab.tsx:161
+#: src/components/modals/channel_tabs/ChannelOverviewTab.tsx:174
 msgid "5 seconds"
 msgstr "5秒"
 
@@ -1415,7 +1415,7 @@ msgstr "5次使用"
 msgid "50 uses"
 msgstr "50次使用"
 
-#: src/components/modals/channel_tabs/ChannelOverviewTab.tsx:173
+#: src/components/modals/channel_tabs/ChannelOverviewTab.tsx:186
 #: src/components/modals/InviteModal.tsx:78
 #: src/components/modals/InviteModal.tsx:203
 #: src/components/modals/PackInviteModal.tsx:49
@@ -1608,8 +1608,8 @@ msgstr "无障碍功能"
 msgid "account"
 msgstr "账户"
 
-#: src/components/modals/tabs/account_security_tab/Inline.tsx:73
-#: src/components/modals/tabs/AccountSecurityTab.tsx:77
+#: src/components/modals/tabs/account_security_tab/Inline.tsx:74
+#: src/components/modals/tabs/AccountSecurityTab.tsx:78
 #: src/components/modals/utils/SettingsConstants.tsx:297
 #: src/components/modals/utils/SettingsSectionRegistry.tsx:488
 msgid "Account"
@@ -1642,7 +1642,7 @@ msgstr "账户状态覆盖"
 msgid "Account Too New"
 msgstr "账户过于新"
 
-#: src/actions/InviteActionCreators.tsx:182
+#: src/actions/InviteActionCreators.tsx:205
 #: src/components/modals/RequiredActionModal.tsx:143
 #: src/components/modals/RequiredActionModal.tsx:416
 msgid "Account Verification Required"
@@ -1698,7 +1698,7 @@ msgstr "操作"
 msgid "active"
 msgstr "活跃"
 
-#: src/components/modals/components/plutonium/SubscriptionCard.tsx:135
+#: src/components/modals/components/plutonium/SubscriptionCard.tsx:124
 msgid "Active"
 msgstr "活跃"
 
@@ -1769,8 +1769,8 @@ msgstr "添加评论（可选）"
 
 #: src/components/layout/guild_list/AddGuildButton.tsx:90
 #: src/components/layout/guild_list/AddGuildButton.tsx:95
-#: src/components/modals/AddGuildModal.tsx:80
-#: src/components/modals/AddGuildModal.tsx:86
+#: src/components/modals/AddGuildModal.tsx:81
+#: src/components/modals/AddGuildModal.tsx:87
 msgid "Add a Community"
 msgstr "添加社区"
 
@@ -1782,7 +1782,7 @@ msgstr "添加自定义背景"
 msgid "Add a different account"
 msgstr "添加其他账号"
 
-#: src/components/modals/tabs/account_security_tab/SecurityTab.tsx:351
+#: src/components/modals/tabs/account_security_tab/SecurityTab.tsx:375
 msgid "Add a phone number to enable SMS two-factor authentication"
 msgstr "添加电话号码以启用短信双重验证"
 
@@ -1791,7 +1791,7 @@ msgstr "添加电话号码以启用短信双重验证"
 msgid "Add a tag"
 msgstr "添加标签"
 
-#: src/components/modals/channel_tabs/ChannelOverviewTab.tsx:520
+#: src/components/modals/channel_tabs/ChannelOverviewTab.tsx:559
 msgid "Add a topic to this channel"
 msgstr "为此频道添加话题"
 
@@ -1808,7 +1808,7 @@ msgstr "添加操作！"
 msgid "Add an account"
 msgstr "添加账号"
 
-#: src/components/modals/tabs/account_security_tab/SecurityTab.tsx:219
+#: src/components/modals/tabs/account_security_tab/SecurityTab.tsx:232
 msgid "Add an extra layer of security to your account"
 msgstr "为你的账号增加一层安全保障"
 
@@ -1820,7 +1820,7 @@ msgstr "添加另一个反应"
 msgid "Add Bluesky connection"
 msgstr "添加 Bluesky 连接"
 
-#: src/components/pages/OAuthAuthorizePage.tsx:863
+#: src/components/pages/OAuthAuthorizePage.tsx:832
 msgid "Add bot to a community"
 msgstr "将机器人添加到社区"
 
@@ -1902,12 +1902,12 @@ msgstr "添加或更改您的电话号码"
 msgid "Add Override"
 msgstr "添加覆盖"
 
-#: src/components/modals/tabs/account_security_tab/SecurityTab.tsx:293
+#: src/components/modals/tabs/account_security_tab/SecurityTab.tsx:306
 msgid "Add Passkey"
 msgstr "添加通行密钥"
 
 #: src/components/channel/barriers/BarrierComponents.tsx:198
-#: src/components/modals/tabs/account_security_tab/SecurityTab.tsx:398
+#: src/components/modals/tabs/account_security_tab/SecurityTab.tsx:422
 msgid "Add Phone"
 msgstr "添加电话"
 
@@ -2028,11 +2028,11 @@ msgstr "已添加到收藏夹"
 msgid "Added to saved media"
 msgstr "已添加到已保存媒体"
 
-#: src/components/modals/tabs/account_security_tab/SecurityTab.tsx:316
+#: src/components/modals/tabs/account_security_tab/SecurityTab.tsx:329
 msgid "Added: {createdDate}"
 msgstr "添加时间：{createdDate}"
 
-#: src/components/modals/tabs/account_security_tab/SecurityTab.tsx:312
+#: src/components/modals/tabs/account_security_tab/SecurityTab.tsx:325
 msgid "Added: {createdDate} • Last used: {lastUsedDate}"
 msgstr "添加时间：{createdDate} • 最后使用：{lastUsedDate}"
 
@@ -2118,7 +2118,7 @@ msgstr "之后："
 msgid "Age Restricted"
 msgstr "年龄限制"
 
-#: src/components/modals/channel_tabs/ChannelOverviewTab.tsx:627
+#: src/components/modals/channel_tabs/ChannelOverviewTab.tsx:666
 msgid "Age-restricted (NSFW)"
 msgstr "年龄限制（NSFW）"
 
@@ -2569,7 +2569,7 @@ msgstr "动画 GIF 视频"
 msgid "Animated icon"
 msgstr "动画图标"
 
-#: src/components/modals/AddGuildModal.tsx:224
+#: src/components/modals/AddGuildModal.tsx:225
 msgid "Animated icons are not supported when creating a new community. Please use JPEG, PNG, or WebP."
 msgstr "创建新社区时不支持动画图标。请使用 JPEG、PNG 或 WebP。"
 
@@ -2845,7 +2845,7 @@ msgid "Are you sure you want to delete the category \"{categoryName}\"? This can
 msgstr "您确定要删除类别 \"{categoryName}\" 吗？此操作无法撤销。"
 
 #. placeholder {0}: passkey.name
-#: src/components/modals/tabs/account_security_tab/SecurityTab.tsx:122
+#: src/components/modals/tabs/account_security_tab/SecurityTab.tsx:135
 msgid "Are you sure you want to delete the passkey <0>{0}</0>?"
 msgstr "确定要删除通行密钥 <0>{0}</0> 吗？"
 
@@ -2865,7 +2865,7 @@ msgstr "您确定要删除此邀请吗？此操作无法撤销。"
 msgid "Are you sure you want to delete this pack? This cannot be undone."
 msgstr "确定要删除此包吗？此操作无法撤销。"
 
-#: src/components/modals/tabs/account_security_tab/SecurityTab.tsx:127
+#: src/components/modals/tabs/account_security_tab/SecurityTab.tsx:140
 msgid "Are you sure you want to delete this passkey?"
 msgstr "确定要删除此通行密钥吗？"
 
@@ -2877,7 +2877,7 @@ msgstr "确定要删除您的账户吗？此操作将安排您的账户永久删
 msgid "Are you sure you want to disable invites? This will prevent new users from joining through invite links until you re-enable them. Existing members will not be affected."
 msgstr "确定要禁用邀请吗？这将阻止新用户通过邀请链接加入，直到您重新启用。现有成员不会受到影响。"
 
-#: src/components/modals/tabs/account_security_tab/SecurityTab.tsx:179
+#: src/components/modals/tabs/account_security_tab/SecurityTab.tsx:192
 msgid "Are you sure you want to disable SMS two-factor authentication? This will make your account less secure."
 msgstr "确定要禁用短信双重认证吗？这将降低您账户的安全性。"
 
@@ -2930,7 +2930,7 @@ msgid "Are you sure you want to remove this connection? This action cannot be un
 msgstr "您确定要移除此连接吗？此操作无法撤销。"
 
 #. placeholder {0}: user.phone
-#: src/components/modals/tabs/account_security_tab/SecurityTab.tsx:367
+#: src/components/modals/tabs/account_security_tab/SecurityTab.tsx:391
 msgid "Are you sure you want to remove your phone number <0>{0}</0>?"
 msgstr "确定要移除您的手机号码 <0>{0}</0> 吗？"
 
@@ -2970,11 +2970,11 @@ msgstr "确定要解除对 {0} 的屏蔽吗？"
 msgid "aria"
 msgstr "无障碍"
 
-#: src/components/modals/AddGuildModal.tsx:177
+#: src/components/modals/AddGuildModal.tsx:178
 msgid "Art Club"
 msgstr "艺术俱乐部"
 
-#: src/components/modals/AddGuildModal.tsx:151
+#: src/components/modals/AddGuildModal.tsx:152
 msgid "Artists' Corner"
 msgstr "艺术家角落"
 
@@ -3150,7 +3150,7 @@ msgid "Authenticator app"
 msgstr "验证器应用"
 
 #: src/components/auth/MfaScreen.tsx:69
-#: src/components/modals/tabs/account_security_tab/SecurityTab.tsx:224
+#: src/components/modals/tabs/account_security_tab/SecurityTab.tsx:237
 msgid "Authenticator App"
 msgstr "验证器应用"
 
@@ -3170,21 +3170,21 @@ msgstr "作者类型："
 msgid "Authorization failed"
 msgstr "授权失败"
 
-#: src/components/pages/OAuthAuthorizePage.tsx:534
+#: src/components/pages/OAuthAuthorizePage.tsx:524
 msgid "Authorization Failed"
 msgstr "授权失败"
 
-#: src/components/pages/OAuthAuthorizePage.tsx:469
-#: src/components/pages/OAuthAuthorizePage.tsx:484
+#: src/components/pages/OAuthAuthorizePage.tsx:459
+#: src/components/pages/OAuthAuthorizePage.tsx:474
 msgid "Authorization failed. Please try again."
 msgstr "授权失败，请重试。"
 
-#: src/components/pages/OAuthAuthorizePage.tsx:740
+#: src/components/pages/OAuthAuthorizePage.tsx:709
 msgid "Authorization request"
 msgstr "授权请求"
 
-#: src/components/pages/OAuthAuthorizePage.tsx:681
-#: src/components/pages/OAuthAuthorizePage.tsx:940
+#: src/components/pages/OAuthAuthorizePage.tsx:661
+#: src/components/pages/OAuthAuthorizePage.tsx:909
 msgid "Authorize"
 msgstr "授权"
 
@@ -3251,7 +3251,7 @@ msgstr "自动完成"
 msgid "automatic"
 msgstr "自动"
 
-#: src/components/modals/channel_tabs/ChannelOverviewTab.tsx:178
+#: src/components/modals/channel_tabs/ChannelOverviewTab.tsx:191
 #: src/components/voice/VoiceRegionSelector.tsx:96
 #: src/components/voice/VoiceRegionSelector.tsx:110
 #: src/components/voice/VoiceSettingsMenus.tsx:452
@@ -3347,7 +3347,7 @@ msgstr "平均延迟："
 #: src/components/modals/AddConnectionModal.tsx:312
 #: src/components/modals/PhoneAddModal.tsx:237
 #: src/components/modals/RequiredActionModal.tsx:655
-#: src/components/pages/OAuthAuthorizePage.tsx:671
+#: src/components/pages/OAuthAuthorizePage.tsx:651
 #: src/components/pages/report/ReportStepDetails.tsx:243
 msgid "Back"
 msgstr "返回"
@@ -3438,7 +3438,7 @@ msgid "backup codes"
 msgstr "备份代码"
 
 #: src/components/modals/BackupCodesModal.tsx:43
-#: src/components/modals/tabs/account_security_tab/SecurityTab.tsx:257
+#: src/components/modals/tabs/account_security_tab/SecurityTab.tsx:270
 #: src/components/modals/utils/SettingsSearchIndex.tsx:140
 msgid "Backup Codes"
 msgstr "备份代码"
@@ -3499,7 +3499,7 @@ msgstr "封禁成员"
 msgid "Ban Members"
 msgstr "封禁成员"
 
-#: src/components/modals/AddGuildModal.tsx:153
+#: src/components/modals/AddGuildModal.tsx:154
 msgid "Band Practice Room"
 msgstr "乐队练习室"
 
@@ -3680,7 +3680,7 @@ msgstr "被屏蔽的用户无法向您发送好友请求或直接私信。"
 msgid "Blockquotes"
 msgstr "引用块"
 
-#: src/components/modals/channel_tabs/ChannelOverviewTab.tsx:628
+#: src/components/modals/channel_tabs/ChannelOverviewTab.tsx:667
 msgid "Blocks access for users under 18 and shows a content warning for adults."
 msgstr "阻止18岁以下用户访问，并向成年人显示内容警告。"
 
@@ -3703,7 +3703,7 @@ msgstr "模糊"
 msgid "Blur your background"
 msgstr "模糊您的背景"
 
-#: src/components/modals/AddGuildModal.tsx:175
+#: src/components/modals/AddGuildModal.tsx:176
 msgid "Board Game Night"
 msgstr "桌游之夜"
 
@@ -3711,7 +3711,7 @@ msgstr "桌游之夜"
 msgid "Body font family"
 msgstr "正文字体"
 
-#: src/components/modals/AddGuildModal.tsx:178
+#: src/components/modals/AddGuildModal.tsx:179
 msgid "Book Club"
 msgstr "读书会"
 
@@ -3754,7 +3754,7 @@ msgstr "已添加书签！"
 msgid "Bookmarks"
 msgstr "书签"
 
-#: src/components/modals/AddGuildModal.tsx:150
+#: src/components/modals/AddGuildModal.tsx:151
 msgid "Bookworms Anonymous"
 msgstr "书虫匿名会"
 
@@ -3766,7 +3766,7 @@ msgstr "机器人"
 msgid "Bot"
 msgstr "机器人"
 
-#: src/components/pages/OAuthAuthorizePage.tsx:550
+#: src/components/pages/OAuthAuthorizePage.tsx:540
 msgid "Bot added"
 msgstr "机器人已添加"
 
@@ -3794,11 +3794,11 @@ msgstr "机器人直接消息"
 msgid "Bot Invite"
 msgstr "机器人邀请"
 
-#: src/components/pages/OAuthAuthorizePage.tsx:761
+#: src/components/pages/OAuthAuthorizePage.tsx:730
 msgid "Bot invite (no external redirect)"
 msgstr "机器人邀请（无外部重定向）"
 
-#: src/components/pages/OAuthAuthorizePage.tsx:480
+#: src/components/pages/OAuthAuthorizePage.tsx:470
 msgid "Bot is already in this community."
 msgstr "机器人已经在这个社区中。"
 
@@ -3810,7 +3810,7 @@ msgstr "机器人权限"
 msgid "Bot Profile"
 msgstr "机器人资料"
 
-#: src/components/pages/OAuthAuthorizePage.tsx:770
+#: src/components/pages/OAuthAuthorizePage.tsx:739
 msgid "Bot scope requested"
 msgstr "请求的机器人作用域"
 
@@ -3920,17 +3920,17 @@ msgstr "带图标的按钮"
 msgid "Buy Gift"
 msgstr "购买礼物"
 
-#: src/components/modals/AddGuildModal.tsx:360
+#: src/components/modals/AddGuildModal.tsx:362
 msgid "By creating a community, you agree to follow and uphold the <0>Fluxer Community Guidelines</0>."
 msgstr "通过创建社区，您同意遵守并维护 <0>Fluxer 社区准则</0>。"
 
 #: src/components/modals/components/PurchaseDisclaimer.tsx:39
-msgid "By purchasing, you agree to our <0>Terms of Service</0> and <1>Privacy Policy</1>. All purchases are refundable within 14 days by emailing <2>support@fluxer.app</2>. Chargebacks result in permanent account bans — if you want a refund, we're more than happy to give you one if you contact us first! Payment information is securely handled by Stripe — we never have access to your full card number."
-msgstr "购买即表示您同意我们的 <0>服务条款</0> 和 <1>隐私政策</1>。所有购买在 14 天内可通过发送电子邮件至 <2>support@fluxer.app</2> 退款。拒付将导致永久账户封禁 — 如果您想要退款，只要先联系我们，我们非常乐意提供！支付信息由 Stripe 安全处理 — 我们无法访问您的完整卡号。"
+msgid "By purchasing, you agree to our <0>Terms of Service</0> and <1>Privacy Policy</1>. All purchases are refundable within 14 days by emailing <2>support@echowire.org</2>. Chargebacks result in permanent account bans — if you want a refund, we're more than happy to give you one if you contact us first! Payment information is securely handled by Stripe — we never have access to your full card number."
+msgstr ""
 
 #: src/components/modals/components/PurchaseDisclaimer.tsx:31
-msgid "By purchasing, you agreed to our <0>Terms of Service</0> and <1>Privacy Policy</1>. All purchases are refundable within 14 days by emailing <2>support@fluxer.app</2>. Chargebacks result in permanent account bans — if you want a refund, we're more than happy to give you one if you contact us first! Payment information is securely handled by Stripe — we never have access to your full card number."
-msgstr "购买即表示您已同意我们的 <0>服务条款</0> 和 <1>隐私政策</1>。所有购买在 14 天内可通过发送电子邮件至 <2>support@fluxer.app</2> 退款。拒付将导致永久账户封禁 — 如果您想要退款，只要先联系我们，我们非常乐意提供！支付信息由 Stripe 安全处理 — 我们无法访问您的完整卡号。"
+msgid "By purchasing, you agreed to our <0>Terms of Service</0> and <1>Privacy Policy</1>. All purchases are refundable within 14 days by emailing <2>support@echowire.org</2>. Chargebacks result in permanent account bans — if you want a refund, we're more than happy to give you one if you contact us first! Payment information is securely handled by Stripe — we never have access to your full card number."
+msgstr ""
 
 #: src/utils/PermissionUtils.tsx:356
 #: src/utils/PermissionUtils.tsx:491
@@ -4065,8 +4065,8 @@ msgstr "当参与者超过 {VOICE_CHANNEL_CAMERA_USER_LIMIT} 人时，摄像头�
 #: src/components/modals/AccountDisableModal.tsx:69
 #: src/components/modals/AddConnectionModal.tsx:218
 #: src/components/modals/AddFavoriteMemeModal.tsx:98
-#: src/components/modals/AddGuildModal.tsx:290
-#: src/components/modals/AddGuildModal.tsx:413
+#: src/components/modals/AddGuildModal.tsx:292
+#: src/components/modals/AddGuildModal.tsx:415
 #: src/components/modals/AddGuildStickerModal.tsx:120
 #: src/components/modals/AttachmentEditModal.tsx:122
 #: src/components/modals/BackupCodesRegenerateModal.tsx:79
@@ -4081,7 +4081,7 @@ msgstr "当参与者超过 {VOICE_CHANNEL_CAMERA_USER_LIMIT} 人时，摄像头�
 #: src/components/modals/ClaimAccountModal.tsx:219
 #: src/components/modals/components/MobileSettingsView.tsx:219
 #: src/components/modals/components/plutonium/hooks/useCheckoutActions.tsx:110
-#: src/components/modals/components/plutonium/SubscriptionCard.tsx:301
+#: src/components/modals/components/plutonium/SubscriptionCard.tsx:275
 #: src/components/modals/ConfirmModal.tsx:146
 #: src/components/modals/CreateDMModal.tsx:88
 #: src/components/modals/CreateFavoriteCategoryModal.tsx:75
@@ -4132,7 +4132,7 @@ msgstr "当参与者超过 {VOICE_CHANNEL_CAMERA_USER_LIMIT} 人时，摄像头�
 #: src/components/modals/ThemeAcceptModal.tsx:177
 #: src/components/modals/TimeoutMemberModal.tsx:211
 #: src/components/modals/TransferOwnershipModal.tsx:85
-#: src/components/pages/OAuthAuthorizePage.tsx:924
+#: src/components/pages/OAuthAuthorizePage.tsx:893
 #: src/components/popouts/ScheduledMessagesContent.tsx:119
 #: src/utils/modals/AnimatedAvifModalUtils.tsx:45
 msgid "Cancel"
@@ -4162,7 +4162,7 @@ msgstr "取消请求"
 msgid "Cancel upload"
 msgstr "取消上传"
 
-#: src/components/modals/components/plutonium/SubscriptionCard.tsx:129
+#: src/components/modals/components/plutonium/SubscriptionCard.tsx:118
 msgid "Canceling"
 msgstr "正在取消"
 
@@ -4178,11 +4178,11 @@ msgstr "无法编辑"
 msgid "Cannot Delete Account"
 msgstr "无法删除账户"
 
-#: src/actions/InviteActionCreators.tsx:317
+#: src/actions/InviteActionCreators.tsx:340
 msgid "Cannot install emoji pack"
 msgstr "无法安装表情包"
 
-#: src/actions/InviteActionCreators.tsx:318
+#: src/actions/InviteActionCreators.tsx:341
 msgid "Cannot install sticker pack"
 msgstr "无法安装贴纸包"
 
@@ -4235,7 +4235,7 @@ msgstr "类别已满"
 msgid "Category ID copied"
 msgstr "类别 ID 已复制"
 
-#: src/components/modals/channel_tabs/ChannelOverviewTab.tsx:479
+#: src/components/modals/channel_tabs/ChannelOverviewTab.tsx:518
 #: src/components/modals/CreateFavoriteCategoryModal.tsx:65
 msgid "Category Name"
 msgstr "类别名称"
@@ -4312,7 +4312,7 @@ msgstr "更改好友昵称"
 msgid "Change Group Nickname"
 msgstr "更改群组昵称"
 
-#: src/components/modals/AddGuildModal.tsx:329
+#: src/components/modals/AddGuildModal.tsx:331
 #: src/components/modals/EditGroupBottomSheet.tsx:214
 #: src/components/modals/EditGroupModal.tsx:195
 msgid "Change Icon"
@@ -4520,7 +4520,7 @@ msgstr "频道列表输入指示"
 msgid "Channel Management"
 msgstr "频道管理"
 
-#: src/components/modals/channel_tabs/ChannelOverviewTab.tsx:479
+#: src/components/modals/channel_tabs/ChannelOverviewTab.tsx:518
 msgid "Channel Name"
 msgstr "频道名称"
 
@@ -4579,7 +4579,7 @@ msgstr "频道设置"
 msgid "Channel synced with parent category"
 msgstr "频道已与父类别同步"
 
-#: src/components/modals/channel_tabs/ChannelOverviewTab.tsx:276
+#: src/components/modals/channel_tabs/ChannelOverviewTab.tsx:315
 msgid "Channel topic is too long."
 msgstr "频道主题太长。"
 
@@ -4598,7 +4598,7 @@ msgstr "频道类型选择"
 msgid "Channel type: {0}."
 msgstr "频道类型：{0}。"
 
-#: src/components/modals/channel_tabs/ChannelOverviewTab.tsx:409
+#: src/components/modals/channel_tabs/ChannelOverviewTab.tsx:448
 msgid "Channel updated"
 msgstr "频道已更新"
 
@@ -4646,8 +4646,8 @@ msgstr "聊天字体缩放"
 
 #: src/components/BootstrapErrorScreen.tsx:60
 #: src/components/NetworkErrorScreen.tsx:45
-msgid "Check our <0>Bluesky (@fluxer.app)</0> for status updates."
-msgstr "查看我们的<0>Bluesky (@fluxer.app)</0>获取状态更新。"
+msgid "Check our <0>status page</0> for updates, or email us at <1>support@echowire.org</1>."
+msgstr ""
 
 #: src/components/modals/ShareThemeModal.tsx:115
 msgid "Check out my custom theme!"
@@ -4694,7 +4694,7 @@ msgstr "繁体中文"
 msgid "Choose"
 msgstr "选择"
 
-#: src/components/pages/OAuthAuthorizePage.tsx:877
+#: src/components/pages/OAuthAuthorizePage.tsx:846
 msgid "Choose a community"
 msgstr "选择一个社区"
 
@@ -4765,7 +4765,7 @@ msgstr "选择当有人在频道内输入时，频道列表中输入指示器的
 msgid "Choose the category that best describes your community."
 msgstr "选择最能描述您社区的类别。"
 
-#: src/components/pages/OAuthAuthorizePage.tsx:605
+#: src/components/pages/OAuthAuthorizePage.tsx:585
 msgid "Choose what {clientLabel} can do in your community. Uncheck any permissions you don't want to grant."
 msgstr "选择{clientLabel}在您的社区中可以执行的操作。取消勾选您不想授予的任何权限。"
 
@@ -4808,7 +4808,7 @@ msgstr "选择您的个人资料强调色"
 #: src/components/modals/ClaimAccountModal.tsx:225
 #: src/components/modals/components/UnclaimedAccountAlert.tsx:32
 #: src/components/modals/GiftAcceptModal.tsx:175
-#: src/components/modals/tabs/account_security_tab/SecurityTab.tsx:209
+#: src/components/modals/tabs/account_security_tab/SecurityTab.tsx:222
 #: src/components/modals/tabs/GiftInventoryTab.tsx:243
 msgid "Claim Account"
 msgstr "认领账户"
@@ -4837,7 +4837,7 @@ msgstr "认领您的账户"
 msgid "Claim your account by adding an email and password. We will send a verification code to confirm your email before finishing."
 msgstr "通过添加邮箱和密码认领您的账户。完成前我们将发送验证码以确认您的邮箱。"
 
-#: src/components/modals/tabs/account_security_tab/SecurityTab.tsx:205
+#: src/components/modals/tabs/account_security_tab/SecurityTab.tsx:218
 msgid "Claim your account to access security features like two-factor authentication and passkeys."
 msgstr "认领您的账户以访问双重认证和通行密钥等安全功能。"
 
@@ -4856,7 +4856,7 @@ msgstr "索取您的账户以创建应用。"
 
 #: src/components/layout/ChannelItem.tsx:215
 #: src/components/layout/ChannelItem.tsx:407
-#: src/stores/voice/MediaEngineFacade.tsx:836
+#: src/stores/voice/MediaEngineFacade.tsx:887
 msgid "Claim your account to join this voice channel."
 msgstr "请验证您的帐户以加入此语音频道。"
 
@@ -4867,11 +4867,11 @@ msgstr "请验证您的帐户以加入您不拥有的语音频道。"
 #: src/components/modals/components/plutonium/BottomCTASection.tsx:49
 #: src/components/modals/components/plutonium/GiftSection.tsx:52
 #: src/components/modals/components/plutonium/PricingSection.tsx:54
-#: src/components/modals/components/PlutoniumContent.tsx:99
+#: src/components/modals/components/PlutoniumContent.tsx:80
 msgid "Claim your account to purchase Fluxer Plutonium."
 msgstr "索取您的账户以购买Fluxer Plutonium。"
 
-#: src/components/modals/components/plutonium/SubscriptionCard.tsx:104
+#: src/components/modals/components/plutonium/SubscriptionCard.tsx:93
 msgid "Claim your account to purchase or redeem Fluxer Plutonium."
 msgstr "索取您的账户以购买或兑换Fluxer Plutonium。"
 
@@ -4901,7 +4901,7 @@ msgstr "请验证您的帐户以开始或加入1对1通话。"
 msgid "Claim your gift to activate your premium subscription!"
 msgstr "认领您的礼物以激活您的尊享订阅！"
 
-#: src/components/modals/AddGuildModal.tsx:156
+#: src/components/modals/AddGuildModal.tsx:157
 msgid "Class of '24"
 msgstr "24届"
 
@@ -5241,11 +5241,11 @@ msgstr "验证码："
 msgid "codes"
 msgstr "代码"
 
-#: src/components/modals/AddGuildModal.tsx:176
+#: src/components/modals/AddGuildModal.tsx:177
 msgid "Coding Crew"
 msgstr "编程团队"
 
-#: src/components/modals/AddGuildModal.tsx:165
+#: src/components/modals/AddGuildModal.tsx:166
 msgid "Coffee Chat"
 msgstr "咖啡闲聊"
 
@@ -5399,7 +5399,7 @@ msgstr "社区从事或允许针对性骚扰"
 msgid "Community exists solely for spam or fraudulent purposes"
 msgstr "社区仅用于垃圾信息或欺诈目的"
 
-#: src/components/modals/AddGuildModal.tsx:316
+#: src/components/modals/AddGuildModal.tsx:318
 msgid "Community Icon"
 msgstr "社区图标"
 
@@ -5445,7 +5445,7 @@ msgstr "社区静音"
 msgid "Community Muted"
 msgstr "社区已静音"
 
-#: src/components/modals/AddGuildModal.tsx:351
+#: src/components/modals/AddGuildModal.tsx:353
 msgid "Community Name"
 msgstr "社区名称"
 
@@ -5549,6 +5549,11 @@ msgstr "紧凑模式"
 msgid "Compact Mode"
 msgstr "紧凑模式"
 
+#: src/components/modals/components/PlutoniumContent.tsx:127
+#: src/components/modals/components/PlutoniumContent.tsx:219
+msgid "Compare Plans"
+msgstr ""
+
 #: src/components/modals/components/plutonium/hooks/useCheckoutActions.tsx:106
 msgid "Complete Payment"
 msgstr "完成付款"
@@ -5577,7 +5582,7 @@ msgstr "配置AFK频道和超时"
 msgid "Configure base access for this channel"
 msgstr "配置此频道的基本访问权限"
 
-#: src/components/pages/OAuthAuthorizePage.tsx:602
+#: src/components/pages/OAuthAuthorizePage.tsx:582
 msgid "Configure bot permissions"
 msgstr "配置机器人权限"
 
@@ -6227,15 +6232,15 @@ msgstr "创建"
 msgid "Create & Share"
 msgstr "创建并分享"
 
-#: src/components/modals/AddGuildModal.tsx:82
+#: src/components/modals/AddGuildModal.tsx:83
 msgid "Create a Community"
 msgstr "创建社区"
 
-#: src/components/modals/AddGuildModal.tsx:309
+#: src/components/modals/AddGuildModal.tsx:311
 msgid "Create a community for you and your friends to chat."
 msgstr "为您和您的朋友创建一个聊天社区。"
 
-#: src/components/modals/AddGuildModal.tsx:120
+#: src/components/modals/AddGuildModal.tsx:121
 msgid "Create a new community or join an existing one."
 msgstr "创建新社区或加入现有社区。"
 
@@ -6315,12 +6320,12 @@ msgid "Create Channel"
 msgstr "创建频道"
 
 #: src/components/layout/guild_list/AddGuildButton.tsx:68
-#: src/components/modals/AddGuildModal.tsx:127
-#: src/components/modals/AddGuildModal.tsx:293
+#: src/components/modals/AddGuildModal.tsx:128
+#: src/components/modals/AddGuildModal.tsx:295
 msgid "Create Community"
 msgstr "创建社区"
 
-#: src/components/modals/AddGuildModal.tsx:312
+#: src/components/modals/AddGuildModal.tsx:314
 msgid "Create community form"
 msgstr "创建社区表单"
 
@@ -6466,11 +6471,11 @@ msgstr "创建名称为{name}。"
 msgid "Created:"
 msgstr "已创建："
 
-#: src/components/modals/AddGuildModal.tsx:149
+#: src/components/modals/AddGuildModal.tsx:150
 msgid "Creative Minds Collective"
 msgstr "创意头脑集合"
 
-#: src/components/modals/AddGuildModal.tsx:168
+#: src/components/modals/AddGuildModal.tsx:169
 msgid "Creative Writing Club"
 msgstr "创意写作俱乐部"
 
@@ -6792,8 +6797,8 @@ msgstr "次要危险"
 msgid "Danger secondary clicked!"
 msgstr "次要危险已点击！"
 
-#: src/components/modals/tabs/account_security_tab/Inline.tsx:97
-#: src/components/modals/tabs/AccountSecurityTab.tsx:109
+#: src/components/modals/tabs/account_security_tab/Inline.tsx:100
+#: src/components/modals/tabs/AccountSecurityTab.tsx:112
 #: src/components/modals/tabs/applications_tab/ApplicationDetail.tsx:693
 #: src/components/modals/utils/SettingsConstants.tsx:299
 #: src/components/modals/utils/SettingsSectionRegistry.tsx:529
@@ -7070,7 +7075,7 @@ msgstr "删除"
 #: src/components/emojis/EmojiListItem.tsx:195
 #: src/components/emojis/EmojiListItem.tsx:252
 #: src/components/emojis/EmojiListItem.tsx:308
-#: src/components/modals/tabs/account_security_tab/SecurityTab.tsx:325
+#: src/components/modals/tabs/account_security_tab/SecurityTab.tsx:338
 #: src/components/modals/tabs/component_gallery_tab/ButtonsTab.tsx:157
 #: src/components/modals/tabs/component_gallery_tab/ButtonsTab.tsx:242
 #: src/components/modals/tabs/component_gallery_tab/index.tsx:165
@@ -7219,8 +7224,8 @@ msgstr "删除他人的消息。（置顶功能在下方单独设置。）"
 msgid "Delete Pack"
 msgstr "删除包"
 
-#: src/components/modals/tabs/account_security_tab/SecurityTab.tsx:118
-#: src/components/modals/tabs/account_security_tab/SecurityTab.tsx:130
+#: src/components/modals/tabs/account_security_tab/SecurityTab.tsx:131
+#: src/components/modals/tabs/account_security_tab/SecurityTab.tsx:143
 msgid "Delete Passkey"
 msgstr "删除通行密钥"
 
@@ -7414,7 +7419,7 @@ msgstr "详细信息"
 msgid "dev"
 msgstr "开发"
 
-#: src/components/modals/AddGuildModal.tsx:152
+#: src/components/modals/AddGuildModal.tsx:153
 msgid "Dev Den"
 msgstr "开发者空间"
 
@@ -7530,8 +7535,8 @@ msgid "disable"
 msgstr "禁用"
 
 #: src/components/invites/DisableInvitesButton.tsx:60
-#: src/components/modals/tabs/account_security_tab/SecurityTab.tsx:240
-#: src/components/modals/tabs/account_security_tab/SecurityTab.tsx:429
+#: src/components/modals/tabs/account_security_tab/SecurityTab.tsx:253
+#: src/components/modals/tabs/account_security_tab/SecurityTab.tsx:453
 msgid "Disable"
 msgstr "禁用"
 
@@ -7590,11 +7595,11 @@ msgstr "禁用画中画弹出"
 msgid "Disable Reduced Motion"
 msgstr "禁用减少动画"
 
-#: src/components/modals/tabs/account_security_tab/SecurityTab.tsx:183
+#: src/components/modals/tabs/account_security_tab/SecurityTab.tsx:196
 msgid "Disable SMS 2FA"
 msgstr "禁用短信双因素认证"
 
-#: src/components/modals/tabs/account_security_tab/SecurityTab.tsx:177
+#: src/components/modals/tabs/account_security_tab/SecurityTab.tsx:190
 msgid "Disable SMS Two-Factor Authentication"
 msgstr "禁用短信双因素认证"
 
@@ -8161,6 +8166,18 @@ msgstr "回声"
 msgid "Echo Cancellation"
 msgstr "回声消除"
 
+#: src/components/icons/FluxerIcon.tsx:31
+msgid "Echowire application icon"
+msgstr ""
+
+#: src/components/icons/FluxerSymbol.tsx:31
+msgid "Echowire application symbol"
+msgstr ""
+
+#: src/components/BootstrapErrorScreen.tsx:52
+msgid "Echowire failed to start properly. This could be due to corrupted data or a temporary issue."
+msgstr ""
+
 #: src/components/modals/tabs/ExpressionPacksTab.tsx:90
 #: src/components/modals/tabs/LinkedAccountsTab.tsx:186
 #: src/components/modals/tabs/LinkedAccountsTab.tsx:187
@@ -8486,7 +8503,7 @@ msgstr "表情符号名称长度至少为2个字符，只能包含字母数字�
 msgid "Emoji pack"
 msgstr "表情符号包"
 
-#: src/actions/InviteActionCreators.tsx:259
+#: src/actions/InviteActionCreators.tsx:282
 msgid "Emoji pack creation limit reached"
 msgstr "已达到表情符号包创建上限"
 
@@ -8494,7 +8511,7 @@ msgstr "已达到表情符号包创建上限"
 msgid "Emoji Pack Invite"
 msgstr "表情符号包邀请"
 
-#: src/actions/InviteActionCreators.tsx:245
+#: src/actions/InviteActionCreators.tsx:268
 msgid "Emoji pack limit reached"
 msgstr "已达到表情符号包上限"
 
@@ -8531,9 +8548,9 @@ msgstr "空状态"
 
 #: src/components/invites/DisableInvitesButton.tsx:60
 #: src/components/layout/GuildLayout.tsx:74
-#: src/components/modals/tabs/account_security_tab/SecurityTab.tsx:247
-#: src/components/modals/tabs/account_security_tab/SecurityTab.tsx:435
-#: src/components/modals/tabs/account_security_tab/SecurityTab.tsx:441
+#: src/components/modals/tabs/account_security_tab/SecurityTab.tsx:260
+#: src/components/modals/tabs/account_security_tab/SecurityTab.tsx:459
+#: src/components/modals/tabs/account_security_tab/SecurityTab.tsx:465
 #: src/components/modals/tabs/components/InputMonitoringSection.tsx:85
 msgid "Enable"
 msgstr "启用"
@@ -8655,15 +8672,15 @@ msgstr "启用自托管模式客户端（隐藏所有高级/计费 UI）"
 msgid "Enable Shift to Expand"
 msgstr "启用Shift键扩展"
 
-#: src/components/modals/tabs/account_security_tab/SecurityTab.tsx:156
+#: src/components/modals/tabs/account_security_tab/SecurityTab.tsx:169
 msgid "Enable SMS 2FA"
 msgstr "启用短信双重验证"
 
-#: src/components/modals/tabs/account_security_tab/SecurityTab.tsx:418
+#: src/components/modals/tabs/account_security_tab/SecurityTab.tsx:442
 msgid "Enable SMS codes as a backup for your authenticator app"
 msgstr "启用短信验证码作为你验证器应用的备份"
 
-#: src/components/modals/tabs/account_security_tab/SecurityTab.tsx:149
+#: src/components/modals/tabs/account_security_tab/SecurityTab.tsx:162
 msgid "Enable SMS Two-Factor Authentication"
 msgstr "启用短信双重验证"
 
@@ -8821,7 +8838,7 @@ msgstr "输入我们发送到你新地址的邮件中的代码。"
 msgid "Enter the code we sent to your email to verify it. Your password will be set once the code is confirmed."
 msgstr "输入我们发送到你邮箱的验证代码。代码确认后，你的密码将被设置。"
 
-#: src/components/modals/AddGuildModal.tsx:427
+#: src/components/modals/AddGuildModal.tsx:429
 msgid "Enter the invite link to join a community."
 msgstr "输入邀请链接以加入社区。"
 
@@ -8922,7 +8939,7 @@ msgstr "按Esc键<0><1>取消</1></0>"
 msgid "Estonia"
 msgstr "爱沙尼亚"
 
-#: src/components/modals/channel_tabs/ChannelOverviewTab.tsx:186
+#: src/components/modals/channel_tabs/ChannelOverviewTab.tsx:199
 #: src/components/voice/VoiceRegionSelector.tsx:78
 #: src/components/voice/VoiceSettingsMenus.tsx:436
 msgid "EU Central"
@@ -9008,7 +9025,7 @@ msgid "Expire After"
 msgstr "过期时间"
 
 #: src/components/accounts/AccountRow.tsx:169
-#: src/components/modals/components/plutonium/SubscriptionCard.tsx:125
+#: src/components/modals/components/plutonium/SubscriptionCard.tsx:114
 #: src/components/modals/GroupInvitesBottomSheet.tsx:110
 msgid "Expired"
 msgstr "已过期"
@@ -9314,11 +9331,11 @@ msgstr "忽略好友请求失败。请重试。"
 msgid "Failed to initiate connection"
 msgstr "启动连接失败"
 
-#: src/actions/InviteActionCreators.tsx:326
+#: src/actions/InviteActionCreators.tsx:349
 msgid "Failed to install this emoji pack. Please try again later."
 msgstr "安装此表情包失败。请稍后重试。"
 
-#: src/actions/InviteActionCreators.tsx:327
+#: src/actions/InviteActionCreators.tsx:350
 msgid "Failed to install this sticker pack. Please try again later."
 msgstr "安装此贴纸包失败。请稍后重试。"
 
@@ -9381,7 +9398,7 @@ msgstr "加载贴纸失败"
 msgid "Failed to load vanity URL. Please try again."
 msgstr "加载自定义URL失败。请重试。"
 
-#: src/components/modals/channel_tabs/ChannelOverviewTab.tsx:223
+#: src/components/modals/channel_tabs/ChannelOverviewTab.tsx:236
 msgid "Failed to load voice regions for this channel."
 msgstr "加载此频道的语音区域失败。"
 
@@ -9420,7 +9437,7 @@ msgstr "置顶消息失败"
 msgid "Failed to Prepare Emojis"
 msgstr "准备表情失败"
 
-#: src/components/modals/AddGuildModal.tsx:248
+#: src/components/modals/AddGuildModal.tsx:249
 #: src/components/modals/EditGroupBottomSheet.tsx:106
 #: src/components/modals/EditGroupModal.tsx:99
 #: src/components/modals/guild_tabs/guild_overview_tab/hooks/useGuildImageAssetField.tsx:267
@@ -9660,11 +9677,11 @@ msgstr "假"
 msgid "false"
 msgstr "false"
 
-#: src/components/modals/AddGuildModal.tsx:183
+#: src/components/modals/AddGuildModal.tsx:184
 msgid "Family Chat"
 msgstr "家庭聊天"
 
-#: src/components/modals/AddGuildModal.tsx:158
+#: src/components/modals/AddGuildModal.tsx:159
 msgid "Family Reunion"
 msgstr "家庭团聚"
 
@@ -9722,7 +9739,7 @@ msgstr "收藏"
 msgid "Favorites"
 msgstr "收藏夹"
 
-#: src/components/modals/components/FeatureComparisonTable.tsx:119
+#: src/components/modals/components/FeatureComparisonTable.tsx:138
 msgid "Feature"
 msgstr "功能"
 
@@ -9845,7 +9862,7 @@ msgstr "姓名"
 msgid "First Option"
 msgstr "第一选项"
 
-#: src/components/modals/AddGuildModal.tsx:171
+#: src/components/modals/AddGuildModal.tsx:172
 msgid "Fitness Friends"
 msgstr "健身好友"
 
@@ -9861,33 +9878,21 @@ msgstr "灵活的文本频道名称"
 msgid "Fluxer"
 msgstr "Fluxer"
 
-#: src/components/icons/FluxerIcon.tsx:31
-msgid "Fluxer application icon"
-msgstr "Fluxer应用图标"
-
-#: src/components/icons/FluxerSymbol.tsx:31
-msgid "Fluxer application symbol"
-msgstr "Fluxer应用符号"
-
 #: src/components/modals/tabs/notifications_tab/PushSettings.tsx:37
 msgid "Fluxer avoids sending push notifications to your mobile devices when you are at your computer. Use this setting to control how long you need to be inactive on desktop for before you receive push notifications, ranging from 1 minute to 10 minutes."
 msgstr "Fluxer会在您使用电脑时避免向移动设备发送推送通知。使用此设置可控制在接收推送通知前需要在桌面端处于非活动状态的时间，范围从1分钟到10分钟。"
 
-#: src/components/popouts/UserProfileBadges.tsx:115
+#: src/components/popouts/UserProfileBadges.tsx:101
 msgid "Fluxer Bug Hunter"
 msgstr "Fluxer Bug Hunter"
 
-#: src/components/popouts/UserProfileBadges.tsx:95
+#: src/components/popouts/UserProfileBadges.tsx:81
 msgid "Fluxer Community Team"
 msgstr "Fluxer社区团队"
 
 #: src/components/modals/tabs/DevicesTab.tsx:99
 msgid "Fluxer Desktop"
 msgstr "Fluxer桌面版"
-
-#: src/components/BootstrapErrorScreen.tsx:52
-msgid "Fluxer failed to start properly. This could be due to corrupted data or a temporary issue."
-msgstr "Fluxer启动失败。这可能是由于数据损坏或临时问题导致的。"
 
 #: src/stores/NewDeviceMonitoringStore.tsx:187
 msgid "Fluxer has found a new audio input device named <0>{deviceName}</0>. Do you want to switch to it?"
@@ -9945,18 +9950,18 @@ msgstr "Fluxer需要输入监控权限，以便在窗口处于后台时保持按
 msgid "Fluxer needs permission to monitor keyboard and mouse input so that <0>Push-to-Talk</0> and <1>Global Shortcuts</1> work even when you're in another app or game."
 msgstr "Fluxer需要权限来监控键盘和鼠标输入，以便<0>按住说话</0>和<1>全局快捷键</1>即使你在其他应用或游戏中也能工作。"
 
-#: src/components/popouts/UserProfileBadges.tsx:105
+#: src/components/popouts/UserProfileBadges.tsx:91
 msgid "Fluxer Partner"
 msgstr "Fluxer合作伙伴"
 
-#: src/components/modals/components/PlutoniumContent.tsx:165
+#: src/components/modals/components/PlutoniumContent.tsx:146
 #: src/components/modals/PremiumModal.tsx:34
 #: src/components/modals/utils/SettingsConstants.tsx:124
-#: src/components/popouts/UserProfileBadges.tsx:121
+#: src/components/popouts/UserProfileBadges.tsx:107
 msgid "Fluxer Plutonium"
 msgstr "Fluxer Plutonium"
 
-#: src/components/popouts/UserProfileBadges.tsx:85
+#: src/components/popouts/UserProfileBadges.tsx:71
 msgid "Fluxer Staff"
 msgstr "Fluxer员工"
 
@@ -10034,7 +10039,7 @@ msgstr "字体"
 msgid "Food & Drink"
 msgstr "美食与饮品"
 
-#: src/components/modals/AddGuildModal.tsx:172
+#: src/components/modals/AddGuildModal.tsx:173
 msgid "Foodie Friends"
 msgstr "吃货朋友"
 
@@ -10248,7 +10253,7 @@ msgstr "帧率超过 30 帧每秒需要 Plutonium"
 msgid "France"
 msgstr "法国"
 
-#: src/components/modals/components/FeatureComparisonTable.tsx:124
+#: src/components/modals/components/FeatureComparisonTable.tsx:143
 msgid "Free"
 msgstr "免费"
 
@@ -10259,11 +10264,6 @@ msgstr "免费用户（无购买记录）"
 #: src/components/modals/tabs/developer_options_tab/PremiumScenarioOptions.tsx:53
 msgid "Free User (With Purchase History)"
 msgstr "免费用户（有购买记录）"
-
-#: src/components/modals/components/PlutoniumContent.tsx:146
-#: src/components/modals/components/PlutoniumContent.tsx:243
-msgid "Free vs Plutonium"
-msgstr "免费版 vs Plutonium"
 
 #: src/components/modals/tabs/VideoTab.tsx:237
 msgid "Freezes your preview while Fluxer is in the background to save resources."
@@ -10336,7 +10336,7 @@ msgstr "好友"
 msgid "Friends + Custom"
 msgstr "好友 + 自定义"
 
-#: src/components/modals/AddGuildModal.tsx:184
+#: src/components/modals/AddGuildModal.tsx:185
 msgid "Friends Forever"
 msgstr "永远的朋友"
 
@@ -10405,7 +10405,7 @@ msgstr "法定全名"
 msgid "Game controller"
 msgstr "游戏控制器"
 
-#: src/components/modals/AddGuildModal.tsx:166
+#: src/components/modals/AddGuildModal.tsx:167
 msgid "Game Night"
 msgstr "游戏之夜"
 
@@ -10413,7 +10413,7 @@ msgstr "游戏之夜"
 msgid "Gaming"
 msgstr "游戏"
 
-#: src/components/modals/AddGuildModal.tsx:180
+#: src/components/modals/AddGuildModal.tsx:181
 msgid "Gaming Community"
 msgstr "游戏社区"
 
@@ -10430,11 +10430,11 @@ msgstr "需要网关连接"
 msgid "gdpr"
 msgstr "GDPR"
 
-#: src/components/modals/channel_tabs/ChannelOverviewTab.tsx:480
+#: src/components/modals/channel_tabs/ChannelOverviewTab.tsx:519
 msgid "general"
 msgstr "常规"
 
-#: src/components/modals/channel_tabs/ChannelOverviewTab.tsx:468
+#: src/components/modals/channel_tabs/ChannelOverviewTab.tsx:507
 #: src/components/modals/tabs/developer_options_tab/index.tsx:45
 #: src/components/modals/tabs/developer_options_tab/Inline.tsx:45
 #: src/components/modals/utils/ChannelSettingsConstants.tsx:56
@@ -10553,7 +10553,7 @@ msgstr "GIF 预览"
 msgid "GIFs"
 msgstr "GIFs"
 
-#: src/components/modals/components/plutonium/SubscriptionCard.tsx:133
+#: src/components/modals/components/plutonium/SubscriptionCard.tsx:122
 #: src/components/modals/GiftAcceptModal.tsx:211
 msgid "Gift"
 msgstr "礼物"
@@ -10759,7 +10759,7 @@ msgstr "懂了"
 msgid "gpu"
 msgstr "图形处理单元"
 
-#: src/components/modals/components/plutonium/SubscriptionCard.tsx:127
+#: src/components/modals/components/plutonium/SubscriptionCard.tsx:116
 msgid "Grace Period"
 msgstr "宽限期"
 
@@ -11076,6 +11076,7 @@ msgstr "隐藏"
 #: src/components/modals/HideOwnCameraConfirmModal.tsx:66
 #: src/components/modals/HideOwnScreenShareConfirmModal.tsx:66
 #: src/components/modals/tabs/account_security_tab/AccountTab.tsx:76
+#: src/components/modals/tabs/account_security_tab/SecurityTab.tsx:370
 msgid "Hide"
 msgstr "隐藏"
 
@@ -11221,7 +11222,7 @@ msgstr "高动态范围显示模式"
 msgid "High quality, requires fast connection"
 msgstr "高质量，需要快速连接"
 
-#: src/components/modals/channel_tabs/ChannelOverviewTab.tsx:661
+#: src/components/modals/channel_tabs/ChannelOverviewTab.tsx:700
 msgid "Higher bitrate = better quality and higher bandwidth usage."
 msgstr "更高的比特率 = 更好的质量和更高的带宽使用。"
 
@@ -11237,7 +11238,7 @@ msgstr "提示"
 msgid "Hit 88mph"
 msgstr "达到 88 英里/小时"
 
-#: src/components/modals/AddGuildModal.tsx:155
+#: src/components/modals/AddGuildModal.tsx:156
 msgid "Hobby Haven"
 msgstr "爱好天堂"
 
@@ -11338,7 +11339,7 @@ msgstr "这个是如何工作的"
 msgid "HTML / XML"
 msgstr "HTML / XML"
 
-#: src/components/modals/channel_tabs/ChannelOverviewTab.tsx:492
+#: src/components/modals/channel_tabs/ChannelOverviewTab.tsx:531
 #: src/components/modals/ChannelCreateModal.tsx:92
 msgid "https://example.com"
 msgstr "https://example.com"
@@ -11394,7 +11395,7 @@ msgstr "我明白了"
 msgid "Icon"
 msgstr "图标"
 
-#: src/components/modals/AddGuildModal.tsx:214
+#: src/components/modals/AddGuildModal.tsx:215
 #: src/components/modals/EditGroupBottomSheet.tsx:71
 #: src/components/modals/EditGroupModal.tsx:64
 msgid "Icon file is too large. Please choose a file smaller than 10MB."
@@ -11797,8 +11798,8 @@ msgstr "输入与文本"
 msgid "Inputs with Icons"
 msgstr "带图标的输入项"
 
-#: src/components/modals/channel_tabs/ChannelOverviewTab.tsx:547
-#: src/components/modals/channel_tabs/ChannelOverviewTab.tsx:580
+#: src/components/modals/channel_tabs/ChannelOverviewTab.tsx:586
+#: src/components/modals/channel_tabs/ChannelOverviewTab.tsx:619
 msgid "Insert emoji"
 msgstr "插入表情符号"
 
@@ -11871,7 +11872,7 @@ msgstr "无效"
 msgid "Invalid audio file"
 msgstr "无效的音频文件"
 
-#: src/components/pages/OAuthAuthorizePage.tsx:536
+#: src/components/pages/OAuthAuthorizePage.tsx:526
 msgid "Invalid authorization request"
 msgstr "无效的授权请求"
 
@@ -11894,7 +11895,7 @@ msgstr "无效或已过期的代码"
 msgid "Invalid or expired code. Please try again."
 msgstr "代码无效或已过期。请重试。"
 
-#: src/components/pages/OAuthAuthorizePage.tsx:511
+#: src/components/pages/OAuthAuthorizePage.tsx:501
 msgid "Invalid redirect_uri"
 msgstr "无效的redirect_uri"
 
@@ -11969,7 +11970,7 @@ msgstr "邀请好友加入{0}"
 msgid "Invite link"
 msgstr "邀请链接"
 
-#: src/components/modals/AddGuildModal.tsx:436
+#: src/components/modals/AddGuildModal.tsx:438
 msgid "Invite Link"
 msgstr "邀请链接"
 
@@ -12101,7 +12102,7 @@ msgstr "该社区目前禁用了邀请功能。"
 msgid "Invites are currently disabled in this community by an admin. While this invite can be created, it cannot be accepted until invites are re-enabled."
 msgstr "管理员已在该社区禁用邀请功能。虽然可以创建此邀请，但在重新启用邀请功能前无法接受。"
 
-#: src/components/layout/guild_list/GuildListItem.tsx:493
+#: src/components/layout/guild_list/GuildListItem.tsx:492
 msgid "Invites are currently paused in this community"
 msgstr "该社区目前已暂停邀请功能"
 
@@ -12143,7 +12144,7 @@ msgstr "IP地址已授权"
 msgid "Ireland"
 msgstr "爱尔兰"
 
-#: src/components/modals/tabs/AccountSecurityTab.tsx:109
+#: src/components/modals/tabs/AccountSecurityTab.tsx:112
 msgid "Irreversible and destructive actions"
 msgstr "不可逆且破坏性的操作"
 
@@ -12185,7 +12186,7 @@ msgstr "抖动"
 msgid "join"
 msgstr "加入"
 
-#: src/components/modals/AddGuildModal.tsx:84
+#: src/components/modals/AddGuildModal.tsx:85
 msgid "Join a Community"
 msgstr "加入社区"
 
@@ -12205,16 +12206,15 @@ msgstr "加入通话"
 #: src/components/channel/InviteEmbed.tsx:284
 #: src/components/channel/InviteEmbed.tsx:475
 #: src/components/layout/guild_list/AddGuildButton.tsx:77
-#: src/components/modals/AddGuildModal.tsx:132
-#: src/components/modals/AddGuildModal.tsx:416
-#: src/components/modals/components/plutonium/SubscriptionCard.tsx:289
+#: src/components/modals/AddGuildModal.tsx:133
+#: src/components/modals/AddGuildModal.tsx:418
 #: src/components/modals/discovery/DiscoveryGuildCard.tsx:99
 #: src/components/modals/InviteAcceptModal.tsx:119
 #: src/components/modals/InviteAcceptModalPreview.tsx:111
 msgid "Join Community"
 msgstr "加入社区"
 
-#: src/components/modals/AddGuildModal.tsx:430
+#: src/components/modals/AddGuildModal.tsx:432
 msgid "Join community form"
 msgstr "加入社区表单"
 
@@ -12327,7 +12327,7 @@ msgstr "JPEG、PNG、WebP。最大 10MB。最小尺寸：{0}×{1}像素 (16:9)"
 msgid "JPEG, PNG, WebP. Max 10MB. Minimum: {0}×{1}px (16:9). Shown in invite embeds in chat."
 msgstr "JPEG、PNG、WebP。最大 10MB。最小尺寸：{0}×{1}像素 (16:9)。显示在聊天中的邀请嵌入内容里。"
 
-#: src/components/modals/AddGuildModal.tsx:338
+#: src/components/modals/AddGuildModal.tsx:340
 #: src/components/modals/EditGroupBottomSheet.tsx:223
 #: src/components/modals/EditGroupModal.tsx:204
 #: src/components/modals/guild_tabs/guild_overview_tab/fields/GuildIconUploadField.tsx:116
@@ -12717,7 +12717,7 @@ msgstr "让社区自我管理"
 msgid "Letters (a-z, A-Z), numbers (0-9), and underscores (_) only"
 msgstr "仅限字母 (a-z, A-Z)、数字 (0-9) 和下划线 (_)"
 
-#: src/components/modals/components/plutonium/SubscriptionCard.tsx:131
+#: src/components/modals/components/plutonium/SubscriptionCard.tsx:120
 #: src/components/modals/tabs/developer_options_tab/AccountPremiumTab.tsx:52
 #: src/components/modals/tabs/developer_options_tab/MockingTab.tsx:317
 msgid "Lifetime"
@@ -12899,7 +12899,7 @@ msgstr "加载中"
 msgid "Loading bans..."
 msgstr "加载封禁列表..."
 
-#: src/components/pages/OAuthAuthorizePage.tsx:877
+#: src/components/pages/OAuthAuthorizePage.tsx:846
 msgid "Loading communities..."
 msgstr "加载社区..."
 
@@ -13197,7 +13197,7 @@ msgid "Manage Roles"
 msgstr "管理角色"
 
 #: src/components/layout/app_layout/nagbars/PremiumGracePeriodNagbar.tsx:79
-#: src/components/modals/components/plutonium/SubscriptionCard.tsx:271
+#: src/components/modals/components/plutonium/SubscriptionCard.tsx:260
 msgid "Manage Subscription"
 msgstr "管理订阅"
 
@@ -13214,7 +13214,7 @@ msgstr "管理 Webhook"
 msgid "Manage your applications and bots."
 msgstr "管理您的应用和机器人。"
 
-#: src/components/modals/tabs/AccountSecurityTab.tsx:78
+#: src/components/modals/tabs/AccountSecurityTab.tsx:79
 msgid "Manage your email, password, and account settings"
 msgstr "管理您的电子邮件、密码和账户设置"
 
@@ -13222,7 +13222,7 @@ msgstr "管理您的电子邮件、密码和账户设置"
 msgid "Manage your gifts"
 msgstr "管理你的礼物"
 
-#: src/components/modals/tabs/account_security_tab/SecurityTab.tsx:340
+#: src/components/modals/tabs/account_security_tab/SecurityTab.tsx:353
 msgid "Manage your phone number for SMS two-factor authentication"
 msgstr "管理用于短信双重验证的电话号码"
 
@@ -13385,7 +13385,7 @@ msgstr "以最小间距最大化可见消息。"
 msgid "Maximum 256 characters"
 msgstr "最多256个字符"
 
-#: src/components/modals/channel_tabs/ChannelOverviewTab.tsx:694
+#: src/components/modals/channel_tabs/ChannelOverviewTab.tsx:733
 msgid "Maximum members who can join at once. 0 means unlimited."
 msgstr "可同时加入的最大成员数。0表示无限制。"
 
@@ -13579,7 +13579,7 @@ msgstr "成员在 {days} 天内不活跃将被清理。"
 msgid "Members list unavailable at this screen width"
 msgstr "当前屏幕宽度下无法显示成员列表"
 
-#: src/components/modals/channel_tabs/ChannelOverviewTab.tsx:617
+#: src/components/modals/channel_tabs/ChannelOverviewTab.tsx:656
 msgid "Members must wait between messages."
 msgstr "成员发送消息之间需要等待。"
 
@@ -14164,11 +14164,11 @@ msgstr "已将角色移至位置 {0}。"
 msgid "Moved to channel {0}."
 msgstr "已移至频道 {0}。"
 
-#: src/components/modals/AddGuildModal.tsx:174
+#: src/components/modals/AddGuildModal.tsx:175
 msgid "Movie Club"
 msgstr "电影俱乐部"
 
-#: src/components/modals/AddGuildModal.tsx:161
+#: src/components/modals/AddGuildModal.tsx:162
 msgid "Movie Night Crew"
 msgstr "电影之夜小队"
 
@@ -14188,7 +14188,7 @@ msgstr "多语言内容"
 msgid "Music"
 msgstr "音乐"
 
-#: src/components/modals/AddGuildModal.tsx:170
+#: src/components/modals/AddGuildModal.tsx:171
 msgid "Music Lovers"
 msgstr "音乐爱好者"
 
@@ -14316,7 +14316,7 @@ msgstr "静音流音频"
 msgid "muted"
 msgstr "静音"
 
-#: src/components/layout/guild_list/GuildListItem.tsx:453
+#: src/components/layout/guild_list/GuildListItem.tsx:452
 #: src/components/layout/VoiceStateIcons.tsx:49
 #: src/components/voice/VoiceParticipantTile.tsx:1457
 #: src/utils/ContextMenuUtils.tsx:165
@@ -14329,7 +14329,7 @@ msgstr "静音频道"
 
 #. placeholder {0}: DateUtils.getFormattedDateTime(new Date(muteConfig.end_time))
 #. placeholder {0}: getFormattedDateTime(new Date(muteConfig.end_time))
-#: src/components/layout/guild_list/GuildListItem.tsx:451
+#: src/components/layout/guild_list/GuildListItem.tsx:450
 #: src/utils/ContextMenuUtils.tsx:163
 msgid "Muted until {0}"
 msgstr "静音至 {0}"
@@ -14371,7 +14371,7 @@ msgstr "我的超棒媒体"
 msgid "My awesome sticker"
 msgstr "我的超棒贴纸"
 
-#: src/components/modals/channel_tabs/ChannelOverviewTab.tsx:480
+#: src/components/modals/channel_tabs/ChannelOverviewTab.tsx:519
 msgid "My Category"
 msgstr "我的类别"
 
@@ -14509,7 +14509,7 @@ msgstr "导航"
 msgid "Need an account?"
 msgstr "需要账户吗？"
 
-#: src/components/modals/AddGuildModal.tsx:162
+#: src/components/modals/AddGuildModal.tsx:163
 msgid "Neighborhood Watch"
 msgstr "邻里守望"
 
@@ -14623,7 +14623,7 @@ msgid "Newest First"
 msgstr "最新优先"
 
 #: src/components/bottomsheets/ChannelSearchBottomSheet.tsx:394
-#: src/components/pages/OAuthAuthorizePage.tsx:931
+#: src/components/pages/OAuthAuthorizePage.tsx:900
 msgid "Next"
 msgstr "下一步"
 
@@ -14754,7 +14754,7 @@ msgstr "没有可用的频道"
 msgid "No channels found"
 msgstr "未找到频道"
 
-#: src/components/pages/OAuthAuthorizePage.tsx:893
+#: src/components/pages/OAuthAuthorizePage.tsx:862
 msgid "No communities available with <0>Manage Community</0> permissions."
 msgstr "没有具备<0>管理社区</0>权限的社区可用。"
 
@@ -14842,7 +14842,7 @@ msgstr "未创建邀请"
 msgid "No keybind set"
 msgstr "未设置按键绑定"
 
-#: src/components/modals/channel_tabs/ChannelOverviewTab.tsx:688
+#: src/components/modals/channel_tabs/ChannelOverviewTab.tsx:727
 #: src/components/modals/InviteModal.tsx:88
 msgid "No limit"
 msgstr "无限制"
@@ -14851,7 +14851,7 @@ msgstr "无限制"
 msgid "No Logs Yet"
 msgstr "还没有日志"
 
-#: src/components/pages/OAuthAuthorizePage.tsx:426
+#: src/components/pages/OAuthAuthorizePage.tsx:416
 msgid "No Manage Community permission"
 msgstr "没有管理社区权限"
 
@@ -14884,7 +14884,7 @@ msgstr "未找到共同好友。"
 msgid "No mutual groups found."
 msgstr "未找到共同群组。"
 
-#: src/components/modals/tabs/account_security_tab/SecurityTab.tsx:286
+#: src/components/modals/tabs/account_security_tab/SecurityTab.tsx:299
 msgid "No passkeys registered"
 msgstr "没有注册的通行密钥"
 
@@ -14986,7 +14986,7 @@ msgstr "没有搜索结果"
 msgid "No settings found"
 msgstr "未找到设置"
 
-#: src/components/pages/OAuthAuthorizePage.tsx:824
+#: src/components/pages/OAuthAuthorizePage.tsx:793
 msgid "No specific scopes requested."
 msgstr "未请求特定范围。"
 
@@ -15261,7 +15261,7 @@ msgid "Objects"
 msgstr "对象"
 
 #: src/components/channel/ReplyBar.tsx:112
-#: src/components/modals/channel_tabs/ChannelOverviewTab.tsx:160
+#: src/components/modals/channel_tabs/ChannelOverviewTab.tsx:173
 #: src/components/modals/guild_tabs/GuildModerationTab.tsx:243
 #: src/utils/modals/guild_tabs/GuildAuditLogTabUtils.tsx:64
 msgid "Off"
@@ -15499,7 +15499,7 @@ msgstr "打开颜色选择器"
 msgid "Open Community Notification Settings"
 msgstr "打开社区通知设置"
 
-#: src/components/modals/components/plutonium/SubscriptionCard.tsx:269
+#: src/components/modals/components/plutonium/SubscriptionCard.tsx:258
 msgid "Open Customer Portal"
 msgstr "打开客户门户"
 
@@ -15779,7 +15779,7 @@ msgstr "否则需要按住说话。"
 msgid "otp"
 msgstr "otp"
 
-#: src/components/modals/AddGuildModal.tsx:186
+#: src/components/modals/AddGuildModal.tsx:187
 msgid "Our Hangout"
 msgstr "我们的聊天室"
 
@@ -15909,7 +15909,7 @@ msgstr "包"
 msgid "Page {currentPage} of {totalPages}"
 msgstr "第{currentPage}页，共{totalPages}页"
 
-#: src/components/modals/channel_tabs/ChannelOverviewTab.tsx:671
+#: src/components/modals/channel_tabs/ChannelOverviewTab.tsx:710
 msgid "Participant Limit"
 msgstr "参与者限制"
 
@@ -15930,7 +15930,7 @@ msgstr "合作社区"
 msgid "Passkey Name"
 msgstr "通行密钥名称"
 
-#: src/components/modals/tabs/account_security_tab/SecurityTab.tsx:276
+#: src/components/modals/tabs/account_security_tab/SecurityTab.tsx:289
 msgid "Passkeys"
 msgstr "通行密钥"
 
@@ -16103,8 +16103,8 @@ msgid "permissions"
 msgstr "权限"
 
 #: src/components/modals/guild_tabs/GuildRolesTab.tsx:1086
-#: src/components/pages/OAuthAuthorizePage.tsx:584
-#: src/components/pages/OAuthAuthorizePage.tsx:720
+#: src/components/pages/OAuthAuthorizePage.tsx:574
+#: src/components/pages/OAuthAuthorizePage.tsx:700
 msgid "Permissions"
 msgstr "权限"
 
@@ -16148,8 +16148,8 @@ msgstr "电话"
 
 #: src/components/modals/PhoneAddModal.tsx:192
 #: src/components/modals/RequiredActionModal.tsx:616
-#: src/components/modals/tabs/account_security_tab/SecurityTab.tsx:339
-#: src/components/modals/tabs/account_security_tab/SecurityTab.tsx:345
+#: src/components/modals/tabs/account_security_tab/SecurityTab.tsx:352
+#: src/components/modals/tabs/account_security_tab/SecurityTab.tsx:358
 #: src/components/modals/utils/SettingsSearchIndex.tsx:115
 msgid "Phone Number"
 msgstr "电话号码"
@@ -16157,11 +16157,6 @@ msgstr "电话号码"
 #: src/components/modals/PhoneAddModal.tsx:133
 msgid "Phone number added"
 msgstr "电话号码已添加"
-
-#. placeholder {0}: user.phone
-#: src/components/modals/tabs/account_security_tab/SecurityTab.tsx:349
-msgid "Phone number added: {0}"
-msgstr "电话号码已添加：{0}"
 
 #: src/components/modals/RequiredActionModal.tsx:253
 msgid "Phone number is required"
@@ -16187,7 +16182,7 @@ msgstr "需要验证手机"
 msgid "photo"
 msgstr "照片"
 
-#: src/components/modals/AddGuildModal.tsx:169
+#: src/components/modals/AddGuildModal.tsx:170
 msgid "Photography Club"
 msgstr "摄影俱乐部"
 
@@ -16421,7 +16416,7 @@ msgstr "请稍后重试。"
 msgid "Please update Fluxer to view this message."
 msgstr "请更新Fluxer以查看此消息。"
 
-#: src/actions/InviteActionCreators.tsx:184
+#: src/actions/InviteActionCreators.tsx:207
 msgid "Please verify your account by setting an email and password before joining communities."
 msgstr "在加入社区前，请通过设置电子邮件和密码来验证你的账户。"
 
@@ -16447,7 +16442,7 @@ msgstr "钚"
 
 #: src/components/channel/direct_message/DMList.tsx:1326
 #: src/components/channel/direct_message/DMList.tsx:1405
-#: src/components/modals/components/FeatureComparisonTable.tsx:127
+#: src/components/modals/components/FeatureComparisonTable.tsx:146
 msgid "Plutonium"
 msgstr "Plutonium"
 
@@ -16459,7 +16454,7 @@ msgstr "Plutonium徽章隐私"
 msgid "Plutonium perks"
 msgstr "Plutonium特权"
 
-#: src/components/modals/components/plutonium/SubscriptionCard.tsx:121
+#: src/components/modals/components/plutonium/SubscriptionCard.tsx:110
 msgid "Plutonium Subscription"
 msgstr "Plutonium订阅"
 
@@ -16715,7 +16710,7 @@ msgstr "继续"
 msgid "Processing"
 msgstr "处理中"
 
-#: src/components/modals/AddGuildModal.tsx:163
+#: src/components/modals/AddGuildModal.tsx:164
 msgid "Professional Peers"
 msgstr "专业同行"
 
@@ -16776,7 +16771,7 @@ msgstr "个人资料已更新"
 msgid "progress"
 msgstr "进度"
 
-#: src/components/modals/AddGuildModal.tsx:159
+#: src/components/modals/AddGuildModal.tsx:160
 msgid "Project X"
 msgstr "项目X"
 
@@ -16789,7 +16784,7 @@ msgstr "代词"
 msgid "Pronouns"
 msgstr "代词"
 
-#: src/components/modals/tabs/AccountSecurityTab.tsx:91
+#: src/components/modals/tabs/AccountSecurityTab.tsx:92
 msgid "Protect your account with two-factor authentication and passkeys"
 msgstr "使用双重认证和通行密钥保护您的账户"
 
@@ -17014,7 +17009,7 @@ msgid "Reactions"
 msgstr "反应"
 
 #: src/components/layout/app_layout/nagbars/PremiumExpiredNagbar.tsx:75
-#: src/components/modals/components/plutonium/SubscriptionCard.tsx:267
+#: src/components/modals/components/plutonium/SubscriptionCard.tsx:256
 msgid "Reactivate"
 msgstr "重新激活"
 
@@ -17076,7 +17071,7 @@ msgstr "接收"
 msgid "Receive notifications when someone mentions you"
 msgstr "当有人提到你时接收通知"
 
-#: src/components/modals/tabs/account_security_tab/SecurityTab.tsx:407
+#: src/components/modals/tabs/account_security_tab/SecurityTab.tsx:431
 msgid "Receive verification codes via SMS as a backup authentication method"
 msgstr "通过短信接收验证码作为备用认证方式"
 
@@ -17141,7 +17136,7 @@ msgstr "兑换礼物"
 msgid "Redeem for Yourself"
 msgstr "为自己兑换"
 
-#: src/components/modals/components/plutonium/SubscriptionCard.tsx:245
+#: src/components/modals/components/plutonium/SubscriptionCard.tsx:234
 msgid "Redeem Gift Code"
 msgstr "兑换礼品码"
 
@@ -17233,7 +17228,7 @@ msgstr "重新生成将使当前令牌失效。更新任何使用旧值的代码
 msgid "Register"
 msgstr "注册"
 
-#: src/components/modals/tabs/account_security_tab/SecurityTab.tsx:282
+#: src/components/modals/tabs/account_security_tab/SecurityTab.tsx:295
 msgid "Registered Passkeys"
 msgstr "已注册的通行密钥"
 
@@ -17303,7 +17298,7 @@ msgstr "移除"
 #: src/components/modals/guild_tabs/guild_overview_tab/fields/GuildEmbedSplashUploadField.tsx:101
 #: src/components/modals/guild_tabs/guild_overview_tab/fields/GuildIconUploadField.tsx:107
 #: src/components/modals/guild_tabs/guild_overview_tab/fields/GuildInviteSplashUploadField.tsx:113
-#: src/components/modals/tabs/account_security_tab/SecurityTab.tsx:394
+#: src/components/modals/tabs/account_security_tab/SecurityTab.tsx:418
 #: src/components/modals/tabs/ExpressionPacksTab.tsx:96
 #: src/components/modals/tabs/ExpressionPacksTab.tsx:226
 #: src/components/modals/tabs/LinkedAccountsTab.tsx:191
@@ -17454,7 +17449,7 @@ msgstr "从收藏中移除"
 msgid "Remove from Group"
 msgstr "从群组中移除"
 
-#: src/components/modals/AddGuildModal.tsx:333
+#: src/components/modals/AddGuildModal.tsx:335
 #: src/components/modals/EditGroupBottomSheet.tsx:218
 #: src/components/modals/EditGroupModal.tsx:199
 msgid "Remove Icon"
@@ -17477,11 +17472,11 @@ msgstr "移除覆盖"
 msgid "Remove Pack"
 msgstr "移除包"
 
-#: src/components/modals/tabs/account_security_tab/SecurityTab.tsx:380
+#: src/components/modals/tabs/account_security_tab/SecurityTab.tsx:404
 msgid "Remove Phone"
 msgstr "移除手机"
 
-#: src/components/modals/tabs/account_security_tab/SecurityTab.tsx:363
+#: src/components/modals/tabs/account_security_tab/SecurityTab.tsx:387
 msgid "Remove Phone Number"
 msgstr "移除电话号码"
 
@@ -17623,7 +17618,7 @@ msgstr "移除所有频道中的ATTACH_FILES权限（隐藏上传按钮）"
 msgid "Removes SEND_MESSAGES permission in all channels (disables textarea and all buttons)"
 msgstr "移除所有频道中的SEND_MESSAGES权限（禁用文本区域和所有按钮）"
 
-#: src/components/pages/OAuthAuthorizePage.tsx:660
+#: src/components/pages/OAuthAuthorizePage.tsx:640
 msgid "Removing permissions could limit the bot's features."
 msgstr "移除权限可能会限制机器人的功能。"
 
@@ -17636,7 +17631,7 @@ msgstr "移除该包将从你的账户中卸载它。"
 msgid "Removing the timeout will allow <0>{0}</0> to send messages, react, and join voice channels again."
 msgstr "移除超时将允许<0>{0}</0>再次发送消息、回复和加入语音频道。"
 
-#: src/components/modals/tabs/account_security_tab/SecurityTab.tsx:322
+#: src/components/modals/tabs/account_security_tab/SecurityTab.tsx:335
 msgid "Rename"
 msgstr "重命名"
 
@@ -17695,7 +17690,7 @@ msgstr "已将社区重命名为 {0}。"
 msgid "Render all your messages as unknown message type"
 msgstr "将您所有的消息渲染为未知消息类型"
 
-#: src/components/modals/components/plutonium/SubscriptionCard.tsx:227
+#: src/components/modals/components/plutonium/SubscriptionCard.tsx:216
 msgid "Renews on <0>{renewalDate}</0>."
 msgstr "续期日期为 <0>{renewalDate}</0>。"
 
@@ -17813,7 +17808,7 @@ msgstr "请求数据导出"
 msgid "Request Export"
 msgstr "请求导出"
 
-#: src/components/pages/OAuthAuthorizePage.tsx:814
+#: src/components/pages/OAuthAuthorizePage.tsx:783
 msgid "Requested scopes"
 msgstr "请求的权限范围"
 
@@ -17841,7 +17836,7 @@ msgstr "需要 OAuth2 授权码模式"
 msgid "Require two-factor authentication for moderators before they can ban, kick, timeout, or remove messages."
 msgstr "要求管理员在禁言、踢出、超时或删除消息前进行双重验证。"
 
-#: src/components/pages/OAuthAuthorizePage.tsx:839
+#: src/components/pages/OAuthAuthorizePage.tsx:808
 msgid "Required"
 msgstr "必填"
 
@@ -17955,7 +17950,7 @@ msgstr "将所有覆盖重置为主题默认值"
 msgid "Reset app data"
 msgstr "重置应用数据"
 
-#: src/components/BootstrapErrorScreen.tsx:74
+#: src/components/BootstrapErrorScreen.tsx:75
 msgid "Reset App Data"
 msgstr "重置应用数据"
 
@@ -18038,8 +18033,8 @@ msgstr "恢复最大化"
 msgid "Restore window"
 msgstr "恢复窗口"
 
-#: src/components/modals/components/plutonium/SubscriptionCard.tsx:263
-#: src/components/modals/components/plutonium/SubscriptionCard.tsx:265
+#: src/components/modals/components/plutonium/SubscriptionCard.tsx:252
+#: src/components/modals/components/plutonium/SubscriptionCard.tsx:254
 msgid "Resubscribe"
 msgstr "重新订阅"
 
@@ -18077,6 +18072,7 @@ msgid "reveal"
 msgstr "显示"
 
 #: src/components/modals/tabs/account_security_tab/AccountTab.tsx:76
+#: src/components/modals/tabs/account_security_tab/SecurityTab.tsx:370
 msgid "Reveal"
 msgstr "显示"
 
@@ -18088,7 +18084,7 @@ msgstr "显示剧透"
 msgid "Review deletion"
 msgstr "审核删除"
 
-#: src/components/pages/OAuthAuthorizePage.tsx:749
+#: src/components/pages/OAuthAuthorizePage.tsx:718
 msgid "Review what this app is asking for before you continue."
 msgstr "在继续之前，请审核此应用请求的内容。"
 
@@ -18465,8 +18461,8 @@ msgid "Scope"
 msgstr "范围"
 
 #: src/components/modals/tabs/applications_tab/application_detail/OAuthBuilderSection.tsx:75
-#: src/components/pages/OAuthAuthorizePage.tsx:577
-#: src/components/pages/OAuthAuthorizePage.tsx:713
+#: src/components/pages/OAuthAuthorizePage.tsx:567
+#: src/components/pages/OAuthAuthorizePage.tsx:693
 msgid "Scopes"
 msgstr "范围"
 
@@ -18770,8 +18766,8 @@ msgstr "保护您的账户"
 msgid "security"
 msgstr "安全"
 
-#: src/components/modals/tabs/account_security_tab/Inline.tsx:81
-#: src/components/modals/tabs/AccountSecurityTab.tsx:90
+#: src/components/modals/tabs/account_security_tab/Inline.tsx:82
+#: src/components/modals/tabs/AccountSecurityTab.tsx:91
 #: src/components/modals/utils/SettingsConstants.tsx:298
 #: src/components/modals/utils/SettingsSectionRegistry.tsx:505
 msgid "Security"
@@ -18781,7 +18777,7 @@ msgstr "安全"
 msgid "Security & Login"
 msgstr "安全与登录"
 
-#: src/components/modals/tabs/account_security_tab/SecurityTab.tsx:203
+#: src/components/modals/tabs/account_security_tab/SecurityTab.tsx:216
 msgid "Security Features"
 msgstr "安全功能"
 
@@ -18832,7 +18828,7 @@ msgstr "选择一个频道或分类"
 msgid "Select a Community"
 msgstr "选择一个社区"
 
-#: src/components/pages/OAuthAuthorizePage.tsx:866
+#: src/components/pages/OAuthAuthorizePage.tsx:835
 msgid "Select a community where you have <0>Manage Community</0> permissions."
 msgstr "选择一个您拥有<0>管理社区</0>权限的社区。"
 
@@ -18864,7 +18860,7 @@ msgstr "选择一种验证方法。"
 msgid "Select a violation category."
 msgstr "选择一个违规类别。"
 
-#: src/components/modals/channel_tabs/ChannelOverviewTab.tsx:729
+#: src/components/modals/channel_tabs/ChannelOverviewTab.tsx:768
 msgid "Select a voice region for this channel. Automatic uses the closest region."
 msgstr "为此频道选择一个语音区域。自动模式会使用最近的区域。"
 
@@ -19802,7 +19798,7 @@ msgstr "退出{displayName}"
 msgid "Signal strength loading"
 msgstr "信号强度加载中"
 
-#: src/components/pages/OAuthAuthorizePage.tsx:788
+#: src/components/pages/OAuthAuthorizePage.tsx:757
 msgid "Signed in as"
 msgstr "已登录为"
 
@@ -19936,7 +19932,7 @@ msgid "Slower"
 msgstr "更慢"
 
 #: src/components/channel/SlowmodeIndicator.tsx:64
-#: src/components/modals/channel_tabs/ChannelOverviewTab.tsx:616
+#: src/components/modals/channel_tabs/ChannelOverviewTab.tsx:655
 #: src/components/modals/tabs/developer_options_tab/MockingTab.tsx:117
 msgid "Slowmode"
 msgstr "慢速模式"
@@ -19990,11 +19986,11 @@ msgstr "较小的媒体尺寸"
 msgid "sms"
 msgstr "短信"
 
-#: src/components/modals/tabs/account_security_tab/SecurityTab.tsx:412
+#: src/components/modals/tabs/account_security_tab/SecurityTab.tsx:436
 msgid "SMS Backup"
 msgstr "短信备份"
 
-#: src/components/modals/tabs/account_security_tab/SecurityTab.tsx:432
+#: src/components/modals/tabs/account_security_tab/SecurityTab.tsx:456
 msgid "SMS backup is disabled for partners"
 msgstr "合作伙伴的短信备份已禁用"
 
@@ -20007,15 +20003,15 @@ msgstr "短信验证码"
 msgid "SMS Code"
 msgstr "短信验证码"
 
-#: src/components/modals/tabs/account_security_tab/SecurityTab.tsx:406
+#: src/components/modals/tabs/account_security_tab/SecurityTab.tsx:430
 msgid "SMS Two-Factor Authentication"
 msgstr "短信双重认证"
 
-#: src/components/modals/tabs/account_security_tab/SecurityTab.tsx:151
+#: src/components/modals/tabs/account_security_tab/SecurityTab.tsx:164
 msgid "SMS two-factor authentication adds an additional layer of security to your account by requiring a verification code sent to your phone number when signing in."
 msgstr "短信双重认证通过登录时要求发送到您手机号码的验证码，为您的账户增加了一层额外的安全性。"
 
-#: src/components/modals/tabs/account_security_tab/SecurityTab.tsx:416
+#: src/components/modals/tabs/account_security_tab/SecurityTab.tsx:440
 msgid "SMS two-factor authentication is enabled"
 msgstr "短信双重认证已启用"
 
@@ -20291,7 +20287,7 @@ msgstr "剧透内容"
 msgid "spoilers"
 msgstr "剧透内容"
 
-#: src/components/modals/AddGuildModal.tsx:179
+#: src/components/modals/AddGuildModal.tsx:180
 msgid "Sports Fans"
 msgstr "体育迷"
 
@@ -20495,7 +20491,7 @@ msgstr "贴纸密度"
 msgid "Sticker pack"
 msgstr "贴纸包"
 
-#: src/actions/InviteActionCreators.tsx:291
+#: src/actions/InviteActionCreators.tsx:314
 msgid "Sticker pack creation limit reached"
 msgstr "已达到贴纸包创建上限"
 
@@ -20503,7 +20499,7 @@ msgstr "已达到贴纸包创建上限"
 msgid "Sticker Pack Invite"
 msgstr "贴纸包邀请"
 
-#: src/actions/InviteActionCreators.tsx:277
+#: src/actions/InviteActionCreators.tsx:300
 msgid "Sticker pack limit reached"
 msgstr "已达到贴纸包上限"
 
@@ -20634,15 +20630,15 @@ msgstr "正在直播"
 msgid "Streaming"
 msgstr "正在直播"
 
-#: src/components/modals/AddGuildModal.tsx:148
+#: src/components/modals/AddGuildModal.tsx:149
 msgid "Study Buddies United"
 msgstr "学习伙伴联盟"
 
-#: src/components/modals/AddGuildModal.tsx:181
+#: src/components/modals/AddGuildModal.tsx:182
 msgid "Study Group"
 msgstr "学习小组"
 
-#: src/components/modals/AddGuildModal.tsx:167
+#: src/components/modals/AddGuildModal.tsx:168
 msgid "Study Hall"
 msgstr "自习室"
 
@@ -20732,7 +20728,7 @@ msgstr "建议"
 msgid "Summary"
 msgstr "摘要"
 
-#: src/components/modals/AddGuildModal.tsx:164
+#: src/components/modals/AddGuildModal.tsx:165
 msgid "Support Circle"
 msgstr "支持圈"
 
@@ -20793,7 +20789,7 @@ msgstr "瑞典语"
 msgid "switch"
 msgstr "切换"
 
-#: src/components/pages/OAuthAuthorizePage.tsx:801
+#: src/components/pages/OAuthAuthorizePage.tsx:770
 msgid "Switch account"
 msgstr "切换账户"
 
@@ -20957,7 +20953,7 @@ msgstr "标签 ({0}/10)"
 msgid "Tap to add a note"
 msgstr "点击添加备注"
 
-#: src/components/pages/OAuthAuthorizePage.tsx:766
+#: src/components/pages/OAuthAuthorizePage.tsx:735
 msgid "Target community"
 msgstr "目标社区"
 
@@ -20966,7 +20962,7 @@ msgstr "目标社区"
 msgid "Targeted attacks, threats, or sustained harassment"
 msgstr "针对性攻击、威胁或持续骚扰"
 
-#: src/components/modals/AddGuildModal.tsx:157
+#: src/components/modals/AddGuildModal.tsx:158
 msgid "Team Alpha"
 msgstr "Alpha 团队"
 
@@ -21096,7 +21092,7 @@ msgstr "这看起来不是一个有效的颜色。请尝试十六进制、rgb()�
 msgid "That doesn't look like a valid URL."
 msgstr "这看起来不是一个有效的 URL。"
 
-#: src/components/modals/AddGuildModal.tsx:264
+#: src/components/modals/AddGuildModal.tsx:265
 #: src/components/modals/EditGroupBottomSheet.tsx:123
 #: src/components/modals/EditGroupModal.tsx:116
 #: src/components/modals/guild_tabs/guild_overview_tab/hooks/useGuildImageAssetField.tsx:203
@@ -21111,7 +21107,7 @@ msgid "That message didn't delete"
 msgstr "该消息未能删除"
 
 #. placeholder {0}: invite.pack.name
-#: src/actions/InviteActionCreators.tsx:104
+#: src/actions/InviteActionCreators.tsx:123
 msgid "The {packLabel} {0} has been installed."
 msgstr "{packLabel} {0} 已安装。"
 
@@ -21124,11 +21120,11 @@ msgid "The app has crashed. Checking for updates that might fix this issue..."
 msgstr "应用程序已崩溃。正在检查可能修复此问题的更新..."
 
 #. placeholder {0}: successState.guildName
-#: src/components/pages/OAuthAuthorizePage.tsx:554
+#: src/components/pages/OAuthAuthorizePage.tsx:544
 msgid "The bot has been added to <0>{0}</0>."
 msgstr "机器人已添加到 <0>{0}</0>。"
 
-#: src/components/pages/OAuthAuthorizePage.tsx:558
+#: src/components/pages/OAuthAuthorizePage.tsx:548
 msgid "The bot has been added."
 msgstr "机器人已添加。"
 
@@ -21161,7 +21157,7 @@ msgstr "FluxerTag <0>{fluxerTag}</0> 已被占用。继续将自动重新生成�
 msgid "The job starts 24 hours after you confirm and can be canceled or restarted anytime"
 msgstr "任务将在你确认后24小时开始，可随时取消或重新启动"
 
-#: src/components/modals/AddGuildModal.tsx:147
+#: src/components/modals/AddGuildModal.tsx:148
 msgid "The Midnight Gamers"
 msgstr "午夜玩家"
 
@@ -21182,7 +21178,7 @@ msgstr "提供的 redirect_uri 未为此应用程序注册。"
 msgid "The role <0>\"{roleName}\"</0> could not be deleted at this time. Please try again."
 msgstr "角色 <0>\"{roleName}\"</0> 目前无法删除。请重试。"
 
-#: src/components/modals/AddGuildModal.tsx:185
+#: src/components/modals/AddGuildModal.tsx:186
 msgid "The Squad"
 msgstr "小队"
 
@@ -21206,7 +21202,7 @@ msgstr "超时时间不能超过365天（31536000秒）。"
 msgid "The URL of the Fluxer instance you want to sign in to."
 msgstr "您要登录的 Fluxer 实例的 URL。"
 
-#: src/components/modals/channel_tabs/ChannelOverviewTab.tsx:496
+#: src/components/modals/channel_tabs/ChannelOverviewTab.tsx:535
 msgid "The URL this link channel points to."
 msgstr "此链接频道指向的URL。"
 
@@ -21336,7 +21332,7 @@ msgstr "此应用程序"
 msgid "This attachment has expired"
 msgstr "此附件已过期"
 
-#: src/components/pages/OAuthAuthorizePage.tsx:647
+#: src/components/pages/OAuthAuthorizePage.tsx:627
 msgid "This bot is requesting the Administrator permission. We do not recommend granting this to production apps unless you fully trust the developer. Consider asking them to request a reduced set of permissions. Close this page if you are unsure."
 msgstr "此机器人正在请求管理员权限。我们不建议将此权限授予生产应用程序，除非你完全信任开发者。考虑要求他们请求一组减少的权限。如果不确定，请关闭此页面。"
 
@@ -22055,7 +22051,7 @@ msgstr "顶部"
 msgid "Top Tooltip"
 msgstr "顶部工具提示"
 
-#: src/components/modals/channel_tabs/ChannelOverviewTab.tsx:519
+#: src/components/modals/channel_tabs/ChannelOverviewTab.tsx:558
 msgid "Topic"
 msgstr "主题"
 
@@ -22100,7 +22096,7 @@ msgstr "翻译"
 msgid "Travel & Places"
 msgstr "旅行与地点"
 
-#: src/components/modals/AddGuildModal.tsx:173
+#: src/components/modals/AddGuildModal.tsx:174
 msgid "Travel Buddies"
 msgstr "旅行伙伴"
 
@@ -22164,12 +22160,12 @@ msgstr "尝试不同的搜索词或筛选器"
 msgid "Try again"
 msgstr "重试"
 
-#: src/components/BootstrapErrorScreen.tsx:71
+#: src/components/BootstrapErrorScreen.tsx:72
 #: src/components/bottomsheets/ChannelSearchBottomSheet.tsx:317
 #: src/components/channel/ChannelSearchResults.tsx:694
 #: src/components/modals/channel_tabs/ChannelInvitesTab.tsx:231
 #: src/components/modals/channel_tabs/ChannelWebhooksTab.tsx:162
-#: src/components/NetworkErrorScreen.tsx:56
+#: src/components/NetworkErrorScreen.tsx:57
 #: src/components/pages/SsoCallbackPage.tsx:116
 msgid "Try Again"
 msgstr "重试"
@@ -22226,7 +22222,7 @@ msgstr "土耳其语"
 msgid "Turn Off All Device Cameras"
 msgstr "关闭所有设备摄像头"
 
-#: src/components/pages/OAuthAuthorizePage.tsx:817
+#: src/components/pages/OAuthAuthorizePage.tsx:786
 msgid "Turn off anything you're not comfortable with. Some features may stop working."
 msgstr "关闭任何您不习惯的功能。某些功能可能会停止工作。"
 
@@ -22260,7 +22256,7 @@ msgstr "关闭流"
 msgid "Turn On Camera"
 msgstr "开启摄像头"
 
-#: src/components/pages/OAuthAuthorizePage.tsx:852
+#: src/components/pages/OAuthAuthorizePage.tsx:821
 msgid "Turning off scopes may prevent the app from working correctly."
 msgstr "关闭权限范围可能导致应用无法正常工作。"
 
@@ -22272,11 +22268,11 @@ msgstr "关闭此功能仅会在您自己的视图中隐藏摄像头。通话中
 msgid "Turning this off only hides your screen share from your own view. Others in the call can still see your screen."
 msgstr "关闭此选项仅会隐藏您自己视图中的屏幕共享。通话中的其他人仍然可以看到您的屏幕。"
 
-#: src/components/modals/channel_tabs/ChannelOverviewTab.tsx:471
+#: src/components/modals/channel_tabs/ChannelOverviewTab.tsx:510
 msgid "Tweak this category's basics."
 msgstr "调整此类别的基础设置。"
 
-#: src/components/modals/channel_tabs/ChannelOverviewTab.tsx:471
+#: src/components/modals/channel_tabs/ChannelOverviewTab.tsx:510
 msgid "Tweak this channel's basics."
 msgstr "调整此频道的基础设置。"
 
@@ -22299,7 +22295,7 @@ msgstr "双因素"
 msgid "Two-factor authentication"
 msgstr "双重认证"
 
-#: src/components/modals/tabs/account_security_tab/SecurityTab.tsx:218
+#: src/components/modals/tabs/account_security_tab/SecurityTab.tsx:231
 #: src/components/modals/utils/SettingsSearchIndex.tsx:123
 msgid "Two-Factor Authentication"
 msgstr "双重认证"
@@ -22312,7 +22308,7 @@ msgstr "双重认证已禁用"
 msgid "Two-factor authentication enabled"
 msgstr "双重认证已启用"
 
-#: src/components/modals/tabs/account_security_tab/SecurityTab.tsx:228
+#: src/components/modals/tabs/account_security_tab/SecurityTab.tsx:241
 msgid "Two-factor authentication is enabled"
 msgstr "双重认证已启用"
 
@@ -22405,11 +22401,11 @@ msgstr "乌克兰语"
 msgid "Ultra (1440p)"
 msgstr "超清（1440p）"
 
-#: src/actions/InviteActionCreators.tsx:323
+#: src/actions/InviteActionCreators.tsx:346
 msgid "Unable to install emoji pack"
 msgstr "无法安装表情包"
 
-#: src/actions/InviteActionCreators.tsx:324
+#: src/actions/InviteActionCreators.tsx:347
 msgid "Unable to install sticker pack"
 msgstr "无法安装贴纸包"
 
@@ -22761,7 +22757,7 @@ msgstr "使用Plutonium解锁高清屏幕共享"
 msgid "Unlock HD Video with Plutonium"
 msgstr "使用Plutonium解锁高清视频"
 
-#: src/components/modals/components/PlutoniumContent.tsx:168
+#: src/components/modals/components/PlutoniumContent.tsx:149
 msgid "Unlock higher limits and exclusive features while supporting an independent communication platform."
 msgstr "解锁更高限制和独家功能，同时支持一个独立的通信平台。"
 
@@ -23161,7 +23157,7 @@ msgstr "上传入场音效"
 msgid "Upload File"
 msgstr "上传文件"
 
-#: src/components/modals/AddGuildModal.tsx:329
+#: src/components/modals/AddGuildModal.tsx:331
 #: src/components/modals/EditGroupBottomSheet.tsx:214
 #: src/components/modals/EditGroupModal.tsx:195
 #: src/components/modals/guild_tabs/guild_overview_tab/fields/GuildIconUploadField.tsx:97
@@ -23209,7 +23205,7 @@ msgstr "正在上传 {emojiText}。这可能需要一点时间。"
 msgid "Uploading Emojis"
 msgstr "正在上传表情"
 
-#: src/components/modals/channel_tabs/ChannelOverviewTab.tsx:491
+#: src/components/modals/channel_tabs/ChannelOverviewTab.tsx:530
 #: src/components/modals/ChannelCreateModal.tsx:90
 msgid "URL"
 msgstr "URL"
@@ -23231,7 +23227,7 @@ msgstr "网址警告"
 msgid "URLs to download any attachments from your messages"
 msgstr "用于下载您消息中任何附件的URL"
 
-#: src/components/modals/channel_tabs/ChannelOverviewTab.tsx:183
+#: src/components/modals/channel_tabs/ChannelOverviewTab.tsx:196
 #: src/components/voice/VoiceRegionSelector.tsx:75
 #: src/components/voice/VoiceSettingsMenus.tsx:433
 msgid "US East"
@@ -23254,7 +23250,7 @@ msgstr "使用实际"
 msgid "Use actual premium type"
 msgstr "使用实际的高级类型"
 
-#: src/components/modals/tabs/account_security_tab/SecurityTab.tsx:230
+#: src/components/modals/tabs/account_security_tab/SecurityTab.tsx:243
 msgid "Use an authenticator app to generate codes for two-factor authentication"
 msgstr "使用身份验证器应用生成双因素认证代码"
 
@@ -23323,7 +23319,7 @@ msgstr "使用全球个人资料"
 msgid "Use light theme"
 msgstr "使用浅色主题"
 
-#: src/components/modals/tabs/account_security_tab/SecurityTab.tsx:277
+#: src/components/modals/tabs/account_security_tab/SecurityTab.tsx:290
 msgid "Use passkeys for passwordless sign-in and two-factor authentication"
 msgstr "使用通行密钥进行无密码登录和双因素认证"
 
@@ -23864,7 +23860,7 @@ msgstr "查看和管理被封禁的用户。"
 msgid "View and manage every webhook configured across your community."
 msgstr "查看和管理您社区中配置的所有Webhook。"
 
-#: src/components/modals/tabs/account_security_tab/SecurityTab.tsx:260
+#: src/components/modals/tabs/account_security_tab/SecurityTab.tsx:273
 msgid "View and manage your backup codes for account recovery"
 msgstr "查看和管理您的账户恢复备份代码"
 
@@ -23889,7 +23885,7 @@ msgstr "查看通话控制"
 msgid "View Channel"
 msgstr "查看频道"
 
-#: src/components/modals/tabs/account_security_tab/SecurityTab.tsx:268
+#: src/components/modals/tabs/account_security_tab/SecurityTab.tsx:281
 msgid "View Codes"
 msgstr "查看代码"
 
@@ -24004,7 +24000,8 @@ msgstr "VIP语音"
 msgid "visibility"
 msgstr "可见性"
 
-#: src/components/modals/components/plutonium/SubscriptionCard.tsx:121
+#: src/components/modals/components/FeatureComparisonTable.tsx:149
+#: src/components/modals/components/plutonium/SubscriptionCard.tsx:110
 #: src/utils/modals/guild_tabs/GuildAuditLogTabUtils.tsx:283
 msgid "Visionary"
 msgstr "Visionary"
@@ -24026,7 +24023,7 @@ msgid "Visionary Badge Override"
 msgstr "愿景徽章覆盖"
 
 #. placeholder {0}: profile.premiumLifetimeSequence
-#: src/components/popouts/UserProfileBadges.tsx:150
+#: src/components/popouts/UserProfileBadges.tsx:136
 msgid "Visionary ID #{0}"
 msgstr "愿景ID #{0}"
 
@@ -24175,7 +24172,7 @@ msgstr "语音消息播放器"
 msgid "Voice Mute"
 msgstr "语音静音"
 
-#: src/components/modals/channel_tabs/ChannelOverviewTab.tsx:640
+#: src/components/modals/channel_tabs/ChannelOverviewTab.tsx:679
 msgid "Voice Quality"
 msgstr "语音质量"
 
@@ -24184,7 +24181,7 @@ msgstr "语音质量"
 msgid "Voice recording is not supported in this browser."
 msgstr "此浏览器不支持语音录音。"
 
-#: src/components/modals/channel_tabs/ChannelOverviewTab.tsx:728
+#: src/components/modals/channel_tabs/ChannelOverviewTab.tsx:767
 #: src/components/voice/VoiceSettingsMenus.tsx:483
 msgid "Voice Region"
 msgstr "语音区域"
@@ -24218,7 +24215,7 @@ msgstr "音量"
 msgid "Volume Control"
 msgstr "音量控制"
 
-#: src/components/modals/AddGuildModal.tsx:154
+#: src/components/modals/AddGuildModal.tsx:155
 msgid "Volunteer Heroes"
 msgstr "志愿者英雄"
 
@@ -24401,8 +24398,8 @@ msgid "We'll verify your new email with a one-time code."
 msgstr "我们将用一次性代码验证你的新电子邮件。"
 
 #: src/components/NetworkErrorScreen.tsx:39
-msgid "We're having trouble connecting to Fluxer's servers. This could be a temporary network issue or scheduled maintenance."
-msgstr "我们连接Fluxer服务器时遇到问题。这可能是临时网络问题或计划维护。"
+msgid "We're having trouble connecting to Echowire's servers. This could be a temporary network issue or scheduled maintenance."
+msgstr ""
 
 #: src/components/modals/tabs/DevicesTab.tsx:234
 msgid "We're having trouble connecting to the space-time continuum. Please check your connection and try again."
@@ -24488,7 +24485,7 @@ msgstr "Webhooks"
 msgid "Webhooks updated"
 msgstr "Webhooks已更新"
 
-#: src/components/modals/AddGuildModal.tsx:160
+#: src/components/modals/AddGuildModal.tsx:161
 msgid "Weekend Warriors"
 msgstr "周末战士"
 
@@ -24698,7 +24695,7 @@ msgstr "哇，这太沉重了。"
 msgid "Why are you reporting this?"
 msgstr "您为何要举报此内容？"
 
-#: src/components/pages/OAuthAuthorizePage.tsx:757
+#: src/components/pages/OAuthAuthorizePage.tsx:726
 msgid "Will send you back to"
 msgstr "将把您送回"
 
@@ -24718,7 +24715,7 @@ msgstr "使用 Plutonium，您可以使用动画头像和横幅（支持 GIF、A
 msgid "Withdraw"
 msgstr "撤回"
 
-#: src/components/modals/AddGuildModal.tsx:182
+#: src/components/modals/AddGuildModal.tsx:183
 msgid "Work Friends"
 msgstr "工作好友"
 
@@ -24893,7 +24890,7 @@ msgstr "您一次只能上传 1 个文件。请尝试上传更少的文件。"
 msgid "You can pin messages in this conversation for everyone to see."
 msgstr "你可以在此对话中置顶消息，让所有人都能看到。"
 
-#: src/components/modals/components/plutonium/SubscriptionCard.tsx:176
+#: src/components/modals/components/plutonium/SubscriptionCard.tsx:165
 msgid "You can redeem additional gift codes to <0>extend</0> your gift time."
 msgstr "您可以兑换额外的礼品码来 <0>延长</0> 您的礼品时间。"
 
@@ -24933,7 +24930,7 @@ msgstr "你不能与搜索结果中的反应互动，因为这可能会扰乱时
 #: src/components/layout/ChannelItem.tsx:213
 #: src/components/layout/ChannelItem.tsx:400
 #: src/stores/voice/MediaEngineFacade.tsx:168
-#: src/stores/voice/MediaEngineFacade.tsx:828
+#: src/stores/voice/MediaEngineFacade.tsx:879
 msgid "You can't join while you're on timeout."
 msgstr "你在禁言期间无法加入。"
 
@@ -25023,11 +25020,11 @@ msgstr "你还没有任何自定义主题覆盖可以分享。"
 msgid "You don't have permission to connect to this voice channel."
 msgstr "你无权连接到此语音频道。"
 
-#: src/actions/InviteActionCreators.tsx:320
+#: src/actions/InviteActionCreators.tsx:343
 msgid "You don't have permission to install this emoji pack."
 msgstr "你无权安装此表情包。"
 
-#: src/actions/InviteActionCreators.tsx:321
+#: src/actions/InviteActionCreators.tsx:344
 msgid "You don't have permission to install this sticker pack."
 msgstr "你无权安装此贴纸包。"
 
@@ -25059,23 +25056,23 @@ msgstr "您有一个新的礼品码在等待您！"
 msgid "You have a new gift code waiting in your Gift Inventory."
 msgstr "您在礼品库存中有一个新的礼品码在等待。"
 
-#: src/components/modals/components/plutonium/SubscriptionCard.tsx:200
+#: src/components/modals/components/plutonium/SubscriptionCard.tsx:189
 msgid "You have all <0/> for <1>{monthlyPrice}/month</1>."
 msgstr "你拥有全部<0/>，每月仅需<1>{monthlyPrice}</1>。"
 
-#: src/components/modals/components/plutonium/SubscriptionCard.tsx:205
+#: src/components/modals/components/plutonium/SubscriptionCard.tsx:194
 msgid "You have all <0/> for <1>{yearlyPrice}/year</1>."
 msgstr "你拥有全部<0/>，每年仅需<1>{yearlyPrice}</1>。"
 
-#: src/components/modals/components/plutonium/SubscriptionCard.tsx:210
+#: src/components/modals/components/plutonium/SubscriptionCard.tsx:199
 msgid "You have all <0/> for your subscription period."
 msgstr "在您的订阅期内，您拥有所有<0/>。"
 
-#: src/components/modals/components/plutonium/SubscriptionCard.tsx:195
+#: src/components/modals/components/plutonium/SubscriptionCard.tsx:184
 msgid "You have all <0/> forever. No subscriptions, no renewals."
 msgstr "您永久拥有所有<0/>。无需订阅，无需续费。"
 
-#: src/components/modals/components/plutonium/SubscriptionCard.tsx:170
+#: src/components/modals/components/plutonium/SubscriptionCard.tsx:159
 msgid "You have all <0/> via a <1>gift subscription</1> until <2>{giftEndDate}</2>. It <3>won't renew</3>."
 msgstr "您通过<1>礼品订阅</1>拥有所有<0/>，有效期至<2>{giftEndDate}</2>。它<3>不会自动续订</3>。"
 
@@ -25083,35 +25080,35 @@ msgstr "您通过<1>礼品订阅</1>拥有所有<0/>，有效期至<2>{giftEndDa
 msgid "You have blocked {username}. Unblock them to send messages."
 msgstr "您已屏蔽{username}。取消屏蔽以发送消息。"
 
-#: src/actions/InviteActionCreators.tsx:264
+#: src/actions/InviteActionCreators.tsx:287
 msgid "You have created the maximum of {limit} emoji pack. Delete one to create another."
 msgstr "你已创建最大数量的 {limit} 个表情包。删除一个以创建另一个。"
 
-#: src/actions/InviteActionCreators.tsx:265
+#: src/actions/InviteActionCreators.tsx:288
 msgid "You have created the maximum of {limit} emoji packs. Delete one to create another."
 msgstr "你已创建最大数量的 {limit} 个表情包。删除一个以创建另一个。"
 
-#: src/actions/InviteActionCreators.tsx:296
+#: src/actions/InviteActionCreators.tsx:319
 msgid "You have created the maximum of {limit} sticker pack. Delete one to create another."
 msgstr "你已创建最大数量的 {limit} 个贴纸包。删除一个以创建另一个。"
 
-#: src/actions/InviteActionCreators.tsx:297
+#: src/actions/InviteActionCreators.tsx:320
 msgid "You have created the maximum of {limit} sticker packs. Delete one to create another."
 msgstr "你已创建最大数量的 {limit} 个贴纸包。删除一个以创建另一个。"
 
-#: src/actions/InviteActionCreators.tsx:250
+#: src/actions/InviteActionCreators.tsx:273
 msgid "You have installed the maximum of {limit} emoji pack. Remove one to install another."
 msgstr "你已安装最大数量的 {limit} 个表情包。移除一个以安装另一个。"
 
-#: src/actions/InviteActionCreators.tsx:251
+#: src/actions/InviteActionCreators.tsx:274
 msgid "You have installed the maximum of {limit} emoji packs. Remove one to install another."
 msgstr "你已安装最大数量的 {limit} 个表情包。移除一个以安装另一个。"
 
-#: src/actions/InviteActionCreators.tsx:282
+#: src/actions/InviteActionCreators.tsx:305
 msgid "You have installed the maximum of {limit} sticker pack. Remove one to install another."
 msgstr "你已安装最大数量的 {limit} 个贴纸包。移除一个以安装另一个。"
 
-#: src/actions/InviteActionCreators.tsx:283
+#: src/actions/InviteActionCreators.tsx:306
 msgid "You have installed the maximum of {limit} sticker packs. Remove one to install another."
 msgstr "你已安装最大数量的 {limit} 个贴纸包。移除一个以安装另一个。"
 
@@ -25119,19 +25116,19 @@ msgstr "你已安装最大数量的 {limit} 个贴纸包。移除一个以安装
 msgid "You have no friends yet"
 msgstr "您还没有好友"
 
-#: src/actions/InviteActionCreators.tsx:268
+#: src/actions/InviteActionCreators.tsx:291
 msgid "You have reached the limit for creating emoji packs. Delete one of your packs to create another."
 msgstr "您已达到创建表情包的数量上限。删除其中一个包以创建新的。"
 
-#: src/actions/InviteActionCreators.tsx:300
+#: src/actions/InviteActionCreators.tsx:323
 msgid "You have reached the limit for creating sticker packs. Delete one of your packs to create another."
 msgstr "您已达到创建贴纸包的数量上限。删除其中一个包以创建新的。"
 
-#: src/actions/InviteActionCreators.tsx:254
+#: src/actions/InviteActionCreators.tsx:277
 msgid "You have reached the limit for installing emoji packs. Remove one of your installed packs to install another."
 msgstr "您已达到安装表情包的数量上限。移除其中一个已安装的包以安装新的。"
 
-#: src/actions/InviteActionCreators.tsx:286
+#: src/actions/InviteActionCreators.tsx:309
 msgid "You have reached the limit for installing sticker packs. Remove one of your installed packs to install another."
 msgstr "您已达到安装贴纸包的数量上限。移除其中一个已安装的包以安装新的。"
 
@@ -25241,8 +25238,8 @@ msgstr "您需要认领账户才能在此社区发送消息。"
 msgid "You need to verify your email to send messages in this community."
 msgstr "您需要验证电子邮件才能在此社区发送消息。"
 
-#: src/components/pages/OAuthAuthorizePage.tsx:688
-#: src/components/pages/OAuthAuthorizePage.tsx:948
+#: src/components/pages/OAuthAuthorizePage.tsx:668
+#: src/components/pages/OAuthAuthorizePage.tsx:917
 msgid "You will be taken to <0><1>{redirectHostname}</1></0> after authorizing."
 msgstr "授权后，您将被重定向至<0><1>{redirectHostname}</1></0>。"
 
@@ -25260,7 +25257,7 @@ msgstr "您将不会收到桌面通知"
 msgid "You'll appear offline"
 msgstr "您将显示为离线"
 
-#: src/components/pages/OAuthAuthorizePage.tsx:906
+#: src/components/pages/OAuthAuthorizePage.tsx:875
 msgid "You'll configure which permissions the bot receives on the next screen."
 msgstr "您将在下一屏幕配置机器人获得的权限。"
 
@@ -25599,11 +25596,11 @@ msgstr "你的地区"
 msgid "Your stream is still being broadcast"
 msgstr "你的直播仍在进行中"
 
-#: src/components/modals/components/plutonium/SubscriptionCard.tsx:156
+#: src/components/modals/components/plutonium/SubscriptionCard.tsx:145
 msgid "Your subscription ended, but you still have all <0/> until <1>{graceDate}</1>. Resubscribe to keep them."
 msgstr "你的订阅已结束，但在<1>{graceDate}</1>之前你仍保留所有<0/>。重新订阅以继续保留。"
 
-#: src/components/modals/components/plutonium/SubscriptionCard.tsx:145
+#: src/components/modals/components/plutonium/SubscriptionCard.tsx:134
 msgid "Your subscription expired on <0>{expiredDate}</0>. You lost all <1/>. You can reactivate at any time."
 msgstr "你的订阅已于<0>{expiredDate}</0>过期。你已失去所有<1/>。你可以随时重新激活。"
 
@@ -25619,7 +25616,7 @@ msgstr "你的订阅已重新激活！"
 msgid "Your subscription has been set to cancel at the end of your billing period."
 msgstr "你的订阅已设置为在账单周期结束时取消。"
 
-#: src/components/modals/components/plutonium/SubscriptionCard.tsx:188
+#: src/components/modals/components/plutonium/SubscriptionCard.tsx:177
 msgid "Your subscription will cancel on <0>{cancelDate}</0>. You'll lose all <1/> after that date."
 msgstr "你的订阅将于<0>{cancelDate}</0>取消。之后你将失去所有<1/>。"
 

@@ -134,12 +134,12 @@ msgid "{0} of {totalAttachments}"
 msgstr "{0} af {totalAttachments}"
 
 #. placeholder {0}: passkeys.length
-#: src/components/modals/tabs/account_security_tab/SecurityTab.tsx:288
+#: src/components/modals/tabs/account_security_tab/SecurityTab.tsx:301
 msgid "{0} passkey registered (max 10)"
 msgstr "{0} adgangskoder registreret (maks 10)"
 
 #. placeholder {0}: passkeys.length
-#: src/components/modals/tabs/account_security_tab/SecurityTab.tsx:289
+#: src/components/modals/tabs/account_security_tab/SecurityTab.tsx:302
 msgid "{0} passkeys registered (max 10)"
 msgstr "{0} adgangskoder registreret (maks 10)"
 
@@ -449,7 +449,7 @@ msgstr "{baseDescription} Denne grænse er konfigureret af din instansadministra
 msgid "{baseDescription} With Plutonium, your per-file upload limit increases to {0}, plus animated avatars, longer messages, and many other premium features."
 msgstr "{baseDescription} Med Plutonium øges din uploadgrænse pr. fil til {0}, plus animerede avatarer, længere beskeder og mange andre premiumfunktioner."
 
-#: src/components/pages/OAuthAuthorizePage.tsx:743
+#: src/components/pages/OAuthAuthorizePage.tsx:712
 msgid "{clientLabel} wants to connect"
 msgstr "{clientLabel} vil oprette forbindelse"
 
@@ -492,7 +492,7 @@ msgstr "{currentCount} / {0}"
 msgid "{days} days"
 msgstr "{days} dage"
 
-#: src/components/layout/guild_list/GuildListDMItem.tsx:199
+#: src/components/layout/guild_list/GuildListDMItem.tsx:198
 msgid "{displayName} (selected)"
 msgstr "{displayName} (valgt)"
 
@@ -883,12 +883,12 @@ msgstr "{v} gave"
 msgid "{v} gifts"
 msgstr "{v} gaver"
 
-#: src/components/modals/channel_tabs/ChannelOverviewTab.tsx:655
-#: src/components/modals/channel_tabs/ChannelOverviewTab.tsx:656
+#: src/components/modals/channel_tabs/ChannelOverviewTab.tsx:694
+#: src/components/modals/channel_tabs/ChannelOverviewTab.tsx:695
 msgid "{value} kbps"
 msgstr "{value} kbps"
 
-#: src/components/modals/channel_tabs/ChannelOverviewTab.tsx:688
+#: src/components/modals/channel_tabs/ChannelOverviewTab.tsx:727
 msgid "{value} participants"
 msgstr "{value} deltagere"
 
@@ -1088,7 +1088,7 @@ msgstr "<0>Gendåvede</0> medlemmet."
 msgid "<0>Unmuted</0> the member."
 msgstr "<0>Gendæmpede</0> medlemmet."
 
-#: src/components/modals/tabs/account_security_tab/SecurityTab.tsx:373
+#: src/components/modals/tabs/account_security_tab/SecurityTab.tsx:397
 msgid "<0>Warning:</0> This will also disable SMS two-factor authentication."
 msgstr "<0>Advarsel:</0> Dette deaktiverer også SMS-tofaktor-godkendelse."
 
@@ -1103,7 +1103,7 @@ msgstr "1 dag"
 
 #: src/components/channel/CallMessage.tsx:70
 #: src/components/modals/BanMemberModal.tsx:56
-#: src/components/modals/channel_tabs/ChannelOverviewTab.tsx:171
+#: src/components/modals/channel_tabs/ChannelOverviewTab.tsx:184
 #: src/components/modals/InviteModal.tsx:77
 #: src/components/modals/InviteModal.tsx:201
 #: src/components/modals/PackInviteModal.tsx:48
@@ -1122,7 +1122,7 @@ msgstr "1 match"
 msgid "1 Member"
 msgstr "1 Medlem"
 
-#: src/components/modals/channel_tabs/ChannelOverviewTab.tsx:165
+#: src/components/modals/channel_tabs/ChannelOverviewTab.tsx:178
 #: src/components/modals/tabs/developer_options_tab/MockingTab.tsx:74
 #: src/utils/modals/guild_tabs/GuildOverviewTabUtils.tsx:61
 msgid "1 minute"
@@ -1192,13 +1192,13 @@ msgstr "1 års gave"
 msgid "1 Year of Plutonium"
 msgstr "1 år med Plutonium"
 
-#: src/components/modals/channel_tabs/ChannelOverviewTab.tsx:168
+#: src/components/modals/channel_tabs/ChannelOverviewTab.tsx:181
 #: src/components/modals/tabs/developer_options_tab/MockingTab.tsx:77
 #: src/components/modals/TimeoutMemberOptions.tsx:36
 msgid "10 minutes"
 msgstr "10 minutter"
 
-#: src/components/modals/channel_tabs/ChannelOverviewTab.tsx:162
+#: src/components/modals/channel_tabs/ChannelOverviewTab.tsx:175
 #: src/components/modals/tabs/developer_options_tab/MockingTab.tsx:72
 #: src/constants/TimeWindowPresets.tsx:55
 msgid "10 seconds"
@@ -1249,17 +1249,17 @@ msgstr "1440p"
 msgid "15 FPS"
 msgstr "15 FPS"
 
-#: src/components/modals/channel_tabs/ChannelOverviewTab.tsx:169
+#: src/components/modals/channel_tabs/ChannelOverviewTab.tsx:182
 #: src/constants/TimeWindowPresets.tsx:56
 #: src/utils/modals/guild_tabs/GuildOverviewTabUtils.tsx:63
 msgid "15 minutes"
 msgstr "15 minutter"
 
-#: src/components/modals/channel_tabs/ChannelOverviewTab.tsx:163
+#: src/components/modals/channel_tabs/ChannelOverviewTab.tsx:176
 msgid "15 seconds"
 msgstr "15 sekunder"
 
-#: src/components/modals/channel_tabs/ChannelOverviewTab.tsx:172
+#: src/components/modals/channel_tabs/ChannelOverviewTab.tsx:185
 msgid "2 hours"
 msgstr "2 timer"
 
@@ -1271,7 +1271,7 @@ msgstr "2 medlemmer (online)"
 msgid "2 members (typing)"
 msgstr "2 medlemmer (skriver)"
 
-#: src/components/modals/channel_tabs/ChannelOverviewTab.tsx:166
+#: src/components/modals/channel_tabs/ChannelOverviewTab.tsx:179
 #: src/components/modals/tabs/developer_options_tab/MockingTab.tsx:75
 msgid "2 minutes"
 msgstr "2 minutter"
@@ -1344,7 +1344,7 @@ msgstr "3 måneder"
 msgid "30 FPS"
 msgstr "30 FPS"
 
-#: src/components/modals/channel_tabs/ChannelOverviewTab.tsx:170
+#: src/components/modals/channel_tabs/ChannelOverviewTab.tsx:183
 #: src/components/modals/InviteModal.tsx:76
 #: src/components/modals/InviteModal.tsx:199
 #: src/components/modals/PackInviteModal.tsx:47
@@ -1353,7 +1353,7 @@ msgstr "30 FPS"
 msgid "30 minutes"
 msgstr "30 minutter"
 
-#: src/components/modals/channel_tabs/ChannelOverviewTab.tsx:164
+#: src/components/modals/channel_tabs/ChannelOverviewTab.tsx:177
 #: src/components/modals/tabs/developer_options_tab/MockingTab.tsx:73
 msgid "30 seconds"
 msgstr "30 sekunder"
@@ -1394,14 +1394,14 @@ msgstr "4K (2160p)"
 msgid "5 days"
 msgstr "5 dage"
 
-#: src/components/modals/channel_tabs/ChannelOverviewTab.tsx:167
+#: src/components/modals/channel_tabs/ChannelOverviewTab.tsx:180
 #: src/components/modals/tabs/developer_options_tab/MockingTab.tsx:76
 #: src/components/modals/TimeoutMemberOptions.tsx:35
 #: src/utils/modals/guild_tabs/GuildOverviewTabUtils.tsx:62
 msgid "5 minutes"
 msgstr "5 minutter"
 
-#: src/components/modals/channel_tabs/ChannelOverviewTab.tsx:161
+#: src/components/modals/channel_tabs/ChannelOverviewTab.tsx:174
 msgid "5 seconds"
 msgstr "5 sekunder"
 
@@ -1415,7 +1415,7 @@ msgstr "5 brug"
 msgid "50 uses"
 msgstr "50 brug"
 
-#: src/components/modals/channel_tabs/ChannelOverviewTab.tsx:173
+#: src/components/modals/channel_tabs/ChannelOverviewTab.tsx:186
 #: src/components/modals/InviteModal.tsx:78
 #: src/components/modals/InviteModal.tsx:203
 #: src/components/modals/PackInviteModal.tsx:49
@@ -1608,8 +1608,8 @@ msgstr "Tilgængelighed"
 msgid "account"
 msgstr "konto"
 
-#: src/components/modals/tabs/account_security_tab/Inline.tsx:73
-#: src/components/modals/tabs/AccountSecurityTab.tsx:77
+#: src/components/modals/tabs/account_security_tab/Inline.tsx:74
+#: src/components/modals/tabs/AccountSecurityTab.tsx:78
 #: src/components/modals/utils/SettingsConstants.tsx:297
 #: src/components/modals/utils/SettingsSectionRegistry.tsx:488
 msgid "Account"
@@ -1642,7 +1642,7 @@ msgstr "Konto statusoverskrivelser"
 msgid "Account Too New"
 msgstr "Kontoen er for ny"
 
-#: src/actions/InviteActionCreators.tsx:182
+#: src/actions/InviteActionCreators.tsx:205
 #: src/components/modals/RequiredActionModal.tsx:143
 #: src/components/modals/RequiredActionModal.tsx:416
 msgid "Account Verification Required"
@@ -1698,7 +1698,7 @@ msgstr "Handlinger"
 msgid "active"
 msgstr "aktiv"
 
-#: src/components/modals/components/plutonium/SubscriptionCard.tsx:135
+#: src/components/modals/components/plutonium/SubscriptionCard.tsx:124
 msgid "Active"
 msgstr "Aktiv"
 
@@ -1769,8 +1769,8 @@ msgstr "Tilføj en kommentar (valgfrit)"
 
 #: src/components/layout/guild_list/AddGuildButton.tsx:90
 #: src/components/layout/guild_list/AddGuildButton.tsx:95
-#: src/components/modals/AddGuildModal.tsx:80
-#: src/components/modals/AddGuildModal.tsx:86
+#: src/components/modals/AddGuildModal.tsx:81
+#: src/components/modals/AddGuildModal.tsx:87
 msgid "Add a Community"
 msgstr "Tilføj et fællesskab"
 
@@ -1782,7 +1782,7 @@ msgstr "Tilføj en brugerdefineret baggrund"
 msgid "Add a different account"
 msgstr "Tilføj en anden konto"
 
-#: src/components/modals/tabs/account_security_tab/SecurityTab.tsx:351
+#: src/components/modals/tabs/account_security_tab/SecurityTab.tsx:375
 msgid "Add a phone number to enable SMS two-factor authentication"
 msgstr "Tilføj et telefonnummer for at aktivere SMS-to-faktor-godkendelse"
 
@@ -1791,7 +1791,7 @@ msgstr "Tilføj et telefonnummer for at aktivere SMS-to-faktor-godkendelse"
 msgid "Add a tag"
 msgstr "Tilføj et tag"
 
-#: src/components/modals/channel_tabs/ChannelOverviewTab.tsx:520
+#: src/components/modals/channel_tabs/ChannelOverviewTab.tsx:559
 msgid "Add a topic to this channel"
 msgstr "Tilføj et emne til denne kanal"
 
@@ -1808,7 +1808,7 @@ msgstr "Tilføj handling!"
 msgid "Add an account"
 msgstr "Tilføj en konto"
 
-#: src/components/modals/tabs/account_security_tab/SecurityTab.tsx:219
+#: src/components/modals/tabs/account_security_tab/SecurityTab.tsx:232
 msgid "Add an extra layer of security to your account"
 msgstr "Tilføj et ekstra lag sikkerhed til din konto"
 
@@ -1820,7 +1820,7 @@ msgstr "Tilføj en anden reaktion"
 msgid "Add Bluesky connection"
 msgstr "Tilføj Bluesky-forbindelse"
 
-#: src/components/pages/OAuthAuthorizePage.tsx:863
+#: src/components/pages/OAuthAuthorizePage.tsx:832
 msgid "Add bot to a community"
 msgstr "Tilføj bot til et fællesskab"
 
@@ -1902,12 +1902,12 @@ msgstr "Tilføj eller skift dit telefonnummer"
 msgid "Add Override"
 msgstr "Tilføj overskrivelse"
 
-#: src/components/modals/tabs/account_security_tab/SecurityTab.tsx:293
+#: src/components/modals/tabs/account_security_tab/SecurityTab.tsx:306
 msgid "Add Passkey"
 msgstr "Tilføj adgangskode"
 
 #: src/components/channel/barriers/BarrierComponents.tsx:198
-#: src/components/modals/tabs/account_security_tab/SecurityTab.tsx:398
+#: src/components/modals/tabs/account_security_tab/SecurityTab.tsx:422
 msgid "Add Phone"
 msgstr "Tilføj telefon"
 
@@ -2028,11 +2028,11 @@ msgstr "Tilføjet til Favoritter"
 msgid "Added to saved media"
 msgstr "Tilføjet til gemt medie"
 
-#: src/components/modals/tabs/account_security_tab/SecurityTab.tsx:316
+#: src/components/modals/tabs/account_security_tab/SecurityTab.tsx:329
 msgid "Added: {createdDate}"
 msgstr "Tilføjet: {createdDate}"
 
-#: src/components/modals/tabs/account_security_tab/SecurityTab.tsx:312
+#: src/components/modals/tabs/account_security_tab/SecurityTab.tsx:325
 msgid "Added: {createdDate} • Last used: {lastUsedDate}"
 msgstr "Tilføjet: {createdDate} • Sidst brugt: {lastUsedDate}"
 
@@ -2118,7 +2118,7 @@ msgstr "efter:"
 msgid "Age Restricted"
 msgstr "Aldersbegrænset"
 
-#: src/components/modals/channel_tabs/ChannelOverviewTab.tsx:627
+#: src/components/modals/channel_tabs/ChannelOverviewTab.tsx:666
 msgid "Age-restricted (NSFW)"
 msgstr "Aldersbegrænset (NSFW)"
 
@@ -2569,7 +2569,7 @@ msgstr "Animeret GIF-video"
 msgid "Animated icon"
 msgstr "Animeret ikon"
 
-#: src/components/modals/AddGuildModal.tsx:224
+#: src/components/modals/AddGuildModal.tsx:225
 msgid "Animated icons are not supported when creating a new community. Please use JPEG, PNG, or WebP."
 msgstr "Animerede ikoner understøttes ikke ved oprettelse af et nyt fællesskab. Brug JPEG, PNG eller WebP."
 
@@ -2845,7 +2845,7 @@ msgid "Are you sure you want to delete the category \"{categoryName}\"? This can
 msgstr "Er du sikker på, at du vil slette kategorien \"{categoryName}\"? Dette kan ikke fortrydes."
 
 #. placeholder {0}: passkey.name
-#: src/components/modals/tabs/account_security_tab/SecurityTab.tsx:122
+#: src/components/modals/tabs/account_security_tab/SecurityTab.tsx:135
 msgid "Are you sure you want to delete the passkey <0>{0}</0>?"
 msgstr "Er du sikker på, at du vil slette adgangsnøglen <0>{0}</0>?"
 
@@ -2865,7 +2865,7 @@ msgstr "Er du sikker på, at du vil slette denne invitation? Denne handling kan 
 msgid "Are you sure you want to delete this pack? This cannot be undone."
 msgstr "Er du sikker på, at du vil slette denne pakke? Dette kan ikke fortrydes."
 
-#: src/components/modals/tabs/account_security_tab/SecurityTab.tsx:127
+#: src/components/modals/tabs/account_security_tab/SecurityTab.tsx:140
 msgid "Are you sure you want to delete this passkey?"
 msgstr "Er du sikker på, at du vil slette denne adgangsnøgle?"
 
@@ -2877,7 +2877,7 @@ msgstr "Er du sikker på, at du vil slette din konto? Denne handling planlægger
 msgid "Are you sure you want to disable invites? This will prevent new users from joining through invite links until you re-enable them. Existing members will not be affected."
 msgstr "Er du sikker på, at du vil deaktivere invitationer? Det forhindrer nye brugere i at tilslutte sig via invite-links, indtil du genaktiverer dem. Eksisterende medlemmer påvirkes ikke."
 
-#: src/components/modals/tabs/account_security_tab/SecurityTab.tsx:179
+#: src/components/modals/tabs/account_security_tab/SecurityTab.tsx:192
 msgid "Are you sure you want to disable SMS two-factor authentication? This will make your account less secure."
 msgstr "Er du sikker på, at du vil deaktivere SMS-to-faktor-godkendelse? Det vil gøre din konto mindre sikker."
 
@@ -2930,7 +2930,7 @@ msgid "Are you sure you want to remove this connection? This action cannot be un
 msgstr "Er du sikker på, at du vil fjerne denne forbindelse? Denne handling kan ikke fortrydes."
 
 #. placeholder {0}: user.phone
-#: src/components/modals/tabs/account_security_tab/SecurityTab.tsx:367
+#: src/components/modals/tabs/account_security_tab/SecurityTab.tsx:391
 msgid "Are you sure you want to remove your phone number <0>{0}</0>?"
 msgstr "Er du sikker på, at du vil fjerne dit telefonnummer <0>{0}</0>?"
 
@@ -2970,11 +2970,11 @@ msgstr "Er du sikker på, at du vil ophæve blokeringen af {0}?"
 msgid "aria"
 msgstr "aria"
 
-#: src/components/modals/AddGuildModal.tsx:177
+#: src/components/modals/AddGuildModal.tsx:178
 msgid "Art Club"
 msgstr "Kunstklub"
 
-#: src/components/modals/AddGuildModal.tsx:151
+#: src/components/modals/AddGuildModal.tsx:152
 msgid "Artists' Corner"
 msgstr "Kunstnerhjørne"
 
@@ -3150,7 +3150,7 @@ msgid "Authenticator app"
 msgstr "Authenticator-app"
 
 #: src/components/auth/MfaScreen.tsx:69
-#: src/components/modals/tabs/account_security_tab/SecurityTab.tsx:224
+#: src/components/modals/tabs/account_security_tab/SecurityTab.tsx:237
 msgid "Authenticator App"
 msgstr "Authenticator-app"
 
@@ -3170,21 +3170,21 @@ msgstr "forfattertype:"
 msgid "Authorization failed"
 msgstr "Godkendelse mislykkedes"
 
-#: src/components/pages/OAuthAuthorizePage.tsx:534
+#: src/components/pages/OAuthAuthorizePage.tsx:524
 msgid "Authorization Failed"
 msgstr "Godkendelse mislykkedes"
 
-#: src/components/pages/OAuthAuthorizePage.tsx:469
-#: src/components/pages/OAuthAuthorizePage.tsx:484
+#: src/components/pages/OAuthAuthorizePage.tsx:459
+#: src/components/pages/OAuthAuthorizePage.tsx:474
 msgid "Authorization failed. Please try again."
 msgstr "Godkendelsen mislykkedes. Prøv igen."
 
-#: src/components/pages/OAuthAuthorizePage.tsx:740
+#: src/components/pages/OAuthAuthorizePage.tsx:709
 msgid "Authorization request"
 msgstr "Godkendelsesanmodning"
 
-#: src/components/pages/OAuthAuthorizePage.tsx:681
-#: src/components/pages/OAuthAuthorizePage.tsx:940
+#: src/components/pages/OAuthAuthorizePage.tsx:661
+#: src/components/pages/OAuthAuthorizePage.tsx:909
 msgid "Authorize"
 msgstr "Godkend"
 
@@ -3251,7 +3251,7 @@ msgstr "autocomplet"
 msgid "automatic"
 msgstr "automatisk"
 
-#: src/components/modals/channel_tabs/ChannelOverviewTab.tsx:178
+#: src/components/modals/channel_tabs/ChannelOverviewTab.tsx:191
 #: src/components/voice/VoiceRegionSelector.tsx:96
 #: src/components/voice/VoiceRegionSelector.tsx:110
 #: src/components/voice/VoiceSettingsMenus.tsx:452
@@ -3347,7 +3347,7 @@ msgstr "Gennemsnitlig ping:"
 #: src/components/modals/AddConnectionModal.tsx:312
 #: src/components/modals/PhoneAddModal.tsx:237
 #: src/components/modals/RequiredActionModal.tsx:655
-#: src/components/pages/OAuthAuthorizePage.tsx:671
+#: src/components/pages/OAuthAuthorizePage.tsx:651
 #: src/components/pages/report/ReportStepDetails.tsx:243
 msgid "Back"
 msgstr "Tilbage"
@@ -3438,7 +3438,7 @@ msgid "backup codes"
 msgstr "backup koder"
 
 #: src/components/modals/BackupCodesModal.tsx:43
-#: src/components/modals/tabs/account_security_tab/SecurityTab.tsx:257
+#: src/components/modals/tabs/account_security_tab/SecurityTab.tsx:270
 #: src/components/modals/utils/SettingsSearchIndex.tsx:140
 msgid "Backup Codes"
 msgstr "Backupkoder"
@@ -3499,7 +3499,7 @@ msgstr "Udeluk medlem"
 msgid "Ban Members"
 msgstr "Forbyd medlemmer"
 
-#: src/components/modals/AddGuildModal.tsx:153
+#: src/components/modals/AddGuildModal.tsx:154
 msgid "Band Practice Room"
 msgstr "Bandøveværelse"
 
@@ -3680,7 +3680,7 @@ msgstr "Blokerede brugere kan ikke sende venneanmodninger eller beskeder direkte
 msgid "Blockquotes"
 msgstr "Citatblokke"
 
-#: src/components/modals/channel_tabs/ChannelOverviewTab.tsx:628
+#: src/components/modals/channel_tabs/ChannelOverviewTab.tsx:667
 msgid "Blocks access for users under 18 and shows a content warning for adults."
 msgstr "Blokerer adgang for brugere under 18 år og viser en indholdsadvarsel for voksne."
 
@@ -3703,7 +3703,7 @@ msgstr "Slør"
 msgid "Blur your background"
 msgstr "Slør din baggrund"
 
-#: src/components/modals/AddGuildModal.tsx:175
+#: src/components/modals/AddGuildModal.tsx:176
 msgid "Board Game Night"
 msgstr "Brætspilsaften"
 
@@ -3711,7 +3711,7 @@ msgstr "Brætspilsaften"
 msgid "Body font family"
 msgstr "Tekstfont"
 
-#: src/components/modals/AddGuildModal.tsx:178
+#: src/components/modals/AddGuildModal.tsx:179
 msgid "Book Club"
 msgstr "Bogklub"
 
@@ -3754,7 +3754,7 @@ msgstr "Bogmærket!"
 msgid "Bookmarks"
 msgstr "Bogmærker"
 
-#: src/components/modals/AddGuildModal.tsx:150
+#: src/components/modals/AddGuildModal.tsx:151
 msgid "Bookworms Anonymous"
 msgstr "Bogorme Anonyme"
 
@@ -3766,7 +3766,7 @@ msgstr "bot"
 msgid "Bot"
 msgstr "Bot"
 
-#: src/components/pages/OAuthAuthorizePage.tsx:550
+#: src/components/pages/OAuthAuthorizePage.tsx:540
 msgid "Bot added"
 msgstr "Bot tilføjet"
 
@@ -3794,11 +3794,11 @@ msgstr "Bot direkte beskeder"
 msgid "Bot Invite"
 msgstr "Bot Invitation"
 
-#: src/components/pages/OAuthAuthorizePage.tsx:761
+#: src/components/pages/OAuthAuthorizePage.tsx:730
 msgid "Bot invite (no external redirect)"
 msgstr "Botinvitation (ingen ekstern omdirigering)"
 
-#: src/components/pages/OAuthAuthorizePage.tsx:480
+#: src/components/pages/OAuthAuthorizePage.tsx:470
 msgid "Bot is already in this community."
 msgstr "Botten er allerede i dette fællesskab."
 
@@ -3810,7 +3810,7 @@ msgstr "Bot-tilladelser"
 msgid "Bot Profile"
 msgstr "Bot-profil"
 
-#: src/components/pages/OAuthAuthorizePage.tsx:770
+#: src/components/pages/OAuthAuthorizePage.tsx:739
 msgid "Bot scope requested"
 msgstr "Bot-område anmodet om"
 
@@ -3920,17 +3920,17 @@ msgstr "Knapper med ikoner"
 msgid "Buy Gift"
 msgstr "Køb gave"
 
-#: src/components/modals/AddGuildModal.tsx:360
+#: src/components/modals/AddGuildModal.tsx:362
 msgid "By creating a community, you agree to follow and uphold the <0>Fluxer Community Guidelines</0>."
 msgstr "Ved at oprette et fællesskab accepterer du at følge og overholde <0>Fluxer-fællesskabsretningslinjerne</0>."
 
 #: src/components/modals/components/PurchaseDisclaimer.tsx:39
-msgid "By purchasing, you agree to our <0>Terms of Service</0> and <1>Privacy Policy</1>. All purchases are refundable within 14 days by emailing <2>support@fluxer.app</2>. Chargebacks result in permanent account bans — if you want a refund, we're more than happy to give you one if you contact us first! Payment information is securely handled by Stripe — we never have access to your full card number."
-msgstr "Ved køb accepterer du vores <0>Servicevilkår</0> og <1>Privatlivspolitik</1>. Alle køb kan refunderes inden for 14 dage ved at sende en e-mail til <2>support@fluxer.app</2>. Tilbageførsel medfører permanent konto-udestængning — hvis du vil have en refundering, hjælper vi gerne, hvis du kontakter os først! Betalingsoplysninger håndteres sikkert af Stripe — vi har aldrig adgang til dit fulde kortnummer."
+msgid "By purchasing, you agree to our <0>Terms of Service</0> and <1>Privacy Policy</1>. All purchases are refundable within 14 days by emailing <2>support@echowire.org</2>. Chargebacks result in permanent account bans — if you want a refund, we're more than happy to give you one if you contact us first! Payment information is securely handled by Stripe — we never have access to your full card number."
+msgstr ""
 
 #: src/components/modals/components/PurchaseDisclaimer.tsx:31
-msgid "By purchasing, you agreed to our <0>Terms of Service</0> and <1>Privacy Policy</1>. All purchases are refundable within 14 days by emailing <2>support@fluxer.app</2>. Chargebacks result in permanent account bans — if you want a refund, we're more than happy to give you one if you contact us first! Payment information is securely handled by Stripe — we never have access to your full card number."
-msgstr "Ved køb accepterede du vores <0>Servicevilkår</0> og <1>Privatlivspolitik</1>. Alle køb kan refunderes inden for 14 dage ved at sende en e-mail til <2>support@fluxer.app</2>. Tilbageførsel medfører permanent konto-udestængning — hvis du vil have en refundering, hjælper vi gerne, hvis du kontakter os først! Betalingsoplysninger håndteres sikkert af Stripe — vi har aldrig adgang til dit fulde kortnummer."
+msgid "By purchasing, you agreed to our <0>Terms of Service</0> and <1>Privacy Policy</1>. All purchases are refundable within 14 days by emailing <2>support@echowire.org</2>. Chargebacks result in permanent account bans — if you want a refund, we're more than happy to give you one if you contact us first! Payment information is securely handled by Stripe — we never have access to your full card number."
+msgstr ""
 
 #: src/utils/PermissionUtils.tsx:356
 #: src/utils/PermissionUtils.tsx:491
@@ -4065,8 +4065,8 @@ msgstr "Kameraer er deaktiveret, når der er mere end {VOICE_CHANNEL_CAMERA_USER
 #: src/components/modals/AccountDisableModal.tsx:69
 #: src/components/modals/AddConnectionModal.tsx:218
 #: src/components/modals/AddFavoriteMemeModal.tsx:98
-#: src/components/modals/AddGuildModal.tsx:290
-#: src/components/modals/AddGuildModal.tsx:413
+#: src/components/modals/AddGuildModal.tsx:292
+#: src/components/modals/AddGuildModal.tsx:415
 #: src/components/modals/AddGuildStickerModal.tsx:120
 #: src/components/modals/AttachmentEditModal.tsx:122
 #: src/components/modals/BackupCodesRegenerateModal.tsx:79
@@ -4081,7 +4081,7 @@ msgstr "Kameraer er deaktiveret, når der er mere end {VOICE_CHANNEL_CAMERA_USER
 #: src/components/modals/ClaimAccountModal.tsx:219
 #: src/components/modals/components/MobileSettingsView.tsx:219
 #: src/components/modals/components/plutonium/hooks/useCheckoutActions.tsx:110
-#: src/components/modals/components/plutonium/SubscriptionCard.tsx:301
+#: src/components/modals/components/plutonium/SubscriptionCard.tsx:275
 #: src/components/modals/ConfirmModal.tsx:146
 #: src/components/modals/CreateDMModal.tsx:88
 #: src/components/modals/CreateFavoriteCategoryModal.tsx:75
@@ -4132,7 +4132,7 @@ msgstr "Kameraer er deaktiveret, når der er mere end {VOICE_CHANNEL_CAMERA_USER
 #: src/components/modals/ThemeAcceptModal.tsx:177
 #: src/components/modals/TimeoutMemberModal.tsx:211
 #: src/components/modals/TransferOwnershipModal.tsx:85
-#: src/components/pages/OAuthAuthorizePage.tsx:924
+#: src/components/pages/OAuthAuthorizePage.tsx:893
 #: src/components/popouts/ScheduledMessagesContent.tsx:119
 #: src/utils/modals/AnimatedAvifModalUtils.tsx:45
 msgid "Cancel"
@@ -4162,7 +4162,7 @@ msgstr "Annuller anmodning"
 msgid "Cancel upload"
 msgstr "Annuller upload"
 
-#: src/components/modals/components/plutonium/SubscriptionCard.tsx:129
+#: src/components/modals/components/plutonium/SubscriptionCard.tsx:118
 msgid "Canceling"
 msgstr "Annullerer"
 
@@ -4178,11 +4178,11 @@ msgstr "Kan ikke redigeres"
 msgid "Cannot Delete Account"
 msgstr "Kan ikke slette konto"
 
-#: src/actions/InviteActionCreators.tsx:317
+#: src/actions/InviteActionCreators.tsx:340
 msgid "Cannot install emoji pack"
 msgstr "Kan ikke installere emoji-pakke"
 
-#: src/actions/InviteActionCreators.tsx:318
+#: src/actions/InviteActionCreators.tsx:341
 msgid "Cannot install sticker pack"
 msgstr "Kan ikke installere klistermærkepakke"
 
@@ -4235,7 +4235,7 @@ msgstr "Kategori fuld"
 msgid "Category ID copied"
 msgstr "Kategori-ID kopieret"
 
-#: src/components/modals/channel_tabs/ChannelOverviewTab.tsx:479
+#: src/components/modals/channel_tabs/ChannelOverviewTab.tsx:518
 #: src/components/modals/CreateFavoriteCategoryModal.tsx:65
 msgid "Category Name"
 msgstr "Kategorinavn"
@@ -4312,7 +4312,7 @@ msgstr "Skift venners kaldenavn"
 msgid "Change Group Nickname"
 msgstr "Skift gruppens kaldenavn"
 
-#: src/components/modals/AddGuildModal.tsx:329
+#: src/components/modals/AddGuildModal.tsx:331
 #: src/components/modals/EditGroupBottomSheet.tsx:214
 #: src/components/modals/EditGroupModal.tsx:195
 msgid "Change Icon"
@@ -4520,7 +4520,7 @@ msgstr "Skriveindikatorer for kanalliste"
 msgid "Channel Management"
 msgstr "Kanaladministration"
 
-#: src/components/modals/channel_tabs/ChannelOverviewTab.tsx:479
+#: src/components/modals/channel_tabs/ChannelOverviewTab.tsx:518
 msgid "Channel Name"
 msgstr "Kanalnavn"
 
@@ -4579,7 +4579,7 @@ msgstr "Kanalsindstillinger"
 msgid "Channel synced with parent category"
 msgstr "Kanal synkroniseret med overordnet kategori"
 
-#: src/components/modals/channel_tabs/ChannelOverviewTab.tsx:276
+#: src/components/modals/channel_tabs/ChannelOverviewTab.tsx:315
 msgid "Channel topic is too long."
 msgstr "Kanalemnet er for langt."
 
@@ -4598,7 +4598,7 @@ msgstr "Valg af kanaltype"
 msgid "Channel type: {0}."
 msgstr "Kanaltype: {0}."
 
-#: src/components/modals/channel_tabs/ChannelOverviewTab.tsx:409
+#: src/components/modals/channel_tabs/ChannelOverviewTab.tsx:448
 msgid "Channel updated"
 msgstr "Kanal opdateret"
 
@@ -4646,8 +4646,8 @@ msgstr "Chat-skrifttype skalering"
 
 #: src/components/BootstrapErrorScreen.tsx:60
 #: src/components/NetworkErrorScreen.tsx:45
-msgid "Check our <0>Bluesky (@fluxer.app)</0> for status updates."
-msgstr "Tjek vores <0>Bluesky (@fluxer.app)</0> for statusopdateringer."
+msgid "Check our <0>status page</0> for updates, or email us at <1>support@echowire.org</1>."
+msgstr ""
 
 #: src/components/modals/ShareThemeModal.tsx:115
 msgid "Check out my custom theme!"
@@ -4694,7 +4694,7 @@ msgstr "Kinesisk (traditionelt)"
 msgid "Choose"
 msgstr "Vælg"
 
-#: src/components/pages/OAuthAuthorizePage.tsx:877
+#: src/components/pages/OAuthAuthorizePage.tsx:846
 msgid "Choose a community"
 msgstr "Vælg et fællesskab"
 
@@ -4765,7 +4765,7 @@ msgstr "Vælg, hvordan skriveindikatorer vises i kanallisten, når nogen skriver
 msgid "Choose the category that best describes your community."
 msgstr "Vælg den kategori, der bedst beskriver dit fællesskab."
 
-#: src/components/pages/OAuthAuthorizePage.tsx:605
+#: src/components/pages/OAuthAuthorizePage.tsx:585
 msgid "Choose what {clientLabel} can do in your community. Uncheck any permissions you don't want to grant."
 msgstr "Vælg, hvad {clientLabel} må gøre i dit fællesskab. Fjern markeringen for rettigheder, du ikke vil give."
 
@@ -4808,7 +4808,7 @@ msgstr "Vælg din profilaccentfarve"
 #: src/components/modals/ClaimAccountModal.tsx:225
 #: src/components/modals/components/UnclaimedAccountAlert.tsx:32
 #: src/components/modals/GiftAcceptModal.tsx:175
-#: src/components/modals/tabs/account_security_tab/SecurityTab.tsx:209
+#: src/components/modals/tabs/account_security_tab/SecurityTab.tsx:222
 #: src/components/modals/tabs/GiftInventoryTab.tsx:243
 msgid "Claim Account"
 msgstr "Gør krav på konto"
@@ -4837,7 +4837,7 @@ msgstr "Gør krav på din konto"
 msgid "Claim your account by adding an email and password. We will send a verification code to confirm your email before finishing."
 msgstr "Gør krav på din konto ved at tilføje en e-mail og adgangskode. Vi sender en bekræftelseskode for at bekræfte din e-mail, inden vi afslutter."
 
-#: src/components/modals/tabs/account_security_tab/SecurityTab.tsx:205
+#: src/components/modals/tabs/account_security_tab/SecurityTab.tsx:218
 msgid "Claim your account to access security features like two-factor authentication and passkeys."
 msgstr "Gør krav på din konto for at få adgang til sikkerhedsfunktioner som tofaktorautentificering og adgangsnøgler."
 
@@ -4856,7 +4856,7 @@ msgstr "Gå til din konto for at oprette applikationer."
 
 #: src/components/layout/ChannelItem.tsx:215
 #: src/components/layout/ChannelItem.tsx:407
-#: src/stores/voice/MediaEngineFacade.tsx:836
+#: src/stores/voice/MediaEngineFacade.tsx:887
 msgid "Claim your account to join this voice channel."
 msgstr "Gendan din konto for at deltage i denne tale kanal."
 
@@ -4867,11 +4867,11 @@ msgstr "Gendan din konto for at deltage i tale kanaler, du ikke ejer."
 #: src/components/modals/components/plutonium/BottomCTASection.tsx:49
 #: src/components/modals/components/plutonium/GiftSection.tsx:52
 #: src/components/modals/components/plutonium/PricingSection.tsx:54
-#: src/components/modals/components/PlutoniumContent.tsx:99
+#: src/components/modals/components/PlutoniumContent.tsx:80
 msgid "Claim your account to purchase Fluxer Plutonium."
 msgstr "Gå til din konto for at købe Fluxer Plutonium."
 
-#: src/components/modals/components/plutonium/SubscriptionCard.tsx:104
+#: src/components/modals/components/plutonium/SubscriptionCard.tsx:93
 msgid "Claim your account to purchase or redeem Fluxer Plutonium."
 msgstr "Gå til din konto for at købe eller indløse Fluxer Plutonium."
 
@@ -4901,7 +4901,7 @@ msgstr "Gendan din konto for at starte eller deltage i 1:1 opkald."
 msgid "Claim your gift to activate your premium subscription!"
 msgstr "Gør krav på din gave for at aktivere dit premium-abonnement!"
 
-#: src/components/modals/AddGuildModal.tsx:156
+#: src/components/modals/AddGuildModal.tsx:157
 msgid "Class of '24"
 msgstr "Klasse af '24"
 
@@ -5241,11 +5241,11 @@ msgstr "Kode:"
 msgid "codes"
 msgstr "koder"
 
-#: src/components/modals/AddGuildModal.tsx:176
+#: src/components/modals/AddGuildModal.tsx:177
 msgid "Coding Crew"
 msgstr "Kodeholdet"
 
-#: src/components/modals/AddGuildModal.tsx:165
+#: src/components/modals/AddGuildModal.tsx:166
 msgid "Coffee Chat"
 msgstr "Kaffesamtale"
 
@@ -5399,7 +5399,7 @@ msgstr "Fællesskab deltager i eller muliggør målrettet chikane"
 msgid "Community exists solely for spam or fraudulent purposes"
 msgstr "Fællesskab eksisterer udelukkende for spam eller svig"
 
-#: src/components/modals/AddGuildModal.tsx:316
+#: src/components/modals/AddGuildModal.tsx:318
 msgid "Community Icon"
 msgstr "Fællesskabsikon"
 
@@ -5445,7 +5445,7 @@ msgstr "Fællesskab slået lyd fra"
 msgid "Community Muted"
 msgstr "Fællesskab er slået lyd fra"
 
-#: src/components/modals/AddGuildModal.tsx:351
+#: src/components/modals/AddGuildModal.tsx:353
 msgid "Community Name"
 msgstr "Fællesskabsnavn"
 
@@ -5549,6 +5549,11 @@ msgstr "kompakt tilstand"
 msgid "Compact Mode"
 msgstr "Kompakt tilstand"
 
+#: src/components/modals/components/PlutoniumContent.tsx:127
+#: src/components/modals/components/PlutoniumContent.tsx:219
+msgid "Compare Plans"
+msgstr ""
+
 #: src/components/modals/components/plutonium/hooks/useCheckoutActions.tsx:106
 msgid "Complete Payment"
 msgstr "Fuldfør betaling"
@@ -5577,7 +5582,7 @@ msgstr "Konfigurer AFK-kanal og timeout"
 msgid "Configure base access for this channel"
 msgstr "Konfigurer basal adgang til denne kanal"
 
-#: src/components/pages/OAuthAuthorizePage.tsx:602
+#: src/components/pages/OAuthAuthorizePage.tsx:582
 msgid "Configure bot permissions"
 msgstr "Konfigurer bot-rettigheder"
 
@@ -6227,15 +6232,15 @@ msgstr "Opret"
 msgid "Create & Share"
 msgstr "Opret og del"
 
-#: src/components/modals/AddGuildModal.tsx:82
+#: src/components/modals/AddGuildModal.tsx:83
 msgid "Create a Community"
 msgstr "Opret et fællesskab"
 
-#: src/components/modals/AddGuildModal.tsx:309
+#: src/components/modals/AddGuildModal.tsx:311
 msgid "Create a community for you and your friends to chat."
 msgstr "Opret et fællesskab til dig og dine venner til at chatte i."
 
-#: src/components/modals/AddGuildModal.tsx:120
+#: src/components/modals/AddGuildModal.tsx:121
 msgid "Create a new community or join an existing one."
 msgstr "Opret et nyt fællesskab eller tilslut dig et eksisterende."
 
@@ -6315,12 +6320,12 @@ msgid "Create Channel"
 msgstr "Opret kanal"
 
 #: src/components/layout/guild_list/AddGuildButton.tsx:68
-#: src/components/modals/AddGuildModal.tsx:127
-#: src/components/modals/AddGuildModal.tsx:293
+#: src/components/modals/AddGuildModal.tsx:128
+#: src/components/modals/AddGuildModal.tsx:295
 msgid "Create Community"
 msgstr "Opret fællesskab"
 
-#: src/components/modals/AddGuildModal.tsx:312
+#: src/components/modals/AddGuildModal.tsx:314
 msgid "Create community form"
 msgstr "Opret fællesskabsformular"
 
@@ -6466,11 +6471,11 @@ msgstr "Oprettet med navnet {newLabel}."
 msgid "Created:"
 msgstr "Oprettet:"
 
-#: src/components/modals/AddGuildModal.tsx:149
+#: src/components/modals/AddGuildModal.tsx:150
 msgid "Creative Minds Collective"
 msgstr "Creative Minds Collective"
 
-#: src/components/modals/AddGuildModal.tsx:168
+#: src/components/modals/AddGuildModal.tsx:169
 msgid "Creative Writing Club"
 msgstr "Creative Writing Club"
 
@@ -6792,8 +6797,8 @@ msgstr "Sekundær fare"
 msgid "Danger secondary clicked!"
 msgstr "Sekundær fareklikket!"
 
-#: src/components/modals/tabs/account_security_tab/Inline.tsx:97
-#: src/components/modals/tabs/AccountSecurityTab.tsx:109
+#: src/components/modals/tabs/account_security_tab/Inline.tsx:100
+#: src/components/modals/tabs/AccountSecurityTab.tsx:112
 #: src/components/modals/tabs/applications_tab/ApplicationDetail.tsx:693
 #: src/components/modals/utils/SettingsConstants.tsx:299
 #: src/components/modals/utils/SettingsSectionRegistry.tsx:529
@@ -7070,7 +7075,7 @@ msgstr "slet"
 #: src/components/emojis/EmojiListItem.tsx:195
 #: src/components/emojis/EmojiListItem.tsx:252
 #: src/components/emojis/EmojiListItem.tsx:308
-#: src/components/modals/tabs/account_security_tab/SecurityTab.tsx:325
+#: src/components/modals/tabs/account_security_tab/SecurityTab.tsx:338
 #: src/components/modals/tabs/component_gallery_tab/ButtonsTab.tsx:157
 #: src/components/modals/tabs/component_gallery_tab/ButtonsTab.tsx:242
 #: src/components/modals/tabs/component_gallery_tab/index.tsx:165
@@ -7219,8 +7224,8 @@ msgstr "Slet andres beskeder. (Fastgørelse er separat nedenfor.)"
 msgid "Delete Pack"
 msgstr "Slet pakke"
 
-#: src/components/modals/tabs/account_security_tab/SecurityTab.tsx:118
-#: src/components/modals/tabs/account_security_tab/SecurityTab.tsx:130
+#: src/components/modals/tabs/account_security_tab/SecurityTab.tsx:131
+#: src/components/modals/tabs/account_security_tab/SecurityTab.tsx:143
 msgid "Delete Passkey"
 msgstr "Slet adgangsnøgle"
 
@@ -7414,7 +7419,7 @@ msgstr "Detaljer"
 msgid "dev"
 msgstr "udvikler"
 
-#: src/components/modals/AddGuildModal.tsx:152
+#: src/components/modals/AddGuildModal.tsx:153
 msgid "Dev Den"
 msgstr "Udviklerhulen"
 
@@ -7530,8 +7535,8 @@ msgid "disable"
 msgstr "deaktiver"
 
 #: src/components/invites/DisableInvitesButton.tsx:60
-#: src/components/modals/tabs/account_security_tab/SecurityTab.tsx:240
-#: src/components/modals/tabs/account_security_tab/SecurityTab.tsx:429
+#: src/components/modals/tabs/account_security_tab/SecurityTab.tsx:253
+#: src/components/modals/tabs/account_security_tab/SecurityTab.tsx:453
 msgid "Disable"
 msgstr "Deaktiver"
 
@@ -7590,11 +7595,11 @@ msgstr "Deaktiver Picture-in-Picture Popout"
 msgid "Disable Reduced Motion"
 msgstr "Deaktiver reduceret bevægelse"
 
-#: src/components/modals/tabs/account_security_tab/SecurityTab.tsx:183
+#: src/components/modals/tabs/account_security_tab/SecurityTab.tsx:196
 msgid "Disable SMS 2FA"
 msgstr "Deaktiver SMS 2FA"
 
-#: src/components/modals/tabs/account_security_tab/SecurityTab.tsx:177
+#: src/components/modals/tabs/account_security_tab/SecurityTab.tsx:190
 msgid "Disable SMS Two-Factor Authentication"
 msgstr "Deaktiver SMS to-faktorautentificering"
 
@@ -8161,6 +8166,18 @@ msgstr "ekko"
 msgid "Echo Cancellation"
 msgstr "Ekkokontrol"
 
+#: src/components/icons/FluxerIcon.tsx:31
+msgid "Echowire application icon"
+msgstr ""
+
+#: src/components/icons/FluxerSymbol.tsx:31
+msgid "Echowire application symbol"
+msgstr ""
+
+#: src/components/BootstrapErrorScreen.tsx:52
+msgid "Echowire failed to start properly. This could be due to corrupted data or a temporary issue."
+msgstr ""
+
 #: src/components/modals/tabs/ExpressionPacksTab.tsx:90
 #: src/components/modals/tabs/LinkedAccountsTab.tsx:186
 #: src/components/modals/tabs/LinkedAccountsTab.tsx:187
@@ -8486,7 +8503,7 @@ msgstr "Emojinavne skal være mindst 2 tegn og må kun indeholde alfanumeriske t
 msgid "Emoji pack"
 msgstr "Emojipakke"
 
-#: src/actions/InviteActionCreators.tsx:259
+#: src/actions/InviteActionCreators.tsx:282
 msgid "Emoji pack creation limit reached"
 msgstr "Grænsen for oprettelse af emojipakker er nået"
 
@@ -8494,7 +8511,7 @@ msgstr "Grænsen for oprettelse af emojipakker er nået"
 msgid "Emoji Pack Invite"
 msgstr "Invitation til emojipakke"
 
-#: src/actions/InviteActionCreators.tsx:245
+#: src/actions/InviteActionCreators.tsx:268
 msgid "Emoji pack limit reached"
 msgstr "Grænsen for emojipakker er nået"
 
@@ -8531,9 +8548,9 @@ msgstr "tom tilstand"
 
 #: src/components/invites/DisableInvitesButton.tsx:60
 #: src/components/layout/GuildLayout.tsx:74
-#: src/components/modals/tabs/account_security_tab/SecurityTab.tsx:247
-#: src/components/modals/tabs/account_security_tab/SecurityTab.tsx:435
-#: src/components/modals/tabs/account_security_tab/SecurityTab.tsx:441
+#: src/components/modals/tabs/account_security_tab/SecurityTab.tsx:260
+#: src/components/modals/tabs/account_security_tab/SecurityTab.tsx:459
+#: src/components/modals/tabs/account_security_tab/SecurityTab.tsx:465
 #: src/components/modals/tabs/components/InputMonitoringSection.tsx:85
 msgid "Enable"
 msgstr "Aktivér"
@@ -8655,15 +8672,15 @@ msgstr "Aktivér selvhostet tilstand på klientsiden (skjuler al premium/fakture
 msgid "Enable Shift to Expand"
 msgstr "Aktiver Shift for at udvide"
 
-#: src/components/modals/tabs/account_security_tab/SecurityTab.tsx:156
+#: src/components/modals/tabs/account_security_tab/SecurityTab.tsx:169
 msgid "Enable SMS 2FA"
 msgstr "Aktivér SMS 2FA"
 
-#: src/components/modals/tabs/account_security_tab/SecurityTab.tsx:418
+#: src/components/modals/tabs/account_security_tab/SecurityTab.tsx:442
 msgid "Enable SMS codes as a backup for your authenticator app"
 msgstr "Aktivér SMS-koder som backup til din autentificeringsapp"
 
-#: src/components/modals/tabs/account_security_tab/SecurityTab.tsx:149
+#: src/components/modals/tabs/account_security_tab/SecurityTab.tsx:162
 msgid "Enable SMS Two-Factor Authentication"
 msgstr "Aktivér SMS-tovejersgodkendelse"
 
@@ -8821,7 +8838,7 @@ msgstr "Indtast koden, vi har sendt til din nye adresse."
 msgid "Enter the code we sent to your email to verify it. Your password will be set once the code is confirmed."
 msgstr "Indtast koden, vi sendte til din e-mail for at bekræfte den. Din adgangskode bliver sat, når koden er bekræftet."
 
-#: src/components/modals/AddGuildModal.tsx:427
+#: src/components/modals/AddGuildModal.tsx:429
 msgid "Enter the invite link to join a community."
 msgstr "Indtast invitation-linket for at slutte dig til et fællesskab."
 
@@ -8922,7 +8939,7 @@ msgstr "tryk escape for at <0><1>annullere</1></0>"
 msgid "Estonia"
 msgstr "Estland"
 
-#: src/components/modals/channel_tabs/ChannelOverviewTab.tsx:186
+#: src/components/modals/channel_tabs/ChannelOverviewTab.tsx:199
 #: src/components/voice/VoiceRegionSelector.tsx:78
 #: src/components/voice/VoiceSettingsMenus.tsx:436
 msgid "EU Central"
@@ -9008,7 +9025,7 @@ msgid "Expire After"
 msgstr "Udløber Efter"
 
 #: src/components/accounts/AccountRow.tsx:169
-#: src/components/modals/components/plutonium/SubscriptionCard.tsx:125
+#: src/components/modals/components/plutonium/SubscriptionCard.tsx:114
 #: src/components/modals/GroupInvitesBottomSheet.tsx:110
 msgid "Expired"
 msgstr "Udløbet"
@@ -9314,11 +9331,11 @@ msgstr "Kunne ikke ignorere venneforespørgsel. Prøv igen."
 msgid "Failed to initiate connection"
 msgstr "Mislykkedes med at starte forbindelse"
 
-#: src/actions/InviteActionCreators.tsx:326
+#: src/actions/InviteActionCreators.tsx:349
 msgid "Failed to install this emoji pack. Please try again later."
 msgstr "Kunne ikke installere denne emojipakke. Prøv igen senere."
 
-#: src/actions/InviteActionCreators.tsx:327
+#: src/actions/InviteActionCreators.tsx:350
 msgid "Failed to install this sticker pack. Please try again later."
 msgstr "Kunne ikke installere denne klistermærkepakke. Prøv igen senere."
 
@@ -9381,7 +9398,7 @@ msgstr "Kunne ikke indlæse klistermærker"
 msgid "Failed to load vanity URL. Please try again."
 msgstr "Kunne ikke indlæse vanity-URL. Prøv igen."
 
-#: src/components/modals/channel_tabs/ChannelOverviewTab.tsx:223
+#: src/components/modals/channel_tabs/ChannelOverviewTab.tsx:236
 msgid "Failed to load voice regions for this channel."
 msgstr "Kunne ikke indlæse taleregioner for denne kanal."
 
@@ -9420,7 +9437,7 @@ msgstr "Kunne ikke fastgøre besked"
 msgid "Failed to Prepare Emojis"
 msgstr "Kunne ikke forberede emojis"
 
-#: src/components/modals/AddGuildModal.tsx:248
+#: src/components/modals/AddGuildModal.tsx:249
 #: src/components/modals/EditGroupBottomSheet.tsx:106
 #: src/components/modals/EditGroupModal.tsx:99
 #: src/components/modals/guild_tabs/guild_overview_tab/hooks/useGuildImageAssetField.tsx:267
@@ -9660,11 +9677,11 @@ msgstr "falsk"
 msgid "false"
 msgstr "falsk"
 
-#: src/components/modals/AddGuildModal.tsx:183
+#: src/components/modals/AddGuildModal.tsx:184
 msgid "Family Chat"
 msgstr "Familiechat"
 
-#: src/components/modals/AddGuildModal.tsx:158
+#: src/components/modals/AddGuildModal.tsx:159
 msgid "Family Reunion"
 msgstr "Familiegenforening"
 
@@ -9722,7 +9739,7 @@ msgstr "favoritter"
 msgid "Favorites"
 msgstr "Favoritter"
 
-#: src/components/modals/components/FeatureComparisonTable.tsx:119
+#: src/components/modals/components/FeatureComparisonTable.tsx:138
 msgid "Feature"
 msgstr "Funktion"
 
@@ -9845,7 +9862,7 @@ msgstr "Fornavn og efternavn"
 msgid "First Option"
 msgstr "Første mulighed"
 
-#: src/components/modals/AddGuildModal.tsx:171
+#: src/components/modals/AddGuildModal.tsx:172
 msgid "Fitness Friends"
 msgstr "Fitnessvenner"
 
@@ -9861,33 +9878,21 @@ msgstr "Fleksible tekstkanalnavne"
 msgid "Fluxer"
 msgstr "Fluxer"
 
-#: src/components/icons/FluxerIcon.tsx:31
-msgid "Fluxer application icon"
-msgstr "Fluxer-appikon"
-
-#: src/components/icons/FluxerSymbol.tsx:31
-msgid "Fluxer application symbol"
-msgstr "Fluxer-appsymbol"
-
 #: src/components/modals/tabs/notifications_tab/PushSettings.tsx:37
 msgid "Fluxer avoids sending push notifications to your mobile devices when you are at your computer. Use this setting to control how long you need to be inactive on desktop for before you receive push notifications, ranging from 1 minute to 10 minutes."
 msgstr "Fluxer undgår at sende push-notifikationer til dine mobile enheder, når du er ved din computer. Brug denne indstilling til at styre, hvor længe du skal være inaktiv på skrivebordet, inden du modtager push-notifikationer, fra 1 til 10 minutter."
 
-#: src/components/popouts/UserProfileBadges.tsx:115
+#: src/components/popouts/UserProfileBadges.tsx:101
 msgid "Fluxer Bug Hunter"
 msgstr "Fluxer Bug Hunter"
 
-#: src/components/popouts/UserProfileBadges.tsx:95
+#: src/components/popouts/UserProfileBadges.tsx:81
 msgid "Fluxer Community Team"
 msgstr "Fluxer Community Team"
 
 #: src/components/modals/tabs/DevicesTab.tsx:99
 msgid "Fluxer Desktop"
 msgstr "Fluxer Desktop"
-
-#: src/components/BootstrapErrorScreen.tsx:52
-msgid "Fluxer failed to start properly. This could be due to corrupted data or a temporary issue."
-msgstr "Fluxer kunne ikke starte korrekt. Det kan skyldes beskadigede data eller et midlertidigt problem."
 
 #: src/stores/NewDeviceMonitoringStore.tsx:187
 msgid "Fluxer has found a new audio input device named <0>{deviceName}</0>. Do you want to switch to it?"
@@ -9945,18 +9950,18 @@ msgstr "Fluxer skal have tilladelse til inputovervågning for at holde push-to-t
 msgid "Fluxer needs permission to monitor keyboard and mouse input so that <0>Push-to-Talk</0> and <1>Global Shortcuts</1> work even when you're in another app or game."
 msgstr "Fluxer skal have tilladelse til at overvåge tastatur- og museinput, så <0>Push-to-Talk</0> og <1>Globale genveje</1> fungerer, selv når du er i en anden app eller et spil."
 
-#: src/components/popouts/UserProfileBadges.tsx:105
+#: src/components/popouts/UserProfileBadges.tsx:91
 msgid "Fluxer Partner"
 msgstr "Fluxer-partner"
 
-#: src/components/modals/components/PlutoniumContent.tsx:165
+#: src/components/modals/components/PlutoniumContent.tsx:146
 #: src/components/modals/PremiumModal.tsx:34
 #: src/components/modals/utils/SettingsConstants.tsx:124
-#: src/components/popouts/UserProfileBadges.tsx:121
+#: src/components/popouts/UserProfileBadges.tsx:107
 msgid "Fluxer Plutonium"
 msgstr "Fluxer Plutonium"
 
-#: src/components/popouts/UserProfileBadges.tsx:85
+#: src/components/popouts/UserProfileBadges.tsx:71
 msgid "Fluxer Staff"
 msgstr "Fluxer-personale"
 
@@ -10034,7 +10039,7 @@ msgstr "skrifttyper"
 msgid "Food & Drink"
 msgstr "Mad og drikke"
 
-#: src/components/modals/AddGuildModal.tsx:172
+#: src/components/modals/AddGuildModal.tsx:173
 msgid "Foodie Friends"
 msgstr "Madglade venner"
 
@@ -10248,7 +10253,7 @@ msgstr "Billedfrekvenser over 30 FPS kræver Plutonium"
 msgid "France"
 msgstr "Frankrig"
 
-#: src/components/modals/components/FeatureComparisonTable.tsx:124
+#: src/components/modals/components/FeatureComparisonTable.tsx:143
 msgid "Free"
 msgstr "Gratis"
 
@@ -10259,11 +10264,6 @@ msgstr "Gratis bruger (ingen køb)"
 #: src/components/modals/tabs/developer_options_tab/PremiumScenarioOptions.tsx:53
 msgid "Free User (With Purchase History)"
 msgstr "Gratis bruger (med købsoversigt)"
-
-#: src/components/modals/components/PlutoniumContent.tsx:146
-#: src/components/modals/components/PlutoniumContent.tsx:243
-msgid "Free vs Plutonium"
-msgstr "Gratis vs Plutonium"
 
 #: src/components/modals/tabs/VideoTab.tsx:237
 msgid "Freezes your preview while Fluxer is in the background to save resources."
@@ -10336,7 +10336,7 @@ msgstr "Venner"
 msgid "Friends + Custom"
 msgstr "Venner + brugerdefineret"
 
-#: src/components/modals/AddGuildModal.tsx:184
+#: src/components/modals/AddGuildModal.tsx:185
 msgid "Friends Forever"
 msgstr "Venner for evigt"
 
@@ -10405,7 +10405,7 @@ msgstr "Fulde juridiske navn"
 msgid "Game controller"
 msgstr "Spilkonsol"
 
-#: src/components/modals/AddGuildModal.tsx:166
+#: src/components/modals/AddGuildModal.tsx:167
 msgid "Game Night"
 msgstr "Spilaften"
 
@@ -10413,7 +10413,7 @@ msgstr "Spilaften"
 msgid "Gaming"
 msgstr "Spil"
 
-#: src/components/modals/AddGuildModal.tsx:180
+#: src/components/modals/AddGuildModal.tsx:181
 msgid "Gaming Community"
 msgstr "Gaming Fællesskab"
 
@@ -10430,11 +10430,11 @@ msgstr "Gateway-forbindelse påkrævet"
 msgid "gdpr"
 msgstr "gdpr"
 
-#: src/components/modals/channel_tabs/ChannelOverviewTab.tsx:480
+#: src/components/modals/channel_tabs/ChannelOverviewTab.tsx:519
 msgid "general"
 msgstr "generel"
 
-#: src/components/modals/channel_tabs/ChannelOverviewTab.tsx:468
+#: src/components/modals/channel_tabs/ChannelOverviewTab.tsx:507
 #: src/components/modals/tabs/developer_options_tab/index.tsx:45
 #: src/components/modals/tabs/developer_options_tab/Inline.tsx:45
 #: src/components/modals/utils/ChannelSettingsConstants.tsx:56
@@ -10553,7 +10553,7 @@ msgstr "GIF-forhåndsvisning"
 msgid "GIFs"
 msgstr "GIF'er"
 
-#: src/components/modals/components/plutonium/SubscriptionCard.tsx:133
+#: src/components/modals/components/plutonium/SubscriptionCard.tsx:122
 #: src/components/modals/GiftAcceptModal.tsx:211
 msgid "Gift"
 msgstr "Gave"
@@ -10759,7 +10759,7 @@ msgstr "Fedt"
 msgid "gpu"
 msgstr "gpu"
 
-#: src/components/modals/components/plutonium/SubscriptionCard.tsx:127
+#: src/components/modals/components/plutonium/SubscriptionCard.tsx:116
 msgid "Grace Period"
 msgstr "Forskudsperiode"
 
@@ -11076,6 +11076,7 @@ msgstr "skjul"
 #: src/components/modals/HideOwnCameraConfirmModal.tsx:66
 #: src/components/modals/HideOwnScreenShareConfirmModal.tsx:66
 #: src/components/modals/tabs/account_security_tab/AccountTab.tsx:76
+#: src/components/modals/tabs/account_security_tab/SecurityTab.tsx:370
 msgid "Hide"
 msgstr "Skjul"
 
@@ -11221,7 +11222,7 @@ msgstr "Visningsmetode for høj dynamisk rækkevidde"
 msgid "High quality, requires fast connection"
 msgstr "Høj kvalitet, kræver hurtig forbindelse"
 
-#: src/components/modals/channel_tabs/ChannelOverviewTab.tsx:661
+#: src/components/modals/channel_tabs/ChannelOverviewTab.tsx:700
 msgid "Higher bitrate = better quality and higher bandwidth usage."
 msgstr "Højere bitrate = bedre kvalitet og højere båndbreddeforbrug."
 
@@ -11237,7 +11238,7 @@ msgstr "tips"
 msgid "Hit 88mph"
 msgstr "Nå 88 mph"
 
-#: src/components/modals/AddGuildModal.tsx:155
+#: src/components/modals/AddGuildModal.tsx:156
 msgid "Hobby Haven"
 msgstr "Hobbyhavn"
 
@@ -11338,7 +11339,7 @@ msgstr "Hvordan dette fungerer"
 msgid "HTML / XML"
 msgstr "HTML / XML"
 
-#: src/components/modals/channel_tabs/ChannelOverviewTab.tsx:492
+#: src/components/modals/channel_tabs/ChannelOverviewTab.tsx:531
 #: src/components/modals/ChannelCreateModal.tsx:92
 msgid "https://example.com"
 msgstr "https://example.com"
@@ -11394,7 +11395,7 @@ msgstr "Jeg forstår"
 msgid "Icon"
 msgstr "Ikon"
 
-#: src/components/modals/AddGuildModal.tsx:214
+#: src/components/modals/AddGuildModal.tsx:215
 #: src/components/modals/EditGroupBottomSheet.tsx:71
 #: src/components/modals/EditGroupModal.tsx:64
 msgid "Icon file is too large. Please choose a file smaller than 10MB."
@@ -11797,8 +11798,8 @@ msgstr "Indgange og tekst"
 msgid "Inputs with Icons"
 msgstr "Indgange med ikoner"
 
-#: src/components/modals/channel_tabs/ChannelOverviewTab.tsx:547
-#: src/components/modals/channel_tabs/ChannelOverviewTab.tsx:580
+#: src/components/modals/channel_tabs/ChannelOverviewTab.tsx:586
+#: src/components/modals/channel_tabs/ChannelOverviewTab.tsx:619
 msgid "Insert emoji"
 msgstr "Indsæt emoji"
 
@@ -11871,7 +11872,7 @@ msgstr "Ugyldig"
 msgid "Invalid audio file"
 msgstr "Ugyldig lydfil"
 
-#: src/components/pages/OAuthAuthorizePage.tsx:536
+#: src/components/pages/OAuthAuthorizePage.tsx:526
 msgid "Invalid authorization request"
 msgstr "Ugyldig autorisationsanmodning"
 
@@ -11894,7 +11895,7 @@ msgstr "Ugyldig eller udløbet kode"
 msgid "Invalid or expired code. Please try again."
 msgstr "Ugyldig eller udløbet kode. Prøv igen."
 
-#: src/components/pages/OAuthAuthorizePage.tsx:511
+#: src/components/pages/OAuthAuthorizePage.tsx:501
 msgid "Invalid redirect_uri"
 msgstr "Ugyldig redirect_uri"
 
@@ -11969,7 +11970,7 @@ msgstr "Inviter venner til {0}"
 msgid "Invite link"
 msgstr "Inviter link"
 
-#: src/components/modals/AddGuildModal.tsx:436
+#: src/components/modals/AddGuildModal.tsx:438
 msgid "Invite Link"
 msgstr "Invitér-link"
 
@@ -12101,7 +12102,7 @@ msgstr "Invitationer er i øjeblikket deaktiveret for dette fællesskab."
 msgid "Invites are currently disabled in this community by an admin. While this invite can be created, it cannot be accepted until invites are re-enabled."
 msgstr "Invitationer er midlertidigt deaktiveret i dette fællesskab af en admin. Selvom invitationen kan oprettes, kan den ikke accepters, før invitationer er genaktiveret."
 
-#: src/components/layout/guild_list/GuildListItem.tsx:493
+#: src/components/layout/guild_list/GuildListItem.tsx:492
 msgid "Invites are currently paused in this community"
 msgstr "Invitationer er midlertidigt sat på pause i dette fællesskab"
 
@@ -12143,7 +12144,7 @@ msgstr "IP-adresse autoriseret"
 msgid "Ireland"
 msgstr "Irland"
 
-#: src/components/modals/tabs/AccountSecurityTab.tsx:109
+#: src/components/modals/tabs/AccountSecurityTab.tsx:112
 msgid "Irreversible and destructive actions"
 msgstr "Uigenkaldelige og ødelæggende handlinger"
 
@@ -12185,7 +12186,7 @@ msgstr "Jitter"
 msgid "join"
 msgstr "deltag"
 
-#: src/components/modals/AddGuildModal.tsx:84
+#: src/components/modals/AddGuildModal.tsx:85
 msgid "Join a Community"
 msgstr "Deltag i et fællesskab"
 
@@ -12205,16 +12206,15 @@ msgstr "Deltag i opkald"
 #: src/components/channel/InviteEmbed.tsx:284
 #: src/components/channel/InviteEmbed.tsx:475
 #: src/components/layout/guild_list/AddGuildButton.tsx:77
-#: src/components/modals/AddGuildModal.tsx:132
-#: src/components/modals/AddGuildModal.tsx:416
-#: src/components/modals/components/plutonium/SubscriptionCard.tsx:289
+#: src/components/modals/AddGuildModal.tsx:133
+#: src/components/modals/AddGuildModal.tsx:418
 #: src/components/modals/discovery/DiscoveryGuildCard.tsx:99
 #: src/components/modals/InviteAcceptModal.tsx:119
 #: src/components/modals/InviteAcceptModalPreview.tsx:111
 msgid "Join Community"
 msgstr "Deltag i fællesskab"
 
-#: src/components/modals/AddGuildModal.tsx:430
+#: src/components/modals/AddGuildModal.tsx:432
 msgid "Join community form"
 msgstr "Formular til at deltage i fællesskab"
 
@@ -12327,7 +12327,7 @@ msgstr "JPEG, PNG, WebP. Maks 10MB. Minimum: {0}×{1}px (16:9)"
 msgid "JPEG, PNG, WebP. Max 10MB. Minimum: {0}×{1}px (16:9). Shown in invite embeds in chat."
 msgstr "JPEG, PNG, WebP. Maks 10MB. Minimum: {0}×{1}px (16:9). Visest i inviterindlejringer i chatten."
 
-#: src/components/modals/AddGuildModal.tsx:338
+#: src/components/modals/AddGuildModal.tsx:340
 #: src/components/modals/EditGroupBottomSheet.tsx:223
 #: src/components/modals/EditGroupModal.tsx:204
 #: src/components/modals/guild_tabs/guild_overview_tab/fields/GuildIconUploadField.tsx:116
@@ -12717,7 +12717,7 @@ msgstr "Lad fællesskabet moderere sig selv"
 msgid "Letters (a-z, A-Z), numbers (0-9), and underscores (_) only"
 msgstr "Kun bogstaver (a-z, A-Z), tal (0-9) og understregningstegn (_)"
 
-#: src/components/modals/components/plutonium/SubscriptionCard.tsx:131
+#: src/components/modals/components/plutonium/SubscriptionCard.tsx:120
 #: src/components/modals/tabs/developer_options_tab/AccountPremiumTab.tsx:52
 #: src/components/modals/tabs/developer_options_tab/MockingTab.tsx:317
 msgid "Lifetime"
@@ -12899,7 +12899,7 @@ msgstr "Indlæser"
 msgid "Loading bans..."
 msgstr "Indlæser udelukkelser..."
 
-#: src/components/pages/OAuthAuthorizePage.tsx:877
+#: src/components/pages/OAuthAuthorizePage.tsx:846
 msgid "Loading communities..."
 msgstr "Indlæser fællesskaber..."
 
@@ -13197,7 +13197,7 @@ msgid "Manage Roles"
 msgstr "Administrer roller"
 
 #: src/components/layout/app_layout/nagbars/PremiumGracePeriodNagbar.tsx:79
-#: src/components/modals/components/plutonium/SubscriptionCard.tsx:271
+#: src/components/modals/components/plutonium/SubscriptionCard.tsx:260
 msgid "Manage Subscription"
 msgstr "Administrer abonnement"
 
@@ -13214,7 +13214,7 @@ msgstr "Administrer webhooks"
 msgid "Manage your applications and bots."
 msgstr "Administrer dine applikationer og bots."
 
-#: src/components/modals/tabs/AccountSecurityTab.tsx:78
+#: src/components/modals/tabs/AccountSecurityTab.tsx:79
 msgid "Manage your email, password, and account settings"
 msgstr "Administrer din e-mail, adgangskode og kontoindstillinger"
 
@@ -13222,7 +13222,7 @@ msgstr "Administrer din e-mail, adgangskode og kontoindstillinger"
 msgid "Manage your gifts"
 msgstr "Administrer dine gaver"
 
-#: src/components/modals/tabs/account_security_tab/SecurityTab.tsx:340
+#: src/components/modals/tabs/account_security_tab/SecurityTab.tsx:353
 msgid "Manage your phone number for SMS two-factor authentication"
 msgstr "Administrer dit telefonnummer til SMS-tofaktorautentificering"
 
@@ -13385,7 +13385,7 @@ msgstr "Maksimerer synlige beskeder med minimal afstand."
 msgid "Maximum 256 characters"
 msgstr "Maks. 256 tegn"
 
-#: src/components/modals/channel_tabs/ChannelOverviewTab.tsx:694
+#: src/components/modals/channel_tabs/ChannelOverviewTab.tsx:733
 msgid "Maximum members who can join at once. 0 means unlimited."
 msgstr "Maksimalt antal medlemmer, der kan tilslutte sig på én gang. 0 betyder ubegrænset."
 
@@ -13579,7 +13579,7 @@ msgstr "Medlemmer, der har været inaktive i {days} dage, vil blive fjernet."
 msgid "Members list unavailable at this screen width"
 msgstr "Medlemslisten er ikke tilgængelig ved denne skærmbredde"
 
-#: src/components/modals/channel_tabs/ChannelOverviewTab.tsx:617
+#: src/components/modals/channel_tabs/ChannelOverviewTab.tsx:656
 msgid "Members must wait between messages."
 msgstr "Medlemmer skal vente mellem beskeder."
 
@@ -14164,11 +14164,11 @@ msgstr "Flyttede rollen til placering {0}."
 msgid "Moved to channel {0}."
 msgstr "Flyttede til kanal {0}."
 
-#: src/components/modals/AddGuildModal.tsx:174
+#: src/components/modals/AddGuildModal.tsx:175
 msgid "Movie Club"
 msgstr "Filmklub"
 
-#: src/components/modals/AddGuildModal.tsx:161
+#: src/components/modals/AddGuildModal.tsx:162
 msgid "Movie Night Crew"
 msgstr "Filmaften-hold"
 
@@ -14188,7 +14188,7 @@ msgstr "Flersproget indhold"
 msgid "Music"
 msgstr "Musik"
 
-#: src/components/modals/AddGuildModal.tsx:170
+#: src/components/modals/AddGuildModal.tsx:171
 msgid "Music Lovers"
 msgstr "Musikelskere"
 
@@ -14316,7 +14316,7 @@ msgstr "Slå streamlyd fra"
 msgid "muted"
 msgstr "dæmpet"
 
-#: src/components/layout/guild_list/GuildListItem.tsx:453
+#: src/components/layout/guild_list/GuildListItem.tsx:452
 #: src/components/layout/VoiceStateIcons.tsx:49
 #: src/components/voice/VoiceParticipantTile.tsx:1457
 #: src/utils/ContextMenuUtils.tsx:165
@@ -14329,7 +14329,7 @@ msgstr "dæmpede kanaler"
 
 #. placeholder {0}: DateUtils.getFormattedDateTime(new Date(muteConfig.end_time))
 #. placeholder {0}: getFormattedDateTime(new Date(muteConfig.end_time))
-#: src/components/layout/guild_list/GuildListItem.tsx:451
+#: src/components/layout/guild_list/GuildListItem.tsx:450
 #: src/utils/ContextMenuUtils.tsx:163
 msgid "Muted until {0}"
 msgstr "Lydløs indtil {0}"
@@ -14371,7 +14371,7 @@ msgstr "Mit fantastiske medie"
 msgid "My awesome sticker"
 msgstr "Mit fantastiske klistermærke"
 
-#: src/components/modals/channel_tabs/ChannelOverviewTab.tsx:480
+#: src/components/modals/channel_tabs/ChannelOverviewTab.tsx:519
 msgid "My Category"
 msgstr "Min kategori"
 
@@ -14509,7 +14509,7 @@ msgstr "Navigation"
 msgid "Need an account?"
 msgstr "Brug for en konto?"
 
-#: src/components/modals/AddGuildModal.tsx:162
+#: src/components/modals/AddGuildModal.tsx:163
 msgid "Neighborhood Watch"
 msgstr "Nabolagsovervågning"
 
@@ -14623,7 +14623,7 @@ msgid "Newest First"
 msgstr "Nyeste først"
 
 #: src/components/bottomsheets/ChannelSearchBottomSheet.tsx:394
-#: src/components/pages/OAuthAuthorizePage.tsx:931
+#: src/components/pages/OAuthAuthorizePage.tsx:900
 msgid "Next"
 msgstr "Næste"
 
@@ -14754,7 +14754,7 @@ msgstr "Ingen kanaler tilgængelige"
 msgid "No channels found"
 msgstr "Ingen kanaler fundet"
 
-#: src/components/pages/OAuthAuthorizePage.tsx:893
+#: src/components/pages/OAuthAuthorizePage.tsx:862
 msgid "No communities available with <0>Manage Community</0> permissions."
 msgstr "Ingen fællesskaber tilgængelige med <0>Administrer fællesskab</0>-rettigheder."
 
@@ -14842,7 +14842,7 @@ msgstr "Ingen invitationer oprettet"
 msgid "No keybind set"
 msgstr "Ingen genvejstast angivet"
 
-#: src/components/modals/channel_tabs/ChannelOverviewTab.tsx:688
+#: src/components/modals/channel_tabs/ChannelOverviewTab.tsx:727
 #: src/components/modals/InviteModal.tsx:88
 msgid "No limit"
 msgstr "Ingen grænse"
@@ -14851,7 +14851,7 @@ msgstr "Ingen grænse"
 msgid "No Logs Yet"
 msgstr "Ingen logfiler endnu"
 
-#: src/components/pages/OAuthAuthorizePage.tsx:426
+#: src/components/pages/OAuthAuthorizePage.tsx:416
 msgid "No Manage Community permission"
 msgstr "Ingen tilladelse til at administrere fællesskab"
 
@@ -14884,7 +14884,7 @@ msgstr "Ingen fælles venner fundet."
 msgid "No mutual groups found."
 msgstr "Ingen fælles grupper fundet."
 
-#: src/components/modals/tabs/account_security_tab/SecurityTab.tsx:286
+#: src/components/modals/tabs/account_security_tab/SecurityTab.tsx:299
 msgid "No passkeys registered"
 msgstr "Ingen adgangsnøgler registreret"
 
@@ -14986,7 +14986,7 @@ msgstr "Ingen søgeresultater"
 msgid "No settings found"
 msgstr "Ingen indstillinger fundet"
 
-#: src/components/pages/OAuthAuthorizePage.tsx:824
+#: src/components/pages/OAuthAuthorizePage.tsx:793
 msgid "No specific scopes requested."
 msgstr "Ingen specifikke scopes anmodet om."
 
@@ -15261,7 +15261,7 @@ msgid "Objects"
 msgstr "Objekter"
 
 #: src/components/channel/ReplyBar.tsx:112
-#: src/components/modals/channel_tabs/ChannelOverviewTab.tsx:160
+#: src/components/modals/channel_tabs/ChannelOverviewTab.tsx:173
 #: src/components/modals/guild_tabs/GuildModerationTab.tsx:243
 #: src/utils/modals/guild_tabs/GuildAuditLogTabUtils.tsx:64
 msgid "Off"
@@ -15499,7 +15499,7 @@ msgstr "Åbn farvevælger"
 msgid "Open Community Notification Settings"
 msgstr "Åbn community-notifikationsindstillinger"
 
-#: src/components/modals/components/plutonium/SubscriptionCard.tsx:269
+#: src/components/modals/components/plutonium/SubscriptionCard.tsx:258
 msgid "Open Customer Portal"
 msgstr "Åbn kundeportal"
 
@@ -15779,7 +15779,7 @@ msgstr "Ellers kræves Push-to-talk."
 msgid "otp"
 msgstr "otp"
 
-#: src/components/modals/AddGuildModal.tsx:186
+#: src/components/modals/AddGuildModal.tsx:187
 msgid "Our Hangout"
 msgstr "Vores hængeudsted"
 
@@ -15909,7 +15909,7 @@ msgstr "pakker"
 msgid "Page {currentPage} of {totalPages}"
 msgstr "Side {currentPage} af {totalPages}"
 
-#: src/components/modals/channel_tabs/ChannelOverviewTab.tsx:671
+#: src/components/modals/channel_tabs/ChannelOverviewTab.tsx:710
 msgid "Participant Limit"
 msgstr "Deltagergrænse"
 
@@ -15930,7 +15930,7 @@ msgstr "Partneret fællesskab"
 msgid "Passkey Name"
 msgstr "Passkey-navn"
 
-#: src/components/modals/tabs/account_security_tab/SecurityTab.tsx:276
+#: src/components/modals/tabs/account_security_tab/SecurityTab.tsx:289
 msgid "Passkeys"
 msgstr "Passkeys"
 
@@ -16103,8 +16103,8 @@ msgid "permissions"
 msgstr "tilladelser"
 
 #: src/components/modals/guild_tabs/GuildRolesTab.tsx:1086
-#: src/components/pages/OAuthAuthorizePage.tsx:584
-#: src/components/pages/OAuthAuthorizePage.tsx:720
+#: src/components/pages/OAuthAuthorizePage.tsx:574
+#: src/components/pages/OAuthAuthorizePage.tsx:700
 msgid "Permissions"
 msgstr "Tilladelser"
 
@@ -16148,8 +16148,8 @@ msgstr "Telefon"
 
 #: src/components/modals/PhoneAddModal.tsx:192
 #: src/components/modals/RequiredActionModal.tsx:616
-#: src/components/modals/tabs/account_security_tab/SecurityTab.tsx:339
-#: src/components/modals/tabs/account_security_tab/SecurityTab.tsx:345
+#: src/components/modals/tabs/account_security_tab/SecurityTab.tsx:352
+#: src/components/modals/tabs/account_security_tab/SecurityTab.tsx:358
 #: src/components/modals/utils/SettingsSearchIndex.tsx:115
 msgid "Phone Number"
 msgstr "Telefonnummer"
@@ -16157,11 +16157,6 @@ msgstr "Telefonnummer"
 #: src/components/modals/PhoneAddModal.tsx:133
 msgid "Phone number added"
 msgstr "Telefonnummer tilføjet"
-
-#. placeholder {0}: user.phone
-#: src/components/modals/tabs/account_security_tab/SecurityTab.tsx:349
-msgid "Phone number added: {0}"
-msgstr "Telefonnummer tilføjet: {0}"
 
 #: src/components/modals/RequiredActionModal.tsx:253
 msgid "Phone number is required"
@@ -16187,7 +16182,7 @@ msgstr "Telefon bekræftelse påkrævet"
 msgid "photo"
 msgstr "foto"
 
-#: src/components/modals/AddGuildModal.tsx:169
+#: src/components/modals/AddGuildModal.tsx:170
 msgid "Photography Club"
 msgstr "Fotoklub"
 
@@ -16421,7 +16416,7 @@ msgstr "Prøv igen senere."
 msgid "Please update Fluxer to view this message."
 msgstr "Opdater Fluxer for at se denne besked."
 
-#: src/actions/InviteActionCreators.tsx:184
+#: src/actions/InviteActionCreators.tsx:207
 msgid "Please verify your account by setting an email and password before joining communities."
 msgstr "Bekræft din konto ved at angive e-mail og adgangskode, før du tilslutter dig fællesskaber."
 
@@ -16447,7 +16442,7 @@ msgstr "plutonium"
 
 #: src/components/channel/direct_message/DMList.tsx:1326
 #: src/components/channel/direct_message/DMList.tsx:1405
-#: src/components/modals/components/FeatureComparisonTable.tsx:127
+#: src/components/modals/components/FeatureComparisonTable.tsx:146
 msgid "Plutonium"
 msgstr "Plutonium"
 
@@ -16459,7 +16454,7 @@ msgstr "Plutonium-mærkes privatliv"
 msgid "Plutonium perks"
 msgstr "Plutonium-fordele"
 
-#: src/components/modals/components/plutonium/SubscriptionCard.tsx:121
+#: src/components/modals/components/plutonium/SubscriptionCard.tsx:110
 msgid "Plutonium Subscription"
 msgstr "Plutonium-abonnement"
 
@@ -16715,7 +16710,7 @@ msgstr "Fortsæt"
 msgid "Processing"
 msgstr "Behandler"
 
-#: src/components/modals/AddGuildModal.tsx:163
+#: src/components/modals/AddGuildModal.tsx:164
 msgid "Professional Peers"
 msgstr "Professionelle kolleger"
 
@@ -16776,7 +16771,7 @@ msgstr "Profil opdateret"
 msgid "progress"
 msgstr "fremskridt"
 
-#: src/components/modals/AddGuildModal.tsx:159
+#: src/components/modals/AddGuildModal.tsx:160
 msgid "Project X"
 msgstr "Projekt X"
 
@@ -16789,7 +16784,7 @@ msgstr "pronominer"
 msgid "Pronouns"
 msgstr "Stedord"
 
-#: src/components/modals/tabs/AccountSecurityTab.tsx:91
+#: src/components/modals/tabs/AccountSecurityTab.tsx:92
 msgid "Protect your account with two-factor authentication and passkeys"
 msgstr "Beskyt din konto med tofaktorautentificering og passkeys"
 
@@ -17014,7 +17009,7 @@ msgid "Reactions"
 msgstr "Reaktioner"
 
 #: src/components/layout/app_layout/nagbars/PremiumExpiredNagbar.tsx:75
-#: src/components/modals/components/plutonium/SubscriptionCard.tsx:267
+#: src/components/modals/components/plutonium/SubscriptionCard.tsx:256
 msgid "Reactivate"
 msgstr "Genaktivér"
 
@@ -17076,7 +17071,7 @@ msgstr "Modtag"
 msgid "Receive notifications when someone mentions you"
 msgstr "Modtag notifikationer, når nogen nævner dig"
 
-#: src/components/modals/tabs/account_security_tab/SecurityTab.tsx:407
+#: src/components/modals/tabs/account_security_tab/SecurityTab.tsx:431
 msgid "Receive verification codes via SMS as a backup authentication method"
 msgstr "Modtag bekræftelseskoder via SMS som en backup-autentifikationsmetode"
 
@@ -17141,7 +17136,7 @@ msgstr "Indløs en gave"
 msgid "Redeem for Yourself"
 msgstr "Indløs til dig selv"
 
-#: src/components/modals/components/plutonium/SubscriptionCard.tsx:245
+#: src/components/modals/components/plutonium/SubscriptionCard.tsx:234
 msgid "Redeem Gift Code"
 msgstr "Indløs gavekode"
 
@@ -17233,7 +17228,7 @@ msgstr "Regenerering ugyldiggør det nuværende token. Opdater al kode, der brug
 msgid "Register"
 msgstr "Registrer"
 
-#: src/components/modals/tabs/account_security_tab/SecurityTab.tsx:282
+#: src/components/modals/tabs/account_security_tab/SecurityTab.tsx:295
 msgid "Registered Passkeys"
 msgstr "Registrerede passkeys"
 
@@ -17303,7 +17298,7 @@ msgstr "fjern"
 #: src/components/modals/guild_tabs/guild_overview_tab/fields/GuildEmbedSplashUploadField.tsx:101
 #: src/components/modals/guild_tabs/guild_overview_tab/fields/GuildIconUploadField.tsx:107
 #: src/components/modals/guild_tabs/guild_overview_tab/fields/GuildInviteSplashUploadField.tsx:113
-#: src/components/modals/tabs/account_security_tab/SecurityTab.tsx:394
+#: src/components/modals/tabs/account_security_tab/SecurityTab.tsx:418
 #: src/components/modals/tabs/ExpressionPacksTab.tsx:96
 #: src/components/modals/tabs/ExpressionPacksTab.tsx:226
 #: src/components/modals/tabs/LinkedAccountsTab.tsx:191
@@ -17454,7 +17449,7 @@ msgstr "Fjern fra favoritter"
 msgid "Remove from Group"
 msgstr "Fjern fra gruppe"
 
-#: src/components/modals/AddGuildModal.tsx:333
+#: src/components/modals/AddGuildModal.tsx:335
 #: src/components/modals/EditGroupBottomSheet.tsx:218
 #: src/components/modals/EditGroupModal.tsx:199
 msgid "Remove Icon"
@@ -17477,11 +17472,11 @@ msgstr "Fjern tilsidesættelse"
 msgid "Remove Pack"
 msgstr "Fjern pakke"
 
-#: src/components/modals/tabs/account_security_tab/SecurityTab.tsx:380
+#: src/components/modals/tabs/account_security_tab/SecurityTab.tsx:404
 msgid "Remove Phone"
 msgstr "Fjern telefon"
 
-#: src/components/modals/tabs/account_security_tab/SecurityTab.tsx:363
+#: src/components/modals/tabs/account_security_tab/SecurityTab.tsx:387
 msgid "Remove Phone Number"
 msgstr "Fjern telefonnummer"
 
@@ -17623,7 +17618,7 @@ msgstr "Fjerner ATTACH_FILES-tilladelse i alle kanaler (skjuler upload-knappen)"
 msgid "Removes SEND_MESSAGES permission in all channels (disables textarea and all buttons)"
 msgstr "Fjerner SEND_MESSAGES-tilladelse i alle kanaler (deaktiverer tekstfelt og knapper)"
 
-#: src/components/pages/OAuthAuthorizePage.tsx:660
+#: src/components/pages/OAuthAuthorizePage.tsx:640
 msgid "Removing permissions could limit the bot's features."
 msgstr "Fjernelse af tilladelser kan begrænse botens funktioner."
 
@@ -17636,7 +17631,7 @@ msgstr "Hvis du fjerner pakken, afinstalleres den fra din konto."
 msgid "Removing the timeout will allow <0>{0}</0> to send messages, react, and join voice channels again."
 msgstr "Hvis timeout fjernes, kan <0>{0}</0> igen sende beskeder, reagere og deltage i tale-kanaler."
 
-#: src/components/modals/tabs/account_security_tab/SecurityTab.tsx:322
+#: src/components/modals/tabs/account_security_tab/SecurityTab.tsx:335
 msgid "Rename"
 msgstr "Omdøb"
 
@@ -17695,7 +17690,7 @@ msgstr "Fællesskabet omdøbt til {0}."
 msgid "Render all your messages as unknown message type"
 msgstr "Vis alle dine beskeder som ukendt beskedtype"
 
-#: src/components/modals/components/plutonium/SubscriptionCard.tsx:227
+#: src/components/modals/components/plutonium/SubscriptionCard.tsx:216
 msgid "Renews on <0>{renewalDate}</0>."
 msgstr "Fornyes den <0>{renewalDate}</0>."
 
@@ -17813,7 +17808,7 @@ msgstr "Anmod om dataeksport"
 msgid "Request Export"
 msgstr "Anmod om eksport"
 
-#: src/components/pages/OAuthAuthorizePage.tsx:814
+#: src/components/pages/OAuthAuthorizePage.tsx:783
 msgid "Requested scopes"
 msgstr "Anmodede scopes"
 
@@ -17841,7 +17836,7 @@ msgstr "Kræver OAuth2 code grant"
 msgid "Require two-factor authentication for moderators before they can ban, kick, timeout, or remove messages."
 msgstr "Krav om to-faktor-godkendelse for moderatorer, før de kan bannlyse, smide ud, timeoutte eller fjerne beskeder."
 
-#: src/components/pages/OAuthAuthorizePage.tsx:839
+#: src/components/pages/OAuthAuthorizePage.tsx:808
 msgid "Required"
 msgstr "Påkrævet"
 
@@ -17955,7 +17950,7 @@ msgstr "Nulstil alle tilsidesættelser til temaets standard"
 msgid "Reset app data"
 msgstr "Nulstil appdata"
 
-#: src/components/BootstrapErrorScreen.tsx:74
+#: src/components/BootstrapErrorScreen.tsx:75
 msgid "Reset App Data"
 msgstr "Nulstil appdata"
 
@@ -18038,8 +18033,8 @@ msgstr "Gendan maksimeret"
 msgid "Restore window"
 msgstr "Gendan vindue"
 
-#: src/components/modals/components/plutonium/SubscriptionCard.tsx:263
-#: src/components/modals/components/plutonium/SubscriptionCard.tsx:265
+#: src/components/modals/components/plutonium/SubscriptionCard.tsx:252
+#: src/components/modals/components/plutonium/SubscriptionCard.tsx:254
 msgid "Resubscribe"
 msgstr "Tilmeld igen"
 
@@ -18077,6 +18072,7 @@ msgid "reveal"
 msgstr "afslør"
 
 #: src/components/modals/tabs/account_security_tab/AccountTab.tsx:76
+#: src/components/modals/tabs/account_security_tab/SecurityTab.tsx:370
 msgid "Reveal"
 msgstr "Vis"
 
@@ -18088,7 +18084,7 @@ msgstr "Vis spoiler"
 msgid "Review deletion"
 msgstr "Gennemgå sletning"
 
-#: src/components/pages/OAuthAuthorizePage.tsx:749
+#: src/components/pages/OAuthAuthorizePage.tsx:718
 msgid "Review what this app is asking for before you continue."
 msgstr "Gennemgå, hvad denne app beder om, før du fortsætter."
 
@@ -18465,8 +18461,8 @@ msgid "Scope"
 msgstr "Omfang"
 
 #: src/components/modals/tabs/applications_tab/application_detail/OAuthBuilderSection.tsx:75
-#: src/components/pages/OAuthAuthorizePage.tsx:577
-#: src/components/pages/OAuthAuthorizePage.tsx:713
+#: src/components/pages/OAuthAuthorizePage.tsx:567
+#: src/components/pages/OAuthAuthorizePage.tsx:693
 msgid "Scopes"
 msgstr "Omfang"
 
@@ -18770,8 +18766,8 @@ msgstr "Sikre din konto"
 msgid "security"
 msgstr "sikkerhed"
 
-#: src/components/modals/tabs/account_security_tab/Inline.tsx:81
-#: src/components/modals/tabs/AccountSecurityTab.tsx:90
+#: src/components/modals/tabs/account_security_tab/Inline.tsx:82
+#: src/components/modals/tabs/AccountSecurityTab.tsx:91
 #: src/components/modals/utils/SettingsConstants.tsx:298
 #: src/components/modals/utils/SettingsSectionRegistry.tsx:505
 msgid "Security"
@@ -18781,7 +18777,7 @@ msgstr "Sikkerhed"
 msgid "Security & Login"
 msgstr "Sikkerhed og login"
 
-#: src/components/modals/tabs/account_security_tab/SecurityTab.tsx:203
+#: src/components/modals/tabs/account_security_tab/SecurityTab.tsx:216
 msgid "Security Features"
 msgstr "Sikkerhedsfunktioner"
 
@@ -18832,7 +18828,7 @@ msgstr "Vælg en kanal eller kategori"
 msgid "Select a Community"
 msgstr "Vælg et fællesskab"
 
-#: src/components/pages/OAuthAuthorizePage.tsx:866
+#: src/components/pages/OAuthAuthorizePage.tsx:835
 msgid "Select a community where you have <0>Manage Community</0> permissions."
 msgstr "Vælg et fællesskab, hvor du har <0>Administrer fællesskab</0>-tilladelser."
 
@@ -18864,7 +18860,7 @@ msgstr "Vælg en verificeringsmetode."
 msgid "Select a violation category."
 msgstr "Vælg en overtrædelseskategori."
 
-#: src/components/modals/channel_tabs/ChannelOverviewTab.tsx:729
+#: src/components/modals/channel_tabs/ChannelOverviewTab.tsx:768
 msgid "Select a voice region for this channel. Automatic uses the closest region."
 msgstr "Vælg en stemmeregion til denne kanal. Automatisk bruger den nærmeste region."
 
@@ -19802,7 +19798,7 @@ msgstr "Log ud af {displayName}"
 msgid "Signal strength loading"
 msgstr "Indlæser signalstyrke"
 
-#: src/components/pages/OAuthAuthorizePage.tsx:788
+#: src/components/pages/OAuthAuthorizePage.tsx:757
 msgid "Signed in as"
 msgstr "Logget ind som"
 
@@ -19936,7 +19932,7 @@ msgid "Slower"
 msgstr "Langsommere"
 
 #: src/components/channel/SlowmodeIndicator.tsx:64
-#: src/components/modals/channel_tabs/ChannelOverviewTab.tsx:616
+#: src/components/modals/channel_tabs/ChannelOverviewTab.tsx:655
 #: src/components/modals/tabs/developer_options_tab/MockingTab.tsx:117
 msgid "Slowmode"
 msgstr "Slowmode"
@@ -19990,11 +19986,11 @@ msgstr "Mindre mediestørrelse"
 msgid "sms"
 msgstr "sms"
 
-#: src/components/modals/tabs/account_security_tab/SecurityTab.tsx:412
+#: src/components/modals/tabs/account_security_tab/SecurityTab.tsx:436
 msgid "SMS Backup"
 msgstr "SMS-sikkerhedskopi"
 
-#: src/components/modals/tabs/account_security_tab/SecurityTab.tsx:432
+#: src/components/modals/tabs/account_security_tab/SecurityTab.tsx:456
 msgid "SMS backup is disabled for partners"
 msgstr "SMS-sikkerhedskopi er deaktiveret for partnere"
 
@@ -20007,15 +20003,15 @@ msgstr "SMS-kode"
 msgid "SMS Code"
 msgstr "SMS-kode"
 
-#: src/components/modals/tabs/account_security_tab/SecurityTab.tsx:406
+#: src/components/modals/tabs/account_security_tab/SecurityTab.tsx:430
 msgid "SMS Two-Factor Authentication"
 msgstr "SMS to-faktorautentificering"
 
-#: src/components/modals/tabs/account_security_tab/SecurityTab.tsx:151
+#: src/components/modals/tabs/account_security_tab/SecurityTab.tsx:164
 msgid "SMS two-factor authentication adds an additional layer of security to your account by requiring a verification code sent to your phone number when signing in."
 msgstr "SMS-to-faktorautentificering giver ekstra sikkerhed ved at kræve en bekræftelseskode sendt til dit telefonnummer ved login."
 
-#: src/components/modals/tabs/account_security_tab/SecurityTab.tsx:416
+#: src/components/modals/tabs/account_security_tab/SecurityTab.tsx:440
 msgid "SMS two-factor authentication is enabled"
 msgstr "SMS-to-faktorautentificering er aktiveret"
 
@@ -20291,7 +20287,7 @@ msgstr "Spoilerindhold"
 msgid "spoilers"
 msgstr "spoilere"
 
-#: src/components/modals/AddGuildModal.tsx:179
+#: src/components/modals/AddGuildModal.tsx:180
 msgid "Sports Fans"
 msgstr "Sportsfans"
 
@@ -20495,7 +20491,7 @@ msgstr "Klistermærkedensitet"
 msgid "Sticker pack"
 msgstr "Klistermærkepakke"
 
-#: src/actions/InviteActionCreators.tsx:291
+#: src/actions/InviteActionCreators.tsx:314
 msgid "Sticker pack creation limit reached"
 msgstr "Grænsen for oprettelse af klistermærkepakker er nået"
 
@@ -20503,7 +20499,7 @@ msgstr "Grænsen for oprettelse af klistermærkepakker er nået"
 msgid "Sticker Pack Invite"
 msgstr "Invitation til klistermærkepakke"
 
-#: src/actions/InviteActionCreators.tsx:277
+#: src/actions/InviteActionCreators.tsx:300
 msgid "Sticker pack limit reached"
 msgstr "Grænsen for klistermærkepakker er nået"
 
@@ -20634,15 +20630,15 @@ msgstr "streaming"
 msgid "Streaming"
 msgstr "Streaming"
 
-#: src/components/modals/AddGuildModal.tsx:148
+#: src/components/modals/AddGuildModal.tsx:149
 msgid "Study Buddies United"
 msgstr "Studievenner forenet"
 
-#: src/components/modals/AddGuildModal.tsx:181
+#: src/components/modals/AddGuildModal.tsx:182
 msgid "Study Group"
 msgstr "Studiegruppe"
 
-#: src/components/modals/AddGuildModal.tsx:167
+#: src/components/modals/AddGuildModal.tsx:168
 msgid "Study Hall"
 msgstr "Studiehaller"
 
@@ -20732,7 +20728,7 @@ msgstr "forslag"
 msgid "Summary"
 msgstr "Oversigt"
 
-#: src/components/modals/AddGuildModal.tsx:164
+#: src/components/modals/AddGuildModal.tsx:165
 msgid "Support Circle"
 msgstr "Supportcirklen"
 
@@ -20793,7 +20789,7 @@ msgstr "Svensk"
 msgid "switch"
 msgstr "skift"
 
-#: src/components/pages/OAuthAuthorizePage.tsx:801
+#: src/components/pages/OAuthAuthorizePage.tsx:770
 msgid "Switch account"
 msgstr "Skift konto"
 
@@ -20957,7 +20953,7 @@ msgstr "Tags ({0}/10)"
 msgid "Tap to add a note"
 msgstr "Tryk for at tilføje en note"
 
-#: src/components/pages/OAuthAuthorizePage.tsx:766
+#: src/components/pages/OAuthAuthorizePage.tsx:735
 msgid "Target community"
 msgstr "Målrettet fællesskab"
 
@@ -20966,7 +20962,7 @@ msgstr "Målrettet fællesskab"
 msgid "Targeted attacks, threats, or sustained harassment"
 msgstr "Målrettede angreb, trusler eller vedvarende chikane"
 
-#: src/components/modals/AddGuildModal.tsx:157
+#: src/components/modals/AddGuildModal.tsx:158
 msgid "Team Alpha"
 msgstr "Team Alpha"
 
@@ -21096,7 +21092,7 @@ msgstr "Det ligner ikke en gyldig farve. Prøv hex, rgb(), hsl() eller et CSS-fa
 msgid "That doesn't look like a valid URL."
 msgstr "Det ser ikke ud til at være en gyldig URL."
 
-#: src/components/modals/AddGuildModal.tsx:264
+#: src/components/modals/AddGuildModal.tsx:265
 #: src/components/modals/EditGroupBottomSheet.tsx:123
 #: src/components/modals/EditGroupModal.tsx:116
 #: src/components/modals/guild_tabs/guild_overview_tab/hooks/useGuildImageAssetField.tsx:203
@@ -21111,7 +21107,7 @@ msgid "That message didn't delete"
 msgstr "Beskeden blev ikke slettet"
 
 #. placeholder {0}: invite.pack.name
-#: src/actions/InviteActionCreators.tsx:104
+#: src/actions/InviteActionCreators.tsx:123
 msgid "The {packLabel} {0} has been installed."
 msgstr "{packLabel} {0} er blevet installeret."
 
@@ -21124,11 +21120,11 @@ msgid "The app has crashed. Checking for updates that might fix this issue..."
 msgstr "Appen er gået ned. Tjekker efter opdateringer, der måske løser problemet..."
 
 #. placeholder {0}: successState.guildName
-#: src/components/pages/OAuthAuthorizePage.tsx:554
+#: src/components/pages/OAuthAuthorizePage.tsx:544
 msgid "The bot has been added to <0>{0}</0>."
 msgstr "Botten er blevet tilføjet til <0>{0}</0>."
 
-#: src/components/pages/OAuthAuthorizePage.tsx:558
+#: src/components/pages/OAuthAuthorizePage.tsx:548
 msgid "The bot has been added."
 msgstr "Botten er blevet tilføjet."
 
@@ -21161,7 +21157,7 @@ msgstr "FluxerTag <0>{fluxerTag}</0> er allerede taget. Hvis du fortsætter, vil
 msgid "The job starts 24 hours after you confirm and can be canceled or restarted anytime"
 msgstr "Jobbet starter 24 timer efter, du bekræfter, og kan aflyses eller genstartes når som helst"
 
-#: src/components/modals/AddGuildModal.tsx:147
+#: src/components/modals/AddGuildModal.tsx:148
 msgid "The Midnight Gamers"
 msgstr "The Midnight Gamers"
 
@@ -21182,7 +21178,7 @@ msgstr "Den angivne redirect_uri er ikke registreret for denne applikation."
 msgid "The role <0>\"{roleName}\"</0> could not be deleted at this time. Please try again."
 msgstr "Rollen <0>\"{roleName}\"</0> kunne ikke slettes lige nu. Prøv igen."
 
-#: src/components/modals/AddGuildModal.tsx:185
+#: src/components/modals/AddGuildModal.tsx:186
 msgid "The Squad"
 msgstr "The Squad"
 
@@ -21206,7 +21202,7 @@ msgstr "Timeouten må ikke overskride 365 dage (31536000 sekunder)."
 msgid "The URL of the Fluxer instance you want to sign in to."
 msgstr "URL'en til den Fluxer-instans, du vil logge ind på."
 
-#: src/components/modals/channel_tabs/ChannelOverviewTab.tsx:496
+#: src/components/modals/channel_tabs/ChannelOverviewTab.tsx:535
 msgid "The URL this link channel points to."
 msgstr "URL'en som denne linkkanal peger på."
 
@@ -21336,7 +21332,7 @@ msgstr "Denne applikation"
 msgid "This attachment has expired"
 msgstr "Dette vedhæftede element er udløbet"
 
-#: src/components/pages/OAuthAuthorizePage.tsx:647
+#: src/components/pages/OAuthAuthorizePage.tsx:627
 msgid "This bot is requesting the Administrator permission. We do not recommend granting this to production apps unless you fully trust the developer. Consider asking them to request a reduced set of permissions. Close this page if you are unsure."
 msgstr "Denne bot beder om Administrator-adgangen. Vi anbefaler ikke at give den til produktionsapps, medmindre du har fuld tillid til udvikleren. Overvej at bede dem om at anmode om et reduceret sæt tilladelser. Luk siden, hvis du er i tvivl."
 
@@ -22055,7 +22051,7 @@ msgstr "Top"
 msgid "Top Tooltip"
 msgstr "Øverst værktøjstip"
 
-#: src/components/modals/channel_tabs/ChannelOverviewTab.tsx:519
+#: src/components/modals/channel_tabs/ChannelOverviewTab.tsx:558
 msgid "Topic"
 msgstr "Emne"
 
@@ -22100,7 +22096,7 @@ msgstr "oversættelse"
 msgid "Travel & Places"
 msgstr "Rejser og steder"
 
-#: src/components/modals/AddGuildModal.tsx:173
+#: src/components/modals/AddGuildModal.tsx:174
 msgid "Travel Buddies"
 msgstr "Rejsepartnere"
 
@@ -22164,12 +22160,12 @@ msgstr "Prøv et andet søgeord eller filter"
 msgid "Try again"
 msgstr "Prøv igen"
 
-#: src/components/BootstrapErrorScreen.tsx:71
+#: src/components/BootstrapErrorScreen.tsx:72
 #: src/components/bottomsheets/ChannelSearchBottomSheet.tsx:317
 #: src/components/channel/ChannelSearchResults.tsx:694
 #: src/components/modals/channel_tabs/ChannelInvitesTab.tsx:231
 #: src/components/modals/channel_tabs/ChannelWebhooksTab.tsx:162
-#: src/components/NetworkErrorScreen.tsx:56
+#: src/components/NetworkErrorScreen.tsx:57
 #: src/components/pages/SsoCallbackPage.tsx:116
 msgid "Try Again"
 msgstr "Prøv igen"
@@ -22226,7 +22222,7 @@ msgstr "tyrkisk"
 msgid "Turn Off All Device Cameras"
 msgstr "Sluk alle enhedskameraer"
 
-#: src/components/pages/OAuthAuthorizePage.tsx:817
+#: src/components/pages/OAuthAuthorizePage.tsx:786
 msgid "Turn off anything you're not comfortable with. Some features may stop working."
 msgstr "Sluk alt, du ikke er tryg ved. Nogle funktioner kan stoppe med at virke."
 
@@ -22260,7 +22256,7 @@ msgstr "Sluk stream"
 msgid "Turn On Camera"
 msgstr "Tænd kamera"
 
-#: src/components/pages/OAuthAuthorizePage.tsx:852
+#: src/components/pages/OAuthAuthorizePage.tsx:821
 msgid "Turning off scopes may prevent the app from working correctly."
 msgstr "Hvis du slår scopes fra, kan appen stoppe med at virke korrekt."
 
@@ -22272,11 +22268,11 @@ msgstr "At slå dette fra skjuler kun dit kamera for dig selv. Andre i opkaldet 
 msgid "Turning this off only hides your screen share from your own view. Others in the call can still see your screen."
 msgstr "At slukke for dette skjuler kun din skærmdeling fra dit eget syn. Andre i opkaldet kan stadig se din skærm."
 
-#: src/components/modals/channel_tabs/ChannelOverviewTab.tsx:471
+#: src/components/modals/channel_tabs/ChannelOverviewTab.tsx:510
 msgid "Tweak this category's basics."
 msgstr "Finjuster denne kategoris grundlæggende indstillinger."
 
-#: src/components/modals/channel_tabs/ChannelOverviewTab.tsx:471
+#: src/components/modals/channel_tabs/ChannelOverviewTab.tsx:510
 msgid "Tweak this channel's basics."
 msgstr "Finjuster denne kanals grundlæggende indstillinger."
 
@@ -22299,7 +22295,7 @@ msgstr "to-faktor"
 msgid "Two-factor authentication"
 msgstr "To-faktor-autentificering"
 
-#: src/components/modals/tabs/account_security_tab/SecurityTab.tsx:218
+#: src/components/modals/tabs/account_security_tab/SecurityTab.tsx:231
 #: src/components/modals/utils/SettingsSearchIndex.tsx:123
 msgid "Two-Factor Authentication"
 msgstr "To-faktor-autentificering"
@@ -22312,7 +22308,7 @@ msgstr "To-faktor-autentificering deaktiveret"
 msgid "Two-factor authentication enabled"
 msgstr "To-faktor-autentificering aktiveret"
 
-#: src/components/modals/tabs/account_security_tab/SecurityTab.tsx:228
+#: src/components/modals/tabs/account_security_tab/SecurityTab.tsx:241
 msgid "Two-factor authentication is enabled"
 msgstr "To-faktor-autentificering er aktiveret"
 
@@ -22405,11 +22401,11 @@ msgstr "ukrainsk"
 msgid "Ultra (1440p)"
 msgstr "Ultra (1440p)"
 
-#: src/actions/InviteActionCreators.tsx:323
+#: src/actions/InviteActionCreators.tsx:346
 msgid "Unable to install emoji pack"
 msgstr "Kunne ikke installere emojipakke"
 
-#: src/actions/InviteActionCreators.tsx:324
+#: src/actions/InviteActionCreators.tsx:347
 msgid "Unable to install sticker pack"
 msgstr "Kunne ikke installere klistermærkepakke"
 
@@ -22761,7 +22757,7 @@ msgstr "Lås HD-skærmdeling op med Plutonium"
 msgid "Unlock HD Video with Plutonium"
 msgstr "Lås HD-video op med Plutonium"
 
-#: src/components/modals/components/PlutoniumContent.tsx:168
+#: src/components/modals/components/PlutoniumContent.tsx:149
 msgid "Unlock higher limits and exclusive features while supporting an independent communication platform."
 msgstr "Lås højere grænser og eksklusive funktioner op, samtidig med at du støtter en uafhængig kommunikationsplatform."
 
@@ -23161,7 +23157,7 @@ msgstr "Upload indgangslyd"
 msgid "Upload File"
 msgstr "Upload fil"
 
-#: src/components/modals/AddGuildModal.tsx:329
+#: src/components/modals/AddGuildModal.tsx:331
 #: src/components/modals/EditGroupBottomSheet.tsx:214
 #: src/components/modals/EditGroupModal.tsx:195
 #: src/components/modals/guild_tabs/guild_overview_tab/fields/GuildIconUploadField.tsx:97
@@ -23209,7 +23205,7 @@ msgstr "Uploader {emojiText}. Dette kan tage lidt tid."
 msgid "Uploading Emojis"
 msgstr "Uploader emojis"
 
-#: src/components/modals/channel_tabs/ChannelOverviewTab.tsx:491
+#: src/components/modals/channel_tabs/ChannelOverviewTab.tsx:530
 #: src/components/modals/ChannelCreateModal.tsx:90
 msgid "URL"
 msgstr "URL"
@@ -23231,7 +23227,7 @@ msgstr "url-advarsler"
 msgid "URLs to download any attachments from your messages"
 msgstr "URL'er til at downloade vedhæftede filer fra dine beskeder"
 
-#: src/components/modals/channel_tabs/ChannelOverviewTab.tsx:183
+#: src/components/modals/channel_tabs/ChannelOverviewTab.tsx:196
 #: src/components/voice/VoiceRegionSelector.tsx:75
 #: src/components/voice/VoiceSettingsMenus.tsx:433
 msgid "US East"
@@ -23254,7 +23250,7 @@ msgstr "Brug faktisk"
 msgid "Use actual premium type"
 msgstr "Brug faktisk premium type"
 
-#: src/components/modals/tabs/account_security_tab/SecurityTab.tsx:230
+#: src/components/modals/tabs/account_security_tab/SecurityTab.tsx:243
 msgid "Use an authenticator app to generate codes for two-factor authentication"
 msgstr "Brug en autentifikator-app til at generere koder til tofaktorautentificering"
 
@@ -23323,7 +23319,7 @@ msgstr "Brug global profil"
 msgid "Use light theme"
 msgstr "Brug lyst tema"
 
-#: src/components/modals/tabs/account_security_tab/SecurityTab.tsx:277
+#: src/components/modals/tabs/account_security_tab/SecurityTab.tsx:290
 msgid "Use passkeys for passwordless sign-in and two-factor authentication"
 msgstr "Brug passkeys til adgang uden kodeord og tofaktorautentificering"
 
@@ -23864,7 +23860,7 @@ msgstr "Se og administrer bandlyste brugere."
 msgid "View and manage every webhook configured across your community."
 msgstr "Se og administrer alle webhooks, der er konfigureret i dit fællesskab."
 
-#: src/components/modals/tabs/account_security_tab/SecurityTab.tsx:260
+#: src/components/modals/tabs/account_security_tab/SecurityTab.tsx:273
 msgid "View and manage your backup codes for account recovery"
 msgstr "Se og administrer dine backupkoder til konto-genoprettelse"
 
@@ -23889,7 +23885,7 @@ msgstr "Se opkaldskontroller"
 msgid "View Channel"
 msgstr "Se kanal"
 
-#: src/components/modals/tabs/account_security_tab/SecurityTab.tsx:268
+#: src/components/modals/tabs/account_security_tab/SecurityTab.tsx:281
 msgid "View Codes"
 msgstr "Se koder"
 
@@ -24004,7 +24000,8 @@ msgstr "VIP-stemme"
 msgid "visibility"
 msgstr "synlighed"
 
-#: src/components/modals/components/plutonium/SubscriptionCard.tsx:121
+#: src/components/modals/components/FeatureComparisonTable.tsx:149
+#: src/components/modals/components/plutonium/SubscriptionCard.tsx:110
 #: src/utils/modals/guild_tabs/GuildAuditLogTabUtils.tsx:283
 msgid "Visionary"
 msgstr "Visionary"
@@ -24026,7 +24023,7 @@ msgid "Visionary Badge Override"
 msgstr "Visionær Badge Override"
 
 #. placeholder {0}: profile.premiumLifetimeSequence
-#: src/components/popouts/UserProfileBadges.tsx:150
+#: src/components/popouts/UserProfileBadges.tsx:136
 msgid "Visionary ID #{0}"
 msgstr "Visionær ID #{0}"
 
@@ -24175,7 +24172,7 @@ msgstr "Stemmemeddelelse afspiller"
 msgid "Voice Mute"
 msgstr "Slå mikrofon fra"
 
-#: src/components/modals/channel_tabs/ChannelOverviewTab.tsx:640
+#: src/components/modals/channel_tabs/ChannelOverviewTab.tsx:679
 msgid "Voice Quality"
 msgstr "Lydkvalitet"
 
@@ -24184,7 +24181,7 @@ msgstr "Lydkvalitet"
 msgid "Voice recording is not supported in this browser."
 msgstr "Stemmeregistrering understøttes ikke i denne browser."
 
-#: src/components/modals/channel_tabs/ChannelOverviewTab.tsx:728
+#: src/components/modals/channel_tabs/ChannelOverviewTab.tsx:767
 #: src/components/voice/VoiceSettingsMenus.tsx:483
 msgid "Voice Region"
 msgstr "Lydområde"
@@ -24218,7 +24215,7 @@ msgstr "Lydstyrke"
 msgid "Volume Control"
 msgstr "Lydkontrol"
 
-#: src/components/modals/AddGuildModal.tsx:154
+#: src/components/modals/AddGuildModal.tsx:155
 msgid "Volunteer Heroes"
 msgstr "Frivillige helte"
 
@@ -24401,8 +24398,8 @@ msgid "We'll verify your new email with a one-time code."
 msgstr "Vi bekræfter din nye e-mail med en engangskode."
 
 #: src/components/NetworkErrorScreen.tsx:39
-msgid "We're having trouble connecting to Fluxer's servers. This could be a temporary network issue or scheduled maintenance."
-msgstr "Vi har problemer med at oprette forbindelse til Fluxers servere. Det kan være et midlertidigt netværksproblem eller planlagt vedligeholdelse."
+msgid "We're having trouble connecting to Echowire's servers. This could be a temporary network issue or scheduled maintenance."
+msgstr ""
 
 #: src/components/modals/tabs/DevicesTab.tsx:234
 msgid "We're having trouble connecting to the space-time continuum. Please check your connection and try again."
@@ -24488,7 +24485,7 @@ msgstr "Webhooks"
 msgid "Webhooks updated"
 msgstr "Webhooks opdateret"
 
-#: src/components/modals/AddGuildModal.tsx:160
+#: src/components/modals/AddGuildModal.tsx:161
 msgid "Weekend Warriors"
 msgstr "Weekendkrigere"
 
@@ -24698,7 +24695,7 @@ msgstr "Wow, det er tungt."
 msgid "Why are you reporting this?"
 msgstr "Hvorfor rapporterer du dette?"
 
-#: src/components/pages/OAuthAuthorizePage.tsx:757
+#: src/components/pages/OAuthAuthorizePage.tsx:726
 msgid "Will send you back to"
 msgstr "Sender dig tilbage til"
 
@@ -24718,7 +24715,7 @@ msgstr "Med Plutonium kan du bruge animerede avatarer og bannere (i GIF, APNG, a
 msgid "Withdraw"
 msgstr "Træk tilbage"
 
-#: src/components/modals/AddGuildModal.tsx:182
+#: src/components/modals/AddGuildModal.tsx:183
 msgid "Work Friends"
 msgstr "Arbejdsvenner"
 
@@ -24893,7 +24890,7 @@ msgstr "Du kan kun uploade 1 fil ad gangen. Prøv igen med færre filer."
 msgid "You can pin messages in this conversation for everyone to see."
 msgstr "Du kan fastgøre beskeder i denne samtale, så alle kan se dem."
 
-#: src/components/modals/components/plutonium/SubscriptionCard.tsx:176
+#: src/components/modals/components/plutonium/SubscriptionCard.tsx:165
 msgid "You can redeem additional gift codes to <0>extend</0> your gift time."
 msgstr "Du kan indløse yderligere gavekoder for at <0>forlænge</0> din gaveperiode."
 
@@ -24933,7 +24930,7 @@ msgstr "Du kan ikke interagere med reaktioner i søgeresultaterne, da det kan fo
 #: src/components/layout/ChannelItem.tsx:213
 #: src/components/layout/ChannelItem.tsx:400
 #: src/stores/voice/MediaEngineFacade.tsx:168
-#: src/stores/voice/MediaEngineFacade.tsx:828
+#: src/stores/voice/MediaEngineFacade.tsx:879
 msgid "You can't join while you're on timeout."
 msgstr "Du kan ikke deltage, mens du er i timeout."
 
@@ -25023,11 +25020,11 @@ msgstr "Du har endnu ingen brugerdefinerede temaændringer at dele."
 msgid "You don't have permission to connect to this voice channel."
 msgstr "Du har ikke tilladelse til at oprette forbindelse til denne stemmekanal."
 
-#: src/actions/InviteActionCreators.tsx:320
+#: src/actions/InviteActionCreators.tsx:343
 msgid "You don't have permission to install this emoji pack."
 msgstr "Du har ikke tilladelse til at installere dette emojipakke."
 
-#: src/actions/InviteActionCreators.tsx:321
+#: src/actions/InviteActionCreators.tsx:344
 msgid "You don't have permission to install this sticker pack."
 msgstr "Du har ikke tilladelse til at installere denne klistermærkepakke."
 
@@ -25059,23 +25056,23 @@ msgstr "Du har en ny gavekode, der venter på dig!"
 msgid "You have a new gift code waiting in your Gift Inventory."
 msgstr "Du har en ny gavekode, der venter i dit gaveinventar."
 
-#: src/components/modals/components/plutonium/SubscriptionCard.tsx:200
+#: src/components/modals/components/plutonium/SubscriptionCard.tsx:189
 msgid "You have all <0/> for <1>{monthlyPrice}/month</1>."
 msgstr "Du har alt <0/> for <1>{monthlyPrice}/måned</1>."
 
-#: src/components/modals/components/plutonium/SubscriptionCard.tsx:205
+#: src/components/modals/components/plutonium/SubscriptionCard.tsx:194
 msgid "You have all <0/> for <1>{yearlyPrice}/year</1>."
 msgstr "Du har alt <0/> for <1>{yearlyPrice}/år</1>."
 
-#: src/components/modals/components/plutonium/SubscriptionCard.tsx:210
+#: src/components/modals/components/plutonium/SubscriptionCard.tsx:199
 msgid "You have all <0/> for your subscription period."
 msgstr "Du har alle <0/> i din abonnementsperiode."
 
-#: src/components/modals/components/plutonium/SubscriptionCard.tsx:195
+#: src/components/modals/components/plutonium/SubscriptionCard.tsx:184
 msgid "You have all <0/> forever. No subscriptions, no renewals."
 msgstr "Du har alle <0/> for evigt. Ingen abonnementer, ingen fornyelser."
 
-#: src/components/modals/components/plutonium/SubscriptionCard.tsx:170
+#: src/components/modals/components/plutonium/SubscriptionCard.tsx:159
 msgid "You have all <0/> via a <1>gift subscription</1> until <2>{giftEndDate}</2>. It <3>won't renew</3>."
 msgstr "Du har alle <0/> via et <1>gaveabonnement</1> indtil <2>{giftEndDate}</2>. Det <3>fornyes ikke</3>."
 
@@ -25083,35 +25080,35 @@ msgstr "Du har alle <0/> via et <1>gaveabonnement</1> indtil <2>{giftEndDate}</2
 msgid "You have blocked {username}. Unblock them to send messages."
 msgstr "Du har blokeret {username}. Fjern blokeringen for at sende beskeder."
 
-#: src/actions/InviteActionCreators.tsx:264
+#: src/actions/InviteActionCreators.tsx:287
 msgid "You have created the maximum of {limit} emoji pack. Delete one to create another."
 msgstr "Du har oprettet maksimalt {limit} emoji pakke. Slet en for at oprette en anden."
 
-#: src/actions/InviteActionCreators.tsx:265
+#: src/actions/InviteActionCreators.tsx:288
 msgid "You have created the maximum of {limit} emoji packs. Delete one to create another."
 msgstr "Du har oprettet maksimalt {limit} emoji pakker. Slet en for at oprette en anden."
 
-#: src/actions/InviteActionCreators.tsx:296
+#: src/actions/InviteActionCreators.tsx:319
 msgid "You have created the maximum of {limit} sticker pack. Delete one to create another."
 msgstr "Du har oprettet maksimalt {limit} klistermærke pakke. Slet en for at oprette en anden."
 
-#: src/actions/InviteActionCreators.tsx:297
+#: src/actions/InviteActionCreators.tsx:320
 msgid "You have created the maximum of {limit} sticker packs. Delete one to create another."
 msgstr "Du har oprettet maksimalt {limit} klistermærke pakker. Slet en for at oprette en anden."
 
-#: src/actions/InviteActionCreators.tsx:250
+#: src/actions/InviteActionCreators.tsx:273
 msgid "You have installed the maximum of {limit} emoji pack. Remove one to install another."
 msgstr "Du har installeret maksimalt {limit} emoji pakke. Fjern en for at installere en anden."
 
-#: src/actions/InviteActionCreators.tsx:251
+#: src/actions/InviteActionCreators.tsx:274
 msgid "You have installed the maximum of {limit} emoji packs. Remove one to install another."
 msgstr "Du har installeret maksimalt {limit} emoji pakker. Fjern en for at installere en anden."
 
-#: src/actions/InviteActionCreators.tsx:282
+#: src/actions/InviteActionCreators.tsx:305
 msgid "You have installed the maximum of {limit} sticker pack. Remove one to install another."
 msgstr "Du har installeret maksimalt {limit} klistermærke pakke. Fjern en for at installere en anden."
 
-#: src/actions/InviteActionCreators.tsx:283
+#: src/actions/InviteActionCreators.tsx:306
 msgid "You have installed the maximum of {limit} sticker packs. Remove one to install another."
 msgstr "Du har installeret maksimalt {limit} klistermærke pakker. Fjern en for at installere en anden."
 
@@ -25119,19 +25116,19 @@ msgstr "Du har installeret maksimalt {limit} klistermærke pakker. Fjern en for 
 msgid "You have no friends yet"
 msgstr "Du har ikke nogen venner endnu"
 
-#: src/actions/InviteActionCreators.tsx:268
+#: src/actions/InviteActionCreators.tsx:291
 msgid "You have reached the limit for creating emoji packs. Delete one of your packs to create another."
 msgstr "Du har nået grænsen for at oprette emoji-pakker. Slet en af dine pakker for at oprette en ny."
 
-#: src/actions/InviteActionCreators.tsx:300
+#: src/actions/InviteActionCreators.tsx:323
 msgid "You have reached the limit for creating sticker packs. Delete one of your packs to create another."
 msgstr "Du har nået grænsen for at oprette klistermærkepakker. Slet en af dine pakker for at oprette en ny."
 
-#: src/actions/InviteActionCreators.tsx:254
+#: src/actions/InviteActionCreators.tsx:277
 msgid "You have reached the limit for installing emoji packs. Remove one of your installed packs to install another."
 msgstr "Du har nået grænsen for at installere emoji-pakker. Fjern en installeret pakke for at installere en ny."
 
-#: src/actions/InviteActionCreators.tsx:286
+#: src/actions/InviteActionCreators.tsx:309
 msgid "You have reached the limit for installing sticker packs. Remove one of your installed packs to install another."
 msgstr "Du har nået grænsen for at installere klistermærkepakker. Fjern en installeret pakke for at installere en ny."
 
@@ -25241,8 +25238,8 @@ msgstr "Du skal gøre krav på din konto for at sende beskeder i dette fællessk
 msgid "You need to verify your email to send messages in this community."
 msgstr "Du skal bekræfte din e-mail for at sende beskeder i dette fællesskab."
 
-#: src/components/pages/OAuthAuthorizePage.tsx:688
-#: src/components/pages/OAuthAuthorizePage.tsx:948
+#: src/components/pages/OAuthAuthorizePage.tsx:668
+#: src/components/pages/OAuthAuthorizePage.tsx:917
 msgid "You will be taken to <0><1>{redirectHostname}</1></0> after authorizing."
 msgstr "Du bliver sendt til <0><1>{redirectHostname}</1></0> efter godkendelsen."
 
@@ -25260,7 +25257,7 @@ msgstr "Du modtager ikke notifikationer på skrivebordet"
 msgid "You'll appear offline"
 msgstr "Du vises som offline"
 
-#: src/components/pages/OAuthAuthorizePage.tsx:906
+#: src/components/pages/OAuthAuthorizePage.tsx:875
 msgid "You'll configure which permissions the bot receives on the next screen."
 msgstr "Du vælger hvilke tilladelser botten får på næste skærm."
 
@@ -25599,11 +25596,11 @@ msgstr "din region"
 msgid "Your stream is still being broadcast"
 msgstr "Din stream bliver stadig sendt"
 
-#: src/components/modals/components/plutonium/SubscriptionCard.tsx:156
+#: src/components/modals/components/plutonium/SubscriptionCard.tsx:145
 msgid "Your subscription ended, but you still have all <0/> until <1>{graceDate}</1>. Resubscribe to keep them."
 msgstr "Dit abonnement sluttede, men du har stadig alle <0/> indtil <1>{graceDate}</1>. Genabonner for at beholde dem."
 
-#: src/components/modals/components/plutonium/SubscriptionCard.tsx:145
+#: src/components/modals/components/plutonium/SubscriptionCard.tsx:134
 msgid "Your subscription expired on <0>{expiredDate}</0>. You lost all <1/>. You can reactivate at any time."
 msgstr "Dit abonnement udløb den <0>{expiredDate}</0>. Du har mistet alle <1/>. Du kan genaktivere det når som helst."
 
@@ -25619,7 +25616,7 @@ msgstr "Dit abonnement er blevet genaktiveret!"
 msgid "Your subscription has been set to cancel at the end of your billing period."
 msgstr "Dit abonnement er sat til at blive annulleret ved slutningen af din betalingsperiode."
 
-#: src/components/modals/components/plutonium/SubscriptionCard.tsx:188
+#: src/components/modals/components/plutonium/SubscriptionCard.tsx:177
 msgid "Your subscription will cancel on <0>{cancelDate}</0>. You'll lose all <1/> after that date."
 msgstr "Dit abonnement annulleres den <0>{cancelDate}</0>. Du mister alle <1/> efter den dato."
 

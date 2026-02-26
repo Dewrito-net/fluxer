@@ -134,12 +134,12 @@ msgid "{0} of {totalAttachments}"
 msgstr "{0} з {totalAttachments}"
 
 #. placeholder {0}: passkeys.length
-#: src/components/modals/tabs/account_security_tab/SecurityTab.tsx:288
+#: src/components/modals/tabs/account_security_tab/SecurityTab.tsx:301
 msgid "{0} passkey registered (max 10)"
 msgstr "{0} ключ доступу зареєстровано (макс. 10)"
 
 #. placeholder {0}: passkeys.length
-#: src/components/modals/tabs/account_security_tab/SecurityTab.tsx:289
+#: src/components/modals/tabs/account_security_tab/SecurityTab.tsx:302
 msgid "{0} passkeys registered (max 10)"
 msgstr "{0} ключів доступу зареєстровано (макс. 10)"
 
@@ -449,7 +449,7 @@ msgstr "{baseDescription} Цей ліміт налаштовано вашим а
 msgid "{baseDescription} With Plutonium, your per-file upload limit increases to {0}, plus animated avatars, longer messages, and many other premium features."
 msgstr "{baseDescription} З Plutonium ваш ліміт завантаження на файл збільшується до {0}, плюс анімовані аватари, довші повідомлення та багато інших преміум-функцій."
 
-#: src/components/pages/OAuthAuthorizePage.tsx:743
+#: src/components/pages/OAuthAuthorizePage.tsx:712
 msgid "{clientLabel} wants to connect"
 msgstr "{clientLabel} хоче підключитися"
 
@@ -492,7 +492,7 @@ msgstr "{currentCount} / {0}"
 msgid "{days} days"
 msgstr "{days} днів"
 
-#: src/components/layout/guild_list/GuildListDMItem.tsx:199
+#: src/components/layout/guild_list/GuildListDMItem.tsx:198
 msgid "{displayName} (selected)"
 msgstr "{displayName} (вибрано)"
 
@@ -883,12 +883,12 @@ msgstr "{v} подарунок"
 msgid "{v} gifts"
 msgstr "{v} подарунки"
 
-#: src/components/modals/channel_tabs/ChannelOverviewTab.tsx:655
-#: src/components/modals/channel_tabs/ChannelOverviewTab.tsx:656
+#: src/components/modals/channel_tabs/ChannelOverviewTab.tsx:694
+#: src/components/modals/channel_tabs/ChannelOverviewTab.tsx:695
 msgid "{value} kbps"
 msgstr "{value} кбіт/с"
 
-#: src/components/modals/channel_tabs/ChannelOverviewTab.tsx:688
+#: src/components/modals/channel_tabs/ChannelOverviewTab.tsx:727
 msgid "{value} participants"
 msgstr "{value} учасників"
 
@@ -1088,7 +1088,7 @@ msgstr "<0>Зняв заглушення</0> з учасника."
 msgid "<0>Unmuted</0> the member."
 msgstr "<0>Зняв заглушення</0> з учасника."
 
-#: src/components/modals/tabs/account_security_tab/SecurityTab.tsx:373
+#: src/components/modals/tabs/account_security_tab/SecurityTab.tsx:397
 msgid "<0>Warning:</0> This will also disable SMS two-factor authentication."
 msgstr "<0>Увага:</0> Це також вимкне двофакторну SMS-автентифікацію."
 
@@ -1103,7 +1103,7 @@ msgstr "1 день"
 
 #: src/components/channel/CallMessage.tsx:70
 #: src/components/modals/BanMemberModal.tsx:56
-#: src/components/modals/channel_tabs/ChannelOverviewTab.tsx:171
+#: src/components/modals/channel_tabs/ChannelOverviewTab.tsx:184
 #: src/components/modals/InviteModal.tsx:77
 #: src/components/modals/InviteModal.tsx:201
 #: src/components/modals/PackInviteModal.tsx:48
@@ -1122,7 +1122,7 @@ msgstr "1 збіг"
 msgid "1 Member"
 msgstr "1 Учасник"
 
-#: src/components/modals/channel_tabs/ChannelOverviewTab.tsx:165
+#: src/components/modals/channel_tabs/ChannelOverviewTab.tsx:178
 #: src/components/modals/tabs/developer_options_tab/MockingTab.tsx:74
 #: src/utils/modals/guild_tabs/GuildOverviewTabUtils.tsx:61
 msgid "1 minute"
@@ -1192,13 +1192,13 @@ msgstr "Подарунок на 1 рік"
 msgid "1 Year of Plutonium"
 msgstr "1 рік Plutonium"
 
-#: src/components/modals/channel_tabs/ChannelOverviewTab.tsx:168
+#: src/components/modals/channel_tabs/ChannelOverviewTab.tsx:181
 #: src/components/modals/tabs/developer_options_tab/MockingTab.tsx:77
 #: src/components/modals/TimeoutMemberOptions.tsx:36
 msgid "10 minutes"
 msgstr "10 хвилин"
 
-#: src/components/modals/channel_tabs/ChannelOverviewTab.tsx:162
+#: src/components/modals/channel_tabs/ChannelOverviewTab.tsx:175
 #: src/components/modals/tabs/developer_options_tab/MockingTab.tsx:72
 #: src/constants/TimeWindowPresets.tsx:55
 msgid "10 seconds"
@@ -1249,17 +1249,17 @@ msgstr "1440p"
 msgid "15 FPS"
 msgstr "15 FPS"
 
-#: src/components/modals/channel_tabs/ChannelOverviewTab.tsx:169
+#: src/components/modals/channel_tabs/ChannelOverviewTab.tsx:182
 #: src/constants/TimeWindowPresets.tsx:56
 #: src/utils/modals/guild_tabs/GuildOverviewTabUtils.tsx:63
 msgid "15 minutes"
 msgstr "15 хвилин"
 
-#: src/components/modals/channel_tabs/ChannelOverviewTab.tsx:163
+#: src/components/modals/channel_tabs/ChannelOverviewTab.tsx:176
 msgid "15 seconds"
 msgstr "15 секунд"
 
-#: src/components/modals/channel_tabs/ChannelOverviewTab.tsx:172
+#: src/components/modals/channel_tabs/ChannelOverviewTab.tsx:185
 msgid "2 hours"
 msgstr "2 години"
 
@@ -1271,7 +1271,7 @@ msgstr "2 учасники (онлайн)"
 msgid "2 members (typing)"
 msgstr "2 учасники (пишуть)"
 
-#: src/components/modals/channel_tabs/ChannelOverviewTab.tsx:166
+#: src/components/modals/channel_tabs/ChannelOverviewTab.tsx:179
 #: src/components/modals/tabs/developer_options_tab/MockingTab.tsx:75
 msgid "2 minutes"
 msgstr "2 хвилини"
@@ -1344,7 +1344,7 @@ msgstr "3 місяці"
 msgid "30 FPS"
 msgstr "30 FPS"
 
-#: src/components/modals/channel_tabs/ChannelOverviewTab.tsx:170
+#: src/components/modals/channel_tabs/ChannelOverviewTab.tsx:183
 #: src/components/modals/InviteModal.tsx:76
 #: src/components/modals/InviteModal.tsx:199
 #: src/components/modals/PackInviteModal.tsx:47
@@ -1353,7 +1353,7 @@ msgstr "30 FPS"
 msgid "30 minutes"
 msgstr "30 хвилин"
 
-#: src/components/modals/channel_tabs/ChannelOverviewTab.tsx:164
+#: src/components/modals/channel_tabs/ChannelOverviewTab.tsx:177
 #: src/components/modals/tabs/developer_options_tab/MockingTab.tsx:73
 msgid "30 seconds"
 msgstr "30 секунд"
@@ -1394,14 +1394,14 @@ msgstr "4K (2160p)"
 msgid "5 days"
 msgstr "5 днів"
 
-#: src/components/modals/channel_tabs/ChannelOverviewTab.tsx:167
+#: src/components/modals/channel_tabs/ChannelOverviewTab.tsx:180
 #: src/components/modals/tabs/developer_options_tab/MockingTab.tsx:76
 #: src/components/modals/TimeoutMemberOptions.tsx:35
 #: src/utils/modals/guild_tabs/GuildOverviewTabUtils.tsx:62
 msgid "5 minutes"
 msgstr "5 хвилин"
 
-#: src/components/modals/channel_tabs/ChannelOverviewTab.tsx:161
+#: src/components/modals/channel_tabs/ChannelOverviewTab.tsx:174
 msgid "5 seconds"
 msgstr "5 секунд"
 
@@ -1415,7 +1415,7 @@ msgstr "5 використань"
 msgid "50 uses"
 msgstr "50 використань"
 
-#: src/components/modals/channel_tabs/ChannelOverviewTab.tsx:173
+#: src/components/modals/channel_tabs/ChannelOverviewTab.tsx:186
 #: src/components/modals/InviteModal.tsx:78
 #: src/components/modals/InviteModal.tsx:203
 #: src/components/modals/PackInviteModal.tsx:49
@@ -1608,8 +1608,8 @@ msgstr "Доступність"
 msgid "account"
 msgstr "акаунт"
 
-#: src/components/modals/tabs/account_security_tab/Inline.tsx:73
-#: src/components/modals/tabs/AccountSecurityTab.tsx:77
+#: src/components/modals/tabs/account_security_tab/Inline.tsx:74
+#: src/components/modals/tabs/AccountSecurityTab.tsx:78
 #: src/components/modals/utils/SettingsConstants.tsx:297
 #: src/components/modals/utils/SettingsSectionRegistry.tsx:488
 msgid "Account"
@@ -1642,7 +1642,7 @@ msgstr "Перевизначення стану облікового запис�
 msgid "Account Too New"
 msgstr "Обліковий запис занадто новий"
 
-#: src/actions/InviteActionCreators.tsx:182
+#: src/actions/InviteActionCreators.tsx:205
 #: src/components/modals/RequiredActionModal.tsx:143
 #: src/components/modals/RequiredActionModal.tsx:416
 msgid "Account Verification Required"
@@ -1698,7 +1698,7 @@ msgstr "Дії"
 msgid "active"
 msgstr "активний"
 
-#: src/components/modals/components/plutonium/SubscriptionCard.tsx:135
+#: src/components/modals/components/plutonium/SubscriptionCard.tsx:124
 msgid "Active"
 msgstr "Активний"
 
@@ -1769,8 +1769,8 @@ msgstr "Додати коментар (необов'язково)"
 
 #: src/components/layout/guild_list/AddGuildButton.tsx:90
 #: src/components/layout/guild_list/AddGuildButton.tsx:95
-#: src/components/modals/AddGuildModal.tsx:80
-#: src/components/modals/AddGuildModal.tsx:86
+#: src/components/modals/AddGuildModal.tsx:81
+#: src/components/modals/AddGuildModal.tsx:87
 msgid "Add a Community"
 msgstr "Додати спільноту"
 
@@ -1782,7 +1782,7 @@ msgstr "Додати свій фон"
 msgid "Add a different account"
 msgstr "Додати інший акаунт"
 
-#: src/components/modals/tabs/account_security_tab/SecurityTab.tsx:351
+#: src/components/modals/tabs/account_security_tab/SecurityTab.tsx:375
 msgid "Add a phone number to enable SMS two-factor authentication"
 msgstr "Додати номер телефону, щоб увімкнути двофакторну автентифікацію через SMS"
 
@@ -1791,7 +1791,7 @@ msgstr "Додати номер телефону, щоб увімкнути дв
 msgid "Add a tag"
 msgstr "Додати тег"
 
-#: src/components/modals/channel_tabs/ChannelOverviewTab.tsx:520
+#: src/components/modals/channel_tabs/ChannelOverviewTab.tsx:559
 msgid "Add a topic to this channel"
 msgstr "Додати тему до цього каналу"
 
@@ -1808,7 +1808,7 @@ msgstr "Додати дію!"
 msgid "Add an account"
 msgstr "Додати акаунт"
 
-#: src/components/modals/tabs/account_security_tab/SecurityTab.tsx:219
+#: src/components/modals/tabs/account_security_tab/SecurityTab.tsx:232
 msgid "Add an extra layer of security to your account"
 msgstr "Додати ще один рівень безпеки до акаунта"
 
@@ -1820,7 +1820,7 @@ msgstr "Додати ще одну реакцію"
 msgid "Add Bluesky connection"
 msgstr "Додати підключення до Bluesky"
 
-#: src/components/pages/OAuthAuthorizePage.tsx:863
+#: src/components/pages/OAuthAuthorizePage.tsx:832
 msgid "Add bot to a community"
 msgstr "Додати бота до спільноти"
 
@@ -1902,12 +1902,12 @@ msgstr "Додати або змінити свій номер телефону"
 msgid "Add Override"
 msgstr "Додати перевизначення"
 
-#: src/components/modals/tabs/account_security_tab/SecurityTab.tsx:293
+#: src/components/modals/tabs/account_security_tab/SecurityTab.tsx:306
 msgid "Add Passkey"
 msgstr "Додати ключ доступу"
 
 #: src/components/channel/barriers/BarrierComponents.tsx:198
-#: src/components/modals/tabs/account_security_tab/SecurityTab.tsx:398
+#: src/components/modals/tabs/account_security_tab/SecurityTab.tsx:422
 msgid "Add Phone"
 msgstr "Додати телефон"
 
@@ -2028,11 +2028,11 @@ msgstr "Додано до Улюблених"
 msgid "Added to saved media"
 msgstr "Додано до збережених медіа"
 
-#: src/components/modals/tabs/account_security_tab/SecurityTab.tsx:316
+#: src/components/modals/tabs/account_security_tab/SecurityTab.tsx:329
 msgid "Added: {createdDate}"
 msgstr "Додано: {createdDate}"
 
-#: src/components/modals/tabs/account_security_tab/SecurityTab.tsx:312
+#: src/components/modals/tabs/account_security_tab/SecurityTab.tsx:325
 msgid "Added: {createdDate} • Last used: {lastUsedDate}"
 msgstr "Додано: {createdDate} • Останнє використання: {lastUsedDate}"
 
@@ -2118,7 +2118,7 @@ msgstr "після:"
 msgid "Age Restricted"
 msgstr "Обмеження за віком"
 
-#: src/components/modals/channel_tabs/ChannelOverviewTab.tsx:627
+#: src/components/modals/channel_tabs/ChannelOverviewTab.tsx:666
 msgid "Age-restricted (NSFW)"
 msgstr "Обмежено за віком (NSFW)"
 
@@ -2569,7 +2569,7 @@ msgstr "Анімоване відео GIF"
 msgid "Animated icon"
 msgstr "Анімована іконка"
 
-#: src/components/modals/AddGuildModal.tsx:224
+#: src/components/modals/AddGuildModal.tsx:225
 msgid "Animated icons are not supported when creating a new community. Please use JPEG, PNG, or WebP."
 msgstr "Анімовані іконки не підтримуються при створенні нової спільноти. Вибери JPEG, PNG або WebP."
 
@@ -2845,7 +2845,7 @@ msgid "Are you sure you want to delete the category \"{categoryName}\"? This can
 msgstr "Ви впевнені, що хочете видалити категорію \"{categoryName}\"? Це не можна скасувати."
 
 #. placeholder {0}: passkey.name
-#: src/components/modals/tabs/account_security_tab/SecurityTab.tsx:122
+#: src/components/modals/tabs/account_security_tab/SecurityTab.tsx:135
 msgid "Are you sure you want to delete the passkey <0>{0}</0>?"
 msgstr "Ти впевнений, що хочеш видалити ключ доступу <0>{0}</0>?"
 
@@ -2865,7 +2865,7 @@ msgstr "Ви впевнені, що хочете видалити це запр�
 msgid "Are you sure you want to delete this pack? This cannot be undone."
 msgstr "Ти впевнений, що хочеш видалити цей пакет? Це неможливо скасувати."
 
-#: src/components/modals/tabs/account_security_tab/SecurityTab.tsx:127
+#: src/components/modals/tabs/account_security_tab/SecurityTab.tsx:140
 msgid "Are you sure you want to delete this passkey?"
 msgstr "Ти впевнений, що хочеш видалити цей ключ доступу?"
 
@@ -2877,7 +2877,7 @@ msgstr "Ти впевнений, що хочеш видалити свій ак�
 msgid "Are you sure you want to disable invites? This will prevent new users from joining through invite links until you re-enable them. Existing members will not be affected."
 msgstr "Ти впевнений, що хочеш вимкнути запрошення? Це не дозволить новим користувачам приєднуватися за посиланнями, доки ти їх не ввімкнеш. Наявні учасники не постраждають."
 
-#: src/components/modals/tabs/account_security_tab/SecurityTab.tsx:179
+#: src/components/modals/tabs/account_security_tab/SecurityTab.tsx:192
 msgid "Are you sure you want to disable SMS two-factor authentication? This will make your account less secure."
 msgstr "Ти впевнений, що хочеш вимкнути SMS-двофакторну автентифікацію? Це зробить твій акаунт менш безпечним."
 
@@ -2930,7 +2930,7 @@ msgid "Are you sure you want to remove this connection? This action cannot be un
 msgstr "Ви впевнені, що хочете видалити це з'єднання? Цю дію не можна скасувати."
 
 #. placeholder {0}: user.phone
-#: src/components/modals/tabs/account_security_tab/SecurityTab.tsx:367
+#: src/components/modals/tabs/account_security_tab/SecurityTab.tsx:391
 msgid "Are you sure you want to remove your phone number <0>{0}</0>?"
 msgstr "Ти впевнений, що хочеш видалити свій номер телефону <0>{0}</0>?"
 
@@ -2970,11 +2970,11 @@ msgstr "Ти впевнений, що хочеш розблокувати {0}?"
 msgid "aria"
 msgstr "aria"
 
-#: src/components/modals/AddGuildModal.tsx:177
+#: src/components/modals/AddGuildModal.tsx:178
 msgid "Art Club"
 msgstr "Арт-клуб"
 
-#: src/components/modals/AddGuildModal.tsx:151
+#: src/components/modals/AddGuildModal.tsx:152
 msgid "Artists' Corner"
 msgstr "Куточок митців"
 
@@ -3150,7 +3150,7 @@ msgid "Authenticator app"
 msgstr "Додаток-аутентифікатор"
 
 #: src/components/auth/MfaScreen.tsx:69
-#: src/components/modals/tabs/account_security_tab/SecurityTab.tsx:224
+#: src/components/modals/tabs/account_security_tab/SecurityTab.tsx:237
 msgid "Authenticator App"
 msgstr "Додаток-аутентифікатор"
 
@@ -3170,21 +3170,21 @@ msgstr "тип автора:"
 msgid "Authorization failed"
 msgstr "Авторизація не вдалася"
 
-#: src/components/pages/OAuthAuthorizePage.tsx:534
+#: src/components/pages/OAuthAuthorizePage.tsx:524
 msgid "Authorization Failed"
 msgstr "Авторизація не вдалася"
 
-#: src/components/pages/OAuthAuthorizePage.tsx:469
-#: src/components/pages/OAuthAuthorizePage.tsx:484
+#: src/components/pages/OAuthAuthorizePage.tsx:459
+#: src/components/pages/OAuthAuthorizePage.tsx:474
 msgid "Authorization failed. Please try again."
 msgstr "Авторизація не вдалася. Повтори спробу."
 
-#: src/components/pages/OAuthAuthorizePage.tsx:740
+#: src/components/pages/OAuthAuthorizePage.tsx:709
 msgid "Authorization request"
 msgstr "Запит авторизації"
 
-#: src/components/pages/OAuthAuthorizePage.tsx:681
-#: src/components/pages/OAuthAuthorizePage.tsx:940
+#: src/components/pages/OAuthAuthorizePage.tsx:661
+#: src/components/pages/OAuthAuthorizePage.tsx:909
 msgid "Authorize"
 msgstr "Дозволити"
 
@@ -3251,7 +3251,7 @@ msgstr "автозаповнення"
 msgid "automatic"
 msgstr "автоматичний"
 
-#: src/components/modals/channel_tabs/ChannelOverviewTab.tsx:178
+#: src/components/modals/channel_tabs/ChannelOverviewTab.tsx:191
 #: src/components/voice/VoiceRegionSelector.tsx:96
 #: src/components/voice/VoiceRegionSelector.tsx:110
 #: src/components/voice/VoiceSettingsMenus.tsx:452
@@ -3347,7 +3347,7 @@ msgstr "Середній пінг:"
 #: src/components/modals/AddConnectionModal.tsx:312
 #: src/components/modals/PhoneAddModal.tsx:237
 #: src/components/modals/RequiredActionModal.tsx:655
-#: src/components/pages/OAuthAuthorizePage.tsx:671
+#: src/components/pages/OAuthAuthorizePage.tsx:651
 #: src/components/pages/report/ReportStepDetails.tsx:243
 msgid "Back"
 msgstr "Назад"
@@ -3438,7 +3438,7 @@ msgid "backup codes"
 msgstr "коди резервного копіювання"
 
 #: src/components/modals/BackupCodesModal.tsx:43
-#: src/components/modals/tabs/account_security_tab/SecurityTab.tsx:257
+#: src/components/modals/tabs/account_security_tab/SecurityTab.tsx:270
 #: src/components/modals/utils/SettingsSearchIndex.tsx:140
 msgid "Backup Codes"
 msgstr "Резервні коди"
@@ -3499,7 +3499,7 @@ msgstr "Забанити учасника"
 msgid "Ban Members"
 msgstr "Забанити учасників"
 
-#: src/components/modals/AddGuildModal.tsx:153
+#: src/components/modals/AddGuildModal.tsx:154
 msgid "Band Practice Room"
 msgstr "Зал для репетицій гурту"
 
@@ -3680,7 +3680,7 @@ msgstr "Заблоковані користувачі не можуть надс
 msgid "Blockquotes"
 msgstr "Цитати"
 
-#: src/components/modals/channel_tabs/ChannelOverviewTab.tsx:628
+#: src/components/modals/channel_tabs/ChannelOverviewTab.tsx:667
 msgid "Blocks access for users under 18 and shows a content warning for adults."
 msgstr "Блокує доступ для користувачів до 18 років і показує попередження про контент для дорослих."
 
@@ -3703,7 +3703,7 @@ msgstr "Розмиття"
 msgid "Blur your background"
 msgstr "Розмиття фону"
 
-#: src/components/modals/AddGuildModal.tsx:175
+#: src/components/modals/AddGuildModal.tsx:176
 msgid "Board Game Night"
 msgstr "Ніч настільних ігор"
 
@@ -3711,7 +3711,7 @@ msgstr "Ніч настільних ігор"
 msgid "Body font family"
 msgstr "Шрифт основного тексту"
 
-#: src/components/modals/AddGuildModal.tsx:178
+#: src/components/modals/AddGuildModal.tsx:179
 msgid "Book Club"
 msgstr "Книжковий клуб"
 
@@ -3754,7 +3754,7 @@ msgstr "Додано до закладок!"
 msgid "Bookmarks"
 msgstr "Закладки"
 
-#: src/components/modals/AddGuildModal.tsx:150
+#: src/components/modals/AddGuildModal.tsx:151
 msgid "Bookworms Anonymous"
 msgstr "Анонімні книголюби"
 
@@ -3766,7 +3766,7 @@ msgstr "бот"
 msgid "Bot"
 msgstr "Бот"
 
-#: src/components/pages/OAuthAuthorizePage.tsx:550
+#: src/components/pages/OAuthAuthorizePage.tsx:540
 msgid "Bot added"
 msgstr "Бота додано"
 
@@ -3794,11 +3794,11 @@ msgstr "Прямі повідомлення від ботів"
 msgid "Bot Invite"
 msgstr "Запрошення бота"
 
-#: src/components/pages/OAuthAuthorizePage.tsx:761
+#: src/components/pages/OAuthAuthorizePage.tsx:730
 msgid "Bot invite (no external redirect)"
 msgstr "Запрошення бота (без зовнішнього перенаправлення)"
 
-#: src/components/pages/OAuthAuthorizePage.tsx:480
+#: src/components/pages/OAuthAuthorizePage.tsx:470
 msgid "Bot is already in this community."
 msgstr "Бот вже в цій спільноті."
 
@@ -3810,7 +3810,7 @@ msgstr "Дозволи бота"
 msgid "Bot Profile"
 msgstr "Профіль бота"
 
-#: src/components/pages/OAuthAuthorizePage.tsx:770
+#: src/components/pages/OAuthAuthorizePage.tsx:739
 msgid "Bot scope requested"
 msgstr "Запитана область дій бота"
 
@@ -3920,17 +3920,17 @@ msgstr "Кнопки з іконками"
 msgid "Buy Gift"
 msgstr "Купити подарунок"
 
-#: src/components/modals/AddGuildModal.tsx:360
+#: src/components/modals/AddGuildModal.tsx:362
 msgid "By creating a community, you agree to follow and uphold the <0>Fluxer Community Guidelines</0>."
 msgstr "Створюючи спільноту, ви погоджуєтесь дотримуватись <0>Керівних принципів спільноти Fluxer</0>."
 
 #: src/components/modals/components/PurchaseDisclaimer.tsx:39
-msgid "By purchasing, you agree to our <0>Terms of Service</0> and <1>Privacy Policy</1>. All purchases are refundable within 14 days by emailing <2>support@fluxer.app</2>. Chargebacks result in permanent account bans — if you want a refund, we're more than happy to give you one if you contact us first! Payment information is securely handled by Stripe — we never have access to your full card number."
-msgstr "Оформлюючи покупку, ви погоджуєтесь з нашими <0>Умовами надання послуг</0> та <1>Політикою конфіденційності</1>. Усі покупки можна повернути протягом 14 днів, написавши на <2>support@fluxer.app</2>. Чарджбеки призводять до постійних банів акаунтів — якщо ви хочете повернення, ми залюбки його надамо, якщо ви звернетесь до нас перш ніж робити чарджбек! Платіжні дані надійно обробляє Stripe — ми ніколи не отримуємо повного номера карти."
+msgid "By purchasing, you agree to our <0>Terms of Service</0> and <1>Privacy Policy</1>. All purchases are refundable within 14 days by emailing <2>support@echowire.org</2>. Chargebacks result in permanent account bans — if you want a refund, we're more than happy to give you one if you contact us first! Payment information is securely handled by Stripe — we never have access to your full card number."
+msgstr ""
 
 #: src/components/modals/components/PurchaseDisclaimer.tsx:31
-msgid "By purchasing, you agreed to our <0>Terms of Service</0> and <1>Privacy Policy</1>. All purchases are refundable within 14 days by emailing <2>support@fluxer.app</2>. Chargebacks result in permanent account bans — if you want a refund, we're more than happy to give you one if you contact us first! Payment information is securely handled by Stripe — we never have access to your full card number."
-msgstr "Оформлюючи покупку, ви погодились з нашими <0>Умовами надання послуг</0> та <1>Політикою конфіденційності</1>. Усі покупки можна повернути протягом 14 днів, написавши на <2>support@fluxer.app</2>. Чарджбеки призводять до постійних банів акаунтів — якщо ви хочете повернення, ми залюбки його надамо, якщо ви звернетесь до нас перш ніж робити чарджбек! Платіжні дані надійно обробляє Stripe — ми ніколи не отримуємо повного номера карти."
+msgid "By purchasing, you agreed to our <0>Terms of Service</0> and <1>Privacy Policy</1>. All purchases are refundable within 14 days by emailing <2>support@echowire.org</2>. Chargebacks result in permanent account bans — if you want a refund, we're more than happy to give you one if you contact us first! Payment information is securely handled by Stripe — we never have access to your full card number."
+msgstr ""
 
 #: src/utils/PermissionUtils.tsx:356
 #: src/utils/PermissionUtils.tsx:491
@@ -4065,8 +4065,8 @@ msgstr "Камери вимкнені, коли є більше {VOICE_CHANNEL_C
 #: src/components/modals/AccountDisableModal.tsx:69
 #: src/components/modals/AddConnectionModal.tsx:218
 #: src/components/modals/AddFavoriteMemeModal.tsx:98
-#: src/components/modals/AddGuildModal.tsx:290
-#: src/components/modals/AddGuildModal.tsx:413
+#: src/components/modals/AddGuildModal.tsx:292
+#: src/components/modals/AddGuildModal.tsx:415
 #: src/components/modals/AddGuildStickerModal.tsx:120
 #: src/components/modals/AttachmentEditModal.tsx:122
 #: src/components/modals/BackupCodesRegenerateModal.tsx:79
@@ -4081,7 +4081,7 @@ msgstr "Камери вимкнені, коли є більше {VOICE_CHANNEL_C
 #: src/components/modals/ClaimAccountModal.tsx:219
 #: src/components/modals/components/MobileSettingsView.tsx:219
 #: src/components/modals/components/plutonium/hooks/useCheckoutActions.tsx:110
-#: src/components/modals/components/plutonium/SubscriptionCard.tsx:301
+#: src/components/modals/components/plutonium/SubscriptionCard.tsx:275
 #: src/components/modals/ConfirmModal.tsx:146
 #: src/components/modals/CreateDMModal.tsx:88
 #: src/components/modals/CreateFavoriteCategoryModal.tsx:75
@@ -4132,7 +4132,7 @@ msgstr "Камери вимкнені, коли є більше {VOICE_CHANNEL_C
 #: src/components/modals/ThemeAcceptModal.tsx:177
 #: src/components/modals/TimeoutMemberModal.tsx:211
 #: src/components/modals/TransferOwnershipModal.tsx:85
-#: src/components/pages/OAuthAuthorizePage.tsx:924
+#: src/components/pages/OAuthAuthorizePage.tsx:893
 #: src/components/popouts/ScheduledMessagesContent.tsx:119
 #: src/utils/modals/AnimatedAvifModalUtils.tsx:45
 msgid "Cancel"
@@ -4162,7 +4162,7 @@ msgstr "Скасувати запит"
 msgid "Cancel upload"
 msgstr "Скасувати завантаження"
 
-#: src/components/modals/components/plutonium/SubscriptionCard.tsx:129
+#: src/components/modals/components/plutonium/SubscriptionCard.tsx:118
 msgid "Canceling"
 msgstr "Скасовується"
 
@@ -4178,11 +4178,11 @@ msgstr "Не можна редагувати"
 msgid "Cannot Delete Account"
 msgstr "Неможливо видалити акаунт"
 
-#: src/actions/InviteActionCreators.tsx:317
+#: src/actions/InviteActionCreators.tsx:340
 msgid "Cannot install emoji pack"
 msgstr "Неможливо встановити пакет емодзі"
 
-#: src/actions/InviteActionCreators.tsx:318
+#: src/actions/InviteActionCreators.tsx:341
 msgid "Cannot install sticker pack"
 msgstr "Неможливо встановити пакет стікерів"
 
@@ -4235,7 +4235,7 @@ msgstr "Категорія заповнена"
 msgid "Category ID copied"
 msgstr "ID категорії скопійовано"
 
-#: src/components/modals/channel_tabs/ChannelOverviewTab.tsx:479
+#: src/components/modals/channel_tabs/ChannelOverviewTab.tsx:518
 #: src/components/modals/CreateFavoriteCategoryModal.tsx:65
 msgid "Category Name"
 msgstr "Назва категорії"
@@ -4312,7 +4312,7 @@ msgstr "Змінити прізвисько друга"
 msgid "Change Group Nickname"
 msgstr "Змінити групове прізвисько"
 
-#: src/components/modals/AddGuildModal.tsx:329
+#: src/components/modals/AddGuildModal.tsx:331
 #: src/components/modals/EditGroupBottomSheet.tsx:214
 #: src/components/modals/EditGroupModal.tsx:195
 msgid "Change Icon"
@@ -4520,7 +4520,7 @@ msgstr "Індикатори набору тексту в списку кана�
 msgid "Channel Management"
 msgstr "Керування каналом"
 
-#: src/components/modals/channel_tabs/ChannelOverviewTab.tsx:479
+#: src/components/modals/channel_tabs/ChannelOverviewTab.tsx:518
 msgid "Channel Name"
 msgstr "Назва каналу"
 
@@ -4579,7 +4579,7 @@ msgstr "Налаштування каналу"
 msgid "Channel synced with parent category"
 msgstr "Канал синхронізовано з батьківською категорією"
 
-#: src/components/modals/channel_tabs/ChannelOverviewTab.tsx:276
+#: src/components/modals/channel_tabs/ChannelOverviewTab.tsx:315
 msgid "Channel topic is too long."
 msgstr "Тема каналу занадто довга."
 
@@ -4598,7 +4598,7 @@ msgstr "Вибір типу каналу"
 msgid "Channel type: {0}."
 msgstr "Тип каналу: {0}."
 
-#: src/components/modals/channel_tabs/ChannelOverviewTab.tsx:409
+#: src/components/modals/channel_tabs/ChannelOverviewTab.tsx:448
 msgid "Channel updated"
 msgstr "Канал оновлено"
 
@@ -4646,8 +4646,8 @@ msgstr "Масштабування шрифту чату"
 
 #: src/components/BootstrapErrorScreen.tsx:60
 #: src/components/NetworkErrorScreen.tsx:45
-msgid "Check our <0>Bluesky (@fluxer.app)</0> for status updates."
-msgstr "Перевіряйте наш <0>Bluesky (@fluxer.app)</0> для оновлень статусу."
+msgid "Check our <0>status page</0> for updates, or email us at <1>support@echowire.org</1>."
+msgstr ""
 
 #: src/components/modals/ShareThemeModal.tsx:115
 msgid "Check out my custom theme!"
@@ -4694,7 +4694,7 @@ msgstr "Китайська (традиційна)"
 msgid "Choose"
 msgstr "Вибрати"
 
-#: src/components/pages/OAuthAuthorizePage.tsx:877
+#: src/components/pages/OAuthAuthorizePage.tsx:846
 msgid "Choose a community"
 msgstr "Оберіть спільноту"
 
@@ -4765,7 +4765,7 @@ msgstr "Оберіть, як індикатори набору з'являють
 msgid "Choose the category that best describes your community."
 msgstr "Виберіть категорію, яка найкраще описує вашу спільноту."
 
-#: src/components/pages/OAuthAuthorizePage.tsx:605
+#: src/components/pages/OAuthAuthorizePage.tsx:585
 msgid "Choose what {clientLabel} can do in your community. Uncheck any permissions you don't want to grant."
 msgstr "Визначте, що {clientLabel} може робити у вашій спільноті. Зніміть галочки з дозволів, які не хочете надавати."
 
@@ -4808,7 +4808,7 @@ msgstr "Оберіть свій акцентний колір профілю"
 #: src/components/modals/ClaimAccountModal.tsx:225
 #: src/components/modals/components/UnclaimedAccountAlert.tsx:32
 #: src/components/modals/GiftAcceptModal.tsx:175
-#: src/components/modals/tabs/account_security_tab/SecurityTab.tsx:209
+#: src/components/modals/tabs/account_security_tab/SecurityTab.tsx:222
 #: src/components/modals/tabs/GiftInventoryTab.tsx:243
 msgid "Claim Account"
 msgstr "Оформити акаунт"
@@ -4837,7 +4837,7 @@ msgstr "Прийміть свій обліковий запис"
 msgid "Claim your account by adding an email and password. We will send a verification code to confirm your email before finishing."
 msgstr "Оформіть акаунт, додавши електронну пошту та пароль. Ми надішлемо код підтвердження, щоб підтвердити пошту перед завершенням."
 
-#: src/components/modals/tabs/account_security_tab/SecurityTab.tsx:205
+#: src/components/modals/tabs/account_security_tab/SecurityTab.tsx:218
 msgid "Claim your account to access security features like two-factor authentication and passkeys."
 msgstr "Оформіть акаунт, щоб активувати функції безпеки, як-от двофакторну автентифікацію та ключі доступу."
 
@@ -4856,7 +4856,7 @@ msgstr "Претендуйте на свій обліковий запис, що
 
 #: src/components/layout/ChannelItem.tsx:215
 #: src/components/layout/ChannelItem.tsx:407
-#: src/stores/voice/MediaEngineFacade.tsx:836
+#: src/stores/voice/MediaEngineFacade.tsx:887
 msgid "Claim your account to join this voice channel."
 msgstr "Прив'яжіть свій акаунт, щоб приєднатися до цього голосового каналу."
 
@@ -4867,11 +4867,11 @@ msgstr "Прив'яжіть свій акаунт, щоб приєднатися
 #: src/components/modals/components/plutonium/BottomCTASection.tsx:49
 #: src/components/modals/components/plutonium/GiftSection.tsx:52
 #: src/components/modals/components/plutonium/PricingSection.tsx:54
-#: src/components/modals/components/PlutoniumContent.tsx:99
+#: src/components/modals/components/PlutoniumContent.tsx:80
 msgid "Claim your account to purchase Fluxer Plutonium."
 msgstr "Претендуйте на свій обліковий запис, щоб придбати Fluxer Plutonium."
 
-#: src/components/modals/components/plutonium/SubscriptionCard.tsx:104
+#: src/components/modals/components/plutonium/SubscriptionCard.tsx:93
 msgid "Claim your account to purchase or redeem Fluxer Plutonium."
 msgstr "Претендуйте на свій обліковий запис, щоб придбати або викупити Fluxer Plutonium."
 
@@ -4901,7 +4901,7 @@ msgstr "Прив'яжіть свій акаунт, щоб почати або п
 msgid "Claim your gift to activate your premium subscription!"
 msgstr "Отримайте подарунок, щоб активувати преміум-підписку!"
 
-#: src/components/modals/AddGuildModal.tsx:156
+#: src/components/modals/AddGuildModal.tsx:157
 msgid "Class of '24"
 msgstr "Випуск '24"
 
@@ -5241,11 +5241,11 @@ msgstr "Код:"
 msgid "codes"
 msgstr "коди"
 
-#: src/components/modals/AddGuildModal.tsx:176
+#: src/components/modals/AddGuildModal.tsx:177
 msgid "Coding Crew"
 msgstr "Команда розробників"
 
-#: src/components/modals/AddGuildModal.tsx:165
+#: src/components/modals/AddGuildModal.tsx:166
 msgid "Coffee Chat"
 msgstr "Кавовий чат"
 
@@ -5399,7 +5399,7 @@ msgstr "Спільнота займається або дозволяє ціле
 msgid "Community exists solely for spam or fraudulent purposes"
 msgstr "Спільнота існує лише задля спаму чи шахрайства"
 
-#: src/components/modals/AddGuildModal.tsx:316
+#: src/components/modals/AddGuildModal.tsx:318
 msgid "Community Icon"
 msgstr "Іконка спільноти"
 
@@ -5445,7 +5445,7 @@ msgstr "Вимкнути звук спільноті"
 msgid "Community Muted"
 msgstr "Спільнота вимкнена"
 
-#: src/components/modals/AddGuildModal.tsx:351
+#: src/components/modals/AddGuildModal.tsx:353
 msgid "Community Name"
 msgstr "Назва спільноти"
 
@@ -5549,6 +5549,11 @@ msgstr "компактний режим"
 msgid "Compact Mode"
 msgstr "Компактний режим"
 
+#: src/components/modals/components/PlutoniumContent.tsx:127
+#: src/components/modals/components/PlutoniumContent.tsx:219
+msgid "Compare Plans"
+msgstr ""
+
 #: src/components/modals/components/plutonium/hooks/useCheckoutActions.tsx:106
 msgid "Complete Payment"
 msgstr "Завершити оплату"
@@ -5577,7 +5582,7 @@ msgstr "Налаштуйте канал AFK і час очікування"
 msgid "Configure base access for this channel"
 msgstr "Налаштуйте базовий доступ для цього каналу"
 
-#: src/components/pages/OAuthAuthorizePage.tsx:602
+#: src/components/pages/OAuthAuthorizePage.tsx:582
 msgid "Configure bot permissions"
 msgstr "Налаштуйте дозволи бота"
 
@@ -6227,15 +6232,15 @@ msgstr "Створити"
 msgid "Create & Share"
 msgstr "Створити й поділитися"
 
-#: src/components/modals/AddGuildModal.tsx:82
+#: src/components/modals/AddGuildModal.tsx:83
 msgid "Create a Community"
 msgstr "Створити спільноту"
 
-#: src/components/modals/AddGuildModal.tsx:309
+#: src/components/modals/AddGuildModal.tsx:311
 msgid "Create a community for you and your friends to chat."
 msgstr "Створіть спільноту для спілкування з друзями."
 
-#: src/components/modals/AddGuildModal.tsx:120
+#: src/components/modals/AddGuildModal.tsx:121
 msgid "Create a new community or join an existing one."
 msgstr "Створіть нову спільноту або приєднайтесь до існуючої."
 
@@ -6315,12 +6320,12 @@ msgid "Create Channel"
 msgstr "Створити канал"
 
 #: src/components/layout/guild_list/AddGuildButton.tsx:68
-#: src/components/modals/AddGuildModal.tsx:127
-#: src/components/modals/AddGuildModal.tsx:293
+#: src/components/modals/AddGuildModal.tsx:128
+#: src/components/modals/AddGuildModal.tsx:295
 msgid "Create Community"
 msgstr "Створити спільноту"
 
-#: src/components/modals/AddGuildModal.tsx:312
+#: src/components/modals/AddGuildModal.tsx:314
 msgid "Create community form"
 msgstr "Форма створення спільноти"
 
@@ -6466,11 +6471,11 @@ msgstr "Створено з назвою {newLabel}."
 msgid "Created:"
 msgstr "Створено:"
 
-#: src/components/modals/AddGuildModal.tsx:149
+#: src/components/modals/AddGuildModal.tsx:150
 msgid "Creative Minds Collective"
 msgstr "Колектив творчих розумів"
 
-#: src/components/modals/AddGuildModal.tsx:168
+#: src/components/modals/AddGuildModal.tsx:169
 msgid "Creative Writing Club"
 msgstr "Клуб творчого письма"
 
@@ -6792,8 +6797,8 @@ msgstr "Додаткова небезпека"
 msgid "Danger secondary clicked!"
 msgstr "Додаткову небезпеку натиснуто!"
 
-#: src/components/modals/tabs/account_security_tab/Inline.tsx:97
-#: src/components/modals/tabs/AccountSecurityTab.tsx:109
+#: src/components/modals/tabs/account_security_tab/Inline.tsx:100
+#: src/components/modals/tabs/AccountSecurityTab.tsx:112
 #: src/components/modals/tabs/applications_tab/ApplicationDetail.tsx:693
 #: src/components/modals/utils/SettingsConstants.tsx:299
 #: src/components/modals/utils/SettingsSectionRegistry.tsx:529
@@ -7070,7 +7075,7 @@ msgstr "видалити"
 #: src/components/emojis/EmojiListItem.tsx:195
 #: src/components/emojis/EmojiListItem.tsx:252
 #: src/components/emojis/EmojiListItem.tsx:308
-#: src/components/modals/tabs/account_security_tab/SecurityTab.tsx:325
+#: src/components/modals/tabs/account_security_tab/SecurityTab.tsx:338
 #: src/components/modals/tabs/component_gallery_tab/ButtonsTab.tsx:157
 #: src/components/modals/tabs/component_gallery_tab/ButtonsTab.tsx:242
 #: src/components/modals/tabs/component_gallery_tab/index.tsx:165
@@ -7219,8 +7224,8 @@ msgstr "Видалити повідомлення інших. (Закріпле�
 msgid "Delete Pack"
 msgstr "Видалити пакет"
 
-#: src/components/modals/tabs/account_security_tab/SecurityTab.tsx:118
-#: src/components/modals/tabs/account_security_tab/SecurityTab.tsx:130
+#: src/components/modals/tabs/account_security_tab/SecurityTab.tsx:131
+#: src/components/modals/tabs/account_security_tab/SecurityTab.tsx:143
 msgid "Delete Passkey"
 msgstr "Видалити ключ доступу"
 
@@ -7414,7 +7419,7 @@ msgstr "Деталі"
 msgid "dev"
 msgstr "розробник"
 
-#: src/components/modals/AddGuildModal.tsx:152
+#: src/components/modals/AddGuildModal.tsx:153
 msgid "Dev Den"
 msgstr "Прихисток розробників"
 
@@ -7530,8 +7535,8 @@ msgid "disable"
 msgstr "вимкнути"
 
 #: src/components/invites/DisableInvitesButton.tsx:60
-#: src/components/modals/tabs/account_security_tab/SecurityTab.tsx:240
-#: src/components/modals/tabs/account_security_tab/SecurityTab.tsx:429
+#: src/components/modals/tabs/account_security_tab/SecurityTab.tsx:253
+#: src/components/modals/tabs/account_security_tab/SecurityTab.tsx:453
 msgid "Disable"
 msgstr "Вимкнути"
 
@@ -7590,11 +7595,11 @@ msgstr "Вимкнути режим картинка в картинці"
 msgid "Disable Reduced Motion"
 msgstr "Вимкнути зменшення руху"
 
-#: src/components/modals/tabs/account_security_tab/SecurityTab.tsx:183
+#: src/components/modals/tabs/account_security_tab/SecurityTab.tsx:196
 msgid "Disable SMS 2FA"
 msgstr "Вимкнути SMS-двофакторну аутентифікацію"
 
-#: src/components/modals/tabs/account_security_tab/SecurityTab.tsx:177
+#: src/components/modals/tabs/account_security_tab/SecurityTab.tsx:190
 msgid "Disable SMS Two-Factor Authentication"
 msgstr "Вимкнути SMS-двофакторну аутентифікацію"
 
@@ -8161,6 +8166,18 @@ msgstr "ехо"
 msgid "Echo Cancellation"
 msgstr "Придушення луни"
 
+#: src/components/icons/FluxerIcon.tsx:31
+msgid "Echowire application icon"
+msgstr ""
+
+#: src/components/icons/FluxerSymbol.tsx:31
+msgid "Echowire application symbol"
+msgstr ""
+
+#: src/components/BootstrapErrorScreen.tsx:52
+msgid "Echowire failed to start properly. This could be due to corrupted data or a temporary issue."
+msgstr ""
+
 #: src/components/modals/tabs/ExpressionPacksTab.tsx:90
 #: src/components/modals/tabs/LinkedAccountsTab.tsx:186
 #: src/components/modals/tabs/LinkedAccountsTab.tsx:187
@@ -8486,7 +8503,7 @@ msgstr "Назви емодзі мають містити щонайменше 2
 msgid "Emoji pack"
 msgstr "Пакет емодзі"
 
-#: src/actions/InviteActionCreators.tsx:259
+#: src/actions/InviteActionCreators.tsx:282
 msgid "Emoji pack creation limit reached"
 msgstr "Досягнено ліміт створення пакетів емодзі"
 
@@ -8494,7 +8511,7 @@ msgstr "Досягнено ліміт створення пакетів емод
 msgid "Emoji Pack Invite"
 msgstr "Запрошення до пакета емодзі"
 
-#: src/actions/InviteActionCreators.tsx:245
+#: src/actions/InviteActionCreators.tsx:268
 msgid "Emoji pack limit reached"
 msgstr "Досягнено ліміт пакетів емодзі"
 
@@ -8531,9 +8548,9 @@ msgstr "порожній стан"
 
 #: src/components/invites/DisableInvitesButton.tsx:60
 #: src/components/layout/GuildLayout.tsx:74
-#: src/components/modals/tabs/account_security_tab/SecurityTab.tsx:247
-#: src/components/modals/tabs/account_security_tab/SecurityTab.tsx:435
-#: src/components/modals/tabs/account_security_tab/SecurityTab.tsx:441
+#: src/components/modals/tabs/account_security_tab/SecurityTab.tsx:260
+#: src/components/modals/tabs/account_security_tab/SecurityTab.tsx:459
+#: src/components/modals/tabs/account_security_tab/SecurityTab.tsx:465
 #: src/components/modals/tabs/components/InputMonitoringSection.tsx:85
 msgid "Enable"
 msgstr "Увімкнути"
@@ -8655,15 +8672,15 @@ msgstr "Увімкнути режим самостійного хостингу 
 msgid "Enable Shift to Expand"
 msgstr "Увімкнути Shift для розширення"
 
-#: src/components/modals/tabs/account_security_tab/SecurityTab.tsx:156
+#: src/components/modals/tabs/account_security_tab/SecurityTab.tsx:169
 msgid "Enable SMS 2FA"
 msgstr "Увімкнути SMS 2FA"
 
-#: src/components/modals/tabs/account_security_tab/SecurityTab.tsx:418
+#: src/components/modals/tabs/account_security_tab/SecurityTab.tsx:442
 msgid "Enable SMS codes as a backup for your authenticator app"
 msgstr "Увімкни коди SMS як запасну опцію до додатка-автентифікатора"
 
-#: src/components/modals/tabs/account_security_tab/SecurityTab.tsx:149
+#: src/components/modals/tabs/account_security_tab/SecurityTab.tsx:162
 msgid "Enable SMS Two-Factor Authentication"
 msgstr "Увімкнути двофакторну автентифікацію через SMS"
 
@@ -8821,7 +8838,7 @@ msgstr "Введи код, який ми надіслали на нову адр
 msgid "Enter the code we sent to your email to verify it. Your password will be set once the code is confirmed."
 msgstr "Введи код, який ми надіслали на електронну пошту для підтвердження. Пароль буде встановлено після підтвердження коду."
 
-#: src/components/modals/AddGuildModal.tsx:427
+#: src/components/modals/AddGuildModal.tsx:429
 msgid "Enter the invite link to join a community."
 msgstr "Введи посилання-запрошення, щоб приєднатися до спільноти."
 
@@ -8922,7 +8939,7 @@ msgstr "натисни Esc, щоб <0><1>скасувати</1></0>"
 msgid "Estonia"
 msgstr "Естонія"
 
-#: src/components/modals/channel_tabs/ChannelOverviewTab.tsx:186
+#: src/components/modals/channel_tabs/ChannelOverviewTab.tsx:199
 #: src/components/voice/VoiceRegionSelector.tsx:78
 #: src/components/voice/VoiceSettingsMenus.tsx:436
 msgid "EU Central"
@@ -9008,7 +9025,7 @@ msgid "Expire After"
 msgstr "Термін дії після"
 
 #: src/components/accounts/AccountRow.tsx:169
-#: src/components/modals/components/plutonium/SubscriptionCard.tsx:125
+#: src/components/modals/components/plutonium/SubscriptionCard.tsx:114
 #: src/components/modals/GroupInvitesBottomSheet.tsx:110
 msgid "Expired"
 msgstr "Термін дії минув"
@@ -9314,11 +9331,11 @@ msgstr "Не вдалося проігнорувати запит у друзі.
 msgid "Failed to initiate connection"
 msgstr "Не вдалося ініціювати підключення"
 
-#: src/actions/InviteActionCreators.tsx:326
+#: src/actions/InviteActionCreators.tsx:349
 msgid "Failed to install this emoji pack. Please try again later."
 msgstr "Не вдалося встановити цей пак емодзі. Спробуй пізніше."
 
-#: src/actions/InviteActionCreators.tsx:327
+#: src/actions/InviteActionCreators.tsx:350
 msgid "Failed to install this sticker pack. Please try again later."
 msgstr "Не вдалося встановити цей пак стікерів. Спробуй пізніше."
 
@@ -9381,7 +9398,7 @@ msgstr "Не вдалося завантажити стікери"
 msgid "Failed to load vanity URL. Please try again."
 msgstr "Не вдалося завантажити індивідуальне посилання. Спробуй ще раз."
 
-#: src/components/modals/channel_tabs/ChannelOverviewTab.tsx:223
+#: src/components/modals/channel_tabs/ChannelOverviewTab.tsx:236
 msgid "Failed to load voice regions for this channel."
 msgstr "Не вдалося завантажити голосові регіони для цього каналу."
 
@@ -9420,7 +9437,7 @@ msgstr "Не вдалося закріпити повідомлення"
 msgid "Failed to Prepare Emojis"
 msgstr "Не вдалося підготувати емодзі"
 
-#: src/components/modals/AddGuildModal.tsx:248
+#: src/components/modals/AddGuildModal.tsx:249
 #: src/components/modals/EditGroupBottomSheet.tsx:106
 #: src/components/modals/EditGroupModal.tsx:99
 #: src/components/modals/guild_tabs/guild_overview_tab/hooks/useGuildImageAssetField.tsx:267
@@ -9660,11 +9677,11 @@ msgstr "фейковий"
 msgid "false"
 msgstr "хибно"
 
-#: src/components/modals/AddGuildModal.tsx:183
+#: src/components/modals/AddGuildModal.tsx:184
 msgid "Family Chat"
 msgstr "Сімейний чат"
 
-#: src/components/modals/AddGuildModal.tsx:158
+#: src/components/modals/AddGuildModal.tsx:159
 msgid "Family Reunion"
 msgstr "Сімейне зібрання"
 
@@ -9722,7 +9739,7 @@ msgstr "улюблені"
 msgid "Favorites"
 msgstr "Вподобання"
 
-#: src/components/modals/components/FeatureComparisonTable.tsx:119
+#: src/components/modals/components/FeatureComparisonTable.tsx:138
 msgid "Feature"
 msgstr "Функція"
 
@@ -9845,7 +9862,7 @@ msgstr "Ім'я та прізвище"
 msgid "First Option"
 msgstr "Перший варіант"
 
-#: src/components/modals/AddGuildModal.tsx:171
+#: src/components/modals/AddGuildModal.tsx:172
 msgid "Fitness Friends"
 msgstr "Фітнес-друзі"
 
@@ -9861,33 +9878,21 @@ msgstr "Гнучкі назви текстових каналів"
 msgid "Fluxer"
 msgstr "Fluxer"
 
-#: src/components/icons/FluxerIcon.tsx:31
-msgid "Fluxer application icon"
-msgstr "Значок застосунку Fluxer"
-
-#: src/components/icons/FluxerSymbol.tsx:31
-msgid "Fluxer application symbol"
-msgstr "Символ застосунку Fluxer"
-
 #: src/components/modals/tabs/notifications_tab/PushSettings.tsx:37
 msgid "Fluxer avoids sending push notifications to your mobile devices when you are at your computer. Use this setting to control how long you need to be inactive on desktop for before you receive push notifications, ranging from 1 minute to 10 minutes."
 msgstr "Fluxer уникає надсилання push-сповіщень на мобільні пристрої, коли ти за комп'ютером. Використай це налаштування, щоб вибрати, як довго потрібно бути неактивним на десктопі, перш ніж отримаєш push-сповіщення — від 1 до 10 хвилин."
 
-#: src/components/popouts/UserProfileBadges.tsx:115
+#: src/components/popouts/UserProfileBadges.tsx:101
 msgid "Fluxer Bug Hunter"
 msgstr "Fluxer Bug Hunter"
 
-#: src/components/popouts/UserProfileBadges.tsx:95
+#: src/components/popouts/UserProfileBadges.tsx:81
 msgid "Fluxer Community Team"
 msgstr "Команда спільноти Fluxer"
 
 #: src/components/modals/tabs/DevicesTab.tsx:99
 msgid "Fluxer Desktop"
 msgstr "Fluxer Desktop"
-
-#: src/components/BootstrapErrorScreen.tsx:52
-msgid "Fluxer failed to start properly. This could be due to corrupted data or a temporary issue."
-msgstr "Fluxer не зміг правильно запуститися. Це може бути через пошкоджені дані або тимчасову проблему."
 
 #: src/stores/NewDeviceMonitoringStore.tsx:187
 msgid "Fluxer has found a new audio input device named <0>{deviceName}</0>. Do you want to switch to it?"
@@ -9945,18 +9950,18 @@ msgstr "Fluxer потребує дозволу на моніторинг вво�
 msgid "Fluxer needs permission to monitor keyboard and mouse input so that <0>Push-to-Talk</0> and <1>Global Shortcuts</1> work even when you're in another app or game."
 msgstr "Fluxer потребує дозволу на моніторинг клавіатури й миші, щоб <0>Push-to-Talk</0> і <1>Global Shortcuts</1> працювали, навіть якщо ти в іншому застосунку чи грі."
 
-#: src/components/popouts/UserProfileBadges.tsx:105
+#: src/components/popouts/UserProfileBadges.tsx:91
 msgid "Fluxer Partner"
 msgstr "Партнер Fluxer"
 
-#: src/components/modals/components/PlutoniumContent.tsx:165
+#: src/components/modals/components/PlutoniumContent.tsx:146
 #: src/components/modals/PremiumModal.tsx:34
 #: src/components/modals/utils/SettingsConstants.tsx:124
-#: src/components/popouts/UserProfileBadges.tsx:121
+#: src/components/popouts/UserProfileBadges.tsx:107
 msgid "Fluxer Plutonium"
 msgstr "Fluxer Plutonium"
 
-#: src/components/popouts/UserProfileBadges.tsx:85
+#: src/components/popouts/UserProfileBadges.tsx:71
 msgid "Fluxer Staff"
 msgstr "Команда Fluxer"
 
@@ -10034,7 +10039,7 @@ msgstr "шрифти"
 msgid "Food & Drink"
 msgstr "Їжа й напої"
 
-#: src/components/modals/AddGuildModal.tsx:172
+#: src/components/modals/AddGuildModal.tsx:173
 msgid "Foodie Friends"
 msgstr "Гурмани-друзі"
 
@@ -10248,7 +10253,7 @@ msgstr "Частота кадрів понад 30 FPS вимагає Plutonium"
 msgid "France"
 msgstr "Франція"
 
-#: src/components/modals/components/FeatureComparisonTable.tsx:124
+#: src/components/modals/components/FeatureComparisonTable.tsx:143
 msgid "Free"
 msgstr "Безкоштовно"
 
@@ -10259,11 +10264,6 @@ msgstr "Безкоштовний користувач (без покупок)"
 #: src/components/modals/tabs/developer_options_tab/PremiumScenarioOptions.tsx:53
 msgid "Free User (With Purchase History)"
 msgstr "Безкоштовний користувач (з історією покупок)"
-
-#: src/components/modals/components/PlutoniumContent.tsx:146
-#: src/components/modals/components/PlutoniumContent.tsx:243
-msgid "Free vs Plutonium"
-msgstr "Безкоштовно проти Plutonium"
 
 #: src/components/modals/tabs/VideoTab.tsx:237
 msgid "Freezes your preview while Fluxer is in the background to save resources."
@@ -10336,7 +10336,7 @@ msgstr "Друзі"
 msgid "Friends + Custom"
 msgstr "Друзі + власні"
 
-#: src/components/modals/AddGuildModal.tsx:184
+#: src/components/modals/AddGuildModal.tsx:185
 msgid "Friends Forever"
 msgstr "Друзі назавжди"
 
@@ -10405,7 +10405,7 @@ msgstr "Повне юридичне ім'я"
 msgid "Game controller"
 msgstr "Ігровий контролер"
 
-#: src/components/modals/AddGuildModal.tsx:166
+#: src/components/modals/AddGuildModal.tsx:167
 msgid "Game Night"
 msgstr "Ігрова ніч"
 
@@ -10413,7 +10413,7 @@ msgstr "Ігрова ніч"
 msgid "Gaming"
 msgstr "Ігри"
 
-#: src/components/modals/AddGuildModal.tsx:180
+#: src/components/modals/AddGuildModal.tsx:181
 msgid "Gaming Community"
 msgstr "Геймерська спільнота"
 
@@ -10430,11 +10430,11 @@ msgstr "Потрібне підключення до шлюзу"
 msgid "gdpr"
 msgstr "gdpr"
 
-#: src/components/modals/channel_tabs/ChannelOverviewTab.tsx:480
+#: src/components/modals/channel_tabs/ChannelOverviewTab.tsx:519
 msgid "general"
 msgstr "загальний"
 
-#: src/components/modals/channel_tabs/ChannelOverviewTab.tsx:468
+#: src/components/modals/channel_tabs/ChannelOverviewTab.tsx:507
 #: src/components/modals/tabs/developer_options_tab/index.tsx:45
 #: src/components/modals/tabs/developer_options_tab/Inline.tsx:45
 #: src/components/modals/utils/ChannelSettingsConstants.tsx:56
@@ -10553,7 +10553,7 @@ msgstr "Попередній перегляд GIF"
 msgid "GIFs"
 msgstr "GIFи"
 
-#: src/components/modals/components/plutonium/SubscriptionCard.tsx:133
+#: src/components/modals/components/plutonium/SubscriptionCard.tsx:122
 #: src/components/modals/GiftAcceptModal.tsx:211
 msgid "Gift"
 msgstr "Подарунок"
@@ -10759,7 +10759,7 @@ msgstr "Зловив"
 msgid "gpu"
 msgstr "гпу"
 
-#: src/components/modals/components/plutonium/SubscriptionCard.tsx:127
+#: src/components/modals/components/plutonium/SubscriptionCard.tsx:116
 msgid "Grace Period"
 msgstr "Пільговий період"
 
@@ -11076,6 +11076,7 @@ msgstr "сховати"
 #: src/components/modals/HideOwnCameraConfirmModal.tsx:66
 #: src/components/modals/HideOwnScreenShareConfirmModal.tsx:66
 #: src/components/modals/tabs/account_security_tab/AccountTab.tsx:76
+#: src/components/modals/tabs/account_security_tab/SecurityTab.tsx:370
 msgid "Hide"
 msgstr "Сховати"
 
@@ -11221,7 +11222,7 @@ msgstr "Режим відображення з високим динамічни
 msgid "High quality, requires fast connection"
 msgstr "Висока якість, потребує швидкого з'єднання"
 
-#: src/components/modals/channel_tabs/ChannelOverviewTab.tsx:661
+#: src/components/modals/channel_tabs/ChannelOverviewTab.tsx:700
 msgid "Higher bitrate = better quality and higher bandwidth usage."
 msgstr "Вищий бітрейт = краща якість і більше витрат трафіку."
 
@@ -11237,7 +11238,7 @@ msgstr "підказки"
 msgid "Hit 88mph"
 msgstr "Досягти 88 миль/год"
 
-#: src/components/modals/AddGuildModal.tsx:155
+#: src/components/modals/AddGuildModal.tsx:156
 msgid "Hobby Haven"
 msgstr "Притулок хобі"
 
@@ -11338,7 +11339,7 @@ msgstr "Як це працює"
 msgid "HTML / XML"
 msgstr "HTML / XML"
 
-#: src/components/modals/channel_tabs/ChannelOverviewTab.tsx:492
+#: src/components/modals/channel_tabs/ChannelOverviewTab.tsx:531
 #: src/components/modals/ChannelCreateModal.tsx:92
 msgid "https://example.com"
 msgstr "https://example.com"
@@ -11394,7 +11395,7 @@ msgstr "Я розумію"
 msgid "Icon"
 msgstr "Іконка"
 
-#: src/components/modals/AddGuildModal.tsx:214
+#: src/components/modals/AddGuildModal.tsx:215
 #: src/components/modals/EditGroupBottomSheet.tsx:71
 #: src/components/modals/EditGroupModal.tsx:64
 msgid "Icon file is too large. Please choose a file smaller than 10MB."
@@ -11797,8 +11798,8 @@ msgstr "Введення та текст"
 msgid "Inputs with Icons"
 msgstr "Введення з іконками"
 
-#: src/components/modals/channel_tabs/ChannelOverviewTab.tsx:547
-#: src/components/modals/channel_tabs/ChannelOverviewTab.tsx:580
+#: src/components/modals/channel_tabs/ChannelOverviewTab.tsx:586
+#: src/components/modals/channel_tabs/ChannelOverviewTab.tsx:619
 msgid "Insert emoji"
 msgstr "Вставити емодзі"
 
@@ -11871,7 +11872,7 @@ msgstr "Невірний"
 msgid "Invalid audio file"
 msgstr "Невірний аудіофайл"
 
-#: src/components/pages/OAuthAuthorizePage.tsx:536
+#: src/components/pages/OAuthAuthorizePage.tsx:526
 msgid "Invalid authorization request"
 msgstr "Невірний запит авторизації"
 
@@ -11894,7 +11895,7 @@ msgstr "Невірний або протермінований код"
 msgid "Invalid or expired code. Please try again."
 msgstr "Код невірний або протермінований. Спробуйте ще раз."
 
-#: src/components/pages/OAuthAuthorizePage.tsx:511
+#: src/components/pages/OAuthAuthorizePage.tsx:501
 msgid "Invalid redirect_uri"
 msgstr "Невірний redirect_uri"
 
@@ -11969,7 +11970,7 @@ msgstr "Запросити друзів до {0}"
 msgid "Invite link"
 msgstr "Посилання-запрошення"
 
-#: src/components/modals/AddGuildModal.tsx:436
+#: src/components/modals/AddGuildModal.tsx:438
 msgid "Invite Link"
 msgstr "Посилання-запрошення"
 
@@ -12101,7 +12102,7 @@ msgstr "Запрошення наразі вимкнено для цієї сп�
 msgid "Invites are currently disabled in this community by an admin. While this invite can be created, it cannot be accepted until invites are re-enabled."
 msgstr "Адміністратор тимчасово вимкнув запрошення для цієї спільноти. Хоча це запрошення можна створити, його не вдасться прийняти, доки запрошення не увімкнуть знову."
 
-#: src/components/layout/guild_list/GuildListItem.tsx:493
+#: src/components/layout/guild_list/GuildListItem.tsx:492
 msgid "Invites are currently paused in this community"
 msgstr "Запрошення наразі призупинено в цій спільноті"
 
@@ -12143,7 +12144,7 @@ msgstr "IP-адресу авторизовано"
 msgid "Ireland"
 msgstr "Ірландія"
 
-#: src/components/modals/tabs/AccountSecurityTab.tsx:109
+#: src/components/modals/tabs/AccountSecurityTab.tsx:112
 msgid "Irreversible and destructive actions"
 msgstr "Незворотні та руйнівні дії"
 
@@ -12185,7 +12186,7 @@ msgstr "Стрибки"
 msgid "join"
 msgstr "приєднатися"
 
-#: src/components/modals/AddGuildModal.tsx:84
+#: src/components/modals/AddGuildModal.tsx:85
 msgid "Join a Community"
 msgstr "Приєднатися до спільноти"
 
@@ -12205,16 +12206,15 @@ msgstr "Приєднатися до виклику"
 #: src/components/channel/InviteEmbed.tsx:284
 #: src/components/channel/InviteEmbed.tsx:475
 #: src/components/layout/guild_list/AddGuildButton.tsx:77
-#: src/components/modals/AddGuildModal.tsx:132
-#: src/components/modals/AddGuildModal.tsx:416
-#: src/components/modals/components/plutonium/SubscriptionCard.tsx:289
+#: src/components/modals/AddGuildModal.tsx:133
+#: src/components/modals/AddGuildModal.tsx:418
 #: src/components/modals/discovery/DiscoveryGuildCard.tsx:99
 #: src/components/modals/InviteAcceptModal.tsx:119
 #: src/components/modals/InviteAcceptModalPreview.tsx:111
 msgid "Join Community"
 msgstr "Приєднатися до спільноти"
 
-#: src/components/modals/AddGuildModal.tsx:430
+#: src/components/modals/AddGuildModal.tsx:432
 msgid "Join community form"
 msgstr "Форма приєднання до спільноти"
 
@@ -12327,7 +12327,7 @@ msgstr "JPEG, PNG, WebP. Макс. 10 МБ. Мінімум: {0}×{1}px (16:9)"
 msgid "JPEG, PNG, WebP. Max 10MB. Minimum: {0}×{1}px (16:9). Shown in invite embeds in chat."
 msgstr "JPEG, PNG, WebP. Макс. 10 МБ. Мінімум: {0}×{1}px (16:9). Відображається у вбудованих запрошеннях у чаті."
 
-#: src/components/modals/AddGuildModal.tsx:338
+#: src/components/modals/AddGuildModal.tsx:340
 #: src/components/modals/EditGroupBottomSheet.tsx:223
 #: src/components/modals/EditGroupModal.tsx:204
 #: src/components/modals/guild_tabs/guild_overview_tab/fields/GuildIconUploadField.tsx:116
@@ -12717,7 +12717,7 @@ msgstr "Дозволь спільноті самостійно модерува�
 msgid "Letters (a-z, A-Z), numbers (0-9), and underscores (_) only"
 msgstr "Тільки літери (a-z, A-Z), цифри (0-9) і підкреслення (_)"
 
-#: src/components/modals/components/plutonium/SubscriptionCard.tsx:131
+#: src/components/modals/components/plutonium/SubscriptionCard.tsx:120
 #: src/components/modals/tabs/developer_options_tab/AccountPremiumTab.tsx:52
 #: src/components/modals/tabs/developer_options_tab/MockingTab.tsx:317
 msgid "Lifetime"
@@ -12899,7 +12899,7 @@ msgstr "Завантаження"
 msgid "Loading bans..."
 msgstr "Завантаження банів..."
 
-#: src/components/pages/OAuthAuthorizePage.tsx:877
+#: src/components/pages/OAuthAuthorizePage.tsx:846
 msgid "Loading communities..."
 msgstr "Завантаження спільнот..."
 
@@ -13197,7 +13197,7 @@ msgid "Manage Roles"
 msgstr "Керування ролями"
 
 #: src/components/layout/app_layout/nagbars/PremiumGracePeriodNagbar.tsx:79
-#: src/components/modals/components/plutonium/SubscriptionCard.tsx:271
+#: src/components/modals/components/plutonium/SubscriptionCard.tsx:260
 msgid "Manage Subscription"
 msgstr "Керування підпискою"
 
@@ -13214,7 +13214,7 @@ msgstr "Керування вебхуками"
 msgid "Manage your applications and bots."
 msgstr "Керуй своїми застосунками та ботами."
 
-#: src/components/modals/tabs/AccountSecurityTab.tsx:78
+#: src/components/modals/tabs/AccountSecurityTab.tsx:79
 msgid "Manage your email, password, and account settings"
 msgstr "Керуй email, паролем і налаштуваннями акаунта"
 
@@ -13222,7 +13222,7 @@ msgstr "Керуй email, паролем і налаштуваннями ака�
 msgid "Manage your gifts"
 msgstr "Керування своїми подарунками"
 
-#: src/components/modals/tabs/account_security_tab/SecurityTab.tsx:340
+#: src/components/modals/tabs/account_security_tab/SecurityTab.tsx:353
 msgid "Manage your phone number for SMS two-factor authentication"
 msgstr "Керуй номером телефону для SMS-двофакторної аутентифікації"
 
@@ -13385,7 +13385,7 @@ msgstr "Максимізує кількість видимих повідомл�
 msgid "Maximum 256 characters"
 msgstr "Максимум 256 символів"
 
-#: src/components/modals/channel_tabs/ChannelOverviewTab.tsx:694
+#: src/components/modals/channel_tabs/ChannelOverviewTab.tsx:733
 msgid "Maximum members who can join at once. 0 means unlimited."
 msgstr "Максимальна кількість учасників, які можуть приєднатися одразу. 0 означає безмежно."
 
@@ -13579,7 +13579,7 @@ msgstr "Члени, неактивні протягом {days} днів, буд�
 msgid "Members list unavailable at this screen width"
 msgstr "Список учасників недоступний при цій ширині екрана"
 
-#: src/components/modals/channel_tabs/ChannelOverviewTab.tsx:617
+#: src/components/modals/channel_tabs/ChannelOverviewTab.tsx:656
 msgid "Members must wait between messages."
 msgstr "Учасникам потрібно чекати між повідомленнями."
 
@@ -14164,11 +14164,11 @@ msgstr "Роль переміщено на позицію {0}."
 msgid "Moved to channel {0}."
 msgstr "Переміщено до каналу {0}."
 
-#: src/components/modals/AddGuildModal.tsx:174
+#: src/components/modals/AddGuildModal.tsx:175
 msgid "Movie Club"
 msgstr "Кіноклуб"
 
-#: src/components/modals/AddGuildModal.tsx:161
+#: src/components/modals/AddGuildModal.tsx:162
 msgid "Movie Night Crew"
 msgstr "Команда кіношного вечора"
 
@@ -14188,7 +14188,7 @@ msgstr "Багатомовний контент"
 msgid "Music"
 msgstr "Музика"
 
-#: src/components/modals/AddGuildModal.tsx:170
+#: src/components/modals/AddGuildModal.tsx:171
 msgid "Music Lovers"
 msgstr "Поціновувачі музики"
 
@@ -14316,7 +14316,7 @@ msgstr "Вимкнути аудіо потоку"
 msgid "muted"
 msgstr "вимкнено"
 
-#: src/components/layout/guild_list/GuildListItem.tsx:453
+#: src/components/layout/guild_list/GuildListItem.tsx:452
 #: src/components/layout/VoiceStateIcons.tsx:49
 #: src/components/voice/VoiceParticipantTile.tsx:1457
 #: src/utils/ContextMenuUtils.tsx:165
@@ -14329,7 +14329,7 @@ msgstr "вимкнені канали"
 
 #. placeholder {0}: DateUtils.getFormattedDateTime(new Date(muteConfig.end_time))
 #. placeholder {0}: getFormattedDateTime(new Date(muteConfig.end_time))
-#: src/components/layout/guild_list/GuildListItem.tsx:451
+#: src/components/layout/guild_list/GuildListItem.tsx:450
 #: src/utils/ContextMenuUtils.tsx:163
 msgid "Muted until {0}"
 msgstr "Без звуку до {0}"
@@ -14371,7 +14371,7 @@ msgstr "Мої круті медіа"
 msgid "My awesome sticker"
 msgstr "Мій крутий стікер"
 
-#: src/components/modals/channel_tabs/ChannelOverviewTab.tsx:480
+#: src/components/modals/channel_tabs/ChannelOverviewTab.tsx:519
 msgid "My Category"
 msgstr "Моя категорія"
 
@@ -14509,7 +14509,7 @@ msgstr "Навігація"
 msgid "Need an account?"
 msgstr "Потрібен акаунт?"
 
-#: src/components/modals/AddGuildModal.tsx:162
+#: src/components/modals/AddGuildModal.tsx:163
 msgid "Neighborhood Watch"
 msgstr "Сусідський нагляд"
 
@@ -14623,7 +14623,7 @@ msgid "Newest First"
 msgstr "Спочатку найновіші"
 
 #: src/components/bottomsheets/ChannelSearchBottomSheet.tsx:394
-#: src/components/pages/OAuthAuthorizePage.tsx:931
+#: src/components/pages/OAuthAuthorizePage.tsx:900
 msgid "Next"
 msgstr "Далі"
 
@@ -14754,7 +14754,7 @@ msgstr "Каналів немає"
 msgid "No channels found"
 msgstr "Канали не знайдено"
 
-#: src/components/pages/OAuthAuthorizePage.tsx:893
+#: src/components/pages/OAuthAuthorizePage.tsx:862
 msgid "No communities available with <0>Manage Community</0> permissions."
 msgstr "Немає спільнот з правами <0>Управління спільнотою</0>."
 
@@ -14842,7 +14842,7 @@ msgstr "Запрошення не створено"
 msgid "No keybind set"
 msgstr "Гаряча клавіша не налаштована"
 
-#: src/components/modals/channel_tabs/ChannelOverviewTab.tsx:688
+#: src/components/modals/channel_tabs/ChannelOverviewTab.tsx:727
 #: src/components/modals/InviteModal.tsx:88
 msgid "No limit"
 msgstr "Без обмежень"
@@ -14851,7 +14851,7 @@ msgstr "Без обмежень"
 msgid "No Logs Yet"
 msgstr "Ще немає журналів"
 
-#: src/components/pages/OAuthAuthorizePage.tsx:426
+#: src/components/pages/OAuthAuthorizePage.tsx:416
 msgid "No Manage Community permission"
 msgstr "Немає права управляти спільнотою"
 
@@ -14884,7 +14884,7 @@ msgstr "Спільних друзів не знайдено."
 msgid "No mutual groups found."
 msgstr "Спільних груп не знайдено."
 
-#: src/components/modals/tabs/account_security_tab/SecurityTab.tsx:286
+#: src/components/modals/tabs/account_security_tab/SecurityTab.tsx:299
 msgid "No passkeys registered"
 msgstr "Не зареєстровано жодного ключа доступу"
 
@@ -14986,7 +14986,7 @@ msgstr "Немає результатів пошуку"
 msgid "No settings found"
 msgstr "Налаштувань не знайдено"
 
-#: src/components/pages/OAuthAuthorizePage.tsx:824
+#: src/components/pages/OAuthAuthorizePage.tsx:793
 msgid "No specific scopes requested."
 msgstr "Не запитано конкретних обсягів доступу."
 
@@ -15261,7 +15261,7 @@ msgid "Objects"
 msgstr "Об'єкти"
 
 #: src/components/channel/ReplyBar.tsx:112
-#: src/components/modals/channel_tabs/ChannelOverviewTab.tsx:160
+#: src/components/modals/channel_tabs/ChannelOverviewTab.tsx:173
 #: src/components/modals/guild_tabs/GuildModerationTab.tsx:243
 #: src/utils/modals/guild_tabs/GuildAuditLogTabUtils.tsx:64
 msgid "Off"
@@ -15499,7 +15499,7 @@ msgstr "Відкрити вибір кольору"
 msgid "Open Community Notification Settings"
 msgstr "Відкрити налаштування сповіщень спільноти"
 
-#: src/components/modals/components/plutonium/SubscriptionCard.tsx:269
+#: src/components/modals/components/plutonium/SubscriptionCard.tsx:258
 msgid "Open Customer Portal"
 msgstr "Відкрити портал клієнта"
 
@@ -15779,7 +15779,7 @@ msgstr "Інакше потрібен режим Push-to-talk."
 msgid "otp"
 msgstr "otp"
 
-#: src/components/modals/AddGuildModal.tsx:186
+#: src/components/modals/AddGuildModal.tsx:187
 msgid "Our Hangout"
 msgstr "Наша тусовка"
 
@@ -15909,7 +15909,7 @@ msgstr "пакети"
 msgid "Page {currentPage} of {totalPages}"
 msgstr "Сторінка {currentPage} із {totalPages}"
 
-#: src/components/modals/channel_tabs/ChannelOverviewTab.tsx:671
+#: src/components/modals/channel_tabs/ChannelOverviewTab.tsx:710
 msgid "Participant Limit"
 msgstr "Ліміт учасників"
 
@@ -15930,7 +15930,7 @@ msgstr "Партнерська спільнота"
 msgid "Passkey Name"
 msgstr "Назва пасключа"
 
-#: src/components/modals/tabs/account_security_tab/SecurityTab.tsx:276
+#: src/components/modals/tabs/account_security_tab/SecurityTab.tsx:289
 msgid "Passkeys"
 msgstr "Пасключі"
 
@@ -16103,8 +16103,8 @@ msgid "permissions"
 msgstr "дозволи"
 
 #: src/components/modals/guild_tabs/GuildRolesTab.tsx:1086
-#: src/components/pages/OAuthAuthorizePage.tsx:584
-#: src/components/pages/OAuthAuthorizePage.tsx:720
+#: src/components/pages/OAuthAuthorizePage.tsx:574
+#: src/components/pages/OAuthAuthorizePage.tsx:700
 msgid "Permissions"
 msgstr "Дозволи"
 
@@ -16148,8 +16148,8 @@ msgstr "Телефон"
 
 #: src/components/modals/PhoneAddModal.tsx:192
 #: src/components/modals/RequiredActionModal.tsx:616
-#: src/components/modals/tabs/account_security_tab/SecurityTab.tsx:339
-#: src/components/modals/tabs/account_security_tab/SecurityTab.tsx:345
+#: src/components/modals/tabs/account_security_tab/SecurityTab.tsx:352
+#: src/components/modals/tabs/account_security_tab/SecurityTab.tsx:358
 #: src/components/modals/utils/SettingsSearchIndex.tsx:115
 msgid "Phone Number"
 msgstr "Номер телефону"
@@ -16157,11 +16157,6 @@ msgstr "Номер телефону"
 #: src/components/modals/PhoneAddModal.tsx:133
 msgid "Phone number added"
 msgstr "Номер телефону додано"
-
-#. placeholder {0}: user.phone
-#: src/components/modals/tabs/account_security_tab/SecurityTab.tsx:349
-msgid "Phone number added: {0}"
-msgstr "Додано номер телефону: {0}"
 
 #: src/components/modals/RequiredActionModal.tsx:253
 msgid "Phone number is required"
@@ -16187,7 +16182,7 @@ msgstr "Необхідна перевірка телефону"
 msgid "photo"
 msgstr "фото"
 
-#: src/components/modals/AddGuildModal.tsx:169
+#: src/components/modals/AddGuildModal.tsx:170
 msgid "Photography Club"
 msgstr "Клуб фотографії"
 
@@ -16421,7 +16416,7 @@ msgstr "Спробуй пізніше."
 msgid "Please update Fluxer to view this message."
 msgstr "Онови Fluxer, щоб переглянути це повідомлення."
 
-#: src/actions/InviteActionCreators.tsx:184
+#: src/actions/InviteActionCreators.tsx:207
 msgid "Please verify your account by setting an email and password before joining communities."
 msgstr "Підтверди акаунт, вказавши пошту та пароль перед приєднанням до спільнот."
 
@@ -16447,7 +16442,7 @@ msgstr "плутоній"
 
 #: src/components/channel/direct_message/DMList.tsx:1326
 #: src/components/channel/direct_message/DMList.tsx:1405
-#: src/components/modals/components/FeatureComparisonTable.tsx:127
+#: src/components/modals/components/FeatureComparisonTable.tsx:146
 msgid "Plutonium"
 msgstr "Plutonium"
 
@@ -16459,7 +16454,7 @@ msgstr "Конфіденційність значка Plutonium"
 msgid "Plutonium perks"
 msgstr "Переваги Plutonium"
 
-#: src/components/modals/components/plutonium/SubscriptionCard.tsx:121
+#: src/components/modals/components/plutonium/SubscriptionCard.tsx:110
 msgid "Plutonium Subscription"
 msgstr "Підписка Plutonium"
 
@@ -16715,7 +16710,7 @@ msgstr "Продовжити"
 msgid "Processing"
 msgstr "Обробка"
 
-#: src/components/modals/AddGuildModal.tsx:163
+#: src/components/modals/AddGuildModal.tsx:164
 msgid "Professional Peers"
 msgstr "Професійні колеги"
 
@@ -16776,7 +16771,7 @@ msgstr "Профіль оновлено"
 msgid "progress"
 msgstr "прогрес"
 
-#: src/components/modals/AddGuildModal.tsx:159
+#: src/components/modals/AddGuildModal.tsx:160
 msgid "Project X"
 msgstr "Project X"
 
@@ -16789,7 +16784,7 @@ msgstr "займенники"
 msgid "Pronouns"
 msgstr "Займенники"
 
-#: src/components/modals/tabs/AccountSecurityTab.tsx:91
+#: src/components/modals/tabs/AccountSecurityTab.tsx:92
 msgid "Protect your account with two-factor authentication and passkeys"
 msgstr "Захисти акаунт двофакторною авторизацією та ключами"
 
@@ -17014,7 +17009,7 @@ msgid "Reactions"
 msgstr "Реакції"
 
 #: src/components/layout/app_layout/nagbars/PremiumExpiredNagbar.tsx:75
-#: src/components/modals/components/plutonium/SubscriptionCard.tsx:267
+#: src/components/modals/components/plutonium/SubscriptionCard.tsx:256
 msgid "Reactivate"
 msgstr "Повторно активувати"
 
@@ -17076,7 +17071,7 @@ msgstr "Отримати"
 msgid "Receive notifications when someone mentions you"
 msgstr "Отримувати сповіщення, коли тебе згадують"
 
-#: src/components/modals/tabs/account_security_tab/SecurityTab.tsx:407
+#: src/components/modals/tabs/account_security_tab/SecurityTab.tsx:431
 msgid "Receive verification codes via SMS as a backup authentication method"
 msgstr "Отримувати коди підтвердження через SMS як запасний метод автентифікації"
 
@@ -17141,7 +17136,7 @@ msgstr "Активувати подарунок"
 msgid "Redeem for Yourself"
 msgstr "Активувати для себе"
 
-#: src/components/modals/components/plutonium/SubscriptionCard.tsx:245
+#: src/components/modals/components/plutonium/SubscriptionCard.tsx:234
 msgid "Redeem Gift Code"
 msgstr "Активувати код подарунка"
 
@@ -17233,7 +17228,7 @@ msgstr "Перегенерація анулює поточний токен. О�
 msgid "Register"
 msgstr "Зареєструватися"
 
-#: src/components/modals/tabs/account_security_tab/SecurityTab.tsx:282
+#: src/components/modals/tabs/account_security_tab/SecurityTab.tsx:295
 msgid "Registered Passkeys"
 msgstr "Зареєстровані ключі"
 
@@ -17303,7 +17298,7 @@ msgstr "видалити"
 #: src/components/modals/guild_tabs/guild_overview_tab/fields/GuildEmbedSplashUploadField.tsx:101
 #: src/components/modals/guild_tabs/guild_overview_tab/fields/GuildIconUploadField.tsx:107
 #: src/components/modals/guild_tabs/guild_overview_tab/fields/GuildInviteSplashUploadField.tsx:113
-#: src/components/modals/tabs/account_security_tab/SecurityTab.tsx:394
+#: src/components/modals/tabs/account_security_tab/SecurityTab.tsx:418
 #: src/components/modals/tabs/ExpressionPacksTab.tsx:96
 #: src/components/modals/tabs/ExpressionPacksTab.tsx:226
 #: src/components/modals/tabs/LinkedAccountsTab.tsx:191
@@ -17454,7 +17449,7 @@ msgstr "Видалити з обраного"
 msgid "Remove from Group"
 msgstr "Видалити з групи"
 
-#: src/components/modals/AddGuildModal.tsx:333
+#: src/components/modals/AddGuildModal.tsx:335
 #: src/components/modals/EditGroupBottomSheet.tsx:218
 #: src/components/modals/EditGroupModal.tsx:199
 msgid "Remove Icon"
@@ -17477,11 +17472,11 @@ msgstr "Видалити перевизначення"
 msgid "Remove Pack"
 msgstr "Видалити пакет"
 
-#: src/components/modals/tabs/account_security_tab/SecurityTab.tsx:380
+#: src/components/modals/tabs/account_security_tab/SecurityTab.tsx:404
 msgid "Remove Phone"
 msgstr "Видалити телефон"
 
-#: src/components/modals/tabs/account_security_tab/SecurityTab.tsx:363
+#: src/components/modals/tabs/account_security_tab/SecurityTab.tsx:387
 msgid "Remove Phone Number"
 msgstr "Видалити номер телефону"
 
@@ -17623,7 +17618,7 @@ msgstr "Видаляє дозвіл ATTACH_FILES у всіх каналах (х�
 msgid "Removes SEND_MESSAGES permission in all channels (disables textarea and all buttons)"
 msgstr "Видаляє дозвіл SEND_MESSAGES у всіх каналах (відключає поле вводу та всі кнопки)"
 
-#: src/components/pages/OAuthAuthorizePage.tsx:660
+#: src/components/pages/OAuthAuthorizePage.tsx:640
 msgid "Removing permissions could limit the bot's features."
 msgstr "Видалення дозволів може обмежити функції бота."
 
@@ -17636,7 +17631,7 @@ msgstr "Видалення пакета призведе до його деін�
 msgid "Removing the timeout will allow <0>{0}</0> to send messages, react, and join voice channels again."
 msgstr "Видалення тайм-ауту дозволить <0>{0}</0> знову надсилати повідомлення, реагувати та приєднуватися до голосових каналів."
 
-#: src/components/modals/tabs/account_security_tab/SecurityTab.tsx:322
+#: src/components/modals/tabs/account_security_tab/SecurityTab.tsx:335
 msgid "Rename"
 msgstr "Перейменувати"
 
@@ -17695,7 +17690,7 @@ msgstr "Спільноту перейменовано на {0}."
 msgid "Render all your messages as unknown message type"
 msgstr "Відображати всі ваші повідомлення як невідомий тип повідомлення"
 
-#: src/components/modals/components/plutonium/SubscriptionCard.tsx:227
+#: src/components/modals/components/plutonium/SubscriptionCard.tsx:216
 msgid "Renews on <0>{renewalDate}</0>."
 msgstr "Поновлюється <0>{renewalDate}</0>."
 
@@ -17813,7 +17808,7 @@ msgstr "Запит на експорт даних"
 msgid "Request Export"
 msgstr "Запит на експорт"
 
-#: src/components/pages/OAuthAuthorizePage.tsx:814
+#: src/components/pages/OAuthAuthorizePage.tsx:783
 msgid "Requested scopes"
 msgstr "Запитувані області доступу"
 
@@ -17841,7 +17836,7 @@ msgstr "Вимагати OAuth2 code grant"
 msgid "Require two-factor authentication for moderators before they can ban, kick, timeout, or remove messages."
 msgstr "Вимагати двофакторну автентифікацію для модераторів перед баном, вигнанням, тайм-аутом або видаленням повідомлень."
 
-#: src/components/pages/OAuthAuthorizePage.tsx:839
+#: src/components/pages/OAuthAuthorizePage.tsx:808
 msgid "Required"
 msgstr "Обов'язково"
 
@@ -17955,7 +17950,7 @@ msgstr "Скинути всі перевизначення до стандарт
 msgid "Reset app data"
 msgstr "Скинути дані застосунку"
 
-#: src/components/BootstrapErrorScreen.tsx:74
+#: src/components/BootstrapErrorScreen.tsx:75
 msgid "Reset App Data"
 msgstr "Скинути дані застосунку"
 
@@ -18038,8 +18033,8 @@ msgstr "Відновити в максимальному розмірі"
 msgid "Restore window"
 msgstr "Відновити вікно"
 
-#: src/components/modals/components/plutonium/SubscriptionCard.tsx:263
-#: src/components/modals/components/plutonium/SubscriptionCard.tsx:265
+#: src/components/modals/components/plutonium/SubscriptionCard.tsx:252
+#: src/components/modals/components/plutonium/SubscriptionCard.tsx:254
 msgid "Resubscribe"
 msgstr "Підписатися знову"
 
@@ -18077,6 +18072,7 @@ msgid "reveal"
 msgstr "показати"
 
 #: src/components/modals/tabs/account_security_tab/AccountTab.tsx:76
+#: src/components/modals/tabs/account_security_tab/SecurityTab.tsx:370
 msgid "Reveal"
 msgstr "Розкрити"
 
@@ -18088,7 +18084,7 @@ msgstr "Розкрити спойлер"
 msgid "Review deletion"
 msgstr "Переглянути видалення"
 
-#: src/components/pages/OAuthAuthorizePage.tsx:749
+#: src/components/pages/OAuthAuthorizePage.tsx:718
 msgid "Review what this app is asking for before you continue."
 msgstr "Перевір, що просить цей застосунок, перш ніж продовжити."
 
@@ -18465,8 +18461,8 @@ msgid "Scope"
 msgstr "Область доступу"
 
 #: src/components/modals/tabs/applications_tab/application_detail/OAuthBuilderSection.tsx:75
-#: src/components/pages/OAuthAuthorizePage.tsx:577
-#: src/components/pages/OAuthAuthorizePage.tsx:713
+#: src/components/pages/OAuthAuthorizePage.tsx:567
+#: src/components/pages/OAuthAuthorizePage.tsx:693
 msgid "Scopes"
 msgstr "Області доступу"
 
@@ -18770,8 +18766,8 @@ msgstr "Захистіть свій акаунт"
 msgid "security"
 msgstr "безпека"
 
-#: src/components/modals/tabs/account_security_tab/Inline.tsx:81
-#: src/components/modals/tabs/AccountSecurityTab.tsx:90
+#: src/components/modals/tabs/account_security_tab/Inline.tsx:82
+#: src/components/modals/tabs/AccountSecurityTab.tsx:91
 #: src/components/modals/utils/SettingsConstants.tsx:298
 #: src/components/modals/utils/SettingsSectionRegistry.tsx:505
 msgid "Security"
@@ -18781,7 +18777,7 @@ msgstr "Безпека"
 msgid "Security & Login"
 msgstr "Безпека та вхід"
 
-#: src/components/modals/tabs/account_security_tab/SecurityTab.tsx:203
+#: src/components/modals/tabs/account_security_tab/SecurityTab.tsx:216
 msgid "Security Features"
 msgstr "Функції безпеки"
 
@@ -18832,7 +18828,7 @@ msgstr "Виберіть канал або категорію"
 msgid "Select a Community"
 msgstr "Виберіть спільноту"
 
-#: src/components/pages/OAuthAuthorizePage.tsx:866
+#: src/components/pages/OAuthAuthorizePage.tsx:835
 msgid "Select a community where you have <0>Manage Community</0> permissions."
 msgstr "Виберіть спільноту, де у вас є дозволи <0>Керувати спільнотою</0>."
 
@@ -18864,7 +18860,7 @@ msgstr "Виберіть метод перевірки."
 msgid "Select a violation category."
 msgstr "Виберіть категорію порушення."
 
-#: src/components/modals/channel_tabs/ChannelOverviewTab.tsx:729
+#: src/components/modals/channel_tabs/ChannelOverviewTab.tsx:768
 msgid "Select a voice region for this channel. Automatic uses the closest region."
 msgstr "Виберіть голосовий регіон для цього каналу. «Автоматично» використовує найближчий регіон."
 
@@ -19802,7 +19798,7 @@ msgstr "Вийти з {displayName}"
 msgid "Signal strength loading"
 msgstr "Завантаження сили сигналу"
 
-#: src/components/pages/OAuthAuthorizePage.tsx:788
+#: src/components/pages/OAuthAuthorizePage.tsx:757
 msgid "Signed in as"
 msgstr "Увійшов як"
 
@@ -19936,7 +19932,7 @@ msgid "Slower"
 msgstr "Повільніше"
 
 #: src/components/channel/SlowmodeIndicator.tsx:64
-#: src/components/modals/channel_tabs/ChannelOverviewTab.tsx:616
+#: src/components/modals/channel_tabs/ChannelOverviewTab.tsx:655
 #: src/components/modals/tabs/developer_options_tab/MockingTab.tsx:117
 msgid "Slowmode"
 msgstr "Повільний режим"
@@ -19990,11 +19986,11 @@ msgstr "Менший розмір медіа"
 msgid "sms"
 msgstr "смс"
 
-#: src/components/modals/tabs/account_security_tab/SecurityTab.tsx:412
+#: src/components/modals/tabs/account_security_tab/SecurityTab.tsx:436
 msgid "SMS Backup"
 msgstr "Резервне копіювання SMS"
 
-#: src/components/modals/tabs/account_security_tab/SecurityTab.tsx:432
+#: src/components/modals/tabs/account_security_tab/SecurityTab.tsx:456
 msgid "SMS backup is disabled for partners"
 msgstr "Резервне копіювання SMS вимкнено для партнерів"
 
@@ -20007,15 +20003,15 @@ msgstr "SMS-код"
 msgid "SMS Code"
 msgstr "SMS-код"
 
-#: src/components/modals/tabs/account_security_tab/SecurityTab.tsx:406
+#: src/components/modals/tabs/account_security_tab/SecurityTab.tsx:430
 msgid "SMS Two-Factor Authentication"
 msgstr "Двофакторна автентифікація через SMS"
 
-#: src/components/modals/tabs/account_security_tab/SecurityTab.tsx:151
+#: src/components/modals/tabs/account_security_tab/SecurityTab.tsx:164
 msgid "SMS two-factor authentication adds an additional layer of security to your account by requiring a verification code sent to your phone number when signing in."
 msgstr "Двофакторна автентифікація через SMS додає додатковий рівень захисту, вимагаючи код підтвердження, надісланий на номер телефону при вході."
 
-#: src/components/modals/tabs/account_security_tab/SecurityTab.tsx:416
+#: src/components/modals/tabs/account_security_tab/SecurityTab.tsx:440
 msgid "SMS two-factor authentication is enabled"
 msgstr "Двофакторна автентифікація через SMS увімкнена"
 
@@ -20291,7 +20287,7 @@ msgstr "Зміст спойлера"
 msgid "spoilers"
 msgstr "спойлери"
 
-#: src/components/modals/AddGuildModal.tsx:179
+#: src/components/modals/AddGuildModal.tsx:180
 msgid "Sports Fans"
 msgstr "Шанувальники спорту"
 
@@ -20495,7 +20491,7 @@ msgstr "Щільність стікерів"
 msgid "Sticker pack"
 msgstr "Набір стікерів"
 
-#: src/actions/InviteActionCreators.tsx:291
+#: src/actions/InviteActionCreators.tsx:314
 msgid "Sticker pack creation limit reached"
 msgstr "Досягнуто ліміт створення наборів стікерів"
 
@@ -20503,7 +20499,7 @@ msgstr "Досягнуто ліміт створення наборів стік
 msgid "Sticker Pack Invite"
 msgstr "Запрошення до набору стікерів"
 
-#: src/actions/InviteActionCreators.tsx:277
+#: src/actions/InviteActionCreators.tsx:300
 msgid "Sticker pack limit reached"
 msgstr "Досягнуто ліміт наборів стікерів"
 
@@ -20634,15 +20630,15 @@ msgstr "трансляція"
 msgid "Streaming"
 msgstr "Трансляція"
 
-#: src/components/modals/AddGuildModal.tsx:148
+#: src/components/modals/AddGuildModal.tsx:149
 msgid "Study Buddies United"
 msgstr "Об'єднані товариші по навчанню"
 
-#: src/components/modals/AddGuildModal.tsx:181
+#: src/components/modals/AddGuildModal.tsx:182
 msgid "Study Group"
 msgstr "Група для навчання"
 
-#: src/components/modals/AddGuildModal.tsx:167
+#: src/components/modals/AddGuildModal.tsx:168
 msgid "Study Hall"
 msgstr "Аудиторія для занять"
 
@@ -20732,7 +20728,7 @@ msgstr "пропозиції"
 msgid "Summary"
 msgstr "Підсумок"
 
-#: src/components/modals/AddGuildModal.tsx:164
+#: src/components/modals/AddGuildModal.tsx:165
 msgid "Support Circle"
 msgstr "Коло підтримки"
 
@@ -20793,7 +20789,7 @@ msgstr "Шведська"
 msgid "switch"
 msgstr "перемикач"
 
-#: src/components/pages/OAuthAuthorizePage.tsx:801
+#: src/components/pages/OAuthAuthorizePage.tsx:770
 msgid "Switch account"
 msgstr "Змінити обліковий запис"
 
@@ -20957,7 +20953,7 @@ msgstr "Теги ({0}/10)"
 msgid "Tap to add a note"
 msgstr "Натисни, щоб додати нотатку"
 
-#: src/components/pages/OAuthAuthorizePage.tsx:766
+#: src/components/pages/OAuthAuthorizePage.tsx:735
 msgid "Target community"
 msgstr "Цільова спільнота"
 
@@ -20966,7 +20962,7 @@ msgstr "Цільова спільнота"
 msgid "Targeted attacks, threats, or sustained harassment"
 msgstr "Цілеспрямовані напади, погрози або систематичне переслідування"
 
-#: src/components/modals/AddGuildModal.tsx:157
+#: src/components/modals/AddGuildModal.tsx:158
 msgid "Team Alpha"
 msgstr "Команда Альфа"
 
@@ -21096,7 +21092,7 @@ msgstr "Це не схоже на допустимий колір. Спробу�
 msgid "That doesn't look like a valid URL."
 msgstr "Це не виглядає як дійсна URL-адреса."
 
-#: src/components/modals/AddGuildModal.tsx:264
+#: src/components/modals/AddGuildModal.tsx:265
 #: src/components/modals/EditGroupBottomSheet.tsx:123
 #: src/components/modals/EditGroupModal.tsx:116
 #: src/components/modals/guild_tabs/guild_overview_tab/hooks/useGuildImageAssetField.tsx:203
@@ -21111,7 +21107,7 @@ msgid "That message didn't delete"
 msgstr "Повідомлення не було видалено"
 
 #. placeholder {0}: invite.pack.name
-#: src/actions/InviteActionCreators.tsx:104
+#: src/actions/InviteActionCreators.tsx:123
 msgid "The {packLabel} {0} has been installed."
 msgstr "Пакет {packLabel} {0} було встановлено."
 
@@ -21124,11 +21120,11 @@ msgid "The app has crashed. Checking for updates that might fix this issue..."
 msgstr "Додаток аварійно завершив роботу. Перевіряємо оновлення, що можуть усунути проблему..."
 
 #. placeholder {0}: successState.guildName
-#: src/components/pages/OAuthAuthorizePage.tsx:554
+#: src/components/pages/OAuthAuthorizePage.tsx:544
 msgid "The bot has been added to <0>{0}</0>."
 msgstr "Бота додано до <0>{0}</0>."
 
-#: src/components/pages/OAuthAuthorizePage.tsx:558
+#: src/components/pages/OAuthAuthorizePage.tsx:548
 msgid "The bot has been added."
 msgstr "Бота додано."
 
@@ -21161,7 +21157,7 @@ msgstr "FluxerTag <0>{fluxerTag}</0> вже зайнятий. Продовжен
 msgid "The job starts 24 hours after you confirm and can be canceled or restarted anytime"
 msgstr "Робота починається через 24 години після підтвердження та її можна скасувати або перезапустити будь-коли."
 
-#: src/components/modals/AddGuildModal.tsx:147
+#: src/components/modals/AddGuildModal.tsx:148
 msgid "The Midnight Gamers"
 msgstr "Північні ґеймери"
 
@@ -21182,7 +21178,7 @@ msgstr "Наданий redirect_uri не зареєстрований для ц�
 msgid "The role <0>\"{roleName}\"</0> could not be deleted at this time. Please try again."
 msgstr "Роль <0>\"{roleName}\"</0> наразі не вдалося видалити. Спробуй ще раз."
 
-#: src/components/modals/AddGuildModal.tsx:185
+#: src/components/modals/AddGuildModal.tsx:186
 msgid "The Squad"
 msgstr "Команда"
 
@@ -21206,7 +21202,7 @@ msgstr "Таймаут не може перевищувати 365 днів (3153
 msgid "The URL of the Fluxer instance you want to sign in to."
 msgstr "URL-адреса екземпляра Fluxer, до якого ви хочете увійти."
 
-#: src/components/modals/channel_tabs/ChannelOverviewTab.tsx:496
+#: src/components/modals/channel_tabs/ChannelOverviewTab.tsx:535
 msgid "The URL this link channel points to."
 msgstr "URL, на який вказує цей канал-посилання."
 
@@ -21336,7 +21332,7 @@ msgstr "Цей додаток"
 msgid "This attachment has expired"
 msgstr "Це вкладення більше не дійсне"
 
-#: src/components/pages/OAuthAuthorizePage.tsx:647
+#: src/components/pages/OAuthAuthorizePage.tsx:627
 msgid "This bot is requesting the Administrator permission. We do not recommend granting this to production apps unless you fully trust the developer. Consider asking them to request a reduced set of permissions. Close this page if you are unsure."
 msgstr "Цей бот запитує дозвіл Адміністратора. Не рекомендуємо надавати його продуктивним додаткам, якщо ви повністю не довіряєте розробнику. Попросіть запросити обмеженіший набір дозволів. Якщо не впевнені, закрийте цю сторінку."
 
@@ -22055,7 +22051,7 @@ msgstr "Верх"
 msgid "Top Tooltip"
 msgstr "Верхня підказка"
 
-#: src/components/modals/channel_tabs/ChannelOverviewTab.tsx:519
+#: src/components/modals/channel_tabs/ChannelOverviewTab.tsx:558
 msgid "Topic"
 msgstr "Тема"
 
@@ -22100,7 +22096,7 @@ msgstr "переклад"
 msgid "Travel & Places"
 msgstr "Подорожі й місця"
 
-#: src/components/modals/AddGuildModal.tsx:173
+#: src/components/modals/AddGuildModal.tsx:174
 msgid "Travel Buddies"
 msgstr "Товариші в мандрівках"
 
@@ -22164,12 +22160,12 @@ msgstr "Спробуй інший пошуковий термін або філ�
 msgid "Try again"
 msgstr "Спробуй ще раз"
 
-#: src/components/BootstrapErrorScreen.tsx:71
+#: src/components/BootstrapErrorScreen.tsx:72
 #: src/components/bottomsheets/ChannelSearchBottomSheet.tsx:317
 #: src/components/channel/ChannelSearchResults.tsx:694
 #: src/components/modals/channel_tabs/ChannelInvitesTab.tsx:231
 #: src/components/modals/channel_tabs/ChannelWebhooksTab.tsx:162
-#: src/components/NetworkErrorScreen.tsx:56
+#: src/components/NetworkErrorScreen.tsx:57
 #: src/components/pages/SsoCallbackPage.tsx:116
 msgid "Try Again"
 msgstr "Спробуй ще"
@@ -22226,7 +22222,7 @@ msgstr "Турецька"
 msgid "Turn Off All Device Cameras"
 msgstr "Вимкнути всі камери пристроїв"
 
-#: src/components/pages/OAuthAuthorizePage.tsx:817
+#: src/components/pages/OAuthAuthorizePage.tsx:786
 msgid "Turn off anything you're not comfortable with. Some features may stop working."
 msgstr "Вимкни все, що викликає дискомфорт. Деякі функції можуть припинити роботу."
 
@@ -22260,7 +22256,7 @@ msgstr "Вимкнути трансляцію"
 msgid "Turn On Camera"
 msgstr "Увімкнути камеру"
 
-#: src/components/pages/OAuthAuthorizePage.tsx:852
+#: src/components/pages/OAuthAuthorizePage.tsx:821
 msgid "Turning off scopes may prevent the app from working correctly."
 msgstr "Вимкнення дозволів може перешкодити нормальній роботі застосунку."
 
@@ -22272,11 +22268,11 @@ msgstr "Вимкнення цього тільки приховує камеру
 msgid "Turning this off only hides your screen share from your own view. Others in the call can still see your screen."
 msgstr "Вимкнення цього лише приховає ваш спільний доступ до екрану з вашого власного перегляду. Інші учасники дзвінка все ще можуть бачити ваш екран."
 
-#: src/components/modals/channel_tabs/ChannelOverviewTab.tsx:471
+#: src/components/modals/channel_tabs/ChannelOverviewTab.tsx:510
 msgid "Tweak this category's basics."
 msgstr "Налаштуй базові параметри цієї категорії."
 
-#: src/components/modals/channel_tabs/ChannelOverviewTab.tsx:471
+#: src/components/modals/channel_tabs/ChannelOverviewTab.tsx:510
 msgid "Tweak this channel's basics."
 msgstr "Налаштуй базові параметри цього каналу."
 
@@ -22299,7 +22295,7 @@ msgstr "двохфакторна"
 msgid "Two-factor authentication"
 msgstr "Двофакторна автентифікація"
 
-#: src/components/modals/tabs/account_security_tab/SecurityTab.tsx:218
+#: src/components/modals/tabs/account_security_tab/SecurityTab.tsx:231
 #: src/components/modals/utils/SettingsSearchIndex.tsx:123
 msgid "Two-Factor Authentication"
 msgstr "Двофакторна автентифікація"
@@ -22312,7 +22308,7 @@ msgstr "Двофакторну автентифікацію вимкнено"
 msgid "Two-factor authentication enabled"
 msgstr "Двофакторну автентифікацію ввімкнено"
 
-#: src/components/modals/tabs/account_security_tab/SecurityTab.tsx:228
+#: src/components/modals/tabs/account_security_tab/SecurityTab.tsx:241
 msgid "Two-factor authentication is enabled"
 msgstr "Двофакторна автентифікація ввімкнена"
 
@@ -22405,11 +22401,11 @@ msgstr "Українська"
 msgid "Ultra (1440p)"
 msgstr "Ультра (1440p)"
 
-#: src/actions/InviteActionCreators.tsx:323
+#: src/actions/InviteActionCreators.tsx:346
 msgid "Unable to install emoji pack"
 msgstr "Не вдалося встановити пакет емодзі"
 
-#: src/actions/InviteActionCreators.tsx:324
+#: src/actions/InviteActionCreators.tsx:347
 msgid "Unable to install sticker pack"
 msgstr "Не вдалося встановити пакет стікерів"
 
@@ -22761,7 +22757,7 @@ msgstr "Розблокуйте HD-трансляцію екрану з Plutonium
 msgid "Unlock HD Video with Plutonium"
 msgstr "Розблокуйте HD-відео з Plutonium"
 
-#: src/components/modals/components/PlutoniumContent.tsx:168
+#: src/components/modals/components/PlutoniumContent.tsx:149
 msgid "Unlock higher limits and exclusive features while supporting an independent communication platform."
 msgstr "Розблокуйте вищі ліміти та ексклюзивні функції, підтримуючи незалежну платформу зв'язку."
 
@@ -23161,7 +23157,7 @@ msgstr "Завантажити звук входу"
 msgid "Upload File"
 msgstr "Завантажити файл"
 
-#: src/components/modals/AddGuildModal.tsx:329
+#: src/components/modals/AddGuildModal.tsx:331
 #: src/components/modals/EditGroupBottomSheet.tsx:214
 #: src/components/modals/EditGroupModal.tsx:195
 #: src/components/modals/guild_tabs/guild_overview_tab/fields/GuildIconUploadField.tsx:97
@@ -23209,7 +23205,7 @@ msgstr "Завантаження {emojiText}. Це може зайняти де�
 msgid "Uploading Emojis"
 msgstr "Завантаження емодзі"
 
-#: src/components/modals/channel_tabs/ChannelOverviewTab.tsx:491
+#: src/components/modals/channel_tabs/ChannelOverviewTab.tsx:530
 #: src/components/modals/ChannelCreateModal.tsx:90
 msgid "URL"
 msgstr "URL"
@@ -23231,7 +23227,7 @@ msgstr "попередження про URL"
 msgid "URLs to download any attachments from your messages"
 msgstr "URL-адреси для завантаження вкладень із ваших повідомлень"
 
-#: src/components/modals/channel_tabs/ChannelOverviewTab.tsx:183
+#: src/components/modals/channel_tabs/ChannelOverviewTab.tsx:196
 #: src/components/voice/VoiceRegionSelector.tsx:75
 #: src/components/voice/VoiceSettingsMenus.tsx:433
 msgid "US East"
@@ -23254,7 +23250,7 @@ msgstr "Використовувати актуальний"
 msgid "Use actual premium type"
 msgstr "Використовуйте фактичний преміум тип"
 
-#: src/components/modals/tabs/account_security_tab/SecurityTab.tsx:230
+#: src/components/modals/tabs/account_security_tab/SecurityTab.tsx:243
 msgid "Use an authenticator app to generate codes for two-factor authentication"
 msgstr "Використовуйте додаток-аутентифікатор для генерації кодів двофакторної автентифікації"
 
@@ -23323,7 +23319,7 @@ msgstr "Використовуйте глобальний профіль"
 msgid "Use light theme"
 msgstr "Використовувати світлу тему"
 
-#: src/components/modals/tabs/account_security_tab/SecurityTab.tsx:277
+#: src/components/modals/tabs/account_security_tab/SecurityTab.tsx:290
 msgid "Use passkeys for passwordless sign-in and two-factor authentication"
 msgstr "Використовуйте ключі доступу для входу без пароля та двофакторної автентифікації"
 
@@ -23864,7 +23860,7 @@ msgstr "Переглядайте й керуйте заблокованими к
 msgid "View and manage every webhook configured across your community."
 msgstr "Переглядайте й керуйте всіма вебхуками, налаштованими в спільноті."
 
-#: src/components/modals/tabs/account_security_tab/SecurityTab.tsx:260
+#: src/components/modals/tabs/account_security_tab/SecurityTab.tsx:273
 msgid "View and manage your backup codes for account recovery"
 msgstr "Переглядайте й керуйте резервними кодами для відновлення облікового запису"
 
@@ -23889,7 +23885,7 @@ msgstr "Переглянути керування дзвінком"
 msgid "View Channel"
 msgstr "Переглянути канал"
 
-#: src/components/modals/tabs/account_security_tab/SecurityTab.tsx:268
+#: src/components/modals/tabs/account_security_tab/SecurityTab.tsx:281
 msgid "View Codes"
 msgstr "Переглянути коди"
 
@@ -24004,7 +24000,8 @@ msgstr "VIP-голос"
 msgid "visibility"
 msgstr "видимість"
 
-#: src/components/modals/components/plutonium/SubscriptionCard.tsx:121
+#: src/components/modals/components/FeatureComparisonTable.tsx:149
+#: src/components/modals/components/plutonium/SubscriptionCard.tsx:110
 #: src/utils/modals/guild_tabs/GuildAuditLogTabUtils.tsx:283
 msgid "Visionary"
 msgstr "Visionary"
@@ -24026,7 +24023,7 @@ msgid "Visionary Badge Override"
 msgstr "Перезапис значка Visionary"
 
 #. placeholder {0}: profile.premiumLifetimeSequence
-#: src/components/popouts/UserProfileBadges.tsx:150
+#: src/components/popouts/UserProfileBadges.tsx:136
 msgid "Visionary ID #{0}"
 msgstr "Ідентифікатор Visionary #{0}"
 
@@ -24175,7 +24172,7 @@ msgstr "Плеєр голосових повідомлень"
 msgid "Voice Mute"
 msgstr "Заглушити голос"
 
-#: src/components/modals/channel_tabs/ChannelOverviewTab.tsx:640
+#: src/components/modals/channel_tabs/ChannelOverviewTab.tsx:679
 msgid "Voice Quality"
 msgstr "Якість голосу"
 
@@ -24184,7 +24181,7 @@ msgstr "Якість голосу"
 msgid "Voice recording is not supported in this browser."
 msgstr "Запис голосу не підтримується в цьому браузері."
 
-#: src/components/modals/channel_tabs/ChannelOverviewTab.tsx:728
+#: src/components/modals/channel_tabs/ChannelOverviewTab.tsx:767
 #: src/components/voice/VoiceSettingsMenus.tsx:483
 msgid "Voice Region"
 msgstr "Регіон голосу"
@@ -24218,7 +24215,7 @@ msgstr "Гучність"
 msgid "Volume Control"
 msgstr "Регулювання гучності"
 
-#: src/components/modals/AddGuildModal.tsx:154
+#: src/components/modals/AddGuildModal.tsx:155
 msgid "Volunteer Heroes"
 msgstr "Добровольці-герої"
 
@@ -24401,8 +24398,8 @@ msgid "We'll verify your new email with a one-time code."
 msgstr "Ми підтвердимо нову пошту одноразовим кодом."
 
 #: src/components/NetworkErrorScreen.tsx:39
-msgid "We're having trouble connecting to Fluxer's servers. This could be a temporary network issue or scheduled maintenance."
-msgstr "Ми маємо проблеми з підключенням до серверів Fluxer. Це може бути тимчасова мережева проблема або планове обслуговування."
+msgid "We're having trouble connecting to Echowire's servers. This could be a temporary network issue or scheduled maintenance."
+msgstr ""
 
 #: src/components/modals/tabs/DevicesTab.tsx:234
 msgid "We're having trouble connecting to the space-time continuum. Please check your connection and try again."
@@ -24488,7 +24485,7 @@ msgstr "Вебхуки"
 msgid "Webhooks updated"
 msgstr "Вебхуки оновлено"
 
-#: src/components/modals/AddGuildModal.tsx:160
+#: src/components/modals/AddGuildModal.tsx:161
 msgid "Weekend Warriors"
 msgstr "Воїни вихідних"
 
@@ -24698,7 +24695,7 @@ msgstr "Ого, це серйозно."
 msgid "Why are you reporting this?"
 msgstr "Чому ти це повідомляєш?"
 
-#: src/components/pages/OAuthAuthorizePage.tsx:757
+#: src/components/pages/OAuthAuthorizePage.tsx:726
 msgid "Will send you back to"
 msgstr "Поверне тебе до"
 
@@ -24718,7 +24715,7 @@ msgstr "З Plutonium ви можете використовувати анімо
 msgid "Withdraw"
 msgstr "Відкликати"
 
-#: src/components/modals/AddGuildModal.tsx:182
+#: src/components/modals/AddGuildModal.tsx:183
 msgid "Work Friends"
 msgstr "Робочі друзі"
 
@@ -24893,7 +24890,7 @@ msgstr "Ви можете завантажити лише 1 файл одноч�
 msgid "You can pin messages in this conversation for everyone to see."
 msgstr "Ти можеш закріплювати повідомлення в цій розмові, щоб їх бачили всі."
 
-#: src/components/modals/components/plutonium/SubscriptionCard.tsx:176
+#: src/components/modals/components/plutonium/SubscriptionCard.tsx:165
 msgid "You can redeem additional gift codes to <0>extend</0> your gift time."
 msgstr "Ви можете обміняти додаткові подарункові коди, щоб <0>продовжити</0> ваш час подарунка."
 
@@ -24933,7 +24930,7 @@ msgstr "Ти не можеш взаємодіяти з реакціями в р�
 #: src/components/layout/ChannelItem.tsx:213
 #: src/components/layout/ChannelItem.tsx:400
 #: src/stores/voice/MediaEngineFacade.tsx:168
-#: src/stores/voice/MediaEngineFacade.tsx:828
+#: src/stores/voice/MediaEngineFacade.tsx:879
 msgid "You can't join while you're on timeout."
 msgstr "Ти не можеш приєднатися, коли на тайм-ауті."
 
@@ -25023,11 +25020,11 @@ msgstr "У тебе ще немає своїх змін тем, якими мо�
 msgid "You don't have permission to connect to this voice channel."
 msgstr "У тебе немає дозволу підключитися до цього голосового каналу."
 
-#: src/actions/InviteActionCreators.tsx:320
+#: src/actions/InviteActionCreators.tsx:343
 msgid "You don't have permission to install this emoji pack."
 msgstr "У тебе немає дозволу встановити цей пакет емодзі."
 
-#: src/actions/InviteActionCreators.tsx:321
+#: src/actions/InviteActionCreators.tsx:344
 msgid "You don't have permission to install this sticker pack."
 msgstr "У тебе немає дозволу встановити цей пакет стікерів."
 
@@ -25059,23 +25056,23 @@ msgstr "У вас є новий подарунковий код, який чек
 msgid "You have a new gift code waiting in your Gift Inventory."
 msgstr "У вас є новий подарунковий код, який чекає у вашій подарунковій інвентаризації."
 
-#: src/components/modals/components/plutonium/SubscriptionCard.tsx:200
+#: src/components/modals/components/plutonium/SubscriptionCard.tsx:189
 msgid "You have all <0/> for <1>{monthlyPrice}/month</1>."
 msgstr "У тебе є все <0/> за <1>{monthlyPrice}/місяць</1>."
 
-#: src/components/modals/components/plutonium/SubscriptionCard.tsx:205
+#: src/components/modals/components/plutonium/SubscriptionCard.tsx:194
 msgid "You have all <0/> for <1>{yearlyPrice}/year</1>."
 msgstr "У тебе є все <0/> за <1>{yearlyPrice}/рік</1>."
 
-#: src/components/modals/components/plutonium/SubscriptionCard.tsx:210
+#: src/components/modals/components/plutonium/SubscriptionCard.tsx:199
 msgid "You have all <0/> for your subscription period."
 msgstr "У тебе є весь <0/> протягом періоду підписки."
 
-#: src/components/modals/components/plutonium/SubscriptionCard.tsx:195
+#: src/components/modals/components/plutonium/SubscriptionCard.tsx:184
 msgid "You have all <0/> forever. No subscriptions, no renewals."
 msgstr "У тебе є все <0/> назавжди. Без підписок та поновлень."
 
-#: src/components/modals/components/plutonium/SubscriptionCard.tsx:170
+#: src/components/modals/components/plutonium/SubscriptionCard.tsx:159
 msgid "You have all <0/> via a <1>gift subscription</1> until <2>{giftEndDate}</2>. It <3>won't renew</3>."
 msgstr "У тебе є все <0/> через <1>подарункову підписку</1> до <2>{giftEndDate}</2>. Вона <3>не поновиться</3>."
 
@@ -25083,35 +25080,35 @@ msgstr "У тебе є все <0/> через <1>подарункову підп
 msgid "You have blocked {username}. Unblock them to send messages."
 msgstr "Ти заблокував {username}. Розблокуй, щоб надсилати повідомлення."
 
-#: src/actions/InviteActionCreators.tsx:264
+#: src/actions/InviteActionCreators.tsx:287
 msgid "You have created the maximum of {limit} emoji pack. Delete one to create another."
 msgstr "Ви створили максимальну кількість {limit} наборів емодзі. Видаліть один, щоб створити інший."
 
-#: src/actions/InviteActionCreators.tsx:265
+#: src/actions/InviteActionCreators.tsx:288
 msgid "You have created the maximum of {limit} emoji packs. Delete one to create another."
 msgstr "Ви створили максимальну кількість {limit} наборів емодзі. Видаліть один, щоб створити інший."
 
-#: src/actions/InviteActionCreators.tsx:296
+#: src/actions/InviteActionCreators.tsx:319
 msgid "You have created the maximum of {limit} sticker pack. Delete one to create another."
 msgstr "Ви створили максимальну кількість {limit} наборів наліпок. Видаліть один, щоб створити інший."
 
-#: src/actions/InviteActionCreators.tsx:297
+#: src/actions/InviteActionCreators.tsx:320
 msgid "You have created the maximum of {limit} sticker packs. Delete one to create another."
 msgstr "Ви створили максимальну кількість {limit} наборів наліпок. Видаліть один, щоб створити інший."
 
-#: src/actions/InviteActionCreators.tsx:250
+#: src/actions/InviteActionCreators.tsx:273
 msgid "You have installed the maximum of {limit} emoji pack. Remove one to install another."
 msgstr "Ви встановили максимальну кількість {limit} наборів емодзі. Видаліть один, щоб встановити інший."
 
-#: src/actions/InviteActionCreators.tsx:251
+#: src/actions/InviteActionCreators.tsx:274
 msgid "You have installed the maximum of {limit} emoji packs. Remove one to install another."
 msgstr "Ви встановили максимальну кількість {limit} наборів емодзі. Видаліть один, щоб встановити інший."
 
-#: src/actions/InviteActionCreators.tsx:282
+#: src/actions/InviteActionCreators.tsx:305
 msgid "You have installed the maximum of {limit} sticker pack. Remove one to install another."
 msgstr "Ви встановили максимальну кількість {limit} наборів наліпок. Видаліть один, щоб встановити інший."
 
-#: src/actions/InviteActionCreators.tsx:283
+#: src/actions/InviteActionCreators.tsx:306
 msgid "You have installed the maximum of {limit} sticker packs. Remove one to install another."
 msgstr "Ви встановили максимальну кількість {limit} наборів наліпок. Видаліть один, щоб встановити інший."
 
@@ -25119,19 +25116,19 @@ msgstr "Ви встановили максимальну кількість {lim
 msgid "You have no friends yet"
 msgstr "У тебе поки що немає друзів"
 
-#: src/actions/InviteActionCreators.tsx:268
+#: src/actions/InviteActionCreators.tsx:291
 msgid "You have reached the limit for creating emoji packs. Delete one of your packs to create another."
 msgstr "Ти досяг ліміту на створення наборів емодзі. Видали один із наборів, щоб створити інший."
 
-#: src/actions/InviteActionCreators.tsx:300
+#: src/actions/InviteActionCreators.tsx:323
 msgid "You have reached the limit for creating sticker packs. Delete one of your packs to create another."
 msgstr "Ти досяг ліміту на створення наборів стікерів. Видали один із наборів, щоб створити інший."
 
-#: src/actions/InviteActionCreators.tsx:254
+#: src/actions/InviteActionCreators.tsx:277
 msgid "You have reached the limit for installing emoji packs. Remove one of your installed packs to install another."
 msgstr "Ти досяг ліміту на встановлення наборів емодзі. Видали один із встановлених наборів, щоб встановити новий."
 
-#: src/actions/InviteActionCreators.tsx:286
+#: src/actions/InviteActionCreators.tsx:309
 msgid "You have reached the limit for installing sticker packs. Remove one of your installed packs to install another."
 msgstr "Ти досяг ліміту на встановлення наборів стікерів. Видали один із встановлених наборів, щоб встановити новий."
 
@@ -25241,8 +25238,8 @@ msgstr "Тобі потрібно активувати обліковий зап
 msgid "You need to verify your email to send messages in this community."
 msgstr "Тобі потрібно підтвердити електронну пошту, щоб надсилати повідомлення в цій спільноті."
 
-#: src/components/pages/OAuthAuthorizePage.tsx:688
-#: src/components/pages/OAuthAuthorizePage.tsx:948
+#: src/components/pages/OAuthAuthorizePage.tsx:668
+#: src/components/pages/OAuthAuthorizePage.tsx:917
 msgid "You will be taken to <0><1>{redirectHostname}</1></0> after authorizing."
 msgstr "Після авторизації тебе перенаправлять на <0><1>{redirectHostname}</1></0>."
 
@@ -25260,7 +25257,7 @@ msgstr "Ти не отримуватимеш сповіщень на комп'ю
 msgid "You'll appear offline"
 msgstr "Ти будеш в режимі офлайн"
 
-#: src/components/pages/OAuthAuthorizePage.tsx:906
+#: src/components/pages/OAuthAuthorizePage.tsx:875
 msgid "You'll configure which permissions the bot receives on the next screen."
 msgstr "На наступному екрані ти налаштуєш дозволи, які отримає бот."
 
@@ -25599,11 +25596,11 @@ msgstr "ваш регіон"
 msgid "Your stream is still being broadcast"
 msgstr "Ваш стрім все ще транслюється"
 
-#: src/components/modals/components/plutonium/SubscriptionCard.tsx:156
+#: src/components/modals/components/plutonium/SubscriptionCard.tsx:145
 msgid "Your subscription ended, but you still have all <0/> until <1>{graceDate}</1>. Resubscribe to keep them."
 msgstr "Ваша підписка закінчилась, але у вас усе <0/> ще є до <1>{graceDate}</1>. Поновіть підписку, щоб зберегти їх."
 
-#: src/components/modals/components/plutonium/SubscriptionCard.tsx:145
+#: src/components/modals/components/plutonium/SubscriptionCard.tsx:134
 msgid "Your subscription expired on <0>{expiredDate}</0>. You lost all <1/>. You can reactivate at any time."
 msgstr "Термін дії вашої підписки закінчився <0>{expiredDate}</0>. Ви втратили всі <1/>. Ви можете реактивувати її в будь-який момент."
 
@@ -25619,7 +25616,7 @@ msgstr "Вашу підписку реактивовано!"
 msgid "Your subscription has been set to cancel at the end of your billing period."
 msgstr "Вашу підписку заплановано на скасування наприкінці поточного періоду оплати."
 
-#: src/components/modals/components/plutonium/SubscriptionCard.tsx:188
+#: src/components/modals/components/plutonium/SubscriptionCard.tsx:177
 msgid "Your subscription will cancel on <0>{cancelDate}</0>. You'll lose all <1/> after that date."
 msgstr "Ваша підписка скасується <0>{cancelDate}</0>. Після цієї дати ви втратите всі <1/>."
 

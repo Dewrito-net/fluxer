@@ -134,12 +134,12 @@ msgid "{0} of {totalAttachments}"
 msgstr "{0} z {totalAttachments}"
 
 #. placeholder {0}: passkeys.length
-#: src/components/modals/tabs/account_security_tab/SecurityTab.tsx:288
+#: src/components/modals/tabs/account_security_tab/SecurityTab.tsx:301
 msgid "{0} passkey registered (max 10)"
 msgstr "{0} registrační klíč (max 10)"
 
 #. placeholder {0}: passkeys.length
-#: src/components/modals/tabs/account_security_tab/SecurityTab.tsx:289
+#: src/components/modals/tabs/account_security_tab/SecurityTab.tsx:302
 msgid "{0} passkeys registered (max 10)"
 msgstr "{0} registrační klíče (max 10)"
 
@@ -449,7 +449,7 @@ msgstr "{baseDescription} Tento limit je nastaven administrátorem vaší instan
 msgid "{baseDescription} With Plutonium, your per-file upload limit increases to {0}, plus animated avatars, longer messages, and many other premium features."
 msgstr "{baseDescription} S Plutonium se váš limit pro nahrávání souborů zvyšuje na {0}, plus animované avatary, delší zprávy a mnoho dalších prémiových funkcí."
 
-#: src/components/pages/OAuthAuthorizePage.tsx:743
+#: src/components/pages/OAuthAuthorizePage.tsx:712
 msgid "{clientLabel} wants to connect"
 msgstr "{clientLabel} chce navázat spojení"
 
@@ -492,7 +492,7 @@ msgstr "{currentCount} / {0}"
 msgid "{days} days"
 msgstr "{days} dní"
 
-#: src/components/layout/guild_list/GuildListDMItem.tsx:199
+#: src/components/layout/guild_list/GuildListDMItem.tsx:198
 msgid "{displayName} (selected)"
 msgstr "{displayName} (vybráno)"
 
@@ -883,12 +883,12 @@ msgstr "{v} dárek"
 msgid "{v} gifts"
 msgstr "{v} dárky"
 
-#: src/components/modals/channel_tabs/ChannelOverviewTab.tsx:655
-#: src/components/modals/channel_tabs/ChannelOverviewTab.tsx:656
+#: src/components/modals/channel_tabs/ChannelOverviewTab.tsx:694
+#: src/components/modals/channel_tabs/ChannelOverviewTab.tsx:695
 msgid "{value} kbps"
 msgstr "{value} kb/s"
 
-#: src/components/modals/channel_tabs/ChannelOverviewTab.tsx:688
+#: src/components/modals/channel_tabs/ChannelOverviewTab.tsx:727
 msgid "{value} participants"
 msgstr "{value} účastníků"
 
@@ -1088,7 +1088,7 @@ msgstr "<0>Znova zpřístupněno</0> členovi."
 msgid "<0>Unmuted</0> the member."
 msgstr "<0>Odmlčeno</0> členovi."
 
-#: src/components/modals/tabs/account_security_tab/SecurityTab.tsx:373
+#: src/components/modals/tabs/account_security_tab/SecurityTab.tsx:397
 msgid "<0>Warning:</0> This will also disable SMS two-factor authentication."
 msgstr "<0>Upozornění:</0> Tím se také vypne SMS dvoufázové ověření."
 
@@ -1103,7 +1103,7 @@ msgstr "1 den"
 
 #: src/components/channel/CallMessage.tsx:70
 #: src/components/modals/BanMemberModal.tsx:56
-#: src/components/modals/channel_tabs/ChannelOverviewTab.tsx:171
+#: src/components/modals/channel_tabs/ChannelOverviewTab.tsx:184
 #: src/components/modals/InviteModal.tsx:77
 #: src/components/modals/InviteModal.tsx:201
 #: src/components/modals/PackInviteModal.tsx:48
@@ -1122,7 +1122,7 @@ msgstr "1 shoda"
 msgid "1 Member"
 msgstr "1 Člen"
 
-#: src/components/modals/channel_tabs/ChannelOverviewTab.tsx:165
+#: src/components/modals/channel_tabs/ChannelOverviewTab.tsx:178
 #: src/components/modals/tabs/developer_options_tab/MockingTab.tsx:74
 #: src/utils/modals/guild_tabs/GuildOverviewTabUtils.tsx:61
 msgid "1 minute"
@@ -1192,13 +1192,13 @@ msgstr "Dárek na 1 rok"
 msgid "1 Year of Plutonium"
 msgstr "1 rok Plutonia"
 
-#: src/components/modals/channel_tabs/ChannelOverviewTab.tsx:168
+#: src/components/modals/channel_tabs/ChannelOverviewTab.tsx:181
 #: src/components/modals/tabs/developer_options_tab/MockingTab.tsx:77
 #: src/components/modals/TimeoutMemberOptions.tsx:36
 msgid "10 minutes"
 msgstr "10 minut"
 
-#: src/components/modals/channel_tabs/ChannelOverviewTab.tsx:162
+#: src/components/modals/channel_tabs/ChannelOverviewTab.tsx:175
 #: src/components/modals/tabs/developer_options_tab/MockingTab.tsx:72
 #: src/constants/TimeWindowPresets.tsx:55
 msgid "10 seconds"
@@ -1249,17 +1249,17 @@ msgstr "1440p"
 msgid "15 FPS"
 msgstr "15 FPS"
 
-#: src/components/modals/channel_tabs/ChannelOverviewTab.tsx:169
+#: src/components/modals/channel_tabs/ChannelOverviewTab.tsx:182
 #: src/constants/TimeWindowPresets.tsx:56
 #: src/utils/modals/guild_tabs/GuildOverviewTabUtils.tsx:63
 msgid "15 minutes"
 msgstr "15 minut"
 
-#: src/components/modals/channel_tabs/ChannelOverviewTab.tsx:163
+#: src/components/modals/channel_tabs/ChannelOverviewTab.tsx:176
 msgid "15 seconds"
 msgstr "15 sekund"
 
-#: src/components/modals/channel_tabs/ChannelOverviewTab.tsx:172
+#: src/components/modals/channel_tabs/ChannelOverviewTab.tsx:185
 msgid "2 hours"
 msgstr "2 hodiny"
 
@@ -1271,7 +1271,7 @@ msgstr "2 členové (online)"
 msgid "2 members (typing)"
 msgstr "2 členové (píšou)"
 
-#: src/components/modals/channel_tabs/ChannelOverviewTab.tsx:166
+#: src/components/modals/channel_tabs/ChannelOverviewTab.tsx:179
 #: src/components/modals/tabs/developer_options_tab/MockingTab.tsx:75
 msgid "2 minutes"
 msgstr "2 minuty"
@@ -1344,7 +1344,7 @@ msgstr "3 měsíce"
 msgid "30 FPS"
 msgstr "30 FPS"
 
-#: src/components/modals/channel_tabs/ChannelOverviewTab.tsx:170
+#: src/components/modals/channel_tabs/ChannelOverviewTab.tsx:183
 #: src/components/modals/InviteModal.tsx:76
 #: src/components/modals/InviteModal.tsx:199
 #: src/components/modals/PackInviteModal.tsx:47
@@ -1353,7 +1353,7 @@ msgstr "30 FPS"
 msgid "30 minutes"
 msgstr "30 minut"
 
-#: src/components/modals/channel_tabs/ChannelOverviewTab.tsx:164
+#: src/components/modals/channel_tabs/ChannelOverviewTab.tsx:177
 #: src/components/modals/tabs/developer_options_tab/MockingTab.tsx:73
 msgid "30 seconds"
 msgstr "30 sekund"
@@ -1394,14 +1394,14 @@ msgstr "4K (2160p)"
 msgid "5 days"
 msgstr "5 dnů"
 
-#: src/components/modals/channel_tabs/ChannelOverviewTab.tsx:167
+#: src/components/modals/channel_tabs/ChannelOverviewTab.tsx:180
 #: src/components/modals/tabs/developer_options_tab/MockingTab.tsx:76
 #: src/components/modals/TimeoutMemberOptions.tsx:35
 #: src/utils/modals/guild_tabs/GuildOverviewTabUtils.tsx:62
 msgid "5 minutes"
 msgstr "5 minut"
 
-#: src/components/modals/channel_tabs/ChannelOverviewTab.tsx:161
+#: src/components/modals/channel_tabs/ChannelOverviewTab.tsx:174
 msgid "5 seconds"
 msgstr "5 sekund"
 
@@ -1415,7 +1415,7 @@ msgstr "5 použití"
 msgid "50 uses"
 msgstr "50 použití"
 
-#: src/components/modals/channel_tabs/ChannelOverviewTab.tsx:173
+#: src/components/modals/channel_tabs/ChannelOverviewTab.tsx:186
 #: src/components/modals/InviteModal.tsx:78
 #: src/components/modals/InviteModal.tsx:203
 #: src/components/modals/PackInviteModal.tsx:49
@@ -1608,8 +1608,8 @@ msgstr "Přístupnost"
 msgid "account"
 msgstr "účet"
 
-#: src/components/modals/tabs/account_security_tab/Inline.tsx:73
-#: src/components/modals/tabs/AccountSecurityTab.tsx:77
+#: src/components/modals/tabs/account_security_tab/Inline.tsx:74
+#: src/components/modals/tabs/AccountSecurityTab.tsx:78
 #: src/components/modals/utils/SettingsConstants.tsx:297
 #: src/components/modals/utils/SettingsSectionRegistry.tsx:488
 msgid "Account"
@@ -1642,7 +1642,7 @@ msgstr "Přepsání stavu účtu"
 msgid "Account Too New"
 msgstr "Účet je příliš nový"
 
-#: src/actions/InviteActionCreators.tsx:182
+#: src/actions/InviteActionCreators.tsx:205
 #: src/components/modals/RequiredActionModal.tsx:143
 #: src/components/modals/RequiredActionModal.tsx:416
 msgid "Account Verification Required"
@@ -1698,7 +1698,7 @@ msgstr "Akce"
 msgid "active"
 msgstr "aktivní"
 
-#: src/components/modals/components/plutonium/SubscriptionCard.tsx:135
+#: src/components/modals/components/plutonium/SubscriptionCard.tsx:124
 msgid "Active"
 msgstr "Aktivní"
 
@@ -1769,8 +1769,8 @@ msgstr "Přidat komentář (volitelné)"
 
 #: src/components/layout/guild_list/AddGuildButton.tsx:90
 #: src/components/layout/guild_list/AddGuildButton.tsx:95
-#: src/components/modals/AddGuildModal.tsx:80
-#: src/components/modals/AddGuildModal.tsx:86
+#: src/components/modals/AddGuildModal.tsx:81
+#: src/components/modals/AddGuildModal.tsx:87
 msgid "Add a Community"
 msgstr "Přidat komunitu"
 
@@ -1782,7 +1782,7 @@ msgstr "Přidat vlastní pozadí"
 msgid "Add a different account"
 msgstr "Přidat jiný účet"
 
-#: src/components/modals/tabs/account_security_tab/SecurityTab.tsx:351
+#: src/components/modals/tabs/account_security_tab/SecurityTab.tsx:375
 msgid "Add a phone number to enable SMS two-factor authentication"
 msgstr "Přidat telefonní číslo pro povolení dvoufaktorového ověřování SMS"
 
@@ -1791,7 +1791,7 @@ msgstr "Přidat telefonní číslo pro povolení dvoufaktorového ověřování 
 msgid "Add a tag"
 msgstr "Přidat štítek"
 
-#: src/components/modals/channel_tabs/ChannelOverviewTab.tsx:520
+#: src/components/modals/channel_tabs/ChannelOverviewTab.tsx:559
 msgid "Add a topic to this channel"
 msgstr "Přidat téma do tohoto kanálu"
 
@@ -1808,7 +1808,7 @@ msgstr "Přidat akci!"
 msgid "Add an account"
 msgstr "Přidat účet"
 
-#: src/components/modals/tabs/account_security_tab/SecurityTab.tsx:219
+#: src/components/modals/tabs/account_security_tab/SecurityTab.tsx:232
 msgid "Add an extra layer of security to your account"
 msgstr "Přidat další vrstvu zabezpečení pro váš účet"
 
@@ -1820,7 +1820,7 @@ msgstr "Přidat další reakci"
 msgid "Add Bluesky connection"
 msgstr "Přidat připojení k Bluesky"
 
-#: src/components/pages/OAuthAuthorizePage.tsx:863
+#: src/components/pages/OAuthAuthorizePage.tsx:832
 msgid "Add bot to a community"
 msgstr "Přidat bota do komunity"
 
@@ -1902,12 +1902,12 @@ msgstr "Přidat nebo změnit telefonní číslo"
 msgid "Add Override"
 msgstr "Přidat přepsání"
 
-#: src/components/modals/tabs/account_security_tab/SecurityTab.tsx:293
+#: src/components/modals/tabs/account_security_tab/SecurityTab.tsx:306
 msgid "Add Passkey"
 msgstr "Přidat klíč"
 
 #: src/components/channel/barriers/BarrierComponents.tsx:198
-#: src/components/modals/tabs/account_security_tab/SecurityTab.tsx:398
+#: src/components/modals/tabs/account_security_tab/SecurityTab.tsx:422
 msgid "Add Phone"
 msgstr "Přidat telefon"
 
@@ -2028,11 +2028,11 @@ msgstr "Přidáno do Oblíbených"
 msgid "Added to saved media"
 msgstr "Přidáno do uložených médií"
 
-#: src/components/modals/tabs/account_security_tab/SecurityTab.tsx:316
+#: src/components/modals/tabs/account_security_tab/SecurityTab.tsx:329
 msgid "Added: {createdDate}"
 msgstr "Přidáno: {createdDate}"
 
-#: src/components/modals/tabs/account_security_tab/SecurityTab.tsx:312
+#: src/components/modals/tabs/account_security_tab/SecurityTab.tsx:325
 msgid "Added: {createdDate} • Last used: {lastUsedDate}"
 msgstr "Přidáno: {createdDate} • Naposledy použito: {lastUsedDate}"
 
@@ -2118,7 +2118,7 @@ msgstr "po:"
 msgid "Age Restricted"
 msgstr "Omezený věkem"
 
-#: src/components/modals/channel_tabs/ChannelOverviewTab.tsx:627
+#: src/components/modals/channel_tabs/ChannelOverviewTab.tsx:666
 msgid "Age-restricted (NSFW)"
 msgstr "Věk omezený (NSFW)"
 
@@ -2569,7 +2569,7 @@ msgstr "Animované GIF video"
 msgid "Animated icon"
 msgstr "Animovaná ikona"
 
-#: src/components/modals/AddGuildModal.tsx:224
+#: src/components/modals/AddGuildModal.tsx:225
 msgid "Animated icons are not supported when creating a new community. Please use JPEG, PNG, or WebP."
 msgstr "Při vytváření nové komunity nejsou podporovány animované ikony. Použijte JPEG, PNG nebo WebP."
 
@@ -2845,7 +2845,7 @@ msgid "Are you sure you want to delete the category \"{categoryName}\"? This can
 msgstr "Opravdu chcete smazat kategorii \"{categoryName}\"? Tuto akci nelze vzít zpět."
 
 #. placeholder {0}: passkey.name
-#: src/components/modals/tabs/account_security_tab/SecurityTab.tsx:122
+#: src/components/modals/tabs/account_security_tab/SecurityTab.tsx:135
 msgid "Are you sure you want to delete the passkey <0>{0}</0>?"
 msgstr "Opravdu chcete smazat přístupový klíč <0>{0}</0>?"
 
@@ -2865,7 +2865,7 @@ msgstr "Opravdu chcete smazat tuto pozvánku? Tuto akci nelze vrátit zpět."
 msgid "Are you sure you want to delete this pack? This cannot be undone."
 msgstr "Opravdu chcete smazat tento balíček? Toto nelze vrátit zpět."
 
-#: src/components/modals/tabs/account_security_tab/SecurityTab.tsx:127
+#: src/components/modals/tabs/account_security_tab/SecurityTab.tsx:140
 msgid "Are you sure you want to delete this passkey?"
 msgstr "Opravdu chcete smazat tento přístupový klíč?"
 
@@ -2877,7 +2877,7 @@ msgstr "Opravdu chcete smazat svůj účet? Tento krok naplánuje trvalé odstra
 msgid "Are you sure you want to disable invites? This will prevent new users from joining through invite links until you re-enable them. Existing members will not be affected."
 msgstr "Opravdu chcete vypnout pozvánky? Noví uživatelé se pak přes pozvánky nebudou moci připojovat, dokud je znovu nepovolíte. Současní členové zůstanou nedotčeni."
 
-#: src/components/modals/tabs/account_security_tab/SecurityTab.tsx:179
+#: src/components/modals/tabs/account_security_tab/SecurityTab.tsx:192
 msgid "Are you sure you want to disable SMS two-factor authentication? This will make your account less secure."
 msgstr "Opravdu chcete vypnout SMS dvoufázové ověření? Váš účet bude méně zabezpečený."
 
@@ -2930,7 +2930,7 @@ msgid "Are you sure you want to remove this connection? This action cannot be un
 msgstr "Opravdu chcete odstranit toto připojení? Tuto akci nelze vrátit zpět."
 
 #. placeholder {0}: user.phone
-#: src/components/modals/tabs/account_security_tab/SecurityTab.tsx:367
+#: src/components/modals/tabs/account_security_tab/SecurityTab.tsx:391
 msgid "Are you sure you want to remove your phone number <0>{0}</0>?"
 msgstr "Opravdu chcete odstranit své telefonní číslo <0>{0}</0>?"
 
@@ -2970,11 +2970,11 @@ msgstr "Opravdu chcete odblokovat {0}?"
 msgid "aria"
 msgstr "aria"
 
-#: src/components/modals/AddGuildModal.tsx:177
+#: src/components/modals/AddGuildModal.tsx:178
 msgid "Art Club"
 msgstr "Umělecký klub"
 
-#: src/components/modals/AddGuildModal.tsx:151
+#: src/components/modals/AddGuildModal.tsx:152
 msgid "Artists' Corner"
 msgstr "Koutek umělců"
 
@@ -3150,7 +3150,7 @@ msgid "Authenticator app"
 msgstr "Autentifikační aplikace"
 
 #: src/components/auth/MfaScreen.tsx:69
-#: src/components/modals/tabs/account_security_tab/SecurityTab.tsx:224
+#: src/components/modals/tabs/account_security_tab/SecurityTab.tsx:237
 msgid "Authenticator App"
 msgstr "Autentifikační aplikace"
 
@@ -3170,21 +3170,21 @@ msgstr "typ autora:"
 msgid "Authorization failed"
 msgstr "Autorizace selhala"
 
-#: src/components/pages/OAuthAuthorizePage.tsx:534
+#: src/components/pages/OAuthAuthorizePage.tsx:524
 msgid "Authorization Failed"
 msgstr "Autorizace selhala"
 
-#: src/components/pages/OAuthAuthorizePage.tsx:469
-#: src/components/pages/OAuthAuthorizePage.tsx:484
+#: src/components/pages/OAuthAuthorizePage.tsx:459
+#: src/components/pages/OAuthAuthorizePage.tsx:474
 msgid "Authorization failed. Please try again."
 msgstr "Autorizace selhala. Zkuste to znovu."
 
-#: src/components/pages/OAuthAuthorizePage.tsx:740
+#: src/components/pages/OAuthAuthorizePage.tsx:709
 msgid "Authorization request"
 msgstr "Žádost o autorizaci"
 
-#: src/components/pages/OAuthAuthorizePage.tsx:681
-#: src/components/pages/OAuthAuthorizePage.tsx:940
+#: src/components/pages/OAuthAuthorizePage.tsx:661
+#: src/components/pages/OAuthAuthorizePage.tsx:909
 msgid "Authorize"
 msgstr "Autorizovat"
 
@@ -3251,7 +3251,7 @@ msgstr "automatické doplňování"
 msgid "automatic"
 msgstr "automatický"
 
-#: src/components/modals/channel_tabs/ChannelOverviewTab.tsx:178
+#: src/components/modals/channel_tabs/ChannelOverviewTab.tsx:191
 #: src/components/voice/VoiceRegionSelector.tsx:96
 #: src/components/voice/VoiceRegionSelector.tsx:110
 #: src/components/voice/VoiceSettingsMenus.tsx:452
@@ -3347,7 +3347,7 @@ msgstr "Průměrný ping:"
 #: src/components/modals/AddConnectionModal.tsx:312
 #: src/components/modals/PhoneAddModal.tsx:237
 #: src/components/modals/RequiredActionModal.tsx:655
-#: src/components/pages/OAuthAuthorizePage.tsx:671
+#: src/components/pages/OAuthAuthorizePage.tsx:651
 #: src/components/pages/report/ReportStepDetails.tsx:243
 msgid "Back"
 msgstr "Zpět"
@@ -3438,7 +3438,7 @@ msgid "backup codes"
 msgstr "záložní kódy"
 
 #: src/components/modals/BackupCodesModal.tsx:43
-#: src/components/modals/tabs/account_security_tab/SecurityTab.tsx:257
+#: src/components/modals/tabs/account_security_tab/SecurityTab.tsx:270
 #: src/components/modals/utils/SettingsSearchIndex.tsx:140
 msgid "Backup Codes"
 msgstr "Záložní kódy"
@@ -3499,7 +3499,7 @@ msgstr "Zabanovat člena"
 msgid "Ban Members"
 msgstr "Zabanovat členy"
 
-#: src/components/modals/AddGuildModal.tsx:153
+#: src/components/modals/AddGuildModal.tsx:154
 msgid "Band Practice Room"
 msgstr "Zkušebna kapely"
 
@@ -3680,7 +3680,7 @@ msgstr "Zablokovaní uživatelé vám nemohou posílat žádosti o přátelství
 msgid "Blockquotes"
 msgstr "Citace"
 
-#: src/components/modals/channel_tabs/ChannelOverviewTab.tsx:628
+#: src/components/modals/channel_tabs/ChannelOverviewTab.tsx:667
 msgid "Blocks access for users under 18 and shows a content warning for adults."
 msgstr "Blokuje přístup pro uživatele mladší 18 let a zobrazuje varování o obsahu pro dospělé."
 
@@ -3703,7 +3703,7 @@ msgstr "Rozostřit"
 msgid "Blur your background"
 msgstr "Rozostřit pozadí"
 
-#: src/components/modals/AddGuildModal.tsx:175
+#: src/components/modals/AddGuildModal.tsx:176
 msgid "Board Game Night"
 msgstr "Večer deskových her"
 
@@ -3711,7 +3711,7 @@ msgstr "Večer deskových her"
 msgid "Body font family"
 msgstr "Rodina písma pro text"
 
-#: src/components/modals/AddGuildModal.tsx:178
+#: src/components/modals/AddGuildModal.tsx:179
 msgid "Book Club"
 msgstr "Knižní klub"
 
@@ -3754,7 +3754,7 @@ msgstr "Uloženo do záložek!"
 msgid "Bookmarks"
 msgstr "Záložky"
 
-#: src/components/modals/AddGuildModal.tsx:150
+#: src/components/modals/AddGuildModal.tsx:151
 msgid "Bookworms Anonymous"
 msgstr "Anonymní knihomolové"
 
@@ -3766,7 +3766,7 @@ msgstr "bot"
 msgid "Bot"
 msgstr "Bot"
 
-#: src/components/pages/OAuthAuthorizePage.tsx:550
+#: src/components/pages/OAuthAuthorizePage.tsx:540
 msgid "Bot added"
 msgstr "Bot přidán"
 
@@ -3794,11 +3794,11 @@ msgstr "Přímé zprávy od botů"
 msgid "Bot Invite"
 msgstr "Pozvánka na bota"
 
-#: src/components/pages/OAuthAuthorizePage.tsx:761
+#: src/components/pages/OAuthAuthorizePage.tsx:730
 msgid "Bot invite (no external redirect)"
 msgstr "Pozvání bota (bez přesměrování)"
 
-#: src/components/pages/OAuthAuthorizePage.tsx:480
+#: src/components/pages/OAuthAuthorizePage.tsx:470
 msgid "Bot is already in this community."
 msgstr "Bot je již v této komunitě."
 
@@ -3810,7 +3810,7 @@ msgstr "Oprávnění bota"
 msgid "Bot Profile"
 msgstr "Profil bota"
 
-#: src/components/pages/OAuthAuthorizePage.tsx:770
+#: src/components/pages/OAuthAuthorizePage.tsx:739
 msgid "Bot scope requested"
 msgstr "Požadovaný rozsah bota"
 
@@ -3920,17 +3920,17 @@ msgstr "Tlačítka s ikonami"
 msgid "Buy Gift"
 msgstr "Koupit dárek"
 
-#: src/components/modals/AddGuildModal.tsx:360
+#: src/components/modals/AddGuildModal.tsx:362
 msgid "By creating a community, you agree to follow and uphold the <0>Fluxer Community Guidelines</0>."
 msgstr "Vytvořením komunity souhlasíte s dodržováním <0>Pravidel komunity Fluxer</0>."
 
 #: src/components/modals/components/PurchaseDisclaimer.tsx:39
-msgid "By purchasing, you agree to our <0>Terms of Service</0> and <1>Privacy Policy</1>. All purchases are refundable within 14 days by emailing <2>support@fluxer.app</2>. Chargebacks result in permanent account bans — if you want a refund, we're more than happy to give you one if you contact us first! Payment information is securely handled by Stripe — we never have access to your full card number."
-msgstr "Nákupem souhlasíte s našimi <0>Obchodními podmínkami</0> a <1>Zásadami ochrany osobních údajů</1>. Všechny nákupy lze vrátit do 14 dnů zasláním e-mailu na <2>support@fluxer.app</2>. Chargebacky vedou k trvalému zákazu účtu — pokud chcete vrácení peněz, rádi vám ho dáme, když nás nejdřív kontaktujete! Platební informace bezpečně zpracovává Stripe — nikdy nemáme přístup k číslu vaší karty."
+msgid "By purchasing, you agree to our <0>Terms of Service</0> and <1>Privacy Policy</1>. All purchases are refundable within 14 days by emailing <2>support@echowire.org</2>. Chargebacks result in permanent account bans — if you want a refund, we're more than happy to give you one if you contact us first! Payment information is securely handled by Stripe — we never have access to your full card number."
+msgstr ""
 
 #: src/components/modals/components/PurchaseDisclaimer.tsx:31
-msgid "By purchasing, you agreed to our <0>Terms of Service</0> and <1>Privacy Policy</1>. All purchases are refundable within 14 days by emailing <2>support@fluxer.app</2>. Chargebacks result in permanent account bans — if you want a refund, we're more than happy to give you one if you contact us first! Payment information is securely handled by Stripe — we never have access to your full card number."
-msgstr "Nákupem jste souhlasili s našimi <0>Obchodními podmínkami</0> a <1>Zásadami ochrany osobních údajů</1>. Všechny nákupy lze vrátit do 14 dnů zasláním e-mailu na <2>support@fluxer.app</2>. Chargebacky vedou k trvalému zákazu účtu — pokud chcete vrácení peněz, rádi vám ho dáme, když nás nejdřív kontaktujete! Platební informace bezpečně zpracovává Stripe — nikdy nemáme přístup k číslu vaší karty."
+msgid "By purchasing, you agreed to our <0>Terms of Service</0> and <1>Privacy Policy</1>. All purchases are refundable within 14 days by emailing <2>support@echowire.org</2>. Chargebacks result in permanent account bans — if you want a refund, we're more than happy to give you one if you contact us first! Payment information is securely handled by Stripe — we never have access to your full card number."
+msgstr ""
 
 #: src/utils/PermissionUtils.tsx:356
 #: src/utils/PermissionUtils.tsx:491
@@ -4065,8 +4065,8 @@ msgstr "Kamery jsou zakázány, když je více než {VOICE_CHANNEL_CAMERA_USER_L
 #: src/components/modals/AccountDisableModal.tsx:69
 #: src/components/modals/AddConnectionModal.tsx:218
 #: src/components/modals/AddFavoriteMemeModal.tsx:98
-#: src/components/modals/AddGuildModal.tsx:290
-#: src/components/modals/AddGuildModal.tsx:413
+#: src/components/modals/AddGuildModal.tsx:292
+#: src/components/modals/AddGuildModal.tsx:415
 #: src/components/modals/AddGuildStickerModal.tsx:120
 #: src/components/modals/AttachmentEditModal.tsx:122
 #: src/components/modals/BackupCodesRegenerateModal.tsx:79
@@ -4081,7 +4081,7 @@ msgstr "Kamery jsou zakázány, když je více než {VOICE_CHANNEL_CAMERA_USER_L
 #: src/components/modals/ClaimAccountModal.tsx:219
 #: src/components/modals/components/MobileSettingsView.tsx:219
 #: src/components/modals/components/plutonium/hooks/useCheckoutActions.tsx:110
-#: src/components/modals/components/plutonium/SubscriptionCard.tsx:301
+#: src/components/modals/components/plutonium/SubscriptionCard.tsx:275
 #: src/components/modals/ConfirmModal.tsx:146
 #: src/components/modals/CreateDMModal.tsx:88
 #: src/components/modals/CreateFavoriteCategoryModal.tsx:75
@@ -4132,7 +4132,7 @@ msgstr "Kamery jsou zakázány, když je více než {VOICE_CHANNEL_CAMERA_USER_L
 #: src/components/modals/ThemeAcceptModal.tsx:177
 #: src/components/modals/TimeoutMemberModal.tsx:211
 #: src/components/modals/TransferOwnershipModal.tsx:85
-#: src/components/pages/OAuthAuthorizePage.tsx:924
+#: src/components/pages/OAuthAuthorizePage.tsx:893
 #: src/components/popouts/ScheduledMessagesContent.tsx:119
 #: src/utils/modals/AnimatedAvifModalUtils.tsx:45
 msgid "Cancel"
@@ -4162,7 +4162,7 @@ msgstr "Zrušit žádost"
 msgid "Cancel upload"
 msgstr "Zrušit nahrávání"
 
-#: src/components/modals/components/plutonium/SubscriptionCard.tsx:129
+#: src/components/modals/components/plutonium/SubscriptionCard.tsx:118
 msgid "Canceling"
 msgstr "Rušení"
 
@@ -4178,11 +4178,11 @@ msgstr "Nelze upravit"
 msgid "Cannot Delete Account"
 msgstr "Nelze odstranit účet"
 
-#: src/actions/InviteActionCreators.tsx:317
+#: src/actions/InviteActionCreators.tsx:340
 msgid "Cannot install emoji pack"
 msgstr "Nelze nainstalovat balíček emoji"
 
-#: src/actions/InviteActionCreators.tsx:318
+#: src/actions/InviteActionCreators.tsx:341
 msgid "Cannot install sticker pack"
 msgstr "Nelze nainstalovat balíček samolepek"
 
@@ -4235,7 +4235,7 @@ msgstr "Kategorie je plná"
 msgid "Category ID copied"
 msgstr "ID kategorie zkopírováno"
 
-#: src/components/modals/channel_tabs/ChannelOverviewTab.tsx:479
+#: src/components/modals/channel_tabs/ChannelOverviewTab.tsx:518
 #: src/components/modals/CreateFavoriteCategoryModal.tsx:65
 msgid "Category Name"
 msgstr "Název kategorie"
@@ -4312,7 +4312,7 @@ msgstr "Změnit přezdívku přítele"
 msgid "Change Group Nickname"
 msgstr "Změnit přezdívku skupiny"
 
-#: src/components/modals/AddGuildModal.tsx:329
+#: src/components/modals/AddGuildModal.tsx:331
 #: src/components/modals/EditGroupBottomSheet.tsx:214
 #: src/components/modals/EditGroupModal.tsx:195
 msgid "Change Icon"
@@ -4520,7 +4520,7 @@ msgstr "Indikátory psaní v seznamu kanálů"
 msgid "Channel Management"
 msgstr "Správa kanálů"
 
-#: src/components/modals/channel_tabs/ChannelOverviewTab.tsx:479
+#: src/components/modals/channel_tabs/ChannelOverviewTab.tsx:518
 msgid "Channel Name"
 msgstr "Název kanálu"
 
@@ -4579,7 +4579,7 @@ msgstr "Nastavení kanálu"
 msgid "Channel synced with parent category"
 msgstr "Kanál synchronizován s rodičovskou kategorií"
 
-#: src/components/modals/channel_tabs/ChannelOverviewTab.tsx:276
+#: src/components/modals/channel_tabs/ChannelOverviewTab.tsx:315
 msgid "Channel topic is too long."
 msgstr "Téma kanálu je příliš dlouhé."
 
@@ -4598,7 +4598,7 @@ msgstr "Výběr typu kanálu"
 msgid "Channel type: {0}."
 msgstr "Typ kanálu: {0}."
 
-#: src/components/modals/channel_tabs/ChannelOverviewTab.tsx:409
+#: src/components/modals/channel_tabs/ChannelOverviewTab.tsx:448
 msgid "Channel updated"
 msgstr "Kanál aktualizován"
 
@@ -4646,8 +4646,8 @@ msgstr "Měřítko písma chatu"
 
 #: src/components/BootstrapErrorScreen.tsx:60
 #: src/components/NetworkErrorScreen.tsx:45
-msgid "Check our <0>Bluesky (@fluxer.app)</0> for status updates."
-msgstr "Sledujte náš <0>Bluesky (@fluxer.app)</0> pro aktualizace stavu."
+msgid "Check our <0>status page</0> for updates, or email us at <1>support@echowire.org</1>."
+msgstr ""
 
 #: src/components/modals/ShareThemeModal.tsx:115
 msgid "Check out my custom theme!"
@@ -4694,7 +4694,7 @@ msgstr "Čínština (tradiční)"
 msgid "Choose"
 msgstr "Vyberte"
 
-#: src/components/pages/OAuthAuthorizePage.tsx:877
+#: src/components/pages/OAuthAuthorizePage.tsx:846
 msgid "Choose a community"
 msgstr "Vyberte komunitu"
 
@@ -4765,7 +4765,7 @@ msgstr "Zvolte, jak se v seznamu kanálů zobrazují indikátory psaní, když n
 msgid "Choose the category that best describes your community."
 msgstr "Vyberte kategorii, která nejlépe popisuje vaši komunitu."
 
-#: src/components/pages/OAuthAuthorizePage.tsx:605
+#: src/components/pages/OAuthAuthorizePage.tsx:585
 msgid "Choose what {clientLabel} can do in your community. Uncheck any permissions you don't want to grant."
 msgstr "Vyberte, co může {clientLabel} dělat ve vaší komunitě. Zrušte zaškrtnutí oprávnění, která nechcete udělit."
 
@@ -4808,7 +4808,7 @@ msgstr "Vyberte akcentovou barvu profilu"
 #: src/components/modals/ClaimAccountModal.tsx:225
 #: src/components/modals/components/UnclaimedAccountAlert.tsx:32
 #: src/components/modals/GiftAcceptModal.tsx:175
-#: src/components/modals/tabs/account_security_tab/SecurityTab.tsx:209
+#: src/components/modals/tabs/account_security_tab/SecurityTab.tsx:222
 #: src/components/modals/tabs/GiftInventoryTab.tsx:243
 msgid "Claim Account"
 msgstr "Převzít účet"
@@ -4837,7 +4837,7 @@ msgstr "Uplatněte svůj účet"
 msgid "Claim your account by adding an email and password. We will send a verification code to confirm your email before finishing."
 msgstr "Převzmi účet přidáním e-mailu a hesla. Než dokončíme, pošleme ověřovací kód na e-mail."
 
-#: src/components/modals/tabs/account_security_tab/SecurityTab.tsx:205
+#: src/components/modals/tabs/account_security_tab/SecurityTab.tsx:218
 msgid "Claim your account to access security features like two-factor authentication and passkeys."
 msgstr "Převzmi účet a získej bezpečnostní funkce jako dvoufaktorové ověření nebo přihlašovací klíče."
 
@@ -4856,7 +4856,7 @@ msgstr "Získejte svůj účet pro vytváření aplikací."
 
 #: src/components/layout/ChannelItem.tsx:215
 #: src/components/layout/ChannelItem.tsx:407
-#: src/stores/voice/MediaEngineFacade.tsx:836
+#: src/stores/voice/MediaEngineFacade.tsx:887
 msgid "Claim your account to join this voice channel."
 msgstr "Převzte svůj účet, abyste se připojili k tomuto hlasovému kanálu."
 
@@ -4867,11 +4867,11 @@ msgstr "Převzte svůj účet, abyste se připojili k hlasovým kanálům, kter�
 #: src/components/modals/components/plutonium/BottomCTASection.tsx:49
 #: src/components/modals/components/plutonium/GiftSection.tsx:52
 #: src/components/modals/components/plutonium/PricingSection.tsx:54
-#: src/components/modals/components/PlutoniumContent.tsx:99
+#: src/components/modals/components/PlutoniumContent.tsx:80
 msgid "Claim your account to purchase Fluxer Plutonium."
 msgstr "Získejte svůj účet pro nákup Fluxer Plutonium."
 
-#: src/components/modals/components/plutonium/SubscriptionCard.tsx:104
+#: src/components/modals/components/plutonium/SubscriptionCard.tsx:93
 msgid "Claim your account to purchase or redeem Fluxer Plutonium."
 msgstr "Získejte svůj účet pro nákup nebo uplatnění Fluxer Plutonium."
 
@@ -4901,7 +4901,7 @@ msgstr "Převzte svůj účet pro zahájení nebo připojení k 1:1 hovorům."
 msgid "Claim your gift to activate your premium subscription!"
 msgstr "Uplatni dárek a aktivuj prémiové předplatné!"
 
-#: src/components/modals/AddGuildModal.tsx:156
+#: src/components/modals/AddGuildModal.tsx:157
 msgid "Class of '24"
 msgstr "Ročník 24"
 
@@ -5241,11 +5241,11 @@ msgstr "Kód:"
 msgid "codes"
 msgstr "kódy"
 
-#: src/components/modals/AddGuildModal.tsx:176
+#: src/components/modals/AddGuildModal.tsx:177
 msgid "Coding Crew"
 msgstr "Tým vývojářů"
 
-#: src/components/modals/AddGuildModal.tsx:165
+#: src/components/modals/AddGuildModal.tsx:166
 msgid "Coffee Chat"
 msgstr "Kávový chat"
 
@@ -5399,7 +5399,7 @@ msgstr "Komunita se dopouští cíleného obtěžování nebo ho umožňuje"
 msgid "Community exists solely for spam or fraudulent purposes"
 msgstr "Komunita existuje výhradně pro spam nebo podvody"
 
-#: src/components/modals/AddGuildModal.tsx:316
+#: src/components/modals/AddGuildModal.tsx:318
 msgid "Community Icon"
 msgstr "Ikona komunity"
 
@@ -5445,7 +5445,7 @@ msgstr "Ztlumit komunitu"
 msgid "Community Muted"
 msgstr "Komunita ztlumena"
 
-#: src/components/modals/AddGuildModal.tsx:351
+#: src/components/modals/AddGuildModal.tsx:353
 msgid "Community Name"
 msgstr "Název komunity"
 
@@ -5549,6 +5549,11 @@ msgstr "kompaktní režim"
 msgid "Compact Mode"
 msgstr "Kompaktní režim"
 
+#: src/components/modals/components/PlutoniumContent.tsx:127
+#: src/components/modals/components/PlutoniumContent.tsx:219
+msgid "Compare Plans"
+msgstr ""
+
 #: src/components/modals/components/plutonium/hooks/useCheckoutActions.tsx:106
 msgid "Complete Payment"
 msgstr "Dokončit platbu"
@@ -5577,7 +5582,7 @@ msgstr "Nastav AFK kanál a časový limit"
 msgid "Configure base access for this channel"
 msgstr "Nastav základní přístup k tomuto kanálu"
 
-#: src/components/pages/OAuthAuthorizePage.tsx:602
+#: src/components/pages/OAuthAuthorizePage.tsx:582
 msgid "Configure bot permissions"
 msgstr "Nastav oprávnění bota"
 
@@ -6227,15 +6232,15 @@ msgstr "Vytvořit"
 msgid "Create & Share"
 msgstr "Vytvořit a sdílet"
 
-#: src/components/modals/AddGuildModal.tsx:82
+#: src/components/modals/AddGuildModal.tsx:83
 msgid "Create a Community"
 msgstr "Vytvořit komunitu"
 
-#: src/components/modals/AddGuildModal.tsx:309
+#: src/components/modals/AddGuildModal.tsx:311
 msgid "Create a community for you and your friends to chat."
 msgstr "Vytvořte komunitu pro sebe a přátele ke konverzaci."
 
-#: src/components/modals/AddGuildModal.tsx:120
+#: src/components/modals/AddGuildModal.tsx:121
 msgid "Create a new community or join an existing one."
 msgstr "Vytvořte novou komunitu nebo se připojte k existující."
 
@@ -6315,12 +6320,12 @@ msgid "Create Channel"
 msgstr "Vytvořit kanál"
 
 #: src/components/layout/guild_list/AddGuildButton.tsx:68
-#: src/components/modals/AddGuildModal.tsx:127
-#: src/components/modals/AddGuildModal.tsx:293
+#: src/components/modals/AddGuildModal.tsx:128
+#: src/components/modals/AddGuildModal.tsx:295
 msgid "Create Community"
 msgstr "Vytvořit komunitu"
 
-#: src/components/modals/AddGuildModal.tsx:312
+#: src/components/modals/AddGuildModal.tsx:314
 msgid "Create community form"
 msgstr "Formulář vytvoření komunity"
 
@@ -6466,11 +6471,11 @@ msgstr "Vytvořeno s názvem {newLabel}."
 msgid "Created:"
 msgstr "Vytvořeno:"
 
-#: src/components/modals/AddGuildModal.tsx:149
+#: src/components/modals/AddGuildModal.tsx:150
 msgid "Creative Minds Collective"
 msgstr "Kolektiv kreativních myslí"
 
-#: src/components/modals/AddGuildModal.tsx:168
+#: src/components/modals/AddGuildModal.tsx:169
 msgid "Creative Writing Club"
 msgstr "Kreativní spisovatelský klub"
 
@@ -6792,8 +6797,8 @@ msgstr "Sekundární nebezpečí"
 msgid "Danger secondary clicked!"
 msgstr "Sekundární nebezpečí bylo kliknuto!"
 
-#: src/components/modals/tabs/account_security_tab/Inline.tsx:97
-#: src/components/modals/tabs/AccountSecurityTab.tsx:109
+#: src/components/modals/tabs/account_security_tab/Inline.tsx:100
+#: src/components/modals/tabs/AccountSecurityTab.tsx:112
 #: src/components/modals/tabs/applications_tab/ApplicationDetail.tsx:693
 #: src/components/modals/utils/SettingsConstants.tsx:299
 #: src/components/modals/utils/SettingsSectionRegistry.tsx:529
@@ -7070,7 +7075,7 @@ msgstr "smazat"
 #: src/components/emojis/EmojiListItem.tsx:195
 #: src/components/emojis/EmojiListItem.tsx:252
 #: src/components/emojis/EmojiListItem.tsx:308
-#: src/components/modals/tabs/account_security_tab/SecurityTab.tsx:325
+#: src/components/modals/tabs/account_security_tab/SecurityTab.tsx:338
 #: src/components/modals/tabs/component_gallery_tab/ButtonsTab.tsx:157
 #: src/components/modals/tabs/component_gallery_tab/ButtonsTab.tsx:242
 #: src/components/modals/tabs/component_gallery_tab/index.tsx:165
@@ -7219,8 +7224,8 @@ msgstr "Smazat zprávy ostatních. (Připínání je níže zvlášť.)"
 msgid "Delete Pack"
 msgstr "Smazat balíček"
 
-#: src/components/modals/tabs/account_security_tab/SecurityTab.tsx:118
-#: src/components/modals/tabs/account_security_tab/SecurityTab.tsx:130
+#: src/components/modals/tabs/account_security_tab/SecurityTab.tsx:131
+#: src/components/modals/tabs/account_security_tab/SecurityTab.tsx:143
 msgid "Delete Passkey"
 msgstr "Smazat přístupový klíč"
 
@@ -7414,7 +7419,7 @@ msgstr "Podrobnosti"
 msgid "dev"
 msgstr "vývojář"
 
-#: src/components/modals/AddGuildModal.tsx:152
+#: src/components/modals/AddGuildModal.tsx:153
 msgid "Dev Den"
 msgstr "Dev Den"
 
@@ -7530,8 +7535,8 @@ msgid "disable"
 msgstr "deaktivovat"
 
 #: src/components/invites/DisableInvitesButton.tsx:60
-#: src/components/modals/tabs/account_security_tab/SecurityTab.tsx:240
-#: src/components/modals/tabs/account_security_tab/SecurityTab.tsx:429
+#: src/components/modals/tabs/account_security_tab/SecurityTab.tsx:253
+#: src/components/modals/tabs/account_security_tab/SecurityTab.tsx:453
 msgid "Disable"
 msgstr "Zakázat"
 
@@ -7590,11 +7595,11 @@ msgstr "Zakázat zobrazení obrazu v obraze"
 msgid "Disable Reduced Motion"
 msgstr "Vypnout omezený pohyb"
 
-#: src/components/modals/tabs/account_security_tab/SecurityTab.tsx:183
+#: src/components/modals/tabs/account_security_tab/SecurityTab.tsx:196
 msgid "Disable SMS 2FA"
 msgstr "Vypnout SMS 2FA"
 
-#: src/components/modals/tabs/account_security_tab/SecurityTab.tsx:177
+#: src/components/modals/tabs/account_security_tab/SecurityTab.tsx:190
 msgid "Disable SMS Two-Factor Authentication"
 msgstr "Vypnout SMS dvoufázové ověření"
 
@@ -8161,6 +8166,18 @@ msgstr "ozvěna"
 msgid "Echo Cancellation"
 msgstr "Potlačení ozvěny"
 
+#: src/components/icons/FluxerIcon.tsx:31
+msgid "Echowire application icon"
+msgstr ""
+
+#: src/components/icons/FluxerSymbol.tsx:31
+msgid "Echowire application symbol"
+msgstr ""
+
+#: src/components/BootstrapErrorScreen.tsx:52
+msgid "Echowire failed to start properly. This could be due to corrupted data or a temporary issue."
+msgstr ""
+
 #: src/components/modals/tabs/ExpressionPacksTab.tsx:90
 #: src/components/modals/tabs/LinkedAccountsTab.tsx:186
 #: src/components/modals/tabs/LinkedAccountsTab.tsx:187
@@ -8486,7 +8503,7 @@ msgstr "Názvy emoji musí mít alespoň 2 znaky a mohou obsahovat jen alfanumer
 msgid "Emoji pack"
 msgstr "Balíček emoji"
 
-#: src/actions/InviteActionCreators.tsx:259
+#: src/actions/InviteActionCreators.tsx:282
 msgid "Emoji pack creation limit reached"
 msgstr "Byl dosažen limit vytvořených balíčků emoji"
 
@@ -8494,7 +8511,7 @@ msgstr "Byl dosažen limit vytvořených balíčků emoji"
 msgid "Emoji Pack Invite"
 msgstr "Pozvánka k balíčku emoji"
 
-#: src/actions/InviteActionCreators.tsx:245
+#: src/actions/InviteActionCreators.tsx:268
 msgid "Emoji pack limit reached"
 msgstr "Limit balíčků emoji byl dosažen"
 
@@ -8531,9 +8548,9 @@ msgstr "prázdný stav"
 
 #: src/components/invites/DisableInvitesButton.tsx:60
 #: src/components/layout/GuildLayout.tsx:74
-#: src/components/modals/tabs/account_security_tab/SecurityTab.tsx:247
-#: src/components/modals/tabs/account_security_tab/SecurityTab.tsx:435
-#: src/components/modals/tabs/account_security_tab/SecurityTab.tsx:441
+#: src/components/modals/tabs/account_security_tab/SecurityTab.tsx:260
+#: src/components/modals/tabs/account_security_tab/SecurityTab.tsx:459
+#: src/components/modals/tabs/account_security_tab/SecurityTab.tsx:465
 #: src/components/modals/tabs/components/InputMonitoringSection.tsx:85
 msgid "Enable"
 msgstr "Povolit"
@@ -8655,15 +8672,15 @@ msgstr "Povolit režim self-hosted na straně klienta (skryje veškeré prémiov
 msgid "Enable Shift to Expand"
 msgstr "Povolit Shift pro rozšíření"
 
-#: src/components/modals/tabs/account_security_tab/SecurityTab.tsx:156
+#: src/components/modals/tabs/account_security_tab/SecurityTab.tsx:169
 msgid "Enable SMS 2FA"
 msgstr "Povolit SMS 2FA"
 
-#: src/components/modals/tabs/account_security_tab/SecurityTab.tsx:418
+#: src/components/modals/tabs/account_security_tab/SecurityTab.tsx:442
 msgid "Enable SMS codes as a backup for your authenticator app"
 msgstr "Povolit SMS kódy jako zálohu pro autentizační aplikaci"
 
-#: src/components/modals/tabs/account_security_tab/SecurityTab.tsx:149
+#: src/components/modals/tabs/account_security_tab/SecurityTab.tsx:162
 msgid "Enable SMS Two-Factor Authentication"
 msgstr "Povolit dvoufaktorové ověření pomocí SMS"
 
@@ -8821,7 +8838,7 @@ msgstr "Zadejte kód, který jsme poslali na vaši novou adresu."
 msgid "Enter the code we sent to your email to verify it. Your password will be set once the code is confirmed."
 msgstr "Zadejte kód, který jsme poslali na váš e-mail pro jeho ověření. Po potvrzení kódu bude nastaveno heslo."
 
-#: src/components/modals/AddGuildModal.tsx:427
+#: src/components/modals/AddGuildModal.tsx:429
 msgid "Enter the invite link to join a community."
 msgstr "Zadejte odkaz s pozvánkou pro připojení ke komunitě."
 
@@ -8922,7 +8939,7 @@ msgstr "stiskněte escape pro <0><1>zrušení</1></0>"
 msgid "Estonia"
 msgstr "Estonsko"
 
-#: src/components/modals/channel_tabs/ChannelOverviewTab.tsx:186
+#: src/components/modals/channel_tabs/ChannelOverviewTab.tsx:199
 #: src/components/voice/VoiceRegionSelector.tsx:78
 #: src/components/voice/VoiceSettingsMenus.tsx:436
 msgid "EU Central"
@@ -9008,7 +9025,7 @@ msgid "Expire After"
 msgstr "Vyprší po"
 
 #: src/components/accounts/AccountRow.tsx:169
-#: src/components/modals/components/plutonium/SubscriptionCard.tsx:125
+#: src/components/modals/components/plutonium/SubscriptionCard.tsx:114
 #: src/components/modals/GroupInvitesBottomSheet.tsx:110
 msgid "Expired"
 msgstr "Vypršelo"
@@ -9314,11 +9331,11 @@ msgstr "Nepodařilo se ignorovat žádost o přátelství. Zkuste to prosím zno
 msgid "Failed to initiate connection"
 msgstr "Nepodařilo se zahájit připojení"
 
-#: src/actions/InviteActionCreators.tsx:326
+#: src/actions/InviteActionCreators.tsx:349
 msgid "Failed to install this emoji pack. Please try again later."
 msgstr "Nepodařilo se nainstalovat tento balíček emoji. Zkuste to prosím později."
 
-#: src/actions/InviteActionCreators.tsx:327
+#: src/actions/InviteActionCreators.tsx:350
 msgid "Failed to install this sticker pack. Please try again later."
 msgstr "Nepodařilo se nainstalovat tento balíček nálepek. Zkuste to prosím později."
 
@@ -9381,7 +9398,7 @@ msgstr "Nepodařilo se načíst samolepky"
 msgid "Failed to load vanity URL. Please try again."
 msgstr "Nepodařilo se načíst vanity URL. Zkuste to prosím znovu."
 
-#: src/components/modals/channel_tabs/ChannelOverviewTab.tsx:223
+#: src/components/modals/channel_tabs/ChannelOverviewTab.tsx:236
 msgid "Failed to load voice regions for this channel."
 msgstr "Nepodařilo se načíst hlasové regiony pro tento kanál."
 
@@ -9420,7 +9437,7 @@ msgstr "Nepodařilo se připnout zprávu"
 msgid "Failed to Prepare Emojis"
 msgstr "Nepodařilo se připravit emoji"
 
-#: src/components/modals/AddGuildModal.tsx:248
+#: src/components/modals/AddGuildModal.tsx:249
 #: src/components/modals/EditGroupBottomSheet.tsx:106
 #: src/components/modals/EditGroupModal.tsx:99
 #: src/components/modals/guild_tabs/guild_overview_tab/hooks/useGuildImageAssetField.tsx:267
@@ -9660,11 +9677,11 @@ msgstr "falešný"
 msgid "false"
 msgstr "false"
 
-#: src/components/modals/AddGuildModal.tsx:183
+#: src/components/modals/AddGuildModal.tsx:184
 msgid "Family Chat"
 msgstr "Rodinný chat"
 
-#: src/components/modals/AddGuildModal.tsx:158
+#: src/components/modals/AddGuildModal.tsx:159
 msgid "Family Reunion"
 msgstr "Rodinné setkání"
 
@@ -9722,7 +9739,7 @@ msgstr "oblíbené"
 msgid "Favorites"
 msgstr "Oblíbené"
 
-#: src/components/modals/components/FeatureComparisonTable.tsx:119
+#: src/components/modals/components/FeatureComparisonTable.tsx:138
 msgid "Feature"
 msgstr "Funkce"
 
@@ -9845,7 +9862,7 @@ msgstr "Jméno a příjmení"
 msgid "First Option"
 msgstr "První možnost"
 
-#: src/components/modals/AddGuildModal.tsx:171
+#: src/components/modals/AddGuildModal.tsx:172
 msgid "Fitness Friends"
 msgstr "Fitness kamarádi"
 
@@ -9861,33 +9878,21 @@ msgstr "Flexibilní názvy textových kanálů"
 msgid "Fluxer"
 msgstr "Fluxer"
 
-#: src/components/icons/FluxerIcon.tsx:31
-msgid "Fluxer application icon"
-msgstr "Ikona aplikace Fluxer"
-
-#: src/components/icons/FluxerSymbol.tsx:31
-msgid "Fluxer application symbol"
-msgstr "Symbol aplikace Fluxer"
-
 #: src/components/modals/tabs/notifications_tab/PushSettings.tsx:37
 msgid "Fluxer avoids sending push notifications to your mobile devices when you are at your computer. Use this setting to control how long you need to be inactive on desktop for before you receive push notifications, ranging from 1 minute to 10 minutes."
 msgstr "Fluxer se vyhýbá posílání push oznámení na mobilní zařízení, když jste u počítače. Nastavením určíte, jak dlouho musíte být neaktivní na desktopu, než obdržíte push oznámení, od 1 do 10 minut."
 
-#: src/components/popouts/UserProfileBadges.tsx:115
+#: src/components/popouts/UserProfileBadges.tsx:101
 msgid "Fluxer Bug Hunter"
 msgstr "Fluxer lovec chyb"
 
-#: src/components/popouts/UserProfileBadges.tsx:95
+#: src/components/popouts/UserProfileBadges.tsx:81
 msgid "Fluxer Community Team"
 msgstr "Komunitní tým Fluxer"
 
 #: src/components/modals/tabs/DevicesTab.tsx:99
 msgid "Fluxer Desktop"
 msgstr "Fluxer Desktop"
-
-#: src/components/BootstrapErrorScreen.tsx:52
-msgid "Fluxer failed to start properly. This could be due to corrupted data or a temporary issue."
-msgstr "Fluxer se nepodařilo správně spustit. Může jít o poškozená data nebo dočasný problém."
 
 #: src/stores/NewDeviceMonitoringStore.tsx:187
 msgid "Fluxer has found a new audio input device named <0>{deviceName}</0>. Do you want to switch to it?"
@@ -9945,18 +9950,18 @@ msgstr "Fluxer potřebuje oprávnění sledovat vstupy, aby push-to-talk a glob�
 msgid "Fluxer needs permission to monitor keyboard and mouse input so that <0>Push-to-Talk</0> and <1>Global Shortcuts</1> work even when you're in another app or game."
 msgstr "Fluxer potřebuje oprávnění sledovat klávesnici a myš, aby <0>Push-to-Talk</0> a <1>Globální zkratky</1> fungovaly i v jiné aplikaci nebo hře."
 
-#: src/components/popouts/UserProfileBadges.tsx:105
+#: src/components/popouts/UserProfileBadges.tsx:91
 msgid "Fluxer Partner"
 msgstr "Partner Fluxer"
 
-#: src/components/modals/components/PlutoniumContent.tsx:165
+#: src/components/modals/components/PlutoniumContent.tsx:146
 #: src/components/modals/PremiumModal.tsx:34
 #: src/components/modals/utils/SettingsConstants.tsx:124
-#: src/components/popouts/UserProfileBadges.tsx:121
+#: src/components/popouts/UserProfileBadges.tsx:107
 msgid "Fluxer Plutonium"
 msgstr "Fluxer Plutonium"
 
-#: src/components/popouts/UserProfileBadges.tsx:85
+#: src/components/popouts/UserProfileBadges.tsx:71
 msgid "Fluxer Staff"
 msgstr "Tým Fluxer"
 
@@ -10034,7 +10039,7 @@ msgstr "písma"
 msgid "Food & Drink"
 msgstr "Jídlo a pití"
 
-#: src/components/modals/AddGuildModal.tsx:172
+#: src/components/modals/AddGuildModal.tsx:173
 msgid "Foodie Friends"
 msgstr "Gurmánští kamarádi"
 
@@ -10248,7 +10253,7 @@ msgstr "Snímkové frekvence nad 30 FPS vyžadují Plutonium"
 msgid "France"
 msgstr "Francie"
 
-#: src/components/modals/components/FeatureComparisonTable.tsx:124
+#: src/components/modals/components/FeatureComparisonTable.tsx:143
 msgid "Free"
 msgstr "Zdarma"
 
@@ -10259,11 +10264,6 @@ msgstr "Uživatel zdarma (bez nákupů)"
 #: src/components/modals/tabs/developer_options_tab/PremiumScenarioOptions.tsx:53
 msgid "Free User (With Purchase History)"
 msgstr "Uživatel zdarma (s historií nákupů)"
-
-#: src/components/modals/components/PlutoniumContent.tsx:146
-#: src/components/modals/components/PlutoniumContent.tsx:243
-msgid "Free vs Plutonium"
-msgstr "Zdarma vs Plutonium"
 
 #: src/components/modals/tabs/VideoTab.tsx:237
 msgid "Freezes your preview while Fluxer is in the background to save resources."
@@ -10336,7 +10336,7 @@ msgstr "Přátelé"
 msgid "Friends + Custom"
 msgstr "Přátelé + vlastní"
 
-#: src/components/modals/AddGuildModal.tsx:184
+#: src/components/modals/AddGuildModal.tsx:185
 msgid "Friends Forever"
 msgstr "Přátelé navždy"
 
@@ -10405,7 +10405,7 @@ msgstr "Úplné právní jméno"
 msgid "Game controller"
 msgstr "Herní ovladač"
 
-#: src/components/modals/AddGuildModal.tsx:166
+#: src/components/modals/AddGuildModal.tsx:167
 msgid "Game Night"
 msgstr "Herní noc"
 
@@ -10413,7 +10413,7 @@ msgstr "Herní noc"
 msgid "Gaming"
 msgstr "Hraní"
 
-#: src/components/modals/AddGuildModal.tsx:180
+#: src/components/modals/AddGuildModal.tsx:181
 msgid "Gaming Community"
 msgstr "Herní komunita"
 
@@ -10430,11 +10430,11 @@ msgstr "Je vyžadováno bránové připojení"
 msgid "gdpr"
 msgstr "gdpr"
 
-#: src/components/modals/channel_tabs/ChannelOverviewTab.tsx:480
+#: src/components/modals/channel_tabs/ChannelOverviewTab.tsx:519
 msgid "general"
 msgstr "všeobecné"
 
-#: src/components/modals/channel_tabs/ChannelOverviewTab.tsx:468
+#: src/components/modals/channel_tabs/ChannelOverviewTab.tsx:507
 #: src/components/modals/tabs/developer_options_tab/index.tsx:45
 #: src/components/modals/tabs/developer_options_tab/Inline.tsx:45
 #: src/components/modals/utils/ChannelSettingsConstants.tsx:56
@@ -10553,7 +10553,7 @@ msgstr "Náhled GIFu"
 msgid "GIFs"
 msgstr "GIFy"
 
-#: src/components/modals/components/plutonium/SubscriptionCard.tsx:133
+#: src/components/modals/components/plutonium/SubscriptionCard.tsx:122
 #: src/components/modals/GiftAcceptModal.tsx:211
 msgid "Gift"
 msgstr "Dárek"
@@ -10759,7 +10759,7 @@ msgstr "Tak jo"
 msgid "gpu"
 msgstr "gpu"
 
-#: src/components/modals/components/plutonium/SubscriptionCard.tsx:127
+#: src/components/modals/components/plutonium/SubscriptionCard.tsx:116
 msgid "Grace Period"
 msgstr "Přechodné období"
 
@@ -11076,6 +11076,7 @@ msgstr "skrýt"
 #: src/components/modals/HideOwnCameraConfirmModal.tsx:66
 #: src/components/modals/HideOwnScreenShareConfirmModal.tsx:66
 #: src/components/modals/tabs/account_security_tab/AccountTab.tsx:76
+#: src/components/modals/tabs/account_security_tab/SecurityTab.tsx:370
 msgid "Hide"
 msgstr "Skrýt"
 
@@ -11221,7 +11222,7 @@ msgstr "Režim zobrazení s vysokým dynamickým rozsahem"
 msgid "High quality, requires fast connection"
 msgstr "Vysoká kvalita, vyžaduje rychlé připojení"
 
-#: src/components/modals/channel_tabs/ChannelOverviewTab.tsx:661
+#: src/components/modals/channel_tabs/ChannelOverviewTab.tsx:700
 msgid "Higher bitrate = better quality and higher bandwidth usage."
 msgstr "Vyšší bitrate = lepší kvalita a větší náročnost na šířku pásma."
 
@@ -11237,7 +11238,7 @@ msgstr "nápovědy"
 msgid "Hit 88mph"
 msgstr "Dosáhni 88 mph"
 
-#: src/components/modals/AddGuildModal.tsx:155
+#: src/components/modals/AddGuildModal.tsx:156
 msgid "Hobby Haven"
 msgstr "Útočiště koníčků"
 
@@ -11338,7 +11339,7 @@ msgstr "Jak to funguje"
 msgid "HTML / XML"
 msgstr "HTML / XML"
 
-#: src/components/modals/channel_tabs/ChannelOverviewTab.tsx:492
+#: src/components/modals/channel_tabs/ChannelOverviewTab.tsx:531
 #: src/components/modals/ChannelCreateModal.tsx:92
 msgid "https://example.com"
 msgstr "https://example.com"
@@ -11394,7 +11395,7 @@ msgstr "Chápu"
 msgid "Icon"
 msgstr "Ikona"
 
-#: src/components/modals/AddGuildModal.tsx:214
+#: src/components/modals/AddGuildModal.tsx:215
 #: src/components/modals/EditGroupBottomSheet.tsx:71
 #: src/components/modals/EditGroupModal.tsx:64
 msgid "Icon file is too large. Please choose a file smaller than 10MB."
@@ -11797,8 +11798,8 @@ msgstr "Vstupy a text"
 msgid "Inputs with Icons"
 msgstr "Vstupy s ikonami"
 
-#: src/components/modals/channel_tabs/ChannelOverviewTab.tsx:547
-#: src/components/modals/channel_tabs/ChannelOverviewTab.tsx:580
+#: src/components/modals/channel_tabs/ChannelOverviewTab.tsx:586
+#: src/components/modals/channel_tabs/ChannelOverviewTab.tsx:619
 msgid "Insert emoji"
 msgstr "Vložit emoji"
 
@@ -11871,7 +11872,7 @@ msgstr "Neplatné"
 msgid "Invalid audio file"
 msgstr "Neplatný audio soubor"
 
-#: src/components/pages/OAuthAuthorizePage.tsx:536
+#: src/components/pages/OAuthAuthorizePage.tsx:526
 msgid "Invalid authorization request"
 msgstr "Neplatná žádost o autorizaci"
 
@@ -11894,7 +11895,7 @@ msgstr "Neplatný nebo expirovaný kód"
 msgid "Invalid or expired code. Please try again."
 msgstr "Neplatný nebo expirovaný kód. Zkuste to prosím znovu."
 
-#: src/components/pages/OAuthAuthorizePage.tsx:511
+#: src/components/pages/OAuthAuthorizePage.tsx:501
 msgid "Invalid redirect_uri"
 msgstr "Neplatné redirect_uri"
 
@@ -11969,7 +11970,7 @@ msgstr "Pozvat přátele do {0}"
 msgid "Invite link"
 msgstr "Odkaz na pozvánku"
 
-#: src/components/modals/AddGuildModal.tsx:436
+#: src/components/modals/AddGuildModal.tsx:438
 msgid "Invite Link"
 msgstr "Odkaz na pozvánku"
 
@@ -12101,7 +12102,7 @@ msgstr "Pozvánky jsou pro tuto komunitu momentálně zakázané."
 msgid "Invites are currently disabled in this community by an admin. While this invite can be created, it cannot be accepted until invites are re-enabled."
 msgstr "Pozvánky jsou v této komunitě aktuálně zakázané správcem. I když lze pozvánku vytvořit, nelze ji přijmout, dokud se pozvánky znovu nepovolí."
 
-#: src/components/layout/guild_list/GuildListItem.tsx:493
+#: src/components/layout/guild_list/GuildListItem.tsx:492
 msgid "Invites are currently paused in this community"
 msgstr "Pozvánky jsou v této komunitě momentálně pozastavené"
 
@@ -12143,7 +12144,7 @@ msgstr "IP adresa autorizována"
 msgid "Ireland"
 msgstr "Irsko"
 
-#: src/components/modals/tabs/AccountSecurityTab.tsx:109
+#: src/components/modals/tabs/AccountSecurityTab.tsx:112
 msgid "Irreversible and destructive actions"
 msgstr "Nevratné a destruktivní akce"
 
@@ -12185,7 +12186,7 @@ msgstr "Kolísání"
 msgid "join"
 msgstr "připojit se"
 
-#: src/components/modals/AddGuildModal.tsx:84
+#: src/components/modals/AddGuildModal.tsx:85
 msgid "Join a Community"
 msgstr "Připojit se ke komunitě"
 
@@ -12205,16 +12206,15 @@ msgstr "Připojit se k hovoru"
 #: src/components/channel/InviteEmbed.tsx:284
 #: src/components/channel/InviteEmbed.tsx:475
 #: src/components/layout/guild_list/AddGuildButton.tsx:77
-#: src/components/modals/AddGuildModal.tsx:132
-#: src/components/modals/AddGuildModal.tsx:416
-#: src/components/modals/components/plutonium/SubscriptionCard.tsx:289
+#: src/components/modals/AddGuildModal.tsx:133
+#: src/components/modals/AddGuildModal.tsx:418
 #: src/components/modals/discovery/DiscoveryGuildCard.tsx:99
 #: src/components/modals/InviteAcceptModal.tsx:119
 #: src/components/modals/InviteAcceptModalPreview.tsx:111
 msgid "Join Community"
 msgstr "Připojit se ke komunitě"
 
-#: src/components/modals/AddGuildModal.tsx:430
+#: src/components/modals/AddGuildModal.tsx:432
 msgid "Join community form"
 msgstr "Formulář pro připojení ke komunitě"
 
@@ -12327,7 +12327,7 @@ msgstr "JPEG, PNG, WebP. Max 10 MB. Minimum: {0}×{1}px (16:9)"
 msgid "JPEG, PNG, WebP. Max 10MB. Minimum: {0}×{1}px (16:9). Shown in invite embeds in chat."
 msgstr "JPEG, PNG, WebP. Max 10 MB. Minimum: {0}×{1}px (16:9). Zobrazuje se v embedech pozvánek v chatu."
 
-#: src/components/modals/AddGuildModal.tsx:338
+#: src/components/modals/AddGuildModal.tsx:340
 #: src/components/modals/EditGroupBottomSheet.tsx:223
 #: src/components/modals/EditGroupModal.tsx:204
 #: src/components/modals/guild_tabs/guild_overview_tab/fields/GuildIconUploadField.tsx:116
@@ -12717,7 +12717,7 @@ msgstr "Nechte komunitu se sama moderovat"
 msgid "Letters (a-z, A-Z), numbers (0-9), and underscores (_) only"
 msgstr "Pouze písmena (a-z, A-Z), číslice (0-9) a podtržítka (_)"
 
-#: src/components/modals/components/plutonium/SubscriptionCard.tsx:131
+#: src/components/modals/components/plutonium/SubscriptionCard.tsx:120
 #: src/components/modals/tabs/developer_options_tab/AccountPremiumTab.tsx:52
 #: src/components/modals/tabs/developer_options_tab/MockingTab.tsx:317
 msgid "Lifetime"
@@ -12899,7 +12899,7 @@ msgstr "Načítání"
 msgid "Loading bans..."
 msgstr "Načítání zákazů..."
 
-#: src/components/pages/OAuthAuthorizePage.tsx:877
+#: src/components/pages/OAuthAuthorizePage.tsx:846
 msgid "Loading communities..."
 msgstr "Načítání komunit..."
 
@@ -13197,7 +13197,7 @@ msgid "Manage Roles"
 msgstr "Spravovat role"
 
 #: src/components/layout/app_layout/nagbars/PremiumGracePeriodNagbar.tsx:79
-#: src/components/modals/components/plutonium/SubscriptionCard.tsx:271
+#: src/components/modals/components/plutonium/SubscriptionCard.tsx:260
 msgid "Manage Subscription"
 msgstr "Spravovat předplatné"
 
@@ -13214,7 +13214,7 @@ msgstr "Spravovat webhooky"
 msgid "Manage your applications and bots."
 msgstr "Spravovat své aplikace a boty."
 
-#: src/components/modals/tabs/AccountSecurityTab.tsx:78
+#: src/components/modals/tabs/AccountSecurityTab.tsx:79
 msgid "Manage your email, password, and account settings"
 msgstr "Spravovat svůj e-mail, heslo a nastavení účtu"
 
@@ -13222,7 +13222,7 @@ msgstr "Spravovat svůj e-mail, heslo a nastavení účtu"
 msgid "Manage your gifts"
 msgstr "Spravovat své dárky"
 
-#: src/components/modals/tabs/account_security_tab/SecurityTab.tsx:340
+#: src/components/modals/tabs/account_security_tab/SecurityTab.tsx:353
 msgid "Manage your phone number for SMS two-factor authentication"
 msgstr "Spravovat své telefonní číslo pro SMS dvoufaktorové ověřování"
 
@@ -13385,7 +13385,7 @@ msgstr "Maximalizuje počet viditelných zpráv při minimálním odsazení."
 msgid "Maximum 256 characters"
 msgstr "Maximálně 256 znaků"
 
-#: src/components/modals/channel_tabs/ChannelOverviewTab.tsx:694
+#: src/components/modals/channel_tabs/ChannelOverviewTab.tsx:733
 msgid "Maximum members who can join at once. 0 means unlimited."
 msgstr "Maximální počet členů, kteří se mohou připojit najednou. 0 znamená neomezeně."
 
@@ -13579,7 +13579,7 @@ msgstr "Členové neaktivní po {days} dnech budou odstraněni."
 msgid "Members list unavailable at this screen width"
 msgstr "Seznam členů není při této šířce obrazovky k dispozici"
 
-#: src/components/modals/channel_tabs/ChannelOverviewTab.tsx:617
+#: src/components/modals/channel_tabs/ChannelOverviewTab.tsx:656
 msgid "Members must wait between messages."
 msgstr "Členové musí mezi zprávami čekat."
 
@@ -14164,11 +14164,11 @@ msgstr "Role byla přesunuta na pozici {0}."
 msgid "Moved to channel {0}."
 msgstr "Přesunuto do kanálu {0}."
 
-#: src/components/modals/AddGuildModal.tsx:174
+#: src/components/modals/AddGuildModal.tsx:175
 msgid "Movie Club"
 msgstr "Filmklub"
 
-#: src/components/modals/AddGuildModal.tsx:161
+#: src/components/modals/AddGuildModal.tsx:162
 msgid "Movie Night Crew"
 msgstr "Ekipa na filmové noci"
 
@@ -14188,7 +14188,7 @@ msgstr "Vícejazyčný obsah"
 msgid "Music"
 msgstr "Hudba"
 
-#: src/components/modals/AddGuildModal.tsx:170
+#: src/components/modals/AddGuildModal.tsx:171
 msgid "Music Lovers"
 msgstr "Milovníci hudby"
 
@@ -14316,7 +14316,7 @@ msgstr "Ztlumit audio streamu"
 msgid "muted"
 msgstr "ztlumený"
 
-#: src/components/layout/guild_list/GuildListItem.tsx:453
+#: src/components/layout/guild_list/GuildListItem.tsx:452
 #: src/components/layout/VoiceStateIcons.tsx:49
 #: src/components/voice/VoiceParticipantTile.tsx:1457
 #: src/utils/ContextMenuUtils.tsx:165
@@ -14329,7 +14329,7 @@ msgstr "ztlumené kanály"
 
 #. placeholder {0}: DateUtils.getFormattedDateTime(new Date(muteConfig.end_time))
 #. placeholder {0}: getFormattedDateTime(new Date(muteConfig.end_time))
-#: src/components/layout/guild_list/GuildListItem.tsx:451
+#: src/components/layout/guild_list/GuildListItem.tsx:450
 #: src/utils/ContextMenuUtils.tsx:163
 msgid "Muted until {0}"
 msgstr "Ztlumeno do {0}"
@@ -14371,7 +14371,7 @@ msgstr "Moje úžasná média"
 msgid "My awesome sticker"
 msgstr "Moje skvělá samolepka"
 
-#: src/components/modals/channel_tabs/ChannelOverviewTab.tsx:480
+#: src/components/modals/channel_tabs/ChannelOverviewTab.tsx:519
 msgid "My Category"
 msgstr "Moje kategorie"
 
@@ -14509,7 +14509,7 @@ msgstr "Navigace"
 msgid "Need an account?"
 msgstr "Potřebujete účet?"
 
-#: src/components/modals/AddGuildModal.tsx:162
+#: src/components/modals/AddGuildModal.tsx:163
 msgid "Neighborhood Watch"
 msgstr "Hlídka sousedství"
 
@@ -14623,7 +14623,7 @@ msgid "Newest First"
 msgstr "Nejnovější jako první"
 
 #: src/components/bottomsheets/ChannelSearchBottomSheet.tsx:394
-#: src/components/pages/OAuthAuthorizePage.tsx:931
+#: src/components/pages/OAuthAuthorizePage.tsx:900
 msgid "Next"
 msgstr "Další"
 
@@ -14754,7 +14754,7 @@ msgstr "Žádné dostupné kanály"
 msgid "No channels found"
 msgstr "Žádné kanály nenalezeny"
 
-#: src/components/pages/OAuthAuthorizePage.tsx:893
+#: src/components/pages/OAuthAuthorizePage.tsx:862
 msgid "No communities available with <0>Manage Community</0> permissions."
 msgstr "Žádné komunity s oprávněním <0>Spravovat komunitu</0> nejsou k dispozici."
 
@@ -14842,7 +14842,7 @@ msgstr "Nebyla vytvořena žádná pozvání"
 msgid "No keybind set"
 msgstr "Není nastaven žádný klávesový zkratka"
 
-#: src/components/modals/channel_tabs/ChannelOverviewTab.tsx:688
+#: src/components/modals/channel_tabs/ChannelOverviewTab.tsx:727
 #: src/components/modals/InviteModal.tsx:88
 msgid "No limit"
 msgstr "Bez omezení"
@@ -14851,7 +14851,7 @@ msgstr "Bez omezení"
 msgid "No Logs Yet"
 msgstr "Zatím žádné záznamy"
 
-#: src/components/pages/OAuthAuthorizePage.tsx:426
+#: src/components/pages/OAuthAuthorizePage.tsx:416
 msgid "No Manage Community permission"
 msgstr "Nemáte oprávnění Spravovat komunitu"
 
@@ -14884,7 +14884,7 @@ msgstr "Nebyla nalezena žádná společná přátelství."
 msgid "No mutual groups found."
 msgstr "Nebyla nalezena žádná společná skupina."
 
-#: src/components/modals/tabs/account_security_tab/SecurityTab.tsx:286
+#: src/components/modals/tabs/account_security_tab/SecurityTab.tsx:299
 msgid "No passkeys registered"
 msgstr "Žádné registrované klíče."
 
@@ -14986,7 +14986,7 @@ msgstr "Žádné výsledky hledání"
 msgid "No settings found"
 msgstr "Nebyly nalezena žádná nastavení"
 
-#: src/components/pages/OAuthAuthorizePage.tsx:824
+#: src/components/pages/OAuthAuthorizePage.tsx:793
 msgid "No specific scopes requested."
 msgstr "Nebyla požadována žádná konkrétní oprávnění."
 
@@ -15261,7 +15261,7 @@ msgid "Objects"
 msgstr "Objekty"
 
 #: src/components/channel/ReplyBar.tsx:112
-#: src/components/modals/channel_tabs/ChannelOverviewTab.tsx:160
+#: src/components/modals/channel_tabs/ChannelOverviewTab.tsx:173
 #: src/components/modals/guild_tabs/GuildModerationTab.tsx:243
 #: src/utils/modals/guild_tabs/GuildAuditLogTabUtils.tsx:64
 msgid "Off"
@@ -15499,7 +15499,7 @@ msgstr "Otevřít výběr barev"
 msgid "Open Community Notification Settings"
 msgstr "Otevřít nastavení oznámení komunity"
 
-#: src/components/modals/components/plutonium/SubscriptionCard.tsx:269
+#: src/components/modals/components/plutonium/SubscriptionCard.tsx:258
 msgid "Open Customer Portal"
 msgstr "Otevřít zákaznický portál"
 
@@ -15779,7 +15779,7 @@ msgstr "Jinak je nutné tlačítko pro mluvení."
 msgid "otp"
 msgstr "otp"
 
-#: src/components/modals/AddGuildModal.tsx:186
+#: src/components/modals/AddGuildModal.tsx:187
 msgid "Our Hangout"
 msgstr "Naše setkání"
 
@@ -15909,7 +15909,7 @@ msgstr "balíčky"
 msgid "Page {currentPage} of {totalPages}"
 msgstr "Strana {currentPage} z {totalPages}"
 
-#: src/components/modals/channel_tabs/ChannelOverviewTab.tsx:671
+#: src/components/modals/channel_tabs/ChannelOverviewTab.tsx:710
 msgid "Participant Limit"
 msgstr "Limit účastníků"
 
@@ -15930,7 +15930,7 @@ msgstr "Partnerovaná komunita"
 msgid "Passkey Name"
 msgstr "Název klíče"
 
-#: src/components/modals/tabs/account_security_tab/SecurityTab.tsx:276
+#: src/components/modals/tabs/account_security_tab/SecurityTab.tsx:289
 msgid "Passkeys"
 msgstr "Klíče"
 
@@ -16103,8 +16103,8 @@ msgid "permissions"
 msgstr "oprávnění"
 
 #: src/components/modals/guild_tabs/GuildRolesTab.tsx:1086
-#: src/components/pages/OAuthAuthorizePage.tsx:584
-#: src/components/pages/OAuthAuthorizePage.tsx:720
+#: src/components/pages/OAuthAuthorizePage.tsx:574
+#: src/components/pages/OAuthAuthorizePage.tsx:700
 msgid "Permissions"
 msgstr "Oprávnění"
 
@@ -16148,8 +16148,8 @@ msgstr "Telefon"
 
 #: src/components/modals/PhoneAddModal.tsx:192
 #: src/components/modals/RequiredActionModal.tsx:616
-#: src/components/modals/tabs/account_security_tab/SecurityTab.tsx:339
-#: src/components/modals/tabs/account_security_tab/SecurityTab.tsx:345
+#: src/components/modals/tabs/account_security_tab/SecurityTab.tsx:352
+#: src/components/modals/tabs/account_security_tab/SecurityTab.tsx:358
 #: src/components/modals/utils/SettingsSearchIndex.tsx:115
 msgid "Phone Number"
 msgstr "Telefonní číslo"
@@ -16157,11 +16157,6 @@ msgstr "Telefonní číslo"
 #: src/components/modals/PhoneAddModal.tsx:133
 msgid "Phone number added"
 msgstr "Telefonní číslo přidáno"
-
-#. placeholder {0}: user.phone
-#: src/components/modals/tabs/account_security_tab/SecurityTab.tsx:349
-msgid "Phone number added: {0}"
-msgstr "Telefonní číslo přidáno: {0}"
 
 #: src/components/modals/RequiredActionModal.tsx:253
 msgid "Phone number is required"
@@ -16187,7 +16182,7 @@ msgstr "Vyžaduje se verifikace telefonu"
 msgid "photo"
 msgstr "fotografie"
 
-#: src/components/modals/AddGuildModal.tsx:169
+#: src/components/modals/AddGuildModal.tsx:170
 msgid "Photography Club"
 msgstr "Fotografický klub"
 
@@ -16421,7 +16416,7 @@ msgstr "Zkuste to prosím později."
 msgid "Please update Fluxer to view this message."
 msgstr "Aktualizujte prosím Fluxer, abyste zobrazili tuto zprávu."
 
-#: src/actions/InviteActionCreators.tsx:184
+#: src/actions/InviteActionCreators.tsx:207
 msgid "Please verify your account by setting an email and password before joining communities."
 msgstr "Než se připojíte ke komunitám, ověřte prosím svůj účet zadáním e-mailu a hesla."
 
@@ -16447,7 +16442,7 @@ msgstr "plutonium"
 
 #: src/components/channel/direct_message/DMList.tsx:1326
 #: src/components/channel/direct_message/DMList.tsx:1405
-#: src/components/modals/components/FeatureComparisonTable.tsx:127
+#: src/components/modals/components/FeatureComparisonTable.tsx:146
 msgid "Plutonium"
 msgstr "Plutonium"
 
@@ -16459,7 +16454,7 @@ msgstr "Soukromí odznaku Plutonium"
 msgid "Plutonium perks"
 msgstr "Výhody Plutonia"
 
-#: src/components/modals/components/plutonium/SubscriptionCard.tsx:121
+#: src/components/modals/components/plutonium/SubscriptionCard.tsx:110
 msgid "Plutonium Subscription"
 msgstr "Předplatné Plutonium"
 
@@ -16715,7 +16710,7 @@ msgstr "Pokračovat"
 msgid "Processing"
 msgstr "Zpracovává se"
 
-#: src/components/modals/AddGuildModal.tsx:163
+#: src/components/modals/AddGuildModal.tsx:164
 msgid "Professional Peers"
 msgstr "Profesní kolegové"
 
@@ -16776,7 +16771,7 @@ msgstr "Profil aktualizován"
 msgid "progress"
 msgstr "pokrok"
 
-#: src/components/modals/AddGuildModal.tsx:159
+#: src/components/modals/AddGuildModal.tsx:160
 msgid "Project X"
 msgstr "Projekt X"
 
@@ -16789,7 +16784,7 @@ msgstr "zájmena"
 msgid "Pronouns"
 msgstr "Zájmena"
 
-#: src/components/modals/tabs/AccountSecurityTab.tsx:91
+#: src/components/modals/tabs/AccountSecurityTab.tsx:92
 msgid "Protect your account with two-factor authentication and passkeys"
 msgstr "Chraňte svůj účet dvoufázovým ověřováním a přístupovými klíči"
 
@@ -17014,7 +17009,7 @@ msgid "Reactions"
 msgstr "Reakce"
 
 #: src/components/layout/app_layout/nagbars/PremiumExpiredNagbar.tsx:75
-#: src/components/modals/components/plutonium/SubscriptionCard.tsx:267
+#: src/components/modals/components/plutonium/SubscriptionCard.tsx:256
 msgid "Reactivate"
 msgstr "Znovu aktivovat"
 
@@ -17076,7 +17071,7 @@ msgstr "Přijímat"
 msgid "Receive notifications when someone mentions you"
 msgstr "Dostávejte oznámení, když vás někdo zmíní"
 
-#: src/components/modals/tabs/account_security_tab/SecurityTab.tsx:407
+#: src/components/modals/tabs/account_security_tab/SecurityTab.tsx:431
 msgid "Receive verification codes via SMS as a backup authentication method"
 msgstr "Přijímejte ověřovací kódy přes SMS jako záložní autentizační metodu"
 
@@ -17141,7 +17136,7 @@ msgstr "Uplatnit dárek"
 msgid "Redeem for Yourself"
 msgstr "Uplatnit pro sebe"
 
-#: src/components/modals/components/plutonium/SubscriptionCard.tsx:245
+#: src/components/modals/components/plutonium/SubscriptionCard.tsx:234
 msgid "Redeem Gift Code"
 msgstr "Uplatnit kód dárku"
 
@@ -17233,7 +17228,7 @@ msgstr "Regenerace zneplatní aktuální token. Aktualizujte jakýkoli kód, kte
 msgid "Register"
 msgstr "Registrovat"
 
-#: src/components/modals/tabs/account_security_tab/SecurityTab.tsx:282
+#: src/components/modals/tabs/account_security_tab/SecurityTab.tsx:295
 msgid "Registered Passkeys"
 msgstr "Registrované přístupové klíče"
 
@@ -17303,7 +17298,7 @@ msgstr "odebrat"
 #: src/components/modals/guild_tabs/guild_overview_tab/fields/GuildEmbedSplashUploadField.tsx:101
 #: src/components/modals/guild_tabs/guild_overview_tab/fields/GuildIconUploadField.tsx:107
 #: src/components/modals/guild_tabs/guild_overview_tab/fields/GuildInviteSplashUploadField.tsx:113
-#: src/components/modals/tabs/account_security_tab/SecurityTab.tsx:394
+#: src/components/modals/tabs/account_security_tab/SecurityTab.tsx:418
 #: src/components/modals/tabs/ExpressionPacksTab.tsx:96
 #: src/components/modals/tabs/ExpressionPacksTab.tsx:226
 #: src/components/modals/tabs/LinkedAccountsTab.tsx:191
@@ -17454,7 +17449,7 @@ msgstr "Odstranit z oblíbených"
 msgid "Remove from Group"
 msgstr "Odstranit ze skupiny"
 
-#: src/components/modals/AddGuildModal.tsx:333
+#: src/components/modals/AddGuildModal.tsx:335
 #: src/components/modals/EditGroupBottomSheet.tsx:218
 #: src/components/modals/EditGroupModal.tsx:199
 msgid "Remove Icon"
@@ -17477,11 +17472,11 @@ msgstr "Odstranit přepsání"
 msgid "Remove Pack"
 msgstr "Odstranit balíček"
 
-#: src/components/modals/tabs/account_security_tab/SecurityTab.tsx:380
+#: src/components/modals/tabs/account_security_tab/SecurityTab.tsx:404
 msgid "Remove Phone"
 msgstr "Odstranit telefon"
 
-#: src/components/modals/tabs/account_security_tab/SecurityTab.tsx:363
+#: src/components/modals/tabs/account_security_tab/SecurityTab.tsx:387
 msgid "Remove Phone Number"
 msgstr "Odstranit telefonní číslo"
 
@@ -17623,7 +17618,7 @@ msgstr "Odstraní oprávnění PŘIPOJIT_SOUBORY ve všech kanálech (skryje tla
 msgid "Removes SEND_MESSAGES permission in all channels (disables textarea and all buttons)"
 msgstr "Odstraní oprávnění ODESÍLAT_ZPRÁVY ve všech kanálech (zakáže textové pole a všechna tlačítka)"
 
-#: src/components/pages/OAuthAuthorizePage.tsx:660
+#: src/components/pages/OAuthAuthorizePage.tsx:640
 msgid "Removing permissions could limit the bot's features."
 msgstr "Odstranění oprávnění může omezit funkce bota."
 
@@ -17636,7 +17631,7 @@ msgstr "Odstranění balíčku jej odinstaluje z vašeho účtu."
 msgid "Removing the timeout will allow <0>{0}</0> to send messages, react, and join voice channels again."
 msgstr "Odstraněním timeoutu <0>{0}</0> znovu umožníte posílat zprávy, reagovat a vstupovat do hlasových kanálů."
 
-#: src/components/modals/tabs/account_security_tab/SecurityTab.tsx:322
+#: src/components/modals/tabs/account_security_tab/SecurityTab.tsx:335
 msgid "Rename"
 msgstr "Přejmenovat"
 
@@ -17695,7 +17690,7 @@ msgstr "Komunita přejmenována na {0}."
 msgid "Render all your messages as unknown message type"
 msgstr "Zobrazit všechny vaše zprávy jako neznámý typ zprávy"
 
-#: src/components/modals/components/plutonium/SubscriptionCard.tsx:227
+#: src/components/modals/components/plutonium/SubscriptionCard.tsx:216
 msgid "Renews on <0>{renewalDate}</0>."
 msgstr "Obnovuje se <0>{renewalDate}</0>."
 
@@ -17813,7 +17808,7 @@ msgstr "Požádat o export dat"
 msgid "Request Export"
 msgstr "Požádat o export"
 
-#: src/components/pages/OAuthAuthorizePage.tsx:814
+#: src/components/pages/OAuthAuthorizePage.tsx:783
 msgid "Requested scopes"
 msgstr "Požadované rozsahy"
 
@@ -17841,7 +17836,7 @@ msgstr "Vyžadovat OAuth2 code grant"
 msgid "Require two-factor authentication for moderators before they can ban, kick, timeout, or remove messages."
 msgstr "Vyžadovat dvoufaktorové ověření pro moderátory předtím, než mohou zakázat, vykopnout, dát timeout nebo odstranit zprávy."
 
-#: src/components/pages/OAuthAuthorizePage.tsx:839
+#: src/components/pages/OAuthAuthorizePage.tsx:808
 msgid "Required"
 msgstr "Povinné"
 
@@ -17955,7 +17950,7 @@ msgstr "Obnovit všechna přepsání na výchozí téma"
 msgid "Reset app data"
 msgstr "Obnovit data aplikace"
 
-#: src/components/BootstrapErrorScreen.tsx:74
+#: src/components/BootstrapErrorScreen.tsx:75
 msgid "Reset App Data"
 msgstr "Obnovit data aplikace"
 
@@ -18038,8 +18033,8 @@ msgstr "Obnovit maximalizované okno"
 msgid "Restore window"
 msgstr "Obnovit okno"
 
-#: src/components/modals/components/plutonium/SubscriptionCard.tsx:263
-#: src/components/modals/components/plutonium/SubscriptionCard.tsx:265
+#: src/components/modals/components/plutonium/SubscriptionCard.tsx:252
+#: src/components/modals/components/plutonium/SubscriptionCard.tsx:254
 msgid "Resubscribe"
 msgstr "Znovu odebírat"
 
@@ -18077,6 +18072,7 @@ msgid "reveal"
 msgstr "odhalit"
 
 #: src/components/modals/tabs/account_security_tab/AccountTab.tsx:76
+#: src/components/modals/tabs/account_security_tab/SecurityTab.tsx:370
 msgid "Reveal"
 msgstr "Odhalit"
 
@@ -18088,7 +18084,7 @@ msgstr "Odhalit spoiler"
 msgid "Review deletion"
 msgstr "Zkontrolovat smazání"
 
-#: src/components/pages/OAuthAuthorizePage.tsx:749
+#: src/components/pages/OAuthAuthorizePage.tsx:718
 msgid "Review what this app is asking for before you continue."
 msgstr "Před pokračováním si zkontrolujte, o co tato aplikace žádá."
 
@@ -18465,8 +18461,8 @@ msgid "Scope"
 msgstr "Rozsah"
 
 #: src/components/modals/tabs/applications_tab/application_detail/OAuthBuilderSection.tsx:75
-#: src/components/pages/OAuthAuthorizePage.tsx:577
-#: src/components/pages/OAuthAuthorizePage.tsx:713
+#: src/components/pages/OAuthAuthorizePage.tsx:567
+#: src/components/pages/OAuthAuthorizePage.tsx:693
 msgid "Scopes"
 msgstr "Rozsahy"
 
@@ -18770,8 +18766,8 @@ msgstr "Zabezpečte svůj účet"
 msgid "security"
 msgstr "bezpečnost"
 
-#: src/components/modals/tabs/account_security_tab/Inline.tsx:81
-#: src/components/modals/tabs/AccountSecurityTab.tsx:90
+#: src/components/modals/tabs/account_security_tab/Inline.tsx:82
+#: src/components/modals/tabs/AccountSecurityTab.tsx:91
 #: src/components/modals/utils/SettingsConstants.tsx:298
 #: src/components/modals/utils/SettingsSectionRegistry.tsx:505
 msgid "Security"
@@ -18781,7 +18777,7 @@ msgstr "Zabezpečení"
 msgid "Security & Login"
 msgstr "Zabezpečení a přihlášení"
 
-#: src/components/modals/tabs/account_security_tab/SecurityTab.tsx:203
+#: src/components/modals/tabs/account_security_tab/SecurityTab.tsx:216
 msgid "Security Features"
 msgstr "Bezpečnostní funkce"
 
@@ -18832,7 +18828,7 @@ msgstr "Vyberte kanál nebo kategorii"
 msgid "Select a Community"
 msgstr "Vyberte komunitu"
 
-#: src/components/pages/OAuthAuthorizePage.tsx:866
+#: src/components/pages/OAuthAuthorizePage.tsx:835
 msgid "Select a community where you have <0>Manage Community</0> permissions."
 msgstr "Vyberte komunitu, ve které máte oprávnění <0>Spravovat komunitu</0>."
 
@@ -18864,7 +18860,7 @@ msgstr "Vyberte způsob ověření."
 msgid "Select a violation category."
 msgstr "Vyberte kategorii porušení."
 
-#: src/components/modals/channel_tabs/ChannelOverviewTab.tsx:729
+#: src/components/modals/channel_tabs/ChannelOverviewTab.tsx:768
 msgid "Select a voice region for this channel. Automatic uses the closest region."
 msgstr "Vyberte hlasovou oblast pro tento kanál. Automaticky se použije nejbližší oblast."
 
@@ -19802,7 +19798,7 @@ msgstr "Odhlásit se z účtu {displayName}"
 msgid "Signal strength loading"
 msgstr "Načítání síly signálu"
 
-#: src/components/pages/OAuthAuthorizePage.tsx:788
+#: src/components/pages/OAuthAuthorizePage.tsx:757
 msgid "Signed in as"
 msgstr "Přihlášen jako"
 
@@ -19936,7 +19932,7 @@ msgid "Slower"
 msgstr "Pomaleji"
 
 #: src/components/channel/SlowmodeIndicator.tsx:64
-#: src/components/modals/channel_tabs/ChannelOverviewTab.tsx:616
+#: src/components/modals/channel_tabs/ChannelOverviewTab.tsx:655
 #: src/components/modals/tabs/developer_options_tab/MockingTab.tsx:117
 msgid "Slowmode"
 msgstr "Pomalý režim"
@@ -19990,11 +19986,11 @@ msgstr "Menší velikost médií"
 msgid "sms"
 msgstr "sms"
 
-#: src/components/modals/tabs/account_security_tab/SecurityTab.tsx:412
+#: src/components/modals/tabs/account_security_tab/SecurityTab.tsx:436
 msgid "SMS Backup"
 msgstr "Záloha SMS"
 
-#: src/components/modals/tabs/account_security_tab/SecurityTab.tsx:432
+#: src/components/modals/tabs/account_security_tab/SecurityTab.tsx:456
 msgid "SMS backup is disabled for partners"
 msgstr "Záloha SMS je pro partnery zakázaná"
 
@@ -20007,15 +20003,15 @@ msgstr "SMS kód"
 msgid "SMS Code"
 msgstr "SMS kód"
 
-#: src/components/modals/tabs/account_security_tab/SecurityTab.tsx:406
+#: src/components/modals/tabs/account_security_tab/SecurityTab.tsx:430
 msgid "SMS Two-Factor Authentication"
 msgstr "Dvoufázové ověření pomocí SMS"
 
-#: src/components/modals/tabs/account_security_tab/SecurityTab.tsx:151
+#: src/components/modals/tabs/account_security_tab/SecurityTab.tsx:164
 msgid "SMS two-factor authentication adds an additional layer of security to your account by requiring a verification code sent to your phone number when signing in."
 msgstr "Dvoufázové ověření pomocí SMS přidává k vašemu účtu další vrstvu zabezpečení tím, že při přihlášení vyžaduje ověřovací kód zaslaný na vaše telefonní číslo."
 
-#: src/components/modals/tabs/account_security_tab/SecurityTab.tsx:416
+#: src/components/modals/tabs/account_security_tab/SecurityTab.tsx:440
 msgid "SMS two-factor authentication is enabled"
 msgstr "Dvoufázové ověření pomocí SMS je povoleno"
 
@@ -20291,7 +20287,7 @@ msgstr "Spoiler obsah"
 msgid "spoilers"
 msgstr "spoilery"
 
-#: src/components/modals/AddGuildModal.tsx:179
+#: src/components/modals/AddGuildModal.tsx:180
 msgid "Sports Fans"
 msgstr "Fanoušci sportu"
 
@@ -20495,7 +20491,7 @@ msgstr "Hustota nálepek"
 msgid "Sticker pack"
 msgstr "Balíček nálepek"
 
-#: src/actions/InviteActionCreators.tsx:291
+#: src/actions/InviteActionCreators.tsx:314
 msgid "Sticker pack creation limit reached"
 msgstr "Byl dosažen limit vytváření balíčků nálepek"
 
@@ -20503,7 +20499,7 @@ msgstr "Byl dosažen limit vytváření balíčků nálepek"
 msgid "Sticker Pack Invite"
 msgstr "Pozvánka do balíčku nálepek"
 
-#: src/actions/InviteActionCreators.tsx:277
+#: src/actions/InviteActionCreators.tsx:300
 msgid "Sticker pack limit reached"
 msgstr "Byl dosažen limit balíčků nálepek"
 
@@ -20634,15 +20630,15 @@ msgstr "streamování"
 msgid "Streaming"
 msgstr "Streamování"
 
-#: src/components/modals/AddGuildModal.tsx:148
+#: src/components/modals/AddGuildModal.tsx:149
 msgid "Study Buddies United"
 msgstr "Spojení učením"
 
-#: src/components/modals/AddGuildModal.tsx:181
+#: src/components/modals/AddGuildModal.tsx:182
 msgid "Study Group"
 msgstr "Studijní skupina"
 
-#: src/components/modals/AddGuildModal.tsx:167
+#: src/components/modals/AddGuildModal.tsx:168
 msgid "Study Hall"
 msgstr "Studovna"
 
@@ -20732,7 +20728,7 @@ msgstr "návrhy"
 msgid "Summary"
 msgstr "Shrnutí"
 
-#: src/components/modals/AddGuildModal.tsx:164
+#: src/components/modals/AddGuildModal.tsx:165
 msgid "Support Circle"
 msgstr "Okruh podpory"
 
@@ -20793,7 +20789,7 @@ msgstr "Švédština"
 msgid "switch"
 msgstr "přepnout"
 
-#: src/components/pages/OAuthAuthorizePage.tsx:801
+#: src/components/pages/OAuthAuthorizePage.tsx:770
 msgid "Switch account"
 msgstr "Přepnout účet"
 
@@ -20957,7 +20953,7 @@ msgstr "Štítky ({0}/10)"
 msgid "Tap to add a note"
 msgstr "Klepněte pro přidání poznámky"
 
-#: src/components/pages/OAuthAuthorizePage.tsx:766
+#: src/components/pages/OAuthAuthorizePage.tsx:735
 msgid "Target community"
 msgstr "Cílová komunita"
 
@@ -20966,7 +20962,7 @@ msgstr "Cílová komunita"
 msgid "Targeted attacks, threats, or sustained harassment"
 msgstr "Cílené útoky, hrozby nebo dlouhodobé obtěžování"
 
-#: src/components/modals/AddGuildModal.tsx:157
+#: src/components/modals/AddGuildModal.tsx:158
 msgid "Team Alpha"
 msgstr "Tým Alpha"
 
@@ -21096,7 +21092,7 @@ msgstr "To nevypadá jako platná barva. Zkuste hex, rgb(), hsl() nebo název ba
 msgid "That doesn't look like a valid URL."
 msgstr "To nevypadá jako platná URL."
 
-#: src/components/modals/AddGuildModal.tsx:264
+#: src/components/modals/AddGuildModal.tsx:265
 #: src/components/modals/EditGroupBottomSheet.tsx:123
 #: src/components/modals/EditGroupModal.tsx:116
 #: src/components/modals/guild_tabs/guild_overview_tab/hooks/useGuildImageAssetField.tsx:203
@@ -21111,7 +21107,7 @@ msgid "That message didn't delete"
 msgstr "Ta zpráva se nesmazala"
 
 #. placeholder {0}: invite.pack.name
-#: src/actions/InviteActionCreators.tsx:104
+#: src/actions/InviteActionCreators.tsx:123
 msgid "The {packLabel} {0} has been installed."
 msgstr "Balíček {packLabel} {0} byl nainstalován."
 
@@ -21124,11 +21120,11 @@ msgid "The app has crashed. Checking for updates that might fix this issue..."
 msgstr "Aplikace spadla. Kontrolujeme aktualizace, které by mohly problém vyřešit…"
 
 #. placeholder {0}: successState.guildName
-#: src/components/pages/OAuthAuthorizePage.tsx:554
+#: src/components/pages/OAuthAuthorizePage.tsx:544
 msgid "The bot has been added to <0>{0}</0>."
 msgstr "Bot byl přidán do <0>{0}</0>."
 
-#: src/components/pages/OAuthAuthorizePage.tsx:558
+#: src/components/pages/OAuthAuthorizePage.tsx:548
 msgid "The bot has been added."
 msgstr "Bot byl přidán."
 
@@ -21161,7 +21157,7 @@ msgstr "FluxerTag <0>{fluxerTag}</0> je již obsazený. Pokračování automatic
 msgid "The job starts 24 hours after you confirm and can be canceled or restarted anytime"
 msgstr "Úkol začíná 24 hodin po potvrzení a lze ho kdykoli zrušit nebo restartovat"
 
-#: src/components/modals/AddGuildModal.tsx:147
+#: src/components/modals/AddGuildModal.tsx:148
 msgid "The Midnight Gamers"
 msgstr "Noční hráči"
 
@@ -21182,7 +21178,7 @@ msgstr "Zadané redirect_uri není pro tuto aplikaci registrováno."
 msgid "The role <0>\"{roleName}\"</0> could not be deleted at this time. Please try again."
 msgstr "Role <0>\"{roleName}\"</0> momentálně nemohla být smazána. Zkuste to prosím znovu."
 
-#: src/components/modals/AddGuildModal.tsx:185
+#: src/components/modals/AddGuildModal.tsx:186
 msgid "The Squad"
 msgstr "Parta"
 
@@ -21206,7 +21202,7 @@ msgstr "Časový limit nesmí přesáhnout 365 dní (31536000 sekund)."
 msgid "The URL of the Fluxer instance you want to sign in to."
 msgstr "URL instance Fluxer, ke které se chcete přihlásit."
 
-#: src/components/modals/channel_tabs/ChannelOverviewTab.tsx:496
+#: src/components/modals/channel_tabs/ChannelOverviewTab.tsx:535
 msgid "The URL this link channel points to."
 msgstr "URL, na kterou tento odkazový kanál odkazuje."
 
@@ -21336,7 +21332,7 @@ msgstr "Tato aplikace"
 msgid "This attachment has expired"
 msgstr "Tato příloha vypršela"
 
-#: src/components/pages/OAuthAuthorizePage.tsx:647
+#: src/components/pages/OAuthAuthorizePage.tsx:627
 msgid "This bot is requesting the Administrator permission. We do not recommend granting this to production apps unless you fully trust the developer. Consider asking them to request a reduced set of permissions. Close this page if you are unsure."
 msgstr "Tento bot žádá o oprávnění správce. Nedoporučujeme ho udělovat produkčním aplikacím, pokud plně nedůvěřujete vývojáři. Zvažte požádání o omezený soubor oprávnění. Pokud si nejste jistí, zavřete tuto stránku."
 
@@ -22055,7 +22051,7 @@ msgstr "Nahoru"
 msgid "Top Tooltip"
 msgstr "Horní popisek"
 
-#: src/components/modals/channel_tabs/ChannelOverviewTab.tsx:519
+#: src/components/modals/channel_tabs/ChannelOverviewTab.tsx:558
 msgid "Topic"
 msgstr "Téma"
 
@@ -22100,7 +22096,7 @@ msgstr "překlad"
 msgid "Travel & Places"
 msgstr "Cestování a místa"
 
-#: src/components/modals/AddGuildModal.tsx:173
+#: src/components/modals/AddGuildModal.tsx:174
 msgid "Travel Buddies"
 msgstr "Cestovní parťáci"
 
@@ -22164,12 +22160,12 @@ msgstr "Zkuste jiný výraz nebo filtr"
 msgid "Try again"
 msgstr "Zkuste to znovu"
 
-#: src/components/BootstrapErrorScreen.tsx:71
+#: src/components/BootstrapErrorScreen.tsx:72
 #: src/components/bottomsheets/ChannelSearchBottomSheet.tsx:317
 #: src/components/channel/ChannelSearchResults.tsx:694
 #: src/components/modals/channel_tabs/ChannelInvitesTab.tsx:231
 #: src/components/modals/channel_tabs/ChannelWebhooksTab.tsx:162
-#: src/components/NetworkErrorScreen.tsx:56
+#: src/components/NetworkErrorScreen.tsx:57
 #: src/components/pages/SsoCallbackPage.tsx:116
 msgid "Try Again"
 msgstr "Zkuste to znovu"
@@ -22226,7 +22222,7 @@ msgstr "Turečtina"
 msgid "Turn Off All Device Cameras"
 msgstr "Vypnout všechny kamery zařízení"
 
-#: src/components/pages/OAuthAuthorizePage.tsx:817
+#: src/components/pages/OAuthAuthorizePage.tsx:786
 msgid "Turn off anything you're not comfortable with. Some features may stop working."
 msgstr "Vypněte cokoliv, s čím nejste v pohodě. Některé funkce mohou přestat fungovat."
 
@@ -22260,7 +22256,7 @@ msgstr "Zastavit stream"
 msgid "Turn On Camera"
 msgstr "Zapnout kameru"
 
-#: src/components/pages/OAuthAuthorizePage.tsx:852
+#: src/components/pages/OAuthAuthorizePage.tsx:821
 msgid "Turning off scopes may prevent the app from working correctly."
 msgstr "Vypnutí oprávnění může způsobit nesprávné fungování aplikace."
 
@@ -22272,11 +22268,11 @@ msgstr "Vypnutí tímto způsobem skryje kameru jen ve vašem pohledu. Ostatní 
 msgid "Turning this off only hides your screen share from your own view. Others in the call can still see your screen."
 msgstr "Vypnutí této možnosti pouze skryje vaše sdílení obrazovky z vašeho pohledu. Ostatní v hovoru stále mohou vidět vaši obrazovku."
 
-#: src/components/modals/channel_tabs/ChannelOverviewTab.tsx:471
+#: src/components/modals/channel_tabs/ChannelOverviewTab.tsx:510
 msgid "Tweak this category's basics."
 msgstr "Upravte základy této kategorie."
 
-#: src/components/modals/channel_tabs/ChannelOverviewTab.tsx:471
+#: src/components/modals/channel_tabs/ChannelOverviewTab.tsx:510
 msgid "Tweak this channel's basics."
 msgstr "Upravte základy tohoto kanálu."
 
@@ -22299,7 +22295,7 @@ msgstr "dvoufaktorové"
 msgid "Two-factor authentication"
 msgstr "Dvoufaktorové ověření"
 
-#: src/components/modals/tabs/account_security_tab/SecurityTab.tsx:218
+#: src/components/modals/tabs/account_security_tab/SecurityTab.tsx:231
 #: src/components/modals/utils/SettingsSearchIndex.tsx:123
 msgid "Two-Factor Authentication"
 msgstr "Dvoufaktorové ověření"
@@ -22312,7 +22308,7 @@ msgstr "Dvoufaktorové ověření zakázáno"
 msgid "Two-factor authentication enabled"
 msgstr "Dvoufaktorové ověření povoleno"
 
-#: src/components/modals/tabs/account_security_tab/SecurityTab.tsx:228
+#: src/components/modals/tabs/account_security_tab/SecurityTab.tsx:241
 msgid "Two-factor authentication is enabled"
 msgstr "Dvoufaktorové ověření je povoleno"
 
@@ -22405,11 +22401,11 @@ msgstr "Ukrajinština"
 msgid "Ultra (1440p)"
 msgstr "Ultra (1440p)"
 
-#: src/actions/InviteActionCreators.tsx:323
+#: src/actions/InviteActionCreators.tsx:346
 msgid "Unable to install emoji pack"
 msgstr "Nelze nainstalovat balíček emoji"
 
-#: src/actions/InviteActionCreators.tsx:324
+#: src/actions/InviteActionCreators.tsx:347
 msgid "Unable to install sticker pack"
 msgstr "Nelze nainstalovat balíček samolepek"
 
@@ -22761,7 +22757,7 @@ msgstr "Odemkněte HD sdílení obrazovky s Plutoniem"
 msgid "Unlock HD Video with Plutonium"
 msgstr "Odemkněte HD video s Plutoniem"
 
-#: src/components/modals/components/PlutoniumContent.tsx:168
+#: src/components/modals/components/PlutoniumContent.tsx:149
 msgid "Unlock higher limits and exclusive features while supporting an independent communication platform."
 msgstr "Odemkněte vyšší limity a exkluzivní funkce a podpořte nezávislou komunikační platformu."
 
@@ -23161,7 +23157,7 @@ msgstr "Nahrát vstupní zvuk"
 msgid "Upload File"
 msgstr "Nahrát soubor"
 
-#: src/components/modals/AddGuildModal.tsx:329
+#: src/components/modals/AddGuildModal.tsx:331
 #: src/components/modals/EditGroupBottomSheet.tsx:214
 #: src/components/modals/EditGroupModal.tsx:195
 #: src/components/modals/guild_tabs/guild_overview_tab/fields/GuildIconUploadField.tsx:97
@@ -23209,7 +23205,7 @@ msgstr "Nahrávám {emojiText}. Může to chvíli trvat."
 msgid "Uploading Emojis"
 msgstr "Nahrávají se emoji"
 
-#: src/components/modals/channel_tabs/ChannelOverviewTab.tsx:491
+#: src/components/modals/channel_tabs/ChannelOverviewTab.tsx:530
 #: src/components/modals/ChannelCreateModal.tsx:90
 msgid "URL"
 msgstr "URL"
@@ -23231,7 +23227,7 @@ msgstr "varování URL"
 msgid "URLs to download any attachments from your messages"
 msgstr "URL pro stažení jakýchkoli příloh z vašich zpráv"
 
-#: src/components/modals/channel_tabs/ChannelOverviewTab.tsx:183
+#: src/components/modals/channel_tabs/ChannelOverviewTab.tsx:196
 #: src/components/voice/VoiceRegionSelector.tsx:75
 #: src/components/voice/VoiceSettingsMenus.tsx:433
 msgid "US East"
@@ -23254,7 +23250,7 @@ msgstr "Použít aktuální"
 msgid "Use actual premium type"
 msgstr "Použijte skutečný prémiový typ"
 
-#: src/components/modals/tabs/account_security_tab/SecurityTab.tsx:230
+#: src/components/modals/tabs/account_security_tab/SecurityTab.tsx:243
 msgid "Use an authenticator app to generate codes for two-factor authentication"
 msgstr "Použijte aplikaci autentifikátoru k vygenerování kódů pro dvoufázové ověření"
 
@@ -23323,7 +23319,7 @@ msgstr "Použijte globální profil"
 msgid "Use light theme"
 msgstr "Použít světlé téma"
 
-#: src/components/modals/tabs/account_security_tab/SecurityTab.tsx:277
+#: src/components/modals/tabs/account_security_tab/SecurityTab.tsx:290
 msgid "Use passkeys for passwordless sign-in and two-factor authentication"
 msgstr "Použijte přístupové klíče pro přihlášení bez hesla a dvoufázové ověření"
 
@@ -23864,7 +23860,7 @@ msgstr "Zobrazit a spravovat zabanované uživatele."
 msgid "View and manage every webhook configured across your community."
 msgstr "Zobrazit a spravovat všechny webhooky nakonfigurované ve vaší komunitě."
 
-#: src/components/modals/tabs/account_security_tab/SecurityTab.tsx:260
+#: src/components/modals/tabs/account_security_tab/SecurityTab.tsx:273
 msgid "View and manage your backup codes for account recovery"
 msgstr "Zobrazit a spravovat záložní kódy pro obnovení účtu"
 
@@ -23889,7 +23885,7 @@ msgstr "Zobrazit ovládání hovoru"
 msgid "View Channel"
 msgstr "Zobrazit kanál"
 
-#: src/components/modals/tabs/account_security_tab/SecurityTab.tsx:268
+#: src/components/modals/tabs/account_security_tab/SecurityTab.tsx:281
 msgid "View Codes"
 msgstr "Zobrazit kódy"
 
@@ -24004,7 +24000,8 @@ msgstr "VIP hlas"
 msgid "visibility"
 msgstr "viditelnost"
 
-#: src/components/modals/components/plutonium/SubscriptionCard.tsx:121
+#: src/components/modals/components/FeatureComparisonTable.tsx:149
+#: src/components/modals/components/plutonium/SubscriptionCard.tsx:110
 #: src/utils/modals/guild_tabs/GuildAuditLogTabUtils.tsx:283
 msgid "Visionary"
 msgstr "Visionary"
@@ -24026,7 +24023,7 @@ msgid "Visionary Badge Override"
 msgstr "Překrytí odznaku Visionary"
 
 #. placeholder {0}: profile.premiumLifetimeSequence
-#: src/components/popouts/UserProfileBadges.tsx:150
+#: src/components/popouts/UserProfileBadges.tsx:136
 msgid "Visionary ID #{0}"
 msgstr "ID Visionary #{0}"
 
@@ -24175,7 +24172,7 @@ msgstr "Přehrávač hlasových zpráv"
 msgid "Voice Mute"
 msgstr "Vypnout mikrofon"
 
-#: src/components/modals/channel_tabs/ChannelOverviewTab.tsx:640
+#: src/components/modals/channel_tabs/ChannelOverviewTab.tsx:679
 msgid "Voice Quality"
 msgstr "Kvalita hlasu"
 
@@ -24184,7 +24181,7 @@ msgstr "Kvalita hlasu"
 msgid "Voice recording is not supported in this browser."
 msgstr "Nahrávání hlasu v tomto prohlížeči není podporováno."
 
-#: src/components/modals/channel_tabs/ChannelOverviewTab.tsx:728
+#: src/components/modals/channel_tabs/ChannelOverviewTab.tsx:767
 #: src/components/voice/VoiceSettingsMenus.tsx:483
 msgid "Voice Region"
 msgstr "Hlasová oblast"
@@ -24218,7 +24215,7 @@ msgstr "Hlasitost"
 msgid "Volume Control"
 msgstr "Ovládání hlasitosti"
 
-#: src/components/modals/AddGuildModal.tsx:154
+#: src/components/modals/AddGuildModal.tsx:155
 msgid "Volunteer Heroes"
 msgstr "Dobrovolní hrdinové"
 
@@ -24401,8 +24398,8 @@ msgid "We'll verify your new email with a one-time code."
 msgstr "Nový e-mail ověříme pomocí jednorázového kódu."
 
 #: src/components/NetworkErrorScreen.tsx:39
-msgid "We're having trouble connecting to Fluxer's servers. This could be a temporary network issue or scheduled maintenance."
-msgstr "Máme problém připojit se k serverům Fluxer. Může jít o dočasný problém sítě nebo plánovanou údržbu."
+msgid "We're having trouble connecting to Echowire's servers. This could be a temporary network issue or scheduled maintenance."
+msgstr ""
 
 #: src/components/modals/tabs/DevicesTab.tsx:234
 msgid "We're having trouble connecting to the space-time continuum. Please check your connection and try again."
@@ -24488,7 +24485,7 @@ msgstr "Webhooky"
 msgid "Webhooks updated"
 msgstr "Webhooky aktualizovány"
 
-#: src/components/modals/AddGuildModal.tsx:160
+#: src/components/modals/AddGuildModal.tsx:161
 msgid "Weekend Warriors"
 msgstr "Víkendoví válečníci"
 
@@ -24698,7 +24695,7 @@ msgstr "Páni, to je hustý."
 msgid "Why are you reporting this?"
 msgstr "Proč to hlásíš?"
 
-#: src/components/pages/OAuthAuthorizePage.tsx:757
+#: src/components/pages/OAuthAuthorizePage.tsx:726
 msgid "Will send you back to"
 msgstr "Vrátí tě zpět na"
 
@@ -24718,7 +24715,7 @@ msgstr "S Plutonium můžete používat animované avatary a bannery (ve formát
 msgid "Withdraw"
 msgstr "Odvolat"
 
-#: src/components/modals/AddGuildModal.tsx:182
+#: src/components/modals/AddGuildModal.tsx:183
 msgid "Work Friends"
 msgstr "Kolegové"
 
@@ -24893,7 +24890,7 @@ msgstr "Můžete nahrát pouze 1 soubor najednou. Zkuste to znovu s menším po�
 msgid "You can pin messages in this conversation for everyone to see."
 msgstr "V této konverzaci můžeš připínat zprávy, aby je viděli všichni."
 
-#: src/components/modals/components/plutonium/SubscriptionCard.tsx:176
+#: src/components/modals/components/plutonium/SubscriptionCard.tsx:165
 msgid "You can redeem additional gift codes to <0>extend</0> your gift time."
 msgstr "Můžete uplatnit další dárkové kódy k <0>prodloužení</0> vašeho dárkového času."
 
@@ -24933,7 +24930,7 @@ msgstr "S reakcemi ve výsledcích hledání nemůžeš interagovat, mohlo by to
 #: src/components/layout/ChannelItem.tsx:213
 #: src/components/layout/ChannelItem.tsx:400
 #: src/stores/voice/MediaEngineFacade.tsx:168
-#: src/stores/voice/MediaEngineFacade.tsx:828
+#: src/stores/voice/MediaEngineFacade.tsx:879
 msgid "You can't join while you're on timeout."
 msgstr "Když máš timeout, nemůžeš se připojit."
 
@@ -25023,11 +25020,11 @@ msgstr "Zatím nemáš žádné vlastní úpravy tématu k sdílení."
 msgid "You don't have permission to connect to this voice channel."
 msgstr "Nemáš oprávnění připojit se k tomuto hlasovému kanálu."
 
-#: src/actions/InviteActionCreators.tsx:320
+#: src/actions/InviteActionCreators.tsx:343
 msgid "You don't have permission to install this emoji pack."
 msgstr "Nemáš oprávnění nainstalovat tento balíček emoji."
 
-#: src/actions/InviteActionCreators.tsx:321
+#: src/actions/InviteActionCreators.tsx:344
 msgid "You don't have permission to install this sticker pack."
 msgstr "Nemáš oprávnění nainstalovat tento balíček samolepek."
 
@@ -25059,23 +25056,23 @@ msgstr "Máte nový dárkový kód, který na vás čeká!"
 msgid "You have a new gift code waiting in your Gift Inventory."
 msgstr "Máte nový dárkový kód čekající ve vaší dárkové inventáři."
 
-#: src/components/modals/components/plutonium/SubscriptionCard.tsx:200
+#: src/components/modals/components/plutonium/SubscriptionCard.tsx:189
 msgid "You have all <0/> for <1>{monthlyPrice}/month</1>."
 msgstr "Máš vše <0/> za <1>{monthlyPrice}/měsíc</1>."
 
-#: src/components/modals/components/plutonium/SubscriptionCard.tsx:205
+#: src/components/modals/components/plutonium/SubscriptionCard.tsx:194
 msgid "You have all <0/> for <1>{yearlyPrice}/year</1>."
 msgstr "Máš vše <0/> za <1>{yearlyPrice}/rok</1>."
 
-#: src/components/modals/components/plutonium/SubscriptionCard.tsx:210
+#: src/components/modals/components/plutonium/SubscriptionCard.tsx:199
 msgid "You have all <0/> for your subscription period."
 msgstr "Máš všechny <0/> po dobu svého předplatného."
 
-#: src/components/modals/components/plutonium/SubscriptionCard.tsx:195
+#: src/components/modals/components/plutonium/SubscriptionCard.tsx:184
 msgid "You have all <0/> forever. No subscriptions, no renewals."
 msgstr "Máš všechny <0/> navždy. Žádná předplatná, žádné obnovování."
 
-#: src/components/modals/components/plutonium/SubscriptionCard.tsx:170
+#: src/components/modals/components/plutonium/SubscriptionCard.tsx:159
 msgid "You have all <0/> via a <1>gift subscription</1> until <2>{giftEndDate}</2>. It <3>won't renew</3>."
 msgstr "Máš všechny <0/> díky <1>dárkovému předplatnému</1> až do <2>{giftEndDate}</2>. To se <3>neobnoví</3>."
 
@@ -25083,35 +25080,35 @@ msgstr "Máš všechny <0/> díky <1>dárkovému předplatnému</1> až do <2>{g
 msgid "You have blocked {username}. Unblock them to send messages."
 msgstr "Blokoval(a) jsi {username}. Odblokuj ho/ji, abys mohl(a) posílat zprávy."
 
-#: src/actions/InviteActionCreators.tsx:264
+#: src/actions/InviteActionCreators.tsx:287
 msgid "You have created the maximum of {limit} emoji pack. Delete one to create another."
 msgstr "Vytvořil(a) jsi maximální počet {limit} balíčků emoji. Smaž jeden, abys vytvořil(a) další."
 
-#: src/actions/InviteActionCreators.tsx:265
+#: src/actions/InviteActionCreators.tsx:288
 msgid "You have created the maximum of {limit} emoji packs. Delete one to create another."
 msgstr "Vytvořil(a) jsi maximální počet {limit} balíčků emoji. Smaž jeden, abys vytvořil(a) další."
 
-#: src/actions/InviteActionCreators.tsx:296
+#: src/actions/InviteActionCreators.tsx:319
 msgid "You have created the maximum of {limit} sticker pack. Delete one to create another."
 msgstr "Vytvořil(a) jsi maximální počet {limit} balíčků nálepek. Smaž jeden, abys vytvořil(a) další."
 
-#: src/actions/InviteActionCreators.tsx:297
+#: src/actions/InviteActionCreators.tsx:320
 msgid "You have created the maximum of {limit} sticker packs. Delete one to create another."
 msgstr "Vytvořil(a) jsi maximální počet {limit} balíčků nálepek. Smaž jeden, abys vytvořil(a) další."
 
-#: src/actions/InviteActionCreators.tsx:250
+#: src/actions/InviteActionCreators.tsx:273
 msgid "You have installed the maximum of {limit} emoji pack. Remove one to install another."
 msgstr "Nainstaloval(a) jsi maximální počet {limit} balíčků emoji. Odstraň jeden, abys nainstaloval(a) další."
 
-#: src/actions/InviteActionCreators.tsx:251
+#: src/actions/InviteActionCreators.tsx:274
 msgid "You have installed the maximum of {limit} emoji packs. Remove one to install another."
 msgstr "Nainstaloval(a) jsi maximální počet {limit} balíčků emoji. Odstraň jeden, abys nainstaloval(a) další."
 
-#: src/actions/InviteActionCreators.tsx:282
+#: src/actions/InviteActionCreators.tsx:305
 msgid "You have installed the maximum of {limit} sticker pack. Remove one to install another."
 msgstr "Nainstaloval(a) jsi maximální počet {limit} balíčků nálepek. Odstraň jeden, abys nainstaloval(a) další."
 
-#: src/actions/InviteActionCreators.tsx:283
+#: src/actions/InviteActionCreators.tsx:306
 msgid "You have installed the maximum of {limit} sticker packs. Remove one to install another."
 msgstr "Nainstaloval(a) jsi maximální počet {limit} balíčků nálepek. Odstraň jeden, abys nainstaloval(a) další."
 
@@ -25119,19 +25116,19 @@ msgstr "Nainstaloval(a) jsi maximální počet {limit} balíčků nálepek. Odst
 msgid "You have no friends yet"
 msgstr "Ještě nemáš žádné přátele"
 
-#: src/actions/InviteActionCreators.tsx:268
+#: src/actions/InviteActionCreators.tsx:291
 msgid "You have reached the limit for creating emoji packs. Delete one of your packs to create another."
 msgstr "Dosáhl(a) jsi limitu pro vytváření balíčků emoji. Odstraň jeden z nich, abys mohl(a) vytvořit nový."
 
-#: src/actions/InviteActionCreators.tsx:300
+#: src/actions/InviteActionCreators.tsx:323
 msgid "You have reached the limit for creating sticker packs. Delete one of your packs to create another."
 msgstr "Dosáhl(a) jsi limitu pro vytváření balíčků samolepek. Odstraň jeden z nich, abys mohl(a) vytvořit nový."
 
-#: src/actions/InviteActionCreators.tsx:254
+#: src/actions/InviteActionCreators.tsx:277
 msgid "You have reached the limit for installing emoji packs. Remove one of your installed packs to install another."
 msgstr "Dosáhl(a) jsi limitu pro instalaci balíčků emoji. Odeber jeden z nainstalovaných balíčků, abys mohl(a) nainstalovat jiný."
 
-#: src/actions/InviteActionCreators.tsx:286
+#: src/actions/InviteActionCreators.tsx:309
 msgid "You have reached the limit for installing sticker packs. Remove one of your installed packs to install another."
 msgstr "Dosáhl(a) jsi limitu pro instalaci balíčků samolepek. Odeber jeden z nainstalovaných balíčků, abys mohl(a) nainstalovat jiný."
 
@@ -25241,8 +25238,8 @@ msgstr "Abys mohl(a) posílat zprávy v této komunitě, musíš si svůj účet
 msgid "You need to verify your email to send messages in this community."
 msgstr "Abys mohl(a) posílat zprávy v této komunitě, musíš ověřit svůj e-mail."
 
-#: src/components/pages/OAuthAuthorizePage.tsx:688
-#: src/components/pages/OAuthAuthorizePage.tsx:948
+#: src/components/pages/OAuthAuthorizePage.tsx:668
+#: src/components/pages/OAuthAuthorizePage.tsx:917
 msgid "You will be taken to <0><1>{redirectHostname}</1></0> after authorizing."
 msgstr "Po autorizaci budeš přesměrován(a) na <0><1>{redirectHostname}</1></0>."
 
@@ -25260,7 +25257,7 @@ msgstr "Na desktopu nebudeš dostávat upozornění"
 msgid "You'll appear offline"
 msgstr "Budeš vypadat jako offline"
 
-#: src/components/pages/OAuthAuthorizePage.tsx:906
+#: src/components/pages/OAuthAuthorizePage.tsx:875
 msgid "You'll configure which permissions the bot receives on the next screen."
 msgstr "Na dalším panelu nastavíš, jaká oprávnění bot obdrží."
 
@@ -25599,11 +25596,11 @@ msgstr "vaše oblast"
 msgid "Your stream is still being broadcast"
 msgstr "Váš stream je stále vysílán"
 
-#: src/components/modals/components/plutonium/SubscriptionCard.tsx:156
+#: src/components/modals/components/plutonium/SubscriptionCard.tsx:145
 msgid "Your subscription ended, but you still have all <0/> until <1>{graceDate}</1>. Resubscribe to keep them."
 msgstr "Vaše předplatné skončilo, ale všechny výhody <0/> máte do <1>{graceDate}</1>. Znovu se přihlaste k odběru, abyste je zachoval(a)."
 
-#: src/components/modals/components/plutonium/SubscriptionCard.tsx:145
+#: src/components/modals/components/plutonium/SubscriptionCard.tsx:134
 msgid "Your subscription expired on <0>{expiredDate}</0>. You lost all <1/>. You can reactivate at any time."
 msgstr "Vaše předplatné vypršelo dne <0>{expiredDate}</0>. Ztratili jste všechny výhody <1/>. Můžete je kdykoli znovu aktivovat."
 
@@ -25619,7 +25616,7 @@ msgstr "Vaše předplatné bylo znovu aktivováno!"
 msgid "Your subscription has been set to cancel at the end of your billing period."
 msgstr "Vaše předplatné bylo naplánováno k ukončení na konci aktuálního fakturačního období."
 
-#: src/components/modals/components/plutonium/SubscriptionCard.tsx:188
+#: src/components/modals/components/plutonium/SubscriptionCard.tsx:177
 msgid "Your subscription will cancel on <0>{cancelDate}</0>. You'll lose all <1/> after that date."
 msgstr "Vaše předplatné se ukončí dne <0>{cancelDate}</0>. Po tomto datu přijdete o všechny výhody <1/>."
 

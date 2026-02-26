@@ -134,12 +134,12 @@ msgid "{0} of {totalAttachments}"
 msgstr "{0} a(z) {totalAttachments} közül"
 
 #. placeholder {0}: passkeys.length
-#: src/components/modals/tabs/account_security_tab/SecurityTab.tsx:288
+#: src/components/modals/tabs/account_security_tab/SecurityTab.tsx:301
 msgid "{0} passkey registered (max 10)"
 msgstr "{0} passkey regisztrálva (max 10)"
 
 #. placeholder {0}: passkeys.length
-#: src/components/modals/tabs/account_security_tab/SecurityTab.tsx:289
+#: src/components/modals/tabs/account_security_tab/SecurityTab.tsx:302
 msgid "{0} passkeys registered (max 10)"
 msgstr "{0} passkey regisztrálva (max 10)"
 
@@ -449,7 +449,7 @@ msgstr "{baseDescription} Ezt a korlátot az ön példányának adminisztrátora
 msgid "{baseDescription} With Plutonium, your per-file upload limit increases to {0}, plus animated avatars, longer messages, and many other premium features."
 msgstr "{baseDescription} A Plutóniummal a fájlonkénti feltöltési korlátod {0}-ra nő, emellett animált avatárok, hosszabb üzenetek és sok más prémium funkció is elérhető."
 
-#: src/components/pages/OAuthAuthorizePage.tsx:743
+#: src/components/pages/OAuthAuthorizePage.tsx:712
 msgid "{clientLabel} wants to connect"
 msgstr "{clientLabel} csatlakozni szeretne"
 
@@ -492,7 +492,7 @@ msgstr "{currentCount} / {0}"
 msgid "{days} days"
 msgstr "{days} nap"
 
-#: src/components/layout/guild_list/GuildListDMItem.tsx:199
+#: src/components/layout/guild_list/GuildListDMItem.tsx:198
 msgid "{displayName} (selected)"
 msgstr "{displayName} (kiválasztva)"
 
@@ -883,12 +883,12 @@ msgstr "{v} ajándék"
 msgid "{v} gifts"
 msgstr "{v} ajándék"
 
-#: src/components/modals/channel_tabs/ChannelOverviewTab.tsx:655
-#: src/components/modals/channel_tabs/ChannelOverviewTab.tsx:656
+#: src/components/modals/channel_tabs/ChannelOverviewTab.tsx:694
+#: src/components/modals/channel_tabs/ChannelOverviewTab.tsx:695
 msgid "{value} kbps"
 msgstr "{value} kbps"
 
-#: src/components/modals/channel_tabs/ChannelOverviewTab.tsx:688
+#: src/components/modals/channel_tabs/ChannelOverviewTab.tsx:727
 msgid "{value} participants"
 msgstr "{value} résztvevő"
 
@@ -1088,7 +1088,7 @@ msgstr "<0>Feloldotta a siketítést</0> a tagon."
 msgid "<0>Unmuted</0> the member."
 msgstr "<0>Feloldotta a némítást</0> a tagon."
 
-#: src/components/modals/tabs/account_security_tab/SecurityTab.tsx:373
+#: src/components/modals/tabs/account_security_tab/SecurityTab.tsx:397
 msgid "<0>Warning:</0> This will also disable SMS two-factor authentication."
 msgstr "<0>Figyelem:</0> Ez letiltja az SMS kétfaktoros hitelesítést is."
 
@@ -1103,7 +1103,7 @@ msgstr "1 nap"
 
 #: src/components/channel/CallMessage.tsx:70
 #: src/components/modals/BanMemberModal.tsx:56
-#: src/components/modals/channel_tabs/ChannelOverviewTab.tsx:171
+#: src/components/modals/channel_tabs/ChannelOverviewTab.tsx:184
 #: src/components/modals/InviteModal.tsx:77
 #: src/components/modals/InviteModal.tsx:201
 #: src/components/modals/PackInviteModal.tsx:48
@@ -1122,7 +1122,7 @@ msgstr "1 találat"
 msgid "1 Member"
 msgstr "1 Tag"
 
-#: src/components/modals/channel_tabs/ChannelOverviewTab.tsx:165
+#: src/components/modals/channel_tabs/ChannelOverviewTab.tsx:178
 #: src/components/modals/tabs/developer_options_tab/MockingTab.tsx:74
 #: src/utils/modals/guild_tabs/GuildOverviewTabUtils.tsx:61
 msgid "1 minute"
@@ -1192,13 +1192,13 @@ msgstr "1 év ajándék"
 msgid "1 Year of Plutonium"
 msgstr "1 év Plutonium"
 
-#: src/components/modals/channel_tabs/ChannelOverviewTab.tsx:168
+#: src/components/modals/channel_tabs/ChannelOverviewTab.tsx:181
 #: src/components/modals/tabs/developer_options_tab/MockingTab.tsx:77
 #: src/components/modals/TimeoutMemberOptions.tsx:36
 msgid "10 minutes"
 msgstr "10 perc"
 
-#: src/components/modals/channel_tabs/ChannelOverviewTab.tsx:162
+#: src/components/modals/channel_tabs/ChannelOverviewTab.tsx:175
 #: src/components/modals/tabs/developer_options_tab/MockingTab.tsx:72
 #: src/constants/TimeWindowPresets.tsx:55
 msgid "10 seconds"
@@ -1249,17 +1249,17 @@ msgstr "1440p"
 msgid "15 FPS"
 msgstr "15 FPS"
 
-#: src/components/modals/channel_tabs/ChannelOverviewTab.tsx:169
+#: src/components/modals/channel_tabs/ChannelOverviewTab.tsx:182
 #: src/constants/TimeWindowPresets.tsx:56
 #: src/utils/modals/guild_tabs/GuildOverviewTabUtils.tsx:63
 msgid "15 minutes"
 msgstr "15 perc"
 
-#: src/components/modals/channel_tabs/ChannelOverviewTab.tsx:163
+#: src/components/modals/channel_tabs/ChannelOverviewTab.tsx:176
 msgid "15 seconds"
 msgstr "15 másodperc"
 
-#: src/components/modals/channel_tabs/ChannelOverviewTab.tsx:172
+#: src/components/modals/channel_tabs/ChannelOverviewTab.tsx:185
 msgid "2 hours"
 msgstr "2 óra"
 
@@ -1271,7 +1271,7 @@ msgstr "2 tag (online)"
 msgid "2 members (typing)"
 msgstr "2 tag (ír)"
 
-#: src/components/modals/channel_tabs/ChannelOverviewTab.tsx:166
+#: src/components/modals/channel_tabs/ChannelOverviewTab.tsx:179
 #: src/components/modals/tabs/developer_options_tab/MockingTab.tsx:75
 msgid "2 minutes"
 msgstr "2 perc"
@@ -1344,7 +1344,7 @@ msgstr "3 hónap"
 msgid "30 FPS"
 msgstr "30 FPS"
 
-#: src/components/modals/channel_tabs/ChannelOverviewTab.tsx:170
+#: src/components/modals/channel_tabs/ChannelOverviewTab.tsx:183
 #: src/components/modals/InviteModal.tsx:76
 #: src/components/modals/InviteModal.tsx:199
 #: src/components/modals/PackInviteModal.tsx:47
@@ -1353,7 +1353,7 @@ msgstr "30 FPS"
 msgid "30 minutes"
 msgstr "30 perc"
 
-#: src/components/modals/channel_tabs/ChannelOverviewTab.tsx:164
+#: src/components/modals/channel_tabs/ChannelOverviewTab.tsx:177
 #: src/components/modals/tabs/developer_options_tab/MockingTab.tsx:73
 msgid "30 seconds"
 msgstr "30 másodperc"
@@ -1394,14 +1394,14 @@ msgstr "4K (2160p)"
 msgid "5 days"
 msgstr "5 nap"
 
-#: src/components/modals/channel_tabs/ChannelOverviewTab.tsx:167
+#: src/components/modals/channel_tabs/ChannelOverviewTab.tsx:180
 #: src/components/modals/tabs/developer_options_tab/MockingTab.tsx:76
 #: src/components/modals/TimeoutMemberOptions.tsx:35
 #: src/utils/modals/guild_tabs/GuildOverviewTabUtils.tsx:62
 msgid "5 minutes"
 msgstr "5 perc"
 
-#: src/components/modals/channel_tabs/ChannelOverviewTab.tsx:161
+#: src/components/modals/channel_tabs/ChannelOverviewTab.tsx:174
 msgid "5 seconds"
 msgstr "5 másodperc"
 
@@ -1415,7 +1415,7 @@ msgstr "5 használat"
 msgid "50 uses"
 msgstr "50 használat"
 
-#: src/components/modals/channel_tabs/ChannelOverviewTab.tsx:173
+#: src/components/modals/channel_tabs/ChannelOverviewTab.tsx:186
 #: src/components/modals/InviteModal.tsx:78
 #: src/components/modals/InviteModal.tsx:203
 #: src/components/modals/PackInviteModal.tsx:49
@@ -1608,8 +1608,8 @@ msgstr "Akadálymentesítés"
 msgid "account"
 msgstr "fiók"
 
-#: src/components/modals/tabs/account_security_tab/Inline.tsx:73
-#: src/components/modals/tabs/AccountSecurityTab.tsx:77
+#: src/components/modals/tabs/account_security_tab/Inline.tsx:74
+#: src/components/modals/tabs/AccountSecurityTab.tsx:78
 #: src/components/modals/utils/SettingsConstants.tsx:297
 #: src/components/modals/utils/SettingsSectionRegistry.tsx:488
 msgid "Account"
@@ -1642,7 +1642,7 @@ msgstr "Fiók állapot felülbírálások"
 msgid "Account Too New"
 msgstr "Fiók túl új"
 
-#: src/actions/InviteActionCreators.tsx:182
+#: src/actions/InviteActionCreators.tsx:205
 #: src/components/modals/RequiredActionModal.tsx:143
 #: src/components/modals/RequiredActionModal.tsx:416
 msgid "Account Verification Required"
@@ -1698,7 +1698,7 @@ msgstr "Műveletek"
 msgid "active"
 msgstr "aktív"
 
-#: src/components/modals/components/plutonium/SubscriptionCard.tsx:135
+#: src/components/modals/components/plutonium/SubscriptionCard.tsx:124
 msgid "Active"
 msgstr "Aktív"
 
@@ -1769,8 +1769,8 @@ msgstr "Hozzászólás hozzáadása (opcionális)"
 
 #: src/components/layout/guild_list/AddGuildButton.tsx:90
 #: src/components/layout/guild_list/AddGuildButton.tsx:95
-#: src/components/modals/AddGuildModal.tsx:80
-#: src/components/modals/AddGuildModal.tsx:86
+#: src/components/modals/AddGuildModal.tsx:81
+#: src/components/modals/AddGuildModal.tsx:87
 msgid "Add a Community"
 msgstr "Közösség hozzáadása"
 
@@ -1782,7 +1782,7 @@ msgstr "Egyedi háttér hozzáadása"
 msgid "Add a different account"
 msgstr "Másik fiók hozzáadása"
 
-#: src/components/modals/tabs/account_security_tab/SecurityTab.tsx:351
+#: src/components/modals/tabs/account_security_tab/SecurityTab.tsx:375
 msgid "Add a phone number to enable SMS two-factor authentication"
 msgstr "Adj meg egy telefonszámot az SMS kétlépcsős azonosítás engedélyezéséhez"
 
@@ -1791,7 +1791,7 @@ msgstr "Adj meg egy telefonszámot az SMS kétlépcsős azonosítás engedélyez
 msgid "Add a tag"
 msgstr "Címke hozzáadása"
 
-#: src/components/modals/channel_tabs/ChannelOverviewTab.tsx:520
+#: src/components/modals/channel_tabs/ChannelOverviewTab.tsx:559
 msgid "Add a topic to this channel"
 msgstr "Téma hozzáadása ehhez a csatornához"
 
@@ -1808,7 +1808,7 @@ msgstr "Művelet hozzáadása!"
 msgid "Add an account"
 msgstr "Fiók hozzáadása"
 
-#: src/components/modals/tabs/account_security_tab/SecurityTab.tsx:219
+#: src/components/modals/tabs/account_security_tab/SecurityTab.tsx:232
 msgid "Add an extra layer of security to your account"
 msgstr "Adj egy extra biztonsági réteget a fiókodhoz"
 
@@ -1820,7 +1820,7 @@ msgstr "Másik reakció hozzáadása"
 msgid "Add Bluesky connection"
 msgstr "Bluesky kapcsolat hozzáadása"
 
-#: src/components/pages/OAuthAuthorizePage.tsx:863
+#: src/components/pages/OAuthAuthorizePage.tsx:832
 msgid "Add bot to a community"
 msgstr "Bot hozzáadása egy közösséghez"
 
@@ -1902,12 +1902,12 @@ msgstr "Telefonszám hozzáadása vagy módosítása"
 msgid "Add Override"
 msgstr "Felülbírálás hozzáadása"
 
-#: src/components/modals/tabs/account_security_tab/SecurityTab.tsx:293
+#: src/components/modals/tabs/account_security_tab/SecurityTab.tsx:306
 msgid "Add Passkey"
 msgstr "Jelszókulcs hozzáadása"
 
 #: src/components/channel/barriers/BarrierComponents.tsx:198
-#: src/components/modals/tabs/account_security_tab/SecurityTab.tsx:398
+#: src/components/modals/tabs/account_security_tab/SecurityTab.tsx:422
 msgid "Add Phone"
 msgstr "Telefon hozzáadása"
 
@@ -2028,11 +2028,11 @@ msgstr "Hozzáadva a Kedvencekhez"
 msgid "Added to saved media"
 msgstr "Hozzáadva a mentett médiához"
 
-#: src/components/modals/tabs/account_security_tab/SecurityTab.tsx:316
+#: src/components/modals/tabs/account_security_tab/SecurityTab.tsx:329
 msgid "Added: {createdDate}"
 msgstr "Hozzáadva: {createdDate}"
 
-#: src/components/modals/tabs/account_security_tab/SecurityTab.tsx:312
+#: src/components/modals/tabs/account_security_tab/SecurityTab.tsx:325
 msgid "Added: {createdDate} • Last used: {lastUsedDate}"
 msgstr "Hozzáadva: {createdDate} • Utoljára használva: {lastUsedDate}"
 
@@ -2118,7 +2118,7 @@ msgstr "után:"
 msgid "Age Restricted"
 msgstr "Korhatáros"
 
-#: src/components/modals/channel_tabs/ChannelOverviewTab.tsx:627
+#: src/components/modals/channel_tabs/ChannelOverviewTab.tsx:666
 msgid "Age-restricted (NSFW)"
 msgstr "Korhatáros (NSFW)"
 
@@ -2569,7 +2569,7 @@ msgstr "Animált GIF videó"
 msgid "Animated icon"
 msgstr "Animált ikon"
 
-#: src/components/modals/AddGuildModal.tsx:224
+#: src/components/modals/AddGuildModal.tsx:225
 msgid "Animated icons are not supported when creating a new community. Please use JPEG, PNG, or WebP."
 msgstr "Az animált ikonok nem támogatottak új közösség létrehozásakor. Kérjük, használj JPEG, PNG vagy WebP formátumot."
 
@@ -2845,7 +2845,7 @@ msgid "Are you sure you want to delete the category \"{categoryName}\"? This can
 msgstr "Biztosan törölni akarod a \"{categoryName}\" kategóriát? Ez nem vonható vissza."
 
 #. placeholder {0}: passkey.name
-#: src/components/modals/tabs/account_security_tab/SecurityTab.tsx:122
+#: src/components/modals/tabs/account_security_tab/SecurityTab.tsx:135
 msgid "Are you sure you want to delete the passkey <0>{0}</0>?"
 msgstr "Biztosan törlöd a <0>{0}</0> hozzáférési kulcsot?"
 
@@ -2865,7 +2865,7 @@ msgstr "Biztos, hogy törölni szeretnéd ezt a meghívót? Ez a művelet nem vo
 msgid "Are you sure you want to delete this pack? This cannot be undone."
 msgstr "Biztosan törlöd ezt a csomagot? Ez nem vonható vissza."
 
-#: src/components/modals/tabs/account_security_tab/SecurityTab.tsx:127
+#: src/components/modals/tabs/account_security_tab/SecurityTab.tsx:140
 msgid "Are you sure you want to delete this passkey?"
 msgstr "Biztosan törlöd ezt a hozzáférési kulcsot?"
 
@@ -2877,7 +2877,7 @@ msgstr "Biztosan törlöd a fiókodat? Ez a művelet végleges törlésre üteme
 msgid "Are you sure you want to disable invites? This will prevent new users from joining through invite links until you re-enable them. Existing members will not be affected."
 msgstr "Biztosan letiltod a meghívókat? Ez megakadályozza, hogy új felhasználók csatlakozzanak meghívólinkeken keresztül, amíg újra nem engedélyezed őket. A meglévő tagokra nincs hatással."
 
-#: src/components/modals/tabs/account_security_tab/SecurityTab.tsx:179
+#: src/components/modals/tabs/account_security_tab/SecurityTab.tsx:192
 msgid "Are you sure you want to disable SMS two-factor authentication? This will make your account less secure."
 msgstr "Biztosan le szeretnéd tiltani az SMS kétfaktoros hitelesítést? Ez kevésbé biztonságossá teszi a fiókodat."
 
@@ -2930,7 +2930,7 @@ msgid "Are you sure you want to remove this connection? This action cannot be un
 msgstr "Biztosan el akarod távolítani ezt a kapcsolatot? Ez a művelet nem vonható vissza."
 
 #. placeholder {0}: user.phone
-#: src/components/modals/tabs/account_security_tab/SecurityTab.tsx:367
+#: src/components/modals/tabs/account_security_tab/SecurityTab.tsx:391
 msgid "Are you sure you want to remove your phone number <0>{0}</0>?"
 msgstr "Biztosan el szeretnéd távolítani a telefonszámodat <0>{0}</0>?"
 
@@ -2970,11 +2970,11 @@ msgstr "Biztosan fel szeretnéd oldani {0} blokkolását?"
 msgid "aria"
 msgstr "aria"
 
-#: src/components/modals/AddGuildModal.tsx:177
+#: src/components/modals/AddGuildModal.tsx:178
 msgid "Art Club"
 msgstr "Művészeti Klub"
 
-#: src/components/modals/AddGuildModal.tsx:151
+#: src/components/modals/AddGuildModal.tsx:152
 msgid "Artists' Corner"
 msgstr "Művészek Sarokja"
 
@@ -3150,7 +3150,7 @@ msgid "Authenticator app"
 msgstr "Hitelesítő alkalmazás"
 
 #: src/components/auth/MfaScreen.tsx:69
-#: src/components/modals/tabs/account_security_tab/SecurityTab.tsx:224
+#: src/components/modals/tabs/account_security_tab/SecurityTab.tsx:237
 msgid "Authenticator App"
 msgstr "Hitelesítő alkalmazás"
 
@@ -3170,21 +3170,21 @@ msgstr "szerzőtípus:"
 msgid "Authorization failed"
 msgstr "Hitelesítés sikertelen"
 
-#: src/components/pages/OAuthAuthorizePage.tsx:534
+#: src/components/pages/OAuthAuthorizePage.tsx:524
 msgid "Authorization Failed"
 msgstr "Hitelesítés sikertelen"
 
-#: src/components/pages/OAuthAuthorizePage.tsx:469
-#: src/components/pages/OAuthAuthorizePage.tsx:484
+#: src/components/pages/OAuthAuthorizePage.tsx:459
+#: src/components/pages/OAuthAuthorizePage.tsx:474
 msgid "Authorization failed. Please try again."
 msgstr "Hitelesítés sikertelen. Kérjük, próbáld újra."
 
-#: src/components/pages/OAuthAuthorizePage.tsx:740
+#: src/components/pages/OAuthAuthorizePage.tsx:709
 msgid "Authorization request"
 msgstr "Engedélyezési kérés"
 
-#: src/components/pages/OAuthAuthorizePage.tsx:681
-#: src/components/pages/OAuthAuthorizePage.tsx:940
+#: src/components/pages/OAuthAuthorizePage.tsx:661
+#: src/components/pages/OAuthAuthorizePage.tsx:909
 msgid "Authorize"
 msgstr "Engedélyezés"
 
@@ -3251,7 +3251,7 @@ msgstr "automatikus kiegészítés"
 msgid "automatic"
 msgstr "automatikus"
 
-#: src/components/modals/channel_tabs/ChannelOverviewTab.tsx:178
+#: src/components/modals/channel_tabs/ChannelOverviewTab.tsx:191
 #: src/components/voice/VoiceRegionSelector.tsx:96
 #: src/components/voice/VoiceRegionSelector.tsx:110
 #: src/components/voice/VoiceSettingsMenus.tsx:452
@@ -3347,7 +3347,7 @@ msgstr "Átlag ping:"
 #: src/components/modals/AddConnectionModal.tsx:312
 #: src/components/modals/PhoneAddModal.tsx:237
 #: src/components/modals/RequiredActionModal.tsx:655
-#: src/components/pages/OAuthAuthorizePage.tsx:671
+#: src/components/pages/OAuthAuthorizePage.tsx:651
 #: src/components/pages/report/ReportStepDetails.tsx:243
 msgid "Back"
 msgstr "Vissza"
@@ -3438,7 +3438,7 @@ msgid "backup codes"
 msgstr "biztonsági kódok"
 
 #: src/components/modals/BackupCodesModal.tsx:43
-#: src/components/modals/tabs/account_security_tab/SecurityTab.tsx:257
+#: src/components/modals/tabs/account_security_tab/SecurityTab.tsx:270
 #: src/components/modals/utils/SettingsSearchIndex.tsx:140
 msgid "Backup Codes"
 msgstr "Biztonsági kódok"
@@ -3499,7 +3499,7 @@ msgstr "Tag kitiltása"
 msgid "Ban Members"
 msgstr "Tagok kitiltása"
 
-#: src/components/modals/AddGuildModal.tsx:153
+#: src/components/modals/AddGuildModal.tsx:154
 msgid "Band Practice Room"
 msgstr "Zenekari próbaterem"
 
@@ -3680,7 +3680,7 @@ msgstr "A blokkolt felhasználók nem küldhetnek barátkérelmet vagy privát �
 msgid "Blockquotes"
 msgstr "Idézetek"
 
-#: src/components/modals/channel_tabs/ChannelOverviewTab.tsx:628
+#: src/components/modals/channel_tabs/ChannelOverviewTab.tsx:667
 msgid "Blocks access for users under 18 and shows a content warning for adults."
 msgstr "Blokkolja a hozzáférést a 18 év alatti felhasználók számára, és tartalmi figyelmeztetést mutat a felnőtteknek."
 
@@ -3703,7 +3703,7 @@ msgstr "Elmosás"
 msgid "Blur your background"
 msgstr "Háttér elmosása"
 
-#: src/components/modals/AddGuildModal.tsx:175
+#: src/components/modals/AddGuildModal.tsx:176
 msgid "Board Game Night"
 msgstr "Társasjáték est"
 
@@ -3711,7 +3711,7 @@ msgstr "Társasjáték est"
 msgid "Body font family"
 msgstr "Betűtípus család"
 
-#: src/components/modals/AddGuildModal.tsx:178
+#: src/components/modals/AddGuildModal.tsx:179
 msgid "Book Club"
 msgstr "Könyvklub"
 
@@ -3754,7 +3754,7 @@ msgstr "Könyvjelzőzve!"
 msgid "Bookmarks"
 msgstr "Könyvjelzők"
 
-#: src/components/modals/AddGuildModal.tsx:150
+#: src/components/modals/AddGuildModal.tsx:151
 msgid "Bookworms Anonymous"
 msgstr "Anonim Könyvmolyok"
 
@@ -3766,7 +3766,7 @@ msgstr "bot"
 msgid "Bot"
 msgstr "Bot"
 
-#: src/components/pages/OAuthAuthorizePage.tsx:550
+#: src/components/pages/OAuthAuthorizePage.tsx:540
 msgid "Bot added"
 msgstr "Bot hozzáadva"
 
@@ -3794,11 +3794,11 @@ msgstr "Bot közvetlen üzenetek"
 msgid "Bot Invite"
 msgstr "Bot meghívás"
 
-#: src/components/pages/OAuthAuthorizePage.tsx:761
+#: src/components/pages/OAuthAuthorizePage.tsx:730
 msgid "Bot invite (no external redirect)"
 msgstr "Bot meghívó (nincs külső átirányítás)"
 
-#: src/components/pages/OAuthAuthorizePage.tsx:480
+#: src/components/pages/OAuthAuthorizePage.tsx:470
 msgid "Bot is already in this community."
 msgstr "A bot már ebben a közösségben van."
 
@@ -3810,7 +3810,7 @@ msgstr "Bot jogosultságok"
 msgid "Bot Profile"
 msgstr "Bot profil"
 
-#: src/components/pages/OAuthAuthorizePage.tsx:770
+#: src/components/pages/OAuthAuthorizePage.tsx:739
 msgid "Bot scope requested"
 msgstr "Bot hatókör kérve"
 
@@ -3920,17 +3920,17 @@ msgstr "Gombok ikonokkal"
 msgid "Buy Gift"
 msgstr "Ajándék vásárlása"
 
-#: src/components/modals/AddGuildModal.tsx:360
+#: src/components/modals/AddGuildModal.tsx:362
 msgid "By creating a community, you agree to follow and uphold the <0>Fluxer Community Guidelines</0>."
 msgstr "Közösség létrehozásával elfogadod és betartod a <0>Fluxer Közösségi Irányelveket</0>."
 
 #: src/components/modals/components/PurchaseDisclaimer.tsx:39
-msgid "By purchasing, you agree to our <0>Terms of Service</0> and <1>Privacy Policy</1>. All purchases are refundable within 14 days by emailing <2>support@fluxer.app</2>. Chargebacks result in permanent account bans — if you want a refund, we're more than happy to give you one if you contact us first! Payment information is securely handled by Stripe — we never have access to your full card number."
-msgstr "Vásárlással elfogadod a <0>Szolgáltatási Feltételeinket</0> és az <1>Adatvédelmi Szabályzatunkat</1>. Minden vásárlás visszatéríthető 14 napon belül a <2>support@fluxer.app</2> címre küldött e-maillel. A visszautasítások állandó fióktiltáshoz vezetnek — ha visszatérítést szeretnél, nagyon szívesen megadjuk, ha először felveszed velünk a kapcsolatot! A fizetési adatokat a Stripe biztonságosan kezeli — soha nem férünk hozzá a teljes kártyaszámodhoz."
+msgid "By purchasing, you agree to our <0>Terms of Service</0> and <1>Privacy Policy</1>. All purchases are refundable within 14 days by emailing <2>support@echowire.org</2>. Chargebacks result in permanent account bans — if you want a refund, we're more than happy to give you one if you contact us first! Payment information is securely handled by Stripe — we never have access to your full card number."
+msgstr ""
 
 #: src/components/modals/components/PurchaseDisclaimer.tsx:31
-msgid "By purchasing, you agreed to our <0>Terms of Service</0> and <1>Privacy Policy</1>. All purchases are refundable within 14 days by emailing <2>support@fluxer.app</2>. Chargebacks result in permanent account bans — if you want a refund, we're more than happy to give you one if you contact us first! Payment information is securely handled by Stripe — we never have access to your full card number."
-msgstr "Vásárlással elfogadtad a <0>Szolgáltatási Feltételeinket</0> és az <1>Adatvédelmi Szabályzatunkat</1>. Minden vásárlás visszatéríthető 14 napon belül a <2>support@fluxer.app</2> címre küldött e-maillel. A visszautasítások állandó fióktiltáshoz vezetnek — ha visszatérítést szeretnél, nagyon szívesen megadjuk, ha először felveszed velünk a kapcsolatot! A fizetési adatokat a Stripe biztonságosan kezeli — soha nem férünk hozzá a teljes kártyaszámodhoz."
+msgid "By purchasing, you agreed to our <0>Terms of Service</0> and <1>Privacy Policy</1>. All purchases are refundable within 14 days by emailing <2>support@echowire.org</2>. Chargebacks result in permanent account bans — if you want a refund, we're more than happy to give you one if you contact us first! Payment information is securely handled by Stripe — we never have access to your full card number."
+msgstr ""
 
 #: src/utils/PermissionUtils.tsx:356
 #: src/utils/PermissionUtils.tsx:491
@@ -4065,8 +4065,8 @@ msgstr "A kamerák le vannak tiltva, ha több mint {VOICE_CHANNEL_CAMERA_USER_LI
 #: src/components/modals/AccountDisableModal.tsx:69
 #: src/components/modals/AddConnectionModal.tsx:218
 #: src/components/modals/AddFavoriteMemeModal.tsx:98
-#: src/components/modals/AddGuildModal.tsx:290
-#: src/components/modals/AddGuildModal.tsx:413
+#: src/components/modals/AddGuildModal.tsx:292
+#: src/components/modals/AddGuildModal.tsx:415
 #: src/components/modals/AddGuildStickerModal.tsx:120
 #: src/components/modals/AttachmentEditModal.tsx:122
 #: src/components/modals/BackupCodesRegenerateModal.tsx:79
@@ -4081,7 +4081,7 @@ msgstr "A kamerák le vannak tiltva, ha több mint {VOICE_CHANNEL_CAMERA_USER_LI
 #: src/components/modals/ClaimAccountModal.tsx:219
 #: src/components/modals/components/MobileSettingsView.tsx:219
 #: src/components/modals/components/plutonium/hooks/useCheckoutActions.tsx:110
-#: src/components/modals/components/plutonium/SubscriptionCard.tsx:301
+#: src/components/modals/components/plutonium/SubscriptionCard.tsx:275
 #: src/components/modals/ConfirmModal.tsx:146
 #: src/components/modals/CreateDMModal.tsx:88
 #: src/components/modals/CreateFavoriteCategoryModal.tsx:75
@@ -4132,7 +4132,7 @@ msgstr "A kamerák le vannak tiltva, ha több mint {VOICE_CHANNEL_CAMERA_USER_LI
 #: src/components/modals/ThemeAcceptModal.tsx:177
 #: src/components/modals/TimeoutMemberModal.tsx:211
 #: src/components/modals/TransferOwnershipModal.tsx:85
-#: src/components/pages/OAuthAuthorizePage.tsx:924
+#: src/components/pages/OAuthAuthorizePage.tsx:893
 #: src/components/popouts/ScheduledMessagesContent.tsx:119
 #: src/utils/modals/AnimatedAvifModalUtils.tsx:45
 msgid "Cancel"
@@ -4162,7 +4162,7 @@ msgstr "Kérelem visszavonása"
 msgid "Cancel upload"
 msgstr "Feltöltés megszakítása"
 
-#: src/components/modals/components/plutonium/SubscriptionCard.tsx:129
+#: src/components/modals/components/plutonium/SubscriptionCard.tsx:118
 msgid "Canceling"
 msgstr "Visszavonás"
 
@@ -4178,11 +4178,11 @@ msgstr "Nem szerkeszthető"
 msgid "Cannot Delete Account"
 msgstr "Fiók nem törölhető"
 
-#: src/actions/InviteActionCreators.tsx:317
+#: src/actions/InviteActionCreators.tsx:340
 msgid "Cannot install emoji pack"
 msgstr "Nem telepíthető az emojicsomag"
 
-#: src/actions/InviteActionCreators.tsx:318
+#: src/actions/InviteActionCreators.tsx:341
 msgid "Cannot install sticker pack"
 msgstr "Nem telepíthető a matricacsomag"
 
@@ -4235,7 +4235,7 @@ msgstr "Kategória megtelt"
 msgid "Category ID copied"
 msgstr "Kategóriaazonosító másolva"
 
-#: src/components/modals/channel_tabs/ChannelOverviewTab.tsx:479
+#: src/components/modals/channel_tabs/ChannelOverviewTab.tsx:518
 #: src/components/modals/CreateFavoriteCategoryModal.tsx:65
 msgid "Category Name"
 msgstr "Kategória neve"
@@ -4312,7 +4312,7 @@ msgstr "Barát becenevének módosítása"
 msgid "Change Group Nickname"
 msgstr "Csoport becenevének módosítása"
 
-#: src/components/modals/AddGuildModal.tsx:329
+#: src/components/modals/AddGuildModal.tsx:331
 #: src/components/modals/EditGroupBottomSheet.tsx:214
 #: src/components/modals/EditGroupModal.tsx:195
 msgid "Change Icon"
@@ -4520,7 +4520,7 @@ msgstr "Csatornalista írási jelzők"
 msgid "Channel Management"
 msgstr "Csatornakezelés"
 
-#: src/components/modals/channel_tabs/ChannelOverviewTab.tsx:479
+#: src/components/modals/channel_tabs/ChannelOverviewTab.tsx:518
 msgid "Channel Name"
 msgstr "Csatornanév"
 
@@ -4579,7 +4579,7 @@ msgstr "Csatorna-beállítások"
 msgid "Channel synced with parent category"
 msgstr "Csatorna szinkronizálva a szülő kategóriával"
 
-#: src/components/modals/channel_tabs/ChannelOverviewTab.tsx:276
+#: src/components/modals/channel_tabs/ChannelOverviewTab.tsx:315
 msgid "Channel topic is too long."
 msgstr "A csatorna téma túl hosszú."
 
@@ -4598,7 +4598,7 @@ msgstr "Csatornatípus kiválasztása"
 msgid "Channel type: {0}."
 msgstr "Csatornatípus: {0}."
 
-#: src/components/modals/channel_tabs/ChannelOverviewTab.tsx:409
+#: src/components/modals/channel_tabs/ChannelOverviewTab.tsx:448
 msgid "Channel updated"
 msgstr "Csatorna frissítve"
 
@@ -4646,8 +4646,8 @@ msgstr "Csevegés betűméretének skálázása"
 
 #: src/components/BootstrapErrorScreen.tsx:60
 #: src/components/NetworkErrorScreen.tsx:45
-msgid "Check our <0>Bluesky (@fluxer.app)</0> for status updates."
-msgstr "Nézd meg a <0>Bluesky (@fluxer.app)</0> oldalunkat az állapotfrissítésekhez."
+msgid "Check our <0>status page</0> for updates, or email us at <1>support@echowire.org</1>."
+msgstr ""
 
 #: src/components/modals/ShareThemeModal.tsx:115
 msgid "Check out my custom theme!"
@@ -4694,7 +4694,7 @@ msgstr "Kínai (hagyományos)"
 msgid "Choose"
 msgstr "Válassz"
 
-#: src/components/pages/OAuthAuthorizePage.tsx:877
+#: src/components/pages/OAuthAuthorizePage.tsx:846
 msgid "Choose a community"
 msgstr "Válassz egy közösséget"
 
@@ -4765,7 +4765,7 @@ msgstr "Válaszd ki, hogyan jelenjenek meg a gépelési jelzők a csatornalistá
 msgid "Choose the category that best describes your community."
 msgstr "Válaszd ki azt a kategóriát, amely a legjobban leírja a közösségedet."
 
-#: src/components/pages/OAuthAuthorizePage.tsx:605
+#: src/components/pages/OAuthAuthorizePage.tsx:585
 msgid "Choose what {clientLabel} can do in your community. Uncheck any permissions you don't want to grant."
 msgstr "Válaszd ki, mit tehet a(z) {clientLabel} a közösségedben. Távolítsd el a pipát azoktól az engedélyektől, amelyeket nem akarsz megadni."
 
@@ -4808,7 +4808,7 @@ msgstr "Válaszd ki a profil hangsúlyos színét"
 #: src/components/modals/ClaimAccountModal.tsx:225
 #: src/components/modals/components/UnclaimedAccountAlert.tsx:32
 #: src/components/modals/GiftAcceptModal.tsx:175
-#: src/components/modals/tabs/account_security_tab/SecurityTab.tsx:209
+#: src/components/modals/tabs/account_security_tab/SecurityTab.tsx:222
 #: src/components/modals/tabs/GiftInventoryTab.tsx:243
 msgid "Claim Account"
 msgstr "Fiók igénylése"
@@ -4837,7 +4837,7 @@ msgstr "Fiókod igénylése"
 msgid "Claim your account by adding an email and password. We will send a verification code to confirm your email before finishing."
 msgstr "Igényeld a fiókod egy e-mail és jelszó hozzáadásával. Egy ellenőrző kódot küldünk az e-mail címed megerősítésére a befejezés előtt."
 
-#: src/components/modals/tabs/account_security_tab/SecurityTab.tsx:205
+#: src/components/modals/tabs/account_security_tab/SecurityTab.tsx:218
 msgid "Claim your account to access security features like two-factor authentication and passkeys."
 msgstr "Igényeld a fiókod a biztonsági funkciók eléréséhez, mint a kétlépcsős azonosítás és a hozzáférési kulcsok."
 
@@ -4856,7 +4856,7 @@ msgstr "Igényeld a fiókodat alkalmazások létrehozásához."
 
 #: src/components/layout/ChannelItem.tsx:215
 #: src/components/layout/ChannelItem.tsx:407
-#: src/stores/voice/MediaEngineFacade.tsx:836
+#: src/stores/voice/MediaEngineFacade.tsx:887
 msgid "Claim your account to join this voice channel."
 msgstr "Igényeld az accountod, hogy csatlakozhass ehhez a hangcsatornához."
 
@@ -4867,11 +4867,11 @@ msgstr "Igényeld az accountod, hogy csatlakozhass a nem saját hangcsatornákho
 #: src/components/modals/components/plutonium/BottomCTASection.tsx:49
 #: src/components/modals/components/plutonium/GiftSection.tsx:52
 #: src/components/modals/components/plutonium/PricingSection.tsx:54
-#: src/components/modals/components/PlutoniumContent.tsx:99
+#: src/components/modals/components/PlutoniumContent.tsx:80
 msgid "Claim your account to purchase Fluxer Plutonium."
 msgstr "Igényeld a fiókodat Fluxer Plutonium vásárlásához."
 
-#: src/components/modals/components/plutonium/SubscriptionCard.tsx:104
+#: src/components/modals/components/plutonium/SubscriptionCard.tsx:93
 msgid "Claim your account to purchase or redeem Fluxer Plutonium."
 msgstr "Igényeld a fiókodat Fluxer Plutonium vásárlásához vagy beváltásához."
 
@@ -4901,7 +4901,7 @@ msgstr "Igényeld az accountod, hogy indíthass vagy csatlakozhass 1:1 hívások
 msgid "Claim your gift to activate your premium subscription!"
 msgstr "Igényeld az ajándékodat a prémium előfizetésed aktiválásához!"
 
-#: src/components/modals/AddGuildModal.tsx:156
+#: src/components/modals/AddGuildModal.tsx:157
 msgid "Class of '24"
 msgstr "24-es évfolyam"
 
@@ -5241,11 +5241,11 @@ msgstr "Kód:"
 msgid "codes"
 msgstr "kódok"
 
-#: src/components/modals/AddGuildModal.tsx:176
+#: src/components/modals/AddGuildModal.tsx:177
 msgid "Coding Crew"
 msgstr "Kódoló Csapat"
 
-#: src/components/modals/AddGuildModal.tsx:165
+#: src/components/modals/AddGuildModal.tsx:166
 msgid "Coffee Chat"
 msgstr "Kávézós Csevegés"
 
@@ -5399,7 +5399,7 @@ msgstr "A közösség célzott zaklatásban vesz részt vagy azt lehetővé tesz
 msgid "Community exists solely for spam or fraudulent purposes"
 msgstr "A közösség kizárólag spam vagy csalás céljára létezik"
 
-#: src/components/modals/AddGuildModal.tsx:316
+#: src/components/modals/AddGuildModal.tsx:318
 msgid "Community Icon"
 msgstr "Közösség ikon"
 
@@ -5445,7 +5445,7 @@ msgstr "Közösség némítása"
 msgid "Community Muted"
 msgstr "Közösség némítva"
 
-#: src/components/modals/AddGuildModal.tsx:351
+#: src/components/modals/AddGuildModal.tsx:353
 msgid "Community Name"
 msgstr "Közösség neve"
 
@@ -5549,6 +5549,11 @@ msgstr "tömör mód"
 msgid "Compact Mode"
 msgstr "Kompakt mód"
 
+#: src/components/modals/components/PlutoniumContent.tsx:127
+#: src/components/modals/components/PlutoniumContent.tsx:219
+msgid "Compare Plans"
+msgstr ""
+
 #: src/components/modals/components/plutonium/hooks/useCheckoutActions.tsx:106
 msgid "Complete Payment"
 msgstr "Fizetés befejezése"
@@ -5577,7 +5582,7 @@ msgstr "Állítsd be az AFK csatornát és az időtúllépést"
 msgid "Configure base access for this channel"
 msgstr "Állítsd be az alap hozzáférést ehhez a csatornához"
 
-#: src/components/pages/OAuthAuthorizePage.tsx:602
+#: src/components/pages/OAuthAuthorizePage.tsx:582
 msgid "Configure bot permissions"
 msgstr "Állítsd be a bot jogosultságokat"
 
@@ -6227,15 +6232,15 @@ msgstr "Létrehozás"
 msgid "Create & Share"
 msgstr "Létrehozás és megosztás"
 
-#: src/components/modals/AddGuildModal.tsx:82
+#: src/components/modals/AddGuildModal.tsx:83
 msgid "Create a Community"
 msgstr "Közösség létrehozása"
 
-#: src/components/modals/AddGuildModal.tsx:309
+#: src/components/modals/AddGuildModal.tsx:311
 msgid "Create a community for you and your friends to chat."
 msgstr "Hozz létre egy közösséget, ahol te és a barátaid beszélgethettek."
 
-#: src/components/modals/AddGuildModal.tsx:120
+#: src/components/modals/AddGuildModal.tsx:121
 msgid "Create a new community or join an existing one."
 msgstr "Hozz létre egy új közösséget, vagy csatlakozz egy meglévőhöz."
 
@@ -6315,12 +6320,12 @@ msgid "Create Channel"
 msgstr "Csatorna létrehozása"
 
 #: src/components/layout/guild_list/AddGuildButton.tsx:68
-#: src/components/modals/AddGuildModal.tsx:127
-#: src/components/modals/AddGuildModal.tsx:293
+#: src/components/modals/AddGuildModal.tsx:128
+#: src/components/modals/AddGuildModal.tsx:295
 msgid "Create Community"
 msgstr "Közösség létrehozása"
 
-#: src/components/modals/AddGuildModal.tsx:312
+#: src/components/modals/AddGuildModal.tsx:314
 msgid "Create community form"
 msgstr "Közösség létrehozása űrlap"
 
@@ -6466,11 +6471,11 @@ msgstr "Létrehozva a {newLabel} névvel."
 msgid "Created:"
 msgstr "Létrehozva:"
 
-#: src/components/modals/AddGuildModal.tsx:149
+#: src/components/modals/AddGuildModal.tsx:150
 msgid "Creative Minds Collective"
 msgstr "Kreatív Elmék Gyülekezete"
 
-#: src/components/modals/AddGuildModal.tsx:168
+#: src/components/modals/AddGuildModal.tsx:169
 msgid "Creative Writing Club"
 msgstr "Kreatív Írás Klub"
 
@@ -6792,8 +6797,8 @@ msgstr "Veszély Másodlagos"
 msgid "Danger secondary clicked!"
 msgstr "Veszély másodlagos gombra kattintva!"
 
-#: src/components/modals/tabs/account_security_tab/Inline.tsx:97
-#: src/components/modals/tabs/AccountSecurityTab.tsx:109
+#: src/components/modals/tabs/account_security_tab/Inline.tsx:100
+#: src/components/modals/tabs/AccountSecurityTab.tsx:112
 #: src/components/modals/tabs/applications_tab/ApplicationDetail.tsx:693
 #: src/components/modals/utils/SettingsConstants.tsx:299
 #: src/components/modals/utils/SettingsSectionRegistry.tsx:529
@@ -7070,7 +7075,7 @@ msgstr "törlés"
 #: src/components/emojis/EmojiListItem.tsx:195
 #: src/components/emojis/EmojiListItem.tsx:252
 #: src/components/emojis/EmojiListItem.tsx:308
-#: src/components/modals/tabs/account_security_tab/SecurityTab.tsx:325
+#: src/components/modals/tabs/account_security_tab/SecurityTab.tsx:338
 #: src/components/modals/tabs/component_gallery_tab/ButtonsTab.tsx:157
 #: src/components/modals/tabs/component_gallery_tab/ButtonsTab.tsx:242
 #: src/components/modals/tabs/component_gallery_tab/index.tsx:165
@@ -7219,8 +7224,8 @@ msgstr "Mások üzeneteinek törlése. (A rögzítés külön van alább.)"
 msgid "Delete Pack"
 msgstr "Csomag törlése"
 
-#: src/components/modals/tabs/account_security_tab/SecurityTab.tsx:118
-#: src/components/modals/tabs/account_security_tab/SecurityTab.tsx:130
+#: src/components/modals/tabs/account_security_tab/SecurityTab.tsx:131
+#: src/components/modals/tabs/account_security_tab/SecurityTab.tsx:143
 msgid "Delete Passkey"
 msgstr "Passkey törlése"
 
@@ -7414,7 +7419,7 @@ msgstr "Részletek"
 msgid "dev"
 msgstr "fejlesztő"
 
-#: src/components/modals/AddGuildModal.tsx:152
+#: src/components/modals/AddGuildModal.tsx:153
 msgid "Dev Den"
 msgstr "Dev Den"
 
@@ -7530,8 +7535,8 @@ msgid "disable"
 msgstr "letiltás"
 
 #: src/components/invites/DisableInvitesButton.tsx:60
-#: src/components/modals/tabs/account_security_tab/SecurityTab.tsx:240
-#: src/components/modals/tabs/account_security_tab/SecurityTab.tsx:429
+#: src/components/modals/tabs/account_security_tab/SecurityTab.tsx:253
+#: src/components/modals/tabs/account_security_tab/SecurityTab.tsx:453
 msgid "Disable"
 msgstr "Letiltás"
 
@@ -7590,11 +7595,11 @@ msgstr "Kép a Képben Popout letiltása"
 msgid "Disable Reduced Motion"
 msgstr "Csökkentett mozgás letiltása"
 
-#: src/components/modals/tabs/account_security_tab/SecurityTab.tsx:183
+#: src/components/modals/tabs/account_security_tab/SecurityTab.tsx:196
 msgid "Disable SMS 2FA"
 msgstr "SMS kétfaktoros hitelesítés letiltása"
 
-#: src/components/modals/tabs/account_security_tab/SecurityTab.tsx:177
+#: src/components/modals/tabs/account_security_tab/SecurityTab.tsx:190
 msgid "Disable SMS Two-Factor Authentication"
 msgstr "SMS kétfaktoros hitelesítés letiltása"
 
@@ -8161,6 +8166,18 @@ msgstr "visszhang"
 msgid "Echo Cancellation"
 msgstr "Visszhangszűrés"
 
+#: src/components/icons/FluxerIcon.tsx:31
+msgid "Echowire application icon"
+msgstr ""
+
+#: src/components/icons/FluxerSymbol.tsx:31
+msgid "Echowire application symbol"
+msgstr ""
+
+#: src/components/BootstrapErrorScreen.tsx:52
+msgid "Echowire failed to start properly. This could be due to corrupted data or a temporary issue."
+msgstr ""
+
 #: src/components/modals/tabs/ExpressionPacksTab.tsx:90
 #: src/components/modals/tabs/LinkedAccountsTab.tsx:186
 #: src/components/modals/tabs/LinkedAccountsTab.tsx:187
@@ -8486,7 +8503,7 @@ msgstr "Az emoji neveinek legalább 2 karakter hosszúnak kell lenniük, és csa
 msgid "Emoji pack"
 msgstr "Emoji csomag"
 
-#: src/actions/InviteActionCreators.tsx:259
+#: src/actions/InviteActionCreators.tsx:282
 msgid "Emoji pack creation limit reached"
 msgstr "Elérte az emoji csomag létrehozási korlátját"
 
@@ -8494,7 +8511,7 @@ msgstr "Elérte az emoji csomag létrehozási korlátját"
 msgid "Emoji Pack Invite"
 msgstr "Emoji csomag meghívó"
 
-#: src/actions/InviteActionCreators.tsx:245
+#: src/actions/InviteActionCreators.tsx:268
 msgid "Emoji pack limit reached"
 msgstr "Elérte az emoji csomag korlátját"
 
@@ -8531,9 +8548,9 @@ msgstr "üres állapot"
 
 #: src/components/invites/DisableInvitesButton.tsx:60
 #: src/components/layout/GuildLayout.tsx:74
-#: src/components/modals/tabs/account_security_tab/SecurityTab.tsx:247
-#: src/components/modals/tabs/account_security_tab/SecurityTab.tsx:435
-#: src/components/modals/tabs/account_security_tab/SecurityTab.tsx:441
+#: src/components/modals/tabs/account_security_tab/SecurityTab.tsx:260
+#: src/components/modals/tabs/account_security_tab/SecurityTab.tsx:459
+#: src/components/modals/tabs/account_security_tab/SecurityTab.tsx:465
 #: src/components/modals/tabs/components/InputMonitoringSection.tsx:85
 msgid "Enable"
 msgstr "Engedélyezés"
@@ -8655,15 +8672,15 @@ msgstr "Engedélyezze az önálló üzemmódot kliensoldalon (elrejti az összes
 msgid "Enable Shift to Expand"
 msgstr "Shift engedélyezése a kibővítéshez"
 
-#: src/components/modals/tabs/account_security_tab/SecurityTab.tsx:156
+#: src/components/modals/tabs/account_security_tab/SecurityTab.tsx:169
 msgid "Enable SMS 2FA"
 msgstr "SMS kétfaktoros hitelesítés engedélyezése"
 
-#: src/components/modals/tabs/account_security_tab/SecurityTab.tsx:418
+#: src/components/modals/tabs/account_security_tab/SecurityTab.tsx:442
 msgid "Enable SMS codes as a backup for your authenticator app"
 msgstr "SMS kódok engedélyezése biztonsági mentésként az autentikátor alkalmazásodhoz"
 
-#: src/components/modals/tabs/account_security_tab/SecurityTab.tsx:149
+#: src/components/modals/tabs/account_security_tab/SecurityTab.tsx:162
 msgid "Enable SMS Two-Factor Authentication"
 msgstr "SMS kétfaktoros hitelesítés engedélyezése"
 
@@ -8821,7 +8838,7 @@ msgstr "Írd be az új címedre e-mailben küldött kódot."
 msgid "Enter the code we sent to your email to verify it. Your password will be set once the code is confirmed."
 msgstr "Írd be az e-mail címedre küldött kódot a megerősítéshez. A jelszavad beállításra kerül, ha a kódot megerősítetted."
 
-#: src/components/modals/AddGuildModal.tsx:427
+#: src/components/modals/AddGuildModal.tsx:429
 msgid "Enter the invite link to join a community."
 msgstr "Írd be a meghívó linket, hogy csatlakozz egy közösséghez."
 
@@ -8922,7 +8939,7 @@ msgstr "escape a <0><1>mégse</1></0>"
 msgid "Estonia"
 msgstr "Észtország"
 
-#: src/components/modals/channel_tabs/ChannelOverviewTab.tsx:186
+#: src/components/modals/channel_tabs/ChannelOverviewTab.tsx:199
 #: src/components/voice/VoiceRegionSelector.tsx:78
 #: src/components/voice/VoiceSettingsMenus.tsx:436
 msgid "EU Central"
@@ -9008,7 +9025,7 @@ msgid "Expire After"
 msgstr "Lejárat után"
 
 #: src/components/accounts/AccountRow.tsx:169
-#: src/components/modals/components/plutonium/SubscriptionCard.tsx:125
+#: src/components/modals/components/plutonium/SubscriptionCard.tsx:114
 #: src/components/modals/GroupInvitesBottomSheet.tsx:110
 msgid "Expired"
 msgstr "Lejárt"
@@ -9314,11 +9331,11 @@ msgstr "Nem sikerült a barátkérés figyelmen kívül hagyása. Kérjük, pró
 msgid "Failed to initiate connection"
 msgstr "A kapcsolat kezdeményezése sikertelen"
 
-#: src/actions/InviteActionCreators.tsx:326
+#: src/actions/InviteActionCreators.tsx:349
 msgid "Failed to install this emoji pack. Please try again later."
 msgstr "Nem sikerült ez az emoji csomag telepítése. Kérjük, próbáld újra később."
 
-#: src/actions/InviteActionCreators.tsx:327
+#: src/actions/InviteActionCreators.tsx:350
 msgid "Failed to install this sticker pack. Please try again later."
 msgstr "Nem sikerült ez a matrica csomag telepítése. Kérjük, próbáld újra később."
 
@@ -9381,7 +9398,7 @@ msgstr "A matricák betöltése nem sikerült"
 msgid "Failed to load vanity URL. Please try again."
 msgstr "Nem sikerült a vanity URL betöltése. Kérjük, próbáld újra."
 
-#: src/components/modals/channel_tabs/ChannelOverviewTab.tsx:223
+#: src/components/modals/channel_tabs/ChannelOverviewTab.tsx:236
 msgid "Failed to load voice regions for this channel."
 msgstr "Nem sikerült a hangrégiók betöltése ehhez a csatornához."
 
@@ -9420,7 +9437,7 @@ msgstr "Nem sikerült az üzenet rögzítése"
 msgid "Failed to Prepare Emojis"
 msgstr "Nem sikerült az emojik előkészítése"
 
-#: src/components/modals/AddGuildModal.tsx:248
+#: src/components/modals/AddGuildModal.tsx:249
 #: src/components/modals/EditGroupBottomSheet.tsx:106
 #: src/components/modals/EditGroupModal.tsx:99
 #: src/components/modals/guild_tabs/guild_overview_tab/hooks/useGuildImageAssetField.tsx:267
@@ -9660,11 +9677,11 @@ msgstr "hamis"
 msgid "false"
 msgstr "hamis"
 
-#: src/components/modals/AddGuildModal.tsx:183
+#: src/components/modals/AddGuildModal.tsx:184
 msgid "Family Chat"
 msgstr "Családi csevegés"
 
-#: src/components/modals/AddGuildModal.tsx:158
+#: src/components/modals/AddGuildModal.tsx:159
 msgid "Family Reunion"
 msgstr "Családi összejövetel"
 
@@ -9722,7 +9739,7 @@ msgstr "kedvencek"
 msgid "Favorites"
 msgstr "Kedvencek"
 
-#: src/components/modals/components/FeatureComparisonTable.tsx:119
+#: src/components/modals/components/FeatureComparisonTable.tsx:138
 msgid "Feature"
 msgstr "Funkció"
 
@@ -9845,7 +9862,7 @@ msgstr "Kereszt- és vezetéknév"
 msgid "First Option"
 msgstr "Első lehetőség"
 
-#: src/components/modals/AddGuildModal.tsx:171
+#: src/components/modals/AddGuildModal.tsx:172
 msgid "Fitness Friends"
 msgstr "Fitneszbarátok"
 
@@ -9861,33 +9878,21 @@ msgstr "Rugalmas szövegcsatorna-nevek"
 msgid "Fluxer"
 msgstr "Fluxer"
 
-#: src/components/icons/FluxerIcon.tsx:31
-msgid "Fluxer application icon"
-msgstr "Fluxer alkalmazásikon"
-
-#: src/components/icons/FluxerSymbol.tsx:31
-msgid "Fluxer application symbol"
-msgstr "Fluxer alkalmazásszimbólum"
-
 #: src/components/modals/tabs/notifications_tab/PushSettings.tsx:37
 msgid "Fluxer avoids sending push notifications to your mobile devices when you are at your computer. Use this setting to control how long you need to be inactive on desktop for before you receive push notifications, ranging from 1 minute to 10 minutes."
 msgstr "A Fluxer elkerüli a push-értesítések küldését a mobil eszközeidre, amikor a számítógépnél vagy. Ezzel a beállítással szabályozhatod, mennyi ideig kell inaktívnak lenned az asztali verzióban, mielőtt push-értesítéseket kapsz, 1 perctől 10 percig."
 
-#: src/components/popouts/UserProfileBadges.tsx:115
+#: src/components/popouts/UserProfileBadges.tsx:101
 msgid "Fluxer Bug Hunter"
 msgstr "Fluxer Bogárvadász"
 
-#: src/components/popouts/UserProfileBadges.tsx:95
+#: src/components/popouts/UserProfileBadges.tsx:81
 msgid "Fluxer Community Team"
 msgstr "Fluxer Közösségi Csapat"
 
 #: src/components/modals/tabs/DevicesTab.tsx:99
 msgid "Fluxer Desktop"
 msgstr "Fluxer Desktop"
-
-#: src/components/BootstrapErrorScreen.tsx:52
-msgid "Fluxer failed to start properly. This could be due to corrupted data or a temporary issue."
-msgstr "A Fluxer nem indult el megfelelően. Ennek oka lehet sérült adat vagy átmeneti hiba."
 
 #: src/stores/NewDeviceMonitoringStore.tsx:187
 msgid "Fluxer has found a new audio input device named <0>{deviceName}</0>. Do you want to switch to it?"
@@ -9945,18 +9950,18 @@ msgstr "A Fluxernek szüksége van a beviteli monitorozási engedélyre, hogy a 
 msgid "Fluxer needs permission to monitor keyboard and mouse input so that <0>Push-to-Talk</0> and <1>Global Shortcuts</1> work even when you're in another app or game."
 msgstr "A Fluxernek engedélyre van szüksége a billentyűzet és egér bevitelének monitorozásához, hogy a <0>Push-to-Talk</0> és a <1>Globális gyorsbillentyűk</1> működjenek, még ha más alkalmazásban vagy játékban is vagy."
 
-#: src/components/popouts/UserProfileBadges.tsx:105
+#: src/components/popouts/UserProfileBadges.tsx:91
 msgid "Fluxer Partner"
 msgstr "Fluxer Partner"
 
-#: src/components/modals/components/PlutoniumContent.tsx:165
+#: src/components/modals/components/PlutoniumContent.tsx:146
 #: src/components/modals/PremiumModal.tsx:34
 #: src/components/modals/utils/SettingsConstants.tsx:124
-#: src/components/popouts/UserProfileBadges.tsx:121
+#: src/components/popouts/UserProfileBadges.tsx:107
 msgid "Fluxer Plutonium"
 msgstr "Fluxer Plutonium"
 
-#: src/components/popouts/UserProfileBadges.tsx:85
+#: src/components/popouts/UserProfileBadges.tsx:71
 msgid "Fluxer Staff"
 msgstr "Fluxer Staff"
 
@@ -10034,7 +10039,7 @@ msgstr "betűtípusok"
 msgid "Food & Drink"
 msgstr "Étel és ital"
 
-#: src/components/modals/AddGuildModal.tsx:172
+#: src/components/modals/AddGuildModal.tsx:173
 msgid "Foodie Friends"
 msgstr "Ételrajongó barátok"
 
@@ -10248,7 +10253,7 @@ msgstr "A 30 FPS-nél magasabb képkockasebességhez Plutonium szükséges"
 msgid "France"
 msgstr "Franciaország"
 
-#: src/components/modals/components/FeatureComparisonTable.tsx:124
+#: src/components/modals/components/FeatureComparisonTable.tsx:143
 msgid "Free"
 msgstr "Ingyenes"
 
@@ -10259,11 +10264,6 @@ msgstr "Ingyenes felhasználó (vásárlások nélkül)"
 #: src/components/modals/tabs/developer_options_tab/PremiumScenarioOptions.tsx:53
 msgid "Free User (With Purchase History)"
 msgstr "Ingyenes felhasználó (vásárlási előzményekkel)"
-
-#: src/components/modals/components/PlutoniumContent.tsx:146
-#: src/components/modals/components/PlutoniumContent.tsx:243
-msgid "Free vs Plutonium"
-msgstr "Ingyenes vs Plutonium"
 
 #: src/components/modals/tabs/VideoTab.tsx:237
 msgid "Freezes your preview while Fluxer is in the background to save resources."
@@ -10336,7 +10336,7 @@ msgstr "Barátok"
 msgid "Friends + Custom"
 msgstr "Barátok + Egyéni"
 
-#: src/components/modals/AddGuildModal.tsx:184
+#: src/components/modals/AddGuildModal.tsx:185
 msgid "Friends Forever"
 msgstr "Barátok örökre"
 
@@ -10405,7 +10405,7 @@ msgstr "Teljes hivatalos név"
 msgid "Game controller"
 msgstr "Játékvezérlő"
 
-#: src/components/modals/AddGuildModal.tsx:166
+#: src/components/modals/AddGuildModal.tsx:167
 msgid "Game Night"
 msgstr "Játékest"
 
@@ -10413,7 +10413,7 @@ msgstr "Játékest"
 msgid "Gaming"
 msgstr "Játékok"
 
-#: src/components/modals/AddGuildModal.tsx:180
+#: src/components/modals/AddGuildModal.tsx:181
 msgid "Gaming Community"
 msgstr "Játék Közösség"
 
@@ -10430,11 +10430,11 @@ msgstr "Gateway kapcsolat szükséges"
 msgid "gdpr"
 msgstr "gdpr"
 
-#: src/components/modals/channel_tabs/ChannelOverviewTab.tsx:480
+#: src/components/modals/channel_tabs/ChannelOverviewTab.tsx:519
 msgid "general"
 msgstr "általános"
 
-#: src/components/modals/channel_tabs/ChannelOverviewTab.tsx:468
+#: src/components/modals/channel_tabs/ChannelOverviewTab.tsx:507
 #: src/components/modals/tabs/developer_options_tab/index.tsx:45
 #: src/components/modals/tabs/developer_options_tab/Inline.tsx:45
 #: src/components/modals/utils/ChannelSettingsConstants.tsx:56
@@ -10553,7 +10553,7 @@ msgstr "GIF előnézet"
 msgid "GIFs"
 msgstr "GIF-ek"
 
-#: src/components/modals/components/plutonium/SubscriptionCard.tsx:133
+#: src/components/modals/components/plutonium/SubscriptionCard.tsx:122
 #: src/components/modals/GiftAcceptModal.tsx:211
 msgid "Gift"
 msgstr "Ajándék"
@@ -10759,7 +10759,7 @@ msgstr "Megvagy"
 msgid "gpu"
 msgstr "gpu"
 
-#: src/components/modals/components/plutonium/SubscriptionCard.tsx:127
+#: src/components/modals/components/plutonium/SubscriptionCard.tsx:116
 msgid "Grace Period"
 msgstr "Türelmi időszak"
 
@@ -11076,6 +11076,7 @@ msgstr "elrejt"
 #: src/components/modals/HideOwnCameraConfirmModal.tsx:66
 #: src/components/modals/HideOwnScreenShareConfirmModal.tsx:66
 #: src/components/modals/tabs/account_security_tab/AccountTab.tsx:76
+#: src/components/modals/tabs/account_security_tab/SecurityTab.tsx:370
 msgid "Hide"
 msgstr "Elrejtés"
 
@@ -11221,7 +11222,7 @@ msgstr "Magas dinamikai tartomány megjelenítési mód"
 msgid "High quality, requires fast connection"
 msgstr "Magas minőség, gyors kapcsolatot igényel"
 
-#: src/components/modals/channel_tabs/ChannelOverviewTab.tsx:661
+#: src/components/modals/channel_tabs/ChannelOverviewTab.tsx:700
 msgid "Higher bitrate = better quality and higher bandwidth usage."
 msgstr "Magasabb bitsebesség = jobb minőség és nagyobb sávszélesség-felhasználás."
 
@@ -11237,7 +11238,7 @@ msgstr "tippek"
 msgid "Hit 88mph"
 msgstr "Érj el 88 mph-t"
 
-#: src/components/modals/AddGuildModal.tsx:155
+#: src/components/modals/AddGuildModal.tsx:156
 msgid "Hobby Haven"
 msgstr "Hobbik Menedéke"
 
@@ -11338,7 +11339,7 @@ msgstr "Hogyan működik ez"
 msgid "HTML / XML"
 msgstr "HTML / XML"
 
-#: src/components/modals/channel_tabs/ChannelOverviewTab.tsx:492
+#: src/components/modals/channel_tabs/ChannelOverviewTab.tsx:531
 #: src/components/modals/ChannelCreateModal.tsx:92
 msgid "https://example.com"
 msgstr "https://example.com"
@@ -11394,7 +11395,7 @@ msgstr "Megértettem"
 msgid "Icon"
 msgstr "Ikon"
 
-#: src/components/modals/AddGuildModal.tsx:214
+#: src/components/modals/AddGuildModal.tsx:215
 #: src/components/modals/EditGroupBottomSheet.tsx:71
 #: src/components/modals/EditGroupModal.tsx:64
 msgid "Icon file is too large. Please choose a file smaller than 10MB."
@@ -11797,8 +11798,8 @@ msgstr "Bemenetek és szöveg"
 msgid "Inputs with Icons"
 msgstr "Bemenetek ikonokkal"
 
-#: src/components/modals/channel_tabs/ChannelOverviewTab.tsx:547
-#: src/components/modals/channel_tabs/ChannelOverviewTab.tsx:580
+#: src/components/modals/channel_tabs/ChannelOverviewTab.tsx:586
+#: src/components/modals/channel_tabs/ChannelOverviewTab.tsx:619
 msgid "Insert emoji"
 msgstr "Emoji beszúrása"
 
@@ -11871,7 +11872,7 @@ msgstr "Érvénytelen"
 msgid "Invalid audio file"
 msgstr "Érvénytelen hangfájl"
 
-#: src/components/pages/OAuthAuthorizePage.tsx:536
+#: src/components/pages/OAuthAuthorizePage.tsx:526
 msgid "Invalid authorization request"
 msgstr "Érvénytelen engedélyezési kérelem"
 
@@ -11894,7 +11895,7 @@ msgstr "Érvénytelen vagy lejárt kód"
 msgid "Invalid or expired code. Please try again."
 msgstr "Érvénytelen vagy lejárt kód. Kérlek, próbáld újra."
 
-#: src/components/pages/OAuthAuthorizePage.tsx:511
+#: src/components/pages/OAuthAuthorizePage.tsx:501
 msgid "Invalid redirect_uri"
 msgstr "Érvénytelen redirect_uri"
 
@@ -11969,7 +11970,7 @@ msgstr "Hívj meg barátokat a(z) {0} közösségbe"
 msgid "Invite link"
 msgstr "Meghívó link"
 
-#: src/components/modals/AddGuildModal.tsx:436
+#: src/components/modals/AddGuildModal.tsx:438
 msgid "Invite Link"
 msgstr "Meghívó link"
 
@@ -12101,7 +12102,7 @@ msgstr "A meghívók jelenleg tiltva vannak ehhez a közösséghez."
 msgid "Invites are currently disabled in this community by an admin. While this invite can be created, it cannot be accepted until invites are re-enabled."
 msgstr "A meghívók jelenleg egy admin által tiltva vannak ebben a közösségben. Bár ez a meghívó létrehozható, nem fogadható el, amíg a meghívók újra engedélyezve nem lesznek."
 
-#: src/components/layout/guild_list/GuildListItem.tsx:493
+#: src/components/layout/guild_list/GuildListItem.tsx:492
 msgid "Invites are currently paused in this community"
 msgstr "A meghívók jelenleg szüneteltetve vannak ebben a közösségben"
 
@@ -12143,7 +12144,7 @@ msgstr "IP-cím engedélyezve"
 msgid "Ireland"
 msgstr "Írország"
 
-#: src/components/modals/tabs/AccountSecurityTab.tsx:109
+#: src/components/modals/tabs/AccountSecurityTab.tsx:112
 msgid "Irreversible and destructive actions"
 msgstr "Visszafordíthatatlan és megsemmisítő műveletek"
 
@@ -12185,7 +12186,7 @@ msgstr "Jitter"
 msgid "join"
 msgstr "csatlakozás"
 
-#: src/components/modals/AddGuildModal.tsx:84
+#: src/components/modals/AddGuildModal.tsx:85
 msgid "Join a Community"
 msgstr "Közösséghez csatlakozás"
 
@@ -12205,16 +12206,15 @@ msgstr "Hívásba lépés"
 #: src/components/channel/InviteEmbed.tsx:284
 #: src/components/channel/InviteEmbed.tsx:475
 #: src/components/layout/guild_list/AddGuildButton.tsx:77
-#: src/components/modals/AddGuildModal.tsx:132
-#: src/components/modals/AddGuildModal.tsx:416
-#: src/components/modals/components/plutonium/SubscriptionCard.tsx:289
+#: src/components/modals/AddGuildModal.tsx:133
+#: src/components/modals/AddGuildModal.tsx:418
 #: src/components/modals/discovery/DiscoveryGuildCard.tsx:99
 #: src/components/modals/InviteAcceptModal.tsx:119
 #: src/components/modals/InviteAcceptModalPreview.tsx:111
 msgid "Join Community"
 msgstr "Csatlakozás a közösséghez"
 
-#: src/components/modals/AddGuildModal.tsx:430
+#: src/components/modals/AddGuildModal.tsx:432
 msgid "Join community form"
 msgstr "Közösséghez csatlakozás űrlap"
 
@@ -12327,7 +12327,7 @@ msgstr "JPEG, PNG, WebP. Max. 10 MB. Minimum: {0}×{1} képpont (16:9)"
 msgid "JPEG, PNG, WebP. Max 10MB. Minimum: {0}×{1}px (16:9). Shown in invite embeds in chat."
 msgstr "JPEG, PNG, WebP. Max. 10 MB. Minimum: {0}×{1} képpont (16:9). Megjelenik a meghívó beágyazásában a csevegésben."
 
-#: src/components/modals/AddGuildModal.tsx:338
+#: src/components/modals/AddGuildModal.tsx:340
 #: src/components/modals/EditGroupBottomSheet.tsx:223
 #: src/components/modals/EditGroupModal.tsx:204
 #: src/components/modals/guild_tabs/guild_overview_tab/fields/GuildIconUploadField.tsx:116
@@ -12717,7 +12717,7 @@ msgstr "Engedd a közösség önmagát moderálni"
 msgid "Letters (a-z, A-Z), numbers (0-9), and underscores (_) only"
 msgstr "Csak betűk (a-z, A-Z), számok (0-9) és aláhúzások (_)"
 
-#: src/components/modals/components/plutonium/SubscriptionCard.tsx:131
+#: src/components/modals/components/plutonium/SubscriptionCard.tsx:120
 #: src/components/modals/tabs/developer_options_tab/AccountPremiumTab.tsx:52
 #: src/components/modals/tabs/developer_options_tab/MockingTab.tsx:317
 msgid "Lifetime"
@@ -12899,7 +12899,7 @@ msgstr "Betöltés"
 msgid "Loading bans..."
 msgstr "Kitiltások betöltése..."
 
-#: src/components/pages/OAuthAuthorizePage.tsx:877
+#: src/components/pages/OAuthAuthorizePage.tsx:846
 msgid "Loading communities..."
 msgstr "Közösségek betöltése..."
 
@@ -13197,7 +13197,7 @@ msgid "Manage Roles"
 msgstr "Szerepek kezelése"
 
 #: src/components/layout/app_layout/nagbars/PremiumGracePeriodNagbar.tsx:79
-#: src/components/modals/components/plutonium/SubscriptionCard.tsx:271
+#: src/components/modals/components/plutonium/SubscriptionCard.tsx:260
 msgid "Manage Subscription"
 msgstr "Előfizetés kezelése"
 
@@ -13214,7 +13214,7 @@ msgstr "Webhookok kezelése"
 msgid "Manage your applications and bots."
 msgstr "Alkalmazásaid és botjaid kezelése."
 
-#: src/components/modals/tabs/AccountSecurityTab.tsx:78
+#: src/components/modals/tabs/AccountSecurityTab.tsx:79
 msgid "Manage your email, password, and account settings"
 msgstr "E-mail címed, jelszavad és fiókbeállításaid kezelése"
 
@@ -13222,7 +13222,7 @@ msgstr "E-mail címed, jelszavad és fiókbeállításaid kezelése"
 msgid "Manage your gifts"
 msgstr "Ajándékaid kezelése"
 
-#: src/components/modals/tabs/account_security_tab/SecurityTab.tsx:340
+#: src/components/modals/tabs/account_security_tab/SecurityTab.tsx:353
 msgid "Manage your phone number for SMS two-factor authentication"
 msgstr "Telefonszámod kezelése SMS-es kétlépcsős hitelesítéshez"
 
@@ -13385,7 +13385,7 @@ msgstr "Maximalizálja a látható üzeneteket minimális térközzel."
 msgid "Maximum 256 characters"
 msgstr "Maximum 256 karakter"
 
-#: src/components/modals/channel_tabs/ChannelOverviewTab.tsx:694
+#: src/components/modals/channel_tabs/ChannelOverviewTab.tsx:733
 msgid "Maximum members who can join at once. 0 means unlimited."
 msgstr "Maximum tagok száma, akik egyszerre csatlakozhatnak. 0 korlátlan."
 
@@ -13579,7 +13579,7 @@ msgstr "A {days} napja inaktív tagokat eltávolítják."
 msgid "Members list unavailable at this screen width"
 msgstr "A taglista nem elérhető ezen képernyőszélességnél"
 
-#: src/components/modals/channel_tabs/ChannelOverviewTab.tsx:617
+#: src/components/modals/channel_tabs/ChannelOverviewTab.tsx:656
 msgid "Members must wait between messages."
 msgstr "A tagoknak várniuk kell az üzenetek között."
 
@@ -14164,11 +14164,11 @@ msgstr "A szerep áthelyezve a(z) {0}. pozícióra."
 msgid "Moved to channel {0}."
 msgstr "Áthelyezve a(z) {0} csatornára."
 
-#: src/components/modals/AddGuildModal.tsx:174
+#: src/components/modals/AddGuildModal.tsx:175
 msgid "Movie Club"
 msgstr "Filmklub"
 
-#: src/components/modals/AddGuildModal.tsx:161
+#: src/components/modals/AddGuildModal.tsx:162
 msgid "Movie Night Crew"
 msgstr "Filmes Éjszaka Csapat"
 
@@ -14188,7 +14188,7 @@ msgstr "Többnyelvű tartalom"
 msgid "Music"
 msgstr "Zene"
 
-#: src/components/modals/AddGuildModal.tsx:170
+#: src/components/modals/AddGuildModal.tsx:171
 msgid "Music Lovers"
 msgstr "Zeneimádók"
 
@@ -14316,7 +14316,7 @@ msgstr "A stream hangjának némítása"
 msgid "muted"
 msgstr "némított"
 
-#: src/components/layout/guild_list/GuildListItem.tsx:453
+#: src/components/layout/guild_list/GuildListItem.tsx:452
 #: src/components/layout/VoiceStateIcons.tsx:49
 #: src/components/voice/VoiceParticipantTile.tsx:1457
 #: src/utils/ContextMenuUtils.tsx:165
@@ -14329,7 +14329,7 @@ msgstr "némított csatornák"
 
 #. placeholder {0}: DateUtils.getFormattedDateTime(new Date(muteConfig.end_time))
 #. placeholder {0}: getFormattedDateTime(new Date(muteConfig.end_time))
-#: src/components/layout/guild_list/GuildListItem.tsx:451
+#: src/components/layout/guild_list/GuildListItem.tsx:450
 #: src/utils/ContextMenuUtils.tsx:163
 msgid "Muted until {0}"
 msgstr "Némítva eddig: {0}"
@@ -14371,7 +14371,7 @@ msgstr "Az én fantasztikus médiám"
 msgid "My awesome sticker"
 msgstr "Az én fantasztikus matrica"
 
-#: src/components/modals/channel_tabs/ChannelOverviewTab.tsx:480
+#: src/components/modals/channel_tabs/ChannelOverviewTab.tsx:519
 msgid "My Category"
 msgstr "Saját kategóriám"
 
@@ -14509,7 +14509,7 @@ msgstr "Navigáció"
 msgid "Need an account?"
 msgstr "Szükséged van fiókra?"
 
-#: src/components/modals/AddGuildModal.tsx:162
+#: src/components/modals/AddGuildModal.tsx:163
 msgid "Neighborhood Watch"
 msgstr "Környékőrség"
 
@@ -14623,7 +14623,7 @@ msgid "Newest First"
 msgstr "Legújabb először"
 
 #: src/components/bottomsheets/ChannelSearchBottomSheet.tsx:394
-#: src/components/pages/OAuthAuthorizePage.tsx:931
+#: src/components/pages/OAuthAuthorizePage.tsx:900
 msgid "Next"
 msgstr "Következő"
 
@@ -14754,7 +14754,7 @@ msgstr "Nincs elérhető csatorna"
 msgid "No channels found"
 msgstr "Nem található csatorna"
 
-#: src/components/pages/OAuthAuthorizePage.tsx:893
+#: src/components/pages/OAuthAuthorizePage.tsx:862
 msgid "No communities available with <0>Manage Community</0> permissions."
 msgstr "Nincs elérhető közösség <0>Közösség kezelése</0> engedéllyel."
 
@@ -14842,7 +14842,7 @@ msgstr "Nem készült meghívó"
 msgid "No keybind set"
 msgstr "Nincs billentyűparancs beállítva"
 
-#: src/components/modals/channel_tabs/ChannelOverviewTab.tsx:688
+#: src/components/modals/channel_tabs/ChannelOverviewTab.tsx:727
 #: src/components/modals/InviteModal.tsx:88
 msgid "No limit"
 msgstr "Nincs korlát"
@@ -14851,7 +14851,7 @@ msgstr "Nincs korlát"
 msgid "No Logs Yet"
 msgstr "Még nincsenek naplók"
 
-#: src/components/pages/OAuthAuthorizePage.tsx:426
+#: src/components/pages/OAuthAuthorizePage.tsx:416
 msgid "No Manage Community permission"
 msgstr "Nincs Közösség kezelése engedély"
 
@@ -14884,7 +14884,7 @@ msgstr "Nem található közös barát."
 msgid "No mutual groups found."
 msgstr "Nem található közös csoport."
 
-#: src/components/modals/tabs/account_security_tab/SecurityTab.tsx:286
+#: src/components/modals/tabs/account_security_tab/SecurityTab.tsx:299
 msgid "No passkeys registered"
 msgstr "Nincsenek regisztrált jelszavak."
 
@@ -14986,7 +14986,7 @@ msgstr "Nincsenek keresési eredmények"
 msgid "No settings found"
 msgstr "Nem találhatók beállítások"
 
-#: src/components/pages/OAuthAuthorizePage.tsx:824
+#: src/components/pages/OAuthAuthorizePage.tsx:793
 msgid "No specific scopes requested."
 msgstr "Nincsenek meghatározott hatókörök kérve."
 
@@ -15261,7 +15261,7 @@ msgid "Objects"
 msgstr "Objektumok"
 
 #: src/components/channel/ReplyBar.tsx:112
-#: src/components/modals/channel_tabs/ChannelOverviewTab.tsx:160
+#: src/components/modals/channel_tabs/ChannelOverviewTab.tsx:173
 #: src/components/modals/guild_tabs/GuildModerationTab.tsx:243
 #: src/utils/modals/guild_tabs/GuildAuditLogTabUtils.tsx:64
 msgid "Off"
@@ -15499,7 +15499,7 @@ msgstr "Színválasztó megnyitása"
 msgid "Open Community Notification Settings"
 msgstr "Közösségi értesítési beállítások megnyitása"
 
-#: src/components/modals/components/plutonium/SubscriptionCard.tsx:269
+#: src/components/modals/components/plutonium/SubscriptionCard.tsx:258
 msgid "Open Customer Portal"
 msgstr "Ügyfélszolgálati portál megnyitása"
 
@@ -15779,7 +15779,7 @@ msgstr "Egyébként a nyomd-tart-és-beszélj szükséges."
 msgid "otp"
 msgstr "otp"
 
-#: src/components/modals/AddGuildModal.tsx:186
+#: src/components/modals/AddGuildModal.tsx:187
 msgid "Our Hangout"
 msgstr "A mi találkozónk"
 
@@ -15909,7 +15909,7 @@ msgstr "csomagok"
 msgid "Page {currentPage} of {totalPages}"
 msgstr "{currentPage}. oldal / {totalPages}"
 
-#: src/components/modals/channel_tabs/ChannelOverviewTab.tsx:671
+#: src/components/modals/channel_tabs/ChannelOverviewTab.tsx:710
 msgid "Participant Limit"
 msgstr "Résztvevőkorlát"
 
@@ -15930,7 +15930,7 @@ msgstr "Partnerek közössége"
 msgid "Passkey Name"
 msgstr "Passkey neve"
 
-#: src/components/modals/tabs/account_security_tab/SecurityTab.tsx:276
+#: src/components/modals/tabs/account_security_tab/SecurityTab.tsx:289
 msgid "Passkeys"
 msgstr "Passkeyek"
 
@@ -16103,8 +16103,8 @@ msgid "permissions"
 msgstr "engedélyek"
 
 #: src/components/modals/guild_tabs/GuildRolesTab.tsx:1086
-#: src/components/pages/OAuthAuthorizePage.tsx:584
-#: src/components/pages/OAuthAuthorizePage.tsx:720
+#: src/components/pages/OAuthAuthorizePage.tsx:574
+#: src/components/pages/OAuthAuthorizePage.tsx:700
 msgid "Permissions"
 msgstr "Engedélyek"
 
@@ -16148,8 +16148,8 @@ msgstr "Telefon"
 
 #: src/components/modals/PhoneAddModal.tsx:192
 #: src/components/modals/RequiredActionModal.tsx:616
-#: src/components/modals/tabs/account_security_tab/SecurityTab.tsx:339
-#: src/components/modals/tabs/account_security_tab/SecurityTab.tsx:345
+#: src/components/modals/tabs/account_security_tab/SecurityTab.tsx:352
+#: src/components/modals/tabs/account_security_tab/SecurityTab.tsx:358
 #: src/components/modals/utils/SettingsSearchIndex.tsx:115
 msgid "Phone Number"
 msgstr "Telefonszám"
@@ -16157,11 +16157,6 @@ msgstr "Telefonszám"
 #: src/components/modals/PhoneAddModal.tsx:133
 msgid "Phone number added"
 msgstr "Telefonszám hozzáadva"
-
-#. placeholder {0}: user.phone
-#: src/components/modals/tabs/account_security_tab/SecurityTab.tsx:349
-msgid "Phone number added: {0}"
-msgstr "Telefonszám hozzáadva: {0}"
 
 #: src/components/modals/RequiredActionModal.tsx:253
 msgid "Phone number is required"
@@ -16187,7 +16182,7 @@ msgstr "Telefonszám ellenőrzése szükséges"
 msgid "photo"
 msgstr "fotó"
 
-#: src/components/modals/AddGuildModal.tsx:169
+#: src/components/modals/AddGuildModal.tsx:170
 msgid "Photography Club"
 msgstr "Fotóklub"
 
@@ -16421,7 +16416,7 @@ msgstr "Kérjük, próbáld újra később."
 msgid "Please update Fluxer to view this message."
 msgstr "Kérjük, frissítsd a Fluxert az üzenet megtekintéséhez."
 
-#: src/actions/InviteActionCreators.tsx:184
+#: src/actions/InviteActionCreators.tsx:207
 msgid "Please verify your account by setting an email and password before joining communities."
 msgstr "Kérjük, erősítsd meg a fiókod egy e-mail cím és jelszó beállításával, mielőtt csatlakoznál közösségekhez."
 
@@ -16447,7 +16442,7 @@ msgstr "plutónium"
 
 #: src/components/channel/direct_message/DMList.tsx:1326
 #: src/components/channel/direct_message/DMList.tsx:1405
-#: src/components/modals/components/FeatureComparisonTable.tsx:127
+#: src/components/modals/components/FeatureComparisonTable.tsx:146
 msgid "Plutonium"
 msgstr "Plutonium"
 
@@ -16459,7 +16454,7 @@ msgstr "Plutonium jelvény adatvédelem"
 msgid "Plutonium perks"
 msgstr "Plutonium előnyök"
 
-#: src/components/modals/components/plutonium/SubscriptionCard.tsx:121
+#: src/components/modals/components/plutonium/SubscriptionCard.tsx:110
 msgid "Plutonium Subscription"
 msgstr "Plutonium előfizetés"
 
@@ -16715,7 +16710,7 @@ msgstr "Tovább"
 msgid "Processing"
 msgstr "Feldolgozás"
 
-#: src/components/modals/AddGuildModal.tsx:163
+#: src/components/modals/AddGuildModal.tsx:164
 msgid "Professional Peers"
 msgstr "Szakmai kollégák"
 
@@ -16776,7 +16771,7 @@ msgstr "Profil frissítve"
 msgid "progress"
 msgstr "előrehaladás"
 
-#: src/components/modals/AddGuildModal.tsx:159
+#: src/components/modals/AddGuildModal.tsx:160
 msgid "Project X"
 msgstr "Project X"
 
@@ -16789,7 +16784,7 @@ msgstr "névmások"
 msgid "Pronouns"
 msgstr "Névmások"
 
-#: src/components/modals/tabs/AccountSecurityTab.tsx:91
+#: src/components/modals/tabs/AccountSecurityTab.tsx:92
 msgid "Protect your account with two-factor authentication and passkeys"
 msgstr "Védd meg fiókodat kétfaktoros hitelesítéssel és passkey-kel"
 
@@ -17014,7 +17009,7 @@ msgid "Reactions"
 msgstr "Reakciók"
 
 #: src/components/layout/app_layout/nagbars/PremiumExpiredNagbar.tsx:75
-#: src/components/modals/components/plutonium/SubscriptionCard.tsx:267
+#: src/components/modals/components/plutonium/SubscriptionCard.tsx:256
 msgid "Reactivate"
 msgstr "Újra aktiválás"
 
@@ -17076,7 +17071,7 @@ msgstr "Fogadás"
 msgid "Receive notifications when someone mentions you"
 msgstr "Értesítések fogadása, amikor valaki megemlít"
 
-#: src/components/modals/tabs/account_security_tab/SecurityTab.tsx:407
+#: src/components/modals/tabs/account_security_tab/SecurityTab.tsx:431
 msgid "Receive verification codes via SMS as a backup authentication method"
 msgstr "Ellenőrző kódok fogadása SMS-ben tartalék hitelesítési módszerként"
 
@@ -17141,7 +17136,7 @@ msgstr "Ajándék beváltása"
 msgid "Redeem for Yourself"
 msgstr "Beváltás magadnak"
 
-#: src/components/modals/components/plutonium/SubscriptionCard.tsx:245
+#: src/components/modals/components/plutonium/SubscriptionCard.tsx:234
 msgid "Redeem Gift Code"
 msgstr "Ajándékkód beváltása"
 
@@ -17233,7 +17228,7 @@ msgstr "Az újragenerálás érvényteleníti a jelenlegi tokent. Frissítsd a r
 msgid "Register"
 msgstr "Regisztráció"
 
-#: src/components/modals/tabs/account_security_tab/SecurityTab.tsx:282
+#: src/components/modals/tabs/account_security_tab/SecurityTab.tsx:295
 msgid "Registered Passkeys"
 msgstr "Regisztrált passkey-ek"
 
@@ -17303,7 +17298,7 @@ msgstr "eltávolítás"
 #: src/components/modals/guild_tabs/guild_overview_tab/fields/GuildEmbedSplashUploadField.tsx:101
 #: src/components/modals/guild_tabs/guild_overview_tab/fields/GuildIconUploadField.tsx:107
 #: src/components/modals/guild_tabs/guild_overview_tab/fields/GuildInviteSplashUploadField.tsx:113
-#: src/components/modals/tabs/account_security_tab/SecurityTab.tsx:394
+#: src/components/modals/tabs/account_security_tab/SecurityTab.tsx:418
 #: src/components/modals/tabs/ExpressionPacksTab.tsx:96
 #: src/components/modals/tabs/ExpressionPacksTab.tsx:226
 #: src/components/modals/tabs/LinkedAccountsTab.tsx:191
@@ -17454,7 +17449,7 @@ msgstr "Eltávolítás a kedvencekből"
 msgid "Remove from Group"
 msgstr "Eltávolítás a csoportból"
 
-#: src/components/modals/AddGuildModal.tsx:333
+#: src/components/modals/AddGuildModal.tsx:335
 #: src/components/modals/EditGroupBottomSheet.tsx:218
 #: src/components/modals/EditGroupModal.tsx:199
 msgid "Remove Icon"
@@ -17477,11 +17472,11 @@ msgstr "Felülbírálás eltávolítása"
 msgid "Remove Pack"
 msgstr "Csomag eltávolítása"
 
-#: src/components/modals/tabs/account_security_tab/SecurityTab.tsx:380
+#: src/components/modals/tabs/account_security_tab/SecurityTab.tsx:404
 msgid "Remove Phone"
 msgstr "Telefon eltávolítása"
 
-#: src/components/modals/tabs/account_security_tab/SecurityTab.tsx:363
+#: src/components/modals/tabs/account_security_tab/SecurityTab.tsx:387
 msgid "Remove Phone Number"
 msgstr "Telefonszám eltávolítása"
 
@@ -17623,7 +17618,7 @@ msgstr "Eltávolítja az ATTACH_FILES engedélyt minden csatornában (eltünteti
 msgid "Removes SEND_MESSAGES permission in all channels (disables textarea and all buttons)"
 msgstr "Eltávolítja a SEND_MESSAGES engedélyt minden csatornában (letiltja a szövegterületet és az összes gombot)"
 
-#: src/components/pages/OAuthAuthorizePage.tsx:660
+#: src/components/pages/OAuthAuthorizePage.tsx:640
 msgid "Removing permissions could limit the bot's features."
 msgstr "Az engedélyek eltávolítása korlátozhatja a bot funkcióit."
 
@@ -17636,7 +17631,7 @@ msgstr "A csomag eltávolítása eltávolítja a fiókodról."
 msgid "Removing the timeout will allow <0>{0}</0> to send messages, react, and join voice channels again."
 msgstr "Az időtúllépés eltávolítása lehetővé teszi, hogy <0>{0}</0> újra küldjön üzeneteket, reagáljon és csatlakozzon hangcsatornákhoz."
 
-#: src/components/modals/tabs/account_security_tab/SecurityTab.tsx:322
+#: src/components/modals/tabs/account_security_tab/SecurityTab.tsx:335
 msgid "Rename"
 msgstr "Átnevezés"
 
@@ -17695,7 +17690,7 @@ msgstr "A közösség át lett nevezve erre: {0}."
 msgid "Render all your messages as unknown message type"
 msgstr "Minden üzenetet ismeretlen üzenettípusként jelenít meg"
 
-#: src/components/modals/components/plutonium/SubscriptionCard.tsx:227
+#: src/components/modals/components/plutonium/SubscriptionCard.tsx:216
 msgid "Renews on <0>{renewalDate}</0>."
 msgstr "Megújul <0>{renewalDate}</0>."
 
@@ -17813,7 +17808,7 @@ msgstr "Adatexport kérése"
 msgid "Request Export"
 msgstr "Export kérése"
 
-#: src/components/pages/OAuthAuthorizePage.tsx:814
+#: src/components/pages/OAuthAuthorizePage.tsx:783
 msgid "Requested scopes"
 msgstr "Kért hatókörök"
 
@@ -17841,7 +17836,7 @@ msgstr "OAuth2 code grantet igényel"
 msgid "Require two-factor authentication for moderators before they can ban, kick, timeout, or remove messages."
 msgstr "Kétfaktoros hitelesítés szükséges a moderátoroknak, mielőtt kitilthatnák, kirúghatnák, időtúllépésbe helyezhetnék vagy eltávolíthatnák az üzeneteket."
 
-#: src/components/pages/OAuthAuthorizePage.tsx:839
+#: src/components/pages/OAuthAuthorizePage.tsx:808
 msgid "Required"
 msgstr "Kötelező"
 
@@ -17955,7 +17950,7 @@ msgstr "Összes felülírás visszaállítása a téma alapértelmezésére"
 msgid "Reset app data"
 msgstr "Alkalmazásadatok visszaállítása"
 
-#: src/components/BootstrapErrorScreen.tsx:74
+#: src/components/BootstrapErrorScreen.tsx:75
 msgid "Reset App Data"
 msgstr "Alkalmazásadatok visszaállítása"
 
@@ -18038,8 +18033,8 @@ msgstr "Maximalizált állapot visszaállítása"
 msgid "Restore window"
 msgstr "Ablak visszaállítása"
 
-#: src/components/modals/components/plutonium/SubscriptionCard.tsx:263
-#: src/components/modals/components/plutonium/SubscriptionCard.tsx:265
+#: src/components/modals/components/plutonium/SubscriptionCard.tsx:252
+#: src/components/modals/components/plutonium/SubscriptionCard.tsx:254
 msgid "Resubscribe"
 msgstr "Újra feliratkozás"
 
@@ -18077,6 +18072,7 @@ msgid "reveal"
 msgstr "felfedés"
 
 #: src/components/modals/tabs/account_security_tab/AccountTab.tsx:76
+#: src/components/modals/tabs/account_security_tab/SecurityTab.tsx:370
 msgid "Reveal"
 msgstr "Felfedés"
 
@@ -18088,7 +18084,7 @@ msgstr "Spoiler felfedése"
 msgid "Review deletion"
 msgstr "Törlés áttekintése"
 
-#: src/components/pages/OAuthAuthorizePage.tsx:749
+#: src/components/pages/OAuthAuthorizePage.tsx:718
 msgid "Review what this app is asking for before you continue."
 msgstr "Tekintsd át, mit kér ez az alkalmazás, mielőtt folytatnád."
 
@@ -18465,8 +18461,8 @@ msgid "Scope"
 msgstr "Hatáskör"
 
 #: src/components/modals/tabs/applications_tab/application_detail/OAuthBuilderSection.tsx:75
-#: src/components/pages/OAuthAuthorizePage.tsx:577
-#: src/components/pages/OAuthAuthorizePage.tsx:713
+#: src/components/pages/OAuthAuthorizePage.tsx:567
+#: src/components/pages/OAuthAuthorizePage.tsx:693
 msgid "Scopes"
 msgstr "Hatáskörök"
 
@@ -18770,8 +18766,8 @@ msgstr "Biztosítsd a fiókod"
 msgid "security"
 msgstr "biztonság"
 
-#: src/components/modals/tabs/account_security_tab/Inline.tsx:81
-#: src/components/modals/tabs/AccountSecurityTab.tsx:90
+#: src/components/modals/tabs/account_security_tab/Inline.tsx:82
+#: src/components/modals/tabs/AccountSecurityTab.tsx:91
 #: src/components/modals/utils/SettingsConstants.tsx:298
 #: src/components/modals/utils/SettingsSectionRegistry.tsx:505
 msgid "Security"
@@ -18781,7 +18777,7 @@ msgstr "Biztonság"
 msgid "Security & Login"
 msgstr "Biztonság és bejelentkezés"
 
-#: src/components/modals/tabs/account_security_tab/SecurityTab.tsx:203
+#: src/components/modals/tabs/account_security_tab/SecurityTab.tsx:216
 msgid "Security Features"
 msgstr "Biztonsági funkciók"
 
@@ -18832,7 +18828,7 @@ msgstr "Válassz egy csatornát vagy kategóriát"
 msgid "Select a Community"
 msgstr "Válassz egy Közösséget"
 
-#: src/components/pages/OAuthAuthorizePage.tsx:866
+#: src/components/pages/OAuthAuthorizePage.tsx:835
 msgid "Select a community where you have <0>Manage Community</0> permissions."
 msgstr "Válassz egy közösséget, ahol van <0>Közösség kezelése</0> jogosultságod."
 
@@ -18864,7 +18860,7 @@ msgstr "Válassz egy ellenőrzési módszert."
 msgid "Select a violation category."
 msgstr "Válassz egy szabálysértési kategóriát."
 
-#: src/components/modals/channel_tabs/ChannelOverviewTab.tsx:729
+#: src/components/modals/channel_tabs/ChannelOverviewTab.tsx:768
 msgid "Select a voice region for this channel. Automatic uses the closest region."
 msgstr "Válassz egy hangrégiót ehhez a csatornához. Az Automatikus a legközelebbi régiót használja."
 
@@ -19802,7 +19798,7 @@ msgstr "Kijelentkezés innen: {displayName}"
 msgid "Signal strength loading"
 msgstr "Jelerősség betöltése"
 
-#: src/components/pages/OAuthAuthorizePage.tsx:788
+#: src/components/pages/OAuthAuthorizePage.tsx:757
 msgid "Signed in as"
 msgstr "Bejelentkezve mint"
 
@@ -19936,7 +19932,7 @@ msgid "Slower"
 msgstr "Lassabb"
 
 #: src/components/channel/SlowmodeIndicator.tsx:64
-#: src/components/modals/channel_tabs/ChannelOverviewTab.tsx:616
+#: src/components/modals/channel_tabs/ChannelOverviewTab.tsx:655
 #: src/components/modals/tabs/developer_options_tab/MockingTab.tsx:117
 msgid "Slowmode"
 msgstr "Lassú mód"
@@ -19990,11 +19986,11 @@ msgstr "Kisebb média méret"
 msgid "sms"
 msgstr "sms"
 
-#: src/components/modals/tabs/account_security_tab/SecurityTab.tsx:412
+#: src/components/modals/tabs/account_security_tab/SecurityTab.tsx:436
 msgid "SMS Backup"
 msgstr "SMS biztonsági mentés"
 
-#: src/components/modals/tabs/account_security_tab/SecurityTab.tsx:432
+#: src/components/modals/tabs/account_security_tab/SecurityTab.tsx:456
 msgid "SMS backup is disabled for partners"
 msgstr "Az SMS biztonsági mentés le van tiltva partnerek számára"
 
@@ -20007,15 +20003,15 @@ msgstr "SMS kód"
 msgid "SMS Code"
 msgstr "SMS kód"
 
-#: src/components/modals/tabs/account_security_tab/SecurityTab.tsx:406
+#: src/components/modals/tabs/account_security_tab/SecurityTab.tsx:430
 msgid "SMS Two-Factor Authentication"
 msgstr "SMS kétfaktoros hitelesítés"
 
-#: src/components/modals/tabs/account_security_tab/SecurityTab.tsx:151
+#: src/components/modals/tabs/account_security_tab/SecurityTab.tsx:164
 msgid "SMS two-factor authentication adds an additional layer of security to your account by requiring a verification code sent to your phone number when signing in."
 msgstr "Az SMS kétfaktoros hitelesítés egy további biztonsági réteget ad a fiókodhoz, mivel bejelentkezéskor egy ellenőrző kódot igényel, amelyet a telefonszámodra küldenek."
 
-#: src/components/modals/tabs/account_security_tab/SecurityTab.tsx:416
+#: src/components/modals/tabs/account_security_tab/SecurityTab.tsx:440
 msgid "SMS two-factor authentication is enabled"
 msgstr "Az SMS kétfaktoros hitelesítés engedélyezve van"
 
@@ -20291,7 +20287,7 @@ msgstr "Spoiler tartalom"
 msgid "spoilers"
 msgstr "spoiler"
 
-#: src/components/modals/AddGuildModal.tsx:179
+#: src/components/modals/AddGuildModal.tsx:180
 msgid "Sports Fans"
 msgstr "Sportrajongók"
 
@@ -20495,7 +20491,7 @@ msgstr "Matrica sűrűség"
 msgid "Sticker pack"
 msgstr "Matrica csomag"
 
-#: src/actions/InviteActionCreators.tsx:291
+#: src/actions/InviteActionCreators.tsx:314
 msgid "Sticker pack creation limit reached"
 msgstr "Elérte a matrica csomag létrehozási limitet"
 
@@ -20503,7 +20499,7 @@ msgstr "Elérte a matrica csomag létrehozási limitet"
 msgid "Sticker Pack Invite"
 msgstr "Matrica csomag meghívó"
 
-#: src/actions/InviteActionCreators.tsx:277
+#: src/actions/InviteActionCreators.tsx:300
 msgid "Sticker pack limit reached"
 msgstr "Elérte a matrica csomag limitet"
 
@@ -20634,15 +20630,15 @@ msgstr "streamelés"
 msgid "Streaming"
 msgstr "Streamelés"
 
-#: src/components/modals/AddGuildModal.tsx:148
+#: src/components/modals/AddGuildModal.tsx:149
 msgid "Study Buddies United"
 msgstr "Tanulótársak Egyesült"
 
-#: src/components/modals/AddGuildModal.tsx:181
+#: src/components/modals/AddGuildModal.tsx:182
 msgid "Study Group"
 msgstr "Tanulócsoport"
 
-#: src/components/modals/AddGuildModal.tsx:167
+#: src/components/modals/AddGuildModal.tsx:168
 msgid "Study Hall"
 msgstr "Tanulóterem"
 
@@ -20732,7 +20728,7 @@ msgstr "javaslatok"
 msgid "Summary"
 msgstr "Összefoglaló"
 
-#: src/components/modals/AddGuildModal.tsx:164
+#: src/components/modals/AddGuildModal.tsx:165
 msgid "Support Circle"
 msgstr "Támogató Kör"
 
@@ -20793,7 +20789,7 @@ msgstr "Svéd"
 msgid "switch"
 msgstr "kapcsoló"
 
-#: src/components/pages/OAuthAuthorizePage.tsx:801
+#: src/components/pages/OAuthAuthorizePage.tsx:770
 msgid "Switch account"
 msgstr "Fiók váltása"
 
@@ -20957,7 +20953,7 @@ msgstr "Címkék ({0}/10)"
 msgid "Tap to add a note"
 msgstr "Koppints egy jegyzet hozzáadásához"
 
-#: src/components/pages/OAuthAuthorizePage.tsx:766
+#: src/components/pages/OAuthAuthorizePage.tsx:735
 msgid "Target community"
 msgstr "Célközösség"
 
@@ -20966,7 +20962,7 @@ msgstr "Célközösség"
 msgid "Targeted attacks, threats, or sustained harassment"
 msgstr "Célzott támadások, fenyegetések vagy folyamatos zaklatás"
 
-#: src/components/modals/AddGuildModal.tsx:157
+#: src/components/modals/AddGuildModal.tsx:158
 msgid "Team Alpha"
 msgstr "Alfa csapat"
 
@@ -21096,7 +21092,7 @@ msgstr "Ez nem tűnik érvényes színnek. Próbálj hex, rgb(), hsl() vagy egy 
 msgid "That doesn't look like a valid URL."
 msgstr "Ez nem tűnik érvényes URL-nek."
 
-#: src/components/modals/AddGuildModal.tsx:264
+#: src/components/modals/AddGuildModal.tsx:265
 #: src/components/modals/EditGroupBottomSheet.tsx:123
 #: src/components/modals/EditGroupModal.tsx:116
 #: src/components/modals/guild_tabs/guild_overview_tab/hooks/useGuildImageAssetField.tsx:203
@@ -21111,7 +21107,7 @@ msgid "That message didn't delete"
 msgstr "Az üzenet nem törlődött"
 
 #. placeholder {0}: invite.pack.name
-#: src/actions/InviteActionCreators.tsx:104
+#: src/actions/InviteActionCreators.tsx:123
 msgid "The {packLabel} {0} has been installed."
 msgstr "A(z) {packLabel} {0} telepítve lett."
 
@@ -21124,11 +21120,11 @@ msgid "The app has crashed. Checking for updates that might fix this issue..."
 msgstr "Az alkalmazás összeomlott. Frissítések keresése, amelyek megoldhatják ezt a problémát..."
 
 #. placeholder {0}: successState.guildName
-#: src/components/pages/OAuthAuthorizePage.tsx:554
+#: src/components/pages/OAuthAuthorizePage.tsx:544
 msgid "The bot has been added to <0>{0}</0>."
 msgstr "A bot hozzáadásra került a(z) <0>{0}</0> közösséghez."
 
-#: src/components/pages/OAuthAuthorizePage.tsx:558
+#: src/components/pages/OAuthAuthorizePage.tsx:548
 msgid "The bot has been added."
 msgstr "A bot hozzáadásra került."
 
@@ -21161,7 +21157,7 @@ msgstr "A(z) <0>{fluxerTag}</0> FluxerTag már foglalt. A folytatás automatikus
 msgid "The job starts 24 hours after you confirm and can be canceled or restarted anytime"
 msgstr "A feladat 24 órával a megerősítés után indul, és bármikor lemondható vagy újraindítható"
 
-#: src/components/modals/AddGuildModal.tsx:147
+#: src/components/modals/AddGuildModal.tsx:148
 msgid "The Midnight Gamers"
 msgstr "Az Éjféli Játékosok"
 
@@ -21182,7 +21178,7 @@ msgstr "A megadott redirect_uri nincs regisztrálva ehhez az alkalmazáshoz."
 msgid "The role <0>\"{roleName}\"</0> could not be deleted at this time. Please try again."
 msgstr "A(z) <0>\"{roleName}\"</0> szerepkört jelenleg nem lehet törölni. Kérjük, próbáld újra."
 
-#: src/components/modals/AddGuildModal.tsx:185
+#: src/components/modals/AddGuildModal.tsx:186
 msgid "The Squad"
 msgstr "A Csapat"
 
@@ -21206,7 +21202,7 @@ msgstr "A kitiltás nem haladhatja meg a 365 napot (31536000 másodpercet)."
 msgid "The URL of the Fluxer instance you want to sign in to."
 msgstr "A Fluxer példány URL-je, amire be szeretne jelentkezni."
 
-#: src/components/modals/channel_tabs/ChannelOverviewTab.tsx:496
+#: src/components/modals/channel_tabs/ChannelOverviewTab.tsx:535
 msgid "The URL this link channel points to."
 msgstr "Az URL, amelyre ez a link csatorna mutat."
 
@@ -21336,7 +21332,7 @@ msgstr "Ez az alkalmazás"
 msgid "This attachment has expired"
 msgstr "Ez a melléklet lejárt"
 
-#: src/components/pages/OAuthAuthorizePage.tsx:647
+#: src/components/pages/OAuthAuthorizePage.tsx:627
 msgid "This bot is requesting the Administrator permission. We do not recommend granting this to production apps unless you fully trust the developer. Consider asking them to request a reduced set of permissions. Close this page if you are unsure."
 msgstr "Ez a bot az Adminisztrátor jogosultságot kéri. Nem javasoljuk ezt megadni éles alkalmazásoknak, kivéve ha teljes mértékben megbízol a fejlesztőben. Fontold meg, hogy kérj tőlük csökkentett jogosultságokat. Zárd be ezt az oldalt, ha bizonytalan vagy."
 
@@ -22055,7 +22051,7 @@ msgstr "Legfelül"
 msgid "Top Tooltip"
 msgstr "Legfelső eszköztipp"
 
-#: src/components/modals/channel_tabs/ChannelOverviewTab.tsx:519
+#: src/components/modals/channel_tabs/ChannelOverviewTab.tsx:558
 msgid "Topic"
 msgstr "Téma"
 
@@ -22100,7 +22096,7 @@ msgstr "fordítás"
 msgid "Travel & Places"
 msgstr "Utazás és helyek"
 
-#: src/components/modals/AddGuildModal.tsx:173
+#: src/components/modals/AddGuildModal.tsx:174
 msgid "Travel Buddies"
 msgstr "Utazóstársak"
 
@@ -22164,12 +22160,12 @@ msgstr "Próbálj egy másik keresési kifejezést vagy szűrőt"
 msgid "Try again"
 msgstr "Próbáld újra"
 
-#: src/components/BootstrapErrorScreen.tsx:71
+#: src/components/BootstrapErrorScreen.tsx:72
 #: src/components/bottomsheets/ChannelSearchBottomSheet.tsx:317
 #: src/components/channel/ChannelSearchResults.tsx:694
 #: src/components/modals/channel_tabs/ChannelInvitesTab.tsx:231
 #: src/components/modals/channel_tabs/ChannelWebhooksTab.tsx:162
-#: src/components/NetworkErrorScreen.tsx:56
+#: src/components/NetworkErrorScreen.tsx:57
 #: src/components/pages/SsoCallbackPage.tsx:116
 msgid "Try Again"
 msgstr "Próbáld újra"
@@ -22226,7 +22222,7 @@ msgstr "Török"
 msgid "Turn Off All Device Cameras"
 msgstr "Minden eszköz kamera kikapcsolása"
 
-#: src/components/pages/OAuthAuthorizePage.tsx:817
+#: src/components/pages/OAuthAuthorizePage.tsx:786
 msgid "Turn off anything you're not comfortable with. Some features may stop working."
 msgstr "Kapcsold ki, amivel nem vagy kényelmes. Néhány funkció lehet, hogy nem fog működni."
 
@@ -22260,7 +22256,7 @@ msgstr "Stream kikapcsolása"
 msgid "Turn On Camera"
 msgstr "Kamera bekapcsolása"
 
-#: src/components/pages/OAuthAuthorizePage.tsx:852
+#: src/components/pages/OAuthAuthorizePage.tsx:821
 msgid "Turning off scopes may prevent the app from working correctly."
 msgstr "A hatókörök kikapcsolása megakadályozhatja az alkalmazás megfelelő működését."
 
@@ -22272,11 +22268,11 @@ msgstr "Ennek kikapcsolása csak a te nézetedből rejti el a kamerát. A hívá
 msgid "Turning this off only hides your screen share from your own view. Others in the call can still see your screen."
 msgstr "Ennek kikapcsolása csak a saját nézetedből rejti el a képernyőmegosztásodat. A hívásban lévők továbbra is látják a képernyődet."
 
-#: src/components/modals/channel_tabs/ChannelOverviewTab.tsx:471
+#: src/components/modals/channel_tabs/ChannelOverviewTab.tsx:510
 msgid "Tweak this category's basics."
 msgstr "Finomhangold a kategória alapbeállításait."
 
-#: src/components/modals/channel_tabs/ChannelOverviewTab.tsx:471
+#: src/components/modals/channel_tabs/ChannelOverviewTab.tsx:510
 msgid "Tweak this channel's basics."
 msgstr "Finomhangold a csatorna alapbeállításait."
 
@@ -22299,7 +22295,7 @@ msgstr "kétfaktoros"
 msgid "Two-factor authentication"
 msgstr "Kétfaktoros hitelesítés"
 
-#: src/components/modals/tabs/account_security_tab/SecurityTab.tsx:218
+#: src/components/modals/tabs/account_security_tab/SecurityTab.tsx:231
 #: src/components/modals/utils/SettingsSearchIndex.tsx:123
 msgid "Two-Factor Authentication"
 msgstr "Kétfaktoros hitelesítés"
@@ -22312,7 +22308,7 @@ msgstr "Kétfaktoros hitelesítés letiltva"
 msgid "Two-factor authentication enabled"
 msgstr "Kétfaktoros hitelesítés engedélyezve"
 
-#: src/components/modals/tabs/account_security_tab/SecurityTab.tsx:228
+#: src/components/modals/tabs/account_security_tab/SecurityTab.tsx:241
 msgid "Two-factor authentication is enabled"
 msgstr "Kétfaktoros hitelesítés engedélyezve van"
 
@@ -22405,11 +22401,11 @@ msgstr "Ukrán"
 msgid "Ultra (1440p)"
 msgstr "Ultra (1440p)"
 
-#: src/actions/InviteActionCreators.tsx:323
+#: src/actions/InviteActionCreators.tsx:346
 msgid "Unable to install emoji pack"
 msgstr "Az emojicsomag telepítése sikertelen"
 
-#: src/actions/InviteActionCreators.tsx:324
+#: src/actions/InviteActionCreators.tsx:347
 msgid "Unable to install sticker pack"
 msgstr "A matrica csomag telepítése sikertelen"
 
@@ -22761,7 +22757,7 @@ msgstr "Nyiss ki HD képernyőmegosztást Plutoniummal"
 msgid "Unlock HD Video with Plutonium"
 msgstr "Nyiss ki HD videót Plutoniummal"
 
-#: src/components/modals/components/PlutoniumContent.tsx:168
+#: src/components/modals/components/PlutoniumContent.tsx:149
 msgid "Unlock higher limits and exclusive features while supporting an independent communication platform."
 msgstr "Nyiss ki magasabb korlátokat és exkluzív funkciókat, miközben támogatod egy független kommunikációs platformot."
 
@@ -23161,7 +23157,7 @@ msgstr "Belépési hang feltöltése"
 msgid "Upload File"
 msgstr "Fájl feltöltése"
 
-#: src/components/modals/AddGuildModal.tsx:329
+#: src/components/modals/AddGuildModal.tsx:331
 #: src/components/modals/EditGroupBottomSheet.tsx:214
 #: src/components/modals/EditGroupModal.tsx:195
 #: src/components/modals/guild_tabs/guild_overview_tab/fields/GuildIconUploadField.tsx:97
@@ -23209,7 +23205,7 @@ msgstr "Feltöltés: {emojiText}. Ez egy kis időt vehet igénybe."
 msgid "Uploading Emojis"
 msgstr "Emojik feltöltése"
 
-#: src/components/modals/channel_tabs/ChannelOverviewTab.tsx:491
+#: src/components/modals/channel_tabs/ChannelOverviewTab.tsx:530
 #: src/components/modals/ChannelCreateModal.tsx:90
 msgid "URL"
 msgstr "URL"
@@ -23231,7 +23227,7 @@ msgstr "url figyelmeztetések"
 msgid "URLs to download any attachments from your messages"
 msgstr "URL-ek az üzeneteid mellékleteinek letöltéséhez"
 
-#: src/components/modals/channel_tabs/ChannelOverviewTab.tsx:183
+#: src/components/modals/channel_tabs/ChannelOverviewTab.tsx:196
 #: src/components/voice/VoiceRegionSelector.tsx:75
 #: src/components/voice/VoiceSettingsMenus.tsx:433
 msgid "US East"
@@ -23254,7 +23250,7 @@ msgstr "Valós használat"
 msgid "Use actual premium type"
 msgstr "Használja a tényleges prémium típust"
 
-#: src/components/modals/tabs/account_security_tab/SecurityTab.tsx:230
+#: src/components/modals/tabs/account_security_tab/SecurityTab.tsx:243
 msgid "Use an authenticator app to generate codes for two-factor authentication"
 msgstr "Használj egy hitelesítő alkalmazást kétfaktoros azonosításhoz szükséges kódok generálásához"
 
@@ -23323,7 +23319,7 @@ msgstr "Használja a globális profilt"
 msgid "Use light theme"
 msgstr "Világos téma használata"
 
-#: src/components/modals/tabs/account_security_tab/SecurityTab.tsx:277
+#: src/components/modals/tabs/account_security_tab/SecurityTab.tsx:290
 msgid "Use passkeys for passwordless sign-in and two-factor authentication"
 msgstr "Passkey-k használata jelszó nélküli bejelentkezéshez és kétfaktoros azonosításhoz"
 
@@ -23864,7 +23860,7 @@ msgstr "Tekintsd meg és kezeld a kitiltott felhasználókat."
 msgid "View and manage every webhook configured across your community."
 msgstr "Tekintsd meg és kezeld a közösségedben beállított összes webhookot."
 
-#: src/components/modals/tabs/account_security_tab/SecurityTab.tsx:260
+#: src/components/modals/tabs/account_security_tab/SecurityTab.tsx:273
 msgid "View and manage your backup codes for account recovery"
 msgstr "Tekintsd meg és kezeld a biztonsági kódjaidat a fiók helyreállításához"
 
@@ -23889,7 +23885,7 @@ msgstr "Hívásvezérlők megtekintése"
 msgid "View Channel"
 msgstr "Csatorna megtekintése"
 
-#: src/components/modals/tabs/account_security_tab/SecurityTab.tsx:268
+#: src/components/modals/tabs/account_security_tab/SecurityTab.tsx:281
 msgid "View Codes"
 msgstr "Kódok megtekintése"
 
@@ -24004,7 +24000,8 @@ msgstr "VIP hang"
 msgid "visibility"
 msgstr "láthatóság"
 
-#: src/components/modals/components/plutonium/SubscriptionCard.tsx:121
+#: src/components/modals/components/FeatureComparisonTable.tsx:149
+#: src/components/modals/components/plutonium/SubscriptionCard.tsx:110
 #: src/utils/modals/guild_tabs/GuildAuditLogTabUtils.tsx:283
 msgid "Visionary"
 msgstr "Visionary"
@@ -24026,7 +24023,7 @@ msgid "Visionary Badge Override"
 msgstr "Látomás Jelvény Felülírás"
 
 #. placeholder {0}: profile.premiumLifetimeSequence
-#: src/components/popouts/UserProfileBadges.tsx:150
+#: src/components/popouts/UserProfileBadges.tsx:136
 msgid "Visionary ID #{0}"
 msgstr "Látomás ID #{0}"
 
@@ -24175,7 +24172,7 @@ msgstr "Hangüzenet lejátszó"
 msgid "Voice Mute"
 msgstr "Hang némítása"
 
-#: src/components/modals/channel_tabs/ChannelOverviewTab.tsx:640
+#: src/components/modals/channel_tabs/ChannelOverviewTab.tsx:679
 msgid "Voice Quality"
 msgstr "Hangminőség"
 
@@ -24184,7 +24181,7 @@ msgstr "Hangminőség"
 msgid "Voice recording is not supported in this browser."
 msgstr "A hangfelvétel nem támogatott ebben a böngészőben."
 
-#: src/components/modals/channel_tabs/ChannelOverviewTab.tsx:728
+#: src/components/modals/channel_tabs/ChannelOverviewTab.tsx:767
 #: src/components/voice/VoiceSettingsMenus.tsx:483
 msgid "Voice Region"
 msgstr "Hangrégió"
@@ -24218,7 +24215,7 @@ msgstr "Hangerő"
 msgid "Volume Control"
 msgstr "Hangerőszabályzás"
 
-#: src/components/modals/AddGuildModal.tsx:154
+#: src/components/modals/AddGuildModal.tsx:155
 msgid "Volunteer Heroes"
 msgstr "Önkéntes hősök"
 
@@ -24401,8 +24398,8 @@ msgid "We'll verify your new email with a one-time code."
 msgstr "Ellenőrizzük az új e-mail címedet egy egyszer használatos kóddal."
 
 #: src/components/NetworkErrorScreen.tsx:39
-msgid "We're having trouble connecting to Fluxer's servers. This could be a temporary network issue or scheduled maintenance."
-msgstr "Problémánk van a Fluxer szervereihez való csatlakozással. Ez lehet átmeneti hálózati probléma vagy ütemezett karbantartás."
+msgid "We're having trouble connecting to Echowire's servers. This could be a temporary network issue or scheduled maintenance."
+msgstr ""
 
 #: src/components/modals/tabs/DevicesTab.tsx:234
 msgid "We're having trouble connecting to the space-time continuum. Please check your connection and try again."
@@ -24488,7 +24485,7 @@ msgstr "Webhookok"
 msgid "Webhooks updated"
 msgstr "Webhookok frissítve"
 
-#: src/components/modals/AddGuildModal.tsx:160
+#: src/components/modals/AddGuildModal.tsx:161
 msgid "Weekend Warriors"
 msgstr "Weekend Warriors"
 
@@ -24698,7 +24695,7 @@ msgstr "Hú, ez komoly."
 msgid "Why are you reporting this?"
 msgstr "Miért jelented ezt?"
 
-#: src/components/pages/OAuthAuthorizePage.tsx:757
+#: src/components/pages/OAuthAuthorizePage.tsx:726
 msgid "Will send you back to"
 msgstr "Visszaküld téged ide:"
 
@@ -24718,7 +24715,7 @@ msgstr "A Plutónium segítségével animált avatárokat és bannereket haszná
 msgid "Withdraw"
 msgstr "Visszavonás"
 
-#: src/components/modals/AddGuildModal.tsx:182
+#: src/components/modals/AddGuildModal.tsx:183
 msgid "Work Friends"
 msgstr "Munkatársak"
 
@@ -24893,7 +24890,7 @@ msgstr "Egyszerre csak 1 fájlt tölthetsz fel. Próbáld újra kevesebb fájlla
 msgid "You can pin messages in this conversation for everyone to see."
 msgstr "Rögzíthetsz üzeneteket ebben a beszélgetésben, hogy mindenki láthassa."
 
-#: src/components/modals/components/plutonium/SubscriptionCard.tsx:176
+#: src/components/modals/components/plutonium/SubscriptionCard.tsx:165
 msgid "You can redeem additional gift codes to <0>extend</0> your gift time."
 msgstr "További ajándék kódokat válthat be, hogy <0>meghosszabbítsa</0> az ajándék idejét."
 
@@ -24933,7 +24930,7 @@ msgstr "Nem léphetsz kapcsolatba a reakciókkal a keresési eredményekben, mer
 #: src/components/layout/ChannelItem.tsx:213
 #: src/components/layout/ChannelItem.tsx:400
 #: src/stores/voice/MediaEngineFacade.tsx:168
-#: src/stores/voice/MediaEngineFacade.tsx:828
+#: src/stores/voice/MediaEngineFacade.tsx:879
 msgid "You can't join while you're on timeout."
 msgstr "Nem csatlakozhatsz, amíg időtúllépésben vagy."
 
@@ -25023,11 +25020,11 @@ msgstr "Még nincs egyedi témafelülbírálásod megosztásra."
 msgid "You don't have permission to connect to this voice channel."
 msgstr "Nincs jogosultságod csatlakozni ehhez a hangcsatornához."
 
-#: src/actions/InviteActionCreators.tsx:320
+#: src/actions/InviteActionCreators.tsx:343
 msgid "You don't have permission to install this emoji pack."
 msgstr "Nincs jogosultságod telepíteni ezt az emoji csomagot."
 
-#: src/actions/InviteActionCreators.tsx:321
+#: src/actions/InviteActionCreators.tsx:344
 msgid "You don't have permission to install this sticker pack."
 msgstr "Nincs jogosultságod telepíteni ezt a matrica csomagot."
 
@@ -25059,23 +25056,23 @@ msgstr "Van egy új ajándék kódod, ami rád vár!"
 msgid "You have a new gift code waiting in your Gift Inventory."
 msgstr "Van egy új ajándék kódod az Ajándék Leltárban."
 
-#: src/components/modals/components/plutonium/SubscriptionCard.tsx:200
+#: src/components/modals/components/plutonium/SubscriptionCard.tsx:189
 msgid "You have all <0/> for <1>{monthlyPrice}/month</1>."
 msgstr "Mind <0/> a tiéd <1>{monthlyPrice}/hó</1>."
 
-#: src/components/modals/components/plutonium/SubscriptionCard.tsx:205
+#: src/components/modals/components/plutonium/SubscriptionCard.tsx:194
 msgid "You have all <0/> for <1>{yearlyPrice}/year</1>."
 msgstr "Mind <0/> a tiéd <1>{yearlyPrice}/év</1>."
 
-#: src/components/modals/components/plutonium/SubscriptionCard.tsx:210
+#: src/components/modals/components/plutonium/SubscriptionCard.tsx:199
 msgid "You have all <0/> for your subscription period."
 msgstr "Minden <0/> elérhető számodra az előfizetési időszakod alatt."
 
-#: src/components/modals/components/plutonium/SubscriptionCard.tsx:195
+#: src/components/modals/components/plutonium/SubscriptionCard.tsx:184
 msgid "You have all <0/> forever. No subscriptions, no renewals."
 msgstr "Minden <0/> örökre a tiéd. Nincsenek előfizetések, nincsenek megújítások."
 
-#: src/components/modals/components/plutonium/SubscriptionCard.tsx:170
+#: src/components/modals/components/plutonium/SubscriptionCard.tsx:159
 msgid "You have all <0/> via a <1>gift subscription</1> until <2>{giftEndDate}</2>. It <3>won't renew</3>."
 msgstr "Minden <0/> a <1>ajándék-előfizetésed</1> révén elérhető <2>{giftEndDate}</2>-ig. <3>Nem fog megújulni</3>."
 
@@ -25083,35 +25080,35 @@ msgstr "Minden <0/> a <1>ajándék-előfizetésed</1> révén elérhető <2>{gif
 msgid "You have blocked {username}. Unblock them to send messages."
 msgstr "Letiltottad a(z) {username} felhasználót. Engedélyezd őket az üzenetküldéshez."
 
-#: src/actions/InviteActionCreators.tsx:264
+#: src/actions/InviteActionCreators.tsx:287
 msgid "You have created the maximum of {limit} emoji pack. Delete one to create another."
 msgstr "Elérted a maximumot, {limit} emoji csomaggal. Törölj egyet, hogy újat hozz létre."
 
-#: src/actions/InviteActionCreators.tsx:265
+#: src/actions/InviteActionCreators.tsx:288
 msgid "You have created the maximum of {limit} emoji packs. Delete one to create another."
 msgstr "Elérted a maximumot, {limit} emoji csomaggal. Törölj egyet, hogy újat hozz létre."
 
-#: src/actions/InviteActionCreators.tsx:296
+#: src/actions/InviteActionCreators.tsx:319
 msgid "You have created the maximum of {limit} sticker pack. Delete one to create another."
 msgstr "Elérted a maximumot, {limit} matricacsomaggal. Törölj egyet, hogy újat hozz létre."
 
-#: src/actions/InviteActionCreators.tsx:297
+#: src/actions/InviteActionCreators.tsx:320
 msgid "You have created the maximum of {limit} sticker packs. Delete one to create another."
 msgstr "Elérted a maximumot, {limit} matricacsomaggal. Törölj egyet, hogy újat hozz létre."
 
-#: src/actions/InviteActionCreators.tsx:250
+#: src/actions/InviteActionCreators.tsx:273
 msgid "You have installed the maximum of {limit} emoji pack. Remove one to install another."
 msgstr "Elérted a maximumot, {limit} emoji csomaggal. Törölj egyet, hogy újat telepíthess."
 
-#: src/actions/InviteActionCreators.tsx:251
+#: src/actions/InviteActionCreators.tsx:274
 msgid "You have installed the maximum of {limit} emoji packs. Remove one to install another."
 msgstr "Elérted a maximumot, {limit} emoji csomaggal. Törölj egyet, hogy újat telepíthess."
 
-#: src/actions/InviteActionCreators.tsx:282
+#: src/actions/InviteActionCreators.tsx:305
 msgid "You have installed the maximum of {limit} sticker pack. Remove one to install another."
 msgstr "Elérted a maximumot, {limit} matricacsomaggal. Törölj egyet, hogy újat telepíthess."
 
-#: src/actions/InviteActionCreators.tsx:283
+#: src/actions/InviteActionCreators.tsx:306
 msgid "You have installed the maximum of {limit} sticker packs. Remove one to install another."
 msgstr "Elérted a maximumot, {limit} matricacsomaggal. Törölj egyet, hogy újat telepíthess."
 
@@ -25119,19 +25116,19 @@ msgstr "Elérted a maximumot, {limit} matricacsomaggal. Törölj egyet, hogy új
 msgid "You have no friends yet"
 msgstr "Még nincsenek barátaid"
 
-#: src/actions/InviteActionCreators.tsx:268
+#: src/actions/InviteActionCreators.tsx:291
 msgid "You have reached the limit for creating emoji packs. Delete one of your packs to create another."
 msgstr "Elérted az emoji csomagok létrehozásának limitjét. Törölj egy csomagot egy másik létrehozásához."
 
-#: src/actions/InviteActionCreators.tsx:300
+#: src/actions/InviteActionCreators.tsx:323
 msgid "You have reached the limit for creating sticker packs. Delete one of your packs to create another."
 msgstr "Elérted a matrica csomagok létrehozásának limitjét. Törölj egy csomagot egy másik létrehozásához."
 
-#: src/actions/InviteActionCreators.tsx:254
+#: src/actions/InviteActionCreators.tsx:277
 msgid "You have reached the limit for installing emoji packs. Remove one of your installed packs to install another."
 msgstr "Elérted az emoji csomagok telepítésének limitjét. Távolíts el egy telepített csomagot egy másik telepítéséhez."
 
-#: src/actions/InviteActionCreators.tsx:286
+#: src/actions/InviteActionCreators.tsx:309
 msgid "You have reached the limit for installing sticker packs. Remove one of your installed packs to install another."
 msgstr "Elérted a matrica csomagok telepítésének limitjét. Távolíts el egy telepített csomagot egy másik telepítéséhez."
 
@@ -25241,8 +25238,8 @@ msgstr "Be kell jelentkezned a fiókodba az üzenetküldéshez ebben a közöss�
 msgid "You need to verify your email to send messages in this community."
 msgstr "Ellenőrizned kell az e-mail címed az üzenetküldéshez ebben a közösségben."
 
-#: src/components/pages/OAuthAuthorizePage.tsx:688
-#: src/components/pages/OAuthAuthorizePage.tsx:948
+#: src/components/pages/OAuthAuthorizePage.tsx:668
+#: src/components/pages/OAuthAuthorizePage.tsx:917
 msgid "You will be taken to <0><1>{redirectHostname}</1></0> after authorizing."
 msgstr "Az engedélyezés után a(z) <0><1>{redirectHostname}</1></0> oldalra kerülsz."
 
@@ -25260,7 +25257,7 @@ msgstr "Nem fogsz értesítéseket kapni az asztalon"
 msgid "You'll appear offline"
 msgstr "Offline jelenik meg a státuszod"
 
-#: src/components/pages/OAuthAuthorizePage.tsx:906
+#: src/components/pages/OAuthAuthorizePage.tsx:875
 msgid "You'll configure which permissions the bot receives on the next screen."
 msgstr "A következő képernyőn konfigurálod, hogy a bot mely jogosultságokat kapja meg."
 
@@ -25599,11 +25596,11 @@ msgstr "a régiód"
 msgid "Your stream is still being broadcast"
 msgstr "A stream-ed még mindig közvetítés alatt áll"
 
-#: src/components/modals/components/plutonium/SubscriptionCard.tsx:156
+#: src/components/modals/components/plutonium/SubscriptionCard.tsx:145
 msgid "Your subscription ended, but you still have all <0/> until <1>{graceDate}</1>. Resubscribe to keep them."
 msgstr "Az előfizetésed lejárt, de még mindig megvan az összes <0/> <1>{graceDate}</1>-ig. Újra előfizethetsz, hogy megtartsd őket."
 
-#: src/components/modals/components/plutonium/SubscriptionCard.tsx:145
+#: src/components/modals/components/plutonium/SubscriptionCard.tsx:134
 msgid "Your subscription expired on <0>{expiredDate}</0>. You lost all <1/>. You can reactivate at any time."
 msgstr "Az előfizetésed <0>{expiredDate}</0>-én lejárt. Az összes <1/> elveszett. Bármikor újra aktiválhatod."
 
@@ -25619,7 +25616,7 @@ msgstr "Az előfizetésed újra aktiválva lett!"
 msgid "Your subscription has been set to cancel at the end of your billing period."
 msgstr "Az előfizetésed be lett állítva a számlázási időszak végén történő lemondásra."
 
-#: src/components/modals/components/plutonium/SubscriptionCard.tsx:188
+#: src/components/modals/components/plutonium/SubscriptionCard.tsx:177
 msgid "Your subscription will cancel on <0>{cancelDate}</0>. You'll lose all <1/> after that date."
 msgstr "Az előfizetésed <0>{cancelDate}</0>-én lemondásra kerül. Az összes <1/> elveszik az adott dátum után."
 

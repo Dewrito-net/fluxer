@@ -450,6 +450,18 @@
 				"password": {
 					"type": "string",
 					"description": "Cassandra authentication password."
+				},
+				"consistency": {
+					"type": "string",
+					"description": "Default read/write consistency level.",
+					"enum": [
+						"local_one",
+						"local_quorum",
+						"quorum",
+						"one",
+						"all"
+					],
+					"default": "local_one"
 				}
 			}
 		},
