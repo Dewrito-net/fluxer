@@ -4856,7 +4856,7 @@ msgstr "Krev kontoen din for å opprette applikasjoner."
 
 #: src/components/layout/ChannelItem.tsx:215
 #: src/components/layout/ChannelItem.tsx:407
-#: src/stores/voice/MediaEngineFacade.tsx:887
+#: src/stores/voice/MediaEngineFacade.tsx:907
 msgid "Claim your account to join this voice channel."
 msgstr "Krev kontoen din for å bli med i denne stemmekanalen."
 
@@ -24930,7 +24930,7 @@ msgstr "Du kan ikke samhandle med reaksjoner i søkeresultater, da det kan forst
 #: src/components/layout/ChannelItem.tsx:213
 #: src/components/layout/ChannelItem.tsx:400
 #: src/stores/voice/MediaEngineFacade.tsx:168
-#: src/stores/voice/MediaEngineFacade.tsx:879
+#: src/stores/voice/MediaEngineFacade.tsx:899
 msgid "You can't join while you're on timeout."
 msgstr "Du kan ikke bli med mens du er i timeout."
 

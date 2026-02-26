@@ -115,7 +115,7 @@ class VoiceConnectionManager {
 		return this.isLocalDisconnecting;
 	}
 
-	get lastConnectedChannel(): {guildId: string; channelId: string} | null {
+	get lastConnectedChannel(): {guildId: string | null; channelId: string} | null {
 		return this.reconnect.lastConnectedChannel;
 	}
 

@@ -428,18 +428,40 @@ class MediaEngineFacade {
 		// Don't auto-rejoin if already connected to voice
 		if (VoiceConnectionManager.connected || VoiceConnectionManager.connecting) return;
 
+		// Check for pending voice rejoin after web update reload
+		try {
+			const rejoinData = sessionStorage.getItem('__fluxer_voice_rejoin');
+			if (rejoinData) {
+				sessionStorage.removeItem('__fluxer_voice_rejoin');
+				const {guildId, channelId} = JSON.parse(rejoinData) as {guildId: string | null; channelId: string};
+				if (channelId) {
+					logger.info('Restoring voice connection after web update', {guildId, channelId});
+					setTimeout(() => {
+						if (!VoiceConnectionManager.connected && !VoiceConnectionManager.connecting) {
+							this.connectDirectly(guildId, channelId);
+						}
+					}, 1500);
+					return;
+				}
+			}
+		} catch {
+			// sessionStorage may be unavailable or data malformed
+		}
+
 		// Only auto-rejoin if this device was previously in voice (failover recovery).
 		// Without this check, opening a second device (e.g. mobile) while desktop is
 		// in voice would cause the new device to auto-connect.
 		if (!VoiceConnectionManager.lastConnectedChannel) return;
 
-		// Scan guilds for current user's active voice state
+		// Scan guilds for current user's active voice state (zombie cleanup + rejoin)
+		let foundVoiceState = false;
 		for (const guild of guilds) {
 			const voiceStates = guild.voice_states ?? [];
 			const myVoiceStates = voiceStates.filter(
 				(vs) => vs.user_id === currentUser.id && vs.channel_id != null,
 			);
 			if (myVoiceStates.length > 0) {
+				foundVoiceState = true;
 				const guildId = guild.id;
 				const channelId = myVoiceStates[0].channel_id!;
 
@@ -469,6 +491,21 @@ class MediaEngineFacade {
 					setTimeout(tryConnect, 1000);
 				}, 500);
 				break;
+			}
+		}
+
+		// Fallback: server already cleaned up voice states before READY, but we
+		// know from lastConnectedChannel (sessionStorage-backed) that we were in voice.
+		// No zombie cleanup needed — just rejoin directly.
+		if (!foundVoiceState) {
+			const last = VoiceConnectionManager.lastConnectedChannel;
+			if (last) {
+				logger.info('No voice states in READY data, rejoining from lastConnectedChannel', last);
+				setTimeout(() => {
+					if (!VoiceConnectionManager.connected && !VoiceConnectionManager.connecting) {
+						this.connectDirectly(last.guildId, last.channelId);
+					}
+				}, 1500);
 			}
 		}
 	}
@@ -799,7 +836,7 @@ class MediaEngineFacade {
 		await this.connectToVoiceChannel(guildId, guild.afkChannelId);
 	}
 
-	getLastConnectedChannel(): {guildId: string; channelId: string} | null {
+	getLastConnectedChannel(): {guildId: string | null; channelId: string} | null {
 		return VoiceConnectionManager.lastConnectedChannel;
 	}
 	getShouldReconnect(): boolean {

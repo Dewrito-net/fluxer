@@ -4856,7 +4856,7 @@ msgstr "認領你的帳戶以創建應用程式。"
 
 #: src/components/layout/ChannelItem.tsx:215
 #: src/components/layout/ChannelItem.tsx:407
-#: src/stores/voice/MediaEngineFacade.tsx:887
+#: src/stores/voice/MediaEngineFacade.tsx:907
 msgid "Claim your account to join this voice channel."
 msgstr "認領您的帳號以加入此語音頻道。"
 
@@ -24930,7 +24930,7 @@ msgstr "您無法在搜尋結果中與反應互動，以免干擾時空連續體
 #: src/components/layout/ChannelItem.tsx:213
 #: src/components/layout/ChannelItem.tsx:400
 #: src/stores/voice/MediaEngineFacade.tsx:168
-#: src/stores/voice/MediaEngineFacade.tsx:879
+#: src/stores/voice/MediaEngineFacade.tsx:899
 msgid "You can't join while you're on timeout."
 msgstr "您在冷卻期間無法加入。"
 

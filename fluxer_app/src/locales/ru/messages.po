@@ -4856,7 +4856,7 @@ msgstr "Заявите о своем аккаунте, чтобы создава
 
 #: src/components/layout/ChannelItem.tsx:215
 #: src/components/layout/ChannelItem.tsx:407
-#: src/stores/voice/MediaEngineFacade.tsx:887
+#: src/stores/voice/MediaEngineFacade.tsx:907
 msgid "Claim your account to join this voice channel."
 msgstr "Заберите свою учетную запись, чтобы присоединиться к этому голосовому каналу."
 
@@ -24930,7 +24930,7 @@ msgstr "Ты не можешь взаимодействовать с реакц�
 #: src/components/layout/ChannelItem.tsx:213
 #: src/components/layout/ChannelItem.tsx:400
 #: src/stores/voice/MediaEngineFacade.tsx:168
-#: src/stores/voice/MediaEngineFacade.tsx:879
+#: src/stores/voice/MediaEngineFacade.tsx:899
 msgid "You can't join while you're on timeout."
 msgstr "Ты не можешь присоединиться, пока на тайм-ауте."
 

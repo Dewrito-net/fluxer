@@ -19,6 +19,7 @@
 
 import Config from '@app/Config';
 import {Logger} from '@app/lib/Logger';
+import VoiceConnectionManager from '@app/stores/voice/VoiceConnectionManager';
 import type {UpdaterEvent} from '@app/types/electron.d';
 import {getClientInfo} from '@app/utils/ClientInfoUtils';
 import {getElectronAPI, isElectron} from '@app/utils/NativeUtils';
@@ -341,6 +342,15 @@ class UpdaterStoreImpl {
 
 		if (this.updateType === 'web') {
 			logger.info('Applying web update, reloading...');
+			const channelId = VoiceConnectionManager.channelId;
+			const guildId = VoiceConnectionManager.guildId;
+			if (channelId) {
+				try {
+					sessionStorage.setItem('__fluxer_voice_rejoin', JSON.stringify({guildId, channelId}));
+				} catch {
+					// sessionStorage may be unavailable
+				}
+			}
 			window.location.reload();
 			return;
 		}

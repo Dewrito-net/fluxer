@@ -4856,7 +4856,7 @@ msgstr "Reclama tu cuenta para crear aplicaciones."
 
 #: src/components/layout/ChannelItem.tsx:215
 #: src/components/layout/ChannelItem.tsx:407
-#: src/stores/voice/MediaEngineFacade.tsx:887
+#: src/stores/voice/MediaEngineFacade.tsx:907
 msgid "Claim your account to join this voice channel."
 msgstr "Reclama tu cuenta para unirte a este canal de voz."
 
@@ -24930,7 +24930,7 @@ msgstr "No puedes interactuar con reacciones en los resultados de búsqueda porq
 #: src/components/layout/ChannelItem.tsx:213
 #: src/components/layout/ChannelItem.tsx:400
 #: src/stores/voice/MediaEngineFacade.tsx:168
-#: src/stores/voice/MediaEngineFacade.tsx:879
+#: src/stores/voice/MediaEngineFacade.tsx:899
 msgid "You can't join while you're on timeout."
 msgstr "No puedes unirte mientras estás en tiempo de espera."
 

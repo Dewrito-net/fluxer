@@ -4856,7 +4856,7 @@ msgstr "Vahvista tili luodaksesi sovelluksia."
 
 #: src/components/layout/ChannelItem.tsx:215
 #: src/components/layout/ChannelItem.tsx:407
-#: src/stores/voice/MediaEngineFacade.tsx:887
+#: src/stores/voice/MediaEngineFacade.tsx:907
 msgid "Claim your account to join this voice channel."
 msgstr "Vaatimasi tili liittyäksesi tähän äänikanavaan."
 
@@ -24930,7 +24930,7 @@ msgstr "Et voi vuorovaikuttaa reaktioiden kanssa hakutuloksissa, sillä se saatt
 #: src/components/layout/ChannelItem.tsx:213
 #: src/components/layout/ChannelItem.tsx:400
 #: src/stores/voice/MediaEngineFacade.tsx:168
-#: src/stores/voice/MediaEngineFacade.tsx:879
+#: src/stores/voice/MediaEngineFacade.tsx:899
 msgid "You can't join while you're on timeout."
 msgstr "Et voi liittyä, kun olet aikakatkaisussa."
 

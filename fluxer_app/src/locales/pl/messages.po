@@ -4856,7 +4856,7 @@ msgstr "Zgłoś swoje konto, aby tworzyć aplikacje."
 
 #: src/components/layout/ChannelItem.tsx:215
 #: src/components/layout/ChannelItem.tsx:407
-#: src/stores/voice/MediaEngineFacade.tsx:887
+#: src/stores/voice/MediaEngineFacade.tsx:907
 msgid "Claim your account to join this voice channel."
 msgstr "Przypisz swoje konto, aby dołączyć do tego kanału głosowego."
 
@@ -24930,7 +24930,7 @@ msgstr "Nie możesz wchodzić w interakcje z reakcjami w wynikach wyszukiwania, 
 #: src/components/layout/ChannelItem.tsx:213
 #: src/components/layout/ChannelItem.tsx:400
 #: src/stores/voice/MediaEngineFacade.tsx:168
-#: src/stores/voice/MediaEngineFacade.tsx:879
+#: src/stores/voice/MediaEngineFacade.tsx:899
 msgid "You can't join while you're on timeout."
 msgstr "Nie możesz dołączyć, gdy masz timeout."
 

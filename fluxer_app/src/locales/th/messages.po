@@ -4856,7 +4856,7 @@ msgstr "ยืนยันบัญชีของคุณเพื่อสร
 
 #: src/components/layout/ChannelItem.tsx:215
 #: src/components/layout/ChannelItem.tsx:407
-#: src/stores/voice/MediaEngineFacade.tsx:887
+#: src/stores/voice/MediaEngineFacade.tsx:907
 msgid "Claim your account to join this voice channel."
 msgstr "ยืนยันบัญชีของคุณเพื่อเข้าร่วมแชนแนลเสียงนี้"
 
@@ -24930,7 +24930,7 @@ msgstr "คุณไม่สามารถโต้ตอบกับรีแ
 #: src/components/layout/ChannelItem.tsx:213
 #: src/components/layout/ChannelItem.tsx:400
 #: src/stores/voice/MediaEngineFacade.tsx:168
-#: src/stores/voice/MediaEngineFacade.tsx:879
+#: src/stores/voice/MediaEngineFacade.tsx:899
 msgid "You can't join while you're on timeout."
 msgstr "คุณไม่สามารถเข้าร่วมขณะที่อยู่ในช่วงพักเวลา"
 

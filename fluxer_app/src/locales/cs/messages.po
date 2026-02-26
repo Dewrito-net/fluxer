@@ -4856,7 +4856,7 @@ msgstr "Získejte svůj účet pro vytváření aplikací."
 
 #: src/components/layout/ChannelItem.tsx:215
 #: src/components/layout/ChannelItem.tsx:407
-#: src/stores/voice/MediaEngineFacade.tsx:887
+#: src/stores/voice/MediaEngineFacade.tsx:907
 msgid "Claim your account to join this voice channel."
 msgstr "Převzte svůj účet, abyste se připojili k tomuto hlasovému kanálu."
 
@@ -24930,7 +24930,7 @@ msgstr "S reakcemi ve výsledcích hledání nemůžeš interagovat, mohlo by to
 #: src/components/layout/ChannelItem.tsx:213
 #: src/components/layout/ChannelItem.tsx:400
 #: src/stores/voice/MediaEngineFacade.tsx:168
-#: src/stores/voice/MediaEngineFacade.tsx:879
+#: src/stores/voice/MediaEngineFacade.tsx:899
 msgid "You can't join while you're on timeout."
 msgstr "Když máš timeout, nemůžeš se připojit."
 

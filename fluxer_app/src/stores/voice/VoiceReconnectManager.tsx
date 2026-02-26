@@ -28,6 +28,7 @@ const RECONNECT_WINDOW_MS = 30000;
 const MAX_RECONNECT_ATTEMPTS = 5;
 const RECONNECT_BASE_DELAY_MS = 1000;
 const RECONNECT_MAX_DELAY_MS = 30000;
+const SESSION_KEY = '__fluxer_voice_lastchannel';
 
 export interface ReconnectState {
 	lastConnectedGuildId: string | null;
@@ -70,13 +71,23 @@ export class VoiceReconnectManager {
 		return this.reconnectState.reconnectAttempts;
 	}
 
-	get lastConnectedChannel(): {guildId: string; channelId: string} | null {
+	get lastConnectedChannel(): {guildId: string | null; channelId: string} | null {
 		const r = this.reconnectState;
-		if (r.lastConnectedGuildId && r.lastConnectedChannelId) {
+		if (r.lastConnectedChannelId) {
 			return {
 				guildId: r.lastConnectedGuildId,
 				channelId: r.lastConnectedChannelId,
 			};
+		}
+		// Fall back to sessionStorage (survives page reload)
+		try {
+			const stored = sessionStorage.getItem(SESSION_KEY);
+			if (stored) {
+				const {guildId, channelId} = JSON.parse(stored) as {guildId: string | null; channelId: string};
+				if (channelId) return {guildId, channelId};
+			}
+		} catch {
+			// sessionStorage may be unavailable or data malformed
 		}
 		return null;
 	}
@@ -89,6 +100,26 @@ export class VoiceReconnectManager {
 				lastConnectedChannelId: channelId,
 			};
 		});
+		try {
+			sessionStorage.setItem(SESSION_KEY, JSON.stringify({guildId, channelId}));
+		} catch {
+			// sessionStorage may be unavailable
+		}
+	}
+
+	clearLastConnectedChannel(): void {
+		runInAction(() => {
+			this.reconnectState = {
+				...this.reconnectState,
+				lastConnectedGuildId: null,
+				lastConnectedChannelId: null,
+			};
+		});
+		try {
+			sessionStorage.removeItem(SESSION_KEY);
+		} catch {
+			// sessionStorage may be unavailable
+		}
 	}
 
 	setReconnectState(reason: 'user' | 'error' | 'server'): void {
@@ -101,6 +132,9 @@ export class VoiceReconnectManager {
 				lastDisconnectTime: Date.now(),
 			};
 		});
+		if (reason === 'user') {
+			this.clearLastConnectedChannel();
+		}
 		logger.debug('Reconnect state updated', {reason, shouldReconnect});
 	}
 
@@ -165,6 +199,11 @@ export class VoiceReconnectManager {
 		runInAction(() => {
 			this.reconnectState = initialReconnectState;
 		});
+		try {
+			sessionStorage.removeItem(SESSION_KEY);
+		} catch {
+			// sessionStorage may be unavailable
+		}
 	}
 
 	private clearReconnectTimer(): void {

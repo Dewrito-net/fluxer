@@ -4856,7 +4856,7 @@ msgstr "索取您的账户以创建应用。"
 
 #: src/components/layout/ChannelItem.tsx:215
 #: src/components/layout/ChannelItem.tsx:407
-#: src/stores/voice/MediaEngineFacade.tsx:887
+#: src/stores/voice/MediaEngineFacade.tsx:907
 msgid "Claim your account to join this voice channel."
 msgstr "请验证您的帐户以加入此语音频道。"
 
@@ -24930,7 +24930,7 @@ msgstr "你不能与搜索结果中的反应互动，因为这可能会扰乱时
 #: src/components/layout/ChannelItem.tsx:213
 #: src/components/layout/ChannelItem.tsx:400
 #: src/stores/voice/MediaEngineFacade.tsx:168
-#: src/stores/voice/MediaEngineFacade.tsx:879
+#: src/stores/voice/MediaEngineFacade.tsx:899
 msgid "You can't join while you're on timeout."
 msgstr "你在禁言期间无法加入。"
 

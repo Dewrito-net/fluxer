@@ -4856,7 +4856,7 @@ msgstr "애플리케이션을 만들기 위해 계정을 요청하세요."
 
 #: src/components/layout/ChannelItem.tsx:215
 #: src/components/layout/ChannelItem.tsx:407
-#: src/stores/voice/MediaEngineFacade.tsx:887
+#: src/stores/voice/MediaEngineFacade.tsx:907
 msgid "Claim your account to join this voice channel."
 msgstr "이 음성 채널에 참여하기 위해 계정을 확인하세요."
 
@@ -24930,7 +24930,7 @@ msgstr "검색 결과에서 반응과 상호작용할 수 없습니다. 시공�
 #: src/components/layout/ChannelItem.tsx:213
 #: src/components/layout/ChannelItem.tsx:400
 #: src/stores/voice/MediaEngineFacade.tsx:168
-#: src/stores/voice/MediaEngineFacade.tsx:879
+#: src/stores/voice/MediaEngineFacade.tsx:899
 msgid "You can't join while you're on timeout."
 msgstr "타임아웃 중에는 참여할 수 없습니다."
 
