@@ -20,9 +20,10 @@
 import type {ChannelID, MessageID, UserID} from '@fluxer/api/src/BrandedTypes';
 import type {ExactRow} from '@fluxer/api/src/database/types/DatabaseRowTypes';
 import type {GiftCodeRow, PaymentBySubscriptionRow, PaymentRow} from '@fluxer/api/src/database/types/PaymentTypes';
-import type {PushSubscriptionRow, RecentMentionRow} from '@fluxer/api/src/database/types/UserTypes';
+import type {PushDeviceRow, PushSubscriptionRow, RecentMentionRow} from '@fluxer/api/src/database/types/UserTypes';
 import type {GiftCode} from '@fluxer/api/src/models/GiftCode';
 import type {Payment} from '@fluxer/api/src/models/Payment';
+import type {PushDevice} from '@fluxer/api/src/models/PushDevice';
 import type {PushSubscription} from '@fluxer/api/src/models/PushSubscription';
 import type {RecentMention} from '@fluxer/api/src/models/RecentMention';
 import type {SavedMessage} from '@fluxer/api/src/models/SavedMessage';
@@ -61,6 +62,11 @@ export interface IUserContentRepository {
 	deletePushSubscription(userId: UserID, subscriptionId: string): Promise<void>;
 	getBulkPushSubscriptions(userIds: Array<UserID>): Promise<Map<UserID, Array<PushSubscription>>>;
 	deleteAllPushSubscriptions(userId: UserID): Promise<void>;
+
+	upsertPushDevice(data: ExactRow<PushDeviceRow>): Promise<PushDevice>;
+	deletePushDevice(userId: UserID, deviceId: string): Promise<void>;
+	getBulkPushDevices(userIds: Array<UserID>): Promise<Map<UserID, Array<PushDevice>>>;
+	deleteAllPushDevices(userId: UserID): Promise<void>;
 
 	createPayment(data: {
 		checkout_session_id: string;

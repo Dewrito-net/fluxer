@@ -399,6 +399,14 @@ export function buildAPIConfigFromMaster(master: MasterConfig): APIConfig {
 			publicVapidKey: master.auth.vapid.public_key,
 		},
 
+		fcm: {
+			enabled:
+				(master.integrations as {fcm?: {enabled?: boolean}}).fcm?.enabled ?? false,
+			serviceAccountKeyPath: (
+				master.integrations as {fcm?: {service_account_key_path?: string}}
+			).fcm?.service_account_key_path,
+		},
+
 		queue: {
 			baseUrl: 'queue' in master.internal ? String(master.internal.queue) : 'http://localhost:8088/queue',
 			authSecret: 'queue' in master.services ? (master.services.queue as {secret?: string}).secret : undefined,

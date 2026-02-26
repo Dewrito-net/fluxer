@@ -515,6 +515,11 @@ export const PushSubscriptionsListResponse = z.object({
 });
 export type PushSubscriptionsListResponse = z.infer<typeof PushSubscriptionsListResponse>;
 
+export const FCMTokenRegisterResponse = z.object({
+	device_id: HexString32Type.describe('The unique identifier for the registered device'),
+});
+export type FCMTokenRegisterResponse = z.infer<typeof FCMTokenRegisterResponse>;
+
 export const PreloadMessagesResponse = z
 	.record(SnowflakeStringType, MessageResponseSchema.nullable())
 	.describe('A map of channel IDs to the latest message in each channel');

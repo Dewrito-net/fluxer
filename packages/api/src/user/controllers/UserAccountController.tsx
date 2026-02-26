@@ -57,6 +57,8 @@ import {
 	PasswordChangeTicketRequest,
 	PasswordChangeVerifyRequest,
 	PreloadMessagesRequest,
+	FCMTokenDeleteRequest,
+	FCMTokenRegisterRequest,
 	PushSubscribeRequest,
 	SubscriptionIdParam,
 	UserGuildSettingsUpdateRequest,
@@ -73,6 +75,7 @@ import {
 	PasswordChangeStartResponse,
 	PasswordChangeVerifyResponse,
 	PreloadMessagesResponse,
+	FCMTokenRegisterResponse,
 	PushSubscribeResponse,
 	PushSubscriptionsListResponse,
 	UserGuildSettingsResponse,
@@ -887,6 +890,59 @@ export function UserAccountController(app: HonoApp) {
 		async (ctx) => {
 			const {subscription_id} = ctx.req.valid('param');
 			await ctx.get('userService').deletePushSubscription(ctx.get('user').id, subscription_id);
+			return ctx.json({success: true});
+		},
+	);
+
+	app.post(
+		'/users/@me/fcm/tokens',
+		RateLimitMiddleware(RateLimitConfigs.USER_FCM_TOKEN_REGISTER),
+		LoginRequired,
+		DefaultUserOnly,
+		Validator('json', FCMTokenRegisterRequest),
+		OpenAPI({
+			operationId: 'register_fcm_token',
+			summary: 'Register an FCM push token',
+			responseSchema: FCMTokenRegisterResponse,
+			statusCode: 200,
+			security: ['botToken', 'bearerToken', 'sessionToken'],
+			tags: ['Users'],
+			description:
+				'Registers an FCM (Firebase Cloud Messaging) token for the current user to enable native push notifications on Android devices.',
+		}),
+		async (ctx) => {
+			const {fcm_token, platform, device_name} = ctx.req.valid('json');
+			const device = await ctx.get('userService').registerPushDevice({
+				userId: ctx.get('user').id,
+				fcmToken: fcm_token,
+				platform,
+				deviceName: device_name,
+			});
+			return ctx.json({device_id: device.deviceId});
+		},
+	);
+
+	app.delete(
+		'/users/@me/fcm/tokens',
+		RateLimitMiddleware(RateLimitConfigs.USER_FCM_TOKEN_DELETE),
+		LoginRequired,
+		DefaultUserOnly,
+		Validator('json', FCMTokenDeleteRequest),
+		OpenAPI({
+			operationId: 'delete_fcm_token',
+			summary: 'Remove an FCM push token',
+			responseSchema: SuccessResponse,
+			statusCode: 200,
+			security: ['botToken', 'bearerToken', 'sessionToken'],
+			tags: ['Users'],
+			description:
+				'Removes an FCM token registration for the current user. Push notifications will no longer be sent to this device.',
+		}),
+		async (ctx) => {
+			const {fcm_token} = ctx.req.valid('json');
+			const crypto = await import('node:crypto');
+			const deviceId = crypto.createHash('sha256').update(fcm_token).digest('hex').substring(0, 32);
+			await ctx.get('userService').deletePushDevice(ctx.get('user').id, deviceId);
 			return ctx.json({success: true});
 		},
 	);

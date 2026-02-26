@@ -188,6 +188,8 @@ import {
 	NOTE_COLUMNS,
 	type NoteRow,
 	type PackInstallationRow,
+	PUSH_DEVICE_COLUMNS,
+	type PushDeviceRow,
 	PUSH_SUBSCRIPTION_COLUMNS,
 	type PushSubscriptionRow,
 	RECENT_MENTION_COLUMNS,
@@ -591,6 +593,12 @@ export const PushSubscriptions = defineTable<PushSubscriptionRow, 'user_id' | 's
 	name: 'push_subscriptions',
 	columns: PUSH_SUBSCRIPTION_COLUMNS,
 	primaryKey: ['user_id', 'subscription_id'],
+});
+
+export const PushDevices = defineTable<PushDeviceRow, 'user_id' | 'device_id'>({
+	name: 'push_devices',
+	columns: PUSH_DEVICE_COLUMNS,
+	primaryKey: ['user_id', 'device_id'],
 });
 
 export const Payments = defineTable<PaymentRow, 'checkout_session_id'>({

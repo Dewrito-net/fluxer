@@ -452,6 +452,26 @@ export const PUSH_SUBSCRIPTION_COLUMNS = [
 	'user_agent',
 ] as const satisfies ReadonlyArray<keyof PushSubscriptionRow>;
 
+export interface PushDeviceRow {
+	user_id: UserID;
+	device_id: string;
+	fcm_token: string;
+	platform: Nullish<string>;
+	device_name: Nullish<string>;
+	created_at: Date;
+	updated_at: Date;
+}
+
+export const PUSH_DEVICE_COLUMNS = [
+	'user_id',
+	'device_id',
+	'fcm_token',
+	'platform',
+	'device_name',
+	'created_at',
+	'updated_at',
+] as const satisfies ReadonlyArray<keyof PushDeviceRow>;
+
 export interface UserContactChangeLogRow {
 	user_id: UserID;
 	event_id: types.TimeUuid;

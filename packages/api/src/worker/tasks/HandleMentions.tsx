@@ -18,6 +18,7 @@
  */
 
 import {createChannelID, createGuildID, createMessageID, createUserID, type UserID} from '@fluxer/api/src/BrandedTypes';
+import {Config} from '@fluxer/api/src/Config';
 import {Logger} from '@fluxer/api/src/Logger';
 import {getWorkerDependencies} from '@fluxer/api/src/worker/WorkerContext';
 import type {WorkerTaskHandler} from '@fluxer/worker/src/contracts/WorkerTask';
@@ -142,6 +143,58 @@ const handleMentions: WorkerTaskHandler = async (payload, helpers) => {
 				is_role: message.mentionedRoleIds.size > 0,
 			})),
 		);
+	}
+
+	if (Config.fcm.enabled) {
+		try {
+			const {fcmService, pushDeviceRepository} = getWorkerDependencies();
+			if (fcmService && pushDeviceRepository) {
+				const offlineUserIds = [];
+				for (const userId of uniqueUserIds) {
+					const isOnline = await gatewayService.hasActivePresence(userId);
+					if (!isOnline) {
+						offlineUserIds.push(userId);
+					}
+				}
+
+				if (offlineUserIds.length > 0) {
+					const deviceMap = await pushDeviceRepository.getBulkPushDevices(offlineUserIds);
+					const allTokens: Array<string> = [];
+					for (const devices of deviceMap.values()) {
+						for (const device of devices) {
+							allTokens.push(device.fcmToken);
+						}
+					}
+
+					if (allTokens.length > 0) {
+						const contentPreview = message.content
+							? message.content.substring(0, 200)
+							: 'Sent a message';
+
+						await fcmService.sendToTokens(allTokens, {
+							notification: {
+								title: guildId ? 'New Mention' : 'New Message',
+								body: contentPreview,
+							},
+							data: {
+								type: 'mention',
+								channel_id: channelId.toString(),
+								message_id: messageId.toString(),
+								...(guildId ? {guild_id: guildId.toString()} : {}),
+							},
+							android: {
+								priority: 'high',
+								notification: {
+									channel_id: 'mentions',
+								},
+							},
+						});
+					}
+				}
+			}
+		} catch (error) {
+			Logger.error({error, channelId, guildId}, 'handleMentions: FCM push failed (non-fatal)');
+		}
 	}
 
 	Logger.debug(

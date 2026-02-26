@@ -42,6 +42,7 @@ import type {Channel} from '@fluxer/api/src/models/Channel';
 import type {GuildMember} from '@fluxer/api/src/models/GuildMember';
 import type {Message} from '@fluxer/api/src/models/Message';
 import type {MfaBackupCode} from '@fluxer/api/src/models/MfaBackupCode';
+import type {PushDevice} from '@fluxer/api/src/models/PushDevice';
 import type {PushSubscription} from '@fluxer/api/src/models/PushSubscription';
 import type {Relationship} from '@fluxer/api/src/models/Relationship';
 import type {User} from '@fluxer/api/src/models/User';
@@ -564,6 +565,19 @@ export class UserService {
 
 	async deletePushSubscription(userId: UserID, subscriptionId: string): Promise<void> {
 		return await this.contentService.deletePushSubscription(userId, subscriptionId);
+	}
+
+	async registerPushDevice(params: {
+		userId: UserID;
+		fcmToken: string;
+		platform?: string;
+		deviceName?: string;
+	}): Promise<PushDevice> {
+		return await this.contentService.registerPushDevice(params);
+	}
+
+	async deletePushDevice(userId: UserID, deviceId: string): Promise<void> {
+		return await this.contentService.deletePushDevice(userId, deviceId);
 	}
 
 	async requestDataHarvest(userId: UserID): Promise<{

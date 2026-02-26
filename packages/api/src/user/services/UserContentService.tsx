@@ -23,7 +23,7 @@ import {Config} from '@fluxer/api/src/Config';
 import type {IChannelRepository} from '@fluxer/api/src/channel/IChannelRepository';
 import {mapMessageToResponse} from '@fluxer/api/src/channel/MessageMappers';
 import type {ChannelService} from '@fluxer/api/src/channel/services/ChannelService';
-import type {PushSubscriptionRow} from '@fluxer/api/src/database/types/UserTypes';
+import type {PushDeviceRow, PushSubscriptionRow} from '@fluxer/api/src/database/types/UserTypes';
 import type {IGatewayService} from '@fluxer/api/src/infrastructure/IGatewayService';
 import type {IMediaService} from '@fluxer/api/src/infrastructure/IMediaService';
 import type {IStorageService} from '@fluxer/api/src/infrastructure/IStorageService';
@@ -36,6 +36,7 @@ import {resolveLimitSafe} from '@fluxer/api/src/limits/LimitConfigUtils';
 import {createLimitMatchContext} from '@fluxer/api/src/limits/LimitMatchContextBuilder';
 import type {RequestCache} from '@fluxer/api/src/middleware/RequestCacheMiddleware';
 import type {Message} from '@fluxer/api/src/models/Message';
+import type {PushDevice} from '@fluxer/api/src/models/PushDevice';
 import type {PushSubscription} from '@fluxer/api/src/models/PushSubscription';
 import type {IUserAccountRepository} from '@fluxer/api/src/user/repositories/IUserAccountRepository';
 import type {IUserContentRepository} from '@fluxer/api/src/user/repositories/IUserContentRepository';
@@ -242,6 +243,34 @@ export class UserContentService {
 
 	async deletePushSubscription(userId: UserID, subscriptionId: string): Promise<void> {
 		await this.userContentRepository.deletePushSubscription(userId, subscriptionId);
+	}
+
+	async registerPushDevice(params: {
+		userId: UserID;
+		fcmToken: string;
+		platform?: string;
+		deviceName?: string;
+	}): Promise<PushDevice> {
+		const {userId, fcmToken, platform, deviceName} = params;
+
+		const deviceId = crypto.createHash('sha256').update(fcmToken).digest('hex').substring(0, 32);
+
+		const now = new Date();
+		const data: PushDeviceRow = {
+			user_id: userId,
+			device_id: deviceId,
+			fcm_token: fcmToken,
+			platform: platform ?? null,
+			device_name: deviceName ?? null,
+			created_at: now,
+			updated_at: now,
+		};
+
+		return await this.userContentRepository.upsertPushDevice(data);
+	}
+
+	async deletePushDevice(userId: UserID, deviceId: string): Promise<void> {
+		await this.userContentRepository.deletePushDevice(userId, deviceId);
 	}
 
 	async requestDataHarvest(userId: UserID): Promise<{

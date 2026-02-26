@@ -272,6 +272,11 @@ export interface APIConfig {
 		publicVapidKey?: string;
 	};
 
+	fcm: {
+		enabled: boolean;
+		serviceAccountKeyPath?: string;
+	};
+
 	queue: {
 		baseUrl: string;
 		authSecret?: string;

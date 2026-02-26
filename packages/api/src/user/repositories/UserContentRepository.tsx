@@ -19,9 +19,10 @@
 
 import type {ChannelID, MessageID, UserID} from '@fluxer/api/src/BrandedTypes';
 import type {GiftCodeRow, PaymentBySubscriptionRow, PaymentRow} from '@fluxer/api/src/database/types/PaymentTypes';
-import type {PushSubscriptionRow, RecentMentionRow} from '@fluxer/api/src/database/types/UserTypes';
+import type {PushDeviceRow, PushSubscriptionRow, RecentMentionRow} from '@fluxer/api/src/database/types/UserTypes';
 import type {GiftCode} from '@fluxer/api/src/models/GiftCode';
 import type {Payment} from '@fluxer/api/src/models/Payment';
+import type {PushDevice} from '@fluxer/api/src/models/PushDevice';
 import type {PushSubscription} from '@fluxer/api/src/models/PushSubscription';
 import type {RecentMention} from '@fluxer/api/src/models/RecentMention';
 import type {SavedMessage} from '@fluxer/api/src/models/SavedMessage';
@@ -29,6 +30,7 @@ import type {VisionarySlot} from '@fluxer/api/src/models/VisionarySlot';
 import {GiftCodeRepository} from '@fluxer/api/src/user/repositories/GiftCodeRepository';
 import type {IUserContentRepository} from '@fluxer/api/src/user/repositories/IUserContentRepository';
 import {PaymentRepository} from '@fluxer/api/src/user/repositories/PaymentRepository';
+import {PushDeviceRepository} from '@fluxer/api/src/user/repositories/PushDeviceRepository';
 import {PushSubscriptionRepository} from '@fluxer/api/src/user/repositories/PushSubscriptionRepository';
 import {RecentMentionRepository} from '@fluxer/api/src/user/repositories/RecentMentionRepository';
 import {SavedMessageRepository} from '@fluxer/api/src/user/repositories/SavedMessageRepository';
@@ -37,6 +39,7 @@ import {VisionarySlotRepository} from '@fluxer/api/src/user/repositories/Visiona
 export class UserContentRepository implements IUserContentRepository {
 	private giftCodeRepository: GiftCodeRepository;
 	private paymentRepository: PaymentRepository;
+	private pushDeviceRepository: PushDeviceRepository;
 	private pushSubscriptionRepository: PushSubscriptionRepository;
 	private recentMentionRepository: RecentMentionRepository;
 	private savedMessageRepository: SavedMessageRepository;
@@ -45,6 +48,7 @@ export class UserContentRepository implements IUserContentRepository {
 	constructor() {
 		this.giftCodeRepository = new GiftCodeRepository();
 		this.paymentRepository = new PaymentRepository();
+		this.pushDeviceRepository = new PushDeviceRepository();
 		this.pushSubscriptionRepository = new PushSubscriptionRepository();
 		this.recentMentionRepository = new RecentMentionRepository();
 		this.savedMessageRepository = new SavedMessageRepository();
@@ -125,6 +129,22 @@ export class UserContentRepository implements IUserContentRepository {
 
 	async deleteAllPushSubscriptions(userId: UserID): Promise<void> {
 		return this.pushSubscriptionRepository.deleteAllPushSubscriptions(userId);
+	}
+
+	async upsertPushDevice(data: PushDeviceRow): Promise<PushDevice> {
+		return this.pushDeviceRepository.upsertPushDevice(data);
+	}
+
+	async deletePushDevice(userId: UserID, deviceId: string): Promise<void> {
+		return this.pushDeviceRepository.deletePushDevice(userId, deviceId);
+	}
+
+	async getBulkPushDevices(userIds: Array<UserID>): Promise<Map<UserID, Array<PushDevice>>> {
+		return this.pushDeviceRepository.getBulkPushDevices(userIds);
+	}
+
+	async deleteAllPushDevices(userId: UserID): Promise<void> {
+		return this.pushDeviceRepository.deleteAllPushDevices(userId);
 	}
 
 	async getRecentMention(userId: UserID, messageId: MessageID): Promise<RecentMention | null> {
