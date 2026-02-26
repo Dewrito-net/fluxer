@@ -59,6 +59,10 @@
 			"cloudflare": {
 				"$ref": "#/$defs/cloudflare",
 				"default": {}
+			},
+			"fcm": {
+				"$ref": "#/$defs/fcm_integration",
+				"default": {}
 			}
 		}
 	}

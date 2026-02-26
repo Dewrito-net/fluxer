@@ -30,18 +30,19 @@ const PayloadSchema = z.object({
 	authorId: z.string(),
 });
 
-const handleDMNotification: WorkerTaskHandler = async (payload, helpers) => {
+const handleDMNotification: WorkerTaskHandler = async (payload, _helpers) => {
 	const validated = PayloadSchema.parse(payload);
-	helpers.logger.debug({payload: validated}, 'Processing handleDMNotification task');
+	Logger.info({payload: validated}, 'handleDMNotification: processing');
 
 	if (!Config.fcm.enabled) {
+		Logger.info('handleDMNotification: FCM disabled, skipping');
 		return;
 	}
 
-	const {channelRepository, gatewayService, userRepository, fcmService, pushDeviceRepository} =
-		getWorkerDependencies();
+	const {channelRepository, userRepository, fcmService, pushDeviceRepository} = getWorkerDependencies();
 
 	if (!fcmService || !pushDeviceRepository) {
+		Logger.info('handleDMNotification: FCM service or push device repository not available');
 		return;
 	}
 
@@ -51,37 +52,26 @@ const handleDMNotification: WorkerTaskHandler = async (payload, helpers) => {
 
 	const channel = await channelRepository.findUnique(channelId);
 	if (!channel) {
-		Logger.debug({channelId}, 'handleDMNotification: Channel not found, skipping');
+		Logger.info({channelId}, 'handleDMNotification: Channel not found, skipping');
 		return;
 	}
 
 	const message = await channelRepository.getMessage(channelId, messageId);
 	if (!message) {
-		Logger.debug({messageId}, 'handleDMNotification: Message not found, skipping');
+		Logger.info({messageId}, 'handleDMNotification: Message not found, skipping');
 		return;
 	}
 
 	const recipientIds = Array.from(channel.recipientIds || []).filter((id) => id !== authorId);
+	Logger.info({recipientCount: recipientIds.length, authorId}, 'handleDMNotification: recipients filtered');
 	if (recipientIds.length === 0) {
-		return;
-	}
-
-	const offlineRecipientIds = [];
-	for (const userId of recipientIds) {
-		const isOnline = await gatewayService.hasActivePresence(userId);
-		if (!isOnline) {
-			offlineRecipientIds.push(userId);
-		}
-	}
-
-	if (offlineRecipientIds.length === 0) {
 		return;
 	}
 
 	const author = await userRepository.findUnique(authorId);
 	const authorName = author?.globalName ?? author?.username ?? 'Someone';
 
-	const deviceMap = await pushDeviceRepository.getBulkPushDevices(offlineRecipientIds);
+	const deviceMap = await pushDeviceRepository.getBulkPushDevices(recipientIds);
 	const allTokens: Array<string> = [];
 	for (const devices of deviceMap.values()) {
 		for (const device of devices) {
@@ -89,6 +79,7 @@ const handleDMNotification: WorkerTaskHandler = async (payload, helpers) => {
 		}
 	}
 
+	Logger.info({tokenCount: allTokens.length}, 'handleDMNotification: FCM tokens found');
 	if (allTokens.length === 0) {
 		return;
 	}
@@ -114,6 +105,7 @@ const handleDMNotification: WorkerTaskHandler = async (payload, helpers) => {
 				},
 			},
 		});
+		Logger.info({tokenCount: allTokens.length, authorName}, 'handleDMNotification: FCM sent successfully');
 	} catch (error) {
 		Logger.error({error, channelId}, 'handleDMNotification: FCM send failed');
 	}

@@ -400,11 +400,8 @@ export function buildAPIConfigFromMaster(master: MasterConfig): APIConfig {
 		},
 
 		fcm: {
-			enabled:
-				(master.integrations as {fcm?: {enabled?: boolean}}).fcm?.enabled ?? false,
-			serviceAccountKeyPath: (
-				master.integrations as {fcm?: {service_account_key_path?: string}}
-			).fcm?.service_account_key_path,
+			enabled: master.integrations.fcm.enabled,
+			serviceAccountKeyPath: master.integrations.fcm.service_account_key_path,
 		},
 
 		queue: {

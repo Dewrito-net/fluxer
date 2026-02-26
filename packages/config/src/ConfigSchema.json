@@ -1169,6 +1169,21 @@
 				]
 			}
 		},
+		"fcm_integration": {
+			"type": "object",
+			"description": "FCM push notification integration for Android devices.",
+			"properties": {
+				"enabled": {
+					"type": "boolean",
+					"description": "Enable FCM push notifications for Android devices.",
+					"default": false
+				},
+				"service_account_key_path": {
+					"type": "string",
+					"description": "Path to Google service account JSON key file for FCM."
+				}
+			}
+		},
 		"gif": {
 			"type": "object",
 			"description": "GIF provider selection for the client-facing GIF picker.",
@@ -1242,6 +1257,10 @@
 				},
 				"cloudflare": {
 					"$ref": "#/$defs/cloudflare",
+					"default": {}
+				},
+				"fcm": {
+					"$ref": "#/$defs/fcm_integration",
 					"default": {}
 				}
 			}

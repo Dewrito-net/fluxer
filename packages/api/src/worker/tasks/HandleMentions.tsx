@@ -149,47 +149,37 @@ const handleMentions: WorkerTaskHandler = async (payload, helpers) => {
 		try {
 			const {fcmService, pushDeviceRepository} = getWorkerDependencies();
 			if (fcmService && pushDeviceRepository) {
-				const offlineUserIds = [];
-				for (const userId of uniqueUserIds) {
-					const isOnline = await gatewayService.hasActivePresence(userId);
-					if (!isOnline) {
-						offlineUserIds.push(userId);
+				const deviceMap = await pushDeviceRepository.getBulkPushDevices(Array.from(uniqueUserIds));
+				const allTokens: Array<string> = [];
+				for (const devices of deviceMap.values()) {
+					for (const device of devices) {
+						allTokens.push(device.fcmToken);
 					}
 				}
 
-				if (offlineUserIds.length > 0) {
-					const deviceMap = await pushDeviceRepository.getBulkPushDevices(offlineUserIds);
-					const allTokens: Array<string> = [];
-					for (const devices of deviceMap.values()) {
-						for (const device of devices) {
-							allTokens.push(device.fcmToken);
-						}
-					}
+				if (allTokens.length > 0) {
+					const contentPreview = message.content
+						? message.content.substring(0, 200)
+						: 'Sent a message';
 
-					if (allTokens.length > 0) {
-						const contentPreview = message.content
-							? message.content.substring(0, 200)
-							: 'Sent a message';
-
-						await fcmService.sendToTokens(allTokens, {
+					await fcmService.sendToTokens(allTokens, {
+						notification: {
+							title: guildId ? 'New Mention' : 'New Message',
+							body: contentPreview,
+						},
+						data: {
+							type: 'mention',
+							channel_id: channelId.toString(),
+							message_id: messageId.toString(),
+							...(guildId ? {guild_id: guildId.toString()} : {}),
+						},
+						android: {
+							priority: 'high',
 							notification: {
-								title: guildId ? 'New Mention' : 'New Message',
-								body: contentPreview,
+								channel_id: 'mentions',
 							},
-							data: {
-								type: 'mention',
-								channel_id: channelId.toString(),
-								message_id: messageId.toString(),
-								...(guildId ? {guild_id: guildId.toString()} : {}),
-							},
-							android: {
-								priority: 'high',
-								notification: {
-									channel_id: 'mentions',
-								},
-							},
-						});
-					}
+						},
+					});
 				}
 			}
 		} catch (error) {
