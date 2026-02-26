@@ -41,8 +41,15 @@ wait_healthy() {
 }
 
 # Step 1: Build Docker image
-log "Building Docker image..."
-docker build -t "$IMAGE_NAME" -f fluxer_server/Dockerfile . 2>&1 | tail -5
+BUILD_SHA=$(git rev-parse --short HEAD)
+BUILD_NUMBER=$(git rev-list --count HEAD)
+BUILD_TIMESTAMP=$(date +%s)
+log "Building Docker image (SHA: $BUILD_SHA, Build: $BUILD_NUMBER)..."
+docker build -t "$IMAGE_NAME" -f fluxer_server/Dockerfile \
+	--build-arg BUILD_SHA="$BUILD_SHA" \
+	--build-arg BUILD_NUMBER="$BUILD_NUMBER" \
+	--build-arg BUILD_TIMESTAMP="$BUILD_TIMESTAMP" \
+	. 2>&1 | tail -5
 log "Image built successfully"
 
 # Step 2: Save image

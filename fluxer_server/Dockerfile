@@ -125,6 +125,16 @@ RUN LOGGER_LEVEL=${LOGGER_LEVEL} envsubst '${LOGGER_LEVEL}' < fluxer_gateway/con
 
 FROM deps AS app-build
 
+ARG BUILD_SHA
+ARG BUILD_NUMBER
+ARG BUILD_TIMESTAMP
+ARG RELEASE_CHANNEL=nightly
+
+ENV BUILD_SHA=${BUILD_SHA}
+ENV BUILD_NUMBER=${BUILD_NUMBER}
+ENV BUILD_TIMESTAMP=${BUILD_TIMESTAMP}
+ENV RELEASE_CHANNEL=${RELEASE_CHANNEL}
+
 RUN apt-get update && apt-get install -y --no-install-recommends \
 	ca-certificates \
 	pkg-config \
@@ -145,7 +155,15 @@ COPY config/config.json ./config/config.json
 
 ENV FLUXER_CONFIG=/usr/src/app/config/config.json
 
-RUN cd fluxer_app && pnpm lingui:compile && pnpm build
+RUN cd fluxer_app && pnpm lingui:compile && pnpm build && \
+	node -e "\
+		const fs = require('fs');\
+		const sha = process.env.BUILD_SHA || 'dev';\
+		const buildNumber = Number(process.env.BUILD_NUMBER || 0);\
+		const timestamp = Number(process.env.BUILD_TIMESTAMP || Math.floor(Date.now() / 1000));\
+		const env = process.env.RELEASE_CHANNEL || 'nightly';\
+		fs.writeFileSync('dist/version.json', JSON.stringify({ sha, buildNumber, timestamp, env }, null, 2));\
+	"
 
 FROM node:24-trixie-slim AS production
 
