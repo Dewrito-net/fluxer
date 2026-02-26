@@ -20,20 +20,16 @@
 import {type ApiTestHarness, createApiTestHarness} from '@fluxer/api/src/test/ApiTestHarness';
 import {HTTP_STATUS} from '@fluxer/api/src/test/TestConstants';
 import {createBuilderWithoutAuth} from '@fluxer/api/src/test/TestRequestBuilder';
-import {afterAll, beforeAll, beforeEach, describe, it} from 'vitest';
+import {afterEach, beforeEach, describe, it} from 'vitest';
 
 describe('OAuth2 authorizations requires auth', () => {
 	let harness: ApiTestHarness;
 
-	beforeAll(async () => {
+	beforeEach(async () => {
 		harness = await createApiTestHarness();
 	});
 
-	beforeEach(async () => {
-		await harness.reset();
-	});
-
-	afterAll(async () => {
+	afterEach(async () => {
 		await harness?.shutdown();
 	});
 

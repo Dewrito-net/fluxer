@@ -379,7 +379,8 @@ describe('GET /donations/manage', () => {
 		});
 
 		test('handles token expiring in exactly 0 milliseconds', async () => {
-			const expiresAt = new Date(Date.now());
+			// Use a date slightly in the past to avoid race between token creation and validation
+			const expiresAt = new Date(Date.now() - 50);
 			await createDonorWithCustomerId(TEST_DONOR_EMAIL, 'cus_test');
 			const tokenModel = new DonorMagicLinkToken({
 				token_: TEST_MAGIC_LINK_TOKEN,
