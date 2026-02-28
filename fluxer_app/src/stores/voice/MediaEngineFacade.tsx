@@ -723,6 +723,9 @@ class MediaEngineFacade {
 	applyLocalInputVolume(): void {
 		VoiceMediaManager.applyLocalInputVolume(this.room);
 	}
+	applyAudioProcessor(): void {
+		void VoiceMediaManager.applyAudioProcessor(this.room);
+	}
 	setLocalVideoDisabled(identity: string, disabled: boolean): void {
 		VoiceMediaManager.setLocalVideoDisabled(identity, disabled, this.room, this.connectionId);
 	}

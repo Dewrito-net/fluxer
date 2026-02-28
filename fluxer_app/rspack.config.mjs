@@ -436,6 +436,11 @@ export default () => {
 						to: DIST_DIR,
 						noErrorOnMissing: true,
 					},
+					{
+						from: path.join(ROOT_DIR, 'node_modules/@sapphi-red/web-noise-suppressor/dist'),
+						to: path.join(DIST_DIR, 'audio-worklets'),
+						noErrorOnMissing: true,
+					},
 				],
 			}),
 

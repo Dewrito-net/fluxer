@@ -63,6 +63,10 @@ export const VoiceTab: React.FC<VoiceTabProps> = observer(({voiceSettings, autoR
 		echoCancellation,
 		noiseSuppression,
 		autoGainControl,
+		advancedNoiseSuppression,
+		noiseGateEnabled,
+		noiseGateThreshold,
+		compressorEnabled,
 	} = voiceSettings;
 
 	const {
@@ -425,6 +429,62 @@ export const VoiceTab: React.FC<VoiceTabProps> = observer(({voiceSettings, autoR
 							description={<Trans>Automatically adjusts microphone volume for consistent levels</Trans>}
 							value={autoGainControl}
 							onChange={(value) => VoiceSettingsActionCreators.update({autoGainControl: value})}
+						/>
+					</div>
+				</div>
+			</div>
+
+			<div className={styles.audioProcessing}>
+				<div className={styles.audioProcessingLabel}>
+					<Trans>Advanced Audio Processing</Trans>
+				</div>
+				<div className={styles.audioProcessingCard}>
+					<p className={styles.audioProcessingDescription}>
+						<Trans>
+							Higher quality audio processing using machine learning and signal processing. These run locally in your
+							browser.
+						</Trans>
+					</p>
+					<div className={styles.audioProcessingOptions}>
+						<Switch
+							label={<Trans>ML Noise Suppression (RNNoise)</Trans>}
+							description={
+								<Trans>Uses a neural network to filter background noise like fans, typing, and traffic</Trans>
+							}
+							value={advancedNoiseSuppression}
+							onChange={(value) => VoiceSettingsActionCreators.update({advancedNoiseSuppression: value})}
+						/>
+						<Switch
+							label={<Trans>Noise Gate</Trans>}
+							description={<Trans>Mutes your microphone when audio falls below a threshold</Trans>}
+							value={noiseGateEnabled}
+							onChange={(value) => VoiceSettingsActionCreators.update({noiseGateEnabled: value})}
+						/>
+						{noiseGateEnabled && (
+							<div>
+								<div className={styles.sliderLabel}>
+									<Trans>Gate Threshold</Trans>
+								</div>
+								<Slider
+									value={noiseGateThreshold}
+									defaultValue={noiseGateThreshold}
+									factoryDefaultValue={-50}
+									minValue={-100}
+									maxValue={0}
+									step={1}
+									markers={[-100, -75, -50, -25, 0]}
+									stickToMarkers={false}
+									onMarkerRender={(value) => `${value} dB`}
+									onValueRender={(value) => <Trans>{value} dB</Trans>}
+									onValueChange={(value) => VoiceSettingsActionCreators.update({noiseGateThreshold: value})}
+								/>
+							</div>
+						)}
+						<Switch
+							label={<Trans>Compressor</Trans>}
+							description={<Trans>Evens out loud and quiet audio for more consistent voice levels</Trans>}
+							value={compressorEnabled}
+							onChange={(value) => VoiceSettingsActionCreators.update({compressorEnabled: value})}
 						/>
 					</div>
 				</div>

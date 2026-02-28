@@ -58,6 +58,10 @@ type VoiceSettingsUpdate = Partial<{
 	pauseOwnScreenSharePreviewOnUnfocus: boolean;
 	disablePictureInPicturePopout: boolean;
 	screenShareHardwareAcceleration: boolean;
+	advancedNoiseSuppression: boolean;
+	noiseGateEnabled: boolean;
+	noiseGateThreshold: number;
+	compressorEnabled: boolean;
 }>;
 
 class VoiceSettingsStore {
@@ -84,6 +88,10 @@ class VoiceSettingsStore {
 	pauseOwnScreenSharePreviewOnUnfocusPrefV2 = true;
 	disablePictureInPicturePopout = false;
 	screenShareHardwareAcceleration = true;
+	advancedNoiseSuppression = false;
+	noiseGateEnabled = false;
+	noiseGateThreshold = -50;
+	compressorEnabled = false;
 
 	constructor() {
 		makeAutoObservable(
@@ -112,6 +120,10 @@ class VoiceSettingsStore {
 				getDisablePictureInPicturePopout: false,
 				getPauseOwnScreenSharePreviewOnUnfocus: false,
 				getScreenShareHardwareAcceleration: false,
+				getAdvancedNoiseSuppression: false,
+				getNoiseGateEnabled: false,
+				getNoiseGateThreshold: false,
+				getCompressorEnabled: false,
 			},
 			{autoBind: true},
 		);
@@ -142,6 +154,10 @@ class VoiceSettingsStore {
 			'pauseOwnScreenSharePreviewOnUnfocusPrefV2',
 			'disablePictureInPicturePopout',
 			'screenShareHardwareAcceleration',
+			'advancedNoiseSuppression',
+			'noiseGateEnabled',
+			'noiseGateThreshold',
+			'compressorEnabled',
 		]);
 	}
 
@@ -304,6 +320,22 @@ class VoiceSettingsStore {
 		return this.screenShareHardwareAcceleration;
 	}
 
+	getAdvancedNoiseSuppression(): boolean {
+		return this.advancedNoiseSuppression;
+	}
+
+	getNoiseGateEnabled(): boolean {
+		return this.noiseGateEnabled;
+	}
+
+	getNoiseGateThreshold(): number {
+		return this.noiseGateThreshold;
+	}
+
+	getCompressorEnabled(): boolean {
+		return this.compressorEnabled;
+	}
+
 	updateSettings(data: VoiceSettingsUpdate): void {
 		const validated = this.validateSettings(data);
 
@@ -336,6 +368,11 @@ class VoiceSettingsStore {
 			this.disablePictureInPicturePopout = validated.disablePictureInPicturePopout;
 		if (validated.screenShareHardwareAcceleration !== undefined)
 			this.screenShareHardwareAcceleration = validated.screenShareHardwareAcceleration;
+		if (validated.advancedNoiseSuppression !== undefined)
+			this.advancedNoiseSuppression = validated.advancedNoiseSuppression;
+		if (validated.noiseGateEnabled !== undefined) this.noiseGateEnabled = validated.noiseGateEnabled;
+		if (validated.noiseGateThreshold !== undefined) this.noiseGateThreshold = validated.noiseGateThreshold;
+		if (validated.compressorEnabled !== undefined) this.compressorEnabled = validated.compressorEnabled;
 	}
 
 	private validateSettings(data: VoiceSettingsUpdate): VoiceSettingsUpdate {
@@ -398,6 +435,10 @@ class VoiceSettingsStore {
 				data.pauseOwnScreenSharePreviewOnUnfocus ?? this.pauseOwnScreenSharePreviewOnUnfocus,
 			disablePictureInPicturePopout: data.disablePictureInPicturePopout ?? this.disablePictureInPicturePopout,
 			screenShareHardwareAcceleration: data.screenShareHardwareAcceleration ?? this.screenShareHardwareAcceleration,
+			advancedNoiseSuppression: data.advancedNoiseSuppression ?? this.advancedNoiseSuppression,
+			noiseGateEnabled: data.noiseGateEnabled ?? this.noiseGateEnabled,
+			noiseGateThreshold: Math.max(-100, Math.min(0, data.noiseGateThreshold ?? this.noiseGateThreshold)),
+			compressorEnabled: data.compressorEnabled ?? this.compressorEnabled,
 		};
 	}
 }

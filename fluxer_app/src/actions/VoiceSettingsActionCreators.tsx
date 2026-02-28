@@ -45,6 +45,10 @@ export function update(
 		pauseOwnScreenSharePreviewOnUnfocus: boolean;
 		disablePictureInPicturePopout: boolean;
 		screenShareHardwareAcceleration: boolean;
+		advancedNoiseSuppression: boolean;
+		noiseGateEnabled: boolean;
+		noiseGateThreshold: number;
+		compressorEnabled: boolean;
 	}>,
 ): void {
 	VoiceSettingsStore.updateSettings(settings);
@@ -53,5 +57,13 @@ export function update(
 	}
 	if (settings.inputVolume !== undefined) {
 		MediaEngineStore.applyLocalInputVolume();
+	}
+	if (
+		settings.advancedNoiseSuppression !== undefined ||
+		settings.noiseGateEnabled !== undefined ||
+		settings.noiseGateThreshold !== undefined ||
+		settings.compressorEnabled !== undefined
+	) {
+		MediaEngineStore.applyAudioProcessor();
 	}
 }
