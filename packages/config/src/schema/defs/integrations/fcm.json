@@ -1,0 +1,18 @@
+{
+	"fcm_integration": {
+		"type": "object",
+		"description": "FCM push notification integration for Android devices.",
+		"additionalProperties": false,
+		"properties": {
+			"enabled": {
+				"type": "boolean",
+				"description": "Enable FCM push notifications for Android devices.",
+				"default": false
+			},
+			"service_account_key_path": {
+				"type": "string",
+				"description": "Path to Google service account JSON key file for FCM."
+			}
+		}
+	}
+}

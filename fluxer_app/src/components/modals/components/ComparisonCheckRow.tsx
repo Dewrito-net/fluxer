@@ -22,7 +22,17 @@ import {CheckIcon} from '@phosphor-icons/react';
 import {observer} from 'mobx-react-lite';
 
 export const ComparisonCheckRow = observer(
-	({feature, freeHas, plutoniumHas}: {feature: string; freeHas: boolean; plutoniumHas: boolean}) => (
+	({
+		feature,
+		freeHas,
+		plutoniumHas,
+		visionaryHas,
+	}: {
+		feature: string;
+		freeHas: boolean;
+		plutoniumHas: boolean;
+		visionaryHas: boolean;
+	}) => (
 		<div className={styles.row}>
 			<div className={styles.feature}>
 				<p className={styles.featureText}>{feature}</p>
@@ -34,6 +44,13 @@ export const ComparisonCheckRow = observer(
 				<div className={styles.valueCell}>
 					{plutoniumHas ? (
 						<CheckIcon className={styles.checkIcon} weight="bold" />
+					) : (
+						<span className={styles.dash}>—</span>
+					)}
+				</div>
+				<div className={styles.valueCell}>
+					{visionaryHas ? (
+						<CheckIcon className={styles.checkIconVisionary} weight="bold" />
 					) : (
 						<span className={styles.dash}>—</span>
 					)}

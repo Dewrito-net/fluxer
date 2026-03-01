@@ -79,6 +79,7 @@ catalog:
   '@radix-ui/react-switch': 1.2.6
   '@rspack/cli': 1.7.5
   '@rspack/core': 1.7.5
+  '@sapphi-red/web-noise-suppressor': 0.3.5
   '@sentry/node': 10.38.0
   '@sentry/react': 10.38.0
   '@simplewebauthn/browser': 13.2.2

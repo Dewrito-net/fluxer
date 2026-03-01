@@ -19,6 +19,7 @@
 
 import {createMultipartFormData} from '@fluxer/api/src/channel/tests/AttachmentTestUtils';
 import {getPngDataUrl, VALID_PNG_BASE64} from '@fluxer/api/src/emoji/tests/EmojiTestUtils';
+import {ensureSessionStarted} from '@fluxer/api/src/message/tests/MessageTestUtils';
 import type {ApiTestHarness} from '@fluxer/api/src/test/ApiTestHarness';
 import {createBuilder, createBuilderWithoutAuth} from '@fluxer/api/src/test/TestRequestBuilder';
 import type {GuildEmojiWithUserResponse} from '@fluxer/schema/src/domains/guild/GuildEmojiSchemas';
@@ -199,6 +200,7 @@ export async function sendChannelMessage(
 	channelId: string,
 	content: string,
 ): Promise<MessageResponse> {
+	await ensureSessionStarted(harness, token);
 	return createBuilder<MessageResponse>(harness, token)
 		.post(`/channels/${channelId}/messages`)
 		.body({content})

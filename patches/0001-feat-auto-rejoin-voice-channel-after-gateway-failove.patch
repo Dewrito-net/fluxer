@@ -1,0 +1,88 @@
+From ec1bc4700ba01682d1e2a23143e4f426087f6529 Mon Sep 17 00:00:00 2001
+From: Cameron Proudlock <cam.proudlock@gmail.com>
+Date: Sat, 21 Feb 2026 23:10:57 -0500
+Subject: [PATCH] feat: auto-rejoin voice channel after gateway failover
+
+When a backend node dies and the client reconnects to the surviving node,
+the READY payload includes the user's active voice state from KeyDB.
+Previously this only restored the visual state (user appears in channel
+sidebar) but didn't reconnect to LiveKit for actual audio.
+
+This adds auto-rejoin logic to handleConnectionOpen() that:
+1. Detects the current user's active voice state in GUILD_CREATE data
+2. Disconnects zombie voice states from the dead node (+2s)
+3. Immediately clears zombies from local MobX state to avoid duplicates
+4. Connects to the voice channel with retry (up to 3 attempts, 7s apart)
+
+The retry is necessary because the gateway needs time to process room
+cleanup after zombie disconnects before it can issue new LiveKit tokens.
+
+Uses connectDirectly() instead of connectToVoiceChannel() to bypass
+checkMultipleConnections which would show a "Switch to this device"
+modal due to zombie connection_ids.
+
+Co-Authored-By: Claude Opus 4.6 <noreply@anthropic.com>
+---
+ .../src/stores/voice/MediaEngineFacade.tsx    | 46 +++++++++++++++++++
+ 1 file changed, 46 insertions(+)
+
+diff --git a/fluxer_app/src/stores/voice/MediaEngineFacade.tsx b/fluxer_app/src/stores/voice/MediaEngineFacade.tsx
+index 95701a06..ae088200 100644
+--- a/fluxer_app/src/stores/voice/MediaEngineFacade.tsx
++++ b/fluxer_app/src/stores/voice/MediaEngineFacade.tsx
+@@ -420,6 +420,52 @@ class MediaEngineFacade {
+ 
+ 	handleConnectionOpen(guilds: Array<GuildReadyData>): void {
+ 		VoiceStateManager.handleConnectionOpen(guilds);
++
++		// Auto-rejoin voice channel after failover/reconnection
++		const currentUser = UserStore.getCurrentUser();
++		if (!currentUser) return;
++
++		// Don't auto-rejoin if already connected to voice
++		if (VoiceConnectionManager.connected || VoiceConnectionManager.connecting) return;
++
++		// Scan guilds for current user's active voice state
++		for (const guild of guilds) {
++			const voiceStates = guild.voice_states ?? [];
++			const myVoiceStates = voiceStates.filter(
++				(vs) => vs.user_id === currentUser.id && vs.channel_id != null,
++			);
++			if (myVoiceStates.length > 0) {
++				const guildId = guild.id;
++				const channelId = myVoiceStates[0].channel_id!;
++
++				// Step 1: Disconnect zombie voice states from dead node (2s delay for gateway to settle)
++				setTimeout(() => {
++					for (const vs of myVoiceStates) {
++						if (vs.connection_id) {
++							sendVoiceStateDisconnect(guildId, vs.connection_id);
++							// Immediately remove from local MobX state (don't wait for gateway round-trip)
++							VoiceStateManager.handleGatewayVoiceStateUpdate(guildId, {...vs, channel_id: null});
++						}
++					}
++
++					// Step 2: Try to connect with retry (gateway may need time after room cleanup)
++					let attempt = 0;
++					const tryConnect = () => {
++						if (++attempt > 3) return;
++						if (VoiceConnectionManager.connected || VoiceConnectionManager.connecting) return;
++						this.connectDirectly(guildId, channelId);
++						// voice_server_timeout is 5s; retry 2s after that
++						setTimeout(() => {
++							if (!VoiceConnectionManager.connected && !VoiceConnectionManager.connecting) {
++								tryConnect();
++							}
++						}, 7000);
++					};
++					setTimeout(tryConnect, 3000);
++				}, 2000);
++				break;
++			}
++		}
+ 	}
+ 	handleGuildCreate(guild: GuildReadyData): void {
+ 		VoiceStateManager.handleGuildCreate(guild);
+-- 
+2.43.0
+

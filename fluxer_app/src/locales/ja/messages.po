@@ -134,12 +134,12 @@ msgid "{0} of {totalAttachments}"
 msgstr "{0} / {totalAttachments}"
 
 #. placeholder {0}: passkeys.length
-#: src/components/modals/tabs/account_security_tab/SecurityTab.tsx:288
+#: src/components/modals/tabs/account_security_tab/SecurityTab.tsx:301
 msgid "{0} passkey registered (max 10)"
 msgstr "{0} パスキーが登録されました (最大 10)"
 
 #. placeholder {0}: passkeys.length
-#: src/components/modals/tabs/account_security_tab/SecurityTab.tsx:289
+#: src/components/modals/tabs/account_security_tab/SecurityTab.tsx:302
 msgid "{0} passkeys registered (max 10)"
 msgstr "{0} パスキーが登録されました (最大 10)"
 
@@ -449,7 +449,7 @@ msgstr "{baseDescription} この制限は、あなたのインスタンス管理
 msgid "{baseDescription} With Plutonium, your per-file upload limit increases to {0}, plus animated avatars, longer messages, and many other premium features."
 msgstr "{baseDescription} プルトニウムを使用すると、ファイルごとのアップロード制限が {0} に増加し、アニメーションアバター、長いメッセージ、その他多くのプレミアム機能が利用可能になります。"
 
-#: src/components/pages/OAuthAuthorizePage.tsx:743
+#: src/components/pages/OAuthAuthorizePage.tsx:712
 msgid "{clientLabel} wants to connect"
 msgstr "{clientLabel}が接続を希望しています"
 
@@ -492,7 +492,7 @@ msgstr "{currentCount} / {0}"
 msgid "{days} days"
 msgstr "{days}日"
 
-#: src/components/layout/guild_list/GuildListDMItem.tsx:199
+#: src/components/layout/guild_list/GuildListDMItem.tsx:198
 msgid "{displayName} (selected)"
 msgstr "{displayName} (選択済み)"
 
@@ -883,12 +883,12 @@ msgstr "{v} ギフト"
 msgid "{v} gifts"
 msgstr "{v} ギフト"
 
-#: src/components/modals/channel_tabs/ChannelOverviewTab.tsx:655
-#: src/components/modals/channel_tabs/ChannelOverviewTab.tsx:656
+#: src/components/modals/channel_tabs/ChannelOverviewTab.tsx:694
+#: src/components/modals/channel_tabs/ChannelOverviewTab.tsx:695
 msgid "{value} kbps"
 msgstr "{value} kbps"
 
-#: src/components/modals/channel_tabs/ChannelOverviewTab.tsx:688
+#: src/components/modals/channel_tabs/ChannelOverviewTab.tsx:727
 msgid "{value} participants"
 msgstr "{value}人の参加者"
 
@@ -1088,7 +1088,7 @@ msgstr "<0>スピーカーミュートを解除</0>しました。"
 msgid "<0>Unmuted</0> the member."
 msgstr "<0>ミュートを解除</0>しました。"
 
-#: src/components/modals/tabs/account_security_tab/SecurityTab.tsx:373
+#: src/components/modals/tabs/account_security_tab/SecurityTab.tsx:397
 msgid "<0>Warning:</0> This will also disable SMS two-factor authentication."
 msgstr "<0>警告:</0> これによりSMS二要素認証も無効になります。"
 
@@ -1103,7 +1103,7 @@ msgstr "1日"
 
 #: src/components/channel/CallMessage.tsx:70
 #: src/components/modals/BanMemberModal.tsx:56
-#: src/components/modals/channel_tabs/ChannelOverviewTab.tsx:171
+#: src/components/modals/channel_tabs/ChannelOverviewTab.tsx:184
 #: src/components/modals/InviteModal.tsx:77
 #: src/components/modals/InviteModal.tsx:201
 #: src/components/modals/PackInviteModal.tsx:48
@@ -1122,7 +1122,7 @@ msgstr "1件の一致"
 msgid "1 Member"
 msgstr "1 メンバー"
 
-#: src/components/modals/channel_tabs/ChannelOverviewTab.tsx:165
+#: src/components/modals/channel_tabs/ChannelOverviewTab.tsx:178
 #: src/components/modals/tabs/developer_options_tab/MockingTab.tsx:74
 #: src/utils/modals/guild_tabs/GuildOverviewTabUtils.tsx:61
 msgid "1 minute"
@@ -1192,13 +1192,13 @@ msgstr "1年ギフト"
 msgid "1 Year of Plutonium"
 msgstr "1年間のPlutonium"
 
-#: src/components/modals/channel_tabs/ChannelOverviewTab.tsx:168
+#: src/components/modals/channel_tabs/ChannelOverviewTab.tsx:181
 #: src/components/modals/tabs/developer_options_tab/MockingTab.tsx:77
 #: src/components/modals/TimeoutMemberOptions.tsx:36
 msgid "10 minutes"
 msgstr "10分"
 
-#: src/components/modals/channel_tabs/ChannelOverviewTab.tsx:162
+#: src/components/modals/channel_tabs/ChannelOverviewTab.tsx:175
 #: src/components/modals/tabs/developer_options_tab/MockingTab.tsx:72
 #: src/constants/TimeWindowPresets.tsx:55
 msgid "10 seconds"
@@ -1249,17 +1249,17 @@ msgstr "1440p"
 msgid "15 FPS"
 msgstr "15 FPS"
 
-#: src/components/modals/channel_tabs/ChannelOverviewTab.tsx:169
+#: src/components/modals/channel_tabs/ChannelOverviewTab.tsx:182
 #: src/constants/TimeWindowPresets.tsx:56
 #: src/utils/modals/guild_tabs/GuildOverviewTabUtils.tsx:63
 msgid "15 minutes"
 msgstr "15分"
 
-#: src/components/modals/channel_tabs/ChannelOverviewTab.tsx:163
+#: src/components/modals/channel_tabs/ChannelOverviewTab.tsx:176
 msgid "15 seconds"
 msgstr "15秒"
 
-#: src/components/modals/channel_tabs/ChannelOverviewTab.tsx:172
+#: src/components/modals/channel_tabs/ChannelOverviewTab.tsx:185
 msgid "2 hours"
 msgstr "2時間"
 
@@ -1271,7 +1271,7 @@ msgstr "2人のメンバー（オンライン）"
 msgid "2 members (typing)"
 msgstr "2人のメンバー (入力中)"
 
-#: src/components/modals/channel_tabs/ChannelOverviewTab.tsx:166
+#: src/components/modals/channel_tabs/ChannelOverviewTab.tsx:179
 #: src/components/modals/tabs/developer_options_tab/MockingTab.tsx:75
 msgid "2 minutes"
 msgstr "2分"
@@ -1344,7 +1344,7 @@ msgstr "3ヶ月"
 msgid "30 FPS"
 msgstr "30 FPS"
 
-#: src/components/modals/channel_tabs/ChannelOverviewTab.tsx:170
+#: src/components/modals/channel_tabs/ChannelOverviewTab.tsx:183
 #: src/components/modals/InviteModal.tsx:76
 #: src/components/modals/InviteModal.tsx:199
 #: src/components/modals/PackInviteModal.tsx:47
@@ -1353,7 +1353,7 @@ msgstr "30 FPS"
 msgid "30 minutes"
 msgstr "30分"
 
-#: src/components/modals/channel_tabs/ChannelOverviewTab.tsx:164
+#: src/components/modals/channel_tabs/ChannelOverviewTab.tsx:177
 #: src/components/modals/tabs/developer_options_tab/MockingTab.tsx:73
 msgid "30 seconds"
 msgstr "30秒"
@@ -1394,14 +1394,14 @@ msgstr "4K (2160p)"
 msgid "5 days"
 msgstr "5日"
 
-#: src/components/modals/channel_tabs/ChannelOverviewTab.tsx:167
+#: src/components/modals/channel_tabs/ChannelOverviewTab.tsx:180
 #: src/components/modals/tabs/developer_options_tab/MockingTab.tsx:76
 #: src/components/modals/TimeoutMemberOptions.tsx:35
 #: src/utils/modals/guild_tabs/GuildOverviewTabUtils.tsx:62
 msgid "5 minutes"
 msgstr "5分"
 
-#: src/components/modals/channel_tabs/ChannelOverviewTab.tsx:161
+#: src/components/modals/channel_tabs/ChannelOverviewTab.tsx:174
 msgid "5 seconds"
 msgstr "5秒"
 
@@ -1415,7 +1415,7 @@ msgstr "5回使用"
 msgid "50 uses"
 msgstr "50回使用"
 
-#: src/components/modals/channel_tabs/ChannelOverviewTab.tsx:173
+#: src/components/modals/channel_tabs/ChannelOverviewTab.tsx:186
 #: src/components/modals/InviteModal.tsx:78
 #: src/components/modals/InviteModal.tsx:203
 #: src/components/modals/PackInviteModal.tsx:49
@@ -1608,8 +1608,8 @@ msgstr "アクセシビリティ"
 msgid "account"
 msgstr "アカウント"
 
-#: src/components/modals/tabs/account_security_tab/Inline.tsx:73
-#: src/components/modals/tabs/AccountSecurityTab.tsx:77
+#: src/components/modals/tabs/account_security_tab/Inline.tsx:74
+#: src/components/modals/tabs/AccountSecurityTab.tsx:78
 #: src/components/modals/utils/SettingsConstants.tsx:297
 #: src/components/modals/utils/SettingsSectionRegistry.tsx:488
 msgid "Account"
@@ -1642,7 +1642,7 @@ msgstr "アカウント状態オーバーライド"
 msgid "Account Too New"
 msgstr "アカウントが新しすぎます"
 
-#: src/actions/InviteActionCreators.tsx:182
+#: src/actions/InviteActionCreators.tsx:205
 #: src/components/modals/RequiredActionModal.tsx:143
 #: src/components/modals/RequiredActionModal.tsx:416
 msgid "Account Verification Required"
@@ -1698,7 +1698,7 @@ msgstr "アクション"
 msgid "active"
 msgstr "アクティブ"
 
-#: src/components/modals/components/plutonium/SubscriptionCard.tsx:135
+#: src/components/modals/components/plutonium/SubscriptionCard.tsx:124
 msgid "Active"
 msgstr "アクティブ"
 
@@ -1769,8 +1769,8 @@ msgstr "コメントを追加（任意）"
 
 #: src/components/layout/guild_list/AddGuildButton.tsx:90
 #: src/components/layout/guild_list/AddGuildButton.tsx:95
-#: src/components/modals/AddGuildModal.tsx:80
-#: src/components/modals/AddGuildModal.tsx:86
+#: src/components/modals/AddGuildModal.tsx:81
+#: src/components/modals/AddGuildModal.tsx:87
 msgid "Add a Community"
 msgstr "コミュニティを追加"
 
@@ -1782,7 +1782,7 @@ msgstr "カスタム背景を追加"
 msgid "Add a different account"
 msgstr "別のアカウントを追加"
 
-#: src/components/modals/tabs/account_security_tab/SecurityTab.tsx:351
+#: src/components/modals/tabs/account_security_tab/SecurityTab.tsx:375
 msgid "Add a phone number to enable SMS two-factor authentication"
 msgstr "SMS二要素認証を有効にするために電話番号を追加"
 
@@ -1791,7 +1791,7 @@ msgstr "SMS二要素認証を有効にするために電話番号を追加"
 msgid "Add a tag"
 msgstr "タグを追加"
 
-#: src/components/modals/channel_tabs/ChannelOverviewTab.tsx:520
+#: src/components/modals/channel_tabs/ChannelOverviewTab.tsx:559
 msgid "Add a topic to this channel"
 msgstr "このチャンネルにトピックを追加"
 
@@ -1808,7 +1808,7 @@ msgstr "アクションを追加！"
 msgid "Add an account"
 msgstr "アカウントを追加"
 
-#: src/components/modals/tabs/account_security_tab/SecurityTab.tsx:219
+#: src/components/modals/tabs/account_security_tab/SecurityTab.tsx:232
 msgid "Add an extra layer of security to your account"
 msgstr "アカウントにセキュリティの層を追加"
 
@@ -1820,7 +1820,7 @@ msgstr "別のリアクションを追加"
 msgid "Add Bluesky connection"
 msgstr "Bluesky 接続を追加"
 
-#: src/components/pages/OAuthAuthorizePage.tsx:863
+#: src/components/pages/OAuthAuthorizePage.tsx:832
 msgid "Add bot to a community"
 msgstr "コミュニティにボットを追加"
 
@@ -1902,12 +1902,12 @@ msgstr "電話番号を追加または変更"
 msgid "Add Override"
 msgstr "オーバーライドを追加"
 
-#: src/components/modals/tabs/account_security_tab/SecurityTab.tsx:293
+#: src/components/modals/tabs/account_security_tab/SecurityTab.tsx:306
 msgid "Add Passkey"
 msgstr "パスキーを追加"
 
 #: src/components/channel/barriers/BarrierComponents.tsx:198
-#: src/components/modals/tabs/account_security_tab/SecurityTab.tsx:398
+#: src/components/modals/tabs/account_security_tab/SecurityTab.tsx:422
 msgid "Add Phone"
 msgstr "電話を追加"
 
@@ -2028,11 +2028,11 @@ msgstr "お気に入りに追加しました"
 msgid "Added to saved media"
 msgstr "保存済みメディアに追加しました"
 
-#: src/components/modals/tabs/account_security_tab/SecurityTab.tsx:316
+#: src/components/modals/tabs/account_security_tab/SecurityTab.tsx:329
 msgid "Added: {createdDate}"
 msgstr "追加日: {createdDate}"
 
-#: src/components/modals/tabs/account_security_tab/SecurityTab.tsx:312
+#: src/components/modals/tabs/account_security_tab/SecurityTab.tsx:325
 msgid "Added: {createdDate} • Last used: {lastUsedDate}"
 msgstr "追加日: {createdDate} • 最終使用日: {lastUsedDate}"
 
@@ -2118,7 +2118,7 @@ msgstr "after:"
 msgid "Age Restricted"
 msgstr "年齢制限あり"
 
-#: src/components/modals/channel_tabs/ChannelOverviewTab.tsx:627
+#: src/components/modals/channel_tabs/ChannelOverviewTab.tsx:666
 msgid "Age-restricted (NSFW)"
 msgstr "年齢制限付き (NSFW)"
 
@@ -2569,7 +2569,7 @@ msgstr "アニメーションGIF動画"
 msgid "Animated icon"
 msgstr "アニメーションアイコン"
 
-#: src/components/modals/AddGuildModal.tsx:224
+#: src/components/modals/AddGuildModal.tsx:225
 msgid "Animated icons are not supported when creating a new community. Please use JPEG, PNG, or WebP."
 msgstr "新しいコミュニティの作成時にはアニメーションアイコンはサポートされていません。JPEG、PNG、またはWebPを使用してください。"
 
@@ -2845,7 +2845,7 @@ msgid "Are you sure you want to delete the category \"{categoryName}\"? This can
 msgstr "\"{categoryName}\"のカテゴリを削除してもよろしいですか？これは元に戻せません。"
 
 #. placeholder {0}: passkey.name
-#: src/components/modals/tabs/account_security_tab/SecurityTab.tsx:122
+#: src/components/modals/tabs/account_security_tab/SecurityTab.tsx:135
 msgid "Are you sure you want to delete the passkey <0>{0}</0>?"
 msgstr "パスキー <0>{0}</0> を削除してもよろしいですか？"
 
@@ -2865,7 +2865,7 @@ msgstr "この招待を削除してもよろしいですか？この操作は元
 msgid "Are you sure you want to delete this pack? This cannot be undone."
 msgstr "このパックを削除してもよろしいですか？ 元に戻せません。"
 
-#: src/components/modals/tabs/account_security_tab/SecurityTab.tsx:127
+#: src/components/modals/tabs/account_security_tab/SecurityTab.tsx:140
 msgid "Are you sure you want to delete this passkey?"
 msgstr "このパスキーを削除してもよろしいですか？"
 
@@ -2877,7 +2877,7 @@ msgstr "アカウントを削除してもよろしいですか？ この操作�
 msgid "Are you sure you want to disable invites? This will prevent new users from joining through invite links until you re-enable them. Existing members will not be affected."
 msgstr "招待を無効にしてもよろしいですか？ 再び有効にするまで、新しいユーザーが招待リンクから参加できなくなります。既存のメンバーには影響しません。"
 
-#: src/components/modals/tabs/account_security_tab/SecurityTab.tsx:179
+#: src/components/modals/tabs/account_security_tab/SecurityTab.tsx:192
 msgid "Are you sure you want to disable SMS two-factor authentication? This will make your account less secure."
 msgstr "SMS二要素認証を無効にしてもよろしいですか？これによりアカウントの安全性が低下します。"
 
@@ -2930,7 +2930,7 @@ msgid "Are you sure you want to remove this connection? This action cannot be un
 msgstr "この接続を削除してもよろしいですか？この操作は元に戻せません。"
 
 #. placeholder {0}: user.phone
-#: src/components/modals/tabs/account_security_tab/SecurityTab.tsx:367
+#: src/components/modals/tabs/account_security_tab/SecurityTab.tsx:391
 msgid "Are you sure you want to remove your phone number <0>{0}</0>?"
 msgstr "電話番号<0>{0}</0>を削除してもよろしいですか？"
 
@@ -2970,11 +2970,11 @@ msgstr "{0}のブロックを解除してもよろしいですか？"
 msgid "aria"
 msgstr "アリア"
 
-#: src/components/modals/AddGuildModal.tsx:177
+#: src/components/modals/AddGuildModal.tsx:178
 msgid "Art Club"
 msgstr "アートクラブ"
 
-#: src/components/modals/AddGuildModal.tsx:151
+#: src/components/modals/AddGuildModal.tsx:152
 msgid "Artists' Corner"
 msgstr "アーティストコーナー"
 
@@ -3150,7 +3150,7 @@ msgid "Authenticator app"
 msgstr "認証アプリ"
 
 #: src/components/auth/MfaScreen.tsx:69
-#: src/components/modals/tabs/account_security_tab/SecurityTab.tsx:224
+#: src/components/modals/tabs/account_security_tab/SecurityTab.tsx:237
 msgid "Authenticator App"
 msgstr "認証アプリ"
 
@@ -3170,21 +3170,21 @@ msgstr "作成者タイプ:"
 msgid "Authorization failed"
 msgstr "認証に失敗しました"
 
-#: src/components/pages/OAuthAuthorizePage.tsx:534
+#: src/components/pages/OAuthAuthorizePage.tsx:524
 msgid "Authorization Failed"
 msgstr "認証に失敗しました"
 
-#: src/components/pages/OAuthAuthorizePage.tsx:469
-#: src/components/pages/OAuthAuthorizePage.tsx:484
+#: src/components/pages/OAuthAuthorizePage.tsx:459
+#: src/components/pages/OAuthAuthorizePage.tsx:474
 msgid "Authorization failed. Please try again."
 msgstr "認証に失敗しました。もう一度お試しください。"
 
-#: src/components/pages/OAuthAuthorizePage.tsx:740
+#: src/components/pages/OAuthAuthorizePage.tsx:709
 msgid "Authorization request"
 msgstr "認証リクエスト"
 
-#: src/components/pages/OAuthAuthorizePage.tsx:681
-#: src/components/pages/OAuthAuthorizePage.tsx:940
+#: src/components/pages/OAuthAuthorizePage.tsx:661
+#: src/components/pages/OAuthAuthorizePage.tsx:909
 msgid "Authorize"
 msgstr "承認"
 
@@ -3251,7 +3251,7 @@ msgstr "オートコンプリート"
 msgid "automatic"
 msgstr "自動"
 
-#: src/components/modals/channel_tabs/ChannelOverviewTab.tsx:178
+#: src/components/modals/channel_tabs/ChannelOverviewTab.tsx:191
 #: src/components/voice/VoiceRegionSelector.tsx:96
 #: src/components/voice/VoiceRegionSelector.tsx:110
 #: src/components/voice/VoiceSettingsMenus.tsx:452
@@ -3347,7 +3347,7 @@ msgstr "平均ピング:"
 #: src/components/modals/AddConnectionModal.tsx:312
 #: src/components/modals/PhoneAddModal.tsx:237
 #: src/components/modals/RequiredActionModal.tsx:655
-#: src/components/pages/OAuthAuthorizePage.tsx:671
+#: src/components/pages/OAuthAuthorizePage.tsx:651
 #: src/components/pages/report/ReportStepDetails.tsx:243
 msgid "Back"
 msgstr "戻る"
@@ -3438,7 +3438,7 @@ msgid "backup codes"
 msgstr "バックアップコード"
 
 #: src/components/modals/BackupCodesModal.tsx:43
-#: src/components/modals/tabs/account_security_tab/SecurityTab.tsx:257
+#: src/components/modals/tabs/account_security_tab/SecurityTab.tsx:270
 #: src/components/modals/utils/SettingsSearchIndex.tsx:140
 msgid "Backup Codes"
 msgstr "バックアップコード"
@@ -3499,7 +3499,7 @@ msgstr "メンバーをBAN"
 msgid "Ban Members"
 msgstr "メンバーをBAN"
 
-#: src/components/modals/AddGuildModal.tsx:153
+#: src/components/modals/AddGuildModal.tsx:154
 msgid "Band Practice Room"
 msgstr "バンド練習室"
 
@@ -3680,7 +3680,7 @@ msgstr "ブロックされたユーザーは、フレンドリクエストの送
 msgid "Blockquotes"
 msgstr "引用文"
 
-#: src/components/modals/channel_tabs/ChannelOverviewTab.tsx:628
+#: src/components/modals/channel_tabs/ChannelOverviewTab.tsx:667
 msgid "Blocks access for users under 18 and shows a content warning for adults."
 msgstr "18歳未満のユーザーのアクセスをブロックし、大人向けのコンテンツ警告を表示します。"
 
@@ -3703,7 +3703,7 @@ msgstr "ぼかし"
 msgid "Blur your background"
 msgstr "背景をぼかす"
 
-#: src/components/modals/AddGuildModal.tsx:175
+#: src/components/modals/AddGuildModal.tsx:176
 msgid "Board Game Night"
 msgstr "ボードゲームナイト"
 
@@ -3711,7 +3711,7 @@ msgstr "ボードゲームナイト"
 msgid "Body font family"
 msgstr "本文フォントファミリー"
 
-#: src/components/modals/AddGuildModal.tsx:178
+#: src/components/modals/AddGuildModal.tsx:179
 msgid "Book Club"
 msgstr "読書クラブ"
 
@@ -3754,7 +3754,7 @@ msgstr "ブックマークしました！"
 msgid "Bookmarks"
 msgstr "ブックマーク"
 
-#: src/components/modals/AddGuildModal.tsx:150
+#: src/components/modals/AddGuildModal.tsx:151
 msgid "Bookworms Anonymous"
 msgstr "読書家アノニマス"
 
@@ -3766,7 +3766,7 @@ msgstr "bot"
 msgid "Bot"
 msgstr "Bot"
 
-#: src/components/pages/OAuthAuthorizePage.tsx:550
+#: src/components/pages/OAuthAuthorizePage.tsx:540
 msgid "Bot added"
 msgstr "Botを追加しました"
 
@@ -3794,11 +3794,11 @@ msgstr "ボットのダイレクトメッセージ"
 msgid "Bot Invite"
 msgstr "ボット招待"
 
-#: src/components/pages/OAuthAuthorizePage.tsx:761
+#: src/components/pages/OAuthAuthorizePage.tsx:730
 msgid "Bot invite (no external redirect)"
 msgstr "ボット招待（外部リダイレクトなし）"
 
-#: src/components/pages/OAuthAuthorizePage.tsx:480
+#: src/components/pages/OAuthAuthorizePage.tsx:470
 msgid "Bot is already in this community."
 msgstr "ボットはすでにこのコミュニティにいます。"
 
@@ -3810,7 +3810,7 @@ msgstr "ボットの権限"
 msgid "Bot Profile"
 msgstr "ボットプロフィール"
 
-#: src/components/pages/OAuthAuthorizePage.tsx:770
+#: src/components/pages/OAuthAuthorizePage.tsx:739
 msgid "Bot scope requested"
 msgstr "要求されたボットスコープ"
 
@@ -3920,17 +3920,17 @@ msgstr "アイコン付きボタン"
 msgid "Buy Gift"
 msgstr "ギフトを購入"
 
-#: src/components/modals/AddGuildModal.tsx:360
+#: src/components/modals/AddGuildModal.tsx:362
 msgid "By creating a community, you agree to follow and uphold the <0>Fluxer Community Guidelines</0>."
 msgstr "コミュニティを作成することで、<0>Fluxerコミュニティガイドライン</0>に従い、それを維持することに同意したものとみなされます。"
 
 #: src/components/modals/components/PurchaseDisclaimer.tsx:39
-msgid "By purchasing, you agree to our <0>Terms of Service</0> and <1>Privacy Policy</1>. All purchases are refundable within 14 days by emailing <2>support@fluxer.app</2>. Chargebacks result in permanent account bans — if you want a refund, we're more than happy to give you one if you contact us first! Payment information is securely handled by Stripe — we never have access to your full card number."
-msgstr "購入することで、<0>利用規約</0>および<1>プライバシーポリシー</1>に同意したものとみなされます。すべての購入は14日以内に<2>support@fluxer.app</2>にメールすることで返金可能です。チャージバックはアカウントの永久停止につながります — 返金をご希望の場合は、まずご連絡いただければ喜んで対応いたします！お支払い情報はStripeによって安全に処理され、私たちがカード番号の全桁にアクセスすることはありません。"
+msgid "By purchasing, you agree to our <0>Terms of Service</0> and <1>Privacy Policy</1>. All purchases are refundable within 14 days by emailing <2>support@echowire.org</2>. Chargebacks result in permanent account bans — if you want a refund, we're more than happy to give you one if you contact us first! Payment information is securely handled by Stripe — we never have access to your full card number."
+msgstr "By purchasing, you agree to our <0>Terms of Service</0> and <1>Privacy Policy</1>. All purchases are refundable within 14 days by emailing <2>support@echowire.org</2>. Chargebacks result in permanent account bans — if you want a refund, we're more than happy to give you one if you contact us first! Payment information is securely handled by Stripe — we never have access to your full card number."
 
 #: src/components/modals/components/PurchaseDisclaimer.tsx:31
-msgid "By purchasing, you agreed to our <0>Terms of Service</0> and <1>Privacy Policy</1>. All purchases are refundable within 14 days by emailing <2>support@fluxer.app</2>. Chargebacks result in permanent account bans — if you want a refund, we're more than happy to give you one if you contact us first! Payment information is securely handled by Stripe — we never have access to your full card number."
-msgstr "購入することで、<0>利用規約</0>および<1>プライバシーポリシー</1>に同意したものとみなされます。すべての購入は14日以内に<2>support@fluxer.app</2>にメールすることで返金可能です。チャージバックはアカウントの永久停止につながります — 返金をご希望の場合は、まずご連絡いただければ喜んで対応いたします！お支払い情報はStripeによって安全に処理され、私たちがカード番号の全桁にアクセスすることはありません。"
+msgid "By purchasing, you agreed to our <0>Terms of Service</0> and <1>Privacy Policy</1>. All purchases are refundable within 14 days by emailing <2>support@echowire.org</2>. Chargebacks result in permanent account bans — if you want a refund, we're more than happy to give you one if you contact us first! Payment information is securely handled by Stripe — we never have access to your full card number."
+msgstr "By purchasing, you agreed to our <0>Terms of Service</0> and <1>Privacy Policy</1>. All purchases are refundable within 14 days by emailing <2>support@echowire.org</2>. Chargebacks result in permanent account bans — if you want a refund, we're more than happy to give you one if you contact us first! Payment information is securely handled by Stripe — we never have access to your full card number."
 
 #: src/utils/PermissionUtils.tsx:356
 #: src/utils/PermissionUtils.tsx:491
@@ -4065,8 +4065,8 @@ msgstr "{VOICE_CHANNEL_CAMERA_USER_LIMIT} 人以上の参加者がいるとカ�
 #: src/components/modals/AccountDisableModal.tsx:69
 #: src/components/modals/AddConnectionModal.tsx:218
 #: src/components/modals/AddFavoriteMemeModal.tsx:98
-#: src/components/modals/AddGuildModal.tsx:290
-#: src/components/modals/AddGuildModal.tsx:413
+#: src/components/modals/AddGuildModal.tsx:292
+#: src/components/modals/AddGuildModal.tsx:415
 #: src/components/modals/AddGuildStickerModal.tsx:120
 #: src/components/modals/AttachmentEditModal.tsx:122
 #: src/components/modals/BackupCodesRegenerateModal.tsx:79
@@ -4081,7 +4081,7 @@ msgstr "{VOICE_CHANNEL_CAMERA_USER_LIMIT} 人以上の参加者がいるとカ�
 #: src/components/modals/ClaimAccountModal.tsx:219
 #: src/components/modals/components/MobileSettingsView.tsx:219
 #: src/components/modals/components/plutonium/hooks/useCheckoutActions.tsx:110
-#: src/components/modals/components/plutonium/SubscriptionCard.tsx:301
+#: src/components/modals/components/plutonium/SubscriptionCard.tsx:275
 #: src/components/modals/ConfirmModal.tsx:146
 #: src/components/modals/CreateDMModal.tsx:88
 #: src/components/modals/CreateFavoriteCategoryModal.tsx:75
@@ -4132,7 +4132,7 @@ msgstr "{VOICE_CHANNEL_CAMERA_USER_LIMIT} 人以上の参加者がいるとカ�
 #: src/components/modals/ThemeAcceptModal.tsx:177
 #: src/components/modals/TimeoutMemberModal.tsx:211
 #: src/components/modals/TransferOwnershipModal.tsx:85
-#: src/components/pages/OAuthAuthorizePage.tsx:924
+#: src/components/pages/OAuthAuthorizePage.tsx:893
 #: src/components/popouts/ScheduledMessagesContent.tsx:119
 #: src/utils/modals/AnimatedAvifModalUtils.tsx:45
 msgid "Cancel"
@@ -4162,7 +4162,7 @@ msgstr "リクエストをキャンセル"
 msgid "Cancel upload"
 msgstr "アップロードをキャンセル"
 
-#: src/components/modals/components/plutonium/SubscriptionCard.tsx:129
+#: src/components/modals/components/plutonium/SubscriptionCard.tsx:118
 msgid "Canceling"
 msgstr "キャンセル中"
 
@@ -4178,11 +4178,11 @@ msgstr "編集できません"
 msgid "Cannot Delete Account"
 msgstr "アカウントを削除できません"
 
-#: src/actions/InviteActionCreators.tsx:317
+#: src/actions/InviteActionCreators.tsx:340
 msgid "Cannot install emoji pack"
 msgstr "絵文字パックをインストールできません"
 
-#: src/actions/InviteActionCreators.tsx:318
+#: src/actions/InviteActionCreators.tsx:341
 msgid "Cannot install sticker pack"
 msgstr "ステッカーパックをインストールできません"
 
@@ -4235,7 +4235,7 @@ msgstr "カテゴリが満杯です"
 msgid "Category ID copied"
 msgstr "カテゴリIDがコピーされました"
 
-#: src/components/modals/channel_tabs/ChannelOverviewTab.tsx:479
+#: src/components/modals/channel_tabs/ChannelOverviewTab.tsx:518
 #: src/components/modals/CreateFavoriteCategoryModal.tsx:65
 msgid "Category Name"
 msgstr "カテゴリ名"
@@ -4312,7 +4312,7 @@ msgstr "フレンドのニックネームを変更"
 msgid "Change Group Nickname"
 msgstr "グループのニックネームを変更"
 
-#: src/components/modals/AddGuildModal.tsx:329
+#: src/components/modals/AddGuildModal.tsx:331
 #: src/components/modals/EditGroupBottomSheet.tsx:214
 #: src/components/modals/EditGroupModal.tsx:195
 msgid "Change Icon"
@@ -4520,7 +4520,7 @@ msgstr "チャンネルリストの入力インジケーター"
 msgid "Channel Management"
 msgstr "チャンネル管理"
 
-#: src/components/modals/channel_tabs/ChannelOverviewTab.tsx:479
+#: src/components/modals/channel_tabs/ChannelOverviewTab.tsx:518
 msgid "Channel Name"
 msgstr "チャンネル名"
 
@@ -4579,7 +4579,7 @@ msgstr "チャンネル設定"
 msgid "Channel synced with parent category"
 msgstr "チャンネルが親カテゴリと同期されました"
 
-#: src/components/modals/channel_tabs/ChannelOverviewTab.tsx:276
+#: src/components/modals/channel_tabs/ChannelOverviewTab.tsx:315
 msgid "Channel topic is too long."
 msgstr "チャンネルのトピックが長すぎます。"
 
@@ -4598,7 +4598,7 @@ msgstr "チャンネルタイプの選択"
 msgid "Channel type: {0}."
 msgstr "チャンネルタイプ: {0}。"
 
-#: src/components/modals/channel_tabs/ChannelOverviewTab.tsx:409
+#: src/components/modals/channel_tabs/ChannelOverviewTab.tsx:448
 msgid "Channel updated"
 msgstr "チャンネルを更新しました"
 
@@ -4646,8 +4646,8 @@ msgstr "チャットフォントのスケーリング"
 
 #: src/components/BootstrapErrorScreen.tsx:60
 #: src/components/NetworkErrorScreen.tsx:45
-msgid "Check our <0>Bluesky (@fluxer.app)</0> for status updates."
-msgstr "ステータス更新は<0>Bluesky (@fluxer.app)</0>をご確認ください。"
+msgid "Check our <0>status page</0> for updates, or email us at <1>support@echowire.org</1>."
+msgstr "Check our <0>status page</0> for updates, or email us at <1>support@echowire.org</1>."
 
 #: src/components/modals/ShareThemeModal.tsx:115
 msgid "Check out my custom theme!"
@@ -4694,7 +4694,7 @@ msgstr "中国語（繁体字）"
 msgid "Choose"
 msgstr "選択"
 
-#: src/components/pages/OAuthAuthorizePage.tsx:877
+#: src/components/pages/OAuthAuthorizePage.tsx:846
 msgid "Choose a community"
 msgstr "コミュニティを選択"
 
@@ -4765,7 +4765,7 @@ msgstr "誰かがチャンネルで入力しているとき、チャンネルリ
 msgid "Choose the category that best describes your community."
 msgstr "あなたのコミュニティを最もよく表すカテゴリを選んでください。"
 
-#: src/components/pages/OAuthAuthorizePage.tsx:605
+#: src/components/pages/OAuthAuthorizePage.tsx:585
 msgid "Choose what {clientLabel} can do in your community. Uncheck any permissions you don't want to grant."
 msgstr "{clientLabel}がコミュニティでできることを選択します。付与したくない権限のチェックを外してください。"
 
@@ -4808,7 +4808,7 @@ msgstr "プロフィールのアクセントカラーを選択"
 #: src/components/modals/ClaimAccountModal.tsx:225
 #: src/components/modals/components/UnclaimedAccountAlert.tsx:32
 #: src/components/modals/GiftAcceptModal.tsx:175
-#: src/components/modals/tabs/account_security_tab/SecurityTab.tsx:209
+#: src/components/modals/tabs/account_security_tab/SecurityTab.tsx:222
 #: src/components/modals/tabs/GiftInventoryTab.tsx:243
 msgid "Claim Account"
 msgstr "アカウントを請求"
@@ -4837,7 +4837,7 @@ msgstr "アカウントを請求"
 msgid "Claim your account by adding an email and password. We will send a verification code to confirm your email before finishing."
 msgstr "メールアドレスとパスワードを追加してアカウントを請求します。完了前に確認コードを送信してメールアドレスを確認します。"
 
-#: src/components/modals/tabs/account_security_tab/SecurityTab.tsx:205
+#: src/components/modals/tabs/account_security_tab/SecurityTab.tsx:218
 msgid "Claim your account to access security features like two-factor authentication and passkeys."
 msgstr "二要素認証やパスキーなどのセキュリティ機能にアクセスするにはアカウントを請求してください。"
 
@@ -4856,7 +4856,7 @@ msgstr "アカウントを請求してアプリケーションを作成してく
 
 #: src/components/layout/ChannelItem.tsx:215
 #: src/components/layout/ChannelItem.tsx:407
-#: src/stores/voice/MediaEngineFacade.tsx:836
+#: src/stores/voice/MediaEngineFacade.tsx:907
 msgid "Claim your account to join this voice channel."
 msgstr "このボイスチャンネルに参加するにはアカウントを取得してください。"
 
@@ -4867,11 +4867,11 @@ msgstr "自分が所有していないボイスチャンネルに参加するに
 #: src/components/modals/components/plutonium/BottomCTASection.tsx:49
 #: src/components/modals/components/plutonium/GiftSection.tsx:52
 #: src/components/modals/components/plutonium/PricingSection.tsx:54
-#: src/components/modals/components/PlutoniumContent.tsx:99
+#: src/components/modals/components/PlutoniumContent.tsx:80
 msgid "Claim your account to purchase Fluxer Plutonium."
 msgstr "アカウントを請求してFluxer Plutoniumを購入してください。"
 
-#: src/components/modals/components/plutonium/SubscriptionCard.tsx:104
+#: src/components/modals/components/plutonium/SubscriptionCard.tsx:93
 msgid "Claim your account to purchase or redeem Fluxer Plutonium."
 msgstr "アカウントを請求してFluxer Plutoniumを購入または引き換えてください。"
 
@@ -4901,7 +4901,7 @@ msgstr "1対1の通話を開始または参加するにはアカウントを取�
 msgid "Claim your gift to activate your premium subscription!"
 msgstr "プレミアムサブスクリプションを有効にするにはギフトを請求してください！"
 
-#: src/components/modals/AddGuildModal.tsx:156
+#: src/components/modals/AddGuildModal.tsx:157
 msgid "Class of '24"
 msgstr "24期生"
 
@@ -5241,11 +5241,11 @@ msgstr "コード:"
 msgid "codes"
 msgstr "コード"
 
-#: src/components/modals/AddGuildModal.tsx:176
+#: src/components/modals/AddGuildModal.tsx:177
 msgid "Coding Crew"
 msgstr "Coding Crew"
 
-#: src/components/modals/AddGuildModal.tsx:165
+#: src/components/modals/AddGuildModal.tsx:166
 msgid "Coffee Chat"
 msgstr "Coffee Chat"
 
@@ -5399,7 +5399,7 @@ msgstr "コミュニティが特定の個人への嫌がらせに関与または
 msgid "Community exists solely for spam or fraudulent purposes"
 msgstr "コミュニティがスパムや詐欺目的のみで存在"
 
-#: src/components/modals/AddGuildModal.tsx:316
+#: src/components/modals/AddGuildModal.tsx:318
 msgid "Community Icon"
 msgstr "コミュニティアイコン"
 
@@ -5445,7 +5445,7 @@ msgstr "コミュニティをミュート"
 msgid "Community Muted"
 msgstr "コミュニティがミュートされました"
 
-#: src/components/modals/AddGuildModal.tsx:351
+#: src/components/modals/AddGuildModal.tsx:353
 msgid "Community Name"
 msgstr "コミュニティ名"
 
@@ -5549,6 +5549,11 @@ msgstr "コンパクトモード"
 msgid "Compact Mode"
 msgstr "コンパクトモード"
 
+#: src/components/modals/components/PlutoniumContent.tsx:127
+#: src/components/modals/components/PlutoniumContent.tsx:219
+msgid "Compare Plans"
+msgstr "Compare Plans"
+
 #: src/components/modals/components/plutonium/hooks/useCheckoutActions.tsx:106
 msgid "Complete Payment"
 msgstr "支払いを完了"
@@ -5577,7 +5582,7 @@ msgstr "AFKチャンネルとタイムアウトを設定"
 msgid "Configure base access for this channel"
 msgstr "このチャンネルの基本アクセスを設定"
 
-#: src/components/pages/OAuthAuthorizePage.tsx:602
+#: src/components/pages/OAuthAuthorizePage.tsx:582
 msgid "Configure bot permissions"
 msgstr "ボットの権限を設定"
 
@@ -6227,15 +6232,15 @@ msgstr "作成"
 msgid "Create & Share"
 msgstr "作成して共有"
 
-#: src/components/modals/AddGuildModal.tsx:82
+#: src/components/modals/AddGuildModal.tsx:83
 msgid "Create a Community"
 msgstr "コミュニティを作成"
 
-#: src/components/modals/AddGuildModal.tsx:309
+#: src/components/modals/AddGuildModal.tsx:311
 msgid "Create a community for you and your friends to chat."
 msgstr "あなたと友達がチャットできるコミュニティを作成します。"
 
-#: src/components/modals/AddGuildModal.tsx:120
+#: src/components/modals/AddGuildModal.tsx:121
 msgid "Create a new community or join an existing one."
 msgstr "新しいコミュニティを作成するか、既存のコミュニティに参加します。"
 
@@ -6315,12 +6320,12 @@ msgid "Create Channel"
 msgstr "チャンネルを作成"
 
 #: src/components/layout/guild_list/AddGuildButton.tsx:68
-#: src/components/modals/AddGuildModal.tsx:127
-#: src/components/modals/AddGuildModal.tsx:293
+#: src/components/modals/AddGuildModal.tsx:128
+#: src/components/modals/AddGuildModal.tsx:295
 msgid "Create Community"
 msgstr "コミュニティを作成"
 
-#: src/components/modals/AddGuildModal.tsx:312
+#: src/components/modals/AddGuildModal.tsx:314
 msgid "Create community form"
 msgstr "コミュニティ作成フォーム"
 
@@ -6466,11 +6471,11 @@ msgstr "{newLabel}という名前で作成されました。"
 msgid "Created:"
 msgstr "作成済み:"
 
-#: src/components/modals/AddGuildModal.tsx:149
+#: src/components/modals/AddGuildModal.tsx:150
 msgid "Creative Minds Collective"
 msgstr "クリエイティブマインドコレクティブ"
 
-#: src/components/modals/AddGuildModal.tsx:168
+#: src/components/modals/AddGuildModal.tsx:169
 msgid "Creative Writing Club"
 msgstr "クリエイティブライティングクラブ"
 
@@ -6792,8 +6797,8 @@ msgstr "危険セカンダリ"
 msgid "Danger secondary clicked!"
 msgstr "危険セカンダリをクリックしました！"
 
-#: src/components/modals/tabs/account_security_tab/Inline.tsx:97
-#: src/components/modals/tabs/AccountSecurityTab.tsx:109
+#: src/components/modals/tabs/account_security_tab/Inline.tsx:100
+#: src/components/modals/tabs/AccountSecurityTab.tsx:112
 #: src/components/modals/tabs/applications_tab/ApplicationDetail.tsx:693
 #: src/components/modals/utils/SettingsConstants.tsx:299
 #: src/components/modals/utils/SettingsSectionRegistry.tsx:529
@@ -7070,7 +7075,7 @@ msgstr "削除"
 #: src/components/emojis/EmojiListItem.tsx:195
 #: src/components/emojis/EmojiListItem.tsx:252
 #: src/components/emojis/EmojiListItem.tsx:308
-#: src/components/modals/tabs/account_security_tab/SecurityTab.tsx:325
+#: src/components/modals/tabs/account_security_tab/SecurityTab.tsx:338
 #: src/components/modals/tabs/component_gallery_tab/ButtonsTab.tsx:157
 #: src/components/modals/tabs/component_gallery_tab/ButtonsTab.tsx:242
 #: src/components/modals/tabs/component_gallery_tab/index.tsx:165
@@ -7219,8 +7224,8 @@ msgstr "他のユーザーのメッセージを削除します。（ピン留め
 msgid "Delete Pack"
 msgstr "パックを削除"
 
-#: src/components/modals/tabs/account_security_tab/SecurityTab.tsx:118
-#: src/components/modals/tabs/account_security_tab/SecurityTab.tsx:130
+#: src/components/modals/tabs/account_security_tab/SecurityTab.tsx:131
+#: src/components/modals/tabs/account_security_tab/SecurityTab.tsx:143
 msgid "Delete Passkey"
 msgstr "パスキーを削除"
 
@@ -7414,7 +7419,7 @@ msgstr "詳細"
 msgid "dev"
 msgstr "開発"
 
-#: src/components/modals/AddGuildModal.tsx:152
+#: src/components/modals/AddGuildModal.tsx:153
 msgid "Dev Den"
 msgstr "Dev Den"
 
@@ -7530,8 +7535,8 @@ msgid "disable"
 msgstr "無効にする"
 
 #: src/components/invites/DisableInvitesButton.tsx:60
-#: src/components/modals/tabs/account_security_tab/SecurityTab.tsx:240
-#: src/components/modals/tabs/account_security_tab/SecurityTab.tsx:429
+#: src/components/modals/tabs/account_security_tab/SecurityTab.tsx:253
+#: src/components/modals/tabs/account_security_tab/SecurityTab.tsx:453
 msgid "Disable"
 msgstr "無効化"
 
@@ -7590,11 +7595,11 @@ msgstr "ピクチャーインピクチャーのポップアウトを無効にす
 msgid "Disable Reduced Motion"
 msgstr "モーション軽減を無効にする"
 
-#: src/components/modals/tabs/account_security_tab/SecurityTab.tsx:183
+#: src/components/modals/tabs/account_security_tab/SecurityTab.tsx:196
 msgid "Disable SMS 2FA"
 msgstr "SMS 2FAを無効にする"
 
-#: src/components/modals/tabs/account_security_tab/SecurityTab.tsx:177
+#: src/components/modals/tabs/account_security_tab/SecurityTab.tsx:190
 msgid "Disable SMS Two-Factor Authentication"
 msgstr "SMS二段階認証を無効にする"
 
@@ -8161,6 +8166,18 @@ msgstr "エコー"
 msgid "Echo Cancellation"
 msgstr "エコーキャンセレーション"
 
+#: src/components/icons/FluxerIcon.tsx:31
+msgid "Echowire application icon"
+msgstr "Echowire application icon"
+
+#: src/components/icons/FluxerSymbol.tsx:31
+msgid "Echowire application symbol"
+msgstr "Echowire application symbol"
+
+#: src/components/BootstrapErrorScreen.tsx:52
+msgid "Echowire failed to start properly. This could be due to corrupted data or a temporary issue."
+msgstr "Echowire failed to start properly. This could be due to corrupted data or a temporary issue."
+
 #: src/components/modals/tabs/ExpressionPacksTab.tsx:90
 #: src/components/modals/tabs/LinkedAccountsTab.tsx:186
 #: src/components/modals/tabs/LinkedAccountsTab.tsx:187
@@ -8486,7 +8503,7 @@ msgstr "絵文字名は2文字以上で、英数字とアンダースコアの�
 msgid "Emoji pack"
 msgstr "絵文字パック"
 
-#: src/actions/InviteActionCreators.tsx:259
+#: src/actions/InviteActionCreators.tsx:282
 msgid "Emoji pack creation limit reached"
 msgstr "絵文字パック作成の上限に達しました"
 
@@ -8494,7 +8511,7 @@ msgstr "絵文字パック作成の上限に達しました"
 msgid "Emoji Pack Invite"
 msgstr "絵文字パック招待"
 
-#: src/actions/InviteActionCreators.tsx:245
+#: src/actions/InviteActionCreators.tsx:268
 msgid "Emoji pack limit reached"
 msgstr "絵文字パックの上限に達しました"
 
@@ -8531,9 +8548,9 @@ msgstr "空の状態"
 
 #: src/components/invites/DisableInvitesButton.tsx:60
 #: src/components/layout/GuildLayout.tsx:74
-#: src/components/modals/tabs/account_security_tab/SecurityTab.tsx:247
-#: src/components/modals/tabs/account_security_tab/SecurityTab.tsx:435
-#: src/components/modals/tabs/account_security_tab/SecurityTab.tsx:441
+#: src/components/modals/tabs/account_security_tab/SecurityTab.tsx:260
+#: src/components/modals/tabs/account_security_tab/SecurityTab.tsx:459
+#: src/components/modals/tabs/account_security_tab/SecurityTab.tsx:465
 #: src/components/modals/tabs/components/InputMonitoringSection.tsx:85
 msgid "Enable"
 msgstr "有効にする"
@@ -8655,15 +8672,15 @@ msgstr "クライアント側で自己ホストモードを有効にする（す
 msgid "Enable Shift to Expand"
 msgstr "拡張するためにShiftを有効にする"
 
-#: src/components/modals/tabs/account_security_tab/SecurityTab.tsx:156
+#: src/components/modals/tabs/account_security_tab/SecurityTab.tsx:169
 msgid "Enable SMS 2FA"
 msgstr "SMS 2FAを有効にする"
 
-#: src/components/modals/tabs/account_security_tab/SecurityTab.tsx:418
+#: src/components/modals/tabs/account_security_tab/SecurityTab.tsx:442
 msgid "Enable SMS codes as a backup for your authenticator app"
 msgstr "認証アプリのバックアップとしてSMSコードを有効にする"
 
-#: src/components/modals/tabs/account_security_tab/SecurityTab.tsx:149
+#: src/components/modals/tabs/account_security_tab/SecurityTab.tsx:162
 msgid "Enable SMS Two-Factor Authentication"
 msgstr "SMS二段階認証を有効にする"
 
@@ -8821,7 +8838,7 @@ msgstr "新しいアドレスにメールで送信したコードを入力して
 msgid "Enter the code we sent to your email to verify it. Your password will be set once the code is confirmed."
 msgstr "確認のためにメールで送信したコードを入力してください。コードが確認されるとパスワードが設定されます。"
 
-#: src/components/modals/AddGuildModal.tsx:427
+#: src/components/modals/AddGuildModal.tsx:429
 msgid "Enter the invite link to join a community."
 msgstr "コミュニティに参加するための招待リンクを入力してください。"
 
@@ -8922,7 +8939,7 @@ msgstr "エスケープで<0><1>キャンセル</1></0>"
 msgid "Estonia"
 msgstr "エストニア"
 
-#: src/components/modals/channel_tabs/ChannelOverviewTab.tsx:186
+#: src/components/modals/channel_tabs/ChannelOverviewTab.tsx:199
 #: src/components/voice/VoiceRegionSelector.tsx:78
 #: src/components/voice/VoiceSettingsMenus.tsx:436
 msgid "EU Central"
@@ -9008,7 +9025,7 @@ msgid "Expire After"
 msgstr "期限後"
 
 #: src/components/accounts/AccountRow.tsx:169
-#: src/components/modals/components/plutonium/SubscriptionCard.tsx:125
+#: src/components/modals/components/plutonium/SubscriptionCard.tsx:114
 #: src/components/modals/GroupInvitesBottomSheet.tsx:110
 msgid "Expired"
 msgstr "期限切れ"
@@ -9314,11 +9331,11 @@ msgstr "フレンドリクエストの無視に失敗しました。もう一度
 msgid "Failed to initiate connection"
 msgstr "接続の初期化に失敗しました"
 
-#: src/actions/InviteActionCreators.tsx:326
+#: src/actions/InviteActionCreators.tsx:349
 msgid "Failed to install this emoji pack. Please try again later."
 msgstr "この絵文字パックのインストールに失敗しました。後でもう一度お試しください。"
 
-#: src/actions/InviteActionCreators.tsx:327
+#: src/actions/InviteActionCreators.tsx:350
 msgid "Failed to install this sticker pack. Please try again later."
 msgstr "このステッカーパックのインストールに失敗しました。後でもう一度お試しください。"
 
@@ -9381,7 +9398,7 @@ msgstr "ステッカーの読み込みに失敗しました"
 msgid "Failed to load vanity URL. Please try again."
 msgstr "バニティURLの読み込みに失敗しました。もう一度お試しください。"
 
-#: src/components/modals/channel_tabs/ChannelOverviewTab.tsx:223
+#: src/components/modals/channel_tabs/ChannelOverviewTab.tsx:236
 msgid "Failed to load voice regions for this channel."
 msgstr "このチャンネルのボイスリージョンの読み込みに失敗しました。"
 
@@ -9420,7 +9437,7 @@ msgstr "メッセージのピン留めに失敗しました"
 msgid "Failed to Prepare Emojis"
 msgstr "絵文字の準備に失敗しました"
 
-#: src/components/modals/AddGuildModal.tsx:248
+#: src/components/modals/AddGuildModal.tsx:249
 #: src/components/modals/EditGroupBottomSheet.tsx:106
 #: src/components/modals/EditGroupModal.tsx:99
 #: src/components/modals/guild_tabs/guild_overview_tab/hooks/useGuildImageAssetField.tsx:267
@@ -9660,11 +9677,11 @@ msgstr "フェイク"
 msgid "false"
 msgstr "false"
 
-#: src/components/modals/AddGuildModal.tsx:183
+#: src/components/modals/AddGuildModal.tsx:184
 msgid "Family Chat"
 msgstr "ファミリーチャット"
 
-#: src/components/modals/AddGuildModal.tsx:158
+#: src/components/modals/AddGuildModal.tsx:159
 msgid "Family Reunion"
 msgstr "家族の再会"
 
@@ -9722,7 +9739,7 @@ msgstr "お気に入り"
 msgid "Favorites"
 msgstr "お気に入り"
 
-#: src/components/modals/components/FeatureComparisonTable.tsx:119
+#: src/components/modals/components/FeatureComparisonTable.tsx:138
 msgid "Feature"
 msgstr "機能"
 
@@ -9845,7 +9862,7 @@ msgstr "名と姓"
 msgid "First Option"
 msgstr "最初のオプション"
 
-#: src/components/modals/AddGuildModal.tsx:171
+#: src/components/modals/AddGuildModal.tsx:172
 msgid "Fitness Friends"
 msgstr "フィットネスフレンズ"
 
@@ -9861,33 +9878,21 @@ msgstr "柔軟なテキストチャンネル名"
 msgid "Fluxer"
 msgstr "Fluxer"
 
-#: src/components/icons/FluxerIcon.tsx:31
-msgid "Fluxer application icon"
-msgstr "Fluxerアプリケーションアイコン"
-
-#: src/components/icons/FluxerSymbol.tsx:31
-msgid "Fluxer application symbol"
-msgstr "Fluxerアプリケーションシンボル"
-
 #: src/components/modals/tabs/notifications_tab/PushSettings.tsx:37
 msgid "Fluxer avoids sending push notifications to your mobile devices when you are at your computer. Use this setting to control how long you need to be inactive on desktop for before you receive push notifications, ranging from 1 minute to 10 minutes."
 msgstr "Fluxerは、あなたがコンピューターにいるときにモバイルデバイスにプッシュ通知を送信しません。この設定を使用して、デスクトップで非アクティブになってからプッシュ通知を受け取るまでの時間を1分から10分の範囲で制御できます。"
 
-#: src/components/popouts/UserProfileBadges.tsx:115
+#: src/components/popouts/UserProfileBadges.tsx:101
 msgid "Fluxer Bug Hunter"
 msgstr "Fluxer Bug Hunter"
 
-#: src/components/popouts/UserProfileBadges.tsx:95
+#: src/components/popouts/UserProfileBadges.tsx:81
 msgid "Fluxer Community Team"
 msgstr "Fluxer Community Team"
 
 #: src/components/modals/tabs/DevicesTab.tsx:99
 msgid "Fluxer Desktop"
 msgstr "Fluxer Desktop"
-
-#: src/components/BootstrapErrorScreen.tsx:52
-msgid "Fluxer failed to start properly. This could be due to corrupted data or a temporary issue."
-msgstr "Fluxerが正常に起動しませんでした。これはデータの破損または一時的な問題が原因である可能性があります。"
 
 #: src/stores/NewDeviceMonitoringStore.tsx:187
 msgid "Fluxer has found a new audio input device named <0>{deviceName}</0>. Do you want to switch to it?"
@@ -9945,18 +9950,18 @@ msgstr "Fluxerは、ウィンドウがバックグラウンドにある間もプ
 msgid "Fluxer needs permission to monitor keyboard and mouse input so that <0>Push-to-Talk</0> and <1>Global Shortcuts</1> work even when you're in another app or game."
 msgstr "Fluxerは、他のアプリやゲームを利用している時でも<0>プッシュトゥトーク</0>と<1>グローバルショートカット</1>が動作するように、キーボードとマウスの入力を監視する許可が必要です。"
 
-#: src/components/popouts/UserProfileBadges.tsx:105
+#: src/components/popouts/UserProfileBadges.tsx:91
 msgid "Fluxer Partner"
 msgstr "Fluxer パートナー"
 
-#: src/components/modals/components/PlutoniumContent.tsx:165
+#: src/components/modals/components/PlutoniumContent.tsx:146
 #: src/components/modals/PremiumModal.tsx:34
 #: src/components/modals/utils/SettingsConstants.tsx:124
-#: src/components/popouts/UserProfileBadges.tsx:121
+#: src/components/popouts/UserProfileBadges.tsx:107
 msgid "Fluxer Plutonium"
 msgstr "Fluxer Plutonium"
 
-#: src/components/popouts/UserProfileBadges.tsx:85
+#: src/components/popouts/UserProfileBadges.tsx:71
 msgid "Fluxer Staff"
 msgstr "Fluxer スタッフ"
 
@@ -10034,7 +10039,7 @@ msgstr "フォント"
 msgid "Food & Drink"
 msgstr "フード＆ドリンク"
 
-#: src/components/modals/AddGuildModal.tsx:172
+#: src/components/modals/AddGuildModal.tsx:173
 msgid "Foodie Friends"
 msgstr "フーディーな友達"
 
@@ -10248,7 +10253,7 @@ msgstr "30 FPSを超えるフレームレートにはPlutoniumが必要です"
 msgid "France"
 msgstr "フランス"
 
-#: src/components/modals/components/FeatureComparisonTable.tsx:124
+#: src/components/modals/components/FeatureComparisonTable.tsx:143
 msgid "Free"
 msgstr "無料"
 
@@ -10259,11 +10264,6 @@ msgstr "無料ユーザー (購入履歴なし)"
 #: src/components/modals/tabs/developer_options_tab/PremiumScenarioOptions.tsx:53
 msgid "Free User (With Purchase History)"
 msgstr "無料ユーザー (購入履歴あり)"
-
-#: src/components/modals/components/PlutoniumContent.tsx:146
-#: src/components/modals/components/PlutoniumContent.tsx:243
-msgid "Free vs Plutonium"
-msgstr "無料 vs Plutonium"
 
 #: src/components/modals/tabs/VideoTab.tsx:237
 msgid "Freezes your preview while Fluxer is in the background to save resources."
@@ -10336,7 +10336,7 @@ msgstr "フレンド"
 msgid "Friends + Custom"
 msgstr "フレンド + カスタム"
 
-#: src/components/modals/AddGuildModal.tsx:184
+#: src/components/modals/AddGuildModal.tsx:185
 msgid "Friends Forever"
 msgstr "永遠のフレンド"
 
@@ -10405,7 +10405,7 @@ msgstr "正式な氏名"
 msgid "Game controller"
 msgstr "ゲームコントローラー"
 
-#: src/components/modals/AddGuildModal.tsx:166
+#: src/components/modals/AddGuildModal.tsx:167
 msgid "Game Night"
 msgstr "ゲームナイト"
 
@@ -10413,7 +10413,7 @@ msgstr "ゲームナイト"
 msgid "Gaming"
 msgstr "ゲーム"
 
-#: src/components/modals/AddGuildModal.tsx:180
+#: src/components/modals/AddGuildModal.tsx:181
 msgid "Gaming Community"
 msgstr "ゲームコミュニティ"
 
@@ -10430,11 +10430,11 @@ msgstr "ゲートウェイ接続が必要です"
 msgid "gdpr"
 msgstr "GDPR"
 
-#: src/components/modals/channel_tabs/ChannelOverviewTab.tsx:480
+#: src/components/modals/channel_tabs/ChannelOverviewTab.tsx:519
 msgid "general"
 msgstr "general"
 
-#: src/components/modals/channel_tabs/ChannelOverviewTab.tsx:468
+#: src/components/modals/channel_tabs/ChannelOverviewTab.tsx:507
 #: src/components/modals/tabs/developer_options_tab/index.tsx:45
 #: src/components/modals/tabs/developer_options_tab/Inline.tsx:45
 #: src/components/modals/utils/ChannelSettingsConstants.tsx:56
@@ -10553,7 +10553,7 @@ msgstr "GIFプレビュー"
 msgid "GIFs"
 msgstr "GIF"
 
-#: src/components/modals/components/plutonium/SubscriptionCard.tsx:133
+#: src/components/modals/components/plutonium/SubscriptionCard.tsx:122
 #: src/components/modals/GiftAcceptModal.tsx:211
 msgid "Gift"
 msgstr "ギフト"
@@ -10759,7 +10759,7 @@ msgstr "了解"
 msgid "gpu"
 msgstr "GPU"
 
-#: src/components/modals/components/plutonium/SubscriptionCard.tsx:127
+#: src/components/modals/components/plutonium/SubscriptionCard.tsx:116
 msgid "Grace Period"
 msgstr "猶予期間"
 
@@ -11076,6 +11076,7 @@ msgstr "隠す"
 #: src/components/modals/HideOwnCameraConfirmModal.tsx:66
 #: src/components/modals/HideOwnScreenShareConfirmModal.tsx:66
 #: src/components/modals/tabs/account_security_tab/AccountTab.tsx:76
+#: src/components/modals/tabs/account_security_tab/SecurityTab.tsx:370
 msgid "Hide"
 msgstr "非表示にする"
 
@@ -11221,7 +11222,7 @@ msgstr "高ダイナミックレンジ表示モード"
 msgid "High quality, requires fast connection"
 msgstr "高品質、高速接続が必要です"
 
-#: src/components/modals/channel_tabs/ChannelOverviewTab.tsx:661
+#: src/components/modals/channel_tabs/ChannelOverviewTab.tsx:700
 msgid "Higher bitrate = better quality and higher bandwidth usage."
 msgstr "ビットレートが高いほど品質が良くなり、帯域幅の使用量も増えます。"
 
@@ -11237,7 +11238,7 @@ msgstr "ヒント"
 msgid "Hit 88mph"
 msgstr "時速88マイルを目指す"
 
-#: src/components/modals/AddGuildModal.tsx:155
+#: src/components/modals/AddGuildModal.tsx:156
 msgid "Hobby Haven"
 msgstr "趣味の楽園"
 
@@ -11338,7 +11339,7 @@ msgstr "これがどのように機能するか"
 msgid "HTML / XML"
 msgstr "HTML / XML"
 
-#: src/components/modals/channel_tabs/ChannelOverviewTab.tsx:492
+#: src/components/modals/channel_tabs/ChannelOverviewTab.tsx:531
 #: src/components/modals/ChannelCreateModal.tsx:92
 msgid "https://example.com"
 msgstr "https://example.com"
@@ -11394,7 +11395,7 @@ msgstr "理解しました"
 msgid "Icon"
 msgstr "アイコン"
 
-#: src/components/modals/AddGuildModal.tsx:214
+#: src/components/modals/AddGuildModal.tsx:215
 #: src/components/modals/EditGroupBottomSheet.tsx:71
 #: src/components/modals/EditGroupModal.tsx:64
 msgid "Icon file is too large. Please choose a file smaller than 10MB."
@@ -11797,8 +11798,8 @@ msgstr "入力とテキスト"
 msgid "Inputs with Icons"
 msgstr "アイコン付き入力"
 
-#: src/components/modals/channel_tabs/ChannelOverviewTab.tsx:547
-#: src/components/modals/channel_tabs/ChannelOverviewTab.tsx:580
+#: src/components/modals/channel_tabs/ChannelOverviewTab.tsx:586
+#: src/components/modals/channel_tabs/ChannelOverviewTab.tsx:619
 msgid "Insert emoji"
 msgstr "絵文字を挿入"
 
@@ -11871,7 +11872,7 @@ msgstr "無効"
 msgid "Invalid audio file"
 msgstr "無効な音声ファイル"
 
-#: src/components/pages/OAuthAuthorizePage.tsx:536
+#: src/components/pages/OAuthAuthorizePage.tsx:526
 msgid "Invalid authorization request"
 msgstr "無効な認証リクエスト"
 
@@ -11894,7 +11895,7 @@ msgstr "無効または期限切れのコード"
 msgid "Invalid or expired code. Please try again."
 msgstr "無効または期限切れのコードです。もう一度お試しください。"
 
-#: src/components/pages/OAuthAuthorizePage.tsx:511
+#: src/components/pages/OAuthAuthorizePage.tsx:501
 msgid "Invalid redirect_uri"
 msgstr "無効なredirect_uri"
 
@@ -11969,7 +11970,7 @@ msgstr "{0}に友達を招待"
 msgid "Invite link"
 msgstr "招待リンク"
 
-#: src/components/modals/AddGuildModal.tsx:436
+#: src/components/modals/AddGuildModal.tsx:438
 msgid "Invite Link"
 msgstr "招待リンク"
 
@@ -12101,7 +12102,7 @@ msgstr "このコミュニティでは招待が現在無効になっています
 msgid "Invites are currently disabled in this community by an admin. While this invite can be created, it cannot be accepted until invites are re-enabled."
 msgstr "このコミュニティでは管理者によって招待が現在無効になっています。この招待は作成できますが、招待が再有効化されるまで受け入れられません。"
 
-#: src/components/layout/guild_list/GuildListItem.tsx:493
+#: src/components/layout/guild_list/GuildListItem.tsx:492
 msgid "Invites are currently paused in this community"
 msgstr "このコミュニティでは招待が現在一時停止中です"
 
@@ -12143,7 +12144,7 @@ msgstr "IPアドレスが認証済み"
 msgid "Ireland"
 msgstr "アイルランド"
 
-#: src/components/modals/tabs/AccountSecurityTab.tsx:109
+#: src/components/modals/tabs/AccountSecurityTab.tsx:112
 msgid "Irreversible and destructive actions"
 msgstr "元に戻せない破壊的な操作"
 
@@ -12185,7 +12186,7 @@ msgstr "ジッター"
 msgid "join"
 msgstr "参加"
 
-#: src/components/modals/AddGuildModal.tsx:84
+#: src/components/modals/AddGuildModal.tsx:85
 msgid "Join a Community"
 msgstr "コミュニティに参加"
 
@@ -12205,16 +12206,15 @@ msgstr "通話に参加"
 #: src/components/channel/InviteEmbed.tsx:284
 #: src/components/channel/InviteEmbed.tsx:475
 #: src/components/layout/guild_list/AddGuildButton.tsx:77
-#: src/components/modals/AddGuildModal.tsx:132
-#: src/components/modals/AddGuildModal.tsx:416
-#: src/components/modals/components/plutonium/SubscriptionCard.tsx:289
+#: src/components/modals/AddGuildModal.tsx:133
+#: src/components/modals/AddGuildModal.tsx:418
 #: src/components/modals/discovery/DiscoveryGuildCard.tsx:99
 #: src/components/modals/InviteAcceptModal.tsx:119
 #: src/components/modals/InviteAcceptModalPreview.tsx:111
 msgid "Join Community"
 msgstr "コミュニティに参加"
 
-#: src/components/modals/AddGuildModal.tsx:430
+#: src/components/modals/AddGuildModal.tsx:432
 msgid "Join community form"
 msgstr "コミュニティ参加フォーム"
 
@@ -12327,7 +12327,7 @@ msgstr "JPEG、PNG、WebP。最大10MB。最小: {0}×{1}px (16:9)"
 msgid "JPEG, PNG, WebP. Max 10MB. Minimum: {0}×{1}px (16:9). Shown in invite embeds in chat."
 msgstr "JPEG、PNG、WebP。最大10MB。最小: {0}×{1}px (16:9)。チャット内の招待埋め込みに表示されます。"
 
-#: src/components/modals/AddGuildModal.tsx:338
+#: src/components/modals/AddGuildModal.tsx:340
 #: src/components/modals/EditGroupBottomSheet.tsx:223
 #: src/components/modals/EditGroupModal.tsx:204
 #: src/components/modals/guild_tabs/guild_overview_tab/fields/GuildIconUploadField.tsx:116
@@ -12717,7 +12717,7 @@ msgstr "コミュニティに自己モデレートを許可"
 msgid "Letters (a-z, A-Z), numbers (0-9), and underscores (_) only"
 msgstr "英字（a-z、A-Z）、数字（0-9）、アンダースコア（_）のみ"
 
-#: src/components/modals/components/plutonium/SubscriptionCard.tsx:131
+#: src/components/modals/components/plutonium/SubscriptionCard.tsx:120
 #: src/components/modals/tabs/developer_options_tab/AccountPremiumTab.tsx:52
 #: src/components/modals/tabs/developer_options_tab/MockingTab.tsx:317
 msgid "Lifetime"
@@ -12899,7 +12899,7 @@ msgstr "読み込み中"
 msgid "Loading bans..."
 msgstr "BANリストを読み込み中..."
 
-#: src/components/pages/OAuthAuthorizePage.tsx:877
+#: src/components/pages/OAuthAuthorizePage.tsx:846
 msgid "Loading communities..."
 msgstr "コミュニティを読み込み中..."
 
@@ -13197,7 +13197,7 @@ msgid "Manage Roles"
 msgstr "ロール管理"
 
 #: src/components/layout/app_layout/nagbars/PremiumGracePeriodNagbar.tsx:79
-#: src/components/modals/components/plutonium/SubscriptionCard.tsx:271
+#: src/components/modals/components/plutonium/SubscriptionCard.tsx:260
 msgid "Manage Subscription"
 msgstr "サブスクリプション管理"
 
@@ -13214,7 +13214,7 @@ msgstr "Webhook管理"
 msgid "Manage your applications and bots."
 msgstr "あなたのアプリケーションとボットを管理します。"
 
-#: src/components/modals/tabs/AccountSecurityTab.tsx:78
+#: src/components/modals/tabs/AccountSecurityTab.tsx:79
 msgid "Manage your email, password, and account settings"
 msgstr "メール、パスワード、アカウント設定を管理する"
 
@@ -13222,7 +13222,7 @@ msgstr "メール、パスワード、アカウント設定を管理する"
 msgid "Manage your gifts"
 msgstr "ギフトの管理"
 
-#: src/components/modals/tabs/account_security_tab/SecurityTab.tsx:340
+#: src/components/modals/tabs/account_security_tab/SecurityTab.tsx:353
 msgid "Manage your phone number for SMS two-factor authentication"
 msgstr "SMS二要素認証用の電話番号を管理する"
 
@@ -13385,7 +13385,7 @@ msgstr "最小限の間隔で表示メッセージを最大化します。"
 msgid "Maximum 256 characters"
 msgstr "最大256文字"
 
-#: src/components/modals/channel_tabs/ChannelOverviewTab.tsx:694
+#: src/components/modals/channel_tabs/ChannelOverviewTab.tsx:733
 msgid "Maximum members who can join at once. 0 means unlimited."
 msgstr "一度に参加できる最大メンバー数。0は無制限を意味します。"
 
@@ -13579,7 +13579,7 @@ msgstr "メンバーが{days}日間非アクティブの場合、削除されま
 msgid "Members list unavailable at this screen width"
 msgstr "この画面幅ではメンバーリストを表示できません"
 
-#: src/components/modals/channel_tabs/ChannelOverviewTab.tsx:617
+#: src/components/modals/channel_tabs/ChannelOverviewTab.tsx:656
 msgid "Members must wait between messages."
 msgstr "メンバーはメッセージ間で待機する必要があります。"
 
@@ -14164,11 +14164,11 @@ msgstr "ロールを位置 {0} に移動しました。"
 msgid "Moved to channel {0}."
 msgstr "チャンネル {0} に移動しました。"
 
-#: src/components/modals/AddGuildModal.tsx:174
+#: src/components/modals/AddGuildModal.tsx:175
 msgid "Movie Club"
 msgstr "映画クラブ"
 
-#: src/components/modals/AddGuildModal.tsx:161
+#: src/components/modals/AddGuildModal.tsx:162
 msgid "Movie Night Crew"
 msgstr "ムービーナイトクルー"
 
@@ -14188,7 +14188,7 @@ msgstr "多言語コンテンツ"
 msgid "Music"
 msgstr "音楽"
 
-#: src/components/modals/AddGuildModal.tsx:170
+#: src/components/modals/AddGuildModal.tsx:171
 msgid "Music Lovers"
 msgstr "音楽愛好家"
 
@@ -14316,7 +14316,7 @@ msgstr "ストリーム音声をミュート"
 msgid "muted"
 msgstr "ミュート"
 
-#: src/components/layout/guild_list/GuildListItem.tsx:453
+#: src/components/layout/guild_list/GuildListItem.tsx:452
 #: src/components/layout/VoiceStateIcons.tsx:49
 #: src/components/voice/VoiceParticipantTile.tsx:1457
 #: src/utils/ContextMenuUtils.tsx:165
@@ -14329,7 +14329,7 @@ msgstr "ミュートされたチャンネル"
 
 #. placeholder {0}: DateUtils.getFormattedDateTime(new Date(muteConfig.end_time))
 #. placeholder {0}: getFormattedDateTime(new Date(muteConfig.end_time))
-#: src/components/layout/guild_list/GuildListItem.tsx:451
+#: src/components/layout/guild_list/GuildListItem.tsx:450
 #: src/utils/ContextMenuUtils.tsx:163
 msgid "Muted until {0}"
 msgstr "{0} までミュート中"
@@ -14371,7 +14371,7 @@ msgstr "マイアウェサムメディア"
 msgid "My awesome sticker"
 msgstr "マイアウェサムステッカー"
 
-#: src/components/modals/channel_tabs/ChannelOverviewTab.tsx:480
+#: src/components/modals/channel_tabs/ChannelOverviewTab.tsx:519
 msgid "My Category"
 msgstr "マイカテゴリー"
 
@@ -14509,7 +14509,7 @@ msgstr "ナビゲーション"
 msgid "Need an account?"
 msgstr "アカウントが必要ですか？"
 
-#: src/components/modals/AddGuildModal.tsx:162
+#: src/components/modals/AddGuildModal.tsx:163
 msgid "Neighborhood Watch"
 msgstr "ネイバーフッドウォッチ"
 
@@ -14623,7 +14623,7 @@ msgid "Newest First"
 msgstr "最新順"
 
 #: src/components/bottomsheets/ChannelSearchBottomSheet.tsx:394
-#: src/components/pages/OAuthAuthorizePage.tsx:931
+#: src/components/pages/OAuthAuthorizePage.tsx:900
 msgid "Next"
 msgstr "次へ"
 
@@ -14754,7 +14754,7 @@ msgstr "利用可能なチャンネルはありません"
 msgid "No channels found"
 msgstr "チャンネルが見つかりません"
 
-#: src/components/pages/OAuthAuthorizePage.tsx:893
+#: src/components/pages/OAuthAuthorizePage.tsx:862
 msgid "No communities available with <0>Manage Community</0> permissions."
 msgstr "<0>コミュニティ管理</0>権限を持つ利用可能なコミュニティはありません。"
 
@@ -14842,7 +14842,7 @@ msgstr "招待は作成されていません"
 msgid "No keybind set"
 msgstr "キーバインドが設定されていません"
 
-#: src/components/modals/channel_tabs/ChannelOverviewTab.tsx:688
+#: src/components/modals/channel_tabs/ChannelOverviewTab.tsx:727
 #: src/components/modals/InviteModal.tsx:88
 msgid "No limit"
 msgstr "制限なし"
@@ -14851,7 +14851,7 @@ msgstr "制限なし"
 msgid "No Logs Yet"
 msgstr "まだログはありません"
 
-#: src/components/pages/OAuthAuthorizePage.tsx:426
+#: src/components/pages/OAuthAuthorizePage.tsx:416
 msgid "No Manage Community permission"
 msgstr "コミュニティ管理権限がありません"
 
@@ -14884,7 +14884,7 @@ msgstr "共通の友達は見つかりませんでした。"
 msgid "No mutual groups found."
 msgstr "共通のグループは見つかりませんでした。"
 
-#: src/components/modals/tabs/account_security_tab/SecurityTab.tsx:286
+#: src/components/modals/tabs/account_security_tab/SecurityTab.tsx:299
 msgid "No passkeys registered"
 msgstr "登録されたパスキーはありません"
 
@@ -14986,7 +14986,7 @@ msgstr "検索結果はありません"
 msgid "No settings found"
 msgstr "設定が見つかりません"
 
-#: src/components/pages/OAuthAuthorizePage.tsx:824
+#: src/components/pages/OAuthAuthorizePage.tsx:793
 msgid "No specific scopes requested."
 msgstr "特定のスコープは要求されていません。"
 
@@ -15261,7 +15261,7 @@ msgid "Objects"
 msgstr "オブジェクト"
 
 #: src/components/channel/ReplyBar.tsx:112
-#: src/components/modals/channel_tabs/ChannelOverviewTab.tsx:160
+#: src/components/modals/channel_tabs/ChannelOverviewTab.tsx:173
 #: src/components/modals/guild_tabs/GuildModerationTab.tsx:243
 #: src/utils/modals/guild_tabs/GuildAuditLogTabUtils.tsx:64
 msgid "Off"
@@ -15499,7 +15499,7 @@ msgstr "カラーピッカーを開く"
 msgid "Open Community Notification Settings"
 msgstr "コミュニティ通知設定を開く"
 
-#: src/components/modals/components/plutonium/SubscriptionCard.tsx:269
+#: src/components/modals/components/plutonium/SubscriptionCard.tsx:258
 msgid "Open Customer Portal"
 msgstr "カスタマーポータルを開く"
 
@@ -15779,7 +15779,7 @@ msgstr "そうでない場合はプッシュトゥトークが必要です。"
 msgid "otp"
 msgstr "OTP"
 
-#: src/components/modals/AddGuildModal.tsx:186
+#: src/components/modals/AddGuildModal.tsx:187
 msgid "Our Hangout"
 msgstr "私たちのハングアウト"
 
@@ -15909,7 +15909,7 @@ msgstr "パック"
 msgid "Page {currentPage} of {totalPages}"
 msgstr "ページ {currentPage}/{totalPages}"
 
-#: src/components/modals/channel_tabs/ChannelOverviewTab.tsx:671
+#: src/components/modals/channel_tabs/ChannelOverviewTab.tsx:710
 msgid "Participant Limit"
 msgstr "参加者制限"
 
@@ -15930,7 +15930,7 @@ msgstr "提携コミュニティ"
 msgid "Passkey Name"
 msgstr "パスキー名"
 
-#: src/components/modals/tabs/account_security_tab/SecurityTab.tsx:276
+#: src/components/modals/tabs/account_security_tab/SecurityTab.tsx:289
 msgid "Passkeys"
 msgstr "パスキー"
 
@@ -16103,8 +16103,8 @@ msgid "permissions"
 msgstr "権限"
 
 #: src/components/modals/guild_tabs/GuildRolesTab.tsx:1086
-#: src/components/pages/OAuthAuthorizePage.tsx:584
-#: src/components/pages/OAuthAuthorizePage.tsx:720
+#: src/components/pages/OAuthAuthorizePage.tsx:574
+#: src/components/pages/OAuthAuthorizePage.tsx:700
 msgid "Permissions"
 msgstr "権限"
 
@@ -16148,8 +16148,8 @@ msgstr "電話"
 
 #: src/components/modals/PhoneAddModal.tsx:192
 #: src/components/modals/RequiredActionModal.tsx:616
-#: src/components/modals/tabs/account_security_tab/SecurityTab.tsx:339
-#: src/components/modals/tabs/account_security_tab/SecurityTab.tsx:345
+#: src/components/modals/tabs/account_security_tab/SecurityTab.tsx:352
+#: src/components/modals/tabs/account_security_tab/SecurityTab.tsx:358
 #: src/components/modals/utils/SettingsSearchIndex.tsx:115
 msgid "Phone Number"
 msgstr "電話番号"
@@ -16157,11 +16157,6 @@ msgstr "電話番号"
 #: src/components/modals/PhoneAddModal.tsx:133
 msgid "Phone number added"
 msgstr "電話番号が追加されました"
-
-#. placeholder {0}: user.phone
-#: src/components/modals/tabs/account_security_tab/SecurityTab.tsx:349
-msgid "Phone number added: {0}"
-msgstr "電話番号が追加されました: {0}"
 
 #: src/components/modals/RequiredActionModal.tsx:253
 msgid "Phone number is required"
@@ -16187,7 +16182,7 @@ msgstr "電話の確認が必要です"
 msgid "photo"
 msgstr "写真"
 
-#: src/components/modals/AddGuildModal.tsx:169
+#: src/components/modals/AddGuildModal.tsx:170
 msgid "Photography Club"
 msgstr "写真クラブ"
 
@@ -16421,7 +16416,7 @@ msgstr "後でもう一度お試しください。"
 msgid "Please update Fluxer to view this message."
 msgstr "このメッセージを表示するにはFluxerを更新してください。"
 
-#: src/actions/InviteActionCreators.tsx:184
+#: src/actions/InviteActionCreators.tsx:207
 msgid "Please verify your account by setting an email and password before joining communities."
 msgstr "コミュニティに参加する前に、メールアドレスとパスワードを設定してアカウントを確認してください。"
 
@@ -16447,7 +16442,7 @@ msgstr "プルトニウム"
 
 #: src/components/channel/direct_message/DMList.tsx:1326
 #: src/components/channel/direct_message/DMList.tsx:1405
-#: src/components/modals/components/FeatureComparisonTable.tsx:127
+#: src/components/modals/components/FeatureComparisonTable.tsx:146
 msgid "Plutonium"
 msgstr "Plutonium"
 
@@ -16459,7 +16454,7 @@ msgstr "Plutoniumバッジのプライバシー"
 msgid "Plutonium perks"
 msgstr "Plutonium特典"
 
-#: src/components/modals/components/plutonium/SubscriptionCard.tsx:121
+#: src/components/modals/components/plutonium/SubscriptionCard.tsx:110
 msgid "Plutonium Subscription"
 msgstr "Plutoniumサブスクリプション"
 
@@ -16715,7 +16710,7 @@ msgstr "続行"
 msgid "Processing"
 msgstr "処理中"
 
-#: src/components/modals/AddGuildModal.tsx:163
+#: src/components/modals/AddGuildModal.tsx:164
 msgid "Professional Peers"
 msgstr "プロフェッショナルピア"
 
@@ -16776,7 +16771,7 @@ msgstr "プロフィールが更新されました"
 msgid "progress"
 msgstr "進捗"
 
-#: src/components/modals/AddGuildModal.tsx:159
+#: src/components/modals/AddGuildModal.tsx:160
 msgid "Project X"
 msgstr "プロジェクトX"
 
@@ -16789,7 +16784,7 @@ msgstr "代名詞"
 msgid "Pronouns"
 msgstr "代名詞"
 
-#: src/components/modals/tabs/AccountSecurityTab.tsx:91
+#: src/components/modals/tabs/AccountSecurityTab.tsx:92
 msgid "Protect your account with two-factor authentication and passkeys"
 msgstr "二要素認証とパスキーでアカウントを保護しましょう"
 
@@ -17014,7 +17009,7 @@ msgid "Reactions"
 msgstr "リアクション"
 
 #: src/components/layout/app_layout/nagbars/PremiumExpiredNagbar.tsx:75
-#: src/components/modals/components/plutonium/SubscriptionCard.tsx:267
+#: src/components/modals/components/plutonium/SubscriptionCard.tsx:256
 msgid "Reactivate"
 msgstr "再有効化"
 
@@ -17076,7 +17071,7 @@ msgstr "受信"
 msgid "Receive notifications when someone mentions you"
 msgstr "メンションされたときに通知を受信"
 
-#: src/components/modals/tabs/account_security_tab/SecurityTab.tsx:407
+#: src/components/modals/tabs/account_security_tab/SecurityTab.tsx:431
 msgid "Receive verification codes via SMS as a backup authentication method"
 msgstr "SMSで認証コードを受信（バックアップ認証方法）"
 
@@ -17141,7 +17136,7 @@ msgstr "ギフトを引き換え"
 msgid "Redeem for Yourself"
 msgstr "自分用に引き換え"
 
-#: src/components/modals/components/plutonium/SubscriptionCard.tsx:245
+#: src/components/modals/components/plutonium/SubscriptionCard.tsx:234
 msgid "Redeem Gift Code"
 msgstr "ギフトコードを引き換え"
 
@@ -17233,7 +17228,7 @@ msgstr "再生成すると現在のトークンが無効になります。古い
 msgid "Register"
 msgstr "登録"
 
-#: src/components/modals/tabs/account_security_tab/SecurityTab.tsx:282
+#: src/components/modals/tabs/account_security_tab/SecurityTab.tsx:295
 msgid "Registered Passkeys"
 msgstr "登録済みパスキー"
 
@@ -17303,7 +17298,7 @@ msgstr "削除"
 #: src/components/modals/guild_tabs/guild_overview_tab/fields/GuildEmbedSplashUploadField.tsx:101
 #: src/components/modals/guild_tabs/guild_overview_tab/fields/GuildIconUploadField.tsx:107
 #: src/components/modals/guild_tabs/guild_overview_tab/fields/GuildInviteSplashUploadField.tsx:113
-#: src/components/modals/tabs/account_security_tab/SecurityTab.tsx:394
+#: src/components/modals/tabs/account_security_tab/SecurityTab.tsx:418
 #: src/components/modals/tabs/ExpressionPacksTab.tsx:96
 #: src/components/modals/tabs/ExpressionPacksTab.tsx:226
 #: src/components/modals/tabs/LinkedAccountsTab.tsx:191
@@ -17454,7 +17449,7 @@ msgstr "お気に入りから削除"
 msgid "Remove from Group"
 msgstr "グループから削除"
 
-#: src/components/modals/AddGuildModal.tsx:333
+#: src/components/modals/AddGuildModal.tsx:335
 #: src/components/modals/EditGroupBottomSheet.tsx:218
 #: src/components/modals/EditGroupModal.tsx:199
 msgid "Remove Icon"
@@ -17477,11 +17472,11 @@ msgstr "上書きを削除"
 msgid "Remove Pack"
 msgstr "パックを削除"
 
-#: src/components/modals/tabs/account_security_tab/SecurityTab.tsx:380
+#: src/components/modals/tabs/account_security_tab/SecurityTab.tsx:404
 msgid "Remove Phone"
 msgstr "電話を削除"
 
-#: src/components/modals/tabs/account_security_tab/SecurityTab.tsx:363
+#: src/components/modals/tabs/account_security_tab/SecurityTab.tsx:387
 msgid "Remove Phone Number"
 msgstr "電話番号を削除"
 
@@ -17623,7 +17618,7 @@ msgstr "すべてのチャンネルでATTACH_FILES権限を削除します（ア
 msgid "Removes SEND_MESSAGES permission in all channels (disables textarea and all buttons)"
 msgstr "すべてのチャンネルでSEND_MESSAGES権限を削除します（テキストエリアとすべてのボタンを無効にします）"
 
-#: src/components/pages/OAuthAuthorizePage.tsx:660
+#: src/components/pages/OAuthAuthorizePage.tsx:640
 msgid "Removing permissions could limit the bot's features."
 msgstr "権限を削除するとボットの機能が制限される可能性があります。"
 
@@ -17636,7 +17631,7 @@ msgstr "パックを削除すると、アカウントからアンインストー
 msgid "Removing the timeout will allow <0>{0}</0> to send messages, react, and join voice channels again."
 msgstr "タイムアウトを削除すると、<0>{0}</0>はメッセージの送信、リアクション、ボイスチャンネルへの参加が再び可能になります。"
 
-#: src/components/modals/tabs/account_security_tab/SecurityTab.tsx:322
+#: src/components/modals/tabs/account_security_tab/SecurityTab.tsx:335
 msgid "Rename"
 msgstr "名前を変更"
 
@@ -17695,7 +17690,7 @@ msgstr "コミュニティ名を {0} に変更しました。"
 msgid "Render all your messages as unknown message type"
 msgstr "すべてのメッセージを不明なメッセージタイプとしてレンダリングする"
 
-#: src/components/modals/components/plutonium/SubscriptionCard.tsx:227
+#: src/components/modals/components/plutonium/SubscriptionCard.tsx:216
 msgid "Renews on <0>{renewalDate}</0>."
 msgstr "<0>{renewalDate}</0> に更新されます。"
 
@@ -17813,7 +17808,7 @@ msgstr "データエクスポートをリクエスト"
 msgid "Request Export"
 msgstr "エクスポートをリクエスト"
 
-#: src/components/pages/OAuthAuthorizePage.tsx:814
+#: src/components/pages/OAuthAuthorizePage.tsx:783
 msgid "Requested scopes"
 msgstr "要求されたスコープ"
 
@@ -17841,7 +17836,7 @@ msgstr "OAuth2コードグラントが必要"
 msgid "Require two-factor authentication for moderators before they can ban, kick, timeout, or remove messages."
 msgstr "モデレーターがユーザーのBAN、キック、タイムアウト、またはメッセージ削除を行う前に、二要素認証を要求します。"
 
-#: src/components/pages/OAuthAuthorizePage.tsx:839
+#: src/components/pages/OAuthAuthorizePage.tsx:808
 msgid "Required"
 msgstr "必須"
 
@@ -17955,7 +17950,7 @@ msgstr "すべてのオーバーライドをテーマのデフォルトにリセ
 msgid "Reset app data"
 msgstr "アプリデータをリセット"
 
-#: src/components/BootstrapErrorScreen.tsx:74
+#: src/components/BootstrapErrorScreen.tsx:75
 msgid "Reset App Data"
 msgstr "アプリデータをリセット"
 
@@ -18038,8 +18033,8 @@ msgstr "最大化を復元"
 msgid "Restore window"
 msgstr "ウィンドウを復元"
 
-#: src/components/modals/components/plutonium/SubscriptionCard.tsx:263
-#: src/components/modals/components/plutonium/SubscriptionCard.tsx:265
+#: src/components/modals/components/plutonium/SubscriptionCard.tsx:252
+#: src/components/modals/components/plutonium/SubscriptionCard.tsx:254
 msgid "Resubscribe"
 msgstr "再購読"
 
@@ -18077,6 +18072,7 @@ msgid "reveal"
 msgstr "表示"
 
 #: src/components/modals/tabs/account_security_tab/AccountTab.tsx:76
+#: src/components/modals/tabs/account_security_tab/SecurityTab.tsx:370
 msgid "Reveal"
 msgstr "表示"
 
@@ -18088,7 +18084,7 @@ msgstr "ネタバレを表示"
 msgid "Review deletion"
 msgstr "削除を確認"
 
-#: src/components/pages/OAuthAuthorizePage.tsx:749
+#: src/components/pages/OAuthAuthorizePage.tsx:718
 msgid "Review what this app is asking for before you continue."
 msgstr "続行する前に、このアプリが要求している内容を確認してください。"
 
@@ -18465,8 +18461,8 @@ msgid "Scope"
 msgstr "スコープ"
 
 #: src/components/modals/tabs/applications_tab/application_detail/OAuthBuilderSection.tsx:75
-#: src/components/pages/OAuthAuthorizePage.tsx:577
-#: src/components/pages/OAuthAuthorizePage.tsx:713
+#: src/components/pages/OAuthAuthorizePage.tsx:567
+#: src/components/pages/OAuthAuthorizePage.tsx:693
 msgid "Scopes"
 msgstr "スコープ"
 
@@ -18770,8 +18766,8 @@ msgstr "アカウントを保護する"
 msgid "security"
 msgstr "セキュリティ"
 
-#: src/components/modals/tabs/account_security_tab/Inline.tsx:81
-#: src/components/modals/tabs/AccountSecurityTab.tsx:90
+#: src/components/modals/tabs/account_security_tab/Inline.tsx:82
+#: src/components/modals/tabs/AccountSecurityTab.tsx:91
 #: src/components/modals/utils/SettingsConstants.tsx:298
 #: src/components/modals/utils/SettingsSectionRegistry.tsx:505
 msgid "Security"
@@ -18781,7 +18777,7 @@ msgstr "セキュリティ"
 msgid "Security & Login"
 msgstr "セキュリティとログイン"
 
-#: src/components/modals/tabs/account_security_tab/SecurityTab.tsx:203
+#: src/components/modals/tabs/account_security_tab/SecurityTab.tsx:216
 msgid "Security Features"
 msgstr "セキュリティ機能"
 
@@ -18832,7 +18828,7 @@ msgstr "チャンネルまたはカテゴリを選択"
 msgid "Select a Community"
 msgstr "コミュニティを選択"
 
-#: src/components/pages/OAuthAuthorizePage.tsx:866
+#: src/components/pages/OAuthAuthorizePage.tsx:835
 msgid "Select a community where you have <0>Manage Community</0> permissions."
 msgstr "<0>コミュニティ管理</0>権限があるコミュニティを選択してください。"
 
@@ -18864,7 +18860,7 @@ msgstr "検証方法を選択してください。"
 msgid "Select a violation category."
 msgstr "違反カテゴリを選択してください。"
 
-#: src/components/modals/channel_tabs/ChannelOverviewTab.tsx:729
+#: src/components/modals/channel_tabs/ChannelOverviewTab.tsx:768
 msgid "Select a voice region for this channel. Automatic uses the closest region."
 msgstr "このチャンネルの音声リージョンを選択します。自動は最も近いリージョンを使用します。"
 
@@ -19802,7 +19798,7 @@ msgstr "{displayName}からサインアウト"
 msgid "Signal strength loading"
 msgstr "信号強度を読み込み中"
 
-#: src/components/pages/OAuthAuthorizePage.tsx:788
+#: src/components/pages/OAuthAuthorizePage.tsx:757
 msgid "Signed in as"
 msgstr "次のアカウントでサインイン済み:"
 
@@ -19936,7 +19932,7 @@ msgid "Slower"
 msgstr "遅く"
 
 #: src/components/channel/SlowmodeIndicator.tsx:64
-#: src/components/modals/channel_tabs/ChannelOverviewTab.tsx:616
+#: src/components/modals/channel_tabs/ChannelOverviewTab.tsx:655
 #: src/components/modals/tabs/developer_options_tab/MockingTab.tsx:117
 msgid "Slowmode"
 msgstr "スローモード"
@@ -19990,11 +19986,11 @@ msgstr "小さいメディアサイズ"
 msgid "sms"
 msgstr "SMS"
 
-#: src/components/modals/tabs/account_security_tab/SecurityTab.tsx:412
+#: src/components/modals/tabs/account_security_tab/SecurityTab.tsx:436
 msgid "SMS Backup"
 msgstr "SMSバックアップ"
 
-#: src/components/modals/tabs/account_security_tab/SecurityTab.tsx:432
+#: src/components/modals/tabs/account_security_tab/SecurityTab.tsx:456
 msgid "SMS backup is disabled for partners"
 msgstr "パートナー向けのSMSバックアップは無効です"
 
@@ -20007,15 +20003,15 @@ msgstr "SMSコード"
 msgid "SMS Code"
 msgstr "SMSコード"
 
-#: src/components/modals/tabs/account_security_tab/SecurityTab.tsx:406
+#: src/components/modals/tabs/account_security_tab/SecurityTab.tsx:430
 msgid "SMS Two-Factor Authentication"
 msgstr "SMS二要素認証"
 
-#: src/components/modals/tabs/account_security_tab/SecurityTab.tsx:151
+#: src/components/modals/tabs/account_security_tab/SecurityTab.tsx:164
 msgid "SMS two-factor authentication adds an additional layer of security to your account by requiring a verification code sent to your phone number when signing in."
 msgstr "SMS二要素認証は、サインイン時に電話番号に送信される確認コードを要求することで、アカウントに追加のセキュリティ層を追加します。"
 
-#: src/components/modals/tabs/account_security_tab/SecurityTab.tsx:416
+#: src/components/modals/tabs/account_security_tab/SecurityTab.tsx:440
 msgid "SMS two-factor authentication is enabled"
 msgstr "SMS二要素認証が有効です"
 
@@ -20291,7 +20287,7 @@ msgstr "ネタバレ内容"
 msgid "spoilers"
 msgstr "ネタバレ"
 
-#: src/components/modals/AddGuildModal.tsx:179
+#: src/components/modals/AddGuildModal.tsx:180
 msgid "Sports Fans"
 msgstr "スポーツファン"
 
@@ -20495,7 +20491,7 @@ msgstr "ステッカーの密度"
 msgid "Sticker pack"
 msgstr "ステッカーパック"
 
-#: src/actions/InviteActionCreators.tsx:291
+#: src/actions/InviteActionCreators.tsx:314
 msgid "Sticker pack creation limit reached"
 msgstr "ステッカーパック作成上限に達しました"
 
@@ -20503,7 +20499,7 @@ msgstr "ステッカーパック作成上限に達しました"
 msgid "Sticker Pack Invite"
 msgstr "ステッカーパック招待"
 
-#: src/actions/InviteActionCreators.tsx:277
+#: src/actions/InviteActionCreators.tsx:300
 msgid "Sticker pack limit reached"
 msgstr "ステッカーパック上限に達しました"
 
@@ -20634,15 +20630,15 @@ msgstr "ストリーミング"
 msgid "Streaming"
 msgstr "ストリーミング中"
 
-#: src/components/modals/AddGuildModal.tsx:148
+#: src/components/modals/AddGuildModal.tsx:149
 msgid "Study Buddies United"
 msgstr "勉強仲間ユナイテッド"
 
-#: src/components/modals/AddGuildModal.tsx:181
+#: src/components/modals/AddGuildModal.tsx:182
 msgid "Study Group"
 msgstr "勉強グループ"
 
-#: src/components/modals/AddGuildModal.tsx:167
+#: src/components/modals/AddGuildModal.tsx:168
 msgid "Study Hall"
 msgstr "自習室"
 
@@ -20732,7 +20728,7 @@ msgstr "提案"
 msgid "Summary"
 msgstr "概要"
 
-#: src/components/modals/AddGuildModal.tsx:164
+#: src/components/modals/AddGuildModal.tsx:165
 msgid "Support Circle"
 msgstr "サポートサークル"
 
@@ -20793,7 +20789,7 @@ msgstr "スウェーデン語"
 msgid "switch"
 msgstr "スイッチ"
 
-#: src/components/pages/OAuthAuthorizePage.tsx:801
+#: src/components/pages/OAuthAuthorizePage.tsx:770
 msgid "Switch account"
 msgstr "アカウントを切り替え"
 
@@ -20957,7 +20953,7 @@ msgstr "タグ ({0}/10)"
 msgid "Tap to add a note"
 msgstr "タップしてメモを追加"
 
-#: src/components/pages/OAuthAuthorizePage.tsx:766
+#: src/components/pages/OAuthAuthorizePage.tsx:735
 msgid "Target community"
 msgstr "対象コミュニティ"
 
@@ -20966,7 +20962,7 @@ msgstr "対象コミュニティ"
 msgid "Targeted attacks, threats, or sustained harassment"
 msgstr "標的型攻撃、脅迫、または持続的な嫌がらせ"
 
-#: src/components/modals/AddGuildModal.tsx:157
+#: src/components/modals/AddGuildModal.tsx:158
 msgid "Team Alpha"
 msgstr "チームアルファ"
 
@@ -21096,7 +21092,7 @@ msgstr "有効な色の形式ではありません。hex、rgb()、hsl()、ま�
 msgid "That doesn't look like a valid URL."
 msgstr "有効なURLのようには見えません。"
 
-#: src/components/modals/AddGuildModal.tsx:264
+#: src/components/modals/AddGuildModal.tsx:265
 #: src/components/modals/EditGroupBottomSheet.tsx:123
 #: src/components/modals/EditGroupModal.tsx:116
 #: src/components/modals/guild_tabs/guild_overview_tab/hooks/useGuildImageAssetField.tsx:203
@@ -21111,7 +21107,7 @@ msgid "That message didn't delete"
 msgstr "そのメッセージは削除されませんでした"
 
 #. placeholder {0}: invite.pack.name
-#: src/actions/InviteActionCreators.tsx:104
+#: src/actions/InviteActionCreators.tsx:123
 msgid "The {packLabel} {0} has been installed."
 msgstr "{packLabel} {0}がインストールされました。"
 
@@ -21124,11 +21120,11 @@ msgid "The app has crashed. Checking for updates that might fix this issue..."
 msgstr "アプリがクラッシュしました。この問題を修正する可能性のあるアップデートを確認しています..."
 
 #. placeholder {0}: successState.guildName
-#: src/components/pages/OAuthAuthorizePage.tsx:554
+#: src/components/pages/OAuthAuthorizePage.tsx:544
 msgid "The bot has been added to <0>{0}</0>."
 msgstr "ボットが<0>{0}</0>に追加されました。"
 
-#: src/components/pages/OAuthAuthorizePage.tsx:558
+#: src/components/pages/OAuthAuthorizePage.tsx:548
 msgid "The bot has been added."
 msgstr "ボットが追加されました。"
 
@@ -21161,7 +21157,7 @@ msgstr "FluxerTag <0>{fluxerTag}</0>は既に使用されています。続行�
 msgid "The job starts 24 hours after you confirm and can be canceled or restarted anytime"
 msgstr "確認後24時間でジョブが開始され、いつでもキャンセルまたは再開できます"
 
-#: src/components/modals/AddGuildModal.tsx:147
+#: src/components/modals/AddGuildModal.tsx:148
 msgid "The Midnight Gamers"
 msgstr "The Midnight Gamers"
 
@@ -21182,7 +21178,7 @@ msgstr "指定されたredirect_uriはこのアプリケーションに登録さ
 msgid "The role <0>\"{roleName}\"</0> could not be deleted at this time. Please try again."
 msgstr "ロール<0>\"{roleName}\"</0>は現在削除できません。もう一度お試しください。"
 
-#: src/components/modals/AddGuildModal.tsx:185
+#: src/components/modals/AddGuildModal.tsx:186
 msgid "The Squad"
 msgstr "The Squad"
 
@@ -21206,7 +21202,7 @@ msgstr "タイムアウトは365日（31536000秒）を超えることはでき�
 msgid "The URL of the Fluxer instance you want to sign in to."
 msgstr "サインインしたいFluxerインスタンスのURLです。"
 
-#: src/components/modals/channel_tabs/ChannelOverviewTab.tsx:496
+#: src/components/modals/channel_tabs/ChannelOverviewTab.tsx:535
 msgid "The URL this link channel points to."
 msgstr "このリンクチャンネルが指すURL。"
 
@@ -21336,7 +21332,7 @@ msgstr "このアプリケーション"
 msgid "This attachment has expired"
 msgstr "この添付ファイルは期限切れです"
 
-#: src/components/pages/OAuthAuthorizePage.tsx:647
+#: src/components/pages/OAuthAuthorizePage.tsx:627
 msgid "This bot is requesting the Administrator permission. We do not recommend granting this to production apps unless you fully trust the developer. Consider asking them to request a reduced set of permissions. Close this page if you are unsure."
 msgstr "このボットは管理者権限を要求しています。開発者を完全に信頼していない限り、本番アプリにこれを付与することは推奨しません。権限セットを減らすよう依頼することを検討してください。不明な場合はこのページを閉じてください。"
 
@@ -22055,7 +22051,7 @@ msgstr "トップ"
 msgid "Top Tooltip"
 msgstr "トップツールチップ"
 
-#: src/components/modals/channel_tabs/ChannelOverviewTab.tsx:519
+#: src/components/modals/channel_tabs/ChannelOverviewTab.tsx:558
 msgid "Topic"
 msgstr "トピック"
 
@@ -22100,7 +22096,7 @@ msgstr "翻訳"
 msgid "Travel & Places"
 msgstr "旅行と場所"
 
-#: src/components/modals/AddGuildModal.tsx:173
+#: src/components/modals/AddGuildModal.tsx:174
 msgid "Travel Buddies"
 msgstr "旅行仲間"
 
@@ -22164,12 +22160,12 @@ msgstr "別の検索語句またはフィルターを試す"
 msgid "Try again"
 msgstr "もう一度試す"
 
-#: src/components/BootstrapErrorScreen.tsx:71
+#: src/components/BootstrapErrorScreen.tsx:72
 #: src/components/bottomsheets/ChannelSearchBottomSheet.tsx:317
 #: src/components/channel/ChannelSearchResults.tsx:694
 #: src/components/modals/channel_tabs/ChannelInvitesTab.tsx:231
 #: src/components/modals/channel_tabs/ChannelWebhooksTab.tsx:162
-#: src/components/NetworkErrorScreen.tsx:56
+#: src/components/NetworkErrorScreen.tsx:57
 #: src/components/pages/SsoCallbackPage.tsx:116
 msgid "Try Again"
 msgstr "もう一度試す"
@@ -22226,7 +22222,7 @@ msgstr "トルコ語"
 msgid "Turn Off All Device Cameras"
 msgstr "すべてのデバイスカメラをオフにする"
 
-#: src/components/pages/OAuthAuthorizePage.tsx:817
+#: src/components/pages/OAuthAuthorizePage.tsx:786
 msgid "Turn off anything you're not comfortable with. Some features may stop working."
 msgstr "不快なものはオフにしてください。一部の機能が動作しなくなる場合があります。"
 
@@ -22260,7 +22256,7 @@ msgstr "ストリームをオフにする"
 msgid "Turn On Camera"
 msgstr "カメラをオンにする"
 
-#: src/components/pages/OAuthAuthorizePage.tsx:852
+#: src/components/pages/OAuthAuthorizePage.tsx:821
 msgid "Turning off scopes may prevent the app from working correctly."
 msgstr "スコープをオフにすると、アプリが正しく動作しなくなる可能性があります。"
 
@@ -22272,11 +22268,11 @@ msgstr "これをオフにすると、自分のビューからカメラが非表
 msgid "Turning this off only hides your screen share from your own view. Others in the call can still see your screen."
 msgstr "これをオフにすると、自分のビューからのみ画面共有が非表示になります。通話中の他の人はまだあなたの画面を見ることができます。"
 
-#: src/components/modals/channel_tabs/ChannelOverviewTab.tsx:471
+#: src/components/modals/channel_tabs/ChannelOverviewTab.tsx:510
 msgid "Tweak this category's basics."
 msgstr "このカテゴリーの基本設定を調整します。"
 
-#: src/components/modals/channel_tabs/ChannelOverviewTab.tsx:471
+#: src/components/modals/channel_tabs/ChannelOverviewTab.tsx:510
 msgid "Tweak this channel's basics."
 msgstr "このチャンネルの基本設定を調整します。"
 
@@ -22299,7 +22295,7 @@ msgstr "二要素"
 msgid "Two-factor authentication"
 msgstr "二要素認証"
 
-#: src/components/modals/tabs/account_security_tab/SecurityTab.tsx:218
+#: src/components/modals/tabs/account_security_tab/SecurityTab.tsx:231
 #: src/components/modals/utils/SettingsSearchIndex.tsx:123
 msgid "Two-Factor Authentication"
 msgstr "二要素認証"
@@ -22312,7 +22308,7 @@ msgstr "二要素認証が無効です"
 msgid "Two-factor authentication enabled"
 msgstr "二要素認証が有効です"
 
-#: src/components/modals/tabs/account_security_tab/SecurityTab.tsx:228
+#: src/components/modals/tabs/account_security_tab/SecurityTab.tsx:241
 msgid "Two-factor authentication is enabled"
 msgstr "二要素認証が有効です"
 
@@ -22405,11 +22401,11 @@ msgstr "ウクライナ語"
 msgid "Ultra (1440p)"
 msgstr "ウルトラ (1440p)"
 
-#: src/actions/InviteActionCreators.tsx:323
+#: src/actions/InviteActionCreators.tsx:346
 msgid "Unable to install emoji pack"
 msgstr "絵文字パックをインストールできません"
 
-#: src/actions/InviteActionCreators.tsx:324
+#: src/actions/InviteActionCreators.tsx:347
 msgid "Unable to install sticker pack"
 msgstr "ステッカーパックをインストールできません"
 
@@ -22761,7 +22757,7 @@ msgstr "PlutoniumでHD画面共有をアンロック"
 msgid "Unlock HD Video with Plutonium"
 msgstr "PlutoniumでHD動画をアンロック"
 
-#: src/components/modals/components/PlutoniumContent.tsx:168
+#: src/components/modals/components/PlutoniumContent.tsx:149
 msgid "Unlock higher limits and exclusive features while supporting an independent communication platform."
 msgstr "独立したコミュニケーションプラットフォームをサポートしながら、より高い制限と限定機能をアンロック"
 
@@ -23161,7 +23157,7 @@ msgstr "入場サウンドをアップロード"
 msgid "Upload File"
 msgstr "ファイルをアップロード"
 
-#: src/components/modals/AddGuildModal.tsx:329
+#: src/components/modals/AddGuildModal.tsx:331
 #: src/components/modals/EditGroupBottomSheet.tsx:214
 #: src/components/modals/EditGroupModal.tsx:195
 #: src/components/modals/guild_tabs/guild_overview_tab/fields/GuildIconUploadField.tsx:97
@@ -23209,7 +23205,7 @@ msgstr "{emojiText}をアップロード中です。少し時間がかかる場�
 msgid "Uploading Emojis"
 msgstr "絵文字をアップロード中"
 
-#: src/components/modals/channel_tabs/ChannelOverviewTab.tsx:491
+#: src/components/modals/channel_tabs/ChannelOverviewTab.tsx:530
 #: src/components/modals/ChannelCreateModal.tsx:90
 msgid "URL"
 msgstr "URL"
@@ -23231,7 +23227,7 @@ msgstr "url 警告"
 msgid "URLs to download any attachments from your messages"
 msgstr "メッセージの添付ファイルをダウンロードするためのURL"
 
-#: src/components/modals/channel_tabs/ChannelOverviewTab.tsx:183
+#: src/components/modals/channel_tabs/ChannelOverviewTab.tsx:196
 #: src/components/voice/VoiceRegionSelector.tsx:75
 #: src/components/voice/VoiceSettingsMenus.tsx:433
 msgid "US East"
@@ -23254,7 +23250,7 @@ msgstr "実際の値を使用"
 msgid "Use actual premium type"
 msgstr "実際のプレミアムタイプを使用"
 
-#: src/components/modals/tabs/account_security_tab/SecurityTab.tsx:230
+#: src/components/modals/tabs/account_security_tab/SecurityTab.tsx:243
 msgid "Use an authenticator app to generate codes for two-factor authentication"
 msgstr "二要素認証用のコードを生成するために認証アプリを使用"
 
@@ -23323,7 +23319,7 @@ msgstr "グローバルプロフィールを使用"
 msgid "Use light theme"
 msgstr "ライトテーマを使用"
 
-#: src/components/modals/tabs/account_security_tab/SecurityTab.tsx:277
+#: src/components/modals/tabs/account_security_tab/SecurityTab.tsx:290
 msgid "Use passkeys for passwordless sign-in and two-factor authentication"
 msgstr "パスキーを使用してパスワード不要のサインインと二要素認証を行う"
 
@@ -23864,7 +23860,7 @@ msgstr "BANされたユーザーを表示・管理します。"
 msgid "View and manage every webhook configured across your community."
 msgstr "コミュニティ全体で設定されたすべてのWebhookを表示・管理します。"
 
-#: src/components/modals/tabs/account_security_tab/SecurityTab.tsx:260
+#: src/components/modals/tabs/account_security_tab/SecurityTab.tsx:273
 msgid "View and manage your backup codes for account recovery"
 msgstr "アカウント回復用のバックアップコードを表示・管理します"
 
@@ -23889,7 +23885,7 @@ msgstr "通話コントロールを表示"
 msgid "View Channel"
 msgstr "チャンネルを表示"
 
-#: src/components/modals/tabs/account_security_tab/SecurityTab.tsx:268
+#: src/components/modals/tabs/account_security_tab/SecurityTab.tsx:281
 msgid "View Codes"
 msgstr "コードを表示"
 
@@ -24004,7 +24000,8 @@ msgstr "VIPボイス"
 msgid "visibility"
 msgstr "可視性"
 
-#: src/components/modals/components/plutonium/SubscriptionCard.tsx:121
+#: src/components/modals/components/FeatureComparisonTable.tsx:149
+#: src/components/modals/components/plutonium/SubscriptionCard.tsx:110
 #: src/utils/modals/guild_tabs/GuildAuditLogTabUtils.tsx:283
 msgid "Visionary"
 msgstr "ビジョナリー"
@@ -24026,7 +24023,7 @@ msgid "Visionary Badge Override"
 msgstr "ビジョナリーバッジオーバーライド"
 
 #. placeholder {0}: profile.premiumLifetimeSequence
-#: src/components/popouts/UserProfileBadges.tsx:150
+#: src/components/popouts/UserProfileBadges.tsx:136
 msgid "Visionary ID #{0}"
 msgstr "ビジョナリーID #{0}"
 
@@ -24175,7 +24172,7 @@ msgstr "ボイスメッセージプレーヤー"
 msgid "Voice Mute"
 msgstr "ボイスをミュート"
 
-#: src/components/modals/channel_tabs/ChannelOverviewTab.tsx:640
+#: src/components/modals/channel_tabs/ChannelOverviewTab.tsx:679
 msgid "Voice Quality"
 msgstr "ボイス品質"
 
@@ -24184,7 +24181,7 @@ msgstr "ボイス品質"
 msgid "Voice recording is not supported in this browser."
 msgstr "このブラウザではボイス録音はサポートされていません。"
 
-#: src/components/modals/channel_tabs/ChannelOverviewTab.tsx:728
+#: src/components/modals/channel_tabs/ChannelOverviewTab.tsx:767
 #: src/components/voice/VoiceSettingsMenus.tsx:483
 msgid "Voice Region"
 msgstr "ボイスリージョン"
@@ -24218,7 +24215,7 @@ msgstr "音量"
 msgid "Volume Control"
 msgstr "音量コントロール"
 
-#: src/components/modals/AddGuildModal.tsx:154
+#: src/components/modals/AddGuildModal.tsx:155
 msgid "Volunteer Heroes"
 msgstr "ボランティアヒーローズ"
 
@@ -24401,8 +24398,8 @@ msgid "We'll verify your new email with a one-time code."
 msgstr "新しいメールアドレスをワンタイムコードで確認します。"
 
 #: src/components/NetworkErrorScreen.tsx:39
-msgid "We're having trouble connecting to Fluxer's servers. This could be a temporary network issue or scheduled maintenance."
-msgstr "Fluxerのサーバーに接続できません。一時的なネットワークの問題や定期メンテナンスの可能性があります。"
+msgid "We're having trouble connecting to Echowire's servers. This could be a temporary network issue or scheduled maintenance."
+msgstr "We're having trouble connecting to Echowire's servers. This could be a temporary network issue or scheduled maintenance."
 
 #: src/components/modals/tabs/DevicesTab.tsx:234
 msgid "We're having trouble connecting to the space-time continuum. Please check your connection and try again."
@@ -24488,7 +24485,7 @@ msgstr "ウェブフック"
 msgid "Webhooks updated"
 msgstr "ウェブフックが更新されました"
 
-#: src/components/modals/AddGuildModal.tsx:160
+#: src/components/modals/AddGuildModal.tsx:161
 msgid "Weekend Warriors"
 msgstr "ウィークエンド・ウォーリアーズ"
 
@@ -24698,7 +24695,7 @@ msgstr "うわっ、これはヤバい。"
 msgid "Why are you reporting this?"
 msgstr "なぜこれを報告するのですか？"
 
-#: src/components/pages/OAuthAuthorizePage.tsx:757
+#: src/components/pages/OAuthAuthorizePage.tsx:726
 msgid "Will send you back to"
 msgstr "次に戻ります："
 
@@ -24718,7 +24715,7 @@ msgstr "Plutoniumを使えば、アニメーションアバターやバナー（
 msgid "Withdraw"
 msgstr "取り下げる"
 
-#: src/components/modals/AddGuildModal.tsx:182
+#: src/components/modals/AddGuildModal.tsx:183
 msgid "Work Friends"
 msgstr "仕事の友達"
 
@@ -24893,7 +24890,7 @@ msgstr "一度に1ファイルしかアップロードできません。ファ�
 msgid "You can pin messages in this conversation for everyone to see."
 msgstr "この会話でメッセージをピン留めして、全員に表示させることができます。"
 
-#: src/components/modals/components/plutonium/SubscriptionCard.tsx:176
+#: src/components/modals/components/plutonium/SubscriptionCard.tsx:165
 msgid "You can redeem additional gift codes to <0>extend</0> your gift time."
 msgstr "追加のギフトコードを使って<0>ギフト期間を延長</0>できます。"
 
@@ -24933,7 +24930,7 @@ msgstr "検索結果のリアクションを操作すると時空連続体が乱
 #: src/components/layout/ChannelItem.tsx:213
 #: src/components/layout/ChannelItem.tsx:400
 #: src/stores/voice/MediaEngineFacade.tsx:168
-#: src/stores/voice/MediaEngineFacade.tsx:828
+#: src/stores/voice/MediaEngineFacade.tsx:899
 msgid "You can't join while you're on timeout."
 msgstr "タイムアウト中は参加できません。"
 
@@ -25023,11 +25020,11 @@ msgstr "共有するカスタムテーマの上書き設定はまだありませ
 msgid "You don't have permission to connect to this voice channel."
 msgstr "このボイスチャンネルに接続する権限がありません。"
 
-#: src/actions/InviteActionCreators.tsx:320
+#: src/actions/InviteActionCreators.tsx:343
 msgid "You don't have permission to install this emoji pack."
 msgstr "この絵文字パックをインストールする権限がありません。"
 
-#: src/actions/InviteActionCreators.tsx:321
+#: src/actions/InviteActionCreators.tsx:344
 msgid "You don't have permission to install this sticker pack."
 msgstr "このステッカーパックをインストールする権限がありません。"
 
@@ -25059,23 +25056,23 @@ msgstr "あなたには新しいギフトコードが待っています！"
 msgid "You have a new gift code waiting in your Gift Inventory."
 msgstr "あなたにはギフトインベントリに新しいギフトコードが待っています。"
 
-#: src/components/modals/components/plutonium/SubscriptionCard.tsx:200
+#: src/components/modals/components/plutonium/SubscriptionCard.tsx:189
 msgid "You have all <0/> for <1>{monthlyPrice}/month</1>."
 msgstr "<0/>すべてが<1>{monthlyPrice}/月</1>で利用できます。"
 
-#: src/components/modals/components/plutonium/SubscriptionCard.tsx:205
+#: src/components/modals/components/plutonium/SubscriptionCard.tsx:194
 msgid "You have all <0/> for <1>{yearlyPrice}/year</1>."
 msgstr "<0/>すべてが<1>{yearlyPrice}/年</1>で利用できます。"
 
-#: src/components/modals/components/plutonium/SubscriptionCard.tsx:210
+#: src/components/modals/components/plutonium/SubscriptionCard.tsx:199
 msgid "You have all <0/> for your subscription period."
 msgstr "サブスクリプション期間中、すべての<0/>を利用できます。"
 
-#: src/components/modals/components/plutonium/SubscriptionCard.tsx:195
+#: src/components/modals/components/plutonium/SubscriptionCard.tsx:184
 msgid "You have all <0/> forever. No subscriptions, no renewals."
 msgstr "すべての<0/>を永久に利用できます。サブスクリプションも更新もありません。"
 
-#: src/components/modals/components/plutonium/SubscriptionCard.tsx:170
+#: src/components/modals/components/plutonium/SubscriptionCard.tsx:159
 msgid "You have all <0/> via a <1>gift subscription</1> until <2>{giftEndDate}</2>. It <3>won't renew</3>."
 msgstr "<1>ギフトサブスクリプション</1>により、<2>{giftEndDate}</2>まですべての<0/>を利用できます。<3>更新されません</3>。"
 
@@ -25083,35 +25080,35 @@ msgstr "<1>ギフトサブスクリプション</1>により、<2>{giftEndDate}<
 msgid "You have blocked {username}. Unblock them to send messages."
 msgstr "{username}をブロックしています。メッセージを送信するにはブロックを解除してください。"
 
-#: src/actions/InviteActionCreators.tsx:264
+#: src/actions/InviteActionCreators.tsx:287
 msgid "You have created the maximum of {limit} emoji pack. Delete one to create another."
 msgstr "{limit}個の絵文字パックを最大作成しました。別のものを作成するには1つ削除してください。"
 
-#: src/actions/InviteActionCreators.tsx:265
+#: src/actions/InviteActionCreators.tsx:288
 msgid "You have created the maximum of {limit} emoji packs. Delete one to create another."
 msgstr "{limit}個の絵文字パックを最大作成しました。別のものを作成するには1つ削除してください。"
 
-#: src/actions/InviteActionCreators.tsx:296
+#: src/actions/InviteActionCreators.tsx:319
 msgid "You have created the maximum of {limit} sticker pack. Delete one to create another."
 msgstr "{limit}個のステッカーパックを最大作成しました。別のものを作成するには1つ削除してください。"
 
-#: src/actions/InviteActionCreators.tsx:297
+#: src/actions/InviteActionCreators.tsx:320
 msgid "You have created the maximum of {limit} sticker packs. Delete one to create another."
 msgstr "{limit}個のステッカーパックを最大作成しました。別のものを作成するには1つ削除してください。"
 
-#: src/actions/InviteActionCreators.tsx:250
+#: src/actions/InviteActionCreators.tsx:273
 msgid "You have installed the maximum of {limit} emoji pack. Remove one to install another."
 msgstr "{limit}個の絵文字パックを最大インストールしました。別のものをインストールするには1つ削除してください。"
 
-#: src/actions/InviteActionCreators.tsx:251
+#: src/actions/InviteActionCreators.tsx:274
 msgid "You have installed the maximum of {limit} emoji packs. Remove one to install another."
 msgstr "{limit}個の絵文字パックを最大インストールしました。別のものをインストールするには1つ削除してください。"
 
-#: src/actions/InviteActionCreators.tsx:282
+#: src/actions/InviteActionCreators.tsx:305
 msgid "You have installed the maximum of {limit} sticker pack. Remove one to install another."
 msgstr "{limit}個のステッカーパックを最大インストールしました。別のものをインストールするには1つ削除してください。"
 
-#: src/actions/InviteActionCreators.tsx:283
+#: src/actions/InviteActionCreators.tsx:306
 msgid "You have installed the maximum of {limit} sticker packs. Remove one to install another."
 msgstr "{limit}個のステッカーパックを最大インストールしました。別のものをインストールするには1つ削除してください。"
 
@@ -25119,19 +25116,19 @@ msgstr "{limit}個のステッカーパックを最大インストールしま�
 msgid "You have no friends yet"
 msgstr "まだ友達がいません"
 
-#: src/actions/InviteActionCreators.tsx:268
+#: src/actions/InviteActionCreators.tsx:291
 msgid "You have reached the limit for creating emoji packs. Delete one of your packs to create another."
 msgstr "絵文字パックの作成上限に達しました。新しいパックを作成するには、既存のパックを削除してください。"
 
-#: src/actions/InviteActionCreators.tsx:300
+#: src/actions/InviteActionCreators.tsx:323
 msgid "You have reached the limit for creating sticker packs. Delete one of your packs to create another."
 msgstr "ステッカーパックの作成上限に達しました。新しいパックを作成するには、既存のパックを削除してください。"
 
-#: src/actions/InviteActionCreators.tsx:254
+#: src/actions/InviteActionCreators.tsx:277
 msgid "You have reached the limit for installing emoji packs. Remove one of your installed packs to install another."
 msgstr "絵文字パックのインストール上限に達しました。新しいパックをインストールするには、既存のパックを削除してください。"
 
-#: src/actions/InviteActionCreators.tsx:286
+#: src/actions/InviteActionCreators.tsx:309
 msgid "You have reached the limit for installing sticker packs. Remove one of your installed packs to install another."
 msgstr "ステッカーパックのインストール上限に達しました。新しいパックをインストールするには、既存のパックを削除してください。"
 
@@ -25241,8 +25238,8 @@ msgstr "このコミュニティでメッセージを送信するには、アカ
 msgid "You need to verify your email to send messages in this community."
 msgstr "このコミュニティでメッセージを送信するには、メールアドレスを確認する必要があります。"
 
-#: src/components/pages/OAuthAuthorizePage.tsx:688
-#: src/components/pages/OAuthAuthorizePage.tsx:948
+#: src/components/pages/OAuthAuthorizePage.tsx:668
+#: src/components/pages/OAuthAuthorizePage.tsx:917
 msgid "You will be taken to <0><1>{redirectHostname}</1></0> after authorizing."
 msgstr "承認後、<0><1>{redirectHostname}</1></0>に移動します。"
 
@@ -25260,7 +25257,7 @@ msgstr "デスクトップでは通知を受信しません"
 msgid "You'll appear offline"
 msgstr "オフラインとして表示されます"
 
-#: src/components/pages/OAuthAuthorizePage.tsx:906
+#: src/components/pages/OAuthAuthorizePage.tsx:875
 msgid "You'll configure which permissions the bot receives on the next screen."
 msgstr "次の画面でボットに付与する権限を設定します。"
 
@@ -25599,11 +25596,11 @@ msgstr "あなたの地域"
 msgid "Your stream is still being broadcast"
 msgstr "あなたのストリームはまだ配信中です"
 
-#: src/components/modals/components/plutonium/SubscriptionCard.tsx:156
+#: src/components/modals/components/plutonium/SubscriptionCard.tsx:145
 msgid "Your subscription ended, but you still have all <0/> until <1>{graceDate}</1>. Resubscribe to keep them."
 msgstr "サブスクリプションは終了しましたが、<1>{graceDate}</1>まで<0/>をすべて利用できます。継続するには再購読してください。"
 
-#: src/components/modals/components/plutonium/SubscriptionCard.tsx:145
+#: src/components/modals/components/plutonium/SubscriptionCard.tsx:134
 msgid "Your subscription expired on <0>{expiredDate}</0>. You lost all <1/>. You can reactivate at any time."
 msgstr "サブスクリプションは<0>{expiredDate}</0>に期限切れとなりました。<1/>をすべて失いました。いつでも再アクティベートできます。"
 
@@ -25619,7 +25616,7 @@ msgstr "サブスクリプションが再アクティベートされました！
 msgid "Your subscription has been set to cancel at the end of your billing period."
 msgstr "サブスクリプションは、請求期間の終了時にキャンセルするように設定されました。"
 
-#: src/components/modals/components/plutonium/SubscriptionCard.tsx:188
+#: src/components/modals/components/plutonium/SubscriptionCard.tsx:177
 msgid "Your subscription will cancel on <0>{cancelDate}</0>. You'll lose all <1/> after that date."
 msgstr "サブスクリプションは<0>{cancelDate}</0>にキャンセルされます。その後は<1/>をすべて失います。"
 

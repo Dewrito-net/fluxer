@@ -21,6 +21,7 @@ import type {ApiTestHarness} from '@fluxer/api/src/test/ApiTestHarness';
 import {createBuilder, createBuilderWithoutAuth} from '@fluxer/api/src/test/TestRequestBuilder';
 import {UserFlags} from '@fluxer/constants/src/UserConstants';
 import type {
+	FCMTokenRegisterResponse,
 	PushSubscribeResponse,
 	PushSubscriptionsListResponse,
 	UserPartialResponse,
@@ -387,4 +388,31 @@ export async function deletePushSubscription(
 	subscriptionId: string,
 ): Promise<void> {
 	await createBuilder<void>(harness, token).delete(`/users/@me/push/subscriptions/${subscriptionId}`).execute();
+}
+
+export async function registerFCMToken(
+	harness: ApiTestHarness,
+	token: string,
+	fcmToken: string,
+	options?: {platform?: string; deviceName?: string},
+): Promise<FCMTokenRegisterResponse> {
+	return createBuilder<FCMTokenRegisterResponse>(harness, token)
+		.post('/users/@me/fcm/tokens')
+		.body({
+			fcm_token: fcmToken,
+			platform: options?.platform,
+			device_name: options?.deviceName,
+		})
+		.execute();
+}
+
+export async function deleteFCMToken(
+	harness: ApiTestHarness,
+	token: string,
+	fcmToken: string,
+): Promise<void> {
+	await createBuilder<void>(harness, token)
+		.delete('/users/@me/fcm/tokens')
+		.body({fcm_token: fcmToken})
+		.execute();
 }

@@ -664,7 +664,7 @@ const GuildList = observer(() => {
 
 						<DiscoveryButton />
 						<AddGuildButton />
-						{!Platform.isElectron && !Platform.isPWA && <DownloadButton />}
+						{!Platform.isElectron && !Platform.isPWA && !Platform.isAndroid && <DownloadButton />}
 						<HelpButton />
 					</div>
 				</div>

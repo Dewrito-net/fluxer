@@ -54,7 +54,7 @@
 }
 
 .freeValue {
-	width: 5rem;
+	width: 4.5rem;
 	text-align: center;
 	font-size: 0.875rem;
 	line-height: 1.25rem;
@@ -63,12 +63,12 @@
 
 @media (min-width: 768px) {
 	.freeValue {
-		width: 6rem;
+		width: 5.5rem;
 	}
 }
 
 .plutoniumValue {
-	width: 5rem;
+	width: 4.5rem;
 	text-align: center;
 	font-weight: 600;
 	font-size: 0.875rem;
@@ -78,6 +78,21 @@
 
 @media (min-width: 768px) {
 	.plutoniumValue {
-		width: 6rem;
+		width: 5.5rem;
+	}
+}
+
+.visionaryValue {
+	width: 4.5rem;
+	text-align: center;
+	font-weight: 600;
+	font-size: 0.875rem;
+	line-height: 1.25rem;
+	color: var(--premium-tier-2-color, #f0b232);
+}
+
+@media (min-width: 768px) {
+	.visionaryValue {
+		width: 5.5rem;
 	}
 }

@@ -168,7 +168,7 @@ function extractLinkParts(text: string): {linkText: string; url: string; isEscap
 	const urlInfo = extractUrl(text, bracketPosition + 2);
 	if (!urlInfo) return null;
 
-	if (urlInfo.url.includes('"') || urlInfo.url.includes("'")) {
+	if (urlInfo.url.includes('"')) {
 		return null;
 	}
 
@@ -333,7 +333,7 @@ export function extractUrlSegment(text: string, parserFlags: number): ParserResu
 
 	let urlString = text.slice(0, end);
 
-	const punctuation = '.,;:!?';
+	const punctuation = ".,;:!?'";
 	while (
 		urlString.length > 0 &&
 		punctuation.includes(urlString[urlString.length - 1]) &&

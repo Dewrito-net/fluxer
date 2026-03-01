@@ -87,6 +87,9 @@
 		"tenor": {
 			"api_key": ""
 		},
+		"fcm": {
+			"enabled": false
+		},
 		"voice": {
 			"enabled": true,
 			"api_key": "",

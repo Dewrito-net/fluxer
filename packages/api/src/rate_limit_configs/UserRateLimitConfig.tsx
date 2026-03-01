@@ -246,6 +246,16 @@ export const UserRateLimitConfigs = {
 		config: {limit: 40, windowMs: ms('10 seconds')},
 	} as RouteRateLimitConfig,
 
+	USER_FCM_TOKEN_REGISTER: {
+		bucket: 'user:fcm:register',
+		config: {limit: 20, windowMs: ms('1 minute')},
+	} as RouteRateLimitConfig,
+
+	USER_FCM_TOKEN_DELETE: {
+		bucket: 'user:fcm:delete',
+		config: {limit: 40, windowMs: ms('1 minute')},
+	} as RouteRateLimitConfig,
+
 	USER_HARVEST_LATEST: {
 		bucket: 'user:harvest:latest',
 		config: {limit: 40, windowMs: ms('10 seconds')},

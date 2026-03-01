@@ -300,6 +300,19 @@ export class LiveKitService extends ILiveKitService {
 		const participantIdentity = this.getParticipantIdentity(userId, connectionId);
 		const server = this.resolveServerClient(regionId, serverId);
 
+		const callerStack = new Error().stack;
+		Logger.info(
+			{
+				roomName,
+				participantIdentity,
+				connectionId,
+				guildId: guildId?.toString(),
+				channelId: channelId.toString(),
+				callerStack,
+			},
+			'disconnectParticipant called - removing participant from LiveKit',
+		);
+
 		try {
 			await server.roomServiceClient.removeParticipant(roomName, participantIdentity);
 		} catch (error) {

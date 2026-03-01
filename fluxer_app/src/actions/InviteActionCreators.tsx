@@ -37,6 +37,7 @@ import {HttpError} from '@app/lib/HttpError';
 import {Logger} from '@app/lib/Logger';
 import AuthenticationStore from '@app/stores/AuthenticationStore';
 import GuildMemberStore from '@app/stores/GuildMemberStore';
+import GuildStore from '@app/stores/GuildStore';
 import InviteStore from '@app/stores/InviteStore';
 import UserStore from '@app/stores/UserStore';
 import {isGroupDmInvite, isGuildInvite, isPackInvite} from '@app/types/InviteTypes';
@@ -50,6 +51,24 @@ import {msg} from '@lingui/core/macro';
 import {Trans} from '@lingui/react/macro';
 
 const logger = new Logger('Invites');
+
+export const waitForGuild = (guildId: string, timeoutMs = 5000): Promise<boolean> => {
+	if (GuildStore.getGuild(guildId)) return Promise.resolve(true);
+	return new Promise((resolve) => {
+		const interval = 100;
+		let elapsed = 0;
+		const timer = setInterval(() => {
+			elapsed += interval;
+			if (GuildStore.getGuild(guildId)) {
+				clearInterval(timer);
+				resolve(true);
+			} else if (elapsed >= timeoutMs) {
+				clearInterval(timer);
+				resolve(false);
+			}
+		}, interval);
+	});
+};
 
 const isUnclaimedAccountInviteError = (code?: string): boolean => {
 	return code === APIErrorCodes.UNCLAIMED_ACCOUNT_CANNOT_JOIN_GROUP_DMS;
@@ -138,6 +157,10 @@ export async function acceptAndTransitionToChannel(code: string, i18n: I18n): Pr
 		}
 		logger.debug(`User not in guild ${guildId}, accepting invite ${code}`);
 		await accept(code);
+		const guildReady = await waitForGuild(guildId);
+		if (!guildReady) {
+			logger.warn(`Guild ${guildId} not yet in store after accept, navigating anyway`);
+		}
 		logger.debug(
 			inviteTargetAllowed
 				? `Transitioning to channel ${channelId} in guild ${guildId}`

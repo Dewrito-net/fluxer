@@ -32,7 +32,6 @@ const electronExternals = [
 	'electron-log',
 	'electron-squirrel-startup',
 	'electron-webauthn-mac',
-	'update-electron-app',
 	'@electron-webauthn/native',
 	'uiohook-napi',
 	'node-mac-permissions',
@@ -83,7 +82,7 @@ async function buildMain() {
 			'process.env.NODE_ENV': JSON.stringify(isProduction ? 'production' : 'development'),
 		},
 		banner: {
-			js: `import { createRequire } from 'module'; const require = createRequire(import.meta.url);`,
+			js: `import { createRequire as __banner_createRequire } from 'module'; const require = __banner_createRequire(import.meta.url);`,
 		},
 	});
 

@@ -42,7 +42,6 @@ import type {
 	PublicKeyCredentialDescriptor,
 	PublicKeyCredentialRequestOptions,
 } from '@electron-webauthn/native';
-import {create as nativeCreate, get as nativeGet, isSupported as nativeIsSupported} from '@electron-webauthn/native';
 import type {
 	AuthenticationExtensionsClientOutputs,
 	AuthenticationResponseJSON,
@@ -149,7 +148,7 @@ async function assertValidFluxerInstance(instanceOrigin: string): Promise<void> 
 		}
 	} catch (error) {
 		const message = error instanceof Error ? error.message : String(error);
-		throw new Error(`Not a valid Fluxer instance (${message})`);
+		throw new Error(`Not a valid Echowire instance (${message})`);
 	} finally {
 		clearTimeout(timeout);
 	}
@@ -391,17 +390,29 @@ function createPasskeyProvider(): PasskeyProvider {
 	return createNativePasskeyProvider();
 }
 
+function loadNativeWebAuthn(): typeof import('@electron-webauthn/native') | null {
+	try {
+		return requireModule('@electron-webauthn/native') as typeof import('@electron-webauthn/native');
+	} catch (error) {
+		logger.warn('Failed to load @electron-webauthn/native:', error);
+		return null;
+	}
+}
+
 function createNativePasskeyProvider(): PasskeyProvider {
+	const native = loadNativeWebAuthn();
 	return {
-		isSupported: nativeIsSupported,
+		isSupported: native ? native.isSupported : async () => false,
 		authenticate: async (options) => {
+			if (!native) throw new Error('WebAuthn native module not available');
 			const requestOptions = convertRequestOptions(options);
-			const credential = await nativeGet(requestOptions);
+			const credential = await native.get(requestOptions);
 			return buildAuthenticationResponse(credential);
 		},
 		register: async (options) => {
+			if (!native) throw new Error('WebAuthn native module not available');
 			const creationOptions = convertCreationOptions(options);
-			const credential = await nativeCreate(creationOptions);
+			const credential = await native.create(creationOptions);
 			return buildRegistrationResponse(credential);
 		},
 	};

@@ -32,6 +32,7 @@ export interface ChannelRtcRegion {
 	id: string;
 	name: string;
 	emoji: string;
+	ping_endpoint: string | null;
 }
 
 export async function create(

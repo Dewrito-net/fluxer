@@ -1,0 +1,27 @@
+echowire.org {
+	# Download page
+	handle /download {
+		root * /srv/static
+		rewrite * /download.html
+		file_server
+	}
+
+	# Digital asset links for Android app
+	handle /.well-known/assetlinks.json {
+		root * /srv/static/.well-known
+		file_server
+	}
+
+	# Admin panel
+	handle /admin* {
+		reverse_proxy fluxer_admin:8080
+	}
+
+	# Everything else goes to the monolith
+	handle {
+		reverse_proxy fluxer_server:8080 {
+			header_up X-Forwarded-Proto {scheme}
+			header_up X-Real-IP {remote_host}
+		}
+	}
+}

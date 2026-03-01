@@ -48,6 +48,22 @@ handle_voice_disconnect(ConnectionId, _SessionId, UserId, VoiceStates0, State) -
     VoiceStates = voice_state_utils:ensure_voice_states(VoiceStates0),
     case maps:get(ConnectionId, VoiceStates, undefined) of
         undefined ->
+            %% Connection not found locally — may be a zombie from a dead node.
+            %% Clean it from KeyDB so it doesn't persist for the full TTL (1 hour).
+            GuildId = map_utils:get_integer(State, id, undefined),
+            case GuildId of
+                undefined -> ok;
+                _ ->
+                    GuildIdBin = integer_to_binary(GuildId),
+                    spawn(fun() ->
+                        DeleteReq = #{
+                            <<"type">> => <<"voice_delete_active_states">>,
+                            <<"guild_id">> => GuildIdBin,
+                            <<"connection_ids">> => [ConnectionId]
+                        },
+                        rpc_client:call(DeleteReq, 5000)
+                    end)
+            end,
             State1 = clear_pending_voice_connection(ConnectionId, State),
             {reply, #{success => true}, State1};
         OldVoiceState ->

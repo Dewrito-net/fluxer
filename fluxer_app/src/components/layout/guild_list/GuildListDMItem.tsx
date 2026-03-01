@@ -93,16 +93,15 @@ export const DMListItem = observer(({channel, isSelected, className, voiceCallAc
 
 	const mentionCount = ReadStateStore.getMentionCount(channel.id);
 	const hasUnreadMessages = ReadStateStore.hasUnread(channel.id);
-	const dmScrollSeverity: ScrollIndicatorSeverity | undefined = (() => {
-		if (mentionCount > 0) return 'mention';
-		if (hasUnreadMessages) return 'unread';
-		return undefined;
-	})();
-	const dmScrollId = `dm-${channel.id}`;
-
 	const isGroupDM = channel.type === ChannelTypes.GROUP_DM;
 	const recipient = !isGroupDM ? UserStore.getUser(channel.recipientIds[0]) : null;
 	const isMuted = UserGuildSettingsStore.isChannelMuted(null, channel.id);
+	const dmScrollSeverity: ScrollIndicatorSeverity | undefined = (() => {
+		if (mentionCount > 0) return 'mention';
+		if (hasUnreadMessages && !isMuted) return 'unread';
+		return undefined;
+	})();
+	const dmScrollId = `dm-${channel.id}`;
 
 	const directMessageName = recipient ? NicknameUtils.getNickname(recipient) : null;
 	const computedDisplayName = ChannelUtils.getDMDisplayName(channel);
@@ -294,7 +293,7 @@ export const DMListItem = observer(({channel, isSelected, className, voiceCallAc
 							ref={mergedButtonRef}
 						>
 							<AnimatePresence>
-								{(hasUnreadMessages || isSelected || showControls) && (
+								{((hasUnreadMessages && !isMuted) || mentionCount > 0 || isSelected || showControls) && (
 									<div className={guildStyles.guildIndicator}>
 										<motion.span
 											className={guildStyles.guildIndicatorBar}

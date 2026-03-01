@@ -39,6 +39,7 @@ import {CloudflarePurgeQueue, NoopPurgeQueue} from '@fluxer/api/src/infrastructu
 import {DisabledLiveKitService} from '@fluxer/api/src/infrastructure/DisabledLiveKitService';
 import {DiscriminatorService} from '@fluxer/api/src/infrastructure/DiscriminatorService';
 import {EmbedService} from '@fluxer/api/src/infrastructure/EmbedService';
+import {FCMService} from '@fluxer/api/src/infrastructure/FCMService';
 import {EntityAssetService} from '@fluxer/api/src/infrastructure/EntityAssetService';
 import type {IGatewayService} from '@fluxer/api/src/infrastructure/IGatewayService';
 import type {ILiveKitService} from '@fluxer/api/src/infrastructure/ILiveKitService';
@@ -76,6 +77,7 @@ import {ReadStateRepository} from '@fluxer/api/src/read_state/ReadStateRepositor
 import {ReadStateService} from '@fluxer/api/src/read_state/ReadStateService';
 import {ReportRepository} from '@fluxer/api/src/report/ReportRepository';
 import {PaymentRepository} from '@fluxer/api/src/user/repositories/PaymentRepository';
+import {PushDeviceRepository} from '@fluxer/api/src/user/repositories/PushDeviceRepository';
 import {UserContactChangeLogRepository} from '@fluxer/api/src/user/repositories/UserContactChangeLogRepository';
 import {UserRepository} from '@fluxer/api/src/user/repositories/UserRepository';
 import {UserContactChangeLogService} from '@fluxer/api/src/user/services/UserContactChangeLogService';
@@ -162,6 +164,8 @@ export interface WorkerDependencies {
 
 	stripe: Stripe | null;
 	csamScanJobService: CsamScanJobService;
+	fcmService: FCMService | null;
+	pushDeviceRepository: PushDeviceRepository | null;
 }
 
 export async function initializeWorkerDependencies(snowflakeService: SnowflakeService): Promise<WorkerDependencies> {
@@ -344,6 +348,14 @@ export async function initializeWorkerDependencies(snowflakeService: SnowflakeSe
 		Logger.info('Stripe initialized');
 	}
 
+	let fcmService: FCMService | null = null;
+	let pushDeviceRepository: PushDeviceRepository | null = null;
+	if (Config.fcm.enabled && Config.fcm.serviceAccountKeyPath) {
+		fcmService = new FCMService(Config.fcm.serviceAccountKeyPath);
+		pushDeviceRepository = new PushDeviceRepository();
+		Logger.info('FCM service initialized');
+	}
+
 	Logger.info('Worker dependencies initialized successfully');
 
 	return {
@@ -397,6 +409,8 @@ export async function initializeWorkerDependencies(snowflakeService: SnowflakeSe
 		csamEvidenceRetentionService,
 		stripe,
 		csamScanJobService,
+		fcmService,
+		pushDeviceRepository,
 	};
 }
 

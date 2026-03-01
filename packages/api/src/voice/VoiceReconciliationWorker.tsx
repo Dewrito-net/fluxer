@@ -24,6 +24,7 @@ import type {IGatewayService} from '@fluxer/api/src/infrastructure/IGatewayServi
 import type {ILiveKitService} from '@fluxer/api/src/infrastructure/ILiveKitService';
 import type {IMetricsService} from '@fluxer/api/src/infrastructure/IMetricsService';
 import {parseParticipantIdentity, parseRoomName} from '@fluxer/api/src/infrastructure/VoiceRoomContext';
+import type {VoiceConnectionStore} from '@fluxer/api/src/infrastructure/VoiceConnectionStore';
 import type {VoiceRoomStore} from '@fluxer/api/src/infrastructure/VoiceRoomStore';
 import type {IKVProvider} from '@fluxer/kv_client/src/IKVProvider';
 
@@ -47,6 +48,7 @@ interface VoiceReconciliationWorkerOptions {
 	kvClient: IKVProvider;
 	metricsService: IMetricsService;
 	logger: ILogger;
+	voiceConnectionStore?: VoiceConnectionStore;
 	intervalMs?: number;
 	staggerDelayMs?: number;
 }
@@ -70,6 +72,7 @@ export class VoiceReconciliationWorker {
 	private readonly kvClient: IKVProvider;
 	private readonly metricsService: IMetricsService;
 	private readonly logger: ILogger;
+	private readonly voiceConnectionStore?: VoiceConnectionStore;
 	private readonly intervalMs: number;
 	private readonly staggerDelayMs: number;
 	private intervalHandle: ReturnType<typeof setInterval> | null = null;
@@ -82,6 +85,7 @@ export class VoiceReconciliationWorker {
 		this.kvClient = options.kvClient;
 		this.metricsService = options.metricsService;
 		this.logger = options.logger.child({worker: 'VoiceReconciliationWorker'});
+		this.voiceConnectionStore = options.voiceConnectionStore;
 		this.intervalMs = options.intervalMs ?? DEFAULT_INTERVAL_MS;
 		this.staggerDelayMs = options.staggerDelayMs ?? DEFAULT_STAGGER_DELAY_MS;
 	}
@@ -274,6 +278,26 @@ export class VoiceReconciliationWorker {
 			if (pendingJoin && pendingJoin.expiresAt > Date.now()) {
 				await this.confirmPendingJoin(guildId, channelId, connectionId, pendingJoin, roomName);
 				livekitOnlyConfirmed++;
+			} else if (this.voiceConnectionStore) {
+				const [isConfirmed, pendingInKv] = await Promise.all([
+					this.voiceConnectionStore.isConnectionConfirmed({
+						guildId: guildId?.toString(),
+						channelId: channelId.toString(),
+						connectionId,
+					}),
+					this.voiceConnectionStore.getPendingConnection(connectionId),
+				]);
+
+				if (isConfirmed || pendingInKv) {
+					this.logger.info(
+						{connectionId, roomName},
+						'Skipping eviction: connection tracked in KeyDB',
+					);
+					livekitOnlyConfirmed++;
+				} else {
+					await this.evictFromLiveKit(userId, guildId, channelId, connectionId, regionId, serverId, roomName);
+					livekitOnlyDisconnected++;
+				}
 			} else {
 				await this.evictFromLiveKit(userId, guildId, channelId, connectionId, regionId, serverId, roomName);
 				livekitOnlyDisconnected++;

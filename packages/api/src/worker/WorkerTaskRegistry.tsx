@@ -25,6 +25,7 @@ import bulkDeleteUserMessages from '@fluxer/api/src/worker/tasks/BulkDeleteUserM
 import deleteUserMessagesInGuildByTime from '@fluxer/api/src/worker/tasks/DeleteUserMessagesInGuildByTime';
 import expireAttachments from '@fluxer/api/src/worker/tasks/ExpireAttachments';
 import extractEmbeds from '@fluxer/api/src/worker/tasks/ExtractEmbeds';
+import handleDMNotification from '@fluxer/api/src/worker/tasks/HandleDMNotification';
 import handleMentions from '@fluxer/api/src/worker/tasks/HandleMentions';
 import harvestGuildData from '@fluxer/api/src/worker/tasks/HarvestGuildData';
 import harvestUserData from '@fluxer/api/src/worker/tasks/HarvestUserData';
@@ -52,6 +53,7 @@ export const workerTasks: Record<string, WorkerTaskHandler> = {
 	deleteUserMessagesInGuildByTime,
 	expireAttachments,
 	extractEmbeds,
+	handleDMNotification,
 	handleMentions,
 	harvestGuildData,
 	harvestUserData,

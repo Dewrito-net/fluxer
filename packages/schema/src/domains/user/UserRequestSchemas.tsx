@@ -414,6 +414,18 @@ export const SubscriptionIdParam = z.object({
 });
 export type SubscriptionIdParam = z.infer<typeof SubscriptionIdParam>;
 
+export const FCMTokenRegisterRequest = z.object({
+	fcm_token: createStringType(1, 4096).describe('The FCM registration token'),
+	platform: createStringType(1, 64).optional().describe('The device platform (e.g. android, ios)'),
+	device_name: createStringType(1, 256).optional().describe('A human-readable device name'),
+});
+export type FCMTokenRegisterRequest = z.infer<typeof FCMTokenRegisterRequest>;
+
+export const FCMTokenDeleteRequest = z.object({
+	fcm_token: createStringType(1, 4096).describe('The FCM registration token to remove'),
+});
+export type FCMTokenDeleteRequest = z.infer<typeof FCMTokenDeleteRequest>;
+
 export const PreloadMessagesRequest = z.object({
 	channels: z.array(SnowflakeType).max(100).describe('Array of channel IDs to preload messages from (max 100)'),
 });

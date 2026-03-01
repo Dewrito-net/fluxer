@@ -24,6 +24,7 @@ import type {LiveKitService} from '@fluxer/api/src/infrastructure/LiveKitService
 import type {PinnedRoomServer, VoiceRoomStore} from '@fluxer/api/src/infrastructure/VoiceRoomStore';
 import {Logger} from '@fluxer/api/src/Logger';
 import type {IUserRepository} from '@fluxer/api/src/user/IUserRepository';
+import type {VoiceConnectionStore} from '@fluxer/api/src/infrastructure/VoiceConnectionStore';
 import type {VoiceAccessContext, VoiceAvailabilityService} from '@fluxer/api/src/voice/VoiceAvailabilityService';
 import type {VoiceRegionAvailability, VoiceServerRecord} from '@fluxer/api/src/voice/VoiceModel';
 import {resolveVoiceRegionPreference, selectVoiceRegionId} from '@fluxer/api/src/voice/VoiceRegionSelection';
@@ -73,6 +74,7 @@ export class VoiceService {
 		private channelRepository: IChannelRepository,
 		private voiceRoomStore: VoiceRoomStore,
 		private voiceAvailabilityService: VoiceAvailabilityService,
+		private voiceConnectionStore?: VoiceConnectionStore,
 	) {}
 
 	async getVoiceToken(params: GetVoiceTokenParams): Promise<{
@@ -270,6 +272,17 @@ export class VoiceService {
 					);
 				});
 		}
+
+		this.voiceConnectionStore
+			?.writePendingConnection(connectionId, {
+				userId: userId.toString(),
+				guildId: guildId?.toString(),
+				channelId: channelId.toString(),
+				tokenNonce,
+			})
+			.catch((error) => {
+				Logger.error({error, connectionId}, 'Failed to write pending voice connection to KeyDB');
+			});
 
 		return {token, endpoint, connectionId, tokenNonce};
 	}

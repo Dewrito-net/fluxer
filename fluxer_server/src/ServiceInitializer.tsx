@@ -277,6 +277,18 @@ function createAppServerInitializer(context: ServiceInitializationContext): Serv
 
 	const publicUrlHost = new URL(requireValue(config.endpoints.app, 'endpoints.app')).origin;
 	const mediaUrlHost = new URL(requireValue(config.endpoints.media, 'endpoints.media')).origin;
+	const staticCdnHost = config.endpoints.static_cdn ? new URL(config.endpoints.static_cdn).origin : null;
+
+	const imgSrc = ["'self'", 'data:', 'blob:', publicUrlHost, mediaUrlHost, 'https://fluxerstatic.com'];
+	const fontSrc: Array<string> = ["'self'", 'https://fluxerstatic.com'];
+	const styleSrc: Array<string> = ["'self'", "'unsafe-inline'", 'https://fluxerstatic.com'];
+	const publicUrlHostname = new URL(publicUrlHost).hostname;
+	const connectSrc = ["'self'", 'wss:', 'ws:', publicUrlHost, `https://*.${publicUrlHostname}`, 'https://fluxerstatic.com'];
+	if (staticCdnHost) {
+		imgSrc.push(staticCdnHost);
+		fontSrc.push(staticCdnHost);
+		connectSrc.push(staticCdnHost);
+	}
 
 	const appServer = createAppServer({
 		staticDir,
@@ -289,10 +301,10 @@ function createAppServerInitializer(context: ServiceInitializationContext): Serv
 		cspDirectives: {
 			defaultSrc: ["'self'"],
 			scriptSrc: ["'self'", "'unsafe-inline'"],
-			styleSrc: ["'self'", "'unsafe-inline'"],
-			imgSrc: ["'self'", 'data:', 'blob:', publicUrlHost, mediaUrlHost],
-			connectSrc: ["'self'", 'wss:', 'ws:', publicUrlHost],
-			fontSrc: ["'self'"],
+			styleSrc,
+			imgSrc,
+			connectSrc,
+			fontSrc,
 			mediaSrc: ["'self'", 'blob:', mediaUrlHost],
 			frameSrc: ["'none'"],
 		},

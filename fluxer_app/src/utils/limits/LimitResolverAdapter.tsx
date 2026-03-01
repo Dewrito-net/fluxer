@@ -110,6 +110,14 @@ class LimitResolverClass {
 			context: LimitContext.free(),
 		});
 	}
+
+	resolveVisionary(key: LimitKey, fallback: number): number {
+		return this.resolve({
+			key,
+			fallback,
+			context: LimitContext.visionary(),
+		});
+	}
 }
 
 export const LimitResolver = new LimitResolverClass();

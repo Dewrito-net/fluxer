@@ -19,7 +19,7 @@
 
 import {useEffect, useRef} from 'react';
 
-const TITLE_PREFIX = 'Fluxer';
+const TITLE_PREFIX = 'Echowire';
 
 type TitlePart = string | null | undefined;
 type TitleInput = TitlePart | Array<TitlePart>;

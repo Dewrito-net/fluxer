@@ -120,6 +120,9 @@ catalogs:
     '@radix-ui/react-switch':
       specifier: 1.2.6
       version: 1.2.6
+    '@sapphi-red/web-noise-suppressor':
+      specifier: 0.3.5
+      version: 0.3.5
     '@sentry/node':
       specifier: 10.38.0
       version: 10.38.0
@@ -653,6 +656,9 @@ importers:
       '@radix-ui/react-switch':
         specifier: 'catalog:'
         version: 1.2.6(@types/react-dom@19.2.3(@types/react@19.2.13))(@types/react@19.2.13)(react-dom@19.2.4(react@19.2.4))(react@19.2.4)
+      '@sapphi-red/web-noise-suppressor':
+        specifier: 'catalog:'
+        version: 0.3.5
       '@sentry/react':
         specifier: 'catalog:'
         version: 10.38.0(react@19.2.4)
@@ -6408,6 +6414,9 @@ packages:
 
   '@rspack/lite-tapable@1.1.0':
     resolution: {integrity: sha512-E2B0JhYFmVAwdDiG14+DW0Di4Ze4Jg10Pc4/lILUrd5DRCaklduz2OvJ5HYQ6G+hd+WTzqQb3QnDNfK4yvAFYw==}
+
+  '@sapphi-red/web-noise-suppressor@0.3.5':
+    resolution: {integrity: sha512-jh3+V9yM+zxLriQexoGm0GatoPaJWjs6ypFIbFYwQp+AoUb55eUXrjKtKQyuC5zShzzeAQUl0M5JzqB7SSrsRA==}
 
   '@sentry-internal/browser-utils@10.38.0':
     resolution: {integrity: sha512-UOJtYmdcxHCcV0NPfXFff/a95iXl/E0EhuQ1y0uE0BuZDMupWSF5t2BgC4HaE5Aw3RTjDF3XkSHWoIF6ohy7eA==}
@@ -15653,6 +15662,8 @@ snapshots:
       - webpack-cli
 
   '@rspack/lite-tapable@1.1.0': {}
+
+  '@sapphi-red/web-noise-suppressor@0.3.5': {}
 
   '@sentry-internal/browser-utils@10.38.0':
     dependencies:

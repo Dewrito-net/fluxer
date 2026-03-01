@@ -210,6 +210,44 @@ Type: object
 | webauthn_challenge? | string | WebAuthn challenge string |
 | webauthn_response? | JSON value | WebAuthn authentication response |
 
+<a id="fcmtokendeleterequest"></a>
+
+## FCMTokenDeleteRequest
+
+**Related endpoints**
+
+- [`DELETE /users/@me/fcm/tokens`](/api-reference/users/remove-an-fcm-push-token)
+
+| Field | Type | Description |
+|-------|------|-------------|
+| fcm_token | string | The FCM registration token to remove |
+
+<a id="fcmtokenregisterrequest"></a>
+
+## FCMTokenRegisterRequest
+
+**Related endpoints**
+
+- [`POST /users/@me/fcm/tokens`](/api-reference/users/register-an-fcm-push-token)
+
+| Field | Type | Description |
+|-------|------|-------------|
+| device_name? | string | A human-readable device name |
+| fcm_token | string | The FCM registration token |
+| platform? | string | The device platform (e.g. android, ios) |
+
+<a id="fcmtokenregisterresponse"></a>
+
+## FCMTokenRegisterResponse
+
+**Related endpoints**
+
+- [`POST /users/@me/fcm/tokens`](/api-reference/users/register-an-fcm-push-token)
+
+| Field | Type | Description |
+|-------|------|-------------|
+| device_id | [SnowflakeType](#snowflaketype) | The unique identifier for the registered device |
+
 <a id="friendrequestbytagrequest"></a>
 
 ## FriendRequestByTagRequest

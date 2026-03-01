@@ -19,6 +19,7 @@
 
 import type {User} from '@fluxer/api/src/models/User';
 import {checkIsPremium} from '@fluxer/api/src/user/UserHelpers';
+import {UserPremiumTypes} from '@fluxer/constants/src/UserConstants';
 import type {LimitMatchContext} from '@fluxer/limits/src/LimitTypes';
 
 export function createLimitMatchContext({
@@ -35,6 +36,11 @@ export function createLimitMatchContext({
 	}
 	if (user && checkIsPremium(user)) {
 		traits.add('premium');
+		if (user.premiumType === UserPremiumTypes.LIFETIME) {
+			traits.add('visionary');
+		} else if (user.premiumType === UserPremiumTypes.SUBSCRIPTION) {
+			traits.add('plutonium');
+		}
 	}
 	const guildFeatureSet = new Set<string>();
 	if (guildFeatures) {

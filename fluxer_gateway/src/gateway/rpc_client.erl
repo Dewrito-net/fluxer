@@ -17,7 +17,7 @@
 
 -module(rpc_client).
 
--export([call/1]).
+-export([call/1, call/2]).
 
 -define(NATS_RPC_SUBJECT, <<"rpc.api">>).
 -define(NATS_RPC_TIMEOUT_MS, 10000).
@@ -27,19 +27,23 @@
 
 -spec call(rpc_request()) -> rpc_response().
 call(Request) ->
+    call(Request, ?NATS_RPC_TIMEOUT_MS).
+
+-spec call(rpc_request(), non_neg_integer()) -> rpc_response().
+call(Request, Timeout) ->
     case gateway_nats_rpc:get_connection() of
         {ok, undefined} ->
             {error, not_connected};
         {ok, Conn} ->
-            do_request(Conn, Request);
+            do_request(Conn, Request, Timeout);
         {error, Reason} ->
             {error, {not_connected, Reason}}
     end.
 
--spec do_request(nats:conn(), rpc_request()) -> rpc_response().
-do_request(Conn, Request) ->
+-spec do_request(nats:conn(), rpc_request(), non_neg_integer()) -> rpc_response().
+do_request(Conn, Request, Timeout) ->
     Payload = iolist_to_binary(json:encode(Request)),
-    case nats:request(Conn, ?NATS_RPC_SUBJECT, Payload, #{timeout => ?NATS_RPC_TIMEOUT_MS}) of
+    case nats:request(Conn, ?NATS_RPC_SUBJECT, Payload, #{timeout => Timeout}) of
         {ok, {ResponseBin, _MsgOpts}} ->
             handle_nats_response(ResponseBin);
         {error, timeout} ->

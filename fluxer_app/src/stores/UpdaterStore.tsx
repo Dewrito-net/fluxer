@@ -19,6 +19,7 @@
 
 import Config from '@app/Config';
 import {Logger} from '@app/lib/Logger';
+import VoiceConnectionManager from '@app/stores/voice/VoiceConnectionManager';
 import type {UpdaterEvent} from '@app/types/electron.d';
 import {getClientInfo} from '@app/utils/ClientInfoUtils';
 import {getElectronAPI, isElectron} from '@app/utils/NativeUtils';
@@ -30,7 +31,7 @@ const CHECK_INTERVAL_MS = 30 * 60 * 1000;
 const MIN_CHECK_INTERVAL_MS = 60 * 1000;
 const VERSION_ENDPOINT = '/version.json';
 const CURRENT_BUILD_SHA = Config.PUBLIC_BUILD_SHA ?? null;
-const ALLOWED_WEB_UPDATE_HOSTS = new Set(['web.fluxer.app', 'web.canary.fluxer.app']);
+
 
 export type UpdaterState = 'idle' | 'checking' | 'available';
 
@@ -312,10 +313,6 @@ class UpdaterStoreImpl {
 	}
 
 	private async checkWebUpdate(): Promise<{available: boolean; sha: string | null; buildNumber: number | null}> {
-		if (!ALLOWED_WEB_UPDATE_HOSTS.has(window.location.host)) {
-			return {available: false, sha: null, buildNumber: null};
-		}
-
 		try {
 			const response = await fetch(VERSION_ENDPOINT, {
 				cache: 'no-store',
@@ -345,6 +342,15 @@ class UpdaterStoreImpl {
 
 		if (this.updateType === 'web') {
 			logger.info('Applying web update, reloading...');
+			const channelId = VoiceConnectionManager.channelId;
+			const guildId = VoiceConnectionManager.guildId;
+			if (channelId) {
+				try {
+					sessionStorage.setItem('__fluxer_voice_rejoin', JSON.stringify({guildId, channelId}));
+				} catch {
+					// sessionStorage may be unavailable
+				}
+			}
 			window.location.reload();
 			return;
 		}

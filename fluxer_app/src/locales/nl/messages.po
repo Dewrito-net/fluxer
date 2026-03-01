@@ -134,12 +134,12 @@ msgid "{0} of {totalAttachments}"
 msgstr "{0} van {totalAttachments}"
 
 #. placeholder {0}: passkeys.length
-#: src/components/modals/tabs/account_security_tab/SecurityTab.tsx:288
+#: src/components/modals/tabs/account_security_tab/SecurityTab.tsx:301
 msgid "{0} passkey registered (max 10)"
 msgstr "{0} toegangscode geregistreerd (max 10)"
 
 #. placeholder {0}: passkeys.length
-#: src/components/modals/tabs/account_security_tab/SecurityTab.tsx:289
+#: src/components/modals/tabs/account_security_tab/SecurityTab.tsx:302
 msgid "{0} passkeys registered (max 10)"
 msgstr "{0} toegangscodes geregistreerd (max 10)"
 
@@ -449,7 +449,7 @@ msgstr "{baseDescription} Deze limiet is ingesteld door de beheerder van jouw in
 msgid "{baseDescription} With Plutonium, your per-file upload limit increases to {0}, plus animated avatars, longer messages, and many other premium features."
 msgstr "{baseDescription} Met Plutonium verhoogt je uploadlimiet per bestand naar {0}, plus geanimeerde avatars, langere berichten en veel andere premium functies."
 
-#: src/components/pages/OAuthAuthorizePage.tsx:743
+#: src/components/pages/OAuthAuthorizePage.tsx:712
 msgid "{clientLabel} wants to connect"
 msgstr "{clientLabel} wil verbinden"
 
@@ -492,7 +492,7 @@ msgstr "{currentCount} / {0}"
 msgid "{days} days"
 msgstr "{days} dagen"
 
-#: src/components/layout/guild_list/GuildListDMItem.tsx:199
+#: src/components/layout/guild_list/GuildListDMItem.tsx:198
 msgid "{displayName} (selected)"
 msgstr "{displayName} (geselecteerd)"
 
@@ -883,12 +883,12 @@ msgstr "{v} cadeau"
 msgid "{v} gifts"
 msgstr "{v} cadeaus"
 
-#: src/components/modals/channel_tabs/ChannelOverviewTab.tsx:655
-#: src/components/modals/channel_tabs/ChannelOverviewTab.tsx:656
+#: src/components/modals/channel_tabs/ChannelOverviewTab.tsx:694
+#: src/components/modals/channel_tabs/ChannelOverviewTab.tsx:695
 msgid "{value} kbps"
 msgstr "{value} kbps"
 
-#: src/components/modals/channel_tabs/ChannelOverviewTab.tsx:688
+#: src/components/modals/channel_tabs/ChannelOverviewTab.tsx:727
 msgid "{value} participants"
 msgstr "{value} deelnemers"
 
@@ -1088,7 +1088,7 @@ msgstr "<0>Undeafened</0> het lid."
 msgid "<0>Unmuted</0> the member."
 msgstr "<0>Unmuted</0> het lid."
 
-#: src/components/modals/tabs/account_security_tab/SecurityTab.tsx:373
+#: src/components/modals/tabs/account_security_tab/SecurityTab.tsx:397
 msgid "<0>Warning:</0> This will also disable SMS two-factor authentication."
 msgstr "<0>Waarschuwing:</0> Dit schakelt ook SMS tweefactorauthenticatie uit."
 
@@ -1103,7 +1103,7 @@ msgstr "1 dag"
 
 #: src/components/channel/CallMessage.tsx:70
 #: src/components/modals/BanMemberModal.tsx:56
-#: src/components/modals/channel_tabs/ChannelOverviewTab.tsx:171
+#: src/components/modals/channel_tabs/ChannelOverviewTab.tsx:184
 #: src/components/modals/InviteModal.tsx:77
 #: src/components/modals/InviteModal.tsx:201
 #: src/components/modals/PackInviteModal.tsx:48
@@ -1122,7 +1122,7 @@ msgstr "1 overeenkomst"
 msgid "1 Member"
 msgstr "1 Lid"
 
-#: src/components/modals/channel_tabs/ChannelOverviewTab.tsx:165
+#: src/components/modals/channel_tabs/ChannelOverviewTab.tsx:178
 #: src/components/modals/tabs/developer_options_tab/MockingTab.tsx:74
 #: src/utils/modals/guild_tabs/GuildOverviewTabUtils.tsx:61
 msgid "1 minute"
@@ -1192,13 +1192,13 @@ msgstr "Cadeau voor 1 jaar"
 msgid "1 Year of Plutonium"
 msgstr "1 jaar Plutonium"
 
-#: src/components/modals/channel_tabs/ChannelOverviewTab.tsx:168
+#: src/components/modals/channel_tabs/ChannelOverviewTab.tsx:181
 #: src/components/modals/tabs/developer_options_tab/MockingTab.tsx:77
 #: src/components/modals/TimeoutMemberOptions.tsx:36
 msgid "10 minutes"
 msgstr "10 minuten"
 
-#: src/components/modals/channel_tabs/ChannelOverviewTab.tsx:162
+#: src/components/modals/channel_tabs/ChannelOverviewTab.tsx:175
 #: src/components/modals/tabs/developer_options_tab/MockingTab.tsx:72
 #: src/constants/TimeWindowPresets.tsx:55
 msgid "10 seconds"
@@ -1249,17 +1249,17 @@ msgstr "1440p"
 msgid "15 FPS"
 msgstr "15 FPS"
 
-#: src/components/modals/channel_tabs/ChannelOverviewTab.tsx:169
+#: src/components/modals/channel_tabs/ChannelOverviewTab.tsx:182
 #: src/constants/TimeWindowPresets.tsx:56
 #: src/utils/modals/guild_tabs/GuildOverviewTabUtils.tsx:63
 msgid "15 minutes"
 msgstr "15 minuten"
 
-#: src/components/modals/channel_tabs/ChannelOverviewTab.tsx:163
+#: src/components/modals/channel_tabs/ChannelOverviewTab.tsx:176
 msgid "15 seconds"
 msgstr "15 seconden"
 
-#: src/components/modals/channel_tabs/ChannelOverviewTab.tsx:172
+#: src/components/modals/channel_tabs/ChannelOverviewTab.tsx:185
 msgid "2 hours"
 msgstr "2 uur"
 
@@ -1271,7 +1271,7 @@ msgstr "2 leden (online)"
 msgid "2 members (typing)"
 msgstr "2 leden (typen)"
 
-#: src/components/modals/channel_tabs/ChannelOverviewTab.tsx:166
+#: src/components/modals/channel_tabs/ChannelOverviewTab.tsx:179
 #: src/components/modals/tabs/developer_options_tab/MockingTab.tsx:75
 msgid "2 minutes"
 msgstr "2 minuten"
@@ -1344,7 +1344,7 @@ msgstr "3 maanden"
 msgid "30 FPS"
 msgstr "30 FPS"
 
-#: src/components/modals/channel_tabs/ChannelOverviewTab.tsx:170
+#: src/components/modals/channel_tabs/ChannelOverviewTab.tsx:183
 #: src/components/modals/InviteModal.tsx:76
 #: src/components/modals/InviteModal.tsx:199
 #: src/components/modals/PackInviteModal.tsx:47
@@ -1353,7 +1353,7 @@ msgstr "30 FPS"
 msgid "30 minutes"
 msgstr "30 minuten"
 
-#: src/components/modals/channel_tabs/ChannelOverviewTab.tsx:164
+#: src/components/modals/channel_tabs/ChannelOverviewTab.tsx:177
 #: src/components/modals/tabs/developer_options_tab/MockingTab.tsx:73
 msgid "30 seconds"
 msgstr "30 seconden"
@@ -1394,14 +1394,14 @@ msgstr "4K (2160p)"
 msgid "5 days"
 msgstr "5 dagen"
 
-#: src/components/modals/channel_tabs/ChannelOverviewTab.tsx:167
+#: src/components/modals/channel_tabs/ChannelOverviewTab.tsx:180
 #: src/components/modals/tabs/developer_options_tab/MockingTab.tsx:76
 #: src/components/modals/TimeoutMemberOptions.tsx:35
 #: src/utils/modals/guild_tabs/GuildOverviewTabUtils.tsx:62
 msgid "5 minutes"
 msgstr "5 minuten"
 
-#: src/components/modals/channel_tabs/ChannelOverviewTab.tsx:161
+#: src/components/modals/channel_tabs/ChannelOverviewTab.tsx:174
 msgid "5 seconds"
 msgstr "5 seconden"
 
@@ -1415,7 +1415,7 @@ msgstr "5 keer gebruiken"
 msgid "50 uses"
 msgstr "50 keer gebruiken"
 
-#: src/components/modals/channel_tabs/ChannelOverviewTab.tsx:173
+#: src/components/modals/channel_tabs/ChannelOverviewTab.tsx:186
 #: src/components/modals/InviteModal.tsx:78
 #: src/components/modals/InviteModal.tsx:203
 #: src/components/modals/PackInviteModal.tsx:49
@@ -1608,8 +1608,8 @@ msgstr "Toegankelijkheid"
 msgid "account"
 msgstr "account"
 
-#: src/components/modals/tabs/account_security_tab/Inline.tsx:73
-#: src/components/modals/tabs/AccountSecurityTab.tsx:77
+#: src/components/modals/tabs/account_security_tab/Inline.tsx:74
+#: src/components/modals/tabs/AccountSecurityTab.tsx:78
 #: src/components/modals/utils/SettingsConstants.tsx:297
 #: src/components/modals/utils/SettingsSectionRegistry.tsx:488
 msgid "Account"
@@ -1642,7 +1642,7 @@ msgstr "Accountstatusoverrides"
 msgid "Account Too New"
 msgstr "Account te nieuw"
 
-#: src/actions/InviteActionCreators.tsx:182
+#: src/actions/InviteActionCreators.tsx:205
 #: src/components/modals/RequiredActionModal.tsx:143
 #: src/components/modals/RequiredActionModal.tsx:416
 msgid "Account Verification Required"
@@ -1698,7 +1698,7 @@ msgstr "Acties"
 msgid "active"
 msgstr "actief"
 
-#: src/components/modals/components/plutonium/SubscriptionCard.tsx:135
+#: src/components/modals/components/plutonium/SubscriptionCard.tsx:124
 msgid "Active"
 msgstr "Actief"
 
@@ -1769,8 +1769,8 @@ msgstr "Voeg een opmerking toe (optioneel)"
 
 #: src/components/layout/guild_list/AddGuildButton.tsx:90
 #: src/components/layout/guild_list/AddGuildButton.tsx:95
-#: src/components/modals/AddGuildModal.tsx:80
-#: src/components/modals/AddGuildModal.tsx:86
+#: src/components/modals/AddGuildModal.tsx:81
+#: src/components/modals/AddGuildModal.tsx:87
 msgid "Add a Community"
 msgstr "Voeg een community toe"
 
@@ -1782,7 +1782,7 @@ msgstr "Voeg een aangepaste achtergrond toe"
 msgid "Add a different account"
 msgstr "Voeg een ander account toe"
 
-#: src/components/modals/tabs/account_security_tab/SecurityTab.tsx:351
+#: src/components/modals/tabs/account_security_tab/SecurityTab.tsx:375
 msgid "Add a phone number to enable SMS two-factor authentication"
 msgstr "Voeg een telefoonnummer toe om SMS-tweefactorauthenticatie in te schakelen"
 
@@ -1791,7 +1791,7 @@ msgstr "Voeg een telefoonnummer toe om SMS-tweefactorauthenticatie in te schakel
 msgid "Add a tag"
 msgstr "Voeg een tag toe"
 
-#: src/components/modals/channel_tabs/ChannelOverviewTab.tsx:520
+#: src/components/modals/channel_tabs/ChannelOverviewTab.tsx:559
 msgid "Add a topic to this channel"
 msgstr "Voeg een onderwerp toe aan dit kanaal"
 
@@ -1808,7 +1808,7 @@ msgstr "Voeg actie toe!"
 msgid "Add an account"
 msgstr "Voeg een account toe"
 
-#: src/components/modals/tabs/account_security_tab/SecurityTab.tsx:219
+#: src/components/modals/tabs/account_security_tab/SecurityTab.tsx:232
 msgid "Add an extra layer of security to your account"
 msgstr "Voeg een extra beveiligingslaag toe aan je account"
 
@@ -1820,7 +1820,7 @@ msgstr "Voeg nog een reactie toe"
 msgid "Add Bluesky connection"
 msgstr "Voeg Bluesky-verbinding toe"
 
-#: src/components/pages/OAuthAuthorizePage.tsx:863
+#: src/components/pages/OAuthAuthorizePage.tsx:832
 msgid "Add bot to a community"
 msgstr "Voeg bot toe aan een community"
 
@@ -1902,12 +1902,12 @@ msgstr "Je telefoonnummer toevoegen of wijzigen"
 msgid "Add Override"
 msgstr "Override toevoegen"
 
-#: src/components/modals/tabs/account_security_tab/SecurityTab.tsx:293
+#: src/components/modals/tabs/account_security_tab/SecurityTab.tsx:306
 msgid "Add Passkey"
 msgstr "Passkey toevoegen"
 
 #: src/components/channel/barriers/BarrierComponents.tsx:198
-#: src/components/modals/tabs/account_security_tab/SecurityTab.tsx:398
+#: src/components/modals/tabs/account_security_tab/SecurityTab.tsx:422
 msgid "Add Phone"
 msgstr "Telefoon toevoegen"
 
@@ -2028,11 +2028,11 @@ msgstr "Toegevoegd aan Favorieten"
 msgid "Added to saved media"
 msgstr "Toegevoegd aan opgeslagen media"
 
-#: src/components/modals/tabs/account_security_tab/SecurityTab.tsx:316
+#: src/components/modals/tabs/account_security_tab/SecurityTab.tsx:329
 msgid "Added: {createdDate}"
 msgstr "Toegevoegd: {createdDate}"
 
-#: src/components/modals/tabs/account_security_tab/SecurityTab.tsx:312
+#: src/components/modals/tabs/account_security_tab/SecurityTab.tsx:325
 msgid "Added: {createdDate} • Last used: {lastUsedDate}"
 msgstr "Toegevoegd: {createdDate} • Laatst gebruikt: {lastUsedDate}"
 
@@ -2118,7 +2118,7 @@ msgstr "na:"
 msgid "Age Restricted"
 msgstr "Leeftijdsbeperkt"
 
-#: src/components/modals/channel_tabs/ChannelOverviewTab.tsx:627
+#: src/components/modals/channel_tabs/ChannelOverviewTab.tsx:666
 msgid "Age-restricted (NSFW)"
 msgstr "Leeftijdsbeperkt (NSFW)"
 
@@ -2569,7 +2569,7 @@ msgstr "Geanimeerde GIF-video"
 msgid "Animated icon"
 msgstr "Geanimeerd pictogram"
 
-#: src/components/modals/AddGuildModal.tsx:224
+#: src/components/modals/AddGuildModal.tsx:225
 msgid "Animated icons are not supported when creating a new community. Please use JPEG, PNG, or WebP."
 msgstr "Geanimeerde pictogrammen worden niet ondersteund bij het aanmaken van een nieuwe gemeenschap. Gebruik JPEG, PNG of WebP."
 
@@ -2845,7 +2845,7 @@ msgid "Are you sure you want to delete the category \"{categoryName}\"? This can
 msgstr "Weet je zeker dat je de categorie \"{categoryName}\" wilt verwijderen? Dit kan niet ongedaan gemaakt worden."
 
 #. placeholder {0}: passkey.name
-#: src/components/modals/tabs/account_security_tab/SecurityTab.tsx:122
+#: src/components/modals/tabs/account_security_tab/SecurityTab.tsx:135
 msgid "Are you sure you want to delete the passkey <0>{0}</0>?"
 msgstr "Weet je zeker dat je de toegangssleutel <0>{0}</0> wilt verwijderen?"
 
@@ -2865,7 +2865,7 @@ msgstr "Weet je zeker dat je deze uitnodiging wilt verwijderen? Deze actie kan n
 msgid "Are you sure you want to delete this pack? This cannot be undone."
 msgstr "Weet je zeker dat je dit pakket wilt verwijderen? Dit kan niet ongedaan worden gemaakt."
 
-#: src/components/modals/tabs/account_security_tab/SecurityTab.tsx:127
+#: src/components/modals/tabs/account_security_tab/SecurityTab.tsx:140
 msgid "Are you sure you want to delete this passkey?"
 msgstr "Weet je zeker dat je deze toegangssleutel wilt verwijderen?"
 
@@ -2877,7 +2877,7 @@ msgstr "Weet je zeker dat je je account wilt verwijderen? Deze actie plant je ac
 msgid "Are you sure you want to disable invites? This will prevent new users from joining through invite links until you re-enable them. Existing members will not be affected."
 msgstr "Weet je zeker dat je uitnodigingen wilt uitschakelen? Dit voorkomt dat nieuwe gebruikers via uitnodigingslinks kunnen deelnemen tot je ze weer inschakelt. Bestaande leden worden niet beïnvloed."
 
-#: src/components/modals/tabs/account_security_tab/SecurityTab.tsx:179
+#: src/components/modals/tabs/account_security_tab/SecurityTab.tsx:192
 msgid "Are you sure you want to disable SMS two-factor authentication? This will make your account less secure."
 msgstr "Weet je zeker dat je SMS-tweefactorauthenticatie wilt uitschakelen? Dit maakt je account minder veilig."
 
@@ -2930,7 +2930,7 @@ msgid "Are you sure you want to remove this connection? This action cannot be un
 msgstr "Weet je zeker dat je deze verbinding wilt verwijderen? Deze actie kan niet ongedaan worden gemaakt."
 
 #. placeholder {0}: user.phone
-#: src/components/modals/tabs/account_security_tab/SecurityTab.tsx:367
+#: src/components/modals/tabs/account_security_tab/SecurityTab.tsx:391
 msgid "Are you sure you want to remove your phone number <0>{0}</0>?"
 msgstr "Weet je zeker dat je je telefoonnummer <0>{0}</0> wilt verwijderen?"
 
@@ -2970,11 +2970,11 @@ msgstr "Weet je zeker dat je {0} wilt deblokkeren?"
 msgid "aria"
 msgstr "aria"
 
-#: src/components/modals/AddGuildModal.tsx:177
+#: src/components/modals/AddGuildModal.tsx:178
 msgid "Art Club"
 msgstr "Kunstclub"
 
-#: src/components/modals/AddGuildModal.tsx:151
+#: src/components/modals/AddGuildModal.tsx:152
 msgid "Artists' Corner"
 msgstr "Kunstenaarshuis"
 
@@ -3150,7 +3150,7 @@ msgid "Authenticator app"
 msgstr "Authenticator-app"
 
 #: src/components/auth/MfaScreen.tsx:69
-#: src/components/modals/tabs/account_security_tab/SecurityTab.tsx:224
+#: src/components/modals/tabs/account_security_tab/SecurityTab.tsx:237
 msgid "Authenticator App"
 msgstr "Authenticator-app"
 
@@ -3170,21 +3170,21 @@ msgstr "auteurtype:"
 msgid "Authorization failed"
 msgstr "Autorisatie mislukt"
 
-#: src/components/pages/OAuthAuthorizePage.tsx:534
+#: src/components/pages/OAuthAuthorizePage.tsx:524
 msgid "Authorization Failed"
 msgstr "Autorisatie mislukt"
 
-#: src/components/pages/OAuthAuthorizePage.tsx:469
-#: src/components/pages/OAuthAuthorizePage.tsx:484
+#: src/components/pages/OAuthAuthorizePage.tsx:459
+#: src/components/pages/OAuthAuthorizePage.tsx:474
 msgid "Authorization failed. Please try again."
 msgstr "Autorisatie mislukt. Probeer het opnieuw."
 
-#: src/components/pages/OAuthAuthorizePage.tsx:740
+#: src/components/pages/OAuthAuthorizePage.tsx:709
 msgid "Authorization request"
 msgstr "Autorisatieverzoek"
 
-#: src/components/pages/OAuthAuthorizePage.tsx:681
-#: src/components/pages/OAuthAuthorizePage.tsx:940
+#: src/components/pages/OAuthAuthorizePage.tsx:661
+#: src/components/pages/OAuthAuthorizePage.tsx:909
 msgid "Authorize"
 msgstr "Autoriseer"
 
@@ -3251,7 +3251,7 @@ msgstr "autocompleteren"
 msgid "automatic"
 msgstr "automatisch"
 
-#: src/components/modals/channel_tabs/ChannelOverviewTab.tsx:178
+#: src/components/modals/channel_tabs/ChannelOverviewTab.tsx:191
 #: src/components/voice/VoiceRegionSelector.tsx:96
 #: src/components/voice/VoiceRegionSelector.tsx:110
 #: src/components/voice/VoiceSettingsMenus.tsx:452
@@ -3347,7 +3347,7 @@ msgstr "Gemiddelde ping:"
 #: src/components/modals/AddConnectionModal.tsx:312
 #: src/components/modals/PhoneAddModal.tsx:237
 #: src/components/modals/RequiredActionModal.tsx:655
-#: src/components/pages/OAuthAuthorizePage.tsx:671
+#: src/components/pages/OAuthAuthorizePage.tsx:651
 #: src/components/pages/report/ReportStepDetails.tsx:243
 msgid "Back"
 msgstr "Terug"
@@ -3438,7 +3438,7 @@ msgid "backup codes"
 msgstr "back-upcodes"
 
 #: src/components/modals/BackupCodesModal.tsx:43
-#: src/components/modals/tabs/account_security_tab/SecurityTab.tsx:257
+#: src/components/modals/tabs/account_security_tab/SecurityTab.tsx:270
 #: src/components/modals/utils/SettingsSearchIndex.tsx:140
 msgid "Backup Codes"
 msgstr "Back-upcodes"
@@ -3499,7 +3499,7 @@ msgstr "Lid Verbannen"
 msgid "Ban Members"
 msgstr "Leden Verbannen"
 
-#: src/components/modals/AddGuildModal.tsx:153
+#: src/components/modals/AddGuildModal.tsx:154
 msgid "Band Practice Room"
 msgstr "Bandrepetitieruimte"
 
@@ -3680,7 +3680,7 @@ msgstr "Geblokkeerde gebruikers kunnen je geen vriendschapsverzoeken sturen of j
 msgid "Blockquotes"
 msgstr "Citaatblokken"
 
-#: src/components/modals/channel_tabs/ChannelOverviewTab.tsx:628
+#: src/components/modals/channel_tabs/ChannelOverviewTab.tsx:667
 msgid "Blocks access for users under 18 and shows a content warning for adults."
 msgstr "Blokkeert toegang voor gebruikers onder de 18 en toont een inhoudswaarschuwing voor volwassenen."
 
@@ -3703,7 +3703,7 @@ msgstr "Vervagen"
 msgid "Blur your background"
 msgstr "Je achtergrond vervagen"
 
-#: src/components/modals/AddGuildModal.tsx:175
+#: src/components/modals/AddGuildModal.tsx:176
 msgid "Board Game Night"
 msgstr "Bordspelavond"
 
@@ -3711,7 +3711,7 @@ msgstr "Bordspelavond"
 msgid "Body font family"
 msgstr "Hoofdlettertypefamilie"
 
-#: src/components/modals/AddGuildModal.tsx:178
+#: src/components/modals/AddGuildModal.tsx:179
 msgid "Book Club"
 msgstr "Boekenclub"
 
@@ -3754,7 +3754,7 @@ msgstr "Gebladwijzerd!"
 msgid "Bookmarks"
 msgstr "Bladwijzers"
 
-#: src/components/modals/AddGuildModal.tsx:150
+#: src/components/modals/AddGuildModal.tsx:151
 msgid "Bookworms Anonymous"
 msgstr "Boekenwurmen Anoniem"
 
@@ -3766,7 +3766,7 @@ msgstr "bot"
 msgid "Bot"
 msgstr "Bot"
 
-#: src/components/pages/OAuthAuthorizePage.tsx:550
+#: src/components/pages/OAuthAuthorizePage.tsx:540
 msgid "Bot added"
 msgstr "Bot toegevoegd"
 
@@ -3794,11 +3794,11 @@ msgstr "Bot Directe Berichten"
 msgid "Bot Invite"
 msgstr "Botuitnodiging"
 
-#: src/components/pages/OAuthAuthorizePage.tsx:761
+#: src/components/pages/OAuthAuthorizePage.tsx:730
 msgid "Bot invite (no external redirect)"
 msgstr "Botuitnodiging (geen externe doorverwijzing)"
 
-#: src/components/pages/OAuthAuthorizePage.tsx:480
+#: src/components/pages/OAuthAuthorizePage.tsx:470
 msgid "Bot is already in this community."
 msgstr "Bot is al in deze community."
 
@@ -3810,7 +3810,7 @@ msgstr "Botmachtigingen"
 msgid "Bot Profile"
 msgstr "Bot-profiel"
 
-#: src/components/pages/OAuthAuthorizePage.tsx:770
+#: src/components/pages/OAuthAuthorizePage.tsx:739
 msgid "Bot scope requested"
 msgstr "Botscope aangevraagd"
 
@@ -3920,17 +3920,17 @@ msgstr "Knoppen met pictogrammen"
 msgid "Buy Gift"
 msgstr "Cadeau kopen"
 
-#: src/components/modals/AddGuildModal.tsx:360
+#: src/components/modals/AddGuildModal.tsx:362
 msgid "By creating a community, you agree to follow and uphold the <0>Fluxer Community Guidelines</0>."
 msgstr "Door een community te maken, ga je akkoord met het volgen en handhaven van de <0>Fluxer Community Guidelines</0>."
 
 #: src/components/modals/components/PurchaseDisclaimer.tsx:39
-msgid "By purchasing, you agree to our <0>Terms of Service</0> and <1>Privacy Policy</1>. All purchases are refundable within 14 days by emailing <2>support@fluxer.app</2>. Chargebacks result in permanent account bans — if you want a refund, we're more than happy to give you one if you contact us first! Payment information is securely handled by Stripe — we never have access to your full card number."
-msgstr "Door te kopen, ga je akkoord met onze <0>Gebruiksvoorwaarden</0> en <1>Privacybeleid</1>. Alle aankopen zijn binnen 14 dagen terugbetaalbaar door te mailen naar <2>support@fluxer.app</2>. Chargebacks leiden tot permanente accountverbannen — als je een terugbetaling wilt, geven we die graag als je ons eerst contacteert! Betaalinformatie wordt veilig verwerkt door Stripe — we hebben nooit toegang tot je volledige kaartnummer."
+msgid "By purchasing, you agree to our <0>Terms of Service</0> and <1>Privacy Policy</1>. All purchases are refundable within 14 days by emailing <2>support@echowire.org</2>. Chargebacks result in permanent account bans — if you want a refund, we're more than happy to give you one if you contact us first! Payment information is securely handled by Stripe — we never have access to your full card number."
+msgstr "By purchasing, you agree to our <0>Terms of Service</0> and <1>Privacy Policy</1>. All purchases are refundable within 14 days by emailing <2>support@echowire.org</2>. Chargebacks result in permanent account bans — if you want a refund, we're more than happy to give you one if you contact us first! Payment information is securely handled by Stripe — we never have access to your full card number."
 
 #: src/components/modals/components/PurchaseDisclaimer.tsx:31
-msgid "By purchasing, you agreed to our <0>Terms of Service</0> and <1>Privacy Policy</1>. All purchases are refundable within 14 days by emailing <2>support@fluxer.app</2>. Chargebacks result in permanent account bans — if you want a refund, we're more than happy to give you one if you contact us first! Payment information is securely handled by Stripe — we never have access to your full card number."
-msgstr "Door te kopen, ging je akkoord met onze <0>Gebruiksvoorwaarden</0> en <1>Privacybeleid</1>. Alle aankopen zijn binnen 14 dagen terugbetaalbaar door te mailen naar <2>support@fluxer.app</2>. Chargebacks leiden tot permanente accountverbannen — als je een terugbetaling wilt, geven we die graag als je ons eerst contacteert! Betaalinformatie wordt veilig verwerkt door Stripe — we hebben nooit toegang tot je volledige kaartnummer."
+msgid "By purchasing, you agreed to our <0>Terms of Service</0> and <1>Privacy Policy</1>. All purchases are refundable within 14 days by emailing <2>support@echowire.org</2>. Chargebacks result in permanent account bans — if you want a refund, we're more than happy to give you one if you contact us first! Payment information is securely handled by Stripe — we never have access to your full card number."
+msgstr "By purchasing, you agreed to our <0>Terms of Service</0> and <1>Privacy Policy</1>. All purchases are refundable within 14 days by emailing <2>support@echowire.org</2>. Chargebacks result in permanent account bans — if you want a refund, we're more than happy to give you one if you contact us first! Payment information is securely handled by Stripe — we never have access to your full card number."
 
 #: src/utils/PermissionUtils.tsx:356
 #: src/utils/PermissionUtils.tsx:491
@@ -4065,8 +4065,8 @@ msgstr "Camera's zijn uitgeschakeld wanneer er meer dan {VOICE_CHANNEL_CAMERA_US
 #: src/components/modals/AccountDisableModal.tsx:69
 #: src/components/modals/AddConnectionModal.tsx:218
 #: src/components/modals/AddFavoriteMemeModal.tsx:98
-#: src/components/modals/AddGuildModal.tsx:290
-#: src/components/modals/AddGuildModal.tsx:413
+#: src/components/modals/AddGuildModal.tsx:292
+#: src/components/modals/AddGuildModal.tsx:415
 #: src/components/modals/AddGuildStickerModal.tsx:120
 #: src/components/modals/AttachmentEditModal.tsx:122
 #: src/components/modals/BackupCodesRegenerateModal.tsx:79
@@ -4081,7 +4081,7 @@ msgstr "Camera's zijn uitgeschakeld wanneer er meer dan {VOICE_CHANNEL_CAMERA_US
 #: src/components/modals/ClaimAccountModal.tsx:219
 #: src/components/modals/components/MobileSettingsView.tsx:219
 #: src/components/modals/components/plutonium/hooks/useCheckoutActions.tsx:110
-#: src/components/modals/components/plutonium/SubscriptionCard.tsx:301
+#: src/components/modals/components/plutonium/SubscriptionCard.tsx:275
 #: src/components/modals/ConfirmModal.tsx:146
 #: src/components/modals/CreateDMModal.tsx:88
 #: src/components/modals/CreateFavoriteCategoryModal.tsx:75
@@ -4132,7 +4132,7 @@ msgstr "Camera's zijn uitgeschakeld wanneer er meer dan {VOICE_CHANNEL_CAMERA_US
 #: src/components/modals/ThemeAcceptModal.tsx:177
 #: src/components/modals/TimeoutMemberModal.tsx:211
 #: src/components/modals/TransferOwnershipModal.tsx:85
-#: src/components/pages/OAuthAuthorizePage.tsx:924
+#: src/components/pages/OAuthAuthorizePage.tsx:893
 #: src/components/popouts/ScheduledMessagesContent.tsx:119
 #: src/utils/modals/AnimatedAvifModalUtils.tsx:45
 msgid "Cancel"
@@ -4162,7 +4162,7 @@ msgstr "Verzoek annuleren"
 msgid "Cancel upload"
 msgstr "Upload annuleren"
 
-#: src/components/modals/components/plutonium/SubscriptionCard.tsx:129
+#: src/components/modals/components/plutonium/SubscriptionCard.tsx:118
 msgid "Canceling"
 msgstr "Annuleren"
 
@@ -4178,11 +4178,11 @@ msgstr "Kan niet worden bewerkt"
 msgid "Cannot Delete Account"
 msgstr "Account kan niet worden verwijderd"
 
-#: src/actions/InviteActionCreators.tsx:317
+#: src/actions/InviteActionCreators.tsx:340
 msgid "Cannot install emoji pack"
 msgstr "Kan emoji-pack niet installeren"
 
-#: src/actions/InviteActionCreators.tsx:318
+#: src/actions/InviteActionCreators.tsx:341
 msgid "Cannot install sticker pack"
 msgstr "Kan sticker-pack niet installeren"
 
@@ -4235,7 +4235,7 @@ msgstr "Categorie vol"
 msgid "Category ID copied"
 msgstr "Categorie-ID gekopieerd"
 
-#: src/components/modals/channel_tabs/ChannelOverviewTab.tsx:479
+#: src/components/modals/channel_tabs/ChannelOverviewTab.tsx:518
 #: src/components/modals/CreateFavoriteCategoryModal.tsx:65
 msgid "Category Name"
 msgstr "Categorienaam"
@@ -4312,7 +4312,7 @@ msgstr "Vriendbijnaam wijzigen"
 msgid "Change Group Nickname"
 msgstr "Groepsbijnaam wijzigen"
 
-#: src/components/modals/AddGuildModal.tsx:329
+#: src/components/modals/AddGuildModal.tsx:331
 #: src/components/modals/EditGroupBottomSheet.tsx:214
 #: src/components/modals/EditGroupModal.tsx:195
 msgid "Change Icon"
@@ -4520,7 +4520,7 @@ msgstr "Typindicatoren voor kanalenlijst"
 msgid "Channel Management"
 msgstr "Kanaalbeheer"
 
-#: src/components/modals/channel_tabs/ChannelOverviewTab.tsx:479
+#: src/components/modals/channel_tabs/ChannelOverviewTab.tsx:518
 msgid "Channel Name"
 msgstr "Kanaalnaam"
 
@@ -4579,7 +4579,7 @@ msgstr "Kanaalinstellingen"
 msgid "Channel synced with parent category"
 msgstr "Kanaal gesynchroniseerd met hoofdcategorie"
 
-#: src/components/modals/channel_tabs/ChannelOverviewTab.tsx:276
+#: src/components/modals/channel_tabs/ChannelOverviewTab.tsx:315
 msgid "Channel topic is too long."
 msgstr "Kanaalonderwerp is te lang."
 
@@ -4598,7 +4598,7 @@ msgstr "Kanaaltypeselectie"
 msgid "Channel type: {0}."
 msgstr "Kanaaltype: {0}."
 
-#: src/components/modals/channel_tabs/ChannelOverviewTab.tsx:409
+#: src/components/modals/channel_tabs/ChannelOverviewTab.tsx:448
 msgid "Channel updated"
 msgstr "Kanaal bijgewerkt"
 
@@ -4646,8 +4646,8 @@ msgstr "Chatlettertype schaling"
 
 #: src/components/BootstrapErrorScreen.tsx:60
 #: src/components/NetworkErrorScreen.tsx:45
-msgid "Check our <0>Bluesky (@fluxer.app)</0> for status updates."
-msgstr "Bekijk onze <0>Bluesky (@fluxer.app)</0> voor statusupdates."
+msgid "Check our <0>status page</0> for updates, or email us at <1>support@echowire.org</1>."
+msgstr "Check our <0>status page</0> for updates, or email us at <1>support@echowire.org</1>."
 
 #: src/components/modals/ShareThemeModal.tsx:115
 msgid "Check out my custom theme!"
@@ -4694,7 +4694,7 @@ msgstr "Chinees (traditioneel)"
 msgid "Choose"
 msgstr "Kies"
 
-#: src/components/pages/OAuthAuthorizePage.tsx:877
+#: src/components/pages/OAuthAuthorizePage.tsx:846
 msgid "Choose a community"
 msgstr "Kies een community"
 
@@ -4765,7 +4765,7 @@ msgstr "Kies hoe typindicatoren verschijnen in de kanalenlijst wanneer iemand aa
 msgid "Choose the category that best describes your community."
 msgstr "Kies de categorie die het beste bij jouw community past."
 
-#: src/components/pages/OAuthAuthorizePage.tsx:605
+#: src/components/pages/OAuthAuthorizePage.tsx:585
 msgid "Choose what {clientLabel} can do in your community. Uncheck any permissions you don't want to grant."
 msgstr "Kies wat {clientLabel} kan doen in je community. Vink alle rechten uit die je niet wilt verlenen."
 
@@ -4808,7 +4808,7 @@ msgstr "Kies je profielaccentkleur"
 #: src/components/modals/ClaimAccountModal.tsx:225
 #: src/components/modals/components/UnclaimedAccountAlert.tsx:32
 #: src/components/modals/GiftAcceptModal.tsx:175
-#: src/components/modals/tabs/account_security_tab/SecurityTab.tsx:209
+#: src/components/modals/tabs/account_security_tab/SecurityTab.tsx:222
 #: src/components/modals/tabs/GiftInventoryTab.tsx:243
 msgid "Claim Account"
 msgstr "Account claimen"
@@ -4837,7 +4837,7 @@ msgstr "Claim je account"
 msgid "Claim your account by adding an email and password. We will send a verification code to confirm your email before finishing."
 msgstr "Claim je account door een e-mail en wachtwoord toe te voegen. We sturen een verificatiecode om je e-mail te bevestigen voordat we klaar zijn."
 
-#: src/components/modals/tabs/account_security_tab/SecurityTab.tsx:205
+#: src/components/modals/tabs/account_security_tab/SecurityTab.tsx:218
 msgid "Claim your account to access security features like two-factor authentication and passkeys."
 msgstr "Claim je account om toegang te krijgen tot beveiligingsfuncties zoals tweefactorauthenticatie en passkeys."
 
@@ -4856,7 +4856,7 @@ msgstr "Claim je account om applicaties te maken."
 
 #: src/components/layout/ChannelItem.tsx:215
 #: src/components/layout/ChannelItem.tsx:407
-#: src/stores/voice/MediaEngineFacade.tsx:836
+#: src/stores/voice/MediaEngineFacade.tsx:907
 msgid "Claim your account to join this voice channel."
 msgstr "Neem je account in gebruik om deze spraakkanaal te joinen."
 
@@ -4867,11 +4867,11 @@ msgstr "Neem je account in gebruik om spraakkanalen te joinen die je niet bezit.
 #: src/components/modals/components/plutonium/BottomCTASection.tsx:49
 #: src/components/modals/components/plutonium/GiftSection.tsx:52
 #: src/components/modals/components/plutonium/PricingSection.tsx:54
-#: src/components/modals/components/PlutoniumContent.tsx:99
+#: src/components/modals/components/PlutoniumContent.tsx:80
 msgid "Claim your account to purchase Fluxer Plutonium."
 msgstr "Claim je account om Fluxer Plutonium aan te schaffen."
 
-#: src/components/modals/components/plutonium/SubscriptionCard.tsx:104
+#: src/components/modals/components/plutonium/SubscriptionCard.tsx:93
 msgid "Claim your account to purchase or redeem Fluxer Plutonium."
 msgstr "Claim je account om Fluxer Plutonium aan te schaffen of in te wisselen."
 
@@ -4901,7 +4901,7 @@ msgstr "Neem je account in gebruik om 1:1-gesprekken te starten of te joinen."
 msgid "Claim your gift to activate your premium subscription!"
 msgstr "Claim je cadeau om je premiumabonnement te activeren!"
 
-#: src/components/modals/AddGuildModal.tsx:156
+#: src/components/modals/AddGuildModal.tsx:157
 msgid "Class of '24"
 msgstr "Klas van '24"
 
@@ -5241,11 +5241,11 @@ msgstr "Code:"
 msgid "codes"
 msgstr "codes"
 
-#: src/components/modals/AddGuildModal.tsx:176
+#: src/components/modals/AddGuildModal.tsx:177
 msgid "Coding Crew"
 msgstr "Coding Crew"
 
-#: src/components/modals/AddGuildModal.tsx:165
+#: src/components/modals/AddGuildModal.tsx:166
 msgid "Coffee Chat"
 msgstr "Coffee Chat"
 
@@ -5399,7 +5399,7 @@ msgstr "Community houdt zich bezig met of maakt gerichte intimidatie mogelijk"
 msgid "Community exists solely for spam or fraudulent purposes"
 msgstr "Community bestaat uitsluitend voor spam of frauduleuze doeleinden"
 
-#: src/components/modals/AddGuildModal.tsx:316
+#: src/components/modals/AddGuildModal.tsx:318
 msgid "Community Icon"
 msgstr "Communitypictogram"
 
@@ -5445,7 +5445,7 @@ msgstr "Community dempen"
 msgid "Community Muted"
 msgstr "Community gedempt"
 
-#: src/components/modals/AddGuildModal.tsx:351
+#: src/components/modals/AddGuildModal.tsx:353
 msgid "Community Name"
 msgstr "Communitynaam"
 
@@ -5549,6 +5549,11 @@ msgstr "compacte modus"
 msgid "Compact Mode"
 msgstr "Compacte modus"
 
+#: src/components/modals/components/PlutoniumContent.tsx:127
+#: src/components/modals/components/PlutoniumContent.tsx:219
+msgid "Compare Plans"
+msgstr "Compare Plans"
+
 #: src/components/modals/components/plutonium/hooks/useCheckoutActions.tsx:106
 msgid "Complete Payment"
 msgstr "Betaling voltooien"
@@ -5577,7 +5582,7 @@ msgstr "Configureer AFK-kanaal en timeout"
 msgid "Configure base access for this channel"
 msgstr "Configureer basistoegang voor dit kanaal"
 
-#: src/components/pages/OAuthAuthorizePage.tsx:602
+#: src/components/pages/OAuthAuthorizePage.tsx:582
 msgid "Configure bot permissions"
 msgstr "Configureer botmachtigingen"
 
@@ -6227,15 +6232,15 @@ msgstr "Aanmaken"
 msgid "Create & Share"
 msgstr "Aanmaken & delen"
 
-#: src/components/modals/AddGuildModal.tsx:82
+#: src/components/modals/AddGuildModal.tsx:83
 msgid "Create a Community"
 msgstr "Een community aanmaken"
 
-#: src/components/modals/AddGuildModal.tsx:309
+#: src/components/modals/AddGuildModal.tsx:311
 msgid "Create a community for you and your friends to chat."
 msgstr "Maak een community aan voor jou en je vrienden om te chatten."
 
-#: src/components/modals/AddGuildModal.tsx:120
+#: src/components/modals/AddGuildModal.tsx:121
 msgid "Create a new community or join an existing one."
 msgstr "Maak een nieuwe community aan of sluit je aan bij een bestaande."
 
@@ -6315,12 +6320,12 @@ msgid "Create Channel"
 msgstr "Kanaal aanmaken"
 
 #: src/components/layout/guild_list/AddGuildButton.tsx:68
-#: src/components/modals/AddGuildModal.tsx:127
-#: src/components/modals/AddGuildModal.tsx:293
+#: src/components/modals/AddGuildModal.tsx:128
+#: src/components/modals/AddGuildModal.tsx:295
 msgid "Create Community"
 msgstr "Community aanmaken"
 
-#: src/components/modals/AddGuildModal.tsx:312
+#: src/components/modals/AddGuildModal.tsx:314
 msgid "Create community form"
 msgstr "Communityformulier aanmaken"
 
@@ -6466,11 +6471,11 @@ msgstr "Gemaakt met naam {newLabel}."
 msgid "Created:"
 msgstr "Aangemaakt:"
 
-#: src/components/modals/AddGuildModal.tsx:149
+#: src/components/modals/AddGuildModal.tsx:150
 msgid "Creative Minds Collective"
 msgstr "Creative Minds Collective"
 
-#: src/components/modals/AddGuildModal.tsx:168
+#: src/components/modals/AddGuildModal.tsx:169
 msgid "Creative Writing Club"
 msgstr "Creative Writing Club"
 
@@ -6792,8 +6797,8 @@ msgstr "Gevaar Secundair"
 msgid "Danger secondary clicked!"
 msgstr "Gevaar secundair geklikt!"
 
-#: src/components/modals/tabs/account_security_tab/Inline.tsx:97
-#: src/components/modals/tabs/AccountSecurityTab.tsx:109
+#: src/components/modals/tabs/account_security_tab/Inline.tsx:100
+#: src/components/modals/tabs/AccountSecurityTab.tsx:112
 #: src/components/modals/tabs/applications_tab/ApplicationDetail.tsx:693
 #: src/components/modals/utils/SettingsConstants.tsx:299
 #: src/components/modals/utils/SettingsSectionRegistry.tsx:529
@@ -7070,7 +7075,7 @@ msgstr "verwijderen"
 #: src/components/emojis/EmojiListItem.tsx:195
 #: src/components/emojis/EmojiListItem.tsx:252
 #: src/components/emojis/EmojiListItem.tsx:308
-#: src/components/modals/tabs/account_security_tab/SecurityTab.tsx:325
+#: src/components/modals/tabs/account_security_tab/SecurityTab.tsx:338
 #: src/components/modals/tabs/component_gallery_tab/ButtonsTab.tsx:157
 #: src/components/modals/tabs/component_gallery_tab/ButtonsTab.tsx:242
 #: src/components/modals/tabs/component_gallery_tab/index.tsx:165
@@ -7219,8 +7224,8 @@ msgstr "Berichten van anderen verwijderen. (Vastzetten staat hieronder apart.)"
 msgid "Delete Pack"
 msgstr "Verwijder pakket"
 
-#: src/components/modals/tabs/account_security_tab/SecurityTab.tsx:118
-#: src/components/modals/tabs/account_security_tab/SecurityTab.tsx:130
+#: src/components/modals/tabs/account_security_tab/SecurityTab.tsx:131
+#: src/components/modals/tabs/account_security_tab/SecurityTab.tsx:143
 msgid "Delete Passkey"
 msgstr "Passkey verwijderen"
 
@@ -7414,7 +7419,7 @@ msgstr "Details"
 msgid "dev"
 msgstr "ontwikkelaar"
 
-#: src/components/modals/AddGuildModal.tsx:152
+#: src/components/modals/AddGuildModal.tsx:153
 msgid "Dev Den"
 msgstr "Dev Den"
 
@@ -7530,8 +7535,8 @@ msgid "disable"
 msgstr "uitschakelen"
 
 #: src/components/invites/DisableInvitesButton.tsx:60
-#: src/components/modals/tabs/account_security_tab/SecurityTab.tsx:240
-#: src/components/modals/tabs/account_security_tab/SecurityTab.tsx:429
+#: src/components/modals/tabs/account_security_tab/SecurityTab.tsx:253
+#: src/components/modals/tabs/account_security_tab/SecurityTab.tsx:453
 msgid "Disable"
 msgstr "Uitschakelen"
 
@@ -7590,11 +7595,11 @@ msgstr "Schakel Picture-in-Picture Popout uit"
 msgid "Disable Reduced Motion"
 msgstr "Verminderde beweging uitschakelen"
 
-#: src/components/modals/tabs/account_security_tab/SecurityTab.tsx:183
+#: src/components/modals/tabs/account_security_tab/SecurityTab.tsx:196
 msgid "Disable SMS 2FA"
 msgstr "SMS 2FA uitschakelen"
 
-#: src/components/modals/tabs/account_security_tab/SecurityTab.tsx:177
+#: src/components/modals/tabs/account_security_tab/SecurityTab.tsx:190
 msgid "Disable SMS Two-Factor Authentication"
 msgstr "SMS-tweefactorauthenticatie uitschakelen"
 
@@ -8161,6 +8166,18 @@ msgstr "echo"
 msgid "Echo Cancellation"
 msgstr "Echo-onderdrukking"
 
+#: src/components/icons/FluxerIcon.tsx:31
+msgid "Echowire application icon"
+msgstr "Echowire application icon"
+
+#: src/components/icons/FluxerSymbol.tsx:31
+msgid "Echowire application symbol"
+msgstr "Echowire application symbol"
+
+#: src/components/BootstrapErrorScreen.tsx:52
+msgid "Echowire failed to start properly. This could be due to corrupted data or a temporary issue."
+msgstr "Echowire failed to start properly. This could be due to corrupted data or a temporary issue."
+
 #: src/components/modals/tabs/ExpressionPacksTab.tsx:90
 #: src/components/modals/tabs/LinkedAccountsTab.tsx:186
 #: src/components/modals/tabs/LinkedAccountsTab.tsx:187
@@ -8486,7 +8503,7 @@ msgstr "Emoji-namen moeten minimaal 2 tekens lang zijn en mogen alleen alfanumer
 msgid "Emoji pack"
 msgstr "Emoji-pakket"
 
-#: src/actions/InviteActionCreators.tsx:259
+#: src/actions/InviteActionCreators.tsx:282
 msgid "Emoji pack creation limit reached"
 msgstr "Limiet voor aanmaken emoji-pakketten bereikt"
 
@@ -8494,7 +8511,7 @@ msgstr "Limiet voor aanmaken emoji-pakketten bereikt"
 msgid "Emoji Pack Invite"
 msgstr "Emoji-pakketuitnodiging"
 
-#: src/actions/InviteActionCreators.tsx:245
+#: src/actions/InviteActionCreators.tsx:268
 msgid "Emoji pack limit reached"
 msgstr "Limiet voor emoji-pakketten bereikt"
 
@@ -8531,9 +8548,9 @@ msgstr "lege staat"
 
 #: src/components/invites/DisableInvitesButton.tsx:60
 #: src/components/layout/GuildLayout.tsx:74
-#: src/components/modals/tabs/account_security_tab/SecurityTab.tsx:247
-#: src/components/modals/tabs/account_security_tab/SecurityTab.tsx:435
-#: src/components/modals/tabs/account_security_tab/SecurityTab.tsx:441
+#: src/components/modals/tabs/account_security_tab/SecurityTab.tsx:260
+#: src/components/modals/tabs/account_security_tab/SecurityTab.tsx:459
+#: src/components/modals/tabs/account_security_tab/SecurityTab.tsx:465
 #: src/components/modals/tabs/components/InputMonitoringSection.tsx:85
 msgid "Enable"
 msgstr "Inschakelen"
@@ -8655,15 +8672,15 @@ msgstr "Schakel de zelf-gehoste modus aan de clientzijde in (verbergt alle premi
 msgid "Enable Shift to Expand"
 msgstr "Schakel Shift in om uit te breiden"
 
-#: src/components/modals/tabs/account_security_tab/SecurityTab.tsx:156
+#: src/components/modals/tabs/account_security_tab/SecurityTab.tsx:169
 msgid "Enable SMS 2FA"
 msgstr "SMS 2FA inschakelen"
 
-#: src/components/modals/tabs/account_security_tab/SecurityTab.tsx:418
+#: src/components/modals/tabs/account_security_tab/SecurityTab.tsx:442
 msgid "Enable SMS codes as a backup for your authenticator app"
 msgstr "SMS-codes inschakelen als back-up voor je authenticator-app"
 
-#: src/components/modals/tabs/account_security_tab/SecurityTab.tsx:149
+#: src/components/modals/tabs/account_security_tab/SecurityTab.tsx:162
 msgid "Enable SMS Two-Factor Authentication"
 msgstr "SMS-tweefactorauthenticatie inschakelen"
 
@@ -8821,7 +8838,7 @@ msgstr "Voer de code in die we naar je nieuwe adres hebben gemaild."
 msgid "Enter the code we sent to your email to verify it. Your password will be set once the code is confirmed."
 msgstr "Voer de code in die we naar je e-mail hebben gestuurd om deze te verifiëren. Je wachtwoord wordt ingesteld zodra de code is bevestigd."
 
-#: src/components/modals/AddGuildModal.tsx:427
+#: src/components/modals/AddGuildModal.tsx:429
 msgid "Enter the invite link to join a community."
 msgstr "Voer de uitnodigingslink in om een community te joinen."
 
@@ -8922,7 +8939,7 @@ msgstr "escape om <0><1>annuleren</1></0>"
 msgid "Estonia"
 msgstr "Estland"
 
-#: src/components/modals/channel_tabs/ChannelOverviewTab.tsx:186
+#: src/components/modals/channel_tabs/ChannelOverviewTab.tsx:199
 #: src/components/voice/VoiceRegionSelector.tsx:78
 #: src/components/voice/VoiceSettingsMenus.tsx:436
 msgid "EU Central"
@@ -9008,7 +9025,7 @@ msgid "Expire After"
 msgstr "Verloopt na"
 
 #: src/components/accounts/AccountRow.tsx:169
-#: src/components/modals/components/plutonium/SubscriptionCard.tsx:125
+#: src/components/modals/components/plutonium/SubscriptionCard.tsx:114
 #: src/components/modals/GroupInvitesBottomSheet.tsx:110
 msgid "Expired"
 msgstr "Verlopen"
@@ -9314,11 +9331,11 @@ msgstr "Vriendverzoek negeren mislukt. Probeer het opnieuw."
 msgid "Failed to initiate connection"
 msgstr "Mislukt om verbinding te maken"
 
-#: src/actions/InviteActionCreators.tsx:326
+#: src/actions/InviteActionCreators.tsx:349
 msgid "Failed to install this emoji pack. Please try again later."
 msgstr "Dit emojipakket installeren mislukt. Probeer het later opnieuw."
 
-#: src/actions/InviteActionCreators.tsx:327
+#: src/actions/InviteActionCreators.tsx:350
 msgid "Failed to install this sticker pack. Please try again later."
 msgstr "Dit stickerpakket installeren mislukt. Probeer het later opnieuw."
 
@@ -9381,7 +9398,7 @@ msgstr "Laden van stickers mislukt"
 msgid "Failed to load vanity URL. Please try again."
 msgstr "Vanity-URL laden mislukt. Probeer het opnieuw."
 
-#: src/components/modals/channel_tabs/ChannelOverviewTab.tsx:223
+#: src/components/modals/channel_tabs/ChannelOverviewTab.tsx:236
 msgid "Failed to load voice regions for this channel."
 msgstr "Spraakregio's voor dit kanaal laden mislukt."
 
@@ -9420,7 +9437,7 @@ msgstr "Bericht vastpinnen mislukt"
 msgid "Failed to Prepare Emojis"
 msgstr "Emoji's voorbereiden mislukt"
 
-#: src/components/modals/AddGuildModal.tsx:248
+#: src/components/modals/AddGuildModal.tsx:249
 #: src/components/modals/EditGroupBottomSheet.tsx:106
 #: src/components/modals/EditGroupModal.tsx:99
 #: src/components/modals/guild_tabs/guild_overview_tab/hooks/useGuildImageAssetField.tsx:267
@@ -9660,11 +9677,11 @@ msgstr "nep"
 msgid "false"
 msgstr "onwaar"
 
-#: src/components/modals/AddGuildModal.tsx:183
+#: src/components/modals/AddGuildModal.tsx:184
 msgid "Family Chat"
 msgstr "Familiechat"
 
-#: src/components/modals/AddGuildModal.tsx:158
+#: src/components/modals/AddGuildModal.tsx:159
 msgid "Family Reunion"
 msgstr "Familiebijeenkomst"
 
@@ -9722,7 +9739,7 @@ msgstr "favorieten"
 msgid "Favorites"
 msgstr "Favorieten"
 
-#: src/components/modals/components/FeatureComparisonTable.tsx:119
+#: src/components/modals/components/FeatureComparisonTable.tsx:138
 msgid "Feature"
 msgstr "Functie"
 
@@ -9845,7 +9862,7 @@ msgstr "Voor- en achternaam"
 msgid "First Option"
 msgstr "Eerste optie"
 
-#: src/components/modals/AddGuildModal.tsx:171
+#: src/components/modals/AddGuildModal.tsx:172
 msgid "Fitness Friends"
 msgstr "Fitnessvrienden"
 
@@ -9861,33 +9878,21 @@ msgstr "Flexibele tekstkanaalnamen"
 msgid "Fluxer"
 msgstr "Fluxer"
 
-#: src/components/icons/FluxerIcon.tsx:31
-msgid "Fluxer application icon"
-msgstr "Fluxer applicatiepictogram"
-
-#: src/components/icons/FluxerSymbol.tsx:31
-msgid "Fluxer application symbol"
-msgstr "Fluxer applicatiesymbool"
-
 #: src/components/modals/tabs/notifications_tab/PushSettings.tsx:37
 msgid "Fluxer avoids sending push notifications to your mobile devices when you are at your computer. Use this setting to control how long you need to be inactive on desktop for before you receive push notifications, ranging from 1 minute to 10 minutes."
 msgstr "Fluxer vermijdt het sturen van pushmeldingen naar je mobiele apparaten wanneer je achter je computer zit. Gebruik deze instelling om te bepalen hoe lang je inactief moet zijn op desktop voordat je pushmeldingen ontvangt, van 1 minuut tot 10 minuten."
 
-#: src/components/popouts/UserProfileBadges.tsx:115
+#: src/components/popouts/UserProfileBadges.tsx:101
 msgid "Fluxer Bug Hunter"
 msgstr "Fluxer Bug Hunter"
 
-#: src/components/popouts/UserProfileBadges.tsx:95
+#: src/components/popouts/UserProfileBadges.tsx:81
 msgid "Fluxer Community Team"
 msgstr "Fluxer Community Team"
 
 #: src/components/modals/tabs/DevicesTab.tsx:99
 msgid "Fluxer Desktop"
 msgstr "Fluxer Desktop"
-
-#: src/components/BootstrapErrorScreen.tsx:52
-msgid "Fluxer failed to start properly. This could be due to corrupted data or a temporary issue."
-msgstr "Fluxer kon niet correct starten. Dit kan komen door beschadigde gegevens of een tijdelijk probleem."
 
 #: src/stores/NewDeviceMonitoringStore.tsx:187
 msgid "Fluxer has found a new audio input device named <0>{deviceName}</0>. Do you want to switch to it?"
@@ -9945,18 +9950,18 @@ msgstr "Fluxer heeft de toestemming 'Input Monitoring' nodig om push-to-talk en 
 msgid "Fluxer needs permission to monitor keyboard and mouse input so that <0>Push-to-Talk</0> and <1>Global Shortcuts</1> work even when you're in another app or game."
 msgstr "Fluxer heeft toestemming nodig om toetsenbord- en muisinvoer te monitoren, zodat <0>Push-to-Talk</0> en <1>Globale Sneltoetsen</1> werken, zelfs als je in een andere app of game zit."
 
-#: src/components/popouts/UserProfileBadges.tsx:105
+#: src/components/popouts/UserProfileBadges.tsx:91
 msgid "Fluxer Partner"
 msgstr "Fluxer Partner"
 
-#: src/components/modals/components/PlutoniumContent.tsx:165
+#: src/components/modals/components/PlutoniumContent.tsx:146
 #: src/components/modals/PremiumModal.tsx:34
 #: src/components/modals/utils/SettingsConstants.tsx:124
-#: src/components/popouts/UserProfileBadges.tsx:121
+#: src/components/popouts/UserProfileBadges.tsx:107
 msgid "Fluxer Plutonium"
 msgstr "Fluxer Plutonium"
 
-#: src/components/popouts/UserProfileBadges.tsx:85
+#: src/components/popouts/UserProfileBadges.tsx:71
 msgid "Fluxer Staff"
 msgstr "Fluxer Staff"
 
@@ -10034,7 +10039,7 @@ msgstr "lettertypen"
 msgid "Food & Drink"
 msgstr "Eten & Drinken"
 
-#: src/components/modals/AddGuildModal.tsx:172
+#: src/components/modals/AddGuildModal.tsx:173
 msgid "Foodie Friends"
 msgstr "Foodie Vrienden"
 
@@ -10248,7 +10253,7 @@ msgstr "Frame rates boven de 30 FPS vereisen Plutonium"
 msgid "France"
 msgstr "Frankrijk"
 
-#: src/components/modals/components/FeatureComparisonTable.tsx:124
+#: src/components/modals/components/FeatureComparisonTable.tsx:143
 msgid "Free"
 msgstr "Gratis"
 
@@ -10259,11 +10264,6 @@ msgstr "Gratis gebruiker (geen aankopen)"
 #: src/components/modals/tabs/developer_options_tab/PremiumScenarioOptions.tsx:53
 msgid "Free User (With Purchase History)"
 msgstr "Gratis gebruiker (met aankoopgeschiedenis)"
-
-#: src/components/modals/components/PlutoniumContent.tsx:146
-#: src/components/modals/components/PlutoniumContent.tsx:243
-msgid "Free vs Plutonium"
-msgstr "Gratis vs Plutonium"
 
 #: src/components/modals/tabs/VideoTab.tsx:237
 msgid "Freezes your preview while Fluxer is in the background to save resources."
@@ -10336,7 +10336,7 @@ msgstr "Vrienden"
 msgid "Friends + Custom"
 msgstr "Vrienden + Aangepast"
 
-#: src/components/modals/AddGuildModal.tsx:184
+#: src/components/modals/AddGuildModal.tsx:185
 msgid "Friends Forever"
 msgstr "Vrienden voor altijd"
 
@@ -10405,7 +10405,7 @@ msgstr "Volledige wettelijke naam"
 msgid "Game controller"
 msgstr "Gamecontroller"
 
-#: src/components/modals/AddGuildModal.tsx:166
+#: src/components/modals/AddGuildModal.tsx:167
 msgid "Game Night"
 msgstr "Spelavond"
 
@@ -10413,7 +10413,7 @@ msgstr "Spelavond"
 msgid "Gaming"
 msgstr "Gaming"
 
-#: src/components/modals/AddGuildModal.tsx:180
+#: src/components/modals/AddGuildModal.tsx:181
 msgid "Gaming Community"
 msgstr "Gaming Gemeenschap"
 
@@ -10430,11 +10430,11 @@ msgstr "Gatewayverbinding vereist"
 msgid "gdpr"
 msgstr "gdpr"
 
-#: src/components/modals/channel_tabs/ChannelOverviewTab.tsx:480
+#: src/components/modals/channel_tabs/ChannelOverviewTab.tsx:519
 msgid "general"
 msgstr "algemeen"
 
-#: src/components/modals/channel_tabs/ChannelOverviewTab.tsx:468
+#: src/components/modals/channel_tabs/ChannelOverviewTab.tsx:507
 #: src/components/modals/tabs/developer_options_tab/index.tsx:45
 #: src/components/modals/tabs/developer_options_tab/Inline.tsx:45
 #: src/components/modals/utils/ChannelSettingsConstants.tsx:56
@@ -10553,7 +10553,7 @@ msgstr "GIF-voorbeeld"
 msgid "GIFs"
 msgstr "GIF's"
 
-#: src/components/modals/components/plutonium/SubscriptionCard.tsx:133
+#: src/components/modals/components/plutonium/SubscriptionCard.tsx:122
 #: src/components/modals/GiftAcceptModal.tsx:211
 msgid "Gift"
 msgstr "Cadeau"
@@ -10759,7 +10759,7 @@ msgstr "Snap 't"
 msgid "gpu"
 msgstr "gpu"
 
-#: src/components/modals/components/plutonium/SubscriptionCard.tsx:127
+#: src/components/modals/components/plutonium/SubscriptionCard.tsx:116
 msgid "Grace Period"
 msgstr "Respijtperiode"
 
@@ -11076,6 +11076,7 @@ msgstr "verbergen"
 #: src/components/modals/HideOwnCameraConfirmModal.tsx:66
 #: src/components/modals/HideOwnScreenShareConfirmModal.tsx:66
 #: src/components/modals/tabs/account_security_tab/AccountTab.tsx:76
+#: src/components/modals/tabs/account_security_tab/SecurityTab.tsx:370
 msgid "Hide"
 msgstr "Verbergen"
 
@@ -11221,7 +11222,7 @@ msgstr "Weergavemodus voor hoog dynamisch bereik"
 msgid "High quality, requires fast connection"
 msgstr "Hoge kwaliteit, vereist snelle verbinding"
 
-#: src/components/modals/channel_tabs/ChannelOverviewTab.tsx:661
+#: src/components/modals/channel_tabs/ChannelOverviewTab.tsx:700
 msgid "Higher bitrate = better quality and higher bandwidth usage."
 msgstr "Hogere bitrate = betere kwaliteit en hoger bandbreedtegebruik."
 
@@ -11237,7 +11238,7 @@ msgstr "tips"
 msgid "Hit 88mph"
 msgstr "Haal 140 km/u"
 
-#: src/components/modals/AddGuildModal.tsx:155
+#: src/components/modals/AddGuildModal.tsx:156
 msgid "Hobby Haven"
 msgstr "Hobby Haven"
 
@@ -11338,7 +11339,7 @@ msgstr "Hoe dit werkt"
 msgid "HTML / XML"
 msgstr "HTML / XML"
 
-#: src/components/modals/channel_tabs/ChannelOverviewTab.tsx:492
+#: src/components/modals/channel_tabs/ChannelOverviewTab.tsx:531
 #: src/components/modals/ChannelCreateModal.tsx:92
 msgid "https://example.com"
 msgstr "https://example.com"
@@ -11394,7 +11395,7 @@ msgstr "Ik begrijp het"
 msgid "Icon"
 msgstr "Pictogram"
 
-#: src/components/modals/AddGuildModal.tsx:214
+#: src/components/modals/AddGuildModal.tsx:215
 #: src/components/modals/EditGroupBottomSheet.tsx:71
 #: src/components/modals/EditGroupModal.tsx:64
 msgid "Icon file is too large. Please choose a file smaller than 10MB."
@@ -11797,8 +11798,8 @@ msgstr "Invoer & Tekst"
 msgid "Inputs with Icons"
 msgstr "Invoer met pictogrammen"
 
-#: src/components/modals/channel_tabs/ChannelOverviewTab.tsx:547
-#: src/components/modals/channel_tabs/ChannelOverviewTab.tsx:580
+#: src/components/modals/channel_tabs/ChannelOverviewTab.tsx:586
+#: src/components/modals/channel_tabs/ChannelOverviewTab.tsx:619
 msgid "Insert emoji"
 msgstr "Emoji invoegen"
 
@@ -11871,7 +11872,7 @@ msgstr "Ongeldig"
 msgid "Invalid audio file"
 msgstr "Ongeldig audiobestand"
 
-#: src/components/pages/OAuthAuthorizePage.tsx:536
+#: src/components/pages/OAuthAuthorizePage.tsx:526
 msgid "Invalid authorization request"
 msgstr "Ongeldige autorisatieaanvraag"
 
@@ -11894,7 +11895,7 @@ msgstr "Ongeldige of verlopen code"
 msgid "Invalid or expired code. Please try again."
 msgstr "Ongeldige of verlopen code. Probeer het opnieuw."
 
-#: src/components/pages/OAuthAuthorizePage.tsx:511
+#: src/components/pages/OAuthAuthorizePage.tsx:501
 msgid "Invalid redirect_uri"
 msgstr "Ongeldige redirect_uri"
 
@@ -11969,7 +11970,7 @@ msgstr "Nodig vrienden uit voor {0}"
 msgid "Invite link"
 msgstr "Uitnodigingslink"
 
-#: src/components/modals/AddGuildModal.tsx:436
+#: src/components/modals/AddGuildModal.tsx:438
 msgid "Invite Link"
 msgstr "Uitnodigingslink"
 
@@ -12101,7 +12102,7 @@ msgstr "Uitnodigingen zijn momenteel uitgeschakeld voor deze community."
 msgid "Invites are currently disabled in this community by an admin. While this invite can be created, it cannot be accepted until invites are re-enabled."
 msgstr "Uitnodigingen zijn momenteel uitgeschakeld in deze community door een beheerder. Hoewel deze uitnodiging aangemaakt kan worden, kan deze niet geaccepteerd worden totdat uitnodigingen weer ingeschakeld zijn."
 
-#: src/components/layout/guild_list/GuildListItem.tsx:493
+#: src/components/layout/guild_list/GuildListItem.tsx:492
 msgid "Invites are currently paused in this community"
 msgstr "Uitnodigingen zijn momenteel gepauzeerd in deze community"
 
@@ -12143,7 +12144,7 @@ msgstr "IP-adres geautoriseerd"
 msgid "Ireland"
 msgstr "Ierland"
 
-#: src/components/modals/tabs/AccountSecurityTab.tsx:109
+#: src/components/modals/tabs/AccountSecurityTab.tsx:112
 msgid "Irreversible and destructive actions"
 msgstr "Onomkeerbare en destructieve acties"
 
@@ -12185,7 +12186,7 @@ msgstr "Jitter"
 msgid "join"
 msgstr "deelnemen"
 
-#: src/components/modals/AddGuildModal.tsx:84
+#: src/components/modals/AddGuildModal.tsx:85
 msgid "Join a Community"
 msgstr "Word lid van een community"
 
@@ -12205,16 +12206,15 @@ msgstr "Deelnemen aan oproep"
 #: src/components/channel/InviteEmbed.tsx:284
 #: src/components/channel/InviteEmbed.tsx:475
 #: src/components/layout/guild_list/AddGuildButton.tsx:77
-#: src/components/modals/AddGuildModal.tsx:132
-#: src/components/modals/AddGuildModal.tsx:416
-#: src/components/modals/components/plutonium/SubscriptionCard.tsx:289
+#: src/components/modals/AddGuildModal.tsx:133
+#: src/components/modals/AddGuildModal.tsx:418
 #: src/components/modals/discovery/DiscoveryGuildCard.tsx:99
 #: src/components/modals/InviteAcceptModal.tsx:119
 #: src/components/modals/InviteAcceptModalPreview.tsx:111
 msgid "Join Community"
 msgstr "Word lid van community"
 
-#: src/components/modals/AddGuildModal.tsx:430
+#: src/components/modals/AddGuildModal.tsx:432
 msgid "Join community form"
 msgstr "Communityformulier om lid te worden"
 
@@ -12327,7 +12327,7 @@ msgstr "JPEG, PNG, WebP. Max. 10MB. Minimum: {0}×{1}px (16:9)"
 msgid "JPEG, PNG, WebP. Max 10MB. Minimum: {0}×{1}px (16:9). Shown in invite embeds in chat."
 msgstr "JPEG, PNG, WebP. Max. 10MB. Minimum: {0}×{1}px (16:9). Getoond in uitnodigings-embeds in chat."
 
-#: src/components/modals/AddGuildModal.tsx:338
+#: src/components/modals/AddGuildModal.tsx:340
 #: src/components/modals/EditGroupBottomSheet.tsx:223
 #: src/components/modals/EditGroupModal.tsx:204
 #: src/components/modals/guild_tabs/guild_overview_tab/fields/GuildIconUploadField.tsx:116
@@ -12717,7 +12717,7 @@ msgstr "Laat de community zichzelf modereren"
 msgid "Letters (a-z, A-Z), numbers (0-9), and underscores (_) only"
 msgstr "Alleen letters (a-z, A-Z), cijfers (0-9) en underscores (_)"
 
-#: src/components/modals/components/plutonium/SubscriptionCard.tsx:131
+#: src/components/modals/components/plutonium/SubscriptionCard.tsx:120
 #: src/components/modals/tabs/developer_options_tab/AccountPremiumTab.tsx:52
 #: src/components/modals/tabs/developer_options_tab/MockingTab.tsx:317
 msgid "Lifetime"
@@ -12899,7 +12899,7 @@ msgstr "Laden"
 msgid "Loading bans..."
 msgstr "Bans laden..."
 
-#: src/components/pages/OAuthAuthorizePage.tsx:877
+#: src/components/pages/OAuthAuthorizePage.tsx:846
 msgid "Loading communities..."
 msgstr "Gemeenschappen laden..."
 
@@ -13197,7 +13197,7 @@ msgid "Manage Roles"
 msgstr "Rollen beheren"
 
 #: src/components/layout/app_layout/nagbars/PremiumGracePeriodNagbar.tsx:79
-#: src/components/modals/components/plutonium/SubscriptionCard.tsx:271
+#: src/components/modals/components/plutonium/SubscriptionCard.tsx:260
 msgid "Manage Subscription"
 msgstr "Abonnement beheren"
 
@@ -13214,7 +13214,7 @@ msgstr "Webhooks beheren"
 msgid "Manage your applications and bots."
 msgstr "Beheer je apps en bots."
 
-#: src/components/modals/tabs/AccountSecurityTab.tsx:78
+#: src/components/modals/tabs/AccountSecurityTab.tsx:79
 msgid "Manage your email, password, and account settings"
 msgstr "Beheer je e-mail, wachtwoord en accountinstellingen"
 
@@ -13222,7 +13222,7 @@ msgstr "Beheer je e-mail, wachtwoord en accountinstellingen"
 msgid "Manage your gifts"
 msgstr "Je cadeaus beheren"
 
-#: src/components/modals/tabs/account_security_tab/SecurityTab.tsx:340
+#: src/components/modals/tabs/account_security_tab/SecurityTab.tsx:353
 msgid "Manage your phone number for SMS two-factor authentication"
 msgstr "Beheer je telefoonnummer voor SMS-twee-factor-authenticatie"
 
@@ -13385,7 +13385,7 @@ msgstr "Maximaliseert zichtbare berichten met minimale afstand."
 msgid "Maximum 256 characters"
 msgstr "Maximaal 256 tekens"
 
-#: src/components/modals/channel_tabs/ChannelOverviewTab.tsx:694
+#: src/components/modals/channel_tabs/ChannelOverviewTab.tsx:733
 msgid "Maximum members who can join at once. 0 means unlimited."
 msgstr "Maximaal aantal leden dat tegelijk kan deelnemen. 0 betekent onbeperkt."
 
@@ -13579,7 +13579,7 @@ msgstr "Leden die {days} dagen inactief zijn, worden verwijderd."
 msgid "Members list unavailable at this screen width"
 msgstr "Ledenlijst niet beschikbaar bij dit schermformaat"
 
-#: src/components/modals/channel_tabs/ChannelOverviewTab.tsx:617
+#: src/components/modals/channel_tabs/ChannelOverviewTab.tsx:656
 msgid "Members must wait between messages."
 msgstr "Leden moeten wachten tussen berichten."
 
@@ -14164,11 +14164,11 @@ msgstr "Verplaatste de rol naar positie {0}."
 msgid "Moved to channel {0}."
 msgstr "Verplaatst naar kanaal {0}."
 
-#: src/components/modals/AddGuildModal.tsx:174
+#: src/components/modals/AddGuildModal.tsx:175
 msgid "Movie Club"
 msgstr "Filmclub"
 
-#: src/components/modals/AddGuildModal.tsx:161
+#: src/components/modals/AddGuildModal.tsx:162
 msgid "Movie Night Crew"
 msgstr "Filmavondbende"
 
@@ -14188,7 +14188,7 @@ msgstr "Meertalige inhoud"
 msgid "Music"
 msgstr "Muziek"
 
-#: src/components/modals/AddGuildModal.tsx:170
+#: src/components/modals/AddGuildModal.tsx:171
 msgid "Music Lovers"
 msgstr "Muziekliefhebbers"
 
@@ -14316,7 +14316,7 @@ msgstr "Stroomgeluid dempen"
 msgid "muted"
 msgstr "gemute"
 
-#: src/components/layout/guild_list/GuildListItem.tsx:453
+#: src/components/layout/guild_list/GuildListItem.tsx:452
 #: src/components/layout/VoiceStateIcons.tsx:49
 #: src/components/voice/VoiceParticipantTile.tsx:1457
 #: src/utils/ContextMenuUtils.tsx:165
@@ -14329,7 +14329,7 @@ msgstr "gemute kanalen"
 
 #. placeholder {0}: DateUtils.getFormattedDateTime(new Date(muteConfig.end_time))
 #. placeholder {0}: getFormattedDateTime(new Date(muteConfig.end_time))
-#: src/components/layout/guild_list/GuildListItem.tsx:451
+#: src/components/layout/guild_list/GuildListItem.tsx:450
 #: src/utils/ContextMenuUtils.tsx:163
 msgid "Muted until {0}"
 msgstr "Gedempt tot {0}"
@@ -14371,7 +14371,7 @@ msgstr "Mijn geweldige media"
 msgid "My awesome sticker"
 msgstr "Mijn geweldige sticker"
 
-#: src/components/modals/channel_tabs/ChannelOverviewTab.tsx:480
+#: src/components/modals/channel_tabs/ChannelOverviewTab.tsx:519
 msgid "My Category"
 msgstr "Mijn categorie"
 
@@ -14509,7 +14509,7 @@ msgstr "Navigatie"
 msgid "Need an account?"
 msgstr "Een account nodig?"
 
-#: src/components/modals/AddGuildModal.tsx:162
+#: src/components/modals/AddGuildModal.tsx:163
 msgid "Neighborhood Watch"
 msgstr "Buurtwacht"
 
@@ -14623,7 +14623,7 @@ msgid "Newest First"
 msgstr "Nieuwste eerst"
 
 #: src/components/bottomsheets/ChannelSearchBottomSheet.tsx:394
-#: src/components/pages/OAuthAuthorizePage.tsx:931
+#: src/components/pages/OAuthAuthorizePage.tsx:900
 msgid "Next"
 msgstr "Volgende"
 
@@ -14754,7 +14754,7 @@ msgstr "Geen kanalen beschikbaar"
 msgid "No channels found"
 msgstr "Geen kanalen gevonden"
 
-#: src/components/pages/OAuthAuthorizePage.tsx:893
+#: src/components/pages/OAuthAuthorizePage.tsx:862
 msgid "No communities available with <0>Manage Community</0> permissions."
 msgstr "Geen communities beschikbaar met <0>Manage Community</0>-rechten."
 
@@ -14842,7 +14842,7 @@ msgstr "Geen uitnodigingen aangemaakt"
 msgid "No keybind set"
 msgstr "Geen toetsenbordcombinatie ingesteld"
 
-#: src/components/modals/channel_tabs/ChannelOverviewTab.tsx:688
+#: src/components/modals/channel_tabs/ChannelOverviewTab.tsx:727
 #: src/components/modals/InviteModal.tsx:88
 msgid "No limit"
 msgstr "Geen limiet"
@@ -14851,7 +14851,7 @@ msgstr "Geen limiet"
 msgid "No Logs Yet"
 msgstr "Nog geen logs"
 
-#: src/components/pages/OAuthAuthorizePage.tsx:426
+#: src/components/pages/OAuthAuthorizePage.tsx:416
 msgid "No Manage Community permission"
 msgstr "Geen Manage Community-recht"
 
@@ -14884,7 +14884,7 @@ msgstr "Geen gemeenschappelijke vrienden gevonden."
 msgid "No mutual groups found."
 msgstr "Geen gemeenschappelijke groepen gevonden."
 
-#: src/components/modals/tabs/account_security_tab/SecurityTab.tsx:286
+#: src/components/modals/tabs/account_security_tab/SecurityTab.tsx:299
 msgid "No passkeys registered"
 msgstr "Geen toegangssleutels geregistreerd"
 
@@ -14986,7 +14986,7 @@ msgstr "Geen zoekresultaten"
 msgid "No settings found"
 msgstr "Geen instellingen gevonden"
 
-#: src/components/pages/OAuthAuthorizePage.tsx:824
+#: src/components/pages/OAuthAuthorizePage.tsx:793
 msgid "No specific scopes requested."
 msgstr "Geen specifieke scopes aangevraagd."
 
@@ -15261,7 +15261,7 @@ msgid "Objects"
 msgstr "Objecten"
 
 #: src/components/channel/ReplyBar.tsx:112
-#: src/components/modals/channel_tabs/ChannelOverviewTab.tsx:160
+#: src/components/modals/channel_tabs/ChannelOverviewTab.tsx:173
 #: src/components/modals/guild_tabs/GuildModerationTab.tsx:243
 #: src/utils/modals/guild_tabs/GuildAuditLogTabUtils.tsx:64
 msgid "Off"
@@ -15499,7 +15499,7 @@ msgstr "Open kleurkiezer"
 msgid "Open Community Notification Settings"
 msgstr "Open Community-meldingsinstellingen"
 
-#: src/components/modals/components/plutonium/SubscriptionCard.tsx:269
+#: src/components/modals/components/plutonium/SubscriptionCard.tsx:258
 msgid "Open Customer Portal"
 msgstr "Open klantenportaal"
 
@@ -15779,7 +15779,7 @@ msgstr "Anders is Push-to-talk vereist."
 msgid "otp"
 msgstr "otp"
 
-#: src/components/modals/AddGuildModal.tsx:186
+#: src/components/modals/AddGuildModal.tsx:187
 msgid "Our Hangout"
 msgstr "Onze Hangout"
 
@@ -15909,7 +15909,7 @@ msgstr "pakketten"
 msgid "Page {currentPage} of {totalPages}"
 msgstr "Pagina {currentPage} van {totalPages}"
 
-#: src/components/modals/channel_tabs/ChannelOverviewTab.tsx:671
+#: src/components/modals/channel_tabs/ChannelOverviewTab.tsx:710
 msgid "Participant Limit"
 msgstr "Deelnemerslimiet"
 
@@ -15930,7 +15930,7 @@ msgstr "Partnergemeenschap"
 msgid "Passkey Name"
 msgstr "Passkey-naam"
 
-#: src/components/modals/tabs/account_security_tab/SecurityTab.tsx:276
+#: src/components/modals/tabs/account_security_tab/SecurityTab.tsx:289
 msgid "Passkeys"
 msgstr "Passkeys"
 
@@ -16103,8 +16103,8 @@ msgid "permissions"
 msgstr "machtigingen"
 
 #: src/components/modals/guild_tabs/GuildRolesTab.tsx:1086
-#: src/components/pages/OAuthAuthorizePage.tsx:584
-#: src/components/pages/OAuthAuthorizePage.tsx:720
+#: src/components/pages/OAuthAuthorizePage.tsx:574
+#: src/components/pages/OAuthAuthorizePage.tsx:700
 msgid "Permissions"
 msgstr "Machtigingen"
 
@@ -16148,8 +16148,8 @@ msgstr "Telefoon"
 
 #: src/components/modals/PhoneAddModal.tsx:192
 #: src/components/modals/RequiredActionModal.tsx:616
-#: src/components/modals/tabs/account_security_tab/SecurityTab.tsx:339
-#: src/components/modals/tabs/account_security_tab/SecurityTab.tsx:345
+#: src/components/modals/tabs/account_security_tab/SecurityTab.tsx:352
+#: src/components/modals/tabs/account_security_tab/SecurityTab.tsx:358
 #: src/components/modals/utils/SettingsSearchIndex.tsx:115
 msgid "Phone Number"
 msgstr "Telefoonnummer"
@@ -16157,11 +16157,6 @@ msgstr "Telefoonnummer"
 #: src/components/modals/PhoneAddModal.tsx:133
 msgid "Phone number added"
 msgstr "Telefoonnummer toegevoegd"
-
-#. placeholder {0}: user.phone
-#: src/components/modals/tabs/account_security_tab/SecurityTab.tsx:349
-msgid "Phone number added: {0}"
-msgstr "Telefoonnummer toegevoegd: {0}"
 
 #: src/components/modals/RequiredActionModal.tsx:253
 msgid "Phone number is required"
@@ -16187,7 +16182,7 @@ msgstr "Telefoon verificatie vereist"
 msgid "photo"
 msgstr "foto"
 
-#: src/components/modals/AddGuildModal.tsx:169
+#: src/components/modals/AddGuildModal.tsx:170
 msgid "Photography Club"
 msgstr "Fotoclub"
 
@@ -16421,7 +16416,7 @@ msgstr "Probeer het later opnieuw."
 msgid "Please update Fluxer to view this message."
 msgstr "Update Fluxer om dit bericht te bekijken."
 
-#: src/actions/InviteActionCreators.tsx:184
+#: src/actions/InviteActionCreators.tsx:207
 msgid "Please verify your account by setting an email and password before joining communities."
 msgstr "Verifieer je account door een e-mail en wachtwoord in te stellen voordat je communities toetreedt."
 
@@ -16447,7 +16442,7 @@ msgstr "plutonium"
 
 #: src/components/channel/direct_message/DMList.tsx:1326
 #: src/components/channel/direct_message/DMList.tsx:1405
-#: src/components/modals/components/FeatureComparisonTable.tsx:127
+#: src/components/modals/components/FeatureComparisonTable.tsx:146
 msgid "Plutonium"
 msgstr "Plutonium"
 
@@ -16459,7 +16454,7 @@ msgstr "Plutonium Badge Privacy"
 msgid "Plutonium perks"
 msgstr "Plutonium voordelen"
 
-#: src/components/modals/components/plutonium/SubscriptionCard.tsx:121
+#: src/components/modals/components/plutonium/SubscriptionCard.tsx:110
 msgid "Plutonium Subscription"
 msgstr "Plutonium Abonnement"
 
@@ -16715,7 +16710,7 @@ msgstr "Doorgaan"
 msgid "Processing"
 msgstr "Verwerken"
 
-#: src/components/modals/AddGuildModal.tsx:163
+#: src/components/modals/AddGuildModal.tsx:164
 msgid "Professional Peers"
 msgstr "Professionele collega's"
 
@@ -16776,7 +16771,7 @@ msgstr "Profiel bijgewerkt"
 msgid "progress"
 msgstr "voortgang"
 
-#: src/components/modals/AddGuildModal.tsx:159
+#: src/components/modals/AddGuildModal.tsx:160
 msgid "Project X"
 msgstr "Project X"
 
@@ -16789,7 +16784,7 @@ msgstr "voornaamwoorden"
 msgid "Pronouns"
 msgstr "Voornaamwoorden"
 
-#: src/components/modals/tabs/AccountSecurityTab.tsx:91
+#: src/components/modals/tabs/AccountSecurityTab.tsx:92
 msgid "Protect your account with two-factor authentication and passkeys"
 msgstr "Bescherm je account met tweefactorauthenticatie en passkeys"
 
@@ -17014,7 +17009,7 @@ msgid "Reactions"
 msgstr "Reacties"
 
 #: src/components/layout/app_layout/nagbars/PremiumExpiredNagbar.tsx:75
-#: src/components/modals/components/plutonium/SubscriptionCard.tsx:267
+#: src/components/modals/components/plutonium/SubscriptionCard.tsx:256
 msgid "Reactivate"
 msgstr "Heractiveren"
 
@@ -17076,7 +17071,7 @@ msgstr "Ontvangen"
 msgid "Receive notifications when someone mentions you"
 msgstr "Ontvang meldingen wanneer iemand je noemt"
 
-#: src/components/modals/tabs/account_security_tab/SecurityTab.tsx:407
+#: src/components/modals/tabs/account_security_tab/SecurityTab.tsx:431
 msgid "Receive verification codes via SMS as a backup authentication method"
 msgstr "Ontvang verificatiecodes via SMS als back-up authenticatiemethode"
 
@@ -17141,7 +17136,7 @@ msgstr "Een cadeau inwisselen"
 msgid "Redeem for Yourself"
 msgstr "Voor jezelf inwisselen"
 
-#: src/components/modals/components/plutonium/SubscriptionCard.tsx:245
+#: src/components/modals/components/plutonium/SubscriptionCard.tsx:234
 msgid "Redeem Gift Code"
 msgstr "Cadeaucode inwisselen"
 
@@ -17233,7 +17228,7 @@ msgstr "Opnieuw genereren maakt het huidige token ongeldig. Werk alle code bij d
 msgid "Register"
 msgstr "Registreren"
 
-#: src/components/modals/tabs/account_security_tab/SecurityTab.tsx:282
+#: src/components/modals/tabs/account_security_tab/SecurityTab.tsx:295
 msgid "Registered Passkeys"
 msgstr "Geregistreerde toegangssleutels"
 
@@ -17303,7 +17298,7 @@ msgstr "verwijderen"
 #: src/components/modals/guild_tabs/guild_overview_tab/fields/GuildEmbedSplashUploadField.tsx:101
 #: src/components/modals/guild_tabs/guild_overview_tab/fields/GuildIconUploadField.tsx:107
 #: src/components/modals/guild_tabs/guild_overview_tab/fields/GuildInviteSplashUploadField.tsx:113
-#: src/components/modals/tabs/account_security_tab/SecurityTab.tsx:394
+#: src/components/modals/tabs/account_security_tab/SecurityTab.tsx:418
 #: src/components/modals/tabs/ExpressionPacksTab.tsx:96
 #: src/components/modals/tabs/ExpressionPacksTab.tsx:226
 #: src/components/modals/tabs/LinkedAccountsTab.tsx:191
@@ -17454,7 +17449,7 @@ msgstr "Uit favorieten verwijderen"
 msgid "Remove from Group"
 msgstr "Uit groep verwijderen"
 
-#: src/components/modals/AddGuildModal.tsx:333
+#: src/components/modals/AddGuildModal.tsx:335
 #: src/components/modals/EditGroupBottomSheet.tsx:218
 #: src/components/modals/EditGroupModal.tsx:199
 msgid "Remove Icon"
@@ -17477,11 +17472,11 @@ msgstr "Overschrijving verwijderen"
 msgid "Remove Pack"
 msgstr "Pakket Verwijderen"
 
-#: src/components/modals/tabs/account_security_tab/SecurityTab.tsx:380
+#: src/components/modals/tabs/account_security_tab/SecurityTab.tsx:404
 msgid "Remove Phone"
 msgstr "Telefoon verwijderen"
 
-#: src/components/modals/tabs/account_security_tab/SecurityTab.tsx:363
+#: src/components/modals/tabs/account_security_tab/SecurityTab.tsx:387
 msgid "Remove Phone Number"
 msgstr "Telefoonnummer verwijderen"
 
@@ -17623,7 +17618,7 @@ msgstr "Verwijdert de ATTACH_FILES-machtiging in alle kanalen (verbergt de uploa
 msgid "Removes SEND_MESSAGES permission in all channels (disables textarea and all buttons)"
 msgstr "Verwijdert de SEND_MESSAGES-machtiging in alle kanalen (schakelt tekstvak en alle knoppen uit)"
 
-#: src/components/pages/OAuthAuthorizePage.tsx:660
+#: src/components/pages/OAuthAuthorizePage.tsx:640
 msgid "Removing permissions could limit the bot's features."
 msgstr "Het verwijderen van machtigingen kan de functies van de bot beperken."
 
@@ -17636,7 +17631,7 @@ msgstr "Het verwijderen van het pakket zal het van je account deïnstalleren."
 msgid "Removing the timeout will allow <0>{0}</0> to send messages, react, and join voice channels again."
 msgstr "Het verwijderen van de time-out zal <0>{0}</0> weer berichten laten sturen, reageren en spraakkanalen laten joinen."
 
-#: src/components/modals/tabs/account_security_tab/SecurityTab.tsx:322
+#: src/components/modals/tabs/account_security_tab/SecurityTab.tsx:335
 msgid "Rename"
 msgstr "Hernoemen"
 
@@ -17695,7 +17690,7 @@ msgstr "De community hernoemd naar {0}."
 msgid "Render all your messages as unknown message type"
 msgstr "Weergeef al je berichten als onbekend berichttype"
 
-#: src/components/modals/components/plutonium/SubscriptionCard.tsx:227
+#: src/components/modals/components/plutonium/SubscriptionCard.tsx:216
 msgid "Renews on <0>{renewalDate}</0>."
 msgstr "Verlengt op <0>{renewalDate}</0>."
 
@@ -17813,7 +17808,7 @@ msgstr "Gegevensexport aanvragen"
 msgid "Request Export"
 msgstr "Export aanvragen"
 
-#: src/components/pages/OAuthAuthorizePage.tsx:814
+#: src/components/pages/OAuthAuthorizePage.tsx:783
 msgid "Requested scopes"
 msgstr "Aangevraagde scopes"
 
@@ -17841,7 +17836,7 @@ msgstr "Vereis OAuth2 code grant"
 msgid "Require two-factor authentication for moderators before they can ban, kick, timeout, or remove messages."
 msgstr "Tweefactorauthenticatie vereisen voor moderatoren voordat ze kunnen verbannen, verwijderen, time-outen of berichten verwijderen."
 
-#: src/components/pages/OAuthAuthorizePage.tsx:839
+#: src/components/pages/OAuthAuthorizePage.tsx:808
 msgid "Required"
 msgstr "Vereist"
 
@@ -17955,7 +17950,7 @@ msgstr "Alle overschrijvingen resetten naar themastandaard"
 msgid "Reset app data"
 msgstr "App-gegevens resetten"
 
-#: src/components/BootstrapErrorScreen.tsx:74
+#: src/components/BootstrapErrorScreen.tsx:75
 msgid "Reset App Data"
 msgstr "App-gegevens resetten"
 
@@ -18038,8 +18033,8 @@ msgstr "Gemaximaliseerd Herstellen"
 msgid "Restore window"
 msgstr "Herstel venster"
 
-#: src/components/modals/components/plutonium/SubscriptionCard.tsx:263
-#: src/components/modals/components/plutonium/SubscriptionCard.tsx:265
+#: src/components/modals/components/plutonium/SubscriptionCard.tsx:252
+#: src/components/modals/components/plutonium/SubscriptionCard.tsx:254
 msgid "Resubscribe"
 msgstr "Opnieuw abonneren"
 
@@ -18077,6 +18072,7 @@ msgid "reveal"
 msgstr "onthullen"
 
 #: src/components/modals/tabs/account_security_tab/AccountTab.tsx:76
+#: src/components/modals/tabs/account_security_tab/SecurityTab.tsx:370
 msgid "Reveal"
 msgstr "Onthullen"
 
@@ -18088,7 +18084,7 @@ msgstr "Spoiler onthullen"
 msgid "Review deletion"
 msgstr "Verwijdering beoordelen"
 
-#: src/components/pages/OAuthAuthorizePage.tsx:749
+#: src/components/pages/OAuthAuthorizePage.tsx:718
 msgid "Review what this app is asking for before you continue."
 msgstr "Bekijk wat deze app vraagt voordat je doorgaat."
 
@@ -18465,8 +18461,8 @@ msgid "Scope"
 msgstr "Bereik"
 
 #: src/components/modals/tabs/applications_tab/application_detail/OAuthBuilderSection.tsx:75
-#: src/components/pages/OAuthAuthorizePage.tsx:577
-#: src/components/pages/OAuthAuthorizePage.tsx:713
+#: src/components/pages/OAuthAuthorizePage.tsx:567
+#: src/components/pages/OAuthAuthorizePage.tsx:693
 msgid "Scopes"
 msgstr "Bereiken"
 
@@ -18770,8 +18766,8 @@ msgstr "Beveilig je account"
 msgid "security"
 msgstr "beveiliging"
 
-#: src/components/modals/tabs/account_security_tab/Inline.tsx:81
-#: src/components/modals/tabs/AccountSecurityTab.tsx:90
+#: src/components/modals/tabs/account_security_tab/Inline.tsx:82
+#: src/components/modals/tabs/AccountSecurityTab.tsx:91
 #: src/components/modals/utils/SettingsConstants.tsx:298
 #: src/components/modals/utils/SettingsSectionRegistry.tsx:505
 msgid "Security"
@@ -18781,7 +18777,7 @@ msgstr "Beveiliging"
 msgid "Security & Login"
 msgstr "Beveiliging & Inloggen"
 
-#: src/components/modals/tabs/account_security_tab/SecurityTab.tsx:203
+#: src/components/modals/tabs/account_security_tab/SecurityTab.tsx:216
 msgid "Security Features"
 msgstr "Beveiligingsfuncties"
 
@@ -18832,7 +18828,7 @@ msgstr "Selecteer een kanaal of categorie"
 msgid "Select a Community"
 msgstr "Selecteer een Community"
 
-#: src/components/pages/OAuthAuthorizePage.tsx:866
+#: src/components/pages/OAuthAuthorizePage.tsx:835
 msgid "Select a community where you have <0>Manage Community</0> permissions."
 msgstr "Selecteer een community waar je <0>Community beheren</0>-rechten hebt."
 
@@ -18864,7 +18860,7 @@ msgstr "Selecteer een verificatiemethode."
 msgid "Select a violation category."
 msgstr "Selecteer een categorie voor overtredingen."
 
-#: src/components/modals/channel_tabs/ChannelOverviewTab.tsx:729
+#: src/components/modals/channel_tabs/ChannelOverviewTab.tsx:768
 msgid "Select a voice region for this channel. Automatic uses the closest region."
 msgstr "Selecteer een spraakregio voor dit kanaal. Automatisch gebruikt de dichtstbijzijnde regio."
 
@@ -19802,7 +19798,7 @@ msgstr "Uitloggen bij {displayName}"
 msgid "Signal strength loading"
 msgstr "Signaalsterkte laden"
 
-#: src/components/pages/OAuthAuthorizePage.tsx:788
+#: src/components/pages/OAuthAuthorizePage.tsx:757
 msgid "Signed in as"
 msgstr "Ingelogd als"
 
@@ -19936,7 +19932,7 @@ msgid "Slower"
 msgstr "Langzamer"
 
 #: src/components/channel/SlowmodeIndicator.tsx:64
-#: src/components/modals/channel_tabs/ChannelOverviewTab.tsx:616
+#: src/components/modals/channel_tabs/ChannelOverviewTab.tsx:655
 #: src/components/modals/tabs/developer_options_tab/MockingTab.tsx:117
 msgid "Slowmode"
 msgstr "Langzame modus"
@@ -19990,11 +19986,11 @@ msgstr "Kleinere media grootte"
 msgid "sms"
 msgstr "sms"
 
-#: src/components/modals/tabs/account_security_tab/SecurityTab.tsx:412
+#: src/components/modals/tabs/account_security_tab/SecurityTab.tsx:436
 msgid "SMS Backup"
 msgstr "SMS-back-up"
 
-#: src/components/modals/tabs/account_security_tab/SecurityTab.tsx:432
+#: src/components/modals/tabs/account_security_tab/SecurityTab.tsx:456
 msgid "SMS backup is disabled for partners"
 msgstr "SMS-back-up is uitgeschakeld voor partners"
 
@@ -20007,15 +20003,15 @@ msgstr "SMS-code"
 msgid "SMS Code"
 msgstr "SMS-code"
 
-#: src/components/modals/tabs/account_security_tab/SecurityTab.tsx:406
+#: src/components/modals/tabs/account_security_tab/SecurityTab.tsx:430
 msgid "SMS Two-Factor Authentication"
 msgstr "SMS tweefactorauthenticatie"
 
-#: src/components/modals/tabs/account_security_tab/SecurityTab.tsx:151
+#: src/components/modals/tabs/account_security_tab/SecurityTab.tsx:164
 msgid "SMS two-factor authentication adds an additional layer of security to your account by requiring a verification code sent to your phone number when signing in."
 msgstr "SMS tweefactorauthenticatie voegt een extra beveiligingslaag toe aan je account door een verificatiecode te vereisen die naar je telefoonnummer wordt gestuurd bij het inloggen."
 
-#: src/components/modals/tabs/account_security_tab/SecurityTab.tsx:416
+#: src/components/modals/tabs/account_security_tab/SecurityTab.tsx:440
 msgid "SMS two-factor authentication is enabled"
 msgstr "SMS tweefactorauthenticatie is ingeschakeld"
 
@@ -20291,7 +20287,7 @@ msgstr "Spoilerinhoud"
 msgid "spoilers"
 msgstr "spoilers"
 
-#: src/components/modals/AddGuildModal.tsx:179
+#: src/components/modals/AddGuildModal.tsx:180
 msgid "Sports Fans"
 msgstr "Sportfans"
 
@@ -20495,7 +20491,7 @@ msgstr "Stickerdichtheid"
 msgid "Sticker pack"
 msgstr "Stickerpakket"
 
-#: src/actions/InviteActionCreators.tsx:291
+#: src/actions/InviteActionCreators.tsx:314
 msgid "Sticker pack creation limit reached"
 msgstr "Limiet voor het maken van stickerpakketten bereikt"
 
@@ -20503,7 +20499,7 @@ msgstr "Limiet voor het maken van stickerpakketten bereikt"
 msgid "Sticker Pack Invite"
 msgstr "Stickerpakketuitnodiging"
 
-#: src/actions/InviteActionCreators.tsx:277
+#: src/actions/InviteActionCreators.tsx:300
 msgid "Sticker pack limit reached"
 msgstr "Limiet voor stickerpakketten bereikt"
 
@@ -20634,15 +20630,15 @@ msgstr "streamen"
 msgid "Streaming"
 msgstr "Streamen"
 
-#: src/components/modals/AddGuildModal.tsx:148
+#: src/components/modals/AddGuildModal.tsx:149
 msgid "Study Buddies United"
 msgstr "Studiematen Verenigd"
 
-#: src/components/modals/AddGuildModal.tsx:181
+#: src/components/modals/AddGuildModal.tsx:182
 msgid "Study Group"
 msgstr "Studiegroep"
 
-#: src/components/modals/AddGuildModal.tsx:167
+#: src/components/modals/AddGuildModal.tsx:168
 msgid "Study Hall"
 msgstr "Studiezaal"
 
@@ -20732,7 +20728,7 @@ msgstr "suggesties"
 msgid "Summary"
 msgstr "Samenvatting"
 
-#: src/components/modals/AddGuildModal.tsx:164
+#: src/components/modals/AddGuildModal.tsx:165
 msgid "Support Circle"
 msgstr "Ondersteuningscirkel"
 
@@ -20793,7 +20789,7 @@ msgstr "Zweeds"
 msgid "switch"
 msgstr "schakelaar"
 
-#: src/components/pages/OAuthAuthorizePage.tsx:801
+#: src/components/pages/OAuthAuthorizePage.tsx:770
 msgid "Switch account"
 msgstr "Account wisselen"
 
@@ -20957,7 +20953,7 @@ msgstr "Tags ({0}/10)"
 msgid "Tap to add a note"
 msgstr "Tik om een notitie toe te voegen"
 
-#: src/components/pages/OAuthAuthorizePage.tsx:766
+#: src/components/pages/OAuthAuthorizePage.tsx:735
 msgid "Target community"
 msgstr "Doelcommunity"
 
@@ -20966,7 +20962,7 @@ msgstr "Doelcommunity"
 msgid "Targeted attacks, threats, or sustained harassment"
 msgstr "Gerichte aanvallen, bedreigingen of aanhoudende intimidatie"
 
-#: src/components/modals/AddGuildModal.tsx:157
+#: src/components/modals/AddGuildModal.tsx:158
 msgid "Team Alpha"
 msgstr "Team Alpha"
 
@@ -21096,7 +21092,7 @@ msgstr "Dat lijkt geen geldige kleur. Probeer hex, rgb(), hsl() of een CSS-kleur
 msgid "That doesn't look like a valid URL."
 msgstr "Dat lijkt geen geldige URL te zijn."
 
-#: src/components/modals/AddGuildModal.tsx:264
+#: src/components/modals/AddGuildModal.tsx:265
 #: src/components/modals/EditGroupBottomSheet.tsx:123
 #: src/components/modals/EditGroupModal.tsx:116
 #: src/components/modals/guild_tabs/guild_overview_tab/hooks/useGuildImageAssetField.tsx:203
@@ -21111,7 +21107,7 @@ msgid "That message didn't delete"
 msgstr "Dat bericht is niet verwijderd"
 
 #. placeholder {0}: invite.pack.name
-#: src/actions/InviteActionCreators.tsx:104
+#: src/actions/InviteActionCreators.tsx:123
 msgid "The {packLabel} {0} has been installed."
 msgstr "Het {packLabel} {0} is geïnstalleerd."
 
@@ -21124,11 +21120,11 @@ msgid "The app has crashed. Checking for updates that might fix this issue..."
 msgstr "De app is gecrasht. Controleren op updates die dit probleem mogelijk oplossen..."
 
 #. placeholder {0}: successState.guildName
-#: src/components/pages/OAuthAuthorizePage.tsx:554
+#: src/components/pages/OAuthAuthorizePage.tsx:544
 msgid "The bot has been added to <0>{0}</0>."
 msgstr "De bot is toegevoegd aan <0>{0}</0>."
 
-#: src/components/pages/OAuthAuthorizePage.tsx:558
+#: src/components/pages/OAuthAuthorizePage.tsx:548
 msgid "The bot has been added."
 msgstr "De bot is toegevoegd."
 
@@ -21161,7 +21157,7 @@ msgstr "De FluxerTag <0>{fluxerTag}</0> is al in gebruik. Doorgaan zal je discri
 msgid "The job starts 24 hours after you confirm and can be canceled or restarted anytime"
 msgstr "De taak start 24 uur nadat je bevestigt en kan op elk moment geannuleerd of herstart worden"
 
-#: src/components/modals/AddGuildModal.tsx:147
+#: src/components/modals/AddGuildModal.tsx:148
 msgid "The Midnight Gamers"
 msgstr "The Midnight Gamers"
 
@@ -21182,7 +21178,7 @@ msgstr "De opgegeven redirect_uri is niet geregistreerd voor deze applicatie."
 msgid "The role <0>\"{roleName}\"</0> could not be deleted at this time. Please try again."
 msgstr "De rol <0>\"{roleName}\"</0> kon op dit moment niet worden verwijderd. Probeer het opnieuw."
 
-#: src/components/modals/AddGuildModal.tsx:185
+#: src/components/modals/AddGuildModal.tsx:186
 msgid "The Squad"
 msgstr "The Squad"
 
@@ -21206,7 +21202,7 @@ msgstr "De time-out mag niet langer zijn dan 365 dagen (31536000 seconden)."
 msgid "The URL of the Fluxer instance you want to sign in to."
 msgstr "De URL van de Fluxer-instantie waar je je wilt aanmelden."
 
-#: src/components/modals/channel_tabs/ChannelOverviewTab.tsx:496
+#: src/components/modals/channel_tabs/ChannelOverviewTab.tsx:535
 msgid "The URL this link channel points to."
 msgstr "De URL waar dit linkkanaal naar verwijst."
 
@@ -21336,7 +21332,7 @@ msgstr "Deze applicatie"
 msgid "This attachment has expired"
 msgstr "Deze bijlage is verlopen"
 
-#: src/components/pages/OAuthAuthorizePage.tsx:647
+#: src/components/pages/OAuthAuthorizePage.tsx:627
 msgid "This bot is requesting the Administrator permission. We do not recommend granting this to production apps unless you fully trust the developer. Consider asking them to request a reduced set of permissions. Close this page if you are unsure."
 msgstr "Deze bot vraagt de Administrator-toestemming. We raden niet aan dit aan productie-apps te verlenen, tenzij je de ontwikkelaar volledig vertrouwt. Overweeg hen te vragen een beperktere set toestemmingen aan te vragen. Sluit deze pagina als je twijfelt."
 
@@ -22055,7 +22051,7 @@ msgstr "Boven"
 msgid "Top Tooltip"
 msgstr "Boven tooltip"
 
-#: src/components/modals/channel_tabs/ChannelOverviewTab.tsx:519
+#: src/components/modals/channel_tabs/ChannelOverviewTab.tsx:558
 msgid "Topic"
 msgstr "Onderwerp"
 
@@ -22100,7 +22096,7 @@ msgstr "vertaling"
 msgid "Travel & Places"
 msgstr "Reizen & Plaatsen"
 
-#: src/components/modals/AddGuildModal.tsx:173
+#: src/components/modals/AddGuildModal.tsx:174
 msgid "Travel Buddies"
 msgstr "Reismaatjes"
 
@@ -22164,12 +22160,12 @@ msgstr "Probeer een andere zoekterm of filter"
 msgid "Try again"
 msgstr "Probeer opnieuw"
 
-#: src/components/BootstrapErrorScreen.tsx:71
+#: src/components/BootstrapErrorScreen.tsx:72
 #: src/components/bottomsheets/ChannelSearchBottomSheet.tsx:317
 #: src/components/channel/ChannelSearchResults.tsx:694
 #: src/components/modals/channel_tabs/ChannelInvitesTab.tsx:231
 #: src/components/modals/channel_tabs/ChannelWebhooksTab.tsx:162
-#: src/components/NetworkErrorScreen.tsx:56
+#: src/components/NetworkErrorScreen.tsx:57
 #: src/components/pages/SsoCallbackPage.tsx:116
 msgid "Try Again"
 msgstr "Probeer opnieuw"
@@ -22226,7 +22222,7 @@ msgstr "Turks"
 msgid "Turn Off All Device Cameras"
 msgstr "Alle apparaatcamera's uitzetten"
 
-#: src/components/pages/OAuthAuthorizePage.tsx:817
+#: src/components/pages/OAuthAuthorizePage.tsx:786
 msgid "Turn off anything you're not comfortable with. Some features may stop working."
 msgstr "Zet alles uit waar je je niet prettig bij voelt. Sommige functies werken mogelijk niet meer."
 
@@ -22260,7 +22256,7 @@ msgstr "Stream uitzetten"
 msgid "Turn On Camera"
 msgstr "Camera aanzetten"
 
-#: src/components/pages/OAuthAuthorizePage.tsx:852
+#: src/components/pages/OAuthAuthorizePage.tsx:821
 msgid "Turning off scopes may prevent the app from working correctly."
 msgstr "Het uitzetten van scopes kan ervoor zorgen dat de app niet goed werkt."
 
@@ -22272,11 +22268,11 @@ msgstr "Dit uitzetten verbergt je camera alleen voor jezelf. Anderen in de oproe
 msgid "Turning this off only hides your screen share from your own view. Others in the call can still see your screen."
 msgstr "Dit uitzetten verbergt alleen je scherm delen voor je eigen weergave. Anderen in de oproep kunnen nog steeds je scherm zien."
 
-#: src/components/modals/channel_tabs/ChannelOverviewTab.tsx:471
+#: src/components/modals/channel_tabs/ChannelOverviewTab.tsx:510
 msgid "Tweak this category's basics."
 msgstr "Pas de basisinstellingen van deze categorie aan."
 
-#: src/components/modals/channel_tabs/ChannelOverviewTab.tsx:471
+#: src/components/modals/channel_tabs/ChannelOverviewTab.tsx:510
 msgid "Tweak this channel's basics."
 msgstr "Pas de basisinstellingen van dit kanaal aan."
 
@@ -22299,7 +22295,7 @@ msgstr "twee-factor"
 msgid "Two-factor authentication"
 msgstr "Tweefactorauthenticatie"
 
-#: src/components/modals/tabs/account_security_tab/SecurityTab.tsx:218
+#: src/components/modals/tabs/account_security_tab/SecurityTab.tsx:231
 #: src/components/modals/utils/SettingsSearchIndex.tsx:123
 msgid "Two-Factor Authentication"
 msgstr "Tweefactorauthenticatie"
@@ -22312,7 +22308,7 @@ msgstr "Tweefactorauthenticatie uitgeschakeld"
 msgid "Two-factor authentication enabled"
 msgstr "Tweefactorauthenticatie ingeschakeld"
 
-#: src/components/modals/tabs/account_security_tab/SecurityTab.tsx:228
+#: src/components/modals/tabs/account_security_tab/SecurityTab.tsx:241
 msgid "Two-factor authentication is enabled"
 msgstr "Tweefactorauthenticatie is ingeschakeld"
 
@@ -22405,11 +22401,11 @@ msgstr "Oekraïens"
 msgid "Ultra (1440p)"
 msgstr "Ultra (1440p)"
 
-#: src/actions/InviteActionCreators.tsx:323
+#: src/actions/InviteActionCreators.tsx:346
 msgid "Unable to install emoji pack"
 msgstr "Kan emojipakket niet installeren"
 
-#: src/actions/InviteActionCreators.tsx:324
+#: src/actions/InviteActionCreators.tsx:347
 msgid "Unable to install sticker pack"
 msgstr "Kan stickerpakket niet installeren"
 
@@ -22761,7 +22757,7 @@ msgstr "Ontgrendel HD-schermdelen met Plutonium"
 msgid "Unlock HD Video with Plutonium"
 msgstr "Ontgrendel HD-video met Plutonium"
 
-#: src/components/modals/components/PlutoniumContent.tsx:168
+#: src/components/modals/components/PlutoniumContent.tsx:149
 msgid "Unlock higher limits and exclusive features while supporting an independent communication platform."
 msgstr "Ontgrendel hogere limieten en exclusieve functies terwijl je een onafhankelijk communicatieplatform ondersteunt."
 
@@ -23161,7 +23157,7 @@ msgstr "Toegangsgeluid uploaden"
 msgid "Upload File"
 msgstr "Bestand uploaden"
 
-#: src/components/modals/AddGuildModal.tsx:329
+#: src/components/modals/AddGuildModal.tsx:331
 #: src/components/modals/EditGroupBottomSheet.tsx:214
 #: src/components/modals/EditGroupModal.tsx:195
 #: src/components/modals/guild_tabs/guild_overview_tab/fields/GuildIconUploadField.tsx:97
@@ -23209,7 +23205,7 @@ msgstr "Bezig met uploaden {emojiText}. Dit kan even duren."
 msgid "Uploading Emojis"
 msgstr "Emoji's worden geüpload"
 
-#: src/components/modals/channel_tabs/ChannelOverviewTab.tsx:491
+#: src/components/modals/channel_tabs/ChannelOverviewTab.tsx:530
 #: src/components/modals/ChannelCreateModal.tsx:90
 msgid "URL"
 msgstr "URL"
@@ -23231,7 +23227,7 @@ msgstr "url-waarschuwingen"
 msgid "URLs to download any attachments from your messages"
 msgstr "URL's om bijlagen van je berichten te downloaden"
 
-#: src/components/modals/channel_tabs/ChannelOverviewTab.tsx:183
+#: src/components/modals/channel_tabs/ChannelOverviewTab.tsx:196
 #: src/components/voice/VoiceRegionSelector.tsx:75
 #: src/components/voice/VoiceSettingsMenus.tsx:433
 msgid "US East"
@@ -23254,7 +23250,7 @@ msgstr "Gebruik Werkelijk"
 msgid "Use actual premium type"
 msgstr "Gebruik werkelijke premiumtype"
 
-#: src/components/modals/tabs/account_security_tab/SecurityTab.tsx:230
+#: src/components/modals/tabs/account_security_tab/SecurityTab.tsx:243
 msgid "Use an authenticator app to generate codes for two-factor authentication"
 msgstr "Gebruik een authenticator-app om codes voor tweefactorauthenticatie te genereren"
 
@@ -23323,7 +23319,7 @@ msgstr "Gebruik Globaal Profiel"
 msgid "Use light theme"
 msgstr "Gebruik licht thema"
 
-#: src/components/modals/tabs/account_security_tab/SecurityTab.tsx:277
+#: src/components/modals/tabs/account_security_tab/SecurityTab.tsx:290
 msgid "Use passkeys for passwordless sign-in and two-factor authentication"
 msgstr "Gebruik passkeys voor wachtwoordloos inloggen en tweefactorauthenticatie"
 
@@ -23864,7 +23860,7 @@ msgstr "Bekijk en beheer verbannen gebruikers."
 msgid "View and manage every webhook configured across your community."
 msgstr "Bekijk en beheer elke webhook die in je community is geconfigureerd."
 
-#: src/components/modals/tabs/account_security_tab/SecurityTab.tsx:260
+#: src/components/modals/tabs/account_security_tab/SecurityTab.tsx:273
 msgid "View and manage your backup codes for account recovery"
 msgstr "Bekijk en beheer je reservecodes voor accountherstel"
 
@@ -23889,7 +23885,7 @@ msgstr "Gesprekbediening bekijken"
 msgid "View Channel"
 msgstr "Kanaal bekijken"
 
-#: src/components/modals/tabs/account_security_tab/SecurityTab.tsx:268
+#: src/components/modals/tabs/account_security_tab/SecurityTab.tsx:281
 msgid "View Codes"
 msgstr "Codes bekijken"
 
@@ -24004,7 +24000,8 @@ msgstr "VIP-stem"
 msgid "visibility"
 msgstr "zichtbaarheid"
 
-#: src/components/modals/components/plutonium/SubscriptionCard.tsx:121
+#: src/components/modals/components/FeatureComparisonTable.tsx:149
+#: src/components/modals/components/plutonium/SubscriptionCard.tsx:110
 #: src/utils/modals/guild_tabs/GuildAuditLogTabUtils.tsx:283
 msgid "Visionary"
 msgstr "Visionary"
@@ -24026,7 +24023,7 @@ msgid "Visionary Badge Override"
 msgstr "Visionary Badge Override"
 
 #. placeholder {0}: profile.premiumLifetimeSequence
-#: src/components/popouts/UserProfileBadges.tsx:150
+#: src/components/popouts/UserProfileBadges.tsx:136
 msgid "Visionary ID #{0}"
 msgstr "Visionary ID #{0}"
 
@@ -24175,7 +24172,7 @@ msgstr "Spraakberichtspeler"
 msgid "Voice Mute"
 msgstr "Spraak dempen"
 
-#: src/components/modals/channel_tabs/ChannelOverviewTab.tsx:640
+#: src/components/modals/channel_tabs/ChannelOverviewTab.tsx:679
 msgid "Voice Quality"
 msgstr "Spraakkwaliteit"
 
@@ -24184,7 +24181,7 @@ msgstr "Spraakkwaliteit"
 msgid "Voice recording is not supported in this browser."
 msgstr "Spraakopname wordt niet ondersteund in deze browser."
 
-#: src/components/modals/channel_tabs/ChannelOverviewTab.tsx:728
+#: src/components/modals/channel_tabs/ChannelOverviewTab.tsx:767
 #: src/components/voice/VoiceSettingsMenus.tsx:483
 msgid "Voice Region"
 msgstr "Spraakregio"
@@ -24218,7 +24215,7 @@ msgstr "Volume"
 msgid "Volume Control"
 msgstr "Volumeregeling"
 
-#: src/components/modals/AddGuildModal.tsx:154
+#: src/components/modals/AddGuildModal.tsx:155
 msgid "Volunteer Heroes"
 msgstr "Vrijwillige helden"
 
@@ -24401,8 +24398,8 @@ msgid "We'll verify your new email with a one-time code."
 msgstr "We zullen je nieuwe e-mail verifiëren met een eenmalige code."
 
 #: src/components/NetworkErrorScreen.tsx:39
-msgid "We're having trouble connecting to Fluxer's servers. This could be a temporary network issue or scheduled maintenance."
-msgstr "We hebben moeite om verbinding te maken met de servers van Fluxer. Dit kan een tijdelijk netwerkprobleem of gepland onderhoud zijn."
+msgid "We're having trouble connecting to Echowire's servers. This could be a temporary network issue or scheduled maintenance."
+msgstr "We're having trouble connecting to Echowire's servers. This could be a temporary network issue or scheduled maintenance."
 
 #: src/components/modals/tabs/DevicesTab.tsx:234
 msgid "We're having trouble connecting to the space-time continuum. Please check your connection and try again."
@@ -24488,7 +24485,7 @@ msgstr "Webhooks"
 msgid "Webhooks updated"
 msgstr "Webhooks bijgewerkt"
 
-#: src/components/modals/AddGuildModal.tsx:160
+#: src/components/modals/AddGuildModal.tsx:161
 msgid "Weekend Warriors"
 msgstr "Weekend Warriors"
 
@@ -24698,7 +24695,7 @@ msgstr "Whoa, dit is zwaar."
 msgid "Why are you reporting this?"
 msgstr "Waarom rapporteer je dit?"
 
-#: src/components/pages/OAuthAuthorizePage.tsx:757
+#: src/components/pages/OAuthAuthorizePage.tsx:726
 msgid "Will send you back to"
 msgstr "Stuurt je terug naar"
 
@@ -24718,7 +24715,7 @@ msgstr "Met Plutonium kun je geanimeerde avatars en banners gebruiken (in GIF, A
 msgid "Withdraw"
 msgstr "Terugtrekken"
 
-#: src/components/modals/AddGuildModal.tsx:182
+#: src/components/modals/AddGuildModal.tsx:183
 msgid "Work Friends"
 msgstr "Werkvrienden"
 
@@ -24893,7 +24890,7 @@ msgstr "Je kunt slechts 1 bestand tegelijk uploaden. Probeer het opnieuw met min
 msgid "You can pin messages in this conversation for everyone to see."
 msgstr "Je kunt berichten in dit gesprek vastzetten zodat iedereen ze kan zien."
 
-#: src/components/modals/components/plutonium/SubscriptionCard.tsx:176
+#: src/components/modals/components/plutonium/SubscriptionCard.tsx:165
 msgid "You can redeem additional gift codes to <0>extend</0> your gift time."
 msgstr "Je kunt extra giftcodes inwisselen om <0>je giftijd</0> te verlengen."
 
@@ -24933,7 +24930,7 @@ msgstr "Je kunt niet met reacties in zoekresultaten interacteren omdat dit het r
 #: src/components/layout/ChannelItem.tsx:213
 #: src/components/layout/ChannelItem.tsx:400
 #: src/stores/voice/MediaEngineFacade.tsx:168
-#: src/stores/voice/MediaEngineFacade.tsx:828
+#: src/stores/voice/MediaEngineFacade.tsx:899
 msgid "You can't join while you're on timeout."
 msgstr "Je kunt niet deelnemen terwijl je een timeout hebt."
 
@@ -25023,11 +25020,11 @@ msgstr "Je hebt nog geen aangepaste thema-overschrijvingen om te delen."
 msgid "You don't have permission to connect to this voice channel."
 msgstr "Je hebt geen toestemming om verbinding te maken met dit spraakkanaal."
 
-#: src/actions/InviteActionCreators.tsx:320
+#: src/actions/InviteActionCreators.tsx:343
 msgid "You don't have permission to install this emoji pack."
 msgstr "Je hebt geen toestemming om dit emoji-pakket te installeren."
 
-#: src/actions/InviteActionCreators.tsx:321
+#: src/actions/InviteActionCreators.tsx:344
 msgid "You don't have permission to install this sticker pack."
 msgstr "Je hebt geen toestemming om dit stickerpakket te installeren."
 
@@ -25059,23 +25056,23 @@ msgstr "Je hebt een nieuwe giftcode die op je wacht!"
 msgid "You have a new gift code waiting in your Gift Inventory."
 msgstr "Je hebt een nieuwe giftcode die in je Gift Inventory wacht."
 
-#: src/components/modals/components/plutonium/SubscriptionCard.tsx:200
+#: src/components/modals/components/plutonium/SubscriptionCard.tsx:189
 msgid "You have all <0/> for <1>{monthlyPrice}/month</1>."
 msgstr "Je hebt alle <0/> voor <1>{monthlyPrice}/maand</1>."
 
-#: src/components/modals/components/plutonium/SubscriptionCard.tsx:205
+#: src/components/modals/components/plutonium/SubscriptionCard.tsx:194
 msgid "You have all <0/> for <1>{yearlyPrice}/year</1>."
 msgstr "Je hebt alle <0/> voor <1>{yearlyPrice}/jaar</1>."
 
-#: src/components/modals/components/plutonium/SubscriptionCard.tsx:210
+#: src/components/modals/components/plutonium/SubscriptionCard.tsx:199
 msgid "You have all <0/> for your subscription period."
 msgstr "Je hebt alle <0/> voor je abonnementsperiode."
 
-#: src/components/modals/components/plutonium/SubscriptionCard.tsx:195
+#: src/components/modals/components/plutonium/SubscriptionCard.tsx:184
 msgid "You have all <0/> forever. No subscriptions, no renewals."
 msgstr "Je hebt alle <0/> voor altijd. Geen abonnementen, geen verlengingen."
 
-#: src/components/modals/components/plutonium/SubscriptionCard.tsx:170
+#: src/components/modals/components/plutonium/SubscriptionCard.tsx:159
 msgid "You have all <0/> via a <1>gift subscription</1> until <2>{giftEndDate}</2>. It <3>won't renew</3>."
 msgstr "Je hebt alle <0/> via een <1>cadeauabonnement</1> tot <2>{giftEndDate}</2>. Het <3>verlengt niet</3>."
 
@@ -25083,35 +25080,35 @@ msgstr "Je hebt alle <0/> via een <1>cadeauabonnement</1> tot <2>{giftEndDate}</
 msgid "You have blocked {username}. Unblock them to send messages."
 msgstr "Je hebt {username} geblokkeerd. Deblokkeer ze om berichten te sturen."
 
-#: src/actions/InviteActionCreators.tsx:264
+#: src/actions/InviteActionCreators.tsx:287
 msgid "You have created the maximum of {limit} emoji pack. Delete one to create another."
 msgstr "Je hebt het maximum van {limit} emoji-packs aangemaakt. Verwijder er een om een andere te maken."
 
-#: src/actions/InviteActionCreators.tsx:265
+#: src/actions/InviteActionCreators.tsx:288
 msgid "You have created the maximum of {limit} emoji packs. Delete one to create another."
 msgstr "Je hebt het maximum van {limit} emoji-packs aangemaakt. Verwijder er een om een andere te maken."
 
-#: src/actions/InviteActionCreators.tsx:296
+#: src/actions/InviteActionCreators.tsx:319
 msgid "You have created the maximum of {limit} sticker pack. Delete one to create another."
 msgstr "Je hebt het maximum van {limit} sticker-packs aangemaakt. Verwijder er een om een andere te maken."
 
-#: src/actions/InviteActionCreators.tsx:297
+#: src/actions/InviteActionCreators.tsx:320
 msgid "You have created the maximum of {limit} sticker packs. Delete one to create another."
 msgstr "Je hebt het maximum van {limit} sticker-packs aangemaakt. Verwijder er een om een andere te maken."
 
-#: src/actions/InviteActionCreators.tsx:250
+#: src/actions/InviteActionCreators.tsx:273
 msgid "You have installed the maximum of {limit} emoji pack. Remove one to install another."
 msgstr "Je hebt het maximum van {limit} emoji-packs geïnstalleerd. Verwijder er een om een andere te installeren."
 
-#: src/actions/InviteActionCreators.tsx:251
+#: src/actions/InviteActionCreators.tsx:274
 msgid "You have installed the maximum of {limit} emoji packs. Remove one to install another."
 msgstr "Je hebt het maximum van {limit} emoji-packs geïnstalleerd. Verwijder er een om een andere te installeren."
 
-#: src/actions/InviteActionCreators.tsx:282
+#: src/actions/InviteActionCreators.tsx:305
 msgid "You have installed the maximum of {limit} sticker pack. Remove one to install another."
 msgstr "Je hebt het maximum van {limit} sticker-packs geïnstalleerd. Verwijder er een om een andere te installeren."
 
-#: src/actions/InviteActionCreators.tsx:283
+#: src/actions/InviteActionCreators.tsx:306
 msgid "You have installed the maximum of {limit} sticker packs. Remove one to install another."
 msgstr "Je hebt het maximum van {limit} sticker-packs geïnstalleerd. Verwijder er een om een andere te installeren."
 
@@ -25119,19 +25116,19 @@ msgstr "Je hebt het maximum van {limit} sticker-packs geïnstalleerd. Verwijder 
 msgid "You have no friends yet"
 msgstr "Je hebt nog geen vrienden"
 
-#: src/actions/InviteActionCreators.tsx:268
+#: src/actions/InviteActionCreators.tsx:291
 msgid "You have reached the limit for creating emoji packs. Delete one of your packs to create another."
 msgstr "Je hebt de limiet bereikt voor het aanmaken van emoji-packs. Verwijder een van je packs om een nieuwe te maken."
 
-#: src/actions/InviteActionCreators.tsx:300
+#: src/actions/InviteActionCreators.tsx:323
 msgid "You have reached the limit for creating sticker packs. Delete one of your packs to create another."
 msgstr "Je hebt de limiet bereikt voor het aanmaken van stickerpacks. Verwijder een van je packs om een nieuwe te maken."
 
-#: src/actions/InviteActionCreators.tsx:254
+#: src/actions/InviteActionCreators.tsx:277
 msgid "You have reached the limit for installing emoji packs. Remove one of your installed packs to install another."
 msgstr "Je hebt de limiet bereikt voor het installeren van emoji-packs. Verwijder een van je geïnstalleerde packs om een andere te installeren."
 
-#: src/actions/InviteActionCreators.tsx:286
+#: src/actions/InviteActionCreators.tsx:309
 msgid "You have reached the limit for installing sticker packs. Remove one of your installed packs to install another."
 msgstr "Je hebt de limiet bereikt voor het installeren van stickerpacks. Verwijder een van je geïnstalleerde packs om een andere te installeren."
 
@@ -25241,8 +25238,8 @@ msgstr "Je moet je account claimen om berichten te sturen in deze community."
 msgid "You need to verify your email to send messages in this community."
 msgstr "Je moet je e-mailadres verifiëren om berichten te sturen in deze community."
 
-#: src/components/pages/OAuthAuthorizePage.tsx:688
-#: src/components/pages/OAuthAuthorizePage.tsx:948
+#: src/components/pages/OAuthAuthorizePage.tsx:668
+#: src/components/pages/OAuthAuthorizePage.tsx:917
 msgid "You will be taken to <0><1>{redirectHostname}</1></0> after authorizing."
 msgstr "Je wordt na autorisatie naar <0><1>{redirectHostname}</1></0> gebracht."
 
@@ -25260,7 +25257,7 @@ msgstr "Je ontvangt geen meldingen op desktop"
 msgid "You'll appear offline"
 msgstr "Je verschijnt offline"
 
-#: src/components/pages/OAuthAuthorizePage.tsx:906
+#: src/components/pages/OAuthAuthorizePage.tsx:875
 msgid "You'll configure which permissions the bot receives on the next screen."
 msgstr "Je configureert welke permissies de bot ontvangt op het volgende scherm."
 
@@ -25599,11 +25596,11 @@ msgstr "jouw regio"
 msgid "Your stream is still being broadcast"
 msgstr "Je stream wordt nog steeds uitgezonden"
 
-#: src/components/modals/components/plutonium/SubscriptionCard.tsx:156
+#: src/components/modals/components/plutonium/SubscriptionCard.tsx:145
 msgid "Your subscription ended, but you still have all <0/> until <1>{graceDate}</1>. Resubscribe to keep them."
 msgstr "Je abonnement is beëindigd, maar je hebt nog steeds alle <0/> tot <1>{graceDate}</1>. Verleng je abonnement om ze te behouden."
 
-#: src/components/modals/components/plutonium/SubscriptionCard.tsx:145
+#: src/components/modals/components/plutonium/SubscriptionCard.tsx:134
 msgid "Your subscription expired on <0>{expiredDate}</0>. You lost all <1/>. You can reactivate at any time."
 msgstr "Je abonnement is verlopen op <0>{expiredDate}</0>. Je hebt alle <1/> verloren. Je kunt het op elk moment opnieuw activeren."
 
@@ -25619,7 +25616,7 @@ msgstr "Je abonnement is opnieuw geactiveerd!"
 msgid "Your subscription has been set to cancel at the end of your billing period."
 msgstr "Je abonnement is ingesteld om aan het einde van je factureringsperiode te worden opgezegd."
 
-#: src/components/modals/components/plutonium/SubscriptionCard.tsx:188
+#: src/components/modals/components/plutonium/SubscriptionCard.tsx:177
 msgid "Your subscription will cancel on <0>{cancelDate}</0>. You'll lose all <1/> after that date."
 msgstr "Je abonnement wordt opgezegd op <0>{cancelDate}</0>. Je verliest alle <1/> na die datum."
 

@@ -25,6 +25,16 @@ start(_StartType, _StartArgs) ->
     otel_metrics:init(),
     passive_sync_registry:init(),
     guild_counts_cache:init(),
+    guild_ets_utils:ensure_table(guild_circuit_breaker, [
+        named_table, public, set,
+        {read_concurrency, true},
+        {write_concurrency, true}
+    ]),
+    guild_ets_utils:ensure_table(voice_pending_connections_ets, [
+        named_table, public, set,
+        {read_concurrency, true},
+        {write_concurrency, true}
+    ]),
     {ok, Pid} = fluxer_gateway_sup:start_link(),
     Port = fluxer_gateway_env:get(port),
     Dispatch = cowboy_router:compile([

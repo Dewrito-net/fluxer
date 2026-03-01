@@ -33,12 +33,14 @@ export interface BooleanPerk extends BasePerk {
 	type: 'boolean';
 	freeValue: boolean;
 	plutoniumValue: boolean;
+	visionaryValue: boolean;
 }
 
 export interface NumericPerk extends BasePerk {
 	type: 'numeric';
 	freeValue: number;
 	plutoniumValue: number;
+	visionaryValue: number;
 	limitKey?: LimitKey;
 	unit?: 'count' | 'bytes' | 'characters';
 }
@@ -47,6 +49,7 @@ export interface TextPerk extends BasePerk {
 	type: 'text';
 	freeValueI18nKey: string;
 	plutoniumValueI18nKey: string;
+	visionaryValueI18nKey: string;
 }
 
 export type PlutoniumPerk = BooleanPerk | NumericPerk | TextPerk;
@@ -71,6 +74,7 @@ export const PLUTONIUM_PERKS: ReadonlyArray<PlutoniumPerk> = [
 		i18nKey: 'custom_4_digit_username_tag',
 		freeValue: false,
 		plutoniumValue: true,
+		visionaryValue: true,
 	},
 	{
 		id: 'per_guild_profiles',
@@ -79,6 +83,7 @@ export const PLUTONIUM_PERKS: ReadonlyArray<PlutoniumPerk> = [
 		i18nKey: 'per_community_profiles',
 		freeValue: false,
 		plutoniumValue: true,
+		visionaryValue: true,
 	},
 	{
 		id: 'message_scheduling',
@@ -87,6 +92,7 @@ export const PLUTONIUM_PERKS: ReadonlyArray<PlutoniumPerk> = [
 		i18nKey: 'message_scheduling',
 		freeValue: false,
 		plutoniumValue: true,
+		visionaryValue: true,
 	},
 	{
 		id: 'profile_badge',
@@ -95,6 +101,7 @@ export const PLUTONIUM_PERKS: ReadonlyArray<PlutoniumPerk> = [
 		i18nKey: 'profile_badge',
 		freeValue: false,
 		plutoniumValue: true,
+		visionaryValue: true,
 	},
 	{
 		id: 'custom_video_backgrounds',
@@ -103,6 +110,7 @@ export const PLUTONIUM_PERKS: ReadonlyArray<PlutoniumPerk> = [
 		i18nKey: 'custom_video_backgrounds',
 		freeValue: 1,
 		plutoniumValue: 15,
+		visionaryValue: 30,
 		limitKey: 'max_custom_backgrounds',
 		unit: 'count',
 	},
@@ -113,6 +121,7 @@ export const PLUTONIUM_PERKS: ReadonlyArray<PlutoniumPerk> = [
 		i18nKey: 'entrance_sounds',
 		freeValue: false,
 		plutoniumValue: true,
+		visionaryValue: true,
 	},
 	{
 		id: 'max_guilds',
@@ -121,6 +130,7 @@ export const PLUTONIUM_PERKS: ReadonlyArray<PlutoniumPerk> = [
 		i18nKey: 'communities',
 		freeValue: 100,
 		plutoniumValue: 200,
+		visionaryValue: 200,
 		limitKey: 'max_guilds',
 		unit: 'count',
 	},
@@ -131,6 +141,7 @@ export const PLUTONIUM_PERKS: ReadonlyArray<PlutoniumPerk> = [
 		i18nKey: 'message_character_limit',
 		freeValue: 2000,
 		plutoniumValue: 4000,
+		visionaryValue: 4000,
 		limitKey: 'max_message_length',
 		unit: 'characters',
 	},
@@ -141,6 +152,7 @@ export const PLUTONIUM_PERKS: ReadonlyArray<PlutoniumPerk> = [
 		i18nKey: 'bookmarked_messages',
 		freeValue: 50,
 		plutoniumValue: 300,
+		visionaryValue: 500,
 		limitKey: 'max_bookmarks',
 		unit: 'count',
 	},
@@ -151,6 +163,7 @@ export const PLUTONIUM_PERKS: ReadonlyArray<PlutoniumPerk> = [
 		i18nKey: 'file_upload_size',
 		freeValue: 25 * 1024 * 1024,
 		plutoniumValue: 500 * 1024 * 1024,
+		visionaryValue: 500 * 1024 * 1024,
 		limitKey: 'max_attachment_file_size',
 		unit: 'bytes',
 	},
@@ -161,6 +174,7 @@ export const PLUTONIUM_PERKS: ReadonlyArray<PlutoniumPerk> = [
 		i18nKey: 'emoji_sticker_packs',
 		freeValue: false,
 		plutoniumValue: true,
+		visionaryValue: true,
 	},
 	{
 		id: 'max_favorite_memes',
@@ -169,6 +183,7 @@ export const PLUTONIUM_PERKS: ReadonlyArray<PlutoniumPerk> = [
 		i18nKey: 'saved_media',
 		freeValue: 50,
 		plutoniumValue: 500,
+		visionaryValue: 1000,
 		limitKey: 'max_favorite_memes',
 		unit: 'count',
 	},
@@ -179,6 +194,7 @@ export const PLUTONIUM_PERKS: ReadonlyArray<PlutoniumPerk> = [
 		i18nKey: 'use_animated_emojis',
 		freeValue: true,
 		plutoniumValue: true,
+		visionaryValue: true,
 	},
 	{
 		id: 'global_expressions',
@@ -187,6 +203,7 @@ export const PLUTONIUM_PERKS: ReadonlyArray<PlutoniumPerk> = [
 		i18nKey: 'global_emoji_sticker_access',
 		freeValue: false,
 		plutoniumValue: true,
+		visionaryValue: true,
 	},
 	{
 		id: 'video_quality',
@@ -195,6 +212,7 @@ export const PLUTONIUM_PERKS: ReadonlyArray<PlutoniumPerk> = [
 		i18nKey: 'video_quality',
 		freeValueI18nKey: 'video_quality_free',
 		plutoniumValueI18nKey: 'video_quality_premium',
+		visionaryValueI18nKey: 'video_quality_premium',
 	},
 	{
 		id: 'animated_profile',
@@ -203,6 +221,7 @@ export const PLUTONIUM_PERKS: ReadonlyArray<PlutoniumPerk> = [
 		i18nKey: 'animated_avatars_and_banners',
 		freeValue: false,
 		plutoniumValue: true,
+		visionaryValue: true,
 	},
 	{
 		id: 'early_access',
@@ -211,6 +230,7 @@ export const PLUTONIUM_PERKS: ReadonlyArray<PlutoniumPerk> = [
 		i18nKey: 'early_access',
 		freeValue: false,
 		plutoniumValue: true,
+		visionaryValue: true,
 	},
 	{
 		id: 'custom_themes',
@@ -219,6 +239,7 @@ export const PLUTONIUM_PERKS: ReadonlyArray<PlutoniumPerk> = [
 		i18nKey: 'custom_themes',
 		freeValue: true,
 		plutoniumValue: true,
+		visionaryValue: true,
 	},
 ] as const;
 

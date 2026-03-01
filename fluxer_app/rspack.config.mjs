@@ -35,7 +35,7 @@ const DIST_DIR = path.join(ROOT_DIR, 'dist');
 const PKGS_DIR = path.join(ROOT_DIR, 'pkgs');
 const PUBLIC_DIR = path.join(ROOT_DIR, 'assets');
 
-const CDN_ENDPOINT = 'https://fluxerstatic.com';
+const CDN_ENDPOINT = process.env.CDN_ENDPOINT || '';
 
 function resolveMode() {
 	const modeIndex = process.argv.indexOf('--mode');
@@ -434,6 +434,11 @@ export default () => {
 					{
 						from: PUBLIC_DIR,
 						to: DIST_DIR,
+						noErrorOnMissing: true,
+					},
+					{
+						from: path.join(ROOT_DIR, 'node_modules/@sapphi-red/web-noise-suppressor/dist'),
+						to: path.join(DIST_DIR, 'audio-worklets'),
 						noErrorOnMissing: true,
 					},
 				],

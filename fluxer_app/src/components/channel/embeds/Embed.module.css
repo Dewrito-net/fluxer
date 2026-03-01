@@ -150,6 +150,7 @@
 	font-size: 0.875rem;
 	line-height: 1.125rem;
 	min-width: 0;
+	overflow: hidden;
 }
 
 .embedFieldName {

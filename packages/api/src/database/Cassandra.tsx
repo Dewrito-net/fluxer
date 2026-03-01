@@ -375,6 +375,15 @@ function getClient(): cassandra.Client {
 		throw new Error('Cassandra client not available in SQLite mode');
 	}
 
+	const consistencyMap: Record<string, cassandra.types.consistencies> = {
+		local_one: cassandra.types.consistencies.localOne,
+		local_quorum: cassandra.types.consistencies.localQuorum,
+		quorum: cassandra.types.consistencies.quorum,
+		one: cassandra.types.consistencies.one,
+		all: cassandra.types.consistencies.all,
+	};
+	const consistency = consistencyMap[Config.cassandra.consistency] ?? cassandra.types.consistencies.localOne;
+
 	const clientOptions: cassandra.ClientOptions = {
 		contactPoints: Config.cassandra.hosts.split(','),
 		keyspace: Config.cassandra.keyspace,
@@ -385,6 +394,9 @@ function getClient(): cassandra.Client {
 			useUndefinedAsUnset: false,
 			useBigIntAsLong: true,
 			useBigIntAsVarint: true,
+		},
+		queryOptions: {
+			consistency,
 		},
 	};
 

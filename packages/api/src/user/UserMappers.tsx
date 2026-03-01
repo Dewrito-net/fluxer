@@ -39,6 +39,7 @@ import {
 	SuspiciousActivityFlags,
 	UNCATEGORIZED_FOLDER_ID,
 	UserFlags,
+	UserPremiumTypes,
 } from '@fluxer/constants/src/UserConstants';
 import type {
 	RelationshipResponse,
@@ -136,6 +137,11 @@ export function mapUserToPrivateResponse(user: User): UserPrivateResponse {
 	}
 	if (isActuallyPremium) {
 		traitSet.add('premium');
+		if (user.premiumType === UserPremiumTypes.LIFETIME) {
+			traitSet.add('visionary');
+		} else if (user.premiumType === UserPremiumTypes.SUBSCRIPTION) {
+			traitSet.add('plutonium');
+		}
 	}
 
 	let requiredActions: Array<string> | undefined;

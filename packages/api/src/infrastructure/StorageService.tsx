@@ -36,7 +36,6 @@ import {
 	ListObjectsV2Command,
 	PutObjectCommand,
 	S3Client,
-	S3ServiceException,
 	UploadPartCommand,
 } from '@aws-sdk/client-s3';
 import {getSignedUrl} from '@aws-sdk/s3-request-presigner';
@@ -125,7 +124,11 @@ export class StorageService implements IStorageService {
 				contentType: response.ContentType ?? '',
 			};
 		} catch (error) {
-			if (error instanceof S3ServiceException && error.name === 'NotFound') {
+			const err = error as Record<string, unknown>;
+			const name = typeof err?.name === 'string' ? err.name : undefined;
+			const code = typeof err?.code === 'string' ? err.code : typeof err?.Code === 'string' ? err.Code : undefined;
+			const id = name ?? code;
+			if (id === 'NotFound' || id === 'NoSuchKey' || id === '404' || (typeof err?.$metadata === 'object' && (err.$metadata as Record<string, unknown>)?.httpStatusCode === 404)) {
 				return null;
 			}
 			throw error;

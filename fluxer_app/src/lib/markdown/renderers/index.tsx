@@ -103,7 +103,7 @@ const RESTRICTED_USER_BIO_FLAGS =
 
 const RESTRICTED_EMBED_DESCRIPTION_FLAGS =
 	STANDARD_FLAGS &
-	~(ParserFlags.ALLOW_HEADINGS | ParserFlags.ALLOW_TABLES | ParserFlags.ALLOW_ALERTS | ParserFlags.ALLOW_AUTOLINKS);
+	~(ParserFlags.ALLOW_HEADINGS | ParserFlags.ALLOW_TABLES | ParserFlags.ALLOW_ALERTS);
 
 export function getParserFlagsForContext(context: MarkdownContext): number {
 	switch (context) {

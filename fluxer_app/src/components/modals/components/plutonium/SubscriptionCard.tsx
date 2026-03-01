@@ -25,7 +25,6 @@ import {Tooltip} from '@app/components/uikit/tooltip/Tooltip';
 import type {UserRecord} from '@app/records/UserRecord';
 import {getFormattedLongDate} from '@fluxer/date_utils/src/DateFormatting';
 import {Trans, useLingui} from '@lingui/react/macro';
-import {DotsThreeIcon} from '@phosphor-icons/react';
 import {clsx} from 'clsx';
 import {observer} from 'mobx-react-lite';
 import type React from 'react';
@@ -48,17 +47,12 @@ interface SubscriptionCardProps {
 	loadingPortal: boolean;
 	loadingCancel: boolean;
 	loadingReactivate: boolean;
-	loadingRejoinCommunity: boolean;
-	isCommunityMenuOpen: boolean;
-	communityButtonRef: React.RefObject<HTMLButtonElement | null>;
 	scrollToPerks: () => void;
 	handlePerksKeyDown: (event: React.KeyboardEvent<HTMLSpanElement>) => void;
 	navigateToRedeemGift: () => void;
 	handleOpenCustomerPortal: () => void;
 	handleReactivateSubscription: () => void;
 	handleCancelSubscription: () => void;
-	handleCommunityButtonPointerDown: (event: React.PointerEvent) => void;
-	handleCommunityButtonClick: (event: React.MouseEvent<HTMLButtonElement>) => void;
 	purchaseDisabled?: boolean;
 	purchaseDisabledTooltip?: React.ReactNode;
 }
@@ -82,17 +76,12 @@ export const SubscriptionCard: React.FC<SubscriptionCardProps> = observer(
 		loadingPortal,
 		loadingCancel,
 		loadingReactivate,
-		loadingRejoinCommunity,
-		isCommunityMenuOpen,
-		communityButtonRef,
 		scrollToPerks,
 		handlePerksKeyDown,
 		navigateToRedeemGift,
 		handleOpenCustomerPortal,
 		handleReactivateSubscription,
 		handleCancelSubscription,
-		handleCommunityButtonPointerDown,
-		handleCommunityButtonClick,
 		purchaseDisabled = false,
 		purchaseDisabledTooltip,
 	}) => {
@@ -274,21 +263,6 @@ export const SubscriptionCard: React.FC<SubscriptionCardProps> = observer(
 										'manage-reactivate',
 										purchaseDisabled && shouldUseReactivateQuickAction,
 									)}
-
-								{isVisionary && (
-									<Button
-										ref={communityButtonRef}
-										variant="inverted"
-										onPointerDownCapture={handleCommunityButtonPointerDown}
-										onClick={handleCommunityButtonClick}
-										submitting={loadingRejoinCommunity}
-										small
-										className={clsx(styles.actionButton, isCommunityMenuOpen && styles.communityButtonActive)}
-										leftIcon={<DotsThreeIcon weight="bold" className={styles.iconSmall} />}
-									>
-										<Trans>Join Community</Trans>
-									</Button>
-								)}
 
 								{shouldUseCancelQuickAction && (
 									<Button

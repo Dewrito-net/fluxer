@@ -50,6 +50,7 @@ function createRegionAvailability({
 		},
 		serverCount: 1,
 		activeServerCount: 1,
+		pingEndpoint: null,
 	};
 }
 

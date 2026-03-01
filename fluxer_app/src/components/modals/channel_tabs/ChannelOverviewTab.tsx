@@ -94,11 +94,19 @@ interface RtcRegionOption extends SelectOption<string | null> {
 
 interface ExtendedOptionProps extends OptionProps<RtcRegionOption, boolean, GroupBase<RtcRegionOption>> {
 	getRegionDisplayName: (regionId: string, regionName: string) => string;
+	latencies: Map<string, number | null>;
 }
 
 interface ExtendedSingleValueProps extends SingleValueProps<RtcRegionOption, boolean, GroupBase<RtcRegionOption>> {
 	getRegionDisplayName: (regionId: string, regionName: string) => string;
+	latencies: Map<string, number | null>;
 }
+
+const LatencyBadge: React.FC<{latency: number | null | undefined}> = ({latency}) => {
+	if (latency == null) return null;
+	const color = latency < 80 ? 'var(--status-online)' : latency < 150 ? 'var(--status-idle)' : 'var(--status-dnd)';
+	return <span className={styles.latencyBadge} style={{color}}>{latency}ms</span>;
+};
 
 const RtcRegionOptionComponent = observer((props: ExtendedOptionProps) => {
 	const {region, label} = props.data;
@@ -111,11 +119,13 @@ const RtcRegionOptionComponent = observer((props: ExtendedOptionProps) => {
 	}
 
 	const displayName = props.getRegionDisplayName(region.id, region.name);
+	const latency = props.latencies.get(region.id);
 	return (
 		<components.Option {...props}>
 			<div className={styles.regionOption}>
 				<img src={EmojiUtils.getEmojiURL(region.emoji) ?? undefined} alt={displayName} className={styles.regionEmoji} />
 				<span>{displayName}</span>
+				<LatencyBadge latency={latency} />
 			</div>
 		</components.Option>
 	);
@@ -132,11 +142,13 @@ const RtcRegionSingleValue = observer((props: ExtendedSingleValueProps) => {
 	}
 
 	const displayName = props.getRegionDisplayName(region.id, region.name);
+	const latency = props.latencies.get(region.id);
 	return (
 		<components.SingleValue {...props}>
 			<div className={styles.regionOption}>
 				<img src={EmojiUtils.getEmojiURL(region.emoji) ?? undefined} alt={displayName} className={styles.regionEmoji} />
 				<span>{displayName}</span>
+				<LatencyBadge latency={latency} />
 			</div>
 		</components.SingleValue>
 	);
@@ -154,6 +166,7 @@ const ChannelOverviewTab: React.FC<{channelId: string}> = observer(({channelId})
 	const isVoiceChannel = channel?.type === ChannelTypes.GUILD_VOICE;
 	const [rtcRegions, setRtcRegions] = useState<Array<ChannelRtcRegion>>([]);
 	const [isLoadingRegions, setIsLoadingRegions] = useState(false);
+	const [regionLatencies, setRegionLatencies] = useState<Map<string, number | null>>(new Map());
 
 	const slowmodeOptions = useMemo(
 		() => [
@@ -231,6 +244,32 @@ const ChannelOverviewTab: React.FC<{channelId: string}> = observer(({channelId})
 			cancelled = true;
 		};
 	}, [canUpdateRtcRegion, channelId, isVoiceChannel]);
+
+	useEffect(() => {
+		if (rtcRegions.length === 0) return;
+		let cancelled = false;
+
+		const measureLatency = async (region: ChannelRtcRegion): Promise<[string, number | null]> => {
+			if (!region.ping_endpoint) return [region.id, null];
+			try {
+				const start = performance.now();
+				await fetch(region.ping_endpoint, {mode: 'cors', cache: 'no-store'});
+				const latency = Math.round(performance.now() - start);
+				return [region.id, latency];
+			} catch {
+				return [region.id, null];
+			}
+		};
+
+		Promise.all(rtcRegions.map(measureLatency)).then((results) => {
+			if (cancelled) return;
+			setRegionLatencies(new Map(results));
+		});
+
+		return () => {
+			cancelled = true;
+		};
+	}, [rtcRegions]);
 
 	useEffect(() => {
 		if (!channel) return;
@@ -705,11 +744,11 @@ const ChannelOverviewTab: React.FC<{channelId: string}> = observer(({channelId})
 								control={form.control}
 								render={({field}) => {
 									const RtcRegionOptionWrapper = observer((props: OptionProps<RtcRegionOption>) => {
-										const wrappedProps: ExtendedOptionProps = {...props, getRegionDisplayName};
+										const wrappedProps: ExtendedOptionProps = {...props, getRegionDisplayName, latencies: regionLatencies};
 										return React.createElement(RtcRegionOptionComponent, wrappedProps);
 									});
 									const RtcRegionSingleValueWrapper = observer((props: SingleValueProps<RtcRegionOption>) => {
-										const wrappedProps: ExtendedSingleValueProps = {...props, getRegionDisplayName};
+										const wrappedProps: ExtendedSingleValueProps = {...props, getRegionDisplayName, latencies: regionLatencies};
 										return React.createElement(RtcRegionSingleValue, wrappedProps);
 									});
 

@@ -27,7 +27,7 @@ interface OpenOptions {
 }
 
 export function open(optionsOrDefaultGiftMode: OpenOptions | boolean = {}): void {
-	if (RuntimeConfigStore.isSelfHosted()) {
+	if (!RuntimeConfigStore.features.stripe_enabled) {
 		return;
 	}
 

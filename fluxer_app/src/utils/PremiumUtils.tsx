@@ -20,5 +20,5 @@
 import RuntimeConfigStore from '@app/stores/RuntimeConfigStore';
 
 export function shouldShowPremiumFeatures(): boolean {
-	return !RuntimeConfigStore.isSelfHosted();
+	return RuntimeConfigStore.features.stripe_enabled;
 }

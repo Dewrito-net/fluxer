@@ -49,6 +49,7 @@ import type {VoiceState} from '@app/types/gateway/GatewayVoiceTypes';
 import {ensureNativePermission} from '@app/utils/NativePermissions';
 import {isDesktop} from '@app/utils/NativeUtils';
 import {SoundType} from '@app/utils/SoundUtils';
+import {createAudioProcessor, getActiveProcessor, isAudioProcessingEnabled, rebuildActiveProcessor} from '@app/utils/AudioProcessor';
 import {applyBackgroundProcessor} from '@app/utils/VideoBackgroundProcessor';
 import {voiceVolumePercentToTrackVolume} from '@app/utils/VoiceVolumeUtils';
 import type {
@@ -185,6 +186,7 @@ class VoiceMediaManager {
 				...(audioBitrate && {audioBitrate}),
 			});
 			this.applyLocalInputVolume(room);
+			await this.applyAudioProcessor(room);
 
 			MediaPermissionStore.updateMicrophonePermissionGranted();
 			logger.info('Successfully enabled microphone');
@@ -381,6 +383,37 @@ class VoiceMediaManager {
 			}
 			track.setVolume(localInputVolume);
 		});
+	}
+
+	async applyAudioProcessor(room: Room | null): Promise<void> {
+		if (!room?.localParticipant) return;
+
+		const publications = Array.from(room.localParticipant.audioTrackPublications.values());
+		const audioPublication = publications.find((pub) => pub.source === Track.Source.Microphone);
+		const track = audioPublication?.track as LocalAudioTrack | undefined;
+		if (!track) return;
+
+		try {
+			if (isAudioProcessingEnabled()) {
+				const existing = getActiveProcessor();
+				if (existing) {
+					await rebuildActiveProcessor();
+					logger.info('Rebuilt audio processing chain');
+				} else {
+					const processor = createAudioProcessor();
+					await track.setProcessor(processor);
+					logger.info('Applied audio processor');
+				}
+			} else {
+				const existing = getActiveProcessor();
+				if (existing) {
+					await track.stopProcessor();
+					logger.info('Removed audio processor');
+				}
+			}
+		} catch (error) {
+			logger.error('Failed to apply audio processor', error);
+		}
 	}
 
 	setLocalVideoDisabled(identity: string, disabled: boolean, room: Room | null, connectionId: string | null): void {

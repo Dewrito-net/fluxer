@@ -107,7 +107,14 @@ get_guild_state(UserId, State) ->
             undefined -> [];
             M -> [M]
         end,
-    VoiceStates = guild_voice:get_voice_states_list(State),
+    VoiceStates = case guild_voice_server:get_cached_voice_states_list(GuildId) of
+        [] ->
+            %% ETS cache empty — try live KeyDB fetch (failover scenario)
+            KeyDbStates = guild_voice_server:fetch_keydb_voice_states(GuildId),
+            maps:values(KeyDbStates);
+        Cached ->
+            Cached
+    end,
     VoiceMembers = voice_members_from_states(VoiceStates, AllMembers),
     Members = merge_members(OwnMemberList, VoiceMembers),
     MemberCount = maps:get(member_count, State, length(AllMembers)),

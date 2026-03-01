@@ -31,7 +31,7 @@ export const PurchaseDisclaimer = observer(
 				<Trans>
 					By purchasing, you agreed to our <ExternalLink href={Routes.terms()}>Terms of Service</ExternalLink> and{' '}
 					<ExternalLink href={Routes.privacy()}>Privacy Policy</ExternalLink>. All purchases are refundable within 14
-					days by emailing <ExternalLink href="mailto:support@fluxer.app">support@fluxer.app</ExternalLink>. Chargebacks
+					days by emailing <ExternalLink href="mailto:support@echowire.org">support@echowire.org</ExternalLink>. Chargebacks
 					result in permanent account bans — if you want a refund, we're more than happy to give you one if you contact
 					us first! Payment information is securely handled by Stripe — we never have access to your full card number.
 				</Trans>
@@ -39,7 +39,7 @@ export const PurchaseDisclaimer = observer(
 				<Trans>
 					By purchasing, you agree to our <ExternalLink href={Routes.terms()}>Terms of Service</ExternalLink> and{' '}
 					<ExternalLink href={Routes.privacy()}>Privacy Policy</ExternalLink>. All purchases are refundable within 14
-					days by emailing <ExternalLink href="mailto:support@fluxer.app">support@fluxer.app</ExternalLink>. Chargebacks
+					days by emailing <ExternalLink href="mailto:support@echowire.org">support@echowire.org</ExternalLink>. Chargebacks
 					result in permanent account bans — if you want a refund, we're more than happy to give you one if you contact
 					us first! Payment information is securely handled by Stripe — we never have access to your full card number.
 				</Trans>

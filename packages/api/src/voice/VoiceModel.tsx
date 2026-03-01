@@ -70,4 +70,5 @@ export interface VoiceRegionAvailability extends VoiceRegionMetadata {
 	restrictions: VoiceRestriction;
 	serverCount: number;
 	activeServerCount: number;
+	pingEndpoint: string | null;
 }

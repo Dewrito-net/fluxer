@@ -40,6 +40,7 @@ import RuntimeConfigStore from '@app/stores/RuntimeConfigStore';
 import RuntimeCrashStore from '@app/stores/RuntimeCrashStore';
 import SelectedGuildStore from '@app/stores/SelectedGuildStore';
 import TypingStore from '@app/stores/TypingStore';
+import UpdaterStore from '@app/stores/UpdaterStore';
 import MediaEngineStore from '@app/stores/voice/MediaEngineFacade';
 import {getGatewayClientProperties} from '@app/utils/ClientInfoUtils';
 import {DEFAULT_API_VERSION, FAVORITES_GUILD_ID} from '@fluxer/constants/src/AppConstants';
@@ -480,6 +481,7 @@ class GatewayConnectionStore {
 		LocalPresenceStore.updatePresence();
 		TypingStore.reset();
 		QuickSwitcherStore.recomputeIfOpen();
+		UpdaterStore.checkForUpdates(true);
 
 		this.flushPendingGuildSync();
 	}
@@ -495,6 +497,7 @@ class GatewayConnectionStore {
 		LocalPresenceStore.updatePresence();
 		TypingStore.reset();
 		QuickSwitcherStore.recomputeIfOpen();
+		UpdaterStore.checkForUpdates(true);
 
 		this.flushPendingGuildSync();
 	}

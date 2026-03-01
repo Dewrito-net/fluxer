@@ -134,12 +134,12 @@ msgid "{0} of {totalAttachments}"
 msgstr "{0} dari {totalAttachments}"
 
 #. placeholder {0}: passkeys.length
-#: src/components/modals/tabs/account_security_tab/SecurityTab.tsx:288
+#: src/components/modals/tabs/account_security_tab/SecurityTab.tsx:301
 msgid "{0} passkey registered (max 10)"
 msgstr "{0} kunci akses terdaftar (maks 10)"
 
 #. placeholder {0}: passkeys.length
-#: src/components/modals/tabs/account_security_tab/SecurityTab.tsx:289
+#: src/components/modals/tabs/account_security_tab/SecurityTab.tsx:302
 msgid "{0} passkeys registered (max 10)"
 msgstr "{0} kunci akses terdaftar (maks 10)"
 
@@ -449,7 +449,7 @@ msgstr "{baseDescription} Batas ini dikonfigurasi oleh administrator instance An
 msgid "{baseDescription} With Plutonium, your per-file upload limit increases to {0}, plus animated avatars, longer messages, and many other premium features."
 msgstr "{baseDescription} Dengan Plutonium, batas unggah per file Anda meningkat menjadi {0}, ditambah avatar animasi, pesan yang lebih panjang, dan banyak fitur premium lainnya."
 
-#: src/components/pages/OAuthAuthorizePage.tsx:743
+#: src/components/pages/OAuthAuthorizePage.tsx:712
 msgid "{clientLabel} wants to connect"
 msgstr "{clientLabel} ingin terhubung"
 
@@ -492,7 +492,7 @@ msgstr "{currentCount} / {0}"
 msgid "{days} days"
 msgstr "{days} hari"
 
-#: src/components/layout/guild_list/GuildListDMItem.tsx:199
+#: src/components/layout/guild_list/GuildListDMItem.tsx:198
 msgid "{displayName} (selected)"
 msgstr "{displayName} (terpilih)"
 
@@ -883,12 +883,12 @@ msgstr "{v} hadiah"
 msgid "{v} gifts"
 msgstr "{v} hadiah"
 
-#: src/components/modals/channel_tabs/ChannelOverviewTab.tsx:655
-#: src/components/modals/channel_tabs/ChannelOverviewTab.tsx:656
+#: src/components/modals/channel_tabs/ChannelOverviewTab.tsx:694
+#: src/components/modals/channel_tabs/ChannelOverviewTab.tsx:695
 msgid "{value} kbps"
 msgstr "{value} kbps"
 
-#: src/components/modals/channel_tabs/ChannelOverviewTab.tsx:688
+#: src/components/modals/channel_tabs/ChannelOverviewTab.tsx:727
 msgid "{value} participants"
 msgstr "{value} peserta"
 
@@ -1088,7 +1088,7 @@ msgstr "<0>Membuka pembisuan</0> anggota tersebut."
 msgid "<0>Unmuted</0> the member."
 msgstr "<0>Membuka pembisuan</0> anggota tersebut."
 
-#: src/components/modals/tabs/account_security_tab/SecurityTab.tsx:373
+#: src/components/modals/tabs/account_security_tab/SecurityTab.tsx:397
 msgid "<0>Warning:</0> This will also disable SMS two-factor authentication."
 msgstr "<0>Peringatan:</0> Ini juga akan menonaktifkan autentikasi dua faktor SMS."
 
@@ -1103,7 +1103,7 @@ msgstr "1 hari"
 
 #: src/components/channel/CallMessage.tsx:70
 #: src/components/modals/BanMemberModal.tsx:56
-#: src/components/modals/channel_tabs/ChannelOverviewTab.tsx:171
+#: src/components/modals/channel_tabs/ChannelOverviewTab.tsx:184
 #: src/components/modals/InviteModal.tsx:77
 #: src/components/modals/InviteModal.tsx:201
 #: src/components/modals/PackInviteModal.tsx:48
@@ -1122,7 +1122,7 @@ msgstr "1 kecocokan"
 msgid "1 Member"
 msgstr "1 Anggota"
 
-#: src/components/modals/channel_tabs/ChannelOverviewTab.tsx:165
+#: src/components/modals/channel_tabs/ChannelOverviewTab.tsx:178
 #: src/components/modals/tabs/developer_options_tab/MockingTab.tsx:74
 #: src/utils/modals/guild_tabs/GuildOverviewTabUtils.tsx:61
 msgid "1 minute"
@@ -1192,13 +1192,13 @@ msgstr "Hadiah 1 Tahun"
 msgid "1 Year of Plutonium"
 msgstr "1 Tahun Plutonium"
 
-#: src/components/modals/channel_tabs/ChannelOverviewTab.tsx:168
+#: src/components/modals/channel_tabs/ChannelOverviewTab.tsx:181
 #: src/components/modals/tabs/developer_options_tab/MockingTab.tsx:77
 #: src/components/modals/TimeoutMemberOptions.tsx:36
 msgid "10 minutes"
 msgstr "10 menit"
 
-#: src/components/modals/channel_tabs/ChannelOverviewTab.tsx:162
+#: src/components/modals/channel_tabs/ChannelOverviewTab.tsx:175
 #: src/components/modals/tabs/developer_options_tab/MockingTab.tsx:72
 #: src/constants/TimeWindowPresets.tsx:55
 msgid "10 seconds"
@@ -1249,17 +1249,17 @@ msgstr "1440p"
 msgid "15 FPS"
 msgstr "15 FPS"
 
-#: src/components/modals/channel_tabs/ChannelOverviewTab.tsx:169
+#: src/components/modals/channel_tabs/ChannelOverviewTab.tsx:182
 #: src/constants/TimeWindowPresets.tsx:56
 #: src/utils/modals/guild_tabs/GuildOverviewTabUtils.tsx:63
 msgid "15 minutes"
 msgstr "15 menit"
 
-#: src/components/modals/channel_tabs/ChannelOverviewTab.tsx:163
+#: src/components/modals/channel_tabs/ChannelOverviewTab.tsx:176
 msgid "15 seconds"
 msgstr "15 detik"
 
-#: src/components/modals/channel_tabs/ChannelOverviewTab.tsx:172
+#: src/components/modals/channel_tabs/ChannelOverviewTab.tsx:185
 msgid "2 hours"
 msgstr "2 jam"
 
@@ -1271,7 +1271,7 @@ msgstr "2 anggota (daring)"
 msgid "2 members (typing)"
 msgstr "2 anggota (sedang mengetik)"
 
-#: src/components/modals/channel_tabs/ChannelOverviewTab.tsx:166
+#: src/components/modals/channel_tabs/ChannelOverviewTab.tsx:179
 #: src/components/modals/tabs/developer_options_tab/MockingTab.tsx:75
 msgid "2 minutes"
 msgstr "2 menit"
@@ -1344,7 +1344,7 @@ msgstr "3 Bulan"
 msgid "30 FPS"
 msgstr "30 FPS"
 
-#: src/components/modals/channel_tabs/ChannelOverviewTab.tsx:170
+#: src/components/modals/channel_tabs/ChannelOverviewTab.tsx:183
 #: src/components/modals/InviteModal.tsx:76
 #: src/components/modals/InviteModal.tsx:199
 #: src/components/modals/PackInviteModal.tsx:47
@@ -1353,7 +1353,7 @@ msgstr "30 FPS"
 msgid "30 minutes"
 msgstr "30 menit"
 
-#: src/components/modals/channel_tabs/ChannelOverviewTab.tsx:164
+#: src/components/modals/channel_tabs/ChannelOverviewTab.tsx:177
 #: src/components/modals/tabs/developer_options_tab/MockingTab.tsx:73
 msgid "30 seconds"
 msgstr "30 detik"
@@ -1394,14 +1394,14 @@ msgstr "4K (2160p)"
 msgid "5 days"
 msgstr "5 hari"
 
-#: src/components/modals/channel_tabs/ChannelOverviewTab.tsx:167
+#: src/components/modals/channel_tabs/ChannelOverviewTab.tsx:180
 #: src/components/modals/tabs/developer_options_tab/MockingTab.tsx:76
 #: src/components/modals/TimeoutMemberOptions.tsx:35
 #: src/utils/modals/guild_tabs/GuildOverviewTabUtils.tsx:62
 msgid "5 minutes"
 msgstr "5 menit"
 
-#: src/components/modals/channel_tabs/ChannelOverviewTab.tsx:161
+#: src/components/modals/channel_tabs/ChannelOverviewTab.tsx:174
 msgid "5 seconds"
 msgstr "5 detik"
 
@@ -1415,7 +1415,7 @@ msgstr "5 kali pakai"
 msgid "50 uses"
 msgstr "50 kali pakai"
 
-#: src/components/modals/channel_tabs/ChannelOverviewTab.tsx:173
+#: src/components/modals/channel_tabs/ChannelOverviewTab.tsx:186
 #: src/components/modals/InviteModal.tsx:78
 #: src/components/modals/InviteModal.tsx:203
 #: src/components/modals/PackInviteModal.tsx:49
@@ -1608,8 +1608,8 @@ msgstr "Aksesibilitas"
 msgid "account"
 msgstr "akun"
 
-#: src/components/modals/tabs/account_security_tab/Inline.tsx:73
-#: src/components/modals/tabs/AccountSecurityTab.tsx:77
+#: src/components/modals/tabs/account_security_tab/Inline.tsx:74
+#: src/components/modals/tabs/AccountSecurityTab.tsx:78
 #: src/components/modals/utils/SettingsConstants.tsx:297
 #: src/components/modals/utils/SettingsSectionRegistry.tsx:488
 msgid "Account"
@@ -1642,7 +1642,7 @@ msgstr "Penggantian Status Akun"
 msgid "Account Too New"
 msgstr "Akun Terlalu Baru"
 
-#: src/actions/InviteActionCreators.tsx:182
+#: src/actions/InviteActionCreators.tsx:205
 #: src/components/modals/RequiredActionModal.tsx:143
 #: src/components/modals/RequiredActionModal.tsx:416
 msgid "Account Verification Required"
@@ -1698,7 +1698,7 @@ msgstr "Tindakan"
 msgid "active"
 msgstr "aktif"
 
-#: src/components/modals/components/plutonium/SubscriptionCard.tsx:135
+#: src/components/modals/components/plutonium/SubscriptionCard.tsx:124
 msgid "Active"
 msgstr "Aktif"
 
@@ -1769,8 +1769,8 @@ msgstr "Tambahkan komentar (opsional)"
 
 #: src/components/layout/guild_list/AddGuildButton.tsx:90
 #: src/components/layout/guild_list/AddGuildButton.tsx:95
-#: src/components/modals/AddGuildModal.tsx:80
-#: src/components/modals/AddGuildModal.tsx:86
+#: src/components/modals/AddGuildModal.tsx:81
+#: src/components/modals/AddGuildModal.tsx:87
 msgid "Add a Community"
 msgstr "Tambahkan Komunitas"
 
@@ -1782,7 +1782,7 @@ msgstr "Tambahkan latar belakang kustom"
 msgid "Add a different account"
 msgstr "Tambahkan akun berbeda"
 
-#: src/components/modals/tabs/account_security_tab/SecurityTab.tsx:351
+#: src/components/modals/tabs/account_security_tab/SecurityTab.tsx:375
 msgid "Add a phone number to enable SMS two-factor authentication"
 msgstr "Tambahkan nomor telepon untuk mengaktifkan autentikasi dua faktor SMS"
 
@@ -1791,7 +1791,7 @@ msgstr "Tambahkan nomor telepon untuk mengaktifkan autentikasi dua faktor SMS"
 msgid "Add a tag"
 msgstr "Tambahkan tag"
 
-#: src/components/modals/channel_tabs/ChannelOverviewTab.tsx:520
+#: src/components/modals/channel_tabs/ChannelOverviewTab.tsx:559
 msgid "Add a topic to this channel"
 msgstr "Tambahkan topik ke kanal ini"
 
@@ -1808,7 +1808,7 @@ msgstr "Tambahkan aksi!"
 msgid "Add an account"
 msgstr "Tambahkan akun"
 
-#: src/components/modals/tabs/account_security_tab/SecurityTab.tsx:219
+#: src/components/modals/tabs/account_security_tab/SecurityTab.tsx:232
 msgid "Add an extra layer of security to your account"
 msgstr "Tambahkan lapisan keamanan ekstra ke akun Anda"
 
@@ -1820,7 +1820,7 @@ msgstr "Tambahkan reaksi lain"
 msgid "Add Bluesky connection"
 msgstr "Tambahkan koneksi Bluesky"
 
-#: src/components/pages/OAuthAuthorizePage.tsx:863
+#: src/components/pages/OAuthAuthorizePage.tsx:832
 msgid "Add bot to a community"
 msgstr "Tambahkan bot ke komunitas"
 
@@ -1902,12 +1902,12 @@ msgstr "Tambahkan atau ubah nomor telepon Anda"
 msgid "Add Override"
 msgstr "Tambahkan Penggantian"
 
-#: src/components/modals/tabs/account_security_tab/SecurityTab.tsx:293
+#: src/components/modals/tabs/account_security_tab/SecurityTab.tsx:306
 msgid "Add Passkey"
 msgstr "Tambahkan Kunci Akses"
 
 #: src/components/channel/barriers/BarrierComponents.tsx:198
-#: src/components/modals/tabs/account_security_tab/SecurityTab.tsx:398
+#: src/components/modals/tabs/account_security_tab/SecurityTab.tsx:422
 msgid "Add Phone"
 msgstr "Tambahkan Telepon"
 
@@ -2028,11 +2028,11 @@ msgstr "Ditambahkan ke Favorit"
 msgid "Added to saved media"
 msgstr "Ditambahkan ke media tersimpan"
 
-#: src/components/modals/tabs/account_security_tab/SecurityTab.tsx:316
+#: src/components/modals/tabs/account_security_tab/SecurityTab.tsx:329
 msgid "Added: {createdDate}"
 msgstr "Ditambahkan: {createdDate}"
 
-#: src/components/modals/tabs/account_security_tab/SecurityTab.tsx:312
+#: src/components/modals/tabs/account_security_tab/SecurityTab.tsx:325
 msgid "Added: {createdDate} • Last used: {lastUsedDate}"
 msgstr "Ditambahkan: {createdDate} • Terakhir digunakan: {lastUsedDate}"
 
@@ -2118,7 +2118,7 @@ msgstr "setelah:"
 msgid "Age Restricted"
 msgstr "Terbatas Usia"
 
-#: src/components/modals/channel_tabs/ChannelOverviewTab.tsx:627
+#: src/components/modals/channel_tabs/ChannelOverviewTab.tsx:666
 msgid "Age-restricted (NSFW)"
 msgstr "Terbatas usia (NSFW)"
 
@@ -2569,7 +2569,7 @@ msgstr "Video GIF animasi"
 msgid "Animated icon"
 msgstr "Ikon animasi"
 
-#: src/components/modals/AddGuildModal.tsx:224
+#: src/components/modals/AddGuildModal.tsx:225
 msgid "Animated icons are not supported when creating a new community. Please use JPEG, PNG, or WebP."
 msgstr "Ikon animasi tidak didukung saat membuat komunitas baru. Harap gunakan JPEG, PNG, atau WebP."
 
@@ -2845,7 +2845,7 @@ msgid "Are you sure you want to delete the category \"{categoryName}\"? This can
 msgstr "Apakah Anda yakin ingin menghapus kategori \"{categoryName}\"? Ini tidak dapat dibatalkan."
 
 #. placeholder {0}: passkey.name
-#: src/components/modals/tabs/account_security_tab/SecurityTab.tsx:122
+#: src/components/modals/tabs/account_security_tab/SecurityTab.tsx:135
 msgid "Are you sure you want to delete the passkey <0>{0}</0>?"
 msgstr "Apakah Anda yakin ingin menghapus passkey <0>{0}</0>?"
 
@@ -2865,7 +2865,7 @@ msgstr "Apakah Anda yakin ingin menghapus undangan ini? Tindakan ini tidak dapat
 msgid "Are you sure you want to delete this pack? This cannot be undone."
 msgstr "Apakah Anda yakin ingin menghapus paket ini? Ini tidak dapat dibatalkan."
 
-#: src/components/modals/tabs/account_security_tab/SecurityTab.tsx:127
+#: src/components/modals/tabs/account_security_tab/SecurityTab.tsx:140
 msgid "Are you sure you want to delete this passkey?"
 msgstr "Apakah Anda yakin ingin menghapus passkey ini?"
 
@@ -2877,7 +2877,7 @@ msgstr "Apakah Anda yakin ingin menghapus akun Anda? Tindakan ini akan menjadwal
 msgid "Are you sure you want to disable invites? This will prevent new users from joining through invite links until you re-enable them. Existing members will not be affected."
 msgstr "Apakah Anda yakin ingin menonaktifkan undangan? Ini akan mencegah pengguna baru bergabung melalui tautan undangan hingga Anda mengaktifkannya kembali. Anggota yang ada tidak akan terpengaruh."
 
-#: src/components/modals/tabs/account_security_tab/SecurityTab.tsx:179
+#: src/components/modals/tabs/account_security_tab/SecurityTab.tsx:192
 msgid "Are you sure you want to disable SMS two-factor authentication? This will make your account less secure."
 msgstr "Apakah Anda yakin ingin menonaktifkan autentikasi dua faktor SMS? Ini akan membuat akun Anda kurang aman."
 
@@ -2930,7 +2930,7 @@ msgid "Are you sure you want to remove this connection? This action cannot be un
 msgstr "Apakah Anda yakin ingin menghapus koneksi ini? Tindakan ini tidak dapat dibatalkan."
 
 #. placeholder {0}: user.phone
-#: src/components/modals/tabs/account_security_tab/SecurityTab.tsx:367
+#: src/components/modals/tabs/account_security_tab/SecurityTab.tsx:391
 msgid "Are you sure you want to remove your phone number <0>{0}</0>?"
 msgstr "Apakah Anda yakin ingin menghapus nomor telepon Anda <0>{0}</0>?"
 
@@ -2970,11 +2970,11 @@ msgstr "Apakah Anda yakin ingin membuka blokir {0}?"
 msgid "aria"
 msgstr "aria"
 
-#: src/components/modals/AddGuildModal.tsx:177
+#: src/components/modals/AddGuildModal.tsx:178
 msgid "Art Club"
 msgstr "Klub Seni"
 
-#: src/components/modals/AddGuildModal.tsx:151
+#: src/components/modals/AddGuildModal.tsx:152
 msgid "Artists' Corner"
 msgstr "Pojok Seniman"
 
@@ -3150,7 +3150,7 @@ msgid "Authenticator app"
 msgstr "aplikasi autentikator"
 
 #: src/components/auth/MfaScreen.tsx:69
-#: src/components/modals/tabs/account_security_tab/SecurityTab.tsx:224
+#: src/components/modals/tabs/account_security_tab/SecurityTab.tsx:237
 msgid "Authenticator App"
 msgstr "Aplikasi Autentikator"
 
@@ -3170,21 +3170,21 @@ msgstr "tipe-penulis:"
 msgid "Authorization failed"
 msgstr "Otorisasi gagal"
 
-#: src/components/pages/OAuthAuthorizePage.tsx:534
+#: src/components/pages/OAuthAuthorizePage.tsx:524
 msgid "Authorization Failed"
 msgstr "Otorisasi Gagal"
 
-#: src/components/pages/OAuthAuthorizePage.tsx:469
-#: src/components/pages/OAuthAuthorizePage.tsx:484
+#: src/components/pages/OAuthAuthorizePage.tsx:459
+#: src/components/pages/OAuthAuthorizePage.tsx:474
 msgid "Authorization failed. Please try again."
 msgstr "Otorisasi gagal. Silakan coba lagi."
 
-#: src/components/pages/OAuthAuthorizePage.tsx:740
+#: src/components/pages/OAuthAuthorizePage.tsx:709
 msgid "Authorization request"
 msgstr "Permintaan otorisasi"
 
-#: src/components/pages/OAuthAuthorizePage.tsx:681
-#: src/components/pages/OAuthAuthorizePage.tsx:940
+#: src/components/pages/OAuthAuthorizePage.tsx:661
+#: src/components/pages/OAuthAuthorizePage.tsx:909
 msgid "Authorize"
 msgstr "Otorisasi"
 
@@ -3251,7 +3251,7 @@ msgstr "autocompletion"
 msgid "automatic"
 msgstr "otomatis"
 
-#: src/components/modals/channel_tabs/ChannelOverviewTab.tsx:178
+#: src/components/modals/channel_tabs/ChannelOverviewTab.tsx:191
 #: src/components/voice/VoiceRegionSelector.tsx:96
 #: src/components/voice/VoiceRegionSelector.tsx:110
 #: src/components/voice/VoiceSettingsMenus.tsx:452
@@ -3347,7 +3347,7 @@ msgstr "Ping rata-rata:"
 #: src/components/modals/AddConnectionModal.tsx:312
 #: src/components/modals/PhoneAddModal.tsx:237
 #: src/components/modals/RequiredActionModal.tsx:655
-#: src/components/pages/OAuthAuthorizePage.tsx:671
+#: src/components/pages/OAuthAuthorizePage.tsx:651
 #: src/components/pages/report/ReportStepDetails.tsx:243
 msgid "Back"
 msgstr "Kembali"
@@ -3438,7 +3438,7 @@ msgid "backup codes"
 msgstr "kode cadangan"
 
 #: src/components/modals/BackupCodesModal.tsx:43
-#: src/components/modals/tabs/account_security_tab/SecurityTab.tsx:257
+#: src/components/modals/tabs/account_security_tab/SecurityTab.tsx:270
 #: src/components/modals/utils/SettingsSearchIndex.tsx:140
 msgid "Backup Codes"
 msgstr "Kode Cadangan"
@@ -3499,7 +3499,7 @@ msgstr "Ban Anggota"
 msgid "Ban Members"
 msgstr "Blokir Anggota"
 
-#: src/components/modals/AddGuildModal.tsx:153
+#: src/components/modals/AddGuildModal.tsx:154
 msgid "Band Practice Room"
 msgstr "Ruang Latihan Band"
 
@@ -3680,7 +3680,7 @@ msgstr "Pengguna yang diblokir tidak dapat mengirim permintaan pertemanan atau m
 msgid "Blockquotes"
 msgstr "Kutipan Blok"
 
-#: src/components/modals/channel_tabs/ChannelOverviewTab.tsx:628
+#: src/components/modals/channel_tabs/ChannelOverviewTab.tsx:667
 msgid "Blocks access for users under 18 and shows a content warning for adults."
 msgstr "Memblokir akses untuk pengguna di bawah 18 tahun dan menampilkan peringatan konten untuk orang dewasa."
 
@@ -3703,7 +3703,7 @@ msgstr "Kabur"
 msgid "Blur your background"
 msgstr "Kaburkan latar belakang Anda"
 
-#: src/components/modals/AddGuildModal.tsx:175
+#: src/components/modals/AddGuildModal.tsx:176
 msgid "Board Game Night"
 msgstr "Malam Permainan Papan"
 
@@ -3711,7 +3711,7 @@ msgstr "Malam Permainan Papan"
 msgid "Body font family"
 msgstr "Keluarga font tubuh"
 
-#: src/components/modals/AddGuildModal.tsx:178
+#: src/components/modals/AddGuildModal.tsx:179
 msgid "Book Club"
 msgstr "Klub Buku"
 
@@ -3754,7 +3754,7 @@ msgstr "Ditandai!"
 msgid "Bookmarks"
 msgstr "Penanda"
 
-#: src/components/modals/AddGuildModal.tsx:150
+#: src/components/modals/AddGuildModal.tsx:151
 msgid "Bookworms Anonymous"
 msgstr "Kutu Buku Anonim"
 
@@ -3766,7 +3766,7 @@ msgstr "bot"
 msgid "Bot"
 msgstr "Bot"
 
-#: src/components/pages/OAuthAuthorizePage.tsx:550
+#: src/components/pages/OAuthAuthorizePage.tsx:540
 msgid "Bot added"
 msgstr "Bot ditambahkan"
 
@@ -3794,11 +3794,11 @@ msgstr "Pesan Langsung Bot"
 msgid "Bot Invite"
 msgstr "Undangan Bot"
 
-#: src/components/pages/OAuthAuthorizePage.tsx:761
+#: src/components/pages/OAuthAuthorizePage.tsx:730
 msgid "Bot invite (no external redirect)"
 msgstr "Undangan bot (tanpa pengalihan eksternal)"
 
-#: src/components/pages/OAuthAuthorizePage.tsx:480
+#: src/components/pages/OAuthAuthorizePage.tsx:470
 msgid "Bot is already in this community."
 msgstr "Bot sudah ada di komunitas ini."
 
@@ -3810,7 +3810,7 @@ msgstr "Izin bot"
 msgid "Bot Profile"
 msgstr "Profil Bot"
 
-#: src/components/pages/OAuthAuthorizePage.tsx:770
+#: src/components/pages/OAuthAuthorizePage.tsx:739
 msgid "Bot scope requested"
 msgstr "Ruang lingkup bot diminta"
 
@@ -3920,17 +3920,17 @@ msgstr "Tombol dengan Ikon"
 msgid "Buy Gift"
 msgstr "Beli Hadiah"
 
-#: src/components/modals/AddGuildModal.tsx:360
+#: src/components/modals/AddGuildModal.tsx:362
 msgid "By creating a community, you agree to follow and uphold the <0>Fluxer Community Guidelines</0>."
 msgstr "Dengan membuat komunitas, Anda setuju untuk mengikuti dan menjunjung <0>Panduan Komunitas Fluxer</0>."
 
 #: src/components/modals/components/PurchaseDisclaimer.tsx:39
-msgid "By purchasing, you agree to our <0>Terms of Service</0> and <1>Privacy Policy</1>. All purchases are refundable within 14 days by emailing <2>support@fluxer.app</2>. Chargebacks result in permanent account bans — if you want a refund, we're more than happy to give you one if you contact us first! Payment information is securely handled by Stripe — we never have access to your full card number."
-msgstr "Dengan membeli, Anda setuju dengan <0>Ketentuan Layanan</0> dan <1>Kebijakan Privasi</1> kami. Semua pembelian dapat dikembalikan dalam 14 hari dengan mengirim email ke <2>support@fluxer.app</2>. Chargeback mengakibatkan larangan akun permanen — jika Anda ingin pengembalian dana, kami dengan senang hati memberikannya jika Anda menghubungi kami terlebih dahulu! Informasi pembayaran ditangani dengan aman oleh Stripe — kami tidak pernah memiliki akses ke nomor kartu lengkap Anda."
+msgid "By purchasing, you agree to our <0>Terms of Service</0> and <1>Privacy Policy</1>. All purchases are refundable within 14 days by emailing <2>support@echowire.org</2>. Chargebacks result in permanent account bans — if you want a refund, we're more than happy to give you one if you contact us first! Payment information is securely handled by Stripe — we never have access to your full card number."
+msgstr "By purchasing, you agree to our <0>Terms of Service</0> and <1>Privacy Policy</1>. All purchases are refundable within 14 days by emailing <2>support@echowire.org</2>. Chargebacks result in permanent account bans — if you want a refund, we're more than happy to give you one if you contact us first! Payment information is securely handled by Stripe — we never have access to your full card number."
 
 #: src/components/modals/components/PurchaseDisclaimer.tsx:31
-msgid "By purchasing, you agreed to our <0>Terms of Service</0> and <1>Privacy Policy</1>. All purchases are refundable within 14 days by emailing <2>support@fluxer.app</2>. Chargebacks result in permanent account bans — if you want a refund, we're more than happy to give you one if you contact us first! Payment information is securely handled by Stripe — we never have access to your full card number."
-msgstr "Dengan membeli, Anda setuju dengan <0>Ketentuan Layanan</0> dan <1>Kebijakan Privasi</1> kami. Semua pembelian dapat dikembalikan dalam 14 hari dengan mengirim email ke <2>support@fluxer.app</2>. Chargeback mengakibatkan larangan akun permanen — jika Anda ingin pengembalian dana, kami dengan senang hati memberikannya jika Anda menghubungi kami terlebih dahulu! Informasi pembayaran ditangani dengan aman oleh Stripe — kami tidak pernah memiliki akses ke nomor kartu lengkap Anda."
+msgid "By purchasing, you agreed to our <0>Terms of Service</0> and <1>Privacy Policy</1>. All purchases are refundable within 14 days by emailing <2>support@echowire.org</2>. Chargebacks result in permanent account bans — if you want a refund, we're more than happy to give you one if you contact us first! Payment information is securely handled by Stripe — we never have access to your full card number."
+msgstr "By purchasing, you agreed to our <0>Terms of Service</0> and <1>Privacy Policy</1>. All purchases are refundable within 14 days by emailing <2>support@echowire.org</2>. Chargebacks result in permanent account bans — if you want a refund, we're more than happy to give you one if you contact us first! Payment information is securely handled by Stripe — we never have access to your full card number."
 
 #: src/utils/PermissionUtils.tsx:356
 #: src/utils/PermissionUtils.tsx:491
@@ -4065,8 +4065,8 @@ msgstr "Kamera dinonaktifkan ketika ada lebih dari {VOICE_CHANNEL_CAMERA_USER_LI
 #: src/components/modals/AccountDisableModal.tsx:69
 #: src/components/modals/AddConnectionModal.tsx:218
 #: src/components/modals/AddFavoriteMemeModal.tsx:98
-#: src/components/modals/AddGuildModal.tsx:290
-#: src/components/modals/AddGuildModal.tsx:413
+#: src/components/modals/AddGuildModal.tsx:292
+#: src/components/modals/AddGuildModal.tsx:415
 #: src/components/modals/AddGuildStickerModal.tsx:120
 #: src/components/modals/AttachmentEditModal.tsx:122
 #: src/components/modals/BackupCodesRegenerateModal.tsx:79
@@ -4081,7 +4081,7 @@ msgstr "Kamera dinonaktifkan ketika ada lebih dari {VOICE_CHANNEL_CAMERA_USER_LI
 #: src/components/modals/ClaimAccountModal.tsx:219
 #: src/components/modals/components/MobileSettingsView.tsx:219
 #: src/components/modals/components/plutonium/hooks/useCheckoutActions.tsx:110
-#: src/components/modals/components/plutonium/SubscriptionCard.tsx:301
+#: src/components/modals/components/plutonium/SubscriptionCard.tsx:275
 #: src/components/modals/ConfirmModal.tsx:146
 #: src/components/modals/CreateDMModal.tsx:88
 #: src/components/modals/CreateFavoriteCategoryModal.tsx:75
@@ -4132,7 +4132,7 @@ msgstr "Kamera dinonaktifkan ketika ada lebih dari {VOICE_CHANNEL_CAMERA_USER_LI
 #: src/components/modals/ThemeAcceptModal.tsx:177
 #: src/components/modals/TimeoutMemberModal.tsx:211
 #: src/components/modals/TransferOwnershipModal.tsx:85
-#: src/components/pages/OAuthAuthorizePage.tsx:924
+#: src/components/pages/OAuthAuthorizePage.tsx:893
 #: src/components/popouts/ScheduledMessagesContent.tsx:119
 #: src/utils/modals/AnimatedAvifModalUtils.tsx:45
 msgid "Cancel"
@@ -4162,7 +4162,7 @@ msgstr "Batalkan Permintaan"
 msgid "Cancel upload"
 msgstr "Batalkan unggahan"
 
-#: src/components/modals/components/plutonium/SubscriptionCard.tsx:129
+#: src/components/modals/components/plutonium/SubscriptionCard.tsx:118
 msgid "Canceling"
 msgstr "Membatalkan"
 
@@ -4178,11 +4178,11 @@ msgstr "Tidak dapat diedit"
 msgid "Cannot Delete Account"
 msgstr "Tidak Dapat Menghapus Akun"
 
-#: src/actions/InviteActionCreators.tsx:317
+#: src/actions/InviteActionCreators.tsx:340
 msgid "Cannot install emoji pack"
 msgstr "Tidak dapat menginstal paket emoji"
 
-#: src/actions/InviteActionCreators.tsx:318
+#: src/actions/InviteActionCreators.tsx:341
 msgid "Cannot install sticker pack"
 msgstr "Tidak dapat menginstal paket stiker"
 
@@ -4235,7 +4235,7 @@ msgstr "Kategori Penuh"
 msgid "Category ID copied"
 msgstr "ID kategori disalin"
 
-#: src/components/modals/channel_tabs/ChannelOverviewTab.tsx:479
+#: src/components/modals/channel_tabs/ChannelOverviewTab.tsx:518
 #: src/components/modals/CreateFavoriteCategoryModal.tsx:65
 msgid "Category Name"
 msgstr "Nama Kategori"
@@ -4312,7 +4312,7 @@ msgstr "Ubah Nama Panggilan Teman"
 msgid "Change Group Nickname"
 msgstr "Ubah Nama Panggilan Grup"
 
-#: src/components/modals/AddGuildModal.tsx:329
+#: src/components/modals/AddGuildModal.tsx:331
 #: src/components/modals/EditGroupBottomSheet.tsx:214
 #: src/components/modals/EditGroupModal.tsx:195
 msgid "Change Icon"
@@ -4520,7 +4520,7 @@ msgstr "indikator pengetikan daftar saluran"
 msgid "Channel Management"
 msgstr "Manajemen Kanal"
 
-#: src/components/modals/channel_tabs/ChannelOverviewTab.tsx:479
+#: src/components/modals/channel_tabs/ChannelOverviewTab.tsx:518
 msgid "Channel Name"
 msgstr "Nama Kanal"
 
@@ -4579,7 +4579,7 @@ msgstr "Pengaturan Kanal"
 msgid "Channel synced with parent category"
 msgstr "Kanal disinkronkan dengan kategori induk"
 
-#: src/components/modals/channel_tabs/ChannelOverviewTab.tsx:276
+#: src/components/modals/channel_tabs/ChannelOverviewTab.tsx:315
 msgid "Channel topic is too long."
 msgstr "Topik saluran terlalu panjang."
 
@@ -4598,7 +4598,7 @@ msgstr "pemilihan tipe kanal"
 msgid "Channel type: {0}."
 msgstr "Tipe kanal: {0}."
 
-#: src/components/modals/channel_tabs/ChannelOverviewTab.tsx:409
+#: src/components/modals/channel_tabs/ChannelOverviewTab.tsx:448
 msgid "Channel updated"
 msgstr "Kanal diperbarui"
 
@@ -4646,8 +4646,8 @@ msgstr "Skala Font Obrolan"
 
 #: src/components/BootstrapErrorScreen.tsx:60
 #: src/components/NetworkErrorScreen.tsx:45
-msgid "Check our <0>Bluesky (@fluxer.app)</0> for status updates."
-msgstr "Cek <0>Bluesky (@fluxer.app)</0> kami untuk pembaruan status."
+msgid "Check our <0>status page</0> for updates, or email us at <1>support@echowire.org</1>."
+msgstr "Check our <0>status page</0> for updates, or email us at <1>support@echowire.org</1>."
 
 #: src/components/modals/ShareThemeModal.tsx:115
 msgid "Check out my custom theme!"
@@ -4694,7 +4694,7 @@ msgstr "Tionghoa (Tradisional)"
 msgid "Choose"
 msgstr "Pilih"
 
-#: src/components/pages/OAuthAuthorizePage.tsx:877
+#: src/components/pages/OAuthAuthorizePage.tsx:846
 msgid "Choose a community"
 msgstr "Pilih komunitas"
 
@@ -4765,7 +4765,7 @@ msgstr "Pilih cara indikator pengetikan muncul di daftar kanal saat seseorang se
 msgid "Choose the category that best describes your community."
 msgstr "Pilih kategori yang paling menggambarkan komunitas Anda."
 
-#: src/components/pages/OAuthAuthorizePage.tsx:605
+#: src/components/pages/OAuthAuthorizePage.tsx:585
 msgid "Choose what {clientLabel} can do in your community. Uncheck any permissions you don't want to grant."
 msgstr "Pilih apa yang dapat dilakukan {clientLabel} di komunitas Anda. Hapus centang izin apa pun yang tidak ingin Anda berikan."
 
@@ -4808,7 +4808,7 @@ msgstr "Pilih warna aksen profil Anda"
 #: src/components/modals/ClaimAccountModal.tsx:225
 #: src/components/modals/components/UnclaimedAccountAlert.tsx:32
 #: src/components/modals/GiftAcceptModal.tsx:175
-#: src/components/modals/tabs/account_security_tab/SecurityTab.tsx:209
+#: src/components/modals/tabs/account_security_tab/SecurityTab.tsx:222
 #: src/components/modals/tabs/GiftInventoryTab.tsx:243
 msgid "Claim Account"
 msgstr "Klaim Akun"
@@ -4837,7 +4837,7 @@ msgstr "Klaim Akun Anda"
 msgid "Claim your account by adding an email and password. We will send a verification code to confirm your email before finishing."
 msgstr "Klaim akun Anda dengan menambahkan email dan kata sandi. Kami akan mengirim kode verifikasi untuk mengonfirmasi email Anda sebelum menyelesaikan."
 
-#: src/components/modals/tabs/account_security_tab/SecurityTab.tsx:205
+#: src/components/modals/tabs/account_security_tab/SecurityTab.tsx:218
 msgid "Claim your account to access security features like two-factor authentication and passkeys."
 msgstr "Klaim akun Anda untuk mengakses fitur keamanan seperti autentikasi dua faktor dan kunci sandi."
 
@@ -4856,7 +4856,7 @@ msgstr "Klaim akun Anda untuk membuat aplikasi."
 
 #: src/components/layout/ChannelItem.tsx:215
 #: src/components/layout/ChannelItem.tsx:407
-#: src/stores/voice/MediaEngineFacade.tsx:836
+#: src/stores/voice/MediaEngineFacade.tsx:907
 msgid "Claim your account to join this voice channel."
 msgstr "Klaim akunmu untuk bergabung dengan kanal suara ini."
 
@@ -4867,11 +4867,11 @@ msgstr "Klaim akunmu untuk bergabung dengan kanal suara yang bukan milikmu."
 #: src/components/modals/components/plutonium/BottomCTASection.tsx:49
 #: src/components/modals/components/plutonium/GiftSection.tsx:52
 #: src/components/modals/components/plutonium/PricingSection.tsx:54
-#: src/components/modals/components/PlutoniumContent.tsx:99
+#: src/components/modals/components/PlutoniumContent.tsx:80
 msgid "Claim your account to purchase Fluxer Plutonium."
 msgstr "Klaim akun Anda untuk membeli Fluxer Plutonium."
 
-#: src/components/modals/components/plutonium/SubscriptionCard.tsx:104
+#: src/components/modals/components/plutonium/SubscriptionCard.tsx:93
 msgid "Claim your account to purchase or redeem Fluxer Plutonium."
 msgstr "Klaim akun Anda untuk membeli atau menukarkan Fluxer Plutonium."
 
@@ -4901,7 +4901,7 @@ msgstr "Klaim akunmu untuk memulai atau bergabung dalam panggilan 1:1."
 msgid "Claim your gift to activate your premium subscription!"
 msgstr "Klaim hadiah Anda untuk mengaktifkan langganan premium Anda!"
 
-#: src/components/modals/AddGuildModal.tsx:156
+#: src/components/modals/AddGuildModal.tsx:157
 msgid "Class of '24"
 msgstr "Angkatan '24"
 
@@ -5241,11 +5241,11 @@ msgstr "Kode:"
 msgid "codes"
 msgstr "kode"
 
-#: src/components/modals/AddGuildModal.tsx:176
+#: src/components/modals/AddGuildModal.tsx:177
 msgid "Coding Crew"
 msgstr "Kru Pengodean"
 
-#: src/components/modals/AddGuildModal.tsx:165
+#: src/components/modals/AddGuildModal.tsx:166
 msgid "Coffee Chat"
 msgstr "Obrolan Kopi"
 
@@ -5399,7 +5399,7 @@ msgstr "Komunitas terlibat atau memungkinkan pelecehan yang ditargetkan"
 msgid "Community exists solely for spam or fraudulent purposes"
 msgstr "Komunitas hanya ada untuk tujuan spam atau penipuan"
 
-#: src/components/modals/AddGuildModal.tsx:316
+#: src/components/modals/AddGuildModal.tsx:318
 msgid "Community Icon"
 msgstr "Ikon Komunitas"
 
@@ -5445,7 +5445,7 @@ msgstr "Bisukan Komunitas"
 msgid "Community Muted"
 msgstr "Komunitas Dibisukan"
 
-#: src/components/modals/AddGuildModal.tsx:351
+#: src/components/modals/AddGuildModal.tsx:353
 msgid "Community Name"
 msgstr "Nama Komunitas"
 
@@ -5549,6 +5549,11 @@ msgstr "mode kompak"
 msgid "Compact Mode"
 msgstr "Mode Kompak"
 
+#: src/components/modals/components/PlutoniumContent.tsx:127
+#: src/components/modals/components/PlutoniumContent.tsx:219
+msgid "Compare Plans"
+msgstr "Compare Plans"
+
 #: src/components/modals/components/plutonium/hooks/useCheckoutActions.tsx:106
 msgid "Complete Payment"
 msgstr "Selesaikan Pembayaran"
@@ -5577,7 +5582,7 @@ msgstr "Konfigurasikan kanal AFK dan waktu habis"
 msgid "Configure base access for this channel"
 msgstr "Konfigurasikan akses dasar untuk kanal ini"
 
-#: src/components/pages/OAuthAuthorizePage.tsx:602
+#: src/components/pages/OAuthAuthorizePage.tsx:582
 msgid "Configure bot permissions"
 msgstr "Konfigurasikan izin bot"
 
@@ -6227,15 +6232,15 @@ msgstr "Buat"
 msgid "Create & Share"
 msgstr "Buat & Bagikan"
 
-#: src/components/modals/AddGuildModal.tsx:82
+#: src/components/modals/AddGuildModal.tsx:83
 msgid "Create a Community"
 msgstr "Buat Komunitas"
 
-#: src/components/modals/AddGuildModal.tsx:309
+#: src/components/modals/AddGuildModal.tsx:311
 msgid "Create a community for you and your friends to chat."
 msgstr "Buat komunitas untuk Anda dan teman-teman mengobrol."
 
-#: src/components/modals/AddGuildModal.tsx:120
+#: src/components/modals/AddGuildModal.tsx:121
 msgid "Create a new community or join an existing one."
 msgstr "Buat komunitas baru atau bergabung dengan yang sudah ada."
 
@@ -6315,12 +6320,12 @@ msgid "Create Channel"
 msgstr "Buat Kanal"
 
 #: src/components/layout/guild_list/AddGuildButton.tsx:68
-#: src/components/modals/AddGuildModal.tsx:127
-#: src/components/modals/AddGuildModal.tsx:293
+#: src/components/modals/AddGuildModal.tsx:128
+#: src/components/modals/AddGuildModal.tsx:295
 msgid "Create Community"
 msgstr "Buat Komunitas"
 
-#: src/components/modals/AddGuildModal.tsx:312
+#: src/components/modals/AddGuildModal.tsx:314
 msgid "Create community form"
 msgstr "Formulir buat komunitas"
 
@@ -6466,11 +6471,11 @@ msgstr "Dibuat dengan nama {newLabel}."
 msgid "Created:"
 msgstr "Dibuat:"
 
-#: src/components/modals/AddGuildModal.tsx:149
+#: src/components/modals/AddGuildModal.tsx:150
 msgid "Creative Minds Collective"
 msgstr "Creative Minds Collective"
 
-#: src/components/modals/AddGuildModal.tsx:168
+#: src/components/modals/AddGuildModal.tsx:169
 msgid "Creative Writing Club"
 msgstr "Creative Writing Club"
 
@@ -6792,8 +6797,8 @@ msgstr "Bahaya Sekunder"
 msgid "Danger secondary clicked!"
 msgstr "Bahaya sekunder diklik!"
 
-#: src/components/modals/tabs/account_security_tab/Inline.tsx:97
-#: src/components/modals/tabs/AccountSecurityTab.tsx:109
+#: src/components/modals/tabs/account_security_tab/Inline.tsx:100
+#: src/components/modals/tabs/AccountSecurityTab.tsx:112
 #: src/components/modals/tabs/applications_tab/ApplicationDetail.tsx:693
 #: src/components/modals/utils/SettingsConstants.tsx:299
 #: src/components/modals/utils/SettingsSectionRegistry.tsx:529
@@ -7070,7 +7075,7 @@ msgstr "hapus"
 #: src/components/emojis/EmojiListItem.tsx:195
 #: src/components/emojis/EmojiListItem.tsx:252
 #: src/components/emojis/EmojiListItem.tsx:308
-#: src/components/modals/tabs/account_security_tab/SecurityTab.tsx:325
+#: src/components/modals/tabs/account_security_tab/SecurityTab.tsx:338
 #: src/components/modals/tabs/component_gallery_tab/ButtonsTab.tsx:157
 #: src/components/modals/tabs/component_gallery_tab/ButtonsTab.tsx:242
 #: src/components/modals/tabs/component_gallery_tab/index.tsx:165
@@ -7219,8 +7224,8 @@ msgstr "Hapus pesan orang lain. (Penyematan terpisah di bawah.)"
 msgid "Delete Pack"
 msgstr "Hapus Paket"
 
-#: src/components/modals/tabs/account_security_tab/SecurityTab.tsx:118
-#: src/components/modals/tabs/account_security_tab/SecurityTab.tsx:130
+#: src/components/modals/tabs/account_security_tab/SecurityTab.tsx:131
+#: src/components/modals/tabs/account_security_tab/SecurityTab.tsx:143
 msgid "Delete Passkey"
 msgstr "Hapus Passkey"
 
@@ -7414,7 +7419,7 @@ msgstr "Detail"
 msgid "dev"
 msgstr "dev"
 
-#: src/components/modals/AddGuildModal.tsx:152
+#: src/components/modals/AddGuildModal.tsx:153
 msgid "Dev Den"
 msgstr "Dev Den"
 
@@ -7530,8 +7535,8 @@ msgid "disable"
 msgstr "nonaktifkan"
 
 #: src/components/invites/DisableInvitesButton.tsx:60
-#: src/components/modals/tabs/account_security_tab/SecurityTab.tsx:240
-#: src/components/modals/tabs/account_security_tab/SecurityTab.tsx:429
+#: src/components/modals/tabs/account_security_tab/SecurityTab.tsx:253
+#: src/components/modals/tabs/account_security_tab/SecurityTab.tsx:453
 msgid "Disable"
 msgstr "Nonaktifkan"
 
@@ -7590,11 +7595,11 @@ msgstr "Nonaktifkan Popout Gambar-dalam-Gambar"
 msgid "Disable Reduced Motion"
 msgstr "Nonaktifkan Gerakan yang Dikurangi"
 
-#: src/components/modals/tabs/account_security_tab/SecurityTab.tsx:183
+#: src/components/modals/tabs/account_security_tab/SecurityTab.tsx:196
 msgid "Disable SMS 2FA"
 msgstr "Nonaktifkan SMS 2FA"
 
-#: src/components/modals/tabs/account_security_tab/SecurityTab.tsx:177
+#: src/components/modals/tabs/account_security_tab/SecurityTab.tsx:190
 msgid "Disable SMS Two-Factor Authentication"
 msgstr "Nonaktifkan Autentikasi Dua Faktor SMS"
 
@@ -8161,6 +8166,18 @@ msgstr "gema"
 msgid "Echo Cancellation"
 msgstr "Pembatalan Gema"
 
+#: src/components/icons/FluxerIcon.tsx:31
+msgid "Echowire application icon"
+msgstr "Echowire application icon"
+
+#: src/components/icons/FluxerSymbol.tsx:31
+msgid "Echowire application symbol"
+msgstr "Echowire application symbol"
+
+#: src/components/BootstrapErrorScreen.tsx:52
+msgid "Echowire failed to start properly. This could be due to corrupted data or a temporary issue."
+msgstr "Echowire failed to start properly. This could be due to corrupted data or a temporary issue."
+
 #: src/components/modals/tabs/ExpressionPacksTab.tsx:90
 #: src/components/modals/tabs/LinkedAccountsTab.tsx:186
 #: src/components/modals/tabs/LinkedAccountsTab.tsx:187
@@ -8486,7 +8503,7 @@ msgstr "Nama emoji harus setidaknya 2 karakter dan hanya boleh berisi karakter a
 msgid "Emoji pack"
 msgstr "Paket emoji"
 
-#: src/actions/InviteActionCreators.tsx:259
+#: src/actions/InviteActionCreators.tsx:282
 msgid "Emoji pack creation limit reached"
 msgstr "Batas pembuatan paket emoji tercapai"
 
@@ -8494,7 +8511,7 @@ msgstr "Batas pembuatan paket emoji tercapai"
 msgid "Emoji Pack Invite"
 msgstr "Undangan Paket Emoji"
 
-#: src/actions/InviteActionCreators.tsx:245
+#: src/actions/InviteActionCreators.tsx:268
 msgid "Emoji pack limit reached"
 msgstr "Batas paket emoji tercapai"
 
@@ -8531,9 +8548,9 @@ msgstr "status kosong"
 
 #: src/components/invites/DisableInvitesButton.tsx:60
 #: src/components/layout/GuildLayout.tsx:74
-#: src/components/modals/tabs/account_security_tab/SecurityTab.tsx:247
-#: src/components/modals/tabs/account_security_tab/SecurityTab.tsx:435
-#: src/components/modals/tabs/account_security_tab/SecurityTab.tsx:441
+#: src/components/modals/tabs/account_security_tab/SecurityTab.tsx:260
+#: src/components/modals/tabs/account_security_tab/SecurityTab.tsx:459
+#: src/components/modals/tabs/account_security_tab/SecurityTab.tsx:465
 #: src/components/modals/tabs/components/InputMonitoringSection.tsx:85
 msgid "Enable"
 msgstr "Aktifkan"
@@ -8655,15 +8672,15 @@ msgstr "Aktifkan mode self-hosted di sisi klien (menyembunyikan semua UI premium
 msgid "Enable Shift to Expand"
 msgstr "Aktifkan Shift untuk Memperluas"
 
-#: src/components/modals/tabs/account_security_tab/SecurityTab.tsx:156
+#: src/components/modals/tabs/account_security_tab/SecurityTab.tsx:169
 msgid "Enable SMS 2FA"
 msgstr "Aktifkan 2FA SMS"
 
-#: src/components/modals/tabs/account_security_tab/SecurityTab.tsx:418
+#: src/components/modals/tabs/account_security_tab/SecurityTab.tsx:442
 msgid "Enable SMS codes as a backup for your authenticator app"
 msgstr "Aktifkan kode SMS sebagai cadangan untuk aplikasi autentikator Anda"
 
-#: src/components/modals/tabs/account_security_tab/SecurityTab.tsx:149
+#: src/components/modals/tabs/account_security_tab/SecurityTab.tsx:162
 msgid "Enable SMS Two-Factor Authentication"
 msgstr "Aktifkan Autentikasi Dua Faktor SMS"
 
@@ -8821,7 +8838,7 @@ msgstr "Masukkan kode yang kami kirim via email ke alamat baru Anda."
 msgid "Enter the code we sent to your email to verify it. Your password will be set once the code is confirmed."
 msgstr "Masukkan kode yang kami kirim ke email Anda untuk memverifikasinya. Kata sandi Anda akan diatur setelah kode dikonfirmasi."
 
-#: src/components/modals/AddGuildModal.tsx:427
+#: src/components/modals/AddGuildModal.tsx:429
 msgid "Enter the invite link to join a community."
 msgstr "Masukkan tautan undangan untuk bergabung dengan komunitas."
 
@@ -8922,7 +8939,7 @@ msgstr "tekan escape untuk <0><1>batalkan</1></0>"
 msgid "Estonia"
 msgstr "Estonia"
 
-#: src/components/modals/channel_tabs/ChannelOverviewTab.tsx:186
+#: src/components/modals/channel_tabs/ChannelOverviewTab.tsx:199
 #: src/components/voice/VoiceRegionSelector.tsx:78
 #: src/components/voice/VoiceSettingsMenus.tsx:436
 msgid "EU Central"
@@ -9008,7 +9025,7 @@ msgid "Expire After"
 msgstr "Kedaluwarsa Setelah"
 
 #: src/components/accounts/AccountRow.tsx:169
-#: src/components/modals/components/plutonium/SubscriptionCard.tsx:125
+#: src/components/modals/components/plutonium/SubscriptionCard.tsx:114
 #: src/components/modals/GroupInvitesBottomSheet.tsx:110
 msgid "Expired"
 msgstr "Kedaluwarsa"
@@ -9314,11 +9331,11 @@ msgstr "Gagal mengabaikan permintaan pertemanan. Harap coba lagi."
 msgid "Failed to initiate connection"
 msgstr "Gagal untuk memulai koneksi"
 
-#: src/actions/InviteActionCreators.tsx:326
+#: src/actions/InviteActionCreators.tsx:349
 msgid "Failed to install this emoji pack. Please try again later."
 msgstr "Gagal memasang paket emoji ini. Harap coba lagi nanti."
 
-#: src/actions/InviteActionCreators.tsx:327
+#: src/actions/InviteActionCreators.tsx:350
 msgid "Failed to install this sticker pack. Please try again later."
 msgstr "Gagal memasang paket stiker ini. Harap coba lagi nanti."
 
@@ -9381,7 +9398,7 @@ msgstr "Gagal Memuat Stiker"
 msgid "Failed to load vanity URL. Please try again."
 msgstr "Gagal memuat URL vanity. Harap coba lagi."
 
-#: src/components/modals/channel_tabs/ChannelOverviewTab.tsx:223
+#: src/components/modals/channel_tabs/ChannelOverviewTab.tsx:236
 msgid "Failed to load voice regions for this channel."
 msgstr "Gagal memuat wilayah suara untuk kanal ini."
 
@@ -9420,7 +9437,7 @@ msgstr "Gagal menyematkan pesan"
 msgid "Failed to Prepare Emojis"
 msgstr "Gagal Mempersiapkan Emoji"
 
-#: src/components/modals/AddGuildModal.tsx:248
+#: src/components/modals/AddGuildModal.tsx:249
 #: src/components/modals/EditGroupBottomSheet.tsx:106
 #: src/components/modals/EditGroupModal.tsx:99
 #: src/components/modals/guild_tabs/guild_overview_tab/hooks/useGuildImageAssetField.tsx:267
@@ -9660,11 +9677,11 @@ msgstr "palsu"
 msgid "false"
 msgstr "salah"
 
-#: src/components/modals/AddGuildModal.tsx:183
+#: src/components/modals/AddGuildModal.tsx:184
 msgid "Family Chat"
 msgstr "Obrolan Keluarga"
 
-#: src/components/modals/AddGuildModal.tsx:158
+#: src/components/modals/AddGuildModal.tsx:159
 msgid "Family Reunion"
 msgstr "Reuni Keluarga"
 
@@ -9722,7 +9739,7 @@ msgstr "favorit"
 msgid "Favorites"
 msgstr "Favorit"
 
-#: src/components/modals/components/FeatureComparisonTable.tsx:119
+#: src/components/modals/components/FeatureComparisonTable.tsx:138
 msgid "Feature"
 msgstr "Fitur"
 
@@ -9845,7 +9862,7 @@ msgstr "Nama depan dan belakang"
 msgid "First Option"
 msgstr "Pilihan Pertama"
 
-#: src/components/modals/AddGuildModal.tsx:171
+#: src/components/modals/AddGuildModal.tsx:172
 msgid "Fitness Friends"
 msgstr "Teman Kebugaran"
 
@@ -9861,33 +9878,21 @@ msgstr "Nama kanal teks yang fleksibel"
 msgid "Fluxer"
 msgstr "Fluxer"
 
-#: src/components/icons/FluxerIcon.tsx:31
-msgid "Fluxer application icon"
-msgstr "Ikon aplikasi Fluxer"
-
-#: src/components/icons/FluxerSymbol.tsx:31
-msgid "Fluxer application symbol"
-msgstr "Simbol aplikasi Fluxer"
-
 #: src/components/modals/tabs/notifications_tab/PushSettings.tsx:37
 msgid "Fluxer avoids sending push notifications to your mobile devices when you are at your computer. Use this setting to control how long you need to be inactive on desktop for before you receive push notifications, ranging from 1 minute to 10 minutes."
 msgstr "Fluxer menghindari mengirim notifikasi push ke perangkat seluler Anda saat Anda berada di komputer. Gunakan pengaturan ini untuk mengontrol berapa lama Anda perlu tidak aktif di desktop sebelum menerima notifikasi push, mulai dari 1 menit hingga 10 menit."
 
-#: src/components/popouts/UserProfileBadges.tsx:115
+#: src/components/popouts/UserProfileBadges.tsx:101
 msgid "Fluxer Bug Hunter"
 msgstr "Fluxer Bug Hunter"
 
-#: src/components/popouts/UserProfileBadges.tsx:95
+#: src/components/popouts/UserProfileBadges.tsx:81
 msgid "Fluxer Community Team"
 msgstr "Tim Komunitas Fluxer"
 
 #: src/components/modals/tabs/DevicesTab.tsx:99
 msgid "Fluxer Desktop"
 msgstr "Fluxer Desktop"
-
-#: src/components/BootstrapErrorScreen.tsx:52
-msgid "Fluxer failed to start properly. This could be due to corrupted data or a temporary issue."
-msgstr "Fluxer gagal memulai dengan benar. Ini mungkin disebabkan oleh data yang rusak atau masalah sementara."
 
 #: src/stores/NewDeviceMonitoringStore.tsx:187
 msgid "Fluxer has found a new audio input device named <0>{deviceName}</0>. Do you want to switch to it?"
@@ -9945,18 +9950,18 @@ msgstr "Fluxer memerlukan izin Pemantauan Input agar push-to-talk dan pintasan g
 msgid "Fluxer needs permission to monitor keyboard and mouse input so that <0>Push-to-Talk</0> and <1>Global Shortcuts</1> work even when you're in another app or game."
 msgstr "Fluxer memerlukan izin untuk memantau input keyboard dan mouse agar <0>Push-to-Talk</0> dan <1>Pintasan Global</1> tetap berfungsi bahkan saat Anda berada di aplikasi atau game lain."
 
-#: src/components/popouts/UserProfileBadges.tsx:105
+#: src/components/popouts/UserProfileBadges.tsx:91
 msgid "Fluxer Partner"
 msgstr "Mitra Fluxer"
 
-#: src/components/modals/components/PlutoniumContent.tsx:165
+#: src/components/modals/components/PlutoniumContent.tsx:146
 #: src/components/modals/PremiumModal.tsx:34
 #: src/components/modals/utils/SettingsConstants.tsx:124
-#: src/components/popouts/UserProfileBadges.tsx:121
+#: src/components/popouts/UserProfileBadges.tsx:107
 msgid "Fluxer Plutonium"
 msgstr "Fluxer Plutonium"
 
-#: src/components/popouts/UserProfileBadges.tsx:85
+#: src/components/popouts/UserProfileBadges.tsx:71
 msgid "Fluxer Staff"
 msgstr "Staf Fluxer"
 
@@ -10034,7 +10039,7 @@ msgstr "font"
 msgid "Food & Drink"
 msgstr "Makanan & Minuman"
 
-#: src/components/modals/AddGuildModal.tsx:172
+#: src/components/modals/AddGuildModal.tsx:173
 msgid "Foodie Friends"
 msgstr "Teman Foodie"
 
@@ -10248,7 +10253,7 @@ msgstr "Laju bingkai di atas 30 FPS memerlukan Plutonium"
 msgid "France"
 msgstr "Prancis"
 
-#: src/components/modals/components/FeatureComparisonTable.tsx:124
+#: src/components/modals/components/FeatureComparisonTable.tsx:143
 msgid "Free"
 msgstr "Gratis"
 
@@ -10259,11 +10264,6 @@ msgstr "Pengguna Gratis (Tanpa Pembelian)"
 #: src/components/modals/tabs/developer_options_tab/PremiumScenarioOptions.tsx:53
 msgid "Free User (With Purchase History)"
 msgstr "Pengguna Gratis (Dengan Riwayat Pembelian)"
-
-#: src/components/modals/components/PlutoniumContent.tsx:146
-#: src/components/modals/components/PlutoniumContent.tsx:243
-msgid "Free vs Plutonium"
-msgstr "Gratis vs Plutonium"
 
 #: src/components/modals/tabs/VideoTab.tsx:237
 msgid "Freezes your preview while Fluxer is in the background to save resources."
@@ -10336,7 +10336,7 @@ msgstr "Teman"
 msgid "Friends + Custom"
 msgstr "Teman + Kustom"
 
-#: src/components/modals/AddGuildModal.tsx:184
+#: src/components/modals/AddGuildModal.tsx:185
 msgid "Friends Forever"
 msgstr "Teman Selamanya"
 
@@ -10405,7 +10405,7 @@ msgstr "Nama Lengkap Hukum"
 msgid "Game controller"
 msgstr "Pengontrol game"
 
-#: src/components/modals/AddGuildModal.tsx:166
+#: src/components/modals/AddGuildModal.tsx:167
 msgid "Game Night"
 msgstr "Malam Permainan"
 
@@ -10413,7 +10413,7 @@ msgstr "Malam Permainan"
 msgid "Gaming"
 msgstr "Permainan"
 
-#: src/components/modals/AddGuildModal.tsx:180
+#: src/components/modals/AddGuildModal.tsx:181
 msgid "Gaming Community"
 msgstr "Komunitas Gaming"
 
@@ -10430,11 +10430,11 @@ msgstr "Koneksi Gateway Diperlukan"
 msgid "gdpr"
 msgstr "gdpr"
 
-#: src/components/modals/channel_tabs/ChannelOverviewTab.tsx:480
+#: src/components/modals/channel_tabs/ChannelOverviewTab.tsx:519
 msgid "general"
 msgstr "umum"
 
-#: src/components/modals/channel_tabs/ChannelOverviewTab.tsx:468
+#: src/components/modals/channel_tabs/ChannelOverviewTab.tsx:507
 #: src/components/modals/tabs/developer_options_tab/index.tsx:45
 #: src/components/modals/tabs/developer_options_tab/Inline.tsx:45
 #: src/components/modals/utils/ChannelSettingsConstants.tsx:56
@@ -10553,7 +10553,7 @@ msgstr "Pratinjau GIF"
 msgid "GIFs"
 msgstr "GIF"
 
-#: src/components/modals/components/plutonium/SubscriptionCard.tsx:133
+#: src/components/modals/components/plutonium/SubscriptionCard.tsx:122
 #: src/components/modals/GiftAcceptModal.tsx:211
 msgid "Gift"
 msgstr "Hadiah"
@@ -10759,7 +10759,7 @@ msgstr "Oke"
 msgid "gpu"
 msgstr "gpu"
 
-#: src/components/modals/components/plutonium/SubscriptionCard.tsx:127
+#: src/components/modals/components/plutonium/SubscriptionCard.tsx:116
 msgid "Grace Period"
 msgstr "Masa Tenggang"
 
@@ -11076,6 +11076,7 @@ msgstr "sembunyikan"
 #: src/components/modals/HideOwnCameraConfirmModal.tsx:66
 #: src/components/modals/HideOwnScreenShareConfirmModal.tsx:66
 #: src/components/modals/tabs/account_security_tab/AccountTab.tsx:76
+#: src/components/modals/tabs/account_security_tab/SecurityTab.tsx:370
 msgid "Hide"
 msgstr "Sembunyikan"
 
@@ -11221,7 +11222,7 @@ msgstr "Mode tampilan rentang dinamis tinggi"
 msgid "High quality, requires fast connection"
 msgstr "Kualitas tinggi, memerlukan koneksi cepat"
 
-#: src/components/modals/channel_tabs/ChannelOverviewTab.tsx:661
+#: src/components/modals/channel_tabs/ChannelOverviewTab.tsx:700
 msgid "Higher bitrate = better quality and higher bandwidth usage."
 msgstr "Bitrate lebih tinggi = kualitas lebih baik dan penggunaan bandwidth lebih tinggi."
 
@@ -11237,7 +11238,7 @@ msgstr "petunjuk"
 msgid "Hit 88mph"
 msgstr "Capai 88mph"
 
-#: src/components/modals/AddGuildModal.tsx:155
+#: src/components/modals/AddGuildModal.tsx:156
 msgid "Hobby Haven"
 msgstr "Surga Hobi"
 
@@ -11338,7 +11339,7 @@ msgstr "Bagaimana ini bekerja"
 msgid "HTML / XML"
 msgstr "HTML / XML"
 
-#: src/components/modals/channel_tabs/ChannelOverviewTab.tsx:492
+#: src/components/modals/channel_tabs/ChannelOverviewTab.tsx:531
 #: src/components/modals/ChannelCreateModal.tsx:92
 msgid "https://example.com"
 msgstr "https://example.com"
@@ -11394,7 +11395,7 @@ msgstr "Saya mengerti"
 msgid "Icon"
 msgstr "Ikon"
 
-#: src/components/modals/AddGuildModal.tsx:214
+#: src/components/modals/AddGuildModal.tsx:215
 #: src/components/modals/EditGroupBottomSheet.tsx:71
 #: src/components/modals/EditGroupModal.tsx:64
 msgid "Icon file is too large. Please choose a file smaller than 10MB."
@@ -11797,8 +11798,8 @@ msgstr "Input & Teks"
 msgid "Inputs with Icons"
 msgstr "Input dengan Ikon"
 
-#: src/components/modals/channel_tabs/ChannelOverviewTab.tsx:547
-#: src/components/modals/channel_tabs/ChannelOverviewTab.tsx:580
+#: src/components/modals/channel_tabs/ChannelOverviewTab.tsx:586
+#: src/components/modals/channel_tabs/ChannelOverviewTab.tsx:619
 msgid "Insert emoji"
 msgstr "Sisipkan emoji"
 
@@ -11871,7 +11872,7 @@ msgstr "Tidak valid"
 msgid "Invalid audio file"
 msgstr "Berkas audio tidak valid"
 
-#: src/components/pages/OAuthAuthorizePage.tsx:536
+#: src/components/pages/OAuthAuthorizePage.tsx:526
 msgid "Invalid authorization request"
 msgstr "Permintaan otorisasi tidak valid"
 
@@ -11894,7 +11895,7 @@ msgstr "Kode tidak valid atau kedaluwarsa"
 msgid "Invalid or expired code. Please try again."
 msgstr "Kode tidak valid atau kedaluwarsa. Silakan coba lagi."
 
-#: src/components/pages/OAuthAuthorizePage.tsx:511
+#: src/components/pages/OAuthAuthorizePage.tsx:501
 msgid "Invalid redirect_uri"
 msgstr "redirect_uri tidak valid"
 
@@ -11969,7 +11970,7 @@ msgstr "Undang teman ke {0}"
 msgid "Invite link"
 msgstr "Tautan undangan"
 
-#: src/components/modals/AddGuildModal.tsx:436
+#: src/components/modals/AddGuildModal.tsx:438
 msgid "Invite Link"
 msgstr "Tautan Undangan"
 
@@ -12101,7 +12102,7 @@ msgstr "Undangan saat ini dinonaktifkan untuk komunitas ini."
 msgid "Invites are currently disabled in this community by an admin. While this invite can be created, it cannot be accepted until invites are re-enabled."
 msgstr "Undangan saat ini dinonaktifkan di komunitas ini oleh admin. Meskipun undangan ini dapat dibuat, undangan tidak dapat diterima hingga undangan diaktifkan kembali."
 
-#: src/components/layout/guild_list/GuildListItem.tsx:493
+#: src/components/layout/guild_list/GuildListItem.tsx:492
 msgid "Invites are currently paused in this community"
 msgstr "Undangan saat ini dijeda di komunitas ini"
 
@@ -12143,7 +12144,7 @@ msgstr "Alamat IP diotorisasi"
 msgid "Ireland"
 msgstr "Irlandia"
 
-#: src/components/modals/tabs/AccountSecurityTab.tsx:109
+#: src/components/modals/tabs/AccountSecurityTab.tsx:112
 msgid "Irreversible and destructive actions"
 msgstr "Tindakan yang tidak dapat dibatalkan dan destruktif"
 
@@ -12185,7 +12186,7 @@ msgstr "Jitter"
 msgid "join"
 msgstr "bergabung"
 
-#: src/components/modals/AddGuildModal.tsx:84
+#: src/components/modals/AddGuildModal.tsx:85
 msgid "Join a Community"
 msgstr "Bergabung dengan Komunitas"
 
@@ -12205,16 +12206,15 @@ msgstr "Gabung panggilan"
 #: src/components/channel/InviteEmbed.tsx:284
 #: src/components/channel/InviteEmbed.tsx:475
 #: src/components/layout/guild_list/AddGuildButton.tsx:77
-#: src/components/modals/AddGuildModal.tsx:132
-#: src/components/modals/AddGuildModal.tsx:416
-#: src/components/modals/components/plutonium/SubscriptionCard.tsx:289
+#: src/components/modals/AddGuildModal.tsx:133
+#: src/components/modals/AddGuildModal.tsx:418
 #: src/components/modals/discovery/DiscoveryGuildCard.tsx:99
 #: src/components/modals/InviteAcceptModal.tsx:119
 #: src/components/modals/InviteAcceptModalPreview.tsx:111
 msgid "Join Community"
 msgstr "Bergabung Komunitas"
 
-#: src/components/modals/AddGuildModal.tsx:430
+#: src/components/modals/AddGuildModal.tsx:432
 msgid "Join community form"
 msgstr "Formulir bergabung komunitas"
 
@@ -12327,7 +12327,7 @@ msgstr "JPEG, PNG, WebP. Maks 10MB. Minimum: {0}×{1}px (16:9)"
 msgid "JPEG, PNG, WebP. Max 10MB. Minimum: {0}×{1}px (16:9). Shown in invite embeds in chat."
 msgstr "JPEG, PNG, WebP. Maks 10MB. Minimum: {0}×{1}px (16:9). Ditampilkan di sematan undangan dalam obrolan."
 
-#: src/components/modals/AddGuildModal.tsx:338
+#: src/components/modals/AddGuildModal.tsx:340
 #: src/components/modals/EditGroupBottomSheet.tsx:223
 #: src/components/modals/EditGroupModal.tsx:204
 #: src/components/modals/guild_tabs/guild_overview_tab/fields/GuildIconUploadField.tsx:116
@@ -12717,7 +12717,7 @@ msgstr "Biarkan komunitas memoderasi sendiri"
 msgid "Letters (a-z, A-Z), numbers (0-9), and underscores (_) only"
 msgstr "Hanya huruf (a-z, A-Z), angka (0-9), dan garis bawah (_)"
 
-#: src/components/modals/components/plutonium/SubscriptionCard.tsx:131
+#: src/components/modals/components/plutonium/SubscriptionCard.tsx:120
 #: src/components/modals/tabs/developer_options_tab/AccountPremiumTab.tsx:52
 #: src/components/modals/tabs/developer_options_tab/MockingTab.tsx:317
 msgid "Lifetime"
@@ -12899,7 +12899,7 @@ msgstr "Memuat"
 msgid "Loading bans..."
 msgstr "Memuat larangan..."
 
-#: src/components/pages/OAuthAuthorizePage.tsx:877
+#: src/components/pages/OAuthAuthorizePage.tsx:846
 msgid "Loading communities..."
 msgstr "Memuat komunitas..."
 
@@ -13197,7 +13197,7 @@ msgid "Manage Roles"
 msgstr "Kelola Peran"
 
 #: src/components/layout/app_layout/nagbars/PremiumGracePeriodNagbar.tsx:79
-#: src/components/modals/components/plutonium/SubscriptionCard.tsx:271
+#: src/components/modals/components/plutonium/SubscriptionCard.tsx:260
 msgid "Manage Subscription"
 msgstr "Kelola Langganan"
 
@@ -13214,7 +13214,7 @@ msgstr "Kelola Webhook"
 msgid "Manage your applications and bots."
 msgstr "Kelola aplikasi dan bot Anda."
 
-#: src/components/modals/tabs/AccountSecurityTab.tsx:78
+#: src/components/modals/tabs/AccountSecurityTab.tsx:79
 msgid "Manage your email, password, and account settings"
 msgstr "Kelola email, kata sandi, dan pengaturan akun Anda"
 
@@ -13222,7 +13222,7 @@ msgstr "Kelola email, kata sandi, dan pengaturan akun Anda"
 msgid "Manage your gifts"
 msgstr "Kelola hadiah Anda"
 
-#: src/components/modals/tabs/account_security_tab/SecurityTab.tsx:340
+#: src/components/modals/tabs/account_security_tab/SecurityTab.tsx:353
 msgid "Manage your phone number for SMS two-factor authentication"
 msgstr "Kelola nomor telepon Anda untuk autentikasi dua faktor SMS"
 
@@ -13385,7 +13385,7 @@ msgstr "Memaksimalkan pesan yang terlihat dengan jarak minimal."
 msgid "Maximum 256 characters"
 msgstr "Maksimum 256 karakter"
 
-#: src/components/modals/channel_tabs/ChannelOverviewTab.tsx:694
+#: src/components/modals/channel_tabs/ChannelOverviewTab.tsx:733
 msgid "Maximum members who can join at once. 0 means unlimited."
 msgstr "Anggota maksimum yang dapat bergabung sekaligus. 0 berarti tidak terbatas."
 
@@ -13579,7 +13579,7 @@ msgstr "Anggota yang tidak aktif selama {days} hari akan dihapus."
 msgid "Members list unavailable at this screen width"
 msgstr "Daftar anggota tidak tersedia pada lebar layar ini"
 
-#: src/components/modals/channel_tabs/ChannelOverviewTab.tsx:617
+#: src/components/modals/channel_tabs/ChannelOverviewTab.tsx:656
 msgid "Members must wait between messages."
 msgstr "Anggota harus menunggu di antara pesan."
 
@@ -14164,11 +14164,11 @@ msgstr "Memindahkan peran ke posisi {0}."
 msgid "Moved to channel {0}."
 msgstr "Pindah ke kanal {0}."
 
-#: src/components/modals/AddGuildModal.tsx:174
+#: src/components/modals/AddGuildModal.tsx:175
 msgid "Movie Club"
 msgstr "Klub Film"
 
-#: src/components/modals/AddGuildModal.tsx:161
+#: src/components/modals/AddGuildModal.tsx:162
 msgid "Movie Night Crew"
 msgstr "Kru Malam Film"
 
@@ -14188,7 +14188,7 @@ msgstr "Konten Multibahasa"
 msgid "Music"
 msgstr "Musik"
 
-#: src/components/modals/AddGuildModal.tsx:170
+#: src/components/modals/AddGuildModal.tsx:171
 msgid "Music Lovers"
 msgstr "Pecinta Musik"
 
@@ -14316,7 +14316,7 @@ msgstr "Bisukan audio stream"
 msgid "muted"
 msgstr "dibisukan"
 
-#: src/components/layout/guild_list/GuildListItem.tsx:453
+#: src/components/layout/guild_list/GuildListItem.tsx:452
 #: src/components/layout/VoiceStateIcons.tsx:49
 #: src/components/voice/VoiceParticipantTile.tsx:1457
 #: src/utils/ContextMenuUtils.tsx:165
@@ -14329,7 +14329,7 @@ msgstr "saluran yang dibisukan"
 
 #. placeholder {0}: DateUtils.getFormattedDateTime(new Date(muteConfig.end_time))
 #. placeholder {0}: getFormattedDateTime(new Date(muteConfig.end_time))
-#: src/components/layout/guild_list/GuildListItem.tsx:451
+#: src/components/layout/guild_list/GuildListItem.tsx:450
 #: src/utils/ContextMenuUtils.tsx:163
 msgid "Muted until {0}"
 msgstr "Dibisukan hingga {0}"
@@ -14371,7 +14371,7 @@ msgstr "Media keren saya"
 msgid "My awesome sticker"
 msgstr "Stiker keren saya"
 
-#: src/components/modals/channel_tabs/ChannelOverviewTab.tsx:480
+#: src/components/modals/channel_tabs/ChannelOverviewTab.tsx:519
 msgid "My Category"
 msgstr "Kategori Saya"
 
@@ -14509,7 +14509,7 @@ msgstr "Navigasi"
 msgid "Need an account?"
 msgstr "Perlu akun?"
 
-#: src/components/modals/AddGuildModal.tsx:162
+#: src/components/modals/AddGuildModal.tsx:163
 msgid "Neighborhood Watch"
 msgstr "Pengawasan Lingkungan"
 
@@ -14623,7 +14623,7 @@ msgid "Newest First"
 msgstr "Terbaru Duluan"
 
 #: src/components/bottomsheets/ChannelSearchBottomSheet.tsx:394
-#: src/components/pages/OAuthAuthorizePage.tsx:931
+#: src/components/pages/OAuthAuthorizePage.tsx:900
 msgid "Next"
 msgstr "Selanjutnya"
 
@@ -14754,7 +14754,7 @@ msgstr "Tidak ada kanal tersedia"
 msgid "No channels found"
 msgstr "Tidak ada kanal ditemukan"
 
-#: src/components/pages/OAuthAuthorizePage.tsx:893
+#: src/components/pages/OAuthAuthorizePage.tsx:862
 msgid "No communities available with <0>Manage Community</0> permissions."
 msgstr "Tidak ada komunitas tersedia dengan izin <0>Kelola Komunitas</0>."
 
@@ -14842,7 +14842,7 @@ msgstr "Tidak ada undangan dibuat"
 msgid "No keybind set"
 msgstr "Tidak ada keybind diatur"
 
-#: src/components/modals/channel_tabs/ChannelOverviewTab.tsx:688
+#: src/components/modals/channel_tabs/ChannelOverviewTab.tsx:727
 #: src/components/modals/InviteModal.tsx:88
 msgid "No limit"
 msgstr "Tidak ada batas"
@@ -14851,7 +14851,7 @@ msgstr "Tidak ada batas"
 msgid "No Logs Yet"
 msgstr "Belum ada Log"
 
-#: src/components/pages/OAuthAuthorizePage.tsx:426
+#: src/components/pages/OAuthAuthorizePage.tsx:416
 msgid "No Manage Community permission"
 msgstr "Tidak ada izin Kelola Komunitas"
 
@@ -14884,7 +14884,7 @@ msgstr "Tidak ada teman bersama ditemukan."
 msgid "No mutual groups found."
 msgstr "Tidak ada grup bersama ditemukan."
 
-#: src/components/modals/tabs/account_security_tab/SecurityTab.tsx:286
+#: src/components/modals/tabs/account_security_tab/SecurityTab.tsx:299
 msgid "No passkeys registered"
 msgstr "Tidak ada kunci akses yang terdaftar"
 
@@ -14986,7 +14986,7 @@ msgstr "Tidak ada Hasil Pencarian"
 msgid "No settings found"
 msgstr "Pengaturan tidak ditemukan"
 
-#: src/components/pages/OAuthAuthorizePage.tsx:824
+#: src/components/pages/OAuthAuthorizePage.tsx:793
 msgid "No specific scopes requested."
 msgstr "Tidak ada ruang lingkup spesifik yang diminta."
 
@@ -15261,7 +15261,7 @@ msgid "Objects"
 msgstr "Objek"
 
 #: src/components/channel/ReplyBar.tsx:112
-#: src/components/modals/channel_tabs/ChannelOverviewTab.tsx:160
+#: src/components/modals/channel_tabs/ChannelOverviewTab.tsx:173
 #: src/components/modals/guild_tabs/GuildModerationTab.tsx:243
 #: src/utils/modals/guild_tabs/GuildAuditLogTabUtils.tsx:64
 msgid "Off"
@@ -15499,7 +15499,7 @@ msgstr "Buka pemilih warna"
 msgid "Open Community Notification Settings"
 msgstr "Buka Pengaturan Notifikasi Komunitas"
 
-#: src/components/modals/components/plutonium/SubscriptionCard.tsx:269
+#: src/components/modals/components/plutonium/SubscriptionCard.tsx:258
 msgid "Open Customer Portal"
 msgstr "Buka Portal Pelanggan"
 
@@ -15779,7 +15779,7 @@ msgstr "Kalau tidak, Push-to-talk diperlukan."
 msgid "otp"
 msgstr "otp"
 
-#: src/components/modals/AddGuildModal.tsx:186
+#: src/components/modals/AddGuildModal.tsx:187
 msgid "Our Hangout"
 msgstr "Hangout Kami"
 
@@ -15909,7 +15909,7 @@ msgstr "paket"
 msgid "Page {currentPage} of {totalPages}"
 msgstr "Halaman {currentPage} dari {totalPages}"
 
-#: src/components/modals/channel_tabs/ChannelOverviewTab.tsx:671
+#: src/components/modals/channel_tabs/ChannelOverviewTab.tsx:710
 msgid "Participant Limit"
 msgstr "Batas Peserta"
 
@@ -15930,7 +15930,7 @@ msgstr "Komunitas Mitra"
 msgid "Passkey Name"
 msgstr "Nama Kunci Akses"
 
-#: src/components/modals/tabs/account_security_tab/SecurityTab.tsx:276
+#: src/components/modals/tabs/account_security_tab/SecurityTab.tsx:289
 msgid "Passkeys"
 msgstr "Kunci Akses"
 
@@ -16103,8 +16103,8 @@ msgid "permissions"
 msgstr "izin"
 
 #: src/components/modals/guild_tabs/GuildRolesTab.tsx:1086
-#: src/components/pages/OAuthAuthorizePage.tsx:584
-#: src/components/pages/OAuthAuthorizePage.tsx:720
+#: src/components/pages/OAuthAuthorizePage.tsx:574
+#: src/components/pages/OAuthAuthorizePage.tsx:700
 msgid "Permissions"
 msgstr "Izin"
 
@@ -16148,8 +16148,8 @@ msgstr "Telepon"
 
 #: src/components/modals/PhoneAddModal.tsx:192
 #: src/components/modals/RequiredActionModal.tsx:616
-#: src/components/modals/tabs/account_security_tab/SecurityTab.tsx:339
-#: src/components/modals/tabs/account_security_tab/SecurityTab.tsx:345
+#: src/components/modals/tabs/account_security_tab/SecurityTab.tsx:352
+#: src/components/modals/tabs/account_security_tab/SecurityTab.tsx:358
 #: src/components/modals/utils/SettingsSearchIndex.tsx:115
 msgid "Phone Number"
 msgstr "Nomor Telepon"
@@ -16157,11 +16157,6 @@ msgstr "Nomor Telepon"
 #: src/components/modals/PhoneAddModal.tsx:133
 msgid "Phone number added"
 msgstr "Nomor telepon ditambahkan"
-
-#. placeholder {0}: user.phone
-#: src/components/modals/tabs/account_security_tab/SecurityTab.tsx:349
-msgid "Phone number added: {0}"
-msgstr "Nomor telepon ditambahkan: {0}"
 
 #: src/components/modals/RequiredActionModal.tsx:253
 msgid "Phone number is required"
@@ -16187,7 +16182,7 @@ msgstr "Verifikasi Telepon Diperlukan"
 msgid "photo"
 msgstr "foto"
 
-#: src/components/modals/AddGuildModal.tsx:169
+#: src/components/modals/AddGuildModal.tsx:170
 msgid "Photography Club"
 msgstr "Klub Fotografi"
 
@@ -16421,7 +16416,7 @@ msgstr "Silakan coba lagi nanti."
 msgid "Please update Fluxer to view this message."
 msgstr "Silakan perbarui Fluxer untuk melihat pesan ini."
 
-#: src/actions/InviteActionCreators.tsx:184
+#: src/actions/InviteActionCreators.tsx:207
 msgid "Please verify your account by setting an email and password before joining communities."
 msgstr "Silakan verifikasi akun Anda dengan mengatur email dan kata sandi sebelum bergabung dengan komunitas."
 
@@ -16447,7 +16442,7 @@ msgstr "plutonium"
 
 #: src/components/channel/direct_message/DMList.tsx:1326
 #: src/components/channel/direct_message/DMList.tsx:1405
-#: src/components/modals/components/FeatureComparisonTable.tsx:127
+#: src/components/modals/components/FeatureComparisonTable.tsx:146
 msgid "Plutonium"
 msgstr "Plutonium"
 
@@ -16459,7 +16454,7 @@ msgstr "Privasi Lencana Plutonium"
 msgid "Plutonium perks"
 msgstr "Keuntungan Plutonium"
 
-#: src/components/modals/components/plutonium/SubscriptionCard.tsx:121
+#: src/components/modals/components/plutonium/SubscriptionCard.tsx:110
 msgid "Plutonium Subscription"
 msgstr "Langganan Plutonium"
 
@@ -16715,7 +16710,7 @@ msgstr "Lanjutkan"
 msgid "Processing"
 msgstr "Memproses"
 
-#: src/components/modals/AddGuildModal.tsx:163
+#: src/components/modals/AddGuildModal.tsx:164
 msgid "Professional Peers"
 msgstr "Rekan Profesional"
 
@@ -16776,7 +16771,7 @@ msgstr "Profil diperbarui"
 msgid "progress"
 msgstr "kemajuan"
 
-#: src/components/modals/AddGuildModal.tsx:159
+#: src/components/modals/AddGuildModal.tsx:160
 msgid "Project X"
 msgstr "Project X"
 
@@ -16789,7 +16784,7 @@ msgstr "kata ganti"
 msgid "Pronouns"
 msgstr "Kata ganti"
 
-#: src/components/modals/tabs/AccountSecurityTab.tsx:91
+#: src/components/modals/tabs/AccountSecurityTab.tsx:92
 msgid "Protect your account with two-factor authentication and passkeys"
 msgstr "Lindungi akun Anda dengan autentikasi dua faktor dan passkey"
 
@@ -17014,7 +17009,7 @@ msgid "Reactions"
 msgstr "Reaksi"
 
 #: src/components/layout/app_layout/nagbars/PremiumExpiredNagbar.tsx:75
-#: src/components/modals/components/plutonium/SubscriptionCard.tsx:267
+#: src/components/modals/components/plutonium/SubscriptionCard.tsx:256
 msgid "Reactivate"
 msgstr "Aktifkan kembali"
 
@@ -17076,7 +17071,7 @@ msgstr "Terima"
 msgid "Receive notifications when someone mentions you"
 msgstr "Terima notifikasi saat seseorang menyebut Anda"
 
-#: src/components/modals/tabs/account_security_tab/SecurityTab.tsx:407
+#: src/components/modals/tabs/account_security_tab/SecurityTab.tsx:431
 msgid "Receive verification codes via SMS as a backup authentication method"
 msgstr "Terima kode verifikasi via SMS sebagai metode autentikasi cadangan"
 
@@ -17141,7 +17136,7 @@ msgstr "Tukarkan Hadiah"
 msgid "Redeem for Yourself"
 msgstr "Tukarkan untuk Diri Sendiri"
 
-#: src/components/modals/components/plutonium/SubscriptionCard.tsx:245
+#: src/components/modals/components/plutonium/SubscriptionCard.tsx:234
 msgid "Redeem Gift Code"
 msgstr "Tukarkan Kode Hadiah"
 
@@ -17233,7 +17228,7 @@ msgstr "Membuat ulang akan membatalkan token saat ini. Perbarui kode apa pun yan
 msgid "Register"
 msgstr "Daftar"
 
-#: src/components/modals/tabs/account_security_tab/SecurityTab.tsx:282
+#: src/components/modals/tabs/account_security_tab/SecurityTab.tsx:295
 msgid "Registered Passkeys"
 msgstr "Kunci Lolos Terdaftar"
 
@@ -17303,7 +17298,7 @@ msgstr "hapus"
 #: src/components/modals/guild_tabs/guild_overview_tab/fields/GuildEmbedSplashUploadField.tsx:101
 #: src/components/modals/guild_tabs/guild_overview_tab/fields/GuildIconUploadField.tsx:107
 #: src/components/modals/guild_tabs/guild_overview_tab/fields/GuildInviteSplashUploadField.tsx:113
-#: src/components/modals/tabs/account_security_tab/SecurityTab.tsx:394
+#: src/components/modals/tabs/account_security_tab/SecurityTab.tsx:418
 #: src/components/modals/tabs/ExpressionPacksTab.tsx:96
 #: src/components/modals/tabs/ExpressionPacksTab.tsx:226
 #: src/components/modals/tabs/LinkedAccountsTab.tsx:191
@@ -17454,7 +17449,7 @@ msgstr "Hapus dari Favorit"
 msgid "Remove from Group"
 msgstr "Hapus dari Grup"
 
-#: src/components/modals/AddGuildModal.tsx:333
+#: src/components/modals/AddGuildModal.tsx:335
 #: src/components/modals/EditGroupBottomSheet.tsx:218
 #: src/components/modals/EditGroupModal.tsx:199
 msgid "Remove Icon"
@@ -17477,11 +17472,11 @@ msgstr "Hapus Penggantian"
 msgid "Remove Pack"
 msgstr "Hapus Paket"
 
-#: src/components/modals/tabs/account_security_tab/SecurityTab.tsx:380
+#: src/components/modals/tabs/account_security_tab/SecurityTab.tsx:404
 msgid "Remove Phone"
 msgstr "Hapus Telepon"
 
-#: src/components/modals/tabs/account_security_tab/SecurityTab.tsx:363
+#: src/components/modals/tabs/account_security_tab/SecurityTab.tsx:387
 msgid "Remove Phone Number"
 msgstr "Hapus Nomor Telepon"
 
@@ -17623,7 +17618,7 @@ msgstr "Menghapus izin ATTACH_FILES di semua kanal (menyembunyikan tombol unggah
 msgid "Removes SEND_MESSAGES permission in all channels (disables textarea and all buttons)"
 msgstr "Menghapus izin SEND_MESSAGES di semua kanal (menonaktifkan textarea dan semua tombol)"
 
-#: src/components/pages/OAuthAuthorizePage.tsx:660
+#: src/components/pages/OAuthAuthorizePage.tsx:640
 msgid "Removing permissions could limit the bot's features."
 msgstr "Menghapus izin dapat membatasi fitur bot."
 
@@ -17636,7 +17631,7 @@ msgstr "Menghapus paket akan mencopotnya dari akun Anda."
 msgid "Removing the timeout will allow <0>{0}</0> to send messages, react, and join voice channels again."
 msgstr "Menghapus timeout akan memungkinkan <0>{0}</0> untuk mengirim pesan, bereaksi, dan bergabung dengan kanal suara lagi."
 
-#: src/components/modals/tabs/account_security_tab/SecurityTab.tsx:322
+#: src/components/modals/tabs/account_security_tab/SecurityTab.tsx:335
 msgid "Rename"
 msgstr "Ubah Nama"
 
@@ -17695,7 +17690,7 @@ msgstr "Nama komunitas diganti menjadi {0}."
 msgid "Render all your messages as unknown message type"
 msgstr "Tampilkan semua pesan Anda sebagai tipe pesan tidak dikenal"
 
-#: src/components/modals/components/plutonium/SubscriptionCard.tsx:227
+#: src/components/modals/components/plutonium/SubscriptionCard.tsx:216
 msgid "Renews on <0>{renewalDate}</0>."
 msgstr "Diperbarui pada <0>{renewalDate}</0>."
 
@@ -17813,7 +17808,7 @@ msgstr "Minta Ekspor Data"
 msgid "Request Export"
 msgstr "Minta Ekspor"
 
-#: src/components/pages/OAuthAuthorizePage.tsx:814
+#: src/components/pages/OAuthAuthorizePage.tsx:783
 msgid "Requested scopes"
 msgstr "Cakupan yang diminta"
 
@@ -17841,7 +17836,7 @@ msgstr "Memerlukan grant kode OAuth2"
 msgid "Require two-factor authentication for moderators before they can ban, kick, timeout, or remove messages."
 msgstr "Wajibkan autentikasi dua faktor untuk moderator sebelum mereka dapat melarang, menendang, memberikan waktu tunggu, atau menghapus pesan."
 
-#: src/components/pages/OAuthAuthorizePage.tsx:839
+#: src/components/pages/OAuthAuthorizePage.tsx:808
 msgid "Required"
 msgstr "Diperlukan"
 
@@ -17955,7 +17950,7 @@ msgstr "Reset semua penggantian ke tema default"
 msgid "Reset app data"
 msgstr "Reset data aplikasi"
 
-#: src/components/BootstrapErrorScreen.tsx:74
+#: src/components/BootstrapErrorScreen.tsx:75
 msgid "Reset App Data"
 msgstr "Reset Data Aplikasi"
 
@@ -18038,8 +18033,8 @@ msgstr "Pulihkan Maksimal"
 msgid "Restore window"
 msgstr "Pulihkan jendela"
 
-#: src/components/modals/components/plutonium/SubscriptionCard.tsx:263
-#: src/components/modals/components/plutonium/SubscriptionCard.tsx:265
+#: src/components/modals/components/plutonium/SubscriptionCard.tsx:252
+#: src/components/modals/components/plutonium/SubscriptionCard.tsx:254
 msgid "Resubscribe"
 msgstr "Berlangganan Ulang"
 
@@ -18077,6 +18072,7 @@ msgid "reveal"
 msgstr "ungkapkan"
 
 #: src/components/modals/tabs/account_security_tab/AccountTab.tsx:76
+#: src/components/modals/tabs/account_security_tab/SecurityTab.tsx:370
 msgid "Reveal"
 msgstr "Tampilkan"
 
@@ -18088,7 +18084,7 @@ msgstr "Tampilkan spoiler"
 msgid "Review deletion"
 msgstr "Tinjau penghapusan"
 
-#: src/components/pages/OAuthAuthorizePage.tsx:749
+#: src/components/pages/OAuthAuthorizePage.tsx:718
 msgid "Review what this app is asking for before you continue."
 msgstr "Tinjau apa yang diminta aplikasi ini sebelum Anda melanjutkan."
 
@@ -18465,8 +18461,8 @@ msgid "Scope"
 msgstr "Cakupan"
 
 #: src/components/modals/tabs/applications_tab/application_detail/OAuthBuilderSection.tsx:75
-#: src/components/pages/OAuthAuthorizePage.tsx:577
-#: src/components/pages/OAuthAuthorizePage.tsx:713
+#: src/components/pages/OAuthAuthorizePage.tsx:567
+#: src/components/pages/OAuthAuthorizePage.tsx:693
 msgid "Scopes"
 msgstr "Cakupan"
 
@@ -18770,8 +18766,8 @@ msgstr "Amankan akun Anda"
 msgid "security"
 msgstr "keamanan"
 
-#: src/components/modals/tabs/account_security_tab/Inline.tsx:81
-#: src/components/modals/tabs/AccountSecurityTab.tsx:90
+#: src/components/modals/tabs/account_security_tab/Inline.tsx:82
+#: src/components/modals/tabs/AccountSecurityTab.tsx:91
 #: src/components/modals/utils/SettingsConstants.tsx:298
 #: src/components/modals/utils/SettingsSectionRegistry.tsx:505
 msgid "Security"
@@ -18781,7 +18777,7 @@ msgstr "Keamanan"
 msgid "Security & Login"
 msgstr "Keamanan & Login"
 
-#: src/components/modals/tabs/account_security_tab/SecurityTab.tsx:203
+#: src/components/modals/tabs/account_security_tab/SecurityTab.tsx:216
 msgid "Security Features"
 msgstr "Fitur Keamanan"
 
@@ -18832,7 +18828,7 @@ msgstr "Pilih kanal atau kategori"
 msgid "Select a Community"
 msgstr "Pilih Komunitas"
 
-#: src/components/pages/OAuthAuthorizePage.tsx:866
+#: src/components/pages/OAuthAuthorizePage.tsx:835
 msgid "Select a community where you have <0>Manage Community</0> permissions."
 msgstr "Pilih komunitas di mana Anda memiliki izin <0>Kelola Komunitas</0>."
 
@@ -18864,7 +18860,7 @@ msgstr "Pilih metode verifikasi."
 msgid "Select a violation category."
 msgstr "Pilih kategori pelanggaran."
 
-#: src/components/modals/channel_tabs/ChannelOverviewTab.tsx:729
+#: src/components/modals/channel_tabs/ChannelOverviewTab.tsx:768
 msgid "Select a voice region for this channel. Automatic uses the closest region."
 msgstr "Pilih wilayah suara untuk kanal ini. Otomatis menggunakan wilayah terdekat."
 
@@ -19802,7 +19798,7 @@ msgstr "Keluar dari {displayName}"
 msgid "Signal strength loading"
 msgstr "Memuat kekuatan sinyal"
 
-#: src/components/pages/OAuthAuthorizePage.tsx:788
+#: src/components/pages/OAuthAuthorizePage.tsx:757
 msgid "Signed in as"
 msgstr "Masuk sebagai"
 
@@ -19936,7 +19932,7 @@ msgid "Slower"
 msgstr "Lebih lambat"
 
 #: src/components/channel/SlowmodeIndicator.tsx:64
-#: src/components/modals/channel_tabs/ChannelOverviewTab.tsx:616
+#: src/components/modals/channel_tabs/ChannelOverviewTab.tsx:655
 #: src/components/modals/tabs/developer_options_tab/MockingTab.tsx:117
 msgid "Slowmode"
 msgstr "Mode lambat"
@@ -19990,11 +19986,11 @@ msgstr "Ukuran media lebih kecil"
 msgid "sms"
 msgstr "sms"
 
-#: src/components/modals/tabs/account_security_tab/SecurityTab.tsx:412
+#: src/components/modals/tabs/account_security_tab/SecurityTab.tsx:436
 msgid "SMS Backup"
 msgstr "Cadangan SMS"
 
-#: src/components/modals/tabs/account_security_tab/SecurityTab.tsx:432
+#: src/components/modals/tabs/account_security_tab/SecurityTab.tsx:456
 msgid "SMS backup is disabled for partners"
 msgstr "Cadangan SMS dinonaktifkan untuk mitra"
 
@@ -20007,15 +20003,15 @@ msgstr "Kode SMS"
 msgid "SMS Code"
 msgstr "Kode SMS"
 
-#: src/components/modals/tabs/account_security_tab/SecurityTab.tsx:406
+#: src/components/modals/tabs/account_security_tab/SecurityTab.tsx:430
 msgid "SMS Two-Factor Authentication"
 msgstr "Autentikasi Dua Faktor SMS"
 
-#: src/components/modals/tabs/account_security_tab/SecurityTab.tsx:151
+#: src/components/modals/tabs/account_security_tab/SecurityTab.tsx:164
 msgid "SMS two-factor authentication adds an additional layer of security to your account by requiring a verification code sent to your phone number when signing in."
 msgstr "Autentikasi dua faktor SMS menambahkan lapisan keamanan tambahan ke akun Anda dengan memerlukan kode verifikasi yang dikirim ke nomor telepon Anda saat masuk."
 
-#: src/components/modals/tabs/account_security_tab/SecurityTab.tsx:416
+#: src/components/modals/tabs/account_security_tab/SecurityTab.tsx:440
 msgid "SMS two-factor authentication is enabled"
 msgstr "Autentikasi dua faktor SMS diaktifkan"
 
@@ -20291,7 +20287,7 @@ msgstr "Konten Spoiler"
 msgid "spoilers"
 msgstr "spoiler"
 
-#: src/components/modals/AddGuildModal.tsx:179
+#: src/components/modals/AddGuildModal.tsx:180
 msgid "Sports Fans"
 msgstr "Penggemar Olahraga"
 
@@ -20495,7 +20491,7 @@ msgstr "Kepadatan stiker"
 msgid "Sticker pack"
 msgstr "Paket stiker"
 
-#: src/actions/InviteActionCreators.tsx:291
+#: src/actions/InviteActionCreators.tsx:314
 msgid "Sticker pack creation limit reached"
 msgstr "Batas pembuatan paket stiker tercapai"
 
@@ -20503,7 +20499,7 @@ msgstr "Batas pembuatan paket stiker tercapai"
 msgid "Sticker Pack Invite"
 msgstr "Undangan Paket Stiker"
 
-#: src/actions/InviteActionCreators.tsx:277
+#: src/actions/InviteActionCreators.tsx:300
 msgid "Sticker pack limit reached"
 msgstr "Batas paket stiker tercapai"
 
@@ -20634,15 +20630,15 @@ msgstr "streaming"
 msgid "Streaming"
 msgstr "Streaming"
 
-#: src/components/modals/AddGuildModal.tsx:148
+#: src/components/modals/AddGuildModal.tsx:149
 msgid "Study Buddies United"
 msgstr "Teman Belajar Bersatu"
 
-#: src/components/modals/AddGuildModal.tsx:181
+#: src/components/modals/AddGuildModal.tsx:182
 msgid "Study Group"
 msgstr "Kelompok Belajar"
 
-#: src/components/modals/AddGuildModal.tsx:167
+#: src/components/modals/AddGuildModal.tsx:168
 msgid "Study Hall"
 msgstr "Aula Belajar"
 
@@ -20732,7 +20728,7 @@ msgstr "saran"
 msgid "Summary"
 msgstr "Ringkasan"
 
-#: src/components/modals/AddGuildModal.tsx:164
+#: src/components/modals/AddGuildModal.tsx:165
 msgid "Support Circle"
 msgstr "Lingkaran Dukungan"
 
@@ -20793,7 +20789,7 @@ msgstr "Swedia"
 msgid "switch"
 msgstr "alih"
 
-#: src/components/pages/OAuthAuthorizePage.tsx:801
+#: src/components/pages/OAuthAuthorizePage.tsx:770
 msgid "Switch account"
 msgstr "Ganti akun"
 
@@ -20957,7 +20953,7 @@ msgstr "Tag ({0}/10)"
 msgid "Tap to add a note"
 msgstr "Ketuk untuk menambahkan catatan"
 
-#: src/components/pages/OAuthAuthorizePage.tsx:766
+#: src/components/pages/OAuthAuthorizePage.tsx:735
 msgid "Target community"
 msgstr "Komunitas target"
 
@@ -20966,7 +20962,7 @@ msgstr "Komunitas target"
 msgid "Targeted attacks, threats, or sustained harassment"
 msgstr "Serangan tertarget, ancaman, atau pelecehan berkelanjutan"
 
-#: src/components/modals/AddGuildModal.tsx:157
+#: src/components/modals/AddGuildModal.tsx:158
 msgid "Team Alpha"
 msgstr "Tim Alpha"
 
@@ -21096,7 +21092,7 @@ msgstr "Itu tidak terlihat seperti warna yang valid. Coba hex, rgb(), hsl(), ata
 msgid "That doesn't look like a valid URL."
 msgstr "Itu tidak terlihat seperti URL yang valid."
 
-#: src/components/modals/AddGuildModal.tsx:264
+#: src/components/modals/AddGuildModal.tsx:265
 #: src/components/modals/EditGroupBottomSheet.tsx:123
 #: src/components/modals/EditGroupModal.tsx:116
 #: src/components/modals/guild_tabs/guild_overview_tab/hooks/useGuildImageAssetField.tsx:203
@@ -21111,7 +21107,7 @@ msgid "That message didn't delete"
 msgstr "Pesan itu tidak terhapus"
 
 #. placeholder {0}: invite.pack.name
-#: src/actions/InviteActionCreators.tsx:104
+#: src/actions/InviteActionCreators.tsx:123
 msgid "The {packLabel} {0} has been installed."
 msgstr "{packLabel} {0} telah diinstal."
 
@@ -21124,11 +21120,11 @@ msgid "The app has crashed. Checking for updates that might fix this issue..."
 msgstr "Aplikasi mengalami crash. Memeriksa pembaruan yang mungkin memperbaiki masalah ini..."
 
 #. placeholder {0}: successState.guildName
-#: src/components/pages/OAuthAuthorizePage.tsx:554
+#: src/components/pages/OAuthAuthorizePage.tsx:544
 msgid "The bot has been added to <0>{0}</0>."
 msgstr "Bot telah ditambahkan ke <0>{0}</0>."
 
-#: src/components/pages/OAuthAuthorizePage.tsx:558
+#: src/components/pages/OAuthAuthorizePage.tsx:548
 msgid "The bot has been added."
 msgstr "Bot telah ditambahkan."
 
@@ -21161,7 +21157,7 @@ msgstr "FluxerTag <0>{fluxerTag}</0> sudah digunakan. Melanjutkan akan menggulir
 msgid "The job starts 24 hours after you confirm and can be canceled or restarted anytime"
 msgstr "Pekerjaan dimulai 24 jam setelah Anda konfirmasi dan dapat dibatalkan atau dimulai ulang kapan saja"
 
-#: src/components/modals/AddGuildModal.tsx:147
+#: src/components/modals/AddGuildModal.tsx:148
 msgid "The Midnight Gamers"
 msgstr "The Midnight Gamers"
 
@@ -21182,7 +21178,7 @@ msgstr "redirect_uri yang diberikan tidak terdaftar untuk aplikasi ini."
 msgid "The role <0>\"{roleName}\"</0> could not be deleted at this time. Please try again."
 msgstr "Peran <0>\"{roleName}\"</0> tidak dapat dihapus saat ini. Silakan coba lagi."
 
-#: src/components/modals/AddGuildModal.tsx:185
+#: src/components/modals/AddGuildModal.tsx:186
 msgid "The Squad"
 msgstr "The Squad"
 
@@ -21206,7 +21202,7 @@ msgstr "Waktu tunggu tidak boleh melebihi 365 hari (31536000 detik)."
 msgid "The URL of the Fluxer instance you want to sign in to."
 msgstr "URL instance Fluxer yang ingin Anda masuki."
 
-#: src/components/modals/channel_tabs/ChannelOverviewTab.tsx:496
+#: src/components/modals/channel_tabs/ChannelOverviewTab.tsx:535
 msgid "The URL this link channel points to."
 msgstr "URL yang ditunjuk oleh kanal tautan ini."
 
@@ -21336,7 +21332,7 @@ msgstr "Aplikasi ini"
 msgid "This attachment has expired"
 msgstr "Lampiran ini telah kedaluwarsa"
 
-#: src/components/pages/OAuthAuthorizePage.tsx:647
+#: src/components/pages/OAuthAuthorizePage.tsx:627
 msgid "This bot is requesting the Administrator permission. We do not recommend granting this to production apps unless you fully trust the developer. Consider asking them to request a reduced set of permissions. Close this page if you are unsure."
 msgstr "Bot ini meminta izin Administrator. Kami tidak merekomendasikan memberikan ini ke aplikasi produksi kecuali Anda sepenuhnya mempercayai pengembang. Pertimbangkan untuk meminta mereka meminta set izin yang lebih sedikit. Tutup halaman ini jika Anda tidak yakin."
 
@@ -22055,7 +22051,7 @@ msgstr "Atas"
 msgid "Top Tooltip"
 msgstr "Tooltip Atas"
 
-#: src/components/modals/channel_tabs/ChannelOverviewTab.tsx:519
+#: src/components/modals/channel_tabs/ChannelOverviewTab.tsx:558
 msgid "Topic"
 msgstr "Topik"
 
@@ -22100,7 +22096,7 @@ msgstr "terjemahan"
 msgid "Travel & Places"
 msgstr "Perjalanan & Tempat"
 
-#: src/components/modals/AddGuildModal.tsx:173
+#: src/components/modals/AddGuildModal.tsx:174
 msgid "Travel Buddies"
 msgstr "Teman Perjalanan"
 
@@ -22164,12 +22160,12 @@ msgstr "Coba istilah pencarian atau filter berbeda"
 msgid "Try again"
 msgstr "Coba lagi"
 
-#: src/components/BootstrapErrorScreen.tsx:71
+#: src/components/BootstrapErrorScreen.tsx:72
 #: src/components/bottomsheets/ChannelSearchBottomSheet.tsx:317
 #: src/components/channel/ChannelSearchResults.tsx:694
 #: src/components/modals/channel_tabs/ChannelInvitesTab.tsx:231
 #: src/components/modals/channel_tabs/ChannelWebhooksTab.tsx:162
-#: src/components/NetworkErrorScreen.tsx:56
+#: src/components/NetworkErrorScreen.tsx:57
 #: src/components/pages/SsoCallbackPage.tsx:116
 msgid "Try Again"
 msgstr "Coba Lagi"
@@ -22226,7 +22222,7 @@ msgstr "Turki"
 msgid "Turn Off All Device Cameras"
 msgstr "Matikan Semua Kamera Perangkat"
 
-#: src/components/pages/OAuthAuthorizePage.tsx:817
+#: src/components/pages/OAuthAuthorizePage.tsx:786
 msgid "Turn off anything you're not comfortable with. Some features may stop working."
 msgstr "Matikan apa pun yang tidak Anda nyaman. Beberapa fitur mungkin berhenti bekerja."
 
@@ -22260,7 +22256,7 @@ msgstr "Matikan Stream"
 msgid "Turn On Camera"
 msgstr "Nyalakan Kamera"
 
-#: src/components/pages/OAuthAuthorizePage.tsx:852
+#: src/components/pages/OAuthAuthorizePage.tsx:821
 msgid "Turning off scopes may prevent the app from working correctly."
 msgstr "Mematikan cakupan mungkin mencegah aplikasi bekerja dengan benar."
 
@@ -22272,11 +22268,11 @@ msgstr "Mematikan ini hanya menyembunyikan kamera Anda dari pandangan Anda sendi
 msgid "Turning this off only hides your screen share from your own view. Others in the call can still see your screen."
 msgstr "Mematikan ini hanya menyembunyikan berbagi layar Anda dari pandangan Anda sendiri. Orang lain dalam panggilan masih dapat melihat layar Anda."
 
-#: src/components/modals/channel_tabs/ChannelOverviewTab.tsx:471
+#: src/components/modals/channel_tabs/ChannelOverviewTab.tsx:510
 msgid "Tweak this category's basics."
 msgstr "Sesuaikan dasar-dasar kategori ini."
 
-#: src/components/modals/channel_tabs/ChannelOverviewTab.tsx:471
+#: src/components/modals/channel_tabs/ChannelOverviewTab.tsx:510
 msgid "Tweak this channel's basics."
 msgstr "Sesuaikan dasar-dasar kanal ini."
 
@@ -22299,7 +22295,7 @@ msgstr "dua faktor"
 msgid "Two-factor authentication"
 msgstr "Autentikasi dua faktor"
 
-#: src/components/modals/tabs/account_security_tab/SecurityTab.tsx:218
+#: src/components/modals/tabs/account_security_tab/SecurityTab.tsx:231
 #: src/components/modals/utils/SettingsSearchIndex.tsx:123
 msgid "Two-Factor Authentication"
 msgstr "Autentikasi Dua Faktor"
@@ -22312,7 +22308,7 @@ msgstr "Autentikasi dua faktor dinonaktifkan"
 msgid "Two-factor authentication enabled"
 msgstr "Autentikasi dua faktor diaktifkan"
 
-#: src/components/modals/tabs/account_security_tab/SecurityTab.tsx:228
+#: src/components/modals/tabs/account_security_tab/SecurityTab.tsx:241
 msgid "Two-factor authentication is enabled"
 msgstr "Autentikasi dua faktor diaktifkan"
 
@@ -22405,11 +22401,11 @@ msgstr "Ukraina"
 msgid "Ultra (1440p)"
 msgstr "Ultra (1440p)"
 
-#: src/actions/InviteActionCreators.tsx:323
+#: src/actions/InviteActionCreators.tsx:346
 msgid "Unable to install emoji pack"
 msgstr "Tidak dapat menginstal paket emoji"
 
-#: src/actions/InviteActionCreators.tsx:324
+#: src/actions/InviteActionCreators.tsx:347
 msgid "Unable to install sticker pack"
 msgstr "Tidak dapat menginstal paket stiker"
 
@@ -22761,7 +22757,7 @@ msgstr "Buka Berbagi Layar HD dengan Plutonium"
 msgid "Unlock HD Video with Plutonium"
 msgstr "Buka Video HD dengan Plutonium"
 
-#: src/components/modals/components/PlutoniumContent.tsx:168
+#: src/components/modals/components/PlutoniumContent.tsx:149
 msgid "Unlock higher limits and exclusive features while supporting an independent communication platform."
 msgstr "Buka batas yang lebih tinggi dan fitur eksklusif sambil mendukung platform komunikasi independen."
 
@@ -23161,7 +23157,7 @@ msgstr "Unggah Suara Masuk"
 msgid "Upload File"
 msgstr "Unggah Berkas"
 
-#: src/components/modals/AddGuildModal.tsx:329
+#: src/components/modals/AddGuildModal.tsx:331
 #: src/components/modals/EditGroupBottomSheet.tsx:214
 #: src/components/modals/EditGroupModal.tsx:195
 #: src/components/modals/guild_tabs/guild_overview_tab/fields/GuildIconUploadField.tsx:97
@@ -23209,7 +23205,7 @@ msgstr "Mengunggah {emojiText}. Ini mungkin memerlukan sedikit waktu."
 msgid "Uploading Emojis"
 msgstr "Mengunggah Emoji"
 
-#: src/components/modals/channel_tabs/ChannelOverviewTab.tsx:491
+#: src/components/modals/channel_tabs/ChannelOverviewTab.tsx:530
 #: src/components/modals/ChannelCreateModal.tsx:90
 msgid "URL"
 msgstr "URL"
@@ -23231,7 +23227,7 @@ msgstr "peringatan url"
 msgid "URLs to download any attachments from your messages"
 msgstr "URL untuk mengunduh lampiran dari pesan Anda"
 
-#: src/components/modals/channel_tabs/ChannelOverviewTab.tsx:183
+#: src/components/modals/channel_tabs/ChannelOverviewTab.tsx:196
 #: src/components/voice/VoiceRegionSelector.tsx:75
 #: src/components/voice/VoiceSettingsMenus.tsx:433
 msgid "US East"
@@ -23254,7 +23250,7 @@ msgstr "Gunakan Aktual"
 msgid "Use actual premium type"
 msgstr "Gunakan jenis premium yang sebenarnya"
 
-#: src/components/modals/tabs/account_security_tab/SecurityTab.tsx:230
+#: src/components/modals/tabs/account_security_tab/SecurityTab.tsx:243
 msgid "Use an authenticator app to generate codes for two-factor authentication"
 msgstr "Gunakan aplikasi autentikator untuk membuat kode untuk autentikasi dua faktor"
 
@@ -23323,7 +23319,7 @@ msgstr "Gunakan Profil Global"
 msgid "Use light theme"
 msgstr "Gunakan tema terang"
 
-#: src/components/modals/tabs/account_security_tab/SecurityTab.tsx:277
+#: src/components/modals/tabs/account_security_tab/SecurityTab.tsx:290
 msgid "Use passkeys for passwordless sign-in and two-factor authentication"
 msgstr "Gunakan kunci akses untuk masuk tanpa kata sandi dan autentikasi dua faktor"
 
@@ -23864,7 +23860,7 @@ msgstr "Lihat dan kelola pengguna yang diblokir."
 msgid "View and manage every webhook configured across your community."
 msgstr "Lihat dan kelola setiap webhook yang dikonfigurasi di seluruh komunitas Anda."
 
-#: src/components/modals/tabs/account_security_tab/SecurityTab.tsx:260
+#: src/components/modals/tabs/account_security_tab/SecurityTab.tsx:273
 msgid "View and manage your backup codes for account recovery"
 msgstr "Lihat dan kelola kode cadangan Anda untuk pemulihan akun"
 
@@ -23889,7 +23885,7 @@ msgstr "Lihat kontrol panggilan"
 msgid "View Channel"
 msgstr "Lihat Kanal"
 
-#: src/components/modals/tabs/account_security_tab/SecurityTab.tsx:268
+#: src/components/modals/tabs/account_security_tab/SecurityTab.tsx:281
 msgid "View Codes"
 msgstr "Lihat Kode"
 
@@ -24004,7 +24000,8 @@ msgstr "Suara VIP"
 msgid "visibility"
 msgstr "visibilitas"
 
-#: src/components/modals/components/plutonium/SubscriptionCard.tsx:121
+#: src/components/modals/components/FeatureComparisonTable.tsx:149
+#: src/components/modals/components/plutonium/SubscriptionCard.tsx:110
 #: src/utils/modals/guild_tabs/GuildAuditLogTabUtils.tsx:283
 msgid "Visionary"
 msgstr "Visionary"
@@ -24026,7 +24023,7 @@ msgid "Visionary Badge Override"
 msgstr "Override Lencana Visionary"
 
 #. placeholder {0}: profile.premiumLifetimeSequence
-#: src/components/popouts/UserProfileBadges.tsx:150
+#: src/components/popouts/UserProfileBadges.tsx:136
 msgid "Visionary ID #{0}"
 msgstr "ID Visionary #{0}"
 
@@ -24175,7 +24172,7 @@ msgstr "Pemutar pesan suara"
 msgid "Voice Mute"
 msgstr "Bisu Suara"
 
-#: src/components/modals/channel_tabs/ChannelOverviewTab.tsx:640
+#: src/components/modals/channel_tabs/ChannelOverviewTab.tsx:679
 msgid "Voice Quality"
 msgstr "Kualitas Suara"
 
@@ -24184,7 +24181,7 @@ msgstr "Kualitas Suara"
 msgid "Voice recording is not supported in this browser."
 msgstr "Perekaman suara tidak didukung di browser ini."
 
-#: src/components/modals/channel_tabs/ChannelOverviewTab.tsx:728
+#: src/components/modals/channel_tabs/ChannelOverviewTab.tsx:767
 #: src/components/voice/VoiceSettingsMenus.tsx:483
 msgid "Voice Region"
 msgstr "Wilayah Suara"
@@ -24218,7 +24215,7 @@ msgstr "Volume"
 msgid "Volume Control"
 msgstr "Kontrol Volume"
 
-#: src/components/modals/AddGuildModal.tsx:154
+#: src/components/modals/AddGuildModal.tsx:155
 msgid "Volunteer Heroes"
 msgstr "Pahlawan Relawan"
 
@@ -24401,8 +24398,8 @@ msgid "We'll verify your new email with a one-time code."
 msgstr "Kami akan memverifikasi email baru Anda dengan kode satu kali."
 
 #: src/components/NetworkErrorScreen.tsx:39
-msgid "We're having trouble connecting to Fluxer's servers. This could be a temporary network issue or scheduled maintenance."
-msgstr "Kami mengalami masalah menghubungkan ke server Fluxer. Ini bisa jadi masalah jaringan sementara atau pemeliharaan terjadwal."
+msgid "We're having trouble connecting to Echowire's servers. This could be a temporary network issue or scheduled maintenance."
+msgstr "We're having trouble connecting to Echowire's servers. This could be a temporary network issue or scheduled maintenance."
 
 #: src/components/modals/tabs/DevicesTab.tsx:234
 msgid "We're having trouble connecting to the space-time continuum. Please check your connection and try again."
@@ -24488,7 +24485,7 @@ msgstr "Webhooks"
 msgid "Webhooks updated"
 msgstr "Webhooks diperbarui"
 
-#: src/components/modals/AddGuildModal.tsx:160
+#: src/components/modals/AddGuildModal.tsx:161
 msgid "Weekend Warriors"
 msgstr "Weekend Warriors"
 
@@ -24698,7 +24695,7 @@ msgstr "Whoa, ini berat."
 msgid "Why are you reporting this?"
 msgstr "Mengapa Anda melaporkan ini?"
 
-#: src/components/pages/OAuthAuthorizePage.tsx:757
+#: src/components/pages/OAuthAuthorizePage.tsx:726
 msgid "Will send you back to"
 msgstr "Akan mengirim Anda kembali ke"
 
@@ -24718,7 +24715,7 @@ msgstr "Dengan Plutonium, Anda dapat menggunakan avatar dan spanduk animasi (dal
 msgid "Withdraw"
 msgstr "Tarik"
 
-#: src/components/modals/AddGuildModal.tsx:182
+#: src/components/modals/AddGuildModal.tsx:183
 msgid "Work Friends"
 msgstr "Teman Kerja"
 
@@ -24893,7 +24890,7 @@ msgstr "Anda hanya dapat mengunggah 1 file sekaligus. Coba lagi dengan file yang
 msgid "You can pin messages in this conversation for everyone to see."
 msgstr "Anda dapat menyematkan pesan dalam percakapan ini agar dilihat semua orang."
 
-#: src/components/modals/components/plutonium/SubscriptionCard.tsx:176
+#: src/components/modals/components/plutonium/SubscriptionCard.tsx:165
 msgid "You can redeem additional gift codes to <0>extend</0> your gift time."
 msgstr "Anda dapat menukarkan kode hadiah tambahan untuk <0>memperpanjang</0> waktu hadiah Anda."
 
@@ -24933,7 +24930,7 @@ msgstr "Anda tidak dapat berinteraksi dengan reaksi di hasil pencarian karena da
 #: src/components/layout/ChannelItem.tsx:213
 #: src/components/layout/ChannelItem.tsx:400
 #: src/stores/voice/MediaEngineFacade.tsx:168
-#: src/stores/voice/MediaEngineFacade.tsx:828
+#: src/stores/voice/MediaEngineFacade.tsx:899
 msgid "You can't join while you're on timeout."
 msgstr "Anda tidak dapat bergabung saat Anda dalam timeout."
 
@@ -25023,11 +25020,11 @@ msgstr "Anda belum memiliki penggantian tema kustom untuk dibagikan."
 msgid "You don't have permission to connect to this voice channel."
 msgstr "Anda tidak memiliki izin untuk terhubung ke saluran suara ini."
 
-#: src/actions/InviteActionCreators.tsx:320
+#: src/actions/InviteActionCreators.tsx:343
 msgid "You don't have permission to install this emoji pack."
 msgstr "Anda tidak memiliki izin untuk menginstal paket emoji ini."
 
-#: src/actions/InviteActionCreators.tsx:321
+#: src/actions/InviteActionCreators.tsx:344
 msgid "You don't have permission to install this sticker pack."
 msgstr "Anda tidak memiliki izin untuk menginstal paket stiker ini."
 
@@ -25059,23 +25056,23 @@ msgstr "Anda memiliki satu kode hadiah baru yang menunggu untuk Anda!"
 msgid "You have a new gift code waiting in your Gift Inventory."
 msgstr "Anda memiliki satu kode hadiah baru yang menunggu di Inventaris Hadiah Anda."
 
-#: src/components/modals/components/plutonium/SubscriptionCard.tsx:200
+#: src/components/modals/components/plutonium/SubscriptionCard.tsx:189
 msgid "You have all <0/> for <1>{monthlyPrice}/month</1>."
 msgstr "Anda memiliki semua <0/> untuk <1>{monthlyPrice}/bulan</1>."
 
-#: src/components/modals/components/plutonium/SubscriptionCard.tsx:205
+#: src/components/modals/components/plutonium/SubscriptionCard.tsx:194
 msgid "You have all <0/> for <1>{yearlyPrice}/year</1>."
 msgstr "Anda memiliki semua <0/> untuk <1>{yearlyPrice}/tahun</1>."
 
-#: src/components/modals/components/plutonium/SubscriptionCard.tsx:210
+#: src/components/modals/components/plutonium/SubscriptionCard.tsx:199
 msgid "You have all <0/> for your subscription period."
 msgstr "Anda memiliki semua <0/> untuk periode langganan Anda."
 
-#: src/components/modals/components/plutonium/SubscriptionCard.tsx:195
+#: src/components/modals/components/plutonium/SubscriptionCard.tsx:184
 msgid "You have all <0/> forever. No subscriptions, no renewals."
 msgstr "Anda memiliki semua <0/> selamanya. Tanpa langganan, tanpa perpanjangan."
 
-#: src/components/modals/components/plutonium/SubscriptionCard.tsx:170
+#: src/components/modals/components/plutonium/SubscriptionCard.tsx:159
 msgid "You have all <0/> via a <1>gift subscription</1> until <2>{giftEndDate}</2>. It <3>won't renew</3>."
 msgstr "Anda memiliki semua <0/> melalui <1>langganan hadiah</1> hingga <2>{giftEndDate}</2>. Itu <3>tidak akan diperpanjang</3>."
 
@@ -25083,35 +25080,35 @@ msgstr "Anda memiliki semua <0/> melalui <1>langganan hadiah</1> hingga <2>{gift
 msgid "You have blocked {username}. Unblock them to send messages."
 msgstr "Anda telah memblokir {username}. Batalkan blokir untuk mengirim pesan."
 
-#: src/actions/InviteActionCreators.tsx:264
+#: src/actions/InviteActionCreators.tsx:287
 msgid "You have created the maximum of {limit} emoji pack. Delete one to create another."
 msgstr "Kamu telah membuat maksimum {limit} paket emoji. Hapus satu untuk membuat yang lain."
 
-#: src/actions/InviteActionCreators.tsx:265
+#: src/actions/InviteActionCreators.tsx:288
 msgid "You have created the maximum of {limit} emoji packs. Delete one to create another."
 msgstr "Kamu telah membuat maksimum {limit} paket emoji. Hapus satu untuk membuat yang lain."
 
-#: src/actions/InviteActionCreators.tsx:296
+#: src/actions/InviteActionCreators.tsx:319
 msgid "You have created the maximum of {limit} sticker pack. Delete one to create another."
 msgstr "Kamu telah membuat maksimum {limit} paket stiker. Hapus satu untuk membuat yang lain."
 
-#: src/actions/InviteActionCreators.tsx:297
+#: src/actions/InviteActionCreators.tsx:320
 msgid "You have created the maximum of {limit} sticker packs. Delete one to create another."
 msgstr "Kamu telah membuat maksimum {limit} paket stiker. Hapus satu untuk membuat yang lain."
 
-#: src/actions/InviteActionCreators.tsx:250
+#: src/actions/InviteActionCreators.tsx:273
 msgid "You have installed the maximum of {limit} emoji pack. Remove one to install another."
 msgstr "Kamu telah menginstal maksimum {limit} paket emoji. Hapus satu untuk menginstal yang lain."
 
-#: src/actions/InviteActionCreators.tsx:251
+#: src/actions/InviteActionCreators.tsx:274
 msgid "You have installed the maximum of {limit} emoji packs. Remove one to install another."
 msgstr "Kamu telah menginstal maksimum {limit} paket emoji. Hapus satu untuk menginstal yang lain."
 
-#: src/actions/InviteActionCreators.tsx:282
+#: src/actions/InviteActionCreators.tsx:305
 msgid "You have installed the maximum of {limit} sticker pack. Remove one to install another."
 msgstr "Kamu telah menginstal maksimum {limit} paket stiker. Hapus satu untuk menginstal yang lain."
 
-#: src/actions/InviteActionCreators.tsx:283
+#: src/actions/InviteActionCreators.tsx:306
 msgid "You have installed the maximum of {limit} sticker packs. Remove one to install another."
 msgstr "Kamu telah menginstal maksimum {limit} paket stiker. Hapus satu untuk menginstal yang lain."
 
@@ -25119,19 +25116,19 @@ msgstr "Kamu telah menginstal maksimum {limit} paket stiker. Hapus satu untuk me
 msgid "You have no friends yet"
 msgstr "Anda belum punya teman"
 
-#: src/actions/InviteActionCreators.tsx:268
+#: src/actions/InviteActionCreators.tsx:291
 msgid "You have reached the limit for creating emoji packs. Delete one of your packs to create another."
 msgstr "Anda telah mencapai batas untuk membuat paket emoji. Hapus salah satu paket Anda untuk membuat yang lain."
 
-#: src/actions/InviteActionCreators.tsx:300
+#: src/actions/InviteActionCreators.tsx:323
 msgid "You have reached the limit for creating sticker packs. Delete one of your packs to create another."
 msgstr "Anda telah mencapai batas untuk membuat paket stiker. Hapus salah satu paket Anda untuk membuat yang lain."
 
-#: src/actions/InviteActionCreators.tsx:254
+#: src/actions/InviteActionCreators.tsx:277
 msgid "You have reached the limit for installing emoji packs. Remove one of your installed packs to install another."
 msgstr "Anda telah mencapai batas untuk memasang paket emoji. Hapus salah satu paket terpasang Anda untuk memasang yang lain."
 
-#: src/actions/InviteActionCreators.tsx:286
+#: src/actions/InviteActionCreators.tsx:309
 msgid "You have reached the limit for installing sticker packs. Remove one of your installed packs to install another."
 msgstr "Anda telah mencapai batas untuk memasang paket stiker. Hapus salah satu paket terpasang Anda untuk memasang yang lain."
 
@@ -25241,8 +25238,8 @@ msgstr "Anda perlu mengklaim akun Anda untuk mengirim pesan di komunitas ini."
 msgid "You need to verify your email to send messages in this community."
 msgstr "Anda perlu memverifikasi email Anda untuk mengirim pesan di komunitas ini."
 
-#: src/components/pages/OAuthAuthorizePage.tsx:688
-#: src/components/pages/OAuthAuthorizePage.tsx:948
+#: src/components/pages/OAuthAuthorizePage.tsx:668
+#: src/components/pages/OAuthAuthorizePage.tsx:917
 msgid "You will be taken to <0><1>{redirectHostname}</1></0> after authorizing."
 msgstr "Anda akan diarahkan ke <0><1>{redirectHostname}</1></0> setelah mengizinkan."
 
@@ -25260,7 +25257,7 @@ msgstr "Anda tidak akan menerima notifikasi di desktop"
 msgid "You'll appear offline"
 msgstr "Anda akan tampak offline"
 
-#: src/components/pages/OAuthAuthorizePage.tsx:906
+#: src/components/pages/OAuthAuthorizePage.tsx:875
 msgid "You'll configure which permissions the bot receives on the next screen."
 msgstr "Anda akan mengonfigurasi izin mana yang diterima bot di layar berikutnya."
 
@@ -25599,11 +25596,11 @@ msgstr "wilayah Anda"
 msgid "Your stream is still being broadcast"
 msgstr "Stream Anda masih disiarkan"
 
-#: src/components/modals/components/plutonium/SubscriptionCard.tsx:156
+#: src/components/modals/components/plutonium/SubscriptionCard.tsx:145
 msgid "Your subscription ended, but you still have all <0/> until <1>{graceDate}</1>. Resubscribe to keep them."
 msgstr "Langganan Anda berakhir, tetapi Anda masih memiliki semua <0/> hingga <1>{graceDate}</1>. Berlangganan kembali untuk mempertahankannya."
 
-#: src/components/modals/components/plutonium/SubscriptionCard.tsx:145
+#: src/components/modals/components/plutonium/SubscriptionCard.tsx:134
 msgid "Your subscription expired on <0>{expiredDate}</0>. You lost all <1/>. You can reactivate at any time."
 msgstr "Langganan Anda kedaluwarsa pada <0>{expiredDate}</0>. Anda kehilangan semua <1/>. Anda dapat mengaktifkan kembali kapan saja."
 
@@ -25619,7 +25616,7 @@ msgstr "Langganan Anda telah diaktifkan kembali!"
 msgid "Your subscription has been set to cancel at the end of your billing period."
 msgstr "Langganan Anda telah diatur untuk dibatalkan di akhir periode penagihan Anda."
 
-#: src/components/modals/components/plutonium/SubscriptionCard.tsx:188
+#: src/components/modals/components/plutonium/SubscriptionCard.tsx:177
 msgid "Your subscription will cancel on <0>{cancelDate}</0>. You'll lose all <1/> after that date."
 msgstr "Langganan Anda akan dibatalkan pada <0>{cancelDate}</0>. Anda akan kehilangan semua <1/> setelah tanggal itu."
 

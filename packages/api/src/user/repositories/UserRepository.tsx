@@ -27,6 +27,7 @@ import type {
 } from '@fluxer/api/src/database/types/AuthTypes';
 import type {GiftCodeRow, PaymentBySubscriptionRow, PaymentRow} from '@fluxer/api/src/database/types/PaymentTypes';
 import type {
+	PushDeviceRow,
 	PushSubscriptionRow,
 	RecentMentionRow,
 	RelationshipRow,
@@ -42,6 +43,7 @@ import type {GiftCode} from '@fluxer/api/src/models/GiftCode';
 import type {MfaBackupCode} from '@fluxer/api/src/models/MfaBackupCode';
 import type {PasswordResetToken} from '@fluxer/api/src/models/PasswordResetToken';
 import type {Payment} from '@fluxer/api/src/models/Payment';
+import type {PushDevice} from '@fluxer/api/src/models/PushDevice';
 import type {PushSubscription} from '@fluxer/api/src/models/PushSubscription';
 import type {ReadState} from '@fluxer/api/src/models/ReadState';
 import type {RecentMention} from '@fluxer/api/src/models/RecentMention';
@@ -606,6 +608,22 @@ export class UserRepository implements IUserRepositoryAggregate {
 
 	async deleteAllPushSubscriptions(userId: UserID): Promise<void> {
 		return this.contentRepo.deleteAllPushSubscriptions(userId);
+	}
+
+	async upsertPushDevice(data: PushDeviceRow): Promise<PushDevice> {
+		return this.contentRepo.upsertPushDevice(data);
+	}
+
+	async deletePushDevice(userId: UserID, deviceId: string): Promise<void> {
+		return this.contentRepo.deletePushDevice(userId, deviceId);
+	}
+
+	async getBulkPushDevices(userIds: Array<UserID>): Promise<Map<UserID, Array<PushDevice>>> {
+		return this.contentRepo.getBulkPushDevices(userIds);
+	}
+
+	async deleteAllPushDevices(userId: UserID): Promise<void> {
+		return this.contentRepo.deleteAllPushDevices(userId);
 	}
 
 	async createPayment(data: {

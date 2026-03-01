@@ -56,7 +56,18 @@ function cleanupSockets(clientSocket: Socket, proxySocket?: Socket): void {
 
 export function createGatewayProxy(): GatewayProxy {
 	const gatewayHost = '127.0.0.1';
-	const gatewayPort = Config.services.gateway.port;
+	const gatewayPort = Config.services.gateway?.port;
+
+	if (!gatewayPort || Config.services.gateway?.enabled === false) {
+		Logger.info('Gateway Proxy disabled: embedded gateway not enabled');
+		return {
+			onUpgrade: (_req: http.IncomingMessage, socket: Duplex) => {
+				const clientSocket = socket as Socket;
+				clientSocket.write('HTTP/1.1 502 Bad Gateway\r\n\r\n');
+				clientSocket.destroy();
+			},
+		};
+	}
 
 	Logger.info({host: gatewayHost, port: gatewayPort}, 'Gateway Proxy initialized');
 

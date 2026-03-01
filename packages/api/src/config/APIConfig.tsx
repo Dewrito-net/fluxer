@@ -27,6 +27,7 @@ export interface APIConfig {
 		localDc: string;
 		username: string;
 		password: string;
+		consistency: string;
 	};
 
 	database: {
@@ -269,6 +270,11 @@ export interface APIConfig {
 
 	push: {
 		publicVapidKey?: string;
+	};
+
+	fcm: {
+		enabled: boolean;
+		serviceAccountKeyPath?: string;
 	};
 
 	queue: {

@@ -89,6 +89,7 @@ import {createStorageService} from '@fluxer/api/src/infrastructure/StorageServic
 import {UnfurlerService} from '@fluxer/api/src/infrastructure/UnfurlerService';
 import {UserCacheService} from '@fluxer/api/src/infrastructure/UserCacheService';
 import {VirusScanService} from '@fluxer/api/src/infrastructure/VirusScanService';
+import {VoiceConnectionStore} from '@fluxer/api/src/infrastructure/VoiceConnectionStore';
 import {VoiceRoomStore} from '@fluxer/api/src/infrastructure/VoiceRoomStore';
 import {InstanceConfigRepository} from '@fluxer/api/src/instance/InstanceConfigRepository';
 import {SnowflakeReservationRepository} from '@fluxer/api/src/instance/SnowflakeReservationRepository';
@@ -331,6 +332,7 @@ function getLiveKitWebhookService(): LiveKitWebhookService | null {
 			voiceRoomStore instanceof VoiceRoomStore;
 
 		if (hasVoiceInfrastructure && voiceTopology) {
+			const voiceConnectionStore = new VoiceConnectionStore(getKVClient());
 			_liveKitWebhookService = new LiveKitWebhookService(
 				voiceRoomStore,
 				gatewayService,
@@ -338,6 +340,7 @@ function getLiveKitWebhookService(): LiveKitWebhookService | null {
 				liveKitService,
 				voiceTopology,
 				limitConfigService,
+				voiceConnectionStore,
 			);
 		}
 	}
@@ -379,7 +382,8 @@ export const ServiceMiddleware = createMiddleware<HonoEnv>(async (ctx, next) => 
 	const kvActivityTracker = new KVActivityTracker(kvClient);
 	const mediaService = getMediaService();
 	const storageService = createStorageService({s3Service: getInjectedS3Service()});
-	const downloadService = new DownloadService(storageService);
+	const downloadStorageService = createStorageService();
+	const downloadService = new DownloadService(downloadStorageService);
 	const themeService = new ThemeService(storageService);
 	const csamEvidenceRetentionService = new CsamEvidenceRetentionService(storageService);
 	const gatewayService = getGatewayService();
@@ -574,6 +578,8 @@ export const ServiceMiddleware = createMiddleware<HonoEnv>(async (ctx, next) => 
 
 	const liveKitWebhookService = hasVoiceInfrastructure ? getLiveKitWebhookService() : undefined;
 
+	const voiceConnectionStore = hasVoiceInfrastructure ? new VoiceConnectionStore(kvClient) : undefined;
+
 	const voiceService =
 		hasVoiceInfrastructure && voiceAvailabilityService
 			? new VoiceService(
@@ -583,6 +589,7 @@ export const ServiceMiddleware = createMiddleware<HonoEnv>(async (ctx, next) => 
 					channelRepository,
 					voiceRoomStore,
 					voiceAvailabilityService,
+					voiceConnectionStore,
 				)
 			: undefined;
 
@@ -707,6 +714,7 @@ export const ServiceMiddleware = createMiddleware<HonoEnv>(async (ctx, next) => 
 		limitConfigService,
 		voiceService,
 		voiceAvailabilityService ?? undefined,
+		voiceConnectionStore,
 	);
 
 	const webhookService = new WebhookService(
@@ -791,7 +799,7 @@ export const ServiceMiddleware = createMiddleware<HonoEnv>(async (ctx, next) => 
 	const donationRepository = new DonationRepository();
 	let stripeService: StripeService | null = null;
 	let donationService: DonationService | null = null;
-	if (!Config.instance.selfHosted) {
+	if (Config.stripe.enabled) {
 		stripeService = new StripeService(
 			userRepository,
 			userCacheService,

@@ -19,7 +19,6 @@
 
 import {posix} from 'node:path';
 import {Readable} from 'node:stream';
-import {S3ServiceException} from '@aws-sdk/client-s3';
 import {Config} from '@fluxer/api/src/Config';
 import type {IStorageService} from '@fluxer/api/src/infrastructure/IStorageService';
 import type {
@@ -56,6 +55,7 @@ const FORMAT_MAPPINGS: Record<DesktopFormat, Partial<Record<DesktopPlatform, For
 	deb: {linux: {ext: '.deb', arch: {x64: 'amd64', arm64: 'arm64'}}},
 	rpm: {linux: {ext: '.rpm', arch: {x64: 'x86_64', arm64: 'aarch64'}}},
 	tar_gz: {linux: {ext: '.tar.gz', arch: {x64: 'x64', arm64: 'arm64'}}},
+	apk: {android: {ext: '.apk', arch: {x64: 'x86_64', arm64: 'arm64'}}},
 };
 
 type VersionFile = {
@@ -78,6 +78,17 @@ interface LatestFilenameLookupParams {
 
 interface ManifestFilenameResolutionParams extends LatestFilenameLookupParams {
 	filename: string;
+}
+
+function isS3NotFoundError(error: unknown): boolean {
+	if (error != null && typeof error === 'object') {
+		const err = error as Record<string, unknown>;
+		const name = typeof err.name === 'string' ? err.name : undefined;
+		const code = typeof err.Code === 'string' ? err.Code : typeof err.code === 'string' ? err.code : undefined;
+		const id = name ?? code;
+		return id === 'NoSuchKey' || id === 'NotFound';
+	}
+	return false;
 }
 
 export class DownloadService {
@@ -133,7 +144,7 @@ export class DownloadService {
 
 			return dest.toString();
 		} catch (error) {
-			if (error instanceof S3ServiceException && (error.name === 'NoSuchKey' || error.name === 'NotFound')) {
+			if (isS3NotFoundError(error)) {
 				return null;
 			}
 			throw error;
@@ -210,7 +221,7 @@ export class DownloadService {
 				files,
 			};
 		} catch (error) {
-			if (error instanceof S3ServiceException && (error.name === 'NoSuchKey' || error.name === 'NotFound')) {
+			if (isS3NotFoundError(error)) {
 				return null;
 			}
 			throw error;
@@ -363,7 +374,7 @@ export class DownloadService {
 
 			return {versions, hasMore};
 		} catch (error) {
-			if (error instanceof S3ServiceException && (error.name === 'NoSuchKey' || error.name === 'NotFound')) {
+			if (isS3NotFoundError(error)) {
 				return {versions: [], hasMore: false};
 			}
 			throw error;
@@ -405,7 +416,7 @@ export class DownloadService {
 					return dest;
 				}
 			} catch (error) {
-				if (error instanceof S3ServiceException && (error.name === 'NoSuchKey' || error.name === 'NotFound')) {
+				if (isS3NotFoundError(error)) {
 					continue;
 				}
 				throw error;
@@ -437,7 +448,7 @@ export class DownloadService {
 					});
 				}
 			} catch (error) {
-				if (error instanceof S3ServiceException && (error.name === 'NoSuchKey' || error.name === 'NotFound')) {
+				if (isS3NotFoundError(error)) {
 					continue;
 				}
 				throw error;
@@ -476,18 +487,22 @@ export class DownloadService {
 	}
 
 	private async readJsonObjectFromStorage<T>(key: string): Promise<T | null> {
-		const streamResult = await this.storageService.streamObject({
-			bucket: Config.s3.buckets.downloads,
-			key,
-		});
+		try {
+			const streamResult = await this.storageService.streamObject({
+				bucket: Config.s3.buckets.downloads,
+				key,
+			});
 
-		if (!streamResult) {
+			if (!streamResult) {
+				return null;
+			}
+
+			const body = Readable.toWeb(streamResult.body);
+			const text = await new Response(body as ReadableStream).text();
+			return JSON.parse(text) as T;
+		} catch {
 			return null;
 		}
-
-		const body = Readable.toWeb(streamResult.body);
-		const text = await new Response(body as ReadableStream).text();
-		return JSON.parse(text) as T;
 	}
 
 	private async resolveManifestFilename(params: ManifestFilenameResolutionParams): Promise<string | null> {
@@ -580,6 +595,10 @@ export class DownloadService {
 			filenames.push(`Fluxer-${channel}-${version}-${archSuffix}-Setup${ext}`);
 			filenames.push(`fluxer-${version}-${archSuffix}-setup${ext}`);
 			filenames.push(`Fluxer-${version}-${archSuffix}-Setup${ext}`);
+		} else if (format === 'apk') {
+			filenames.push(`dewrito-${version}${ext}`);
+			filenames.push(`fluxer-${channel}-${version}${ext}`);
+			filenames.push(`fluxer-${version}${ext}`);
 		} else {
 			filenames.push(`fluxer-${channel}-${version}-${archSuffix}${ext}`);
 			filenames.push(`fluxer-${version}-${archSuffix}${ext}`);
@@ -608,12 +627,13 @@ export class DownloadService {
 			const archSuffix = archMap[arch as 'x64' | 'arm64'];
 			const escapedExt = this.escapeRegex(ext);
 
+			const archPart = format === 'apk' ? `(?:-${this.escapeRegex(archSuffix)})?` : `-${this.escapeRegex(archSuffix)}`;
 			const patterns = [
 				new RegExp(
-					`^[Ff]luxer-${this.escapeRegex(channel)}-(\\d+\\.\\d+\\.\\d+)-${this.escapeRegex(archSuffix)}(?:-[Ss]etup)?${escapedExt}$`,
+					`^(?:[Ff]luxer|[Ee]chowire)-${this.escapeRegex(channel)}-(\\d+\\.\\d+\\.\\d+)${archPart}(?:-[Ss]etup)?${escapedExt}$`,
 					'u',
 				),
-				new RegExp(`^[Ff]luxer-(\\d+\\.\\d+\\.\\d+)-${this.escapeRegex(archSuffix)}(?:-[Ss]etup)?${escapedExt}$`, 'u'),
+				new RegExp(`^(?:[Ff]luxer|[Ee]chowire)-(\\d+\\.\\d+\\.\\d+)${archPart}(?:-[Ss]etup)?${escapedExt}$`, 'u'),
 			];
 
 			for (const pattern of patterns) {
@@ -643,11 +663,12 @@ export class DownloadService {
 	}
 
 	private buildKeyFromPath(path: string): string | null {
-		if (!path.startsWith(DOWNLOAD_PREFIX)) {
+		const dlIndex = path.indexOf(DOWNLOAD_PREFIX);
+		if (dlIndex === -1) {
 			return null;
 		}
 
-		const stripped = path.slice(DOWNLOAD_PREFIX.length);
+		const stripped = path.slice(dlIndex + DOWNLOAD_PREFIX.length);
 
 		const normalized = posix.normalize(stripped.replace(/^\/+/u, ''));
 

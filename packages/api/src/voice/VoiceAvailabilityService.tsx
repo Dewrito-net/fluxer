@@ -151,6 +151,12 @@ export class VoiceAvailabilityService {
 			const accessibleServers = servers.filter((server) => this.isServerAccessible(server, context));
 			const regionAccessible = this.isRegionAccessible(region, context);
 
+			const firstActiveServer = accessibleServers[0] ?? null;
+			let pingEndpoint: string | null = null;
+			if (firstActiveServer) {
+				pingEndpoint = firstActiveServer.endpoint.replace('wss://', 'https://') + '/ping';
+			}
+
 			return {
 				id: region.id,
 				name: region.name,
@@ -164,6 +170,7 @@ export class VoiceAvailabilityService {
 				activeServerCount: accessibleServers.length,
 				isAccessible: regionAccessible && accessibleServers.length > 0,
 				restrictions: region.restrictions,
+				pingEndpoint,
 			};
 		});
 	}
