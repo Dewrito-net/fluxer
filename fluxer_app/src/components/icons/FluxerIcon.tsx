@@ -28,7 +28,7 @@ export const FluxerIcon = observer((props: React.SVGProps<SVGSVGElement>) => {
 			xmlns="http://www.w3.org/2000/svg"
 			viewBox="0 0 200 200"
 			role="img"
-			aria-label={t`Echowire application icon`}
+			aria-label={t`Dewrito application icon`}
 			{...props}
 		>
 			<defs>

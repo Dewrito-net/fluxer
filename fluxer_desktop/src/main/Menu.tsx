@@ -23,7 +23,7 @@ import {app, Menu, type MenuItemConstructorOptions, shell} from 'electron';
 
 export function createApplicationMenu(): void {
 	const isCanary = BUILD_CHANNEL === 'canary';
-	const appName = isCanary ? 'Echowire Canary' : 'Echowire';
+	const appName = isCanary ? 'Dewrito Canary' : 'Dewrito';
 	const isMac = process.platform === 'darwin';
 
 	const template: Array<MenuItemConstructorOptions> = [];

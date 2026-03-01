@@ -1,6 +1,6 @@
-# Echowire
+# Dewrito
 
-Self-hosted [Fluxer](https://github.com/fluxerapp/fluxer) deployment at **https://echowire.org**.
+Self-hosted [Fluxer](https://github.com/fluxerapp/fluxer) deployment at **https://dewrito.net**.
 
 ## Architecture
 
@@ -24,11 +24,11 @@ Users → Cloudflare CDN → Vultr VPS (Caddy edge proxy)
 
 | Label | Region | IP | Domain |
 |-------|--------|-----|--------|
-| voice-ewr | New Jersey | 45.77.98.230 | voice-ewr.echowire.org |
-| voice-atl | Atlanta | 96.30.205.1 | voice-atl.echowire.org |
-| voice-ord | Chicago | 104.207.138.140 | voice-ord.echowire.org |
-| voice-lax | Los Angeles | 45.76.170.23 | voice-lax.echowire.org |
-| voice-dfw | Dallas | 216.128.143.25 | voice-dfw.echowire.org |
+| voice-ewr | New Jersey | 45.77.98.230 | voice-ewr.dewrito.net |
+| voice-atl | Atlanta | 96.30.205.1 | voice-atl.dewrito.net |
+| voice-ord | Chicago | 104.207.138.140 | voice-ord.dewrito.net |
+| voice-lax | Los Angeles | 45.76.170.23 | voice-lax.dewrito.net |
+| voice-dfw | Dallas | 216.128.143.25 | voice-dfw.dewrito.net |
 
 Each runs: Docker (LiveKit + Redis) + Caddy (host, auto-TLS)
 UFW ports: 22, 80, 443, 7881/tcp, 7882/udp
@@ -36,7 +36,7 @@ DNS: grey cloud (DNS only, no proxy — LiveKit needs direct UDP)
 
 ## Services (NC VM)
 
-All services run via Docker Compose at `/opt/echowire/compose.yaml`:
+All services run via Docker Compose at `/opt/Dewrito/compose.yaml`:
 
 | Service | Image | Purpose |
 |---------|-------|---------|
@@ -58,8 +58,8 @@ docker compose --profile active up -d
 
 The refactor branch uses a JSON config file loaded via `FLUXER_CONFIG` env var:
 
-- **NC VM config**: `/opt/echowire/config.json` (local_dc: datacenter1)
-- **MI VM config**: `/opt/echowire/config.json` (local_dc: datacenter2)
+- **NC VM config**: `/opt/Dewrito/config.json` (local_dc: datacenter1)
+- **MI VM config**: `/opt/Dewrito/config.json` (local_dc: datacenter2)
 - **Schema**: Zod validation in `packages/config/`
 - **Env overrides**: `FLUXER_CONFIG__path__to__key` pattern
 
@@ -67,7 +67,7 @@ The refactor branch uses a JSON config file loaded via `FLUXER_CONFIG` env var:
 
 ### NetBird Mesh VPN (Self-Hosted)
 
-- **Management UI**: https://nb.echowire.org
+- **Management UI**: https://nb.dewrito.net
 - **Deployed at**: `/opt/netbird/` on Vultr
 - **All 4 nodes connected**: Vultr, NC VM, MI VM, local workstation
 
@@ -83,7 +83,7 @@ The refactor branch uses a JSON config file loaded via `FLUXER_CONFIG` env var:
 ssh -J root@10.9.50.10 root@10.9.50.30
 
 # MI VM (direct, or via NetBird)
-sshpass -p 'vos313qwe' ssh root@100.70.49.120
+sshpass -p '' ssh root@100.70.49.120
 
 # Vultr VPS
 ssh root@108.61.203.190
@@ -100,17 +100,17 @@ ssh root@216.128.143.25  # voice-dfw
 
 | Service | Details |
 |---------|---------|
-| **Domain** | echowire.org (Cloudflare CDN → Caddy auto-TLS) |
+| **Domain** | dewrito.net (Cloudflare CDN → Caddy auto-TLS) |
 | **Storage** | Cloudflare R2 — 6 buckets (fluxer, fluxer-uploads, fluxer-downloads, fluxer-reports, fluxer-harvests, fluxer-static) |
 | **CDN** | R2 public URL: `https://pub-01ca5f8f442643b18e2a4a79fb29f911.r2.dev` |
 | **Email** | smtp2go — mail.smtp2go.com:2525 |
 | **GIFs** | Klipy API (replaced Tenor) |
 | **Payments** | Stripe — Freemium model (Monthly $5, Yearly $48, Visionary $256) |
-| **Admin** | https://echowire.org/admin (Gleam app, OAuth2) |
+| **Admin** | https://dewrito.net/admin (Gleam app, OAuth2) |
 
-## Echowire Customizations (vs upstream Fluxer)
+## Dewrito Customizations (vs upstream Fluxer)
 
-These changes are committed on the `echowire-refactor` branch on top of upstream's `refactor` branch:
+These changes are committed on the `Dewrito-refactor` branch on top of upstream's `refactor` branch:
 
 ### Already handled by refactor branch (no patches needed)
 - Email provider abstraction (SMTP built-in via config)
@@ -122,11 +122,11 @@ These changes are committed on the `echowire-refactor` branch on top of upstream
 - SendGrid webhooks removed
 
 ### Our patches (committed)
-- **Branding**: All logos/icons replaced with Echowire waveform
+- **Branding**: All logos/icons replaced with Dewrito waveform
 - **index.html**: Title, description, favicons, theme color (#3B82F6)
-- **manifest.json**: Generated with Echowire name + theme
+- **manifest.json**: Generated with Dewrito name + theme
 - **Desktop icons**: All sizes replaced (icons-stable/)
-- **STABLE_APP_URL**: Points to https://echowire.org
+- **STABLE_APP_URL**: Points to https://dewrito.net
 - **Dockerfile**: Fixed for refactor branch (new packages, WASM build, lingui)
 - **Stripe routes**: Gated by `Config.stripe.enabled`
 
@@ -136,12 +136,12 @@ These changes are committed on the `echowire-refactor` branch on top of upstream
 |------|--------|
 | `.dockerignore` | Fixed exclusions for build |
 | `compose.yaml` | Per-site deployment config |
-| `fluxer_app/index.html` | Echowire title, favicon, theme |
+| `fluxer_app/index.html` | Dewrito title, favicon, theme |
 | `fluxer_app/rspack.config.mjs` | CDN_ENDPOINT env var |
-| `fluxer_app/scripts/build/rspack/static-files.mjs` | Echowire manifest + browserconfig |
-| `fluxer_app/src/components/icons/FluxerIcon.tsx` | Echowire waveform SVG |
-| `fluxer_app/src/images/fluxer-logo-*.svg` | Echowire logos (3 files) |
-| `fluxer_desktop/build_resources/icons-stable/*` | Echowire icons (25 files) |
+| `fluxer_app/scripts/build/rspack/static-files.mjs` | Dewrito manifest + browserconfig |
+| `fluxer_app/src/components/icons/FluxerIcon.tsx` | Dewrito waveform SVG |
+| `fluxer_app/src/images/fluxer-logo-*.svg` | Dewrito logos (3 files) |
+| `fluxer_desktop/build_resources/icons-stable/*` | Dewrito icons (25 files) |
 | `fluxer_desktop/src/common/Constants.tsx` | STABLE_APP_URL |
 | `fluxer_server/Dockerfile` | Build fixes for refactor |
 | `packages/api/src/app/ControllerRegistry.tsx` | Stripe route gating |
@@ -153,7 +153,7 @@ These changes are committed on the `echowire-refactor` branch on top of upstream
 
 ```
 origin   = https://github.com/fluxerapp/fluxer.git   (upstream)
-echowire = gitea.proudtech.net/cproudlock/echowire    (our fork)
+Dewrito = gitea.proudtech.net/cproudlock/Dewrito    (our fork)
 ```
 
 ### Pulling upstream changes
@@ -168,7 +168,7 @@ git fetch origin
 git rebase origin/refactor
 
 # Resolve conflicts if any, then push to Gitea
-git push echowire echowire-refactor:main
+git push Dewrito Dewrito-refactor:main
 ```
 
 ### Deploying to production
@@ -183,12 +183,12 @@ FLUXER_CONFIG=config/config.json docker build \
 
 # 2. Export and transfer to NC VM
 docker save fluxer-server:latest | gzip > /tmp/fluxer-server.tar.gz
-sshpass -p 'vos313qwe' scp /tmp/fluxer-server.tar.gz root@100.70.10.204:/tmp/
+sshpass -p '' scp /tmp/fluxer-server.tar.gz root@100.70.10.204:/tmp/
 
 # 3. Load and restart on NC VM
-sshpass -p 'vos313qwe' ssh root@100.70.10.204 \
+sshpass -p '' ssh root@100.70.10.204 \
   "docker load < /tmp/fluxer-server.tar.gz && \
-   cd /opt/echowire && \
+   cd /opt/Dewrito && \
    docker compose up -d && \
    sleep 5 && \
    docker compose restart gateway"
@@ -196,16 +196,16 @@ sshpass -p 'vos313qwe' ssh root@100.70.10.204 \
 # Note: Gateway MUST be restarted after API recreate (Erlang RPC doesn't auto-reconnect)
 
 # 4. Verify
-curl -s https://echowire.org/_health | python3 -m json.tool
+curl -s https://dewrito.net/_health | python3 -m json.tool
 ```
 
 ### Updating MI VM standby
 
 ```bash
 # Transfer same image to MI VM
-sshpass -p 'vos313qwe' ssh root@100.70.10.204 \
+sshpass -p '' ssh root@100.70.10.204 \
   "cat /tmp/fluxer-server.tar.gz" | \
-  sshpass -p 'vos313qwe' ssh root@100.70.49.120 \
+  sshpass -p '' ssh root@100.70.49.120 \
   "cat > /tmp/fluxer-server.tar.gz && docker load < /tmp/fluxer-server.tar.gz"
 ```
 
@@ -215,11 +215,11 @@ sshpass -p 'vos313qwe' ssh root@100.70.10.204 \
 - **Current version**: v1.6.0
 - **Build**: `npx electron-builder --config electron-builder.config.cjs --win --x64` (Windows via Wine), `--linux --x64` (Linux)
 - **Auto-updater**: `latest.yml` + `latest-linux.yml` on R2 at `s3://fluxer-downloads/desktop/stable/`
-- **Download page**: `https://echowire.org/download`
+- **Download page**: `https://dewrito.net/download`
 
 ## Android App
 
-- **Project**: `~/projects/voip/echowire-android/`
+- **Project**: `~/projects/voip/Dewrito-android/`
 - **Current version**: v1.0.4 (native WebView, not TWA)
 - **Build**: `ANDROID_HOME=~/android-sdk ./gradlew assembleRelease --no-daemon`
 - **APK on R2**: `s3://fluxer-downloads/android/`

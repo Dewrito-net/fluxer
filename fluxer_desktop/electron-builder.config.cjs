@@ -19,10 +19,10 @@
 
 const isCanary = process.env.BUILD_CHANNEL === 'canary';
 
-const productName = isCanary ? 'Echowire Canary' : 'Echowire';
-const appId = isCanary ? 'org.echowire.canary' : 'org.echowire.app';
+const productName = isCanary ? 'Dewrito Canary' : 'Dewrito';
+const appId = isCanary ? 'org.Dewrito.canary' : 'org.Dewrito.app';
 const iconDir = isCanary ? 'icons-canary' : 'icons-stable';
-const packageName = isCanary ? 'echowire_desktop_canary' : 'echowire_desktop';
+const packageName = isCanary ? 'Dewrito_desktop_canary' : 'Dewrito_desktop';
 
 /** @type {import('electron-builder').Configuration} */
 module.exports = {
@@ -193,6 +193,6 @@ module.exports = {
 
 	publish: {
 		provider: 'generic',
-		url: `https://echowire.org/dl/desktop/${isCanary ? 'canary' : 'stable'}`,
+		url: `https://dewrito.net/dl/desktop/${isCanary ? 'canary' : 'stable'}`,
 	},
 };

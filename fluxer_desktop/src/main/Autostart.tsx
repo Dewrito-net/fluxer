@@ -56,7 +56,7 @@ interface AutoLaunchConfig {
 
 function getAutoLaunchConfig(): AutoLaunchConfig {
 	const isCanary = BUILD_CHANNEL === 'canary';
-	const appName = isCanary ? 'Echowire Canary' : 'Echowire';
+	const appName = isCanary ? 'Dewrito Canary' : 'Dewrito';
 
 	return {
 		name: appName,

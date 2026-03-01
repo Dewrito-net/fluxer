@@ -18,7 +18,7 @@
  */
 
 export const APP_PROTOCOL = 'fluxer';
-export const STABLE_APP_URL = 'https://echowire.org';
+export const STABLE_APP_URL = 'https://dewrito.net';
 export const CANARY_APP_URL = 'https://web.canary.fluxer.app';
 export const DEFAULT_WINDOW_WIDTH = 1280;
 export const DEFAULT_WINDOW_HEIGHT = 800;

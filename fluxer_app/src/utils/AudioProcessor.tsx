@@ -34,7 +34,7 @@ const RNNOISE_WASM_SIMD_PATH = `${WORKLET_BASE_PATH}/rnnoise_simd.wasm`;
 let activeProcessor: AudioProcessorImpl | null = null;
 
 class AudioProcessorImpl implements TrackProcessor<Track.Kind.Audio> {
-	name = 'echowire-audio-processor';
+	name = 'dewrito-audio-processor';
 	processedTrack?: MediaStreamTrack;
 
 	private audioContext: AudioContext | null = null;

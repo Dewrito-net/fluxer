@@ -44,7 +44,7 @@ export function registerUpdater(getMainWindow: () => BrowserWindow | null) {
 
 	autoUpdater.setFeedURL({
 		provider: 'generic',
-		url: `https://echowire.org/dl/desktop/${BUILD_CHANNEL}`,
+		url: `https://dewrito.net/dl/desktop/${BUILD_CHANNEL}`,
 	});
 
 	autoUpdater.on('checking-for-update', () => {

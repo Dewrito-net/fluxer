@@ -28,7 +28,7 @@ export const FluxerSymbol = observer((props: React.SVGProps<SVGSVGElement>) => {
 			xmlns="http://www.w3.org/2000/svg"
 			viewBox="0 0 200 200"
 			role="img"
-			aria-label={t`Echowire application symbol`}
+			aria-label={t`Dewrito application symbol`}
 			{...props}
 		>
 			<g transform="translate(100,100)" fill="currentColor">

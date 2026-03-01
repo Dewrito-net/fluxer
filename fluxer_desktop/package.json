@@ -2,10 +2,10 @@
 	"name": "fluxer_desktop",
 	"version": "1.15.0",
 	"private": true,
-	"homepage": "https://echowire.org",
+	"homepage": "https://dewrito.net",
 	"author": {
-		"name": "Echowire",
-		"email": "support@echowire.org"
+		"name": "Dewrito",
+		"email": "support@dewrito.net"
 	},
 	"type": "module",
 	"main": "dist/main/index.js",

@@ -1,13 +1,13 @@
 #!/usr/bin/env bash
 set -euo pipefail
 
-# Echowire Rolling Deploy Script
+# Dewrito Rolling Deploy Script
 # Builds Docker image locally, transfers to both nodes, does rolling restart.
 # Usage: ./deploy.sh
 
 NC_HOST="root@100.70.10.204"
 MI_HOST="root@100.70.49.120"
-COMPOSE_DIR="/opt/echowire"
+COMPOSE_DIR="/opt/Dewrito"
 IMAGE_NAME="fluxer-server:latest"
 IMAGE_FILE="/tmp/fluxer-server-latest.tar.gz"
 HEALTH_URL="/_health"
@@ -98,7 +98,7 @@ NC_KEYS=$(ssh "$NC_HOST" "docker exec valkey keydb-cli dbsize" 2>/dev/null || ec
 MI_KEYS=$(ssh "$MI_HOST" "docker exec valkey keydb-cli dbsize" 2>/dev/null || echo "unknown")
 log "KeyDB — NC: $NC_KEYS, MI: $MI_KEYS"
 
-SITE_STATUS=$(curl -s -o /dev/null -w "%{http_code}" https://echowire.org/_health)
+SITE_STATUS=$(curl -s -o /dev/null -w "%{http_code}" https://dewrito.net/_health)
 if [ "$SITE_STATUS" = "200" ]; then
     log "Site is live (200 OK)"
 else

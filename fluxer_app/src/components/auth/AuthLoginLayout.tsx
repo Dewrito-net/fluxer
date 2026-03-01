@@ -331,7 +331,7 @@ export const AuthLoginLayout = observer(function AuthLoginLayout({
 					{styledRegisterLink}
 				</div>
 				<div className={styles.footerLinks}>
-					<a href="https://status.echowire.org" target="_blank" rel="noopener noreferrer" className={styles.footerExternalLink}>
+					<a href="https://status.dewrito.net" target="_blank" rel="noopener noreferrer" className={styles.footerExternalLink}>
 						Status
 					</a>
 					<span className={styles.footerLinkSeparator}>&middot;</span>

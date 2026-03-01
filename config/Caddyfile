@@ -1,4 +1,4 @@
-echowire.org {
+fluxer.dewrito.net {
 	# Download page
 	handle /download {
 		root * /srv/static

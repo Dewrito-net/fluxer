@@ -37,7 +37,7 @@ export function createTray(): Tray | null {
 	const resized = icon.resize({width: 24, height: 24});
 
 	const isCanary = BUILD_CHANNEL === 'canary';
-	const appName = isCanary ? 'Echowire Canary' : 'Echowire';
+	const appName = isCanary ? 'Dewrito Canary' : 'Dewrito';
 
 	tray = new Tray(resized);
 	tray.setToolTip(appName);

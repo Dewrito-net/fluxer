@@ -3925,12 +3925,12 @@ msgid "By creating a community, you agree to follow and uphold the <0>Fluxer Com
 msgstr "Bir topluluk oluşturarak, <0>Fluxer Topluluk Kuralları</0>'na uymayı ve onları desteklemeyi kabul etmiş olursunuz."
 
 #: src/components/modals/components/PurchaseDisclaimer.tsx:39
-msgid "By purchasing, you agree to our <0>Terms of Service</0> and <1>Privacy Policy</1>. All purchases are refundable within 14 days by emailing <2>support@echowire.org</2>. Chargebacks result in permanent account bans — if you want a refund, we're more than happy to give you one if you contact us first! Payment information is securely handled by Stripe — we never have access to your full card number."
-msgstr "By purchasing, you agree to our <0>Terms of Service</0> and <1>Privacy Policy</1>. All purchases are refundable within 14 days by emailing <2>support@echowire.org</2>. Chargebacks result in permanent account bans — if you want a refund, we're more than happy to give you one if you contact us first! Payment information is securely handled by Stripe — we never have access to your full card number."
+msgid "By purchasing, you agree to our <0>Terms of Service</0> and <1>Privacy Policy</1>. All purchases are refundable within 14 days by emailing <2>support@dewrito.net</2>. Chargebacks result in permanent account bans — if you want a refund, we're more than happy to give you one if you contact us first! Payment information is securely handled by Stripe — we never have access to your full card number."
+msgstr "By purchasing, you agree to our <0>Terms of Service</0> and <1>Privacy Policy</1>. All purchases are refundable within 14 days by emailing <2>support@dewrito.net</2>. Chargebacks result in permanent account bans — if you want a refund, we're more than happy to give you one if you contact us first! Payment information is securely handled by Stripe — we never have access to your full card number."
 
 #: src/components/modals/components/PurchaseDisclaimer.tsx:31
-msgid "By purchasing, you agreed to our <0>Terms of Service</0> and <1>Privacy Policy</1>. All purchases are refundable within 14 days by emailing <2>support@echowire.org</2>. Chargebacks result in permanent account bans — if you want a refund, we're more than happy to give you one if you contact us first! Payment information is securely handled by Stripe — we never have access to your full card number."
-msgstr "By purchasing, you agreed to our <0>Terms of Service</0> and <1>Privacy Policy</1>. All purchases are refundable within 14 days by emailing <2>support@echowire.org</2>. Chargebacks result in permanent account bans — if you want a refund, we're more than happy to give you one if you contact us first! Payment information is securely handled by Stripe — we never have access to your full card number."
+msgid "By purchasing, you agreed to our <0>Terms of Service</0> and <1>Privacy Policy</1>. All purchases are refundable within 14 days by emailing <2>support@dewrito.net</2>. Chargebacks result in permanent account bans — if you want a refund, we're more than happy to give you one if you contact us first! Payment information is securely handled by Stripe — we never have access to your full card number."
+msgstr "By purchasing, you agreed to our <0>Terms of Service</0> and <1>Privacy Policy</1>. All purchases are refundable within 14 days by emailing <2>support@dewrito.net</2>. Chargebacks result in permanent account bans — if you want a refund, we're more than happy to give you one if you contact us first! Payment information is securely handled by Stripe — we never have access to your full card number."
 
 #: src/utils/PermissionUtils.tsx:356
 #: src/utils/PermissionUtils.tsx:491
@@ -4646,8 +4646,8 @@ msgstr "Sohbet Yazı Tipi Ölçeklendirmesi"
 
 #: src/components/BootstrapErrorScreen.tsx:60
 #: src/components/NetworkErrorScreen.tsx:45
-msgid "Check our <0>status page</0> for updates, or email us at <1>support@echowire.org</1>."
-msgstr "Check our <0>status page</0> for updates, or email us at <1>support@echowire.org</1>."
+msgid "Check our <0>status page</0> for updates, or email us at <1>support@dewrito.net</1>."
+msgstr "Check our <0>status page</0> for updates, or email us at <1>support@dewrito.net</1>."
 
 #: src/components/modals/ShareThemeModal.tsx:115
 msgid "Check out my custom theme!"
@@ -8167,16 +8167,16 @@ msgid "Echo Cancellation"
 msgstr "Yankı Bastırma"
 
 #: src/components/icons/FluxerIcon.tsx:31
-msgid "Echowire application icon"
-msgstr "Echowire application icon"
+msgid "Dewrito application icon"
+msgstr "Dewrito application icon"
 
 #: src/components/icons/FluxerSymbol.tsx:31
-msgid "Echowire application symbol"
-msgstr "Echowire application symbol"
+msgid "Dewrito application symbol"
+msgstr "Dewrito application symbol"
 
 #: src/components/BootstrapErrorScreen.tsx:52
-msgid "Echowire failed to start properly. This could be due to corrupted data or a temporary issue."
-msgstr "Echowire failed to start properly. This could be due to corrupted data or a temporary issue."
+msgid "Dewrito failed to start properly. This could be due to corrupted data or a temporary issue."
+msgstr "Dewrito failed to start properly. This could be due to corrupted data or a temporary issue."
 
 #: src/components/modals/tabs/ExpressionPacksTab.tsx:90
 #: src/components/modals/tabs/LinkedAccountsTab.tsx:186
@@ -24398,8 +24398,8 @@ msgid "We'll verify your new email with a one-time code."
 msgstr "Yeni e-postanı tek kullanımlık bir kodla doğrulayacağız."
 
 #: src/components/NetworkErrorScreen.tsx:39
-msgid "We're having trouble connecting to Echowire's servers. This could be a temporary network issue or scheduled maintenance."
-msgstr "We're having trouble connecting to Echowire's servers. This could be a temporary network issue or scheduled maintenance."
+msgid "We're having trouble connecting to Dewrito's servers. This could be a temporary network issue or scheduled maintenance."
+msgstr "We're having trouble connecting to Dewrito's servers. This could be a temporary network issue or scheduled maintenance."
 
 #: src/components/modals/tabs/DevicesTab.tsx:234
 msgid "We're having trouble connecting to the space-time continuum. Please check your connection and try again."

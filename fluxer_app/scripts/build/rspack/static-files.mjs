@@ -28,10 +28,10 @@ function generateManifest(staticCdnEndpointRaw) {
 	const staticCdnEndpoint = normalizeEndpoint(staticCdnEndpointRaw);
 
 	const manifest = {
-		name: 'Echowire',
-		short_name: 'Echowire',
+		name: 'Dewrito',
+		short_name: 'Dewrito',
 		description:
-			'Echowire is a free and open source instant messaging and VoIP platform built for friends, groups, and communities.',
+			'Dewrito is a free and open source instant messaging and VoIP platform built for friends, groups, and communities.',
 		start_url: '/',
 		display: 'standalone',
 		orientation: 'portrait-primary',

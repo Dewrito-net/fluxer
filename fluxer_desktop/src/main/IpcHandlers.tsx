@@ -148,7 +148,7 @@ async function assertValidFluxerInstance(instanceOrigin: string): Promise<void> 
 		}
 	} catch (error) {
 		const message = error instanceof Error ? error.message : String(error);
-		throw new Error(`Not a valid Echowire instance (${message})`);
+		throw new Error(`Not a valid Dewrito instance (${message})`);
 	} finally {
 		clearTimeout(timeout);
 	}

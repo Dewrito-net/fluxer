@@ -37,18 +37,18 @@ export const NetworkErrorScreen = () => {
 				</h1>
 				<p className={styles.errorFallbackDescription}>
 					<Trans>
-						We're having trouble connecting to Echowire's servers. This could be a temporary network issue or scheduled
+						We're having trouble connecting to Dewrito's servers. This could be a temporary network issue or scheduled
 						maintenance.
 					</Trans>
 				</p>
 				<p className={styles.errorFallbackDescription}>
 					<Trans>
 						Check our{' '}
-						<a href="https://status.echowire.org" target="_blank" rel="noopener noreferrer">
+						<a href="https://status.dewrito.net" target="_blank" rel="noopener noreferrer">
 							status page
 						</a>{' '}
 						for updates, or email us at{' '}
-						<a href="mailto:support@echowire.org">support@echowire.org</a>.
+						<a href="mailto:support@dewrito.net">support@dewrito.net</a>.
 					</Trans>
 				</p>
 			</div>

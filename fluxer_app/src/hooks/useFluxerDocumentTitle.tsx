@@ -19,7 +19,7 @@
 
 import {useEffect, useRef} from 'react';
 
-const TITLE_PREFIX = 'Echowire';
+const TITLE_PREFIX = 'Dewrito';
 
 type TitlePart = string | null | undefined;
 type TitleInput = TitlePart | Array<TitlePart>;

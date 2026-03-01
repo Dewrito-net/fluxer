@@ -69,12 +69,12 @@ if (process.platform === 'win32') {
 }
 
 if (process.platform === 'win32') {
-	const appId = isCanary ? 'org.echowire.canary' : 'org.echowire.app';
+	const appId = isCanary ? 'org.Dewrito.canary' : 'org.Dewrito.app';
 	app.setAppUserModelId(appId);
 }
 
 if (process.platform === 'linux') {
-	const linuxName = isCanary ? 'Echowire Canary' : 'Echowire';
+	const linuxName = isCanary ? 'Dewrito Canary' : 'Dewrito';
 	app.setName(linuxName);
 	app.commandLine.appendSwitch('enable-features', 'WebRTCPipeWireCapturer');
 }
