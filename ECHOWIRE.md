@@ -102,7 +102,7 @@ ssh root@216.128.143.25  # voice-dfw
 |---------|---------|
 | **Domain** | dewrito.net (Cloudflare CDN → Caddy auto-TLS) |
 | **Storage** | Cloudflare R2 — 6 buckets (fluxer, fluxer-uploads, fluxer-downloads, fluxer-reports, fluxer-harvests, fluxer-static) |
-| **CDN** | R2 public URL: `https://pub-01ca5f8f442643b18e2a4a79fb29f911.r2.dev` |
+| **CDN** | R2 public URL: `https://fluxer.dewrito.net` |
 | **Email** | smtp2go — mail.smtp2go.com:2525 |
 | **GIFs** | Klipy API (replaced Tenor) |
 | **Payments** | Stripe — Freemium model (Monthly $5, Yearly $48, Visionary $256) |

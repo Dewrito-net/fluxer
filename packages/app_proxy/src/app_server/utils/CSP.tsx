@@ -22,6 +22,8 @@ import {parseSentryDSN} from '@fluxer/app_proxy/src/app_server/utils/SentryDSN';
 
 export const CSP_HOSTS = {
 	FRAME: [
+		'https://www.youtube.com', 
+		'https://www.youtube-nocookie.com',
 		'https://www.youtube.com/embed/',
 		'https://www.youtube.com/s/player/',
 		'https://hcaptcha.com',
